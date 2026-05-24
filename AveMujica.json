@@ -1,0 +1,11 @@
+{
+  "id": "AveMujica",
+  "name": "Ave Mujica",
+  "author": "Darkglade",
+  "description": "Arknights character mod.",
+  "version": "v0.0.1",
+  "has_pck": true,
+  "has_dll": true,
+  "dependencies": ["BaseLib"],
+  "affects_gameplay": true
+}

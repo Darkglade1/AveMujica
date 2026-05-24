@@ -1,0 +1,16 @@
+{
+  "AVEMUJICA-AVE_MUJICA.aromaPrinciple": "Lore",
+  "AVEMUJICA-AVE_MUJICA.banter.alive.endTurnPing": "Co-op hurry up end turn ping message",
+  "AVEMUJICA-AVE_MUJICA.banter.dead.endTurnPing": "...",
+  "AVEMUJICA-AVE_MUJICA.cardsModifierDescription": "__ cards will now appear in rewards and shops.",
+  "AVEMUJICA-AVE_MUJICA.cardsModifierTitle": "__ Cards",
+  "AVEMUJICA-AVE_MUJICA.description": "Character Selection\nScreen Description",
+  "AVEMUJICA-AVE_MUJICA.eventDeathPrevention": "Co-op survival line",
+  "AVEMUJICA-AVE_MUJICA.goldMonologue": "Line spoken when obtaining a large amount of gold",
+  "AVEMUJICA-AVE_MUJICA.possessiveAdjective": "his/her/its",
+  "AVEMUJICA-AVE_MUJICA.pronounObject": "him/her/it",
+  "AVEMUJICA-AVE_MUJICA.pronounPossessive": "his/hers/its",
+  "AVEMUJICA-AVE_MUJICA.pronounSubject": "he/she/it",
+  "AVEMUJICA-AVE_MUJICA.title": "The AveMujica",
+  "AVEMUJICA-AVE_MUJICA.titleObject": "The AveMujica"
+}
