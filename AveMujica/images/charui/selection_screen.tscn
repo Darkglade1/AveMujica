@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bf0n2a8o06suk"]
 
-[ext_resource type="Texture2D" uid="uid://bq2qva4r2102f" path="res://AveMujica/images/character/selection_screen.png" id="1_d8yfv"]
+[ext_resource type="Texture2D" uid="uid://bq2qva4r2102f" path="res://AveMujica/images/charui/selection_screen.png" id="1_d8yfv"]
 
 [node name="AveMujicaBg" type="Control"]
 layout_mode = 3

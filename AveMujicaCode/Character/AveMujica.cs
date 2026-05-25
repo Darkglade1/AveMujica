@@ -85,12 +85,10 @@ public class AveMujica : PlaceholderCharacterModel
         return creatureAnimator;
     }
     
-    public override string CustomVisualPath => "res://AveMujica/images/character/oblvns.tscn";
-
-    public override string CustomCharacterSelectBg => "res://AveMujica/images/character/selection_screen.tscn";
-
+    public override string CustomVisualPath => "oblvns.tscn".CharacterPath();
+    public override string CustomCharacterSelectBg => "selection_screen.tscn".CharacterUiPath();
     public override string CustomIconTexturePath => "character_icon_char_name.png".CharacterUiPath();
-    public override string CustomCharacterSelectIconPath => "char_select_char_name.png".CharacterUiPath();
+    public override string CustomCharacterSelectIconPath => "char_select.png".CharacterUiPath();
     public override string CustomCharacterSelectLockedIconPath => "char_select_char_name_locked.png".CharacterUiPath();
     public override string CustomMapMarkerPath => "map_marker_char_name.png".CharacterUiPath();
 }

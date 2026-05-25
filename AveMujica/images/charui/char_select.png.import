@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://be4pq2vnv7gbf"
-path="res://.godot/imported/char_select_char_name.png-9d30fb113b47325a9875917320e7e8ba.ctex"
+uid="uid://dbp3bo25trlhm"
+path="res://.godot/imported/char_select.png-08798d93949debde67e25e757708702b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/charui/char_select_char_name.png"
-dest_files=["res://.godot/imported/char_select_char_name.png-9d30fb113b47325a9875917320e7e8ba.ctex"]
+source_file="res://AveMujica/images/charui/char_select.png"
+dest_files=["res://.godot/imported/char_select.png-08798d93949debde67e25e757708702b.ctex"]
 
 [params]
 
