@@ -87,6 +87,8 @@ public class AveMujica : PlaceholderCharacterModel
     
     public override string CustomVisualPath => "res://AveMujica/images/character/oblvns.tscn";
 
+    public override string CustomCharacterSelectBg => "res://AveMujica/images/character/selection_screen.tscn";
+
     public override string CustomIconTexturePath => "character_icon_char_name.png".CharacterUiPath();
     public override string CustomCharacterSelectIconPath => "char_select_char_name.png".CharacterUiPath();
     public override string CustomCharacterSelectLockedIconPath => "char_select_char_name_locked.png".CharacterUiPath();
