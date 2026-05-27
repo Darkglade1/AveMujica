@@ -1,4 +1,5 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Token;
+using AveMujica.AveMujicaCode.Overlays;
 using BaseLib.Abstracts;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Combat;
@@ -83,6 +84,7 @@ public class ComposeHelper
                 ComposeFields.CurrentSong.Set(combatState, currentSong);
                 ComposeFields.CurrentComposeNum.Set(combatState, numComposes);
             }
+            SongPreview.Instance?.UpdateDisplay(combatState);
         }
     }
 
