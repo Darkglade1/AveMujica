@@ -1,8 +1,10 @@
-﻿using BaseLib.Abstracts;
+﻿using AveMujica.AveMujicaCode.Cards.Token;
+using BaseLib.Abstracts;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace AveMujica.AveMujicaCode.Cards.CardMods;
@@ -18,6 +20,14 @@ public class VulnerableMod : CardModifier
             MainFile.Logger.Info("Hook called for " + Id);
             ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
             await PowerCmd.Apply<VulnerablePower>(choiceContext, play.Target, VulnerableAmt, Owner.Owner.Creature, Owner);
+        }
+    }
+    
+    public override void AfterClonedOnCard(CardModel card)
+    {
+        if (card is Song song)
+        {
+            song.IsTargeted = true;
         }
     }
     

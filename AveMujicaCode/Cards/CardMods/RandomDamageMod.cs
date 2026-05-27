@@ -1,8 +1,10 @@
-﻿using BaseLib.Abstracts;
+﻿using AveMujica.AveMujicaCode.Cards.Token;
+using BaseLib.Abstracts;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Models;
 
 namespace AveMujica.AveMujicaCode.Cards.CardMods;
 
@@ -16,6 +18,14 @@ public class RandomDamageMod : CardModifier
         {
             MainFile.Logger.Info("Hook called for " + Id);
             await DamageCmd.Attack(DamageAmt).FromCard(Owner).TargetingRandomOpponents(Owner.CombatState).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
+        }
+    }
+    
+    public override void AfterClonedOnCard(CardModel card)
+    {
+        if (card is Song song)
+        {
+            song.IsAttack = true;
         }
     }
     
