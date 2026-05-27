@@ -27,7 +27,7 @@ public class ComposeHelper
     
     public static async Task RandomCompose(Player owner, PlayerChoiceContext choiceContext, bool isUpgraded)
     {
-        var composeEffects = GenerateRandomComposeEffects(isUpgraded);
+        var composeEffects = GenerateRandomComposeEffects(owner, isUpgraded);
         var cardsToChoose = new CardModel[composeEffects.Count];
         for (int i = 0; i < composeEffects.Count; i++)
         {
@@ -90,7 +90,7 @@ public class ComposeHelper
         }
     }
 
-    private static List<CardModifier> GenerateRandomComposeEffects(bool isUpgraded)
+    private static List<CardModifier> GenerateRandomComposeEffects(Player owner, bool isUpgraded)
     {
         var damageMod = (DamageMod)ModelDb.Get<DamageMod>().MutableClone();
         damageMod.DamageAmt = isUpgraded ? 8 : 6;
@@ -121,7 +121,7 @@ public class ComposeHelper
             new WeightedComposeEffect { ComposeEffect = gainEnergyMod, Weight = 5 }
         };
 
-        var returnedItems = GetWeightedRandom(items, 3);
+        var returnedItems = GetWeightedRandom(items, owner,3);
         var returnedComposeEffects = new List<CardModifier>();
         foreach (var item in returnedItems)
         {
@@ -131,7 +131,7 @@ public class ComposeHelper
         return returnedComposeEffects;
     }
     
-    public static List<WeightedComposeEffect> GetWeightedRandom(List<WeightedComposeEffect> items, int amount)
+    public static List<WeightedComposeEffect> GetWeightedRandom(List<WeightedComposeEffect> items, Player owner, int amount)
     {
         var returnedItems = new List<WeightedComposeEffect>();
         for (int num = 0; num < amount; num++)
@@ -144,8 +144,7 @@ public class ComposeHelper
             int totalWeight = items.Sum(i => i.Weight);
 
             // 2. Pick a random number between 0 and totalWeight
-            Random rng = new Random();
-            int randomRoll = rng.Next(0, totalWeight);
+            int randomRoll = owner.RunState.Rng.CombatCardGeneration.NextInt(0, totalWeight);
 
             // 3. Iterate and subtract weight to find the item
             foreach (var item in items)

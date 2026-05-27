@@ -84,8 +84,6 @@ public static class SongPreviewOverlayPatch
 {
     public static void Postfix(NEnergyCounter __instance)
     {
-        if (SongPreview.Instance != null) return;
-        
         var overlay = new SongPreview();
         __instance.AddChild(overlay);
     }
