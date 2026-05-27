@@ -33,7 +33,7 @@
 
     <ItemGroup>
         <PackageReference Include="Alchyr.Sts2.BaseLib" Version="*" PrivateAssets="All" />
-        <PackageReference Include="Krafs.Publicizer" Version="2.3.0" PrivateAssets="All" />
+        <PackageReference Include="Krafs.Publicizer" Version="2.3.0" PrivateAssets="all" />
         <PackageReference Include="Alchyr.Sts2.ModAnalyzers" Version="*" />
         <!-- Generates a .pck file when building if only using simple assets. May not work on all setups. Uncomment to test. -->
         <!-- <PackageReference Include="BSchneppe.StS2.PckPacker" Version="0.1.1" PrivateAssets="All" /> -->
@@ -63,6 +63,16 @@
         <Folder Include="AveMujica\images\card_portraits\big\" />
         <Folder Include="AveMujica\images\powers\big\" />
         <Folder Include="AveMujica\images\relics\big\" />
+    </ItemGroup>
+
+    <!--  Clear cache when cleaning the solution  -->
+    <PropertyGroup>
+        <PublicizerClearCacheOnClean>true</PublicizerClearCacheOnClean>
+    </PropertyGroup>
+
+    <!--  Publicized class members in the format: dllName:Namespace.ClassMember  -->
+    <ItemGroup>
+        <Publicize Include="sts2:MegaCrit.Sts2.Core.Models.ModelDb.Get"/>
     </ItemGroup>
 
     <Target Name="CheckDependencyPaths">

@@ -5,6 +5,10 @@ namespace AveMujica.AveMujicaCode.Extensions;
 //Mostly utilities to get asset paths.
 public static class StringExtensions
 {
+    public static string MakeId(this string str)
+    {
+        return $"{MainFile.ModId}:{str}";
+    }
     public static string ImagePath(this string path)
     {
         return Path.Join(MainFile.ResPath, "images", path);

@@ -1,4 +1,5 @@
 ﻿using AveMujica.AveMujicaCode.Cards;
+using AveMujica.AveMujicaCode.Cards.Basic;
 using BaseLib.Abstracts;
 using BaseLib.Utils.NodeFactories;
 using AveMujica.AveMujicaCode.Extensions;
@@ -34,7 +35,8 @@ public class AveMujica : PlaceholderCharacterModel
         ModelDb.Card<DefendIronclad>(),
         ModelDb.Card<DefendIronclad>(),
         ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<Waltz>()
+        ModelDb.Card<Waltz>(),
+        ModelDb.Card<Muse>()
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>

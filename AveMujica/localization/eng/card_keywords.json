@@ -1,4 +1,6 @@
 {
   "AVEMUJICA-RHYTHM.description": "Rhythm effects trigger if the last card(s) played this combat are of the specified type(s) and in the specified order.",
-  "AVEMUJICA-RHYTHM.title": "Rhythm"
+  "AVEMUJICA-RHYTHM.title": "Rhythm",
+  "AVEMUJICA-COMPOSE.description": "Adds the specified effect to the [gold]Song[/gold]. If no effect is specified, choose a random effect to add. After [gold]Composing[/gold] [blue]3[/blue] times, add the [gold]Song[/gold] to your hand.",
+  "AVEMUJICA-COMPOSE.title": "Compose"
 }

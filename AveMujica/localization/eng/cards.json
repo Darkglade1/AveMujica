@@ -1,4 +1,10 @@
 {
   "AVEMUJICA-WALTZ.description": "Deal {Damage:diff()} damage. \n[gold]Rhythm Attack:[/gold] Deal {Damage:diff()} damage again.",
-  "AVEMUJICA-WALTZ.title": "Waltz"
+  "AVEMUJICA-WALTZ.title": "Waltz",
+  
+  "AVEMUJICA-MUSE.description": "[gold]Compose[/gold].",
+  "AVEMUJICA-MUSE.title": "Muse",
+
+  "AVEMUJICA-SONG.description": "",
+  "AVEMUJICA-SONG.title": "Song"
 }

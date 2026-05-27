@@ -1,10 +1,11 @@
-﻿using MegaCrit.Sts2.Core.Entities.Cards;
+﻿using BaseLib.Utils;
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace AveMujica.AveMujicaCode.Cards;
+namespace AveMujica.AveMujicaCode.Cards.Basic;
 
 public class Waltz() : RhythmCard(1,
     CardType.Attack, CardRarity.Basic,
@@ -14,8 +15,7 @@ public class Waltz() : RhythmCard(1,
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
-        ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
-        await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this).Targeting(play.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
+        await CommonActions.CardAttack(this, play).Execute(choiceContext);
         await ExecuteRhythmEffect(choiceContext, play, RhythmSequences()[0]);
     }
 
@@ -27,8 +27,7 @@ public class Waltz() : RhythmCard(1,
 
     protected override async Task DoRhythmEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes)
     {
-        ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
-        await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this).Targeting(play.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
+        await CommonActions.CardAttack(this, play).Execute(choiceContext);
     }
 
     protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(2);
