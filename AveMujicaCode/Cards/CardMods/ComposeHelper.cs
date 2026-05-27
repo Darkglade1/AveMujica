@@ -1,7 +1,9 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Token;
 using BaseLib.Abstracts;
 using BaseLib.Utils;
+using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
@@ -11,8 +13,8 @@ namespace AveMujica.AveMujicaCode.Cards.CardMods;
 public class ComposeHelper
 {
     public class ComposeFields {
-        public static readonly SpireField<Player, int> CurrentComposeNum = new(() => 0);
-        public static readonly SpireField<Player, CardModel> CurrentSong = new(() => null);
+        public static readonly SpireField<ICombatState, int> CurrentComposeNum = new(() => 0);
+        public static readonly SpireField<ICombatState, CardModel> CurrentSong = new(() => null);
     }
 
     public static int NumComposesSongComplete = 3;
@@ -45,7 +47,43 @@ public class ComposeHelper
             owner
         );
 
-        if (card is Song selectedSong) await selectedSong.OnSongSelected(CardModifier.Modifiers(card));
+        if (card != null)
+        {
+            await AddComposeEffectsToSong(CardModifier.Modifiers(card), card.Owner);
+        }
+    }
+
+    public static async Task AddComposeEffectsToSong(IReadOnlyCollection<CardModifier> mods, Player owner)
+    {
+        var combatState = owner.Creature.CombatState;
+        if (combatState != null)
+        {
+            CardModel? currentSong = ComposeFields.CurrentSong.Get(combatState);
+            if (currentSong == null)
+            {
+                Song newSong = combatState.CreateCard<Song>(owner);
+                currentSong = newSong;
+            }
+
+            foreach (var cardMod in mods)
+            {
+                CardModifier.AddModifier(currentSong, cardMod);
+            }
+
+            var numComposes = ComposeFields.CurrentComposeNum.Get(combatState);
+            numComposes++;
+            if (numComposes >= NumComposesSongComplete)
+            {
+                await CardPileCmd.AddGeneratedCardToCombat(currentSong, PileType.Hand, owner);
+                ComposeFields.CurrentSong.Set(combatState, null);
+                ComposeFields.CurrentComposeNum.Set(combatState, 0);
+            }
+            else
+            {
+                ComposeFields.CurrentSong.Set(combatState, currentSong);
+                ComposeFields.CurrentComposeNum.Set(combatState, numComposes);
+            }
+        }
     }
 
     private static List<CardModifier> GenerateRandomComposeEffects(bool isUpgraded)

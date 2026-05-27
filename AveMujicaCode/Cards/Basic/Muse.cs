@@ -17,8 +17,6 @@ public class Muse() : AveMujicaCard(0,
         CardPlay play)
     {
         await ComposeHelper.RandomCompose(Owner, choiceContext, IsUpgraded);
-        await ComposeHelper.RandomCompose(Owner, choiceContext, IsUpgraded);
-        await ComposeHelper.RandomCompose(Owner, choiceContext, IsUpgraded);
     }
 
     protected override void OnUpgrade()
