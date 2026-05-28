@@ -34,6 +34,6 @@ public class DamageMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += $"Deal {DamageAmt} damage. \n";
+        description += $"Deal {DamageAmt} damage." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
 }

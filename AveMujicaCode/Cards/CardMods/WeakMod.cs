@@ -33,6 +33,6 @@ public class WeakMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += $"Apply {WeakAmt} Weak.\n";
+        description += $"Apply {WeakAmt} Weak." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
 }

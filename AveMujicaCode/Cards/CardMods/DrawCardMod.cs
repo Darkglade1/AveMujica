@@ -21,6 +21,6 @@ public class DrawCardMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += $"Draw {DrawCardAmt} card(s).\n";
+        description += $"Draw {DrawCardAmt} card(s)." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
 }

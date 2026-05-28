@@ -21,6 +21,6 @@ public class GainEnergyMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += $"Gain {GainEnergyAmt} Energy .\n";
+        description += $"Gain {GainEnergyAmt} Energy." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
 }

@@ -31,6 +31,6 @@ public class RandomDamageMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += $"Deal {DamageAmt} damage to a random enemy. \n";
+        description += $"Deal {DamageAmt} damage to a random enemy." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
 }

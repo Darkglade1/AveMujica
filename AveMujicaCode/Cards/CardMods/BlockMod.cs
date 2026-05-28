@@ -22,6 +22,6 @@ public class BlockMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += $"Gain {BlockAmt} Block. \n";
+        description += $"Gain {BlockAmt} Block." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
 }

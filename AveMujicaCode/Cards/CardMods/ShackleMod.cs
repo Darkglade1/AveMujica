@@ -33,6 +33,6 @@ public class ShackleMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += $"Enemy loses {ShackleAmt} Strength this turn. \n";
+        description += $"Enemy loses {ShackleAmt} Strength this turn." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
 }

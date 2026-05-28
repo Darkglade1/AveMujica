@@ -159,4 +159,21 @@ public class ComposeHelper
         }
         return returnedItems;
     }
+
+    public static string GetNewLineIfNotLastCardMod(CardModifier cardMod)
+    {
+        if (cardMod.Owner == null)
+        {
+            return "";
+        }
+        var allMods = CardModifier.Modifiers(cardMod.Owner);
+        if (allMods.Last() == cardMod)
+        {
+            return "";
+        }
+        else
+        {
+            return "\n";
+        }
+    }
 }
