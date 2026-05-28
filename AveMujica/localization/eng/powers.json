@@ -1,3 +1,5 @@
 {
-  
+  "AVEMUJICA-OBLIVION.description": "Whenever you gain [gold]Oblivion[/gold], deal damage to the lowest HP enemy equal to your [gold]Oblivion[/gold].",
+  "AVEMUJICA-OBLIVION.smartDescription": "Whenever you gain [gold]Oblivion[/gold], deal damage to the lowest HP enemy equal to your [gold]Oblivion[/gold].",
+  "AVEMUJICA-OBLIVION.title": "Oblivion"
 }
