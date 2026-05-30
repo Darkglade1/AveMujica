@@ -1,19 +1,12 @@
 ﻿using Godot;
-using HarmonyLib;
-using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.Entities.Cards;
-using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
-using MegaCrit.Sts2.Core.Nodes.Combat;
-using MegaCrit.Sts2.Core.Nodes.GodotExtensions;
 using MegaCrit.Sts2.Core.Nodes.HoverTips;
-using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Allies;
 
 [GlobalClass]
-public partial class NAllyButton : Button
+public partial class NAllyButton : BaseButton
 {
     
     private TextureRect? _icon;
@@ -51,6 +44,7 @@ public partial class NAllyButton : Button
     
     private async void Skill()
     {
+        NHoverTipSet.Remove(this);
         if (skillNum == 1)
         {
             await owner.Skill1();

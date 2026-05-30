@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://du3enmedf7k7b" path="res://AveMujicaCode/Cards/Allies/NAllyButton.cs" id="1"]
 
-[node name="AllyButton" type="Button"]
+[node name="AllyButton" type="BaseButton"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(32, 32)
 anchors_preset = 2
