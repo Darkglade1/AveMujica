@@ -65,25 +65,16 @@ public class AveMujica : PlaceholderCharacterModel
     public override CreatureAnimator GenerateAnimator(MegaSprite controller)
     {
         AnimState animState = new AnimState("Idle", isLooping: true);
-        // AnimState animState2 = new AnimState("cast");
-        // AnimState animState3 = new AnimState("attack");
-        // AnimState animState4 = new AnimState("hurt");
-        // AnimState state = new AnimState("die");
-        // AnimState animState5 = new AnimState("shiv");
-        // AnimState animState6 = new AnimState("relaxed_loop", isLooping: true);
-        // animState2.NextState = animState;
-        // animState3.NextState = animState;
-        // animState4.NextState = animState;
-        // animState5.NextState = animState;
-        // animState6.AddBranch("Idle", animState);
+        AnimState animState2 = new AnimState("Combat");
+        AnimState animState3 = new AnimState("Attack");
+        AnimState state = new AnimState("Die");
+        animState2.NextState = animState;
+        animState3.NextState = animState;
         CreatureAnimator creatureAnimator = new CreatureAnimator(animState, controller);
         creatureAnimator.AddAnyState("Idle", animState);
-        // creatureAnimator.AddAnyState("Dead", state);
-        // creatureAnimator.AddAnyState("Hit", animState4);
-        // creatureAnimator.AddAnyState("Attack", animState3);
-        // creatureAnimator.AddAnyState("Cast", animState2);
-        // creatureAnimator.AddAnyState("Shiv", animState5);
-        // creatureAnimator.AddAnyState("Relaxed", animState6);
+        creatureAnimator.AddAnyState("Dead", state);
+        creatureAnimator.AddAnyState("Attack", animState3);
+        creatureAnimator.AddAnyState("Cast", animState2);
         return creatureAnimator;
     }
     
