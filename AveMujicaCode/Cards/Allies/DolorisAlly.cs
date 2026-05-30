@@ -1,12 +1,19 @@
-﻿using AveMujica.AveMujicaCode.Extensions;
+﻿using System.Buffers;
+using AveMujica.AveMujicaCode.Extensions;
+using Godot;
 using MegaCrit.Sts2.Core.Animation;
 using MegaCrit.Sts2.Core.Bindings.MegaSpine;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.MonsterMoves.Intents;
 using MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Models.Powers;
+using MegaCrit.Sts2.Core.Nodes.Combat;
+using MegaCrit.Sts2.Core.Nodes.Rooms;
+using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Allies;
 
@@ -27,6 +34,36 @@ public sealed class DolorisAlly : AbstractAlly
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
       await PowerCmd.Apply<StrengthPower>(new ThrowingPlayerChoiceContext(), owner.Creature, 1, Creature, null);
       await CreatureCmd.GainMaxHp(Creature, 2);
+    }
+  }
+
+  protected override void SetUpSkill1Button()
+  {
+    SetUpSkillButton("res://AveMujica/images/charui/BlockIcon.png", 1);
+  }
+
+  protected override void SetUpSkill2Button()
+  {
+    SetUpSkillButton("res://AveMujica/images/charui/BuffIcon.png", 2);
+  }
+  
+  public override async Task Skill1()
+  {
+    var owner = Creature.PetOwner;
+    if (owner != null)
+    {
+      await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
+      await CreatureCmd.GainBlock(owner.Creature, 16, ValueProp.Unpowered, null);
+    }
+  }
+  
+  public override async Task Skill2()
+  {
+    var owner = Creature.PetOwner;
+    if (owner != null)
+    {
+      await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
+      await PowerCmd.Apply<StrengthPower>(new ThrowingPlayerChoiceContext(), owner.Creature, 1, Creature, null);
     }
   }
 
