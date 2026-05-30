@@ -1,9 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://d1qesa4j2op12"]
+[gd_scene load_steps=3 format=3]
 
-[ext_resource type="SpineSkeletonDataResource" uid="uid://by44edptg5muo" path="res://AveMujica/images/character/oblvns-data-res.tres" id="1_0a40p"]
-[ext_resource type="Script" uid="uid://ddno14sgqcp3f" path="res://AveMujicaCode/Vfx/AveMujicaNCreatureVisuals.cs" id="2_jhaos"]
+[ext_resource type="SpineSkeletonDataResource" path="res://AveMujica/images/character/doloris/doloris-data-res.tres" id="1_0a40p"]
 
-[node name="AveMujica" type="Node2D"]
+[node name="Doloris" type="Node2D"]
 
 [node name="Bounds" type="Control" parent="."]
 unique_name_in_owner = true
@@ -29,4 +28,3 @@ preview_animation = "Idle"
 preview_frame = false
 preview_time = 0.0
 unique_name_in_owner = true
-script = ExtResource("2_jhaos")

@@ -1,4 +1,5 @@
 ﻿using BaseLib.Abstracts;
+using BaseLib.Patches.Content;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -8,6 +9,10 @@ namespace AveMujica.AveMujicaCode.Cards.Allies;
 
 public abstract class AbstractAlly : CustomMonsterModel
 {
+  public AbstractAlly()
+  {
+    CustomContentDictionary.RegisterType(GetType());
+  }
   public override int MinInitialHp => 1;
 
   public override int MaxInitialHp => 1;

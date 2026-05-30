@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://i8edcjcgjoa7"
-path="res://.godot/imported/char_4182_oblvns.png-92100132986f4006215ff8a88fa15a30.ctex"
+path="res://.godot/imported/char_4182_oblvns.png-450ac861a72b41ae7ec5649543727424.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/character/char_4182_oblvns.png"
-dest_files=["res://.godot/imported/char_4182_oblvns.png-92100132986f4006215ff8a88fa15a30.ctex"]
+source_file="res://AveMujica/images/character/oblivionis/char_4182_oblvns.png"
+dest_files=["res://.godot/imported/char_4182_oblvns.png-450ac861a72b41ae7ec5649543727424.ctex"]
 
 [params]
 

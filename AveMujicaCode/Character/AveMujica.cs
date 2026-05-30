@@ -78,7 +78,8 @@ public class AveMujica : PlaceholderCharacterModel
         return creatureAnimator;
     }
     
-    public override string CustomVisualPath => "oblvns.tscn".CharacterPath();
+    //public override string CustomVisualPath => "doloris/doloris.tscn".CharacterPath();
+    public override string CustomVisualPath => "oblivionis/oblvns.tscn".CharacterPath();
     public override string CustomCharacterSelectBg => "selection_screen.tscn".CharacterUiPath();
     public override string CustomIconTexturePath => "character_icon_char_name.png".CharacterUiPath();
     public override string CustomCharacterSelectIconPath => "char_select.png".CharacterUiPath();
