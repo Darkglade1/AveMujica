@@ -27,7 +27,7 @@
         </Reference>
     </ItemGroup>
 
-    <ItemGroup Condition="False"> <!--Allows access to originally private/protected members but may (unlikely to) cause errors.-->
+    <ItemGroup Condition="True"> <!--Allows access to originally private/protected members but may (unlikely to) cause errors.-->
         <Publicize Include="sts2" IncludeVirtualMembers="false" IncludeCompilerGeneratedMembers="false" />
     </ItemGroup>
 
@@ -69,11 +69,6 @@
     <PropertyGroup>
         <PublicizerClearCacheOnClean>true</PublicizerClearCacheOnClean>
     </PropertyGroup>
-
-    <!--  Publicized class members in the format: dllName:Namespace.ClassMember  -->
-    <ItemGroup>
-        <Publicize Include="sts2:MegaCrit.Sts2.Core.Models.ModelDb.Get"/>
-    </ItemGroup>
 
     <Target Name="CheckDependencyPaths">
         <Error Text=" Slay the Spire 2 data not found at path '$(Sts2DataDir)'" Condition="'$(Sts2DataDir)' == '' or !Exists('$(Sts2DataDir)')" />

@@ -9,5 +9,8 @@
   "AVEMUJICA-SONG.title": "Song",
 
   "AVEMUJICA-MOONLIT_STRIKE.description": "Deal {Damage:diff()} damage. \n Gain {Oblivion:diff()} [gold]Oblivion[/gold].",
-  "AVEMUJICA-MOONLIT_STRIKE.title": "Moonlit Strike"
+  "AVEMUJICA-MOONLIT_STRIKE.title": "Moonlit Strike",
+
+  "AVEMUJICA-DOLORIS.description": "[gold]Awaken Doloris[/gold].",
+  "AVEMUJICA-DOLORIS.title": "Doloris"
 }
