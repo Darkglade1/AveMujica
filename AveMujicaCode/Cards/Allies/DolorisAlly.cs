@@ -13,7 +13,6 @@ namespace AveMujica.AveMujicaCode.Cards.Allies;
 public sealed class DolorisAlly : AbstractAlly
 {
   public override string CustomVisualPath => "doloris/doloris.tscn".CharacterPath();
-  //public override string CustomVisualPath => "oblivionis/oblvns.tscn".CharacterPath();
   
   protected override MoveState GetDefaultMoveState()
   {
