@@ -1,6 +1,5 @@
 ﻿using Godot;
 using MegaCrit.Sts2.Core.HoverTips;
-using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Nodes.HoverTips;
 
 namespace AveMujica.AveMujicaCode.Cards.Allies;
@@ -13,11 +12,6 @@ public partial class NAllyButton : BaseButton
     private IHoverTip? _hoverTip;
     public required AbstractAlly owner;
     public int skillNum;
-    
-    public static readonly IHoverTip SKILL_1 = new HoverTip(
-        new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_1.title"),
-        new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_1.description")
-    );
 
     public override void _Ready()
     {
@@ -34,14 +28,52 @@ public partial class NAllyButton : BaseButton
         
         marginContainer.SetAnchorsPreset(LayoutPreset.FullRect);
 
-        _hoverTip = SKILL_1;
+        if (skillNum == 1)
+        {
+            _hoverTip = owner.GetSkill1HoverTip(); 
+        }
+        else
+        {
+            _hoverTip = owner.GetSkill2HoverTip();
+        }
 
         MouseFilter = MouseFilterEnum.Pass;
         Connect(Control.SignalName.MouseEntered, Callable.From(OnHovered));
         Connect(Control.SignalName.MouseExited, Callable.From(OnUnhovered));
         Connect(BaseButton.SignalName.Pressed, Callable.From(Skill));
     }
-    
+
+    public override void _Process(double delta)
+    {
+        var allyHp = owner.Creature.CurrentHp;
+        int skillCost;
+        if (skillNum == 1)
+        {
+            skillCost = owner.GetSkill1HPCost();
+        }
+        else
+        {
+            skillCost = owner.GetSkill2HPCost();
+        }
+        Disabled = skillCost > allyHp || owner.ActedThisTurn;
+
+        if (_icon != null)
+        {
+            if (Disabled)
+            {
+                _icon.Modulate = Color.Color8(128, 128, 128);
+            } 
+            else if (IsHovered())
+            {
+                _icon.Modulate = Color.Color8(218, 175, 38);
+            }
+            else
+            {
+                _icon.Modulate = Color.Color8(255, 255, 255);
+            }
+        }
+    }
+
     private async void Skill()
     {
         NHoverTipSet.Remove(this);

@@ -17,7 +17,7 @@ public class Doloris() : AveMujicaCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await AllyHelper.Awaken<DolorisAlly>(choiceContext, Owner, 3, this);
+        await AllyHelper.Awaken<DolorisAlly>(choiceContext, Owner, 10, this);
     }
 
     protected override void OnUpgrade()

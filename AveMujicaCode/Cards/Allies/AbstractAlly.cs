@@ -2,12 +2,15 @@
 using BaseLib.Patches.Content;
 using Godot;
 using MegaCrit.Sts2.Core.Combat;
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine;
 using MegaCrit.Sts2.Core.Nodes.Combat;
 using MegaCrit.Sts2.Core.Nodes.Rooms;
+using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Allies;
 
@@ -23,15 +26,19 @@ public abstract class AbstractAlly : CustomMonsterModel
 
   public override bool IsHealthBarVisible => Creature.IsAlive;
 
+  public bool ActedThisTurn;
+  private bool hasSetUp;
+
   protected abstract MoveState GetDefaultMoveState();
 
   public override Task AfterCurrentHpChanged(Creature creature, Decimal delta)
   {
-    if (NextMove != GetDefaultMoveState())
+    if (!hasSetUp)
     {
       SetMoveImmediate(GetDefaultMoveState());
       SetUpSkill1Button();
       SetUpSkill2Button();
+      hasSetUp = true;
     }
     return Task.CompletedTask;
   }
@@ -44,6 +51,20 @@ public abstract class AbstractAlly : CustomMonsterModel
       new List<MonsterState> { initialState },
       initialState
     );
+  }
+  
+  public override Task BeforeSideTurnStart(
+    PlayerChoiceContext choiceContext,
+    CombatSide side,
+    IReadOnlyList<Creature> participants,
+    ICombatState combatState)
+  {
+    if (side == CombatSide.Player)
+    {
+      ActedThisTurn = false;
+      SetMoveImmediate(GetDefaultMoveState());
+    }
+    return Task.CompletedTask;
   }
   
   public override async Task BeforeSideTurnEndEarly(
@@ -90,6 +111,21 @@ public abstract class AbstractAlly : CustomMonsterModel
     }
   }
 
+  protected void SetEmptyIntent()
+  {
+    ActedThisTurn = true;
+    MoveState emptyState = new MoveState("NOTHING_MOVE", _ => Task.CompletedTask);
+    emptyState.FollowUpState = emptyState;
+    SetMoveImmediate(emptyState);
+  }
+
+  protected async Task PaySkillCost(int skillCost)
+  {
+    await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Creature, skillCost, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, Creature);
+    await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Creature, skillCost, false);
+    SetEmptyIntent();
+  }
+
   protected abstract void SetUpSkill1Button();
   
   protected abstract void SetUpSkill2Button();
@@ -97,4 +133,12 @@ public abstract class AbstractAlly : CustomMonsterModel
   public abstract Task Skill1();
   
   public abstract Task Skill2();
+  
+  public abstract IHoverTip GetSkill1HoverTip();
+  
+  public abstract IHoverTip GetSkill2HoverTip();
+
+  public abstract int GetSkill1HPCost();
+
+  public abstract int GetSkill2HPCost();
 }
