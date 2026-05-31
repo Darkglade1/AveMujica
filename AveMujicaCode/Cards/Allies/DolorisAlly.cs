@@ -1,4 +1,5 @@
 ﻿using AveMujica.AveMujicaCode.Extensions;
+using AveMujica.AveMujicaCode.Powers;
 using MegaCrit.Sts2.Core.Animation;
 using MegaCrit.Sts2.Core.Bindings.MegaSpine;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -68,7 +69,7 @@ public sealed class DolorisAlly : AbstractAlly
     {
       ActedThisTurn = true;
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
-      await PowerCmd.Apply<StrengthPower>(new ThrowingPlayerChoiceContext(), owner.Creature, 5, Creature, null);
+      await PowerCmd.Apply<HowDareYou>(new ThrowingPlayerChoiceContext(), owner.Creature, damage, Creature, null);
       await PaySkillCost(skill2HPCost);
     }
   }
@@ -118,7 +119,7 @@ public sealed class DolorisAlly : AbstractAlly
     CreatureAnimator creatureAnimator = new CreatureAnimator(startState, controller);
     creatureAnimator.AddAnyState("Idle", animState);
     creatureAnimator.AddAnyState("Dead", state);
-    creatureAnimator.AddAnyState("Attack", animState3);
+    creatureAnimator.AddAnyState("Attack", animState4);
     creatureAnimator.AddAnyState("Cast", animState2);
     return creatureAnimator;
   }

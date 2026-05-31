@@ -17,6 +17,7 @@ public class DolorisBuffIntent : BuffIntent
     protected override LocString GetIntentDescription(IEnumerable<Creature> targets, Creature owner)
     {
         LocString intentDescription = new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.description");
+        // TODO: Unhardcode this shit
         //intentDescription = String.Format(intentDescription.GetRawText(), doloris.playerStrength);
         return intentDescription;
     }

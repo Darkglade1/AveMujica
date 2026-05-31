@@ -1,9 +1,7 @@
-﻿using AveMujica.AveMujicaCode.Cards;
-using AveMujica.AveMujicaCode.Cards.Allies;
+﻿using AveMujica.AveMujicaCode.Cards.Allies;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
@@ -17,7 +15,7 @@ public class Doloris() : AveMujicaCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await AllyHelper.Awaken<DolorisAlly>(choiceContext, Owner, 10, this);
+        await AllyHelper.Awaken<DolorisAlly>(choiceContext, Owner, 4, this);
     }
 
     protected override void OnUpgrade()
