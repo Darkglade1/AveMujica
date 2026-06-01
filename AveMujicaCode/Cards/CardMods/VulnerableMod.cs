@@ -17,7 +17,6 @@ public class VulnerableMod : CardModifier
     {
         if (Owner != null && play.Card == Owner)
         {
-            MainFile.Logger.Info("Hook called for " + Id);
             ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
             await PowerCmd.Apply<VulnerablePower>(choiceContext, play.Target, VulnerableAmt, Owner.Owner.Creature, Owner);
         }

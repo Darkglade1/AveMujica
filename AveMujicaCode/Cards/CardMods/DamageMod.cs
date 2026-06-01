@@ -17,7 +17,6 @@ public class DamageMod : CardModifier
     {
         if (Owner != null && play.Card == Owner)
         {
-            MainFile.Logger.Info("Hook called for " + Id);
             ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
             await DamageCmd.Attack(DamageAmt).FromCard(Owner).Targeting(play.Target)
                 .WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);

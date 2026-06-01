@@ -16,7 +16,6 @@ public class RandomDamageMod : CardModifier
     {
         if (Owner != null && Owner.CombatState != null && play.Card == Owner)
         {
-            MainFile.Logger.Info("Hook called for " + Id);
             await DamageCmd.Attack(DamageAmt).FromCard(Owner).TargetingRandomOpponents(Owner.CombatState).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
         }
     }

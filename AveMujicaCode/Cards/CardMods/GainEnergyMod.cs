@@ -14,7 +14,6 @@ public class GainEnergyMod : CardModifier
     {
         if (Owner != null && play.Card == Owner)
         {
-            MainFile.Logger.Info("Hook called for " + Id);
             await PlayerCmd.GainEnergy(GainEnergyAmt, Owner.Owner);
         }
     }

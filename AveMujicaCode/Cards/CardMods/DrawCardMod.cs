@@ -14,7 +14,6 @@ public class DrawCardMod : CardModifier
     {
         if (Owner != null && play.Card == Owner)
         {
-            MainFile.Logger.Info("Hook called for " + Id);
             await CardPileCmd.Draw(choiceContext, DrawCardAmt, Owner.Owner);
         }
     }

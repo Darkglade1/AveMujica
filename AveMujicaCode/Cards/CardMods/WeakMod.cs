@@ -17,7 +17,6 @@ public class WeakMod : CardModifier
     {
         if (Owner != null && play.Card == Owner)
         {
-            MainFile.Logger.Info("Hook called for " + Id);
             ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
             await PowerCmd.Apply<WeakPower>(choiceContext, play.Target, WeakAmt, Owner.Owner.Creature, Owner);
         }
