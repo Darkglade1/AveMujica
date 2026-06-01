@@ -1,8 +1,14 @@
 {
+  "AVEMUJICA-STRIKE.description": "Deal {Damage:diff()} damage.",
+  "AVEMUJICA-STRIKE.title": "Strike",
+
+  "AVEMUJICA-DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold].",
+  "AVEMUJICA-DEFEND.title": "Defend",
+  
   "AVEMUJICA-WALTZ.description": "Deal {Damage:diff()} damage. \n[gold]Rhythm Attack:[/gold] Deal {Damage:diff()} damage again.",
   "AVEMUJICA-WALTZ.title": "Waltz",
   
-  "AVEMUJICA-MUSE.description": "[gold]Compose[/gold].",
+  "AVEMUJICA-MUSE.description": "{IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold].",
   "AVEMUJICA-MUSE.title": "Muse",
 
   "AVEMUJICA-SONG.description": "",
