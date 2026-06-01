@@ -1,8 +1,7 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Allies;
-using Godot;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
-using MegaCrit.Sts2.Core.Helpers;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
@@ -17,11 +16,16 @@ public class Doloris() : AllyCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await AllyHelper.Awaken<DolorisAlly>(choiceContext, Owner, 4, this);
+        await AllyHelper.Awaken<DolorisAlly>(choiceContext, Owner, DolorisAlly.StartingHP, this);
     }
 
     protected override void OnUpgrade()
     {
 
     }
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Awaken),
+        DolorisAlly.GenerateCardHoverTip()
+    ];
 }

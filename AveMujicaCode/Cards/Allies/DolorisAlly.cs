@@ -1,12 +1,14 @@
 ﻿using AveMujica.AveMujicaCode.Extensions;
 using AveMujica.AveMujicaCode.Powers;
 using MegaCrit.Sts2.Core.Animation;
+using MegaCrit.Sts2.Core.Assets;
 using MegaCrit.Sts2.Core.Bindings.MegaSpine;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.MonsterMoves.Intents;
 using MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Models.Powers;
@@ -16,18 +18,19 @@ namespace AveMujica.AveMujicaCode.Cards.Allies;
 
 public sealed class DolorisAlly : AbstractAlly
 {
-  private int block = 16;
-  private int damage = 6;
-  private int strength = 1;
-  public int playerStrength = 1;
-  private int autoSkillHPGain = 2;
-  private int skill1HPCost = 3;
-  private int skill2HPCost = 6;
+  public static int StartingHP = 4;
+  private static int block = 16;
+  private static int damage = 6;
+  private static int strength = 1;
+  private static int playerStrength = 1;
+  private static int autoSkillHPGain = 2;
+  private static int skill1HPCost = 3;
+  private static int skill2HPCost = 6;
   public override string CustomVisualPath => "doloris/doloris.tscn".CharacterPath();
   
   protected override MoveState GetDefaultMoveState()
   {
-    return new MoveState("BUFF_MOVE", Buff, new DolorisBuffIntent(this));
+    return new MoveState("BUFF_MOVE", Buff, new BuffIntent());
   }
   
   private async Task Buff(IReadOnlyList<Creature> targets)
@@ -73,8 +76,28 @@ public sealed class DolorisAlly : AbstractAlly
       await PaySkillCost(skill2HPCost);
     }
   }
+  
+  public override HoverTip GetAutoSkillHoverTip()
+  {
+    return AutoSkillHoverTip();
+  }
 
-  public override IHoverTip GetSkill1HoverTip()
+  public static HoverTip AutoSkillHoverTip()
+  {
+    var hoverTip = new HoverTip(
+      new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.title"),
+      new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.description"),
+      PreloadManager.Cache.GetTexture2D(ImageHelper.GetImagePath("atlases/intent_atlas.sprites/intent_buff.tres")));
+    hoverTip.Description = String.Format(hoverTip.Description, autoSkillHPGain, playerStrength);
+    return hoverTip;
+  }
+
+  public override HoverTip GetSkill1HoverTip()
+  {
+    return Skill1HoverTip();
+  }
+  
+  public static HoverTip Skill1HoverTip()
   {
     var hoverTip = new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_1.title"),
@@ -83,13 +106,31 @@ public sealed class DolorisAlly : AbstractAlly
     return hoverTip;
   }
 
-  public override IHoverTip GetSkill2HoverTip()
+  public override HoverTip GetSkill2HoverTip()
+  {
+    return Skill2HoverTip();
+  }
+  
+  public static HoverTip Skill2HoverTip()
   {
     var hoverTip = new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_2.title"),
       new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_2.description"));
     hoverTip.Description = String.Format(hoverTip.Description, skill2HPCost, damage, strength);
     return hoverTip;
+  }
+
+  public static HoverTip GenerateCardHoverTip()
+  {
+    var startingHPText = GetStartingHPText(StartingHP);
+    var autoSkillHoverTip = AutoSkillHoverTip();
+    var skill1HoverTip = Skill1HoverTip();
+    var skill2HoverTip = Skill2HoverTip();
+    var hoverTipDescription = startingHPText + "\n" + autoSkillHoverTip.Description + "\n" + 
+                              skill1HoverTip.Description + "\n" + skill2HoverTip.Description;
+    return new HoverTip(
+      new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY.title"),
+      hoverTipDescription);
   }
 
   public override int GetSkill1HPCost()

@@ -10,4 +10,7 @@ public static class AveMujicaKeywords
     
     [CustomEnum] [KeywordProperties(AutoKeywordPosition.After)]
     public static CardKeyword Compose;
+    
+    [CustomEnum] [KeywordProperties(AutoKeywordPosition.After)]
+    public static CardKeyword Awaken;
 }

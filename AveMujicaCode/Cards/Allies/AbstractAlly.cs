@@ -1,13 +1,18 @@
 ﻿using BaseLib.Abstracts;
 using BaseLib.Patches.Content;
 using Godot;
+using HarmonyLib;
+using MegaCrit.Sts2.Core.Assets;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.HoverTips;
+using MegaCrit.Sts2.Core.Localization;
+using MegaCrit.Sts2.Core.MonsterMoves.Intents;
 using MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine;
+using MegaCrit.Sts2.Core.Nodes.Cards;
 using MegaCrit.Sts2.Core.Nodes.Combat;
 using MegaCrit.Sts2.Core.Nodes.Rooms;
 using MegaCrit.Sts2.Core.ValueProps;
@@ -134,11 +139,32 @@ public abstract class AbstractAlly : CustomMonsterModel
   
   public abstract Task Skill2();
   
-  public abstract IHoverTip GetSkill1HoverTip();
+  public abstract HoverTip GetAutoSkillHoverTip();
   
-  public abstract IHoverTip GetSkill2HoverTip();
+  public abstract HoverTip GetSkill1HoverTip();
+  
+  public abstract HoverTip GetSkill2HoverTip();
 
   public abstract int GetSkill1HPCost();
 
   public abstract int GetSkill2HPCost();
+
+  public static string GetStartingHPText(int startingHP)
+  {
+    var startingHPLoc = new LocString("static_hover_tips", "AVEMUJICA-ALLY_STARTING_HP.description");
+    var startingHPText = startingHPLoc.GetFormattedText();
+    return String.Format(startingHPText, startingHP);
+  }
+}
+
+[HarmonyPatch(typeof(AbstractIntent), nameof(AbstractIntent.GetHoverTip))]
+public static class SetAllyIntentHoverTip
+{
+  public static void Postfix(AbstractIntent __instance, IEnumerable<Creature> targets, Creature owner, ref HoverTip __result)
+  {
+    if (owner.Monster is AbstractAlly ally)
+    {
+      __result = ally.GetAutoSkillHoverTip();
+    }
+  }
 }

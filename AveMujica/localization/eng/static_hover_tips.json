@@ -1,5 +1,8 @@
 {
-  "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.description": "+2 HP: You gain 1 [gold]Strength[/gold].",
+  "AVEMUJICA-ALLY_STARTING_HP.description": "Starts with \\{0\\} HP.",
+  "AVEMUJICA-DOLORIS_ALLY.title": "Doloris",
+  "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.title": "Empower",
+  "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.description": "+\\{0\\} HP: You gain \\{1\\} [gold]Strength[/gold].",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_1.title": "Encouragement",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_1.description": "-\\{0\\} HP: You gain \\{1\\} [gold]Block[/gold].",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_2.title": "How Dare You!",
