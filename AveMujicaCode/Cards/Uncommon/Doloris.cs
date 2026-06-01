@@ -1,11 +1,13 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Allies;
+using Godot;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
-public class Doloris() : AveMujicaCard(2,
+public class Doloris() : AllyCard(2,
     CardType.Power, CardRarity.Uncommon,
     TargetType.Self)
 {
