@@ -5,7 +5,7 @@
   "AVEMUJICA-DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold].",
   "AVEMUJICA-DEFEND.title": "Defend",
   
-  "AVEMUJICA-WALTZ.description": "Deal {Damage:diff()} damage. \n[gold]Rhythm Attack:[/gold] Deal {Damage:diff()} damage again.",
+  "AVEMUJICA-WALTZ.description": "Deal {Damage:diff()} damage.\n[gold]Rhythm Attack:[/gold] Deal {Damage:diff()} damage again.",
   "AVEMUJICA-WALTZ.title": "Waltz",
   
   "AVEMUJICA-MUSE.description": "{IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold].",
@@ -14,8 +14,45 @@
   "AVEMUJICA-SONG.description": "",
   "AVEMUJICA-SONG.title": "Song",
 
-  "AVEMUJICA-MOONLIT_STRIKE.description": "Deal {Damage:diff()} damage. \n Gain {Oblivion:diff()} [gold]Oblivion[/gold].",
+  "AVEMUJICA-MOONLIT_STRIKE.description": "Deal {Damage:diff()} damage.\nGain {Oblivion:diff()} [gold]Oblivion[/gold].",
   "AVEMUJICA-MOONLIT_STRIKE.title": "Moonlit Strike",
+
+  "AVEMUJICA-FORTE.description": "Deal {Damage:diff()} damage.\n[gold]Compose[/gold] \"Gain {Compose:diff()} [gold]Strength[/gold] this turn.\"",
+  "AVEMUJICA-FORTE.title": "Forte",
+
+  "AVEMUJICA-PIANO.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Compose[/gold] \"Gain {Compose:diff()} [gold]Block[/gold].\"",
+  "AVEMUJICA-PIANO.title": "Piano",
+
+  "AVEMUJICA-FEEL_THE_BEAT.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Rhythm Skill:[/gold] Draw {Cards:diff()} cards.",
+  "AVEMUJICA-FEEL_THE_BEAT.title": "Feel the Beat",
+
+  "AVEMUJICA-MOONLIGHT_BARRIER.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain {Oblivion:diff()} [gold]Oblivion[/gold].",
+  "AVEMUJICA-MOONLIGHT_BARRIER.title": "Moonlight Barrier",
+
+  "AVEMUJICA-NEW_MOON_AWAKENING.description": "Gain {Oblivion:diff()} [gold]Oblivion[/gold].\n[gold]Exhaust[/gold] {Cards:diff()} card.",
+  "AVEMUJICA-NEW_MOON_AWAKENING.title": "New Moon Awakening",
+
+  "AVEMUJICA-FIRST_QUARTER_YEARNING.description": "Put a card from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold]. If it doesn't gain [gold]Oblivion[/gold], add [gold]Exhaust[/gold] to it.",
+  "AVEMUJICA-FIRST_QUARTER_YEARNING.title": "First Quarter's Yearning",
+  "AVEMUJICA-FIRST_QUARTER_YEARNING.selectionScreenPrompt": "Choose a card to put back in your Hand.",
+
+  "AVEMUJICA-WANING_MOON_DESIRE.description": "Deal {Damage:diff()} damage.\nGain {Oblivion:diff()} [gold]Oblivion[/gold].",
+  "AVEMUJICA-WANING_MOON_DESIRE.title": "Waning Moon's Desire",
+
+  "AVEMUJICA-ACCELERANDO.description": "Deal {Damage:diff()} damage.\nIf you [gold]Exhausted[/gold] a card this turn, gain {Energy:energyIcons()} next turn.",
+  "AVEMUJICA-ACCELERANDO.title": "Accelerando",
+
+  "AVEMUJICA-LARGO.description": "Deal {Damage:diff()} damage.\n[gold]Exhaust[/gold] {Cards:diff()} card.",
+  "AVEMUJICA-LARGO.title": "Largo",
+
+  "AVEMUJICA-CRESCENDO.description": "Deal {Damage:diff()} damage to ALL enemies {Repeat:diff()} times.",
+  "AVEMUJICA-CRESCENDO.title": "Crescendo",
+
+  "AVEMUJICA-DIMINUENDO.description": "Gain {Block:diff()} [gold]Block[/gold].",
+  "AVEMUJICA-DIMINUENDO.title": "Diminuendo",
+
+  "AVEMUJICA-SELF_IMPROVEMENT.description": "{IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold].\n[gold]Upgrade[/gold] {Cards:diff()} random cards in your [gold]Draw Pile[/gold].",
+  "AVEMUJICA-SELF_IMPROVEMENT.title": "Self Improvement",
 
   "AVEMUJICA-DOLORIS.description": "[gold]Awaken Doloris[/gold].",
   "AVEMUJICA-DOLORIS.title": "Doloris"

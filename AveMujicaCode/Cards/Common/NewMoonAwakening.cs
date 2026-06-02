@@ -1,20 +1,19 @@
 ﻿using AveMujica.AveMujicaCode.Powers;
-using BaseLib.Utils;
+using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Common;
 
-public class MoonlitStrike() : AveMujicaCard(1,
-    CardType.Attack, CardRarity.Common,
-    TargetType.AnyEnemy)
+public class NewMoonAwakening() : AveMujicaCard(1,
+    CardType.Skill, CardRarity.Common,
+    TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(7, ValueProp.Move), new PowerVar<Oblivion>(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<Oblivion>(4), new CardsVar(1)];
 
     protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.GainsOblivion];
     
@@ -22,17 +21,21 @@ public class MoonlitStrike() : AveMujicaCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CommonActions.CardAttack(this, play).Execute(choiceContext);
         await PowerCmd.Apply<Oblivion>(choiceContext, Owner.Creature, DynamicVars["Oblivion"].BaseValue, Owner.Creature, this);
+        CardSelectorPrefs prefs = new CardSelectorPrefs(CardSelectorPrefs.ExhaustSelectionPrompt, (int)DynamicVars.Cards.BaseValue);
+        CardModel? card = (await CardSelectCmd.FromHand(choiceContext, Owner, prefs, null, this)).FirstOrDefault();
+        if (card == null)
+            return;
+        await CardCmd.Exhaust(choiceContext, card);
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(2);
-        DynamicVars["Oblivion"].UpgradeValueBy(1);
+        DynamicVars["Oblivion"].UpgradeValueBy(2);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromPower(ModelDb.Power<Oblivion>())
+        HoverTipFactory.FromPower(ModelDb.Power<Oblivion>()),
+        HoverTipFactory.FromKeyword(CardKeyword.Exhaust)
     ];
 }

@@ -10,11 +10,11 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Common;
 
-public class MoonlitStrike() : AveMujicaCard(1,
+public class WaningMoonDesire() : AveMujicaCard(0,
     CardType.Attack, CardRarity.Common,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(7, ValueProp.Move), new PowerVar<Oblivion>(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(2, ValueProp.Move), new PowerVar<Oblivion>(1)];
 
     protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.GainsOblivion];
     
@@ -28,7 +28,7 @@ public class MoonlitStrike() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(2);
+        DynamicVars.Damage.UpgradeValueBy(1);
         DynamicVars["Oblivion"].UpgradeValueBy(1);
     }
     

@@ -10,25 +10,27 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Common;
 
-public class MoonlitStrike() : AveMujicaCard(1,
-    CardType.Attack, CardRarity.Common,
-    TargetType.AnyEnemy)
+public class MoonlightBarrier() : AveMujicaCard(1,
+    CardType.Skill, CardRarity.Common,
+    TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(7, ValueProp.Move), new PowerVar<Oblivion>(2)];
-
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(6, ValueProp.Move), new PowerVar<Oblivion>(2)];
+    
     protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.GainsOblivion];
     
+    public override bool GainsBlock => true;
+
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CommonActions.CardAttack(this, play).Execute(choiceContext);
+        await CommonActions.CardBlock(this, DynamicVars.Block, play);
         await PowerCmd.Apply<Oblivion>(choiceContext, Owner.Creature, DynamicVars["Oblivion"].BaseValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(2);
+        DynamicVars.Block.UpgradeValueBy(2);
         DynamicVars["Oblivion"].UpgradeValueBy(1);
     }
     

@@ -1,11 +1,11 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Token;
+using AveMujica.AveMujicaCode.Powers;
 using BaseLib.Abstracts;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace AveMujica.AveMujicaCode.Cards.CardMods;
 
@@ -18,7 +18,7 @@ public class ShackleMod : CardModifier
         if (Owner != null && play.Card == Owner)
         {
             ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
-            await PowerCmd.Apply<PiercingWailPower>(choiceContext, play.Target, ShackleAmt, Owner.Owner.Creature, Owner);
+            await PowerCmd.Apply<SongTempStrPower>(choiceContext, play.Target, ShackleAmt, Owner.Owner.Creature, Owner);
         }
     }
     
