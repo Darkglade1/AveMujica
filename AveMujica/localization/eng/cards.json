@@ -5,7 +5,7 @@
   "AVEMUJICA-DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold].",
   "AVEMUJICA-DEFEND.title": "Defend",
   
-  "AVEMUJICA-WALTZ.description": "Deal {Damage:diff()} damage.\n[gold]Rhythm Attack:[/gold] Deal {Damage:diff()} damage again.",
+  "AVEMUJICA-WALTZ.description": "Deal {Damage:diff()} damage.\n[gold]Perform Attack:[/gold] Deal {Damage:diff()} damage again.",
   "AVEMUJICA-WALTZ.title": "Waltz",
   
   "AVEMUJICA-MUSE.description": "{IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold].",
@@ -23,7 +23,7 @@
   "AVEMUJICA-PIANO.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Compose[/gold] \"Gain {Compose:diff()} [gold]Block[/gold].\"",
   "AVEMUJICA-PIANO.title": "Piano",
 
-  "AVEMUJICA-FEEL_THE_BEAT.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Rhythm Skill:[/gold] Draw {Cards:diff()} cards.",
+  "AVEMUJICA-FEEL_THE_BEAT.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Perform Skill:[/gold] Draw {Cards:diff()} cards.",
   "AVEMUJICA-FEEL_THE_BEAT.title": "Feel the Beat",
 
   "AVEMUJICA-MOONLIGHT_BARRIER.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain {Oblivion:diff()} [gold]Oblivion[/gold].",
@@ -39,20 +39,32 @@
   "AVEMUJICA-WANING_MOON_DESIRE.description": "Deal {Damage:diff()} damage.\nGain {Oblivion:diff()} [gold]Oblivion[/gold].",
   "AVEMUJICA-WANING_MOON_DESIRE.title": "Waning Moon's Desire",
 
-  "AVEMUJICA-ACCELERANDO.description": "Deal {Damage:diff()} damage.\nIf you [gold]Exhausted[/gold] a card this turn, gain {Energy:energyIcons()} next turn.",
-  "AVEMUJICA-ACCELERANDO.title": "Accelerando",
+  "AVEMUJICA-AFTERGLOW.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf you [gold]Performed[/gold] this turn, gain {Energy:energyIcons()} next turn.",
+  "AVEMUJICA-AFTERGLOW.title": "Afterglow",
 
-  "AVEMUJICA-LARGO.description": "Deal {Damage:diff()} damage.\n[gold]Exhaust[/gold] {Cards:diff()} card.",
-  "AVEMUJICA-LARGO.title": "Largo",
+  "AVEMUJICA-LINGERING_REGRETS.description": "Deal {Damage:diff()} damage.\n[gold]Exhaust[/gold] {Cards:diff()} card.",
+  "AVEMUJICA-LINGERING_REGRETS.title": "Lingering Regrets",
 
   "AVEMUJICA-CRESCENDO.description": "Deal {Damage:diff()} damage to ALL enemies {Repeat:diff()} times.",
   "AVEMUJICA-CRESCENDO.title": "Crescendo",
 
-  "AVEMUJICA-DIMINUENDO.description": "Gain {Block:diff()} [gold]Block[/gold].",
+  "AVEMUJICA-DIMINUENDO.description": "Enemy loses {StrengthLoss:diff()} [gold]Strength[/gold] this turn.",
   "AVEMUJICA-DIMINUENDO.title": "Diminuendo",
 
   "AVEMUJICA-SELF_IMPROVEMENT.description": "{IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold].\n[gold]Upgrade[/gold] {Cards:diff()} random cards in your [gold]Draw Pile[/gold].",
   "AVEMUJICA-SELF_IMPROVEMENT.title": "Self Improvement",
+
+  "AVEMUJICA-LATE_NIGHTS.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Compose[/gold] twice.",
+  "AVEMUJICA-LATE_NIGHTS.title": "Late Nights",
+
+  "AVEMUJICA-REHEARSAL.description": "Draw {Cards:diff()} cards.\n[gold]Perform Attack:[/gold] Gain {VigorPower:diff()} [gold]Vigor[/gold].",
+  "AVEMUJICA-REHEARSAL.title": "Rehearsal",
+
+  "AVEMUJICA-REPETITION.description": "Deal {Damage:diff()} damage.\n[gold]Perform Attack Skill:[/gold] Deal {Damage:diff()} damage again.",
+  "AVEMUJICA-REPETITION.title": "Repetition",
+
+  "AVEMUJICA-ALLEGRO.description": "Deal {Damage:diff()} damage.",
+  "AVEMUJICA-ALLEGRO.title": "Allegro",
 
   "AVEMUJICA-DOLORIS.description": "[gold]Awaken Doloris[/gold].",
   "AVEMUJICA-DOLORIS.title": "Doloris"

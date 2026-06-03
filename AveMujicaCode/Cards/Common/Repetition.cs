@@ -7,11 +7,11 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Basic;
 
-public class Waltz() : PerformCard(1,
-    CardType.Attack, CardRarity.Basic,
+public class Repetition() : PerformCard(0,
+    CardType.Attack, CardRarity.Common,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(4, ValueProp.Move)];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
@@ -21,7 +21,7 @@ public class Waltz() : PerformCard(1,
 
     protected override List<CardType[]> PerformSequences()
     {
-        CardType[] cardTypes = [CardType.Attack];
+        CardType[] cardTypes = [CardType.Attack, CardType.Skill];
         return [cardTypes];
     }
 

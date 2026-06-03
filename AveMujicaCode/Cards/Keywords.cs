@@ -6,7 +6,7 @@ namespace AveMujica.AveMujicaCode.Cards;
 public static class AveMujicaKeywords
 {
     [CustomEnum] [KeywordProperties(AutoKeywordPosition.After)]
-    public static CardKeyword Rhythm;
+    public static CardKeyword Perform;
     
     [CustomEnum] [KeywordProperties(AutoKeywordPosition.After)]
     public static CardKeyword Compose;
