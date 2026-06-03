@@ -12,7 +12,9 @@ public class Diminuendo() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Common,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new("StrengthLoss", 7)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new("StrengthLoss", 8)];
+    
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromPower<StrengthPower>()
@@ -29,6 +31,6 @@ public class Diminuendo() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars["StrengthLoss"].UpgradeValueBy(3);
+        DynamicVars["StrengthLoss"].UpgradeValueBy(6);
     }
 }

@@ -57,14 +57,27 @@
   "AVEMUJICA-LATE_NIGHTS.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Compose[/gold] twice.",
   "AVEMUJICA-LATE_NIGHTS.title": "Late Nights",
 
-  "AVEMUJICA-REHEARSAL.description": "Draw {Cards:diff()} cards.\n[gold]Perform Attack:[/gold] Gain {VigorPower:diff()} [gold]Vigor[/gold].",
+  "AVEMUJICA-REHEARSAL.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].\n[gold]Perform Attack:[/gold] Gain {Energy:energyIcons()}.",
   "AVEMUJICA-REHEARSAL.title": "Rehearsal",
 
   "AVEMUJICA-REPETITION.description": "Deal {Damage:diff()} damage.\n[gold]Perform Attack Skill:[/gold] Deal {Damage:diff()} damage again.",
   "AVEMUJICA-REPETITION.title": "Repetition",
 
-  "AVEMUJICA-ALLEGRO.description": "Deal {Damage:diff()} damage.",
+  "AVEMUJICA-ALLEGRO.description": "Draw {Cards:diff()} cards.\n[gold]Compose[/gold] \"Draw {Compose:diff()} cards.\"",
   "AVEMUJICA-ALLEGRO.title": "Allegro",
+
+  "AVEMUJICA-SONIC_BLAST.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.",
+  "AVEMUJICA-SONIC_BLAST.title": "Sonic Blast",
+
+  "AVEMUJICA-PROPER_TIMING.description": "Gain {Block:diff()} [gold]Block[/gold].\nAdd [gold]Retain[/gold] to a card in your [gold]Hand[/gold].",
+  "AVEMUJICA-PROPER_TIMING.selectionScreenPrompt": "Select a card to add [gold]Retain[/gold] to.",
+  "AVEMUJICA-PROPER_TIMING.title": "Proper Timing",
+
+  "AVEMUJICA-DISSATISFACTION.description": "Deal {Damage:diff()} damage.\nAdd a [gold]Blank Song[/gold] to your [gold]Hand[/gold].",
+  "AVEMUJICA-DISSATISFACTION.title": "Dissatisfaction",
+
+  "AVEMUJICA-ARPEGGIO.description": "Deal {Damage:diff()} damage to ALL enemies.",
+  "AVEMUJICA-ARPEGGIO.title": "Arpeggio",
 
   "AVEMUJICA-DOLORIS.description": "[gold]Awaken Doloris[/gold].",
   "AVEMUJICA-DOLORIS.title": "Doloris"

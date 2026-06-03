@@ -7,10 +7,10 @@ using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 
-namespace AveMujica.AveMujicaCode.Cards.Common;
+namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
 public class FirstQuarterYearning() : AveMujicaCard(0,
-    CardType.Skill, CardRarity.Common,
+    CardType.Skill, CardRarity.Uncommon,
     TargetType.None)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
