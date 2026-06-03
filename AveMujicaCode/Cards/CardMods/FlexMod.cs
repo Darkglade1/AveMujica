@@ -21,6 +21,6 @@ public class FlexMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += $"Gain {FlexAmt} Strength this turn." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+        description += $"Gain {FlexAmt} [gold]Strength[/gold] this turn." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
 }

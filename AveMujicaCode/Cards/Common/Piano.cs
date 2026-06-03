@@ -22,7 +22,7 @@ public class Piano() : AveMujicaCard(1,
     { 
         await CommonActions.CardBlock(this, DynamicVars.Block, play);
         var blockMod = (BlockMod)ModelDb.Get<BlockMod>().MutableClone();
-        blockMod.BlockAmt = (int)DynamicVars["Compose"].BaseValue;
+        blockMod.BlockVar = new BlockVar((int)DynamicVars["Compose"].BaseValue, ValueProp.Move);
         await ComposeHelper.AddComposeEffectsToSong([blockMod], Owner);
     }
 

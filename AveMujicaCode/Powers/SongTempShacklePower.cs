@@ -5,9 +5,9 @@ using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace AveMujica.AveMujicaCode.Powers;
 
-public class SongTempStrPower : TemporaryStrengthPower, ICustomModel
+public class SongTempShacklePower : TemporaryStrengthPower, ICustomModel
 {
     public override AbstractModel OriginModel => ModelDb.Card<Song>();
 
-    protected override bool IsPositive => true;
+    protected override bool IsPositive => false;
 }

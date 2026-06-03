@@ -20,6 +20,6 @@ public class GainEnergyMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += $"Gain {GainEnergyAmt} Energy." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+        description += $"Gain {GainEnergyAmt} [gold]Energy[/gold]." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
 }

@@ -32,6 +32,6 @@ public class VulnerableMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += $"Apply {VulnerableAmt} Vulnerable." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+        description += $"Apply {VulnerableAmt} [gold]Vulnerable[/gold]." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
 }

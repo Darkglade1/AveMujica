@@ -1,13 +1,20 @@
-﻿using AveMujica.AveMujicaCode.Cards.Token;
+﻿using AveMujica.AveMujicaCode.Cards.Allies;
+using AveMujica.AveMujicaCode.Cards.Token;
 using AveMujica.AveMujicaCode.Overlays;
 using BaseLib.Abstracts;
 using BaseLib.Utils;
+using HarmonyLib;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
+using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.MonsterMoves.Intents;
+using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.CardMods;
 
@@ -93,9 +100,9 @@ public class ComposeHelper
     private static List<CardModifier> GenerateRandomComposeEffects(Player owner, bool isUpgraded)
     {
         var damageMod = (DamageMod)ModelDb.Get<DamageMod>().MutableClone();
-        damageMod.DamageAmt = isUpgraded ? 8 : 6;
+        damageMod.DamageVar = new DamageVar(isUpgraded ? 8 : 6, ValueProp.Move);
         var blockMod = (BlockMod)ModelDb.Get<BlockMod>().MutableClone();
-        blockMod.BlockAmt = isUpgraded ? 6 : 4;
+        blockMod.BlockVar = new BlockVar(isUpgraded ? 6 : 4, ValueProp.Move);
         var randomDamageMod = (RandomDamageMod)ModelDb.Get<RandomDamageMod>().MutableClone();
         randomDamageMod.DamageAmt = isUpgraded ? 10 : 8;
         var shackleMod = (ShackleMod)ModelDb.Get<ShackleMod>().MutableClone();
@@ -111,9 +118,8 @@ public class ComposeHelper
         
         var items = new List<WeightedComposeEffect>
         {
-            new WeightedComposeEffect { ComposeEffect = damageMod, Weight = 25 },
+            new WeightedComposeEffect { ComposeEffect = damageMod, Weight = 35 },
             new WeightedComposeEffect { ComposeEffect = blockMod, Weight = 25 },
-            new WeightedComposeEffect { ComposeEffect = randomDamageMod, Weight = 10 },
             new WeightedComposeEffect { ComposeEffect = shackleMod, Weight = 10 },
             new WeightedComposeEffect { ComposeEffect = weakMod, Weight = 10 },
             new WeightedComposeEffect { ComposeEffect = vulnerableMod, Weight = 10 },
@@ -174,6 +180,34 @@ public class ComposeHelper
         else
         {
             return "\n";
+        }
+    }
+    
+    [HarmonyPatch(typeof(CardModel), nameof(CardModel.UpdateDynamicVarPreview))]
+    public static class UpdateCardModPreview
+    {
+        public static void Postfix(CardModel __instance, CardPreviewMode previewMode,
+            Creature? target,
+            DynamicVarSet dynamicVarSet)
+        {
+            if (__instance is Song)
+            {
+                var cardMods = CardModifier.Modifiers(__instance);
+                foreach (var cardMod in cardMods)
+                {
+                    if (__instance.CombatState != null)
+                    {
+                        if (cardMod is DamageMod damageMod)
+                        {
+                            damageMod.DamageVar?.UpdateCardPreview(__instance, previewMode, target, true);
+                        }
+                        if (cardMod is BlockMod blockMod)
+                        {
+                            blockMod.BlockVar?.UpdateCardPreview(__instance, previewMode, target, true);
+                        }
+                    }
+                }
+            }
         }
     }
 }

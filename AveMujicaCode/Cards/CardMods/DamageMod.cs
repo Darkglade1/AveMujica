@@ -11,14 +11,18 @@ namespace AveMujica.AveMujicaCode.Cards.CardMods;
 
 public class DamageMod : CardModifier
 {
-    public int DamageAmt { get; set; }
+    public DynamicVar? DamageVar
+    {
+        get;
+        set;
+    }
     
     public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay play)
     {
-        if (Owner != null && play.Card == Owner)
+        if (Owner != null && play.Card == Owner && DamageVar != null)
         {
             ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
-            await DamageCmd.Attack(DamageAmt).FromCard(Owner).Targeting(play.Target)
+            await DamageCmd.Attack(DamageVar.BaseValue).FromCard(Owner).Targeting(play.Target)
                 .WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
         }
     }
@@ -34,6 +38,24 @@ public class DamageMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += $"Deal {DamageAmt} damage." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+        if (DamageVar != null)
+        {
+            var roundedDamage = Math.Floor(DamageVar.PreviewValue);
+            if (roundedDamage != DamageVar.BaseValue)
+            {
+                if (roundedDamage > DamageVar.BaseValue)
+                {
+                    description += $"Deal [green]{roundedDamage}[/green] damage." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+                }
+                else
+                {
+                    description += $"Deal [red]{roundedDamage}[/red] damage." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+                }
+            }
+            else
+            {
+                description += $"Deal {DamageVar.BaseValue} damage." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+            }
+        }
     }
 }

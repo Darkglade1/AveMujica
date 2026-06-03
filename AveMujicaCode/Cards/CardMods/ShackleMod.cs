@@ -18,7 +18,7 @@ public class ShackleMod : CardModifier
         if (Owner != null && play.Card == Owner)
         {
             ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
-            await PowerCmd.Apply<SongTempStrPower>(choiceContext, play.Target, ShackleAmt, Owner.Owner.Creature, Owner);
+            await PowerCmd.Apply<SongTempShacklePower>(choiceContext, play.Target, ShackleAmt, Owner.Owner.Creature, Owner);
         }
     }
     
@@ -32,6 +32,6 @@ public class ShackleMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += $"Enemy loses {ShackleAmt} Strength this turn." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+        description += $"Enemy loses {ShackleAmt} [gold]Strength[/gold] this turn." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
 }
