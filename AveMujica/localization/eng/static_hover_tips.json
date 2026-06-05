@@ -1,10 +1,19 @@
 {
   "AVEMUJICA-ALLY_STARTING_HP.description": "Starts with \\{0\\} HP.",
+  
   "AVEMUJICA-DOLORIS_ALLY.title": "Doloris",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.title": "Empower",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.description": "+\\{0\\} HP: You gain \\{1\\} [gold]Strength[/gold].",
-  "AVEMUJICA-DOLORIS_ALLY_SKILL_1.title": "Encouragement",
+  "AVEMUJICA-DOLORIS_ALLY_SKILL_1.title": "Protectiveness",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_1.description": "-\\{0\\} HP: You gain \\{1\\} [gold]Block[/gold].",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_2.title": "How Dare You!",
-  "AVEMUJICA-DOLORIS_ALLY_SKILL_2.description": "-\\{0\\} HP: Whenever you are attacked, [gold]Doloris[/gold] deals \\{1\\} damage to the attacker and increases this effect's damage by \\{2\\}."
+  "AVEMUJICA-DOLORIS_ALLY_SKILL_2.description": "-\\{0\\} HP: Whenever you are attacked, [gold]Doloris[/gold] deals \\{1\\} damage to the attacker and increases this effect's damage by \\{2\\}.",
+
+  "AVEMUJICA-MORTIS_ALLY.title": "Mortis",
+  "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.title": "Defense",
+  "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.description": "+\\{0\\} HP: You gain \\{1\\} [gold]Block[/gold].",
+  "AVEMUJICA-MORTIS_ALLY_SKILL_1.title": "Halves of a Whole",
+  "AVEMUJICA-MORTIS_ALLY_SKILL_1.description": "-\\{0\\} HP: You draw \\{1\\} cards.",
+  "AVEMUJICA-MORTIS_ALLY_SKILL_2.title": "Do Not Fear Death",
+  "AVEMUJICA-MORTIS_ALLY_SKILL_2.description": "-\\{0\\} HP: [gold]Mortis[/gold] gains \\{1\\} [gold]Intangible[/gold] and absorbs all incoming unblocked attack damage this turn."
 }

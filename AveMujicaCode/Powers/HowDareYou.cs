@@ -10,7 +10,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Powers;
 
-public class HowDareYou() : AveMujicaPower
+public class HowDareYou : AveMujicaPower
 {
     private bool triggeredAnimThisTurn;
     

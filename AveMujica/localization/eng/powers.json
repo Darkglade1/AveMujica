@@ -5,5 +5,9 @@
 
   "AVEMUJICA-HOW_DARE_YOU.description": "Whenever you are attacked, [gold]Doloris[/gold] deals [blue]6[/blue] damage to the attacker and increases this effect's damage by [blue]1[/blue].",
   "AVEMUJICA-HOW_DARE_YOU.smartDescription": "Whenever you are attacked, [gold]Doloris[/gold] deals [blue]{Amount}[/blue] damage to the attacker and increases this effect's damage by [blue]1[/blue].",
-  "AVEMUJICA-HOW_DARE_YOU.title": "How Dare You!"
+  "AVEMUJICA-HOW_DARE_YOU.title": "How Dare You!",
+
+  "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage this turn.",
+  "AVEMUJICA-DO_NOT_FEAR_DEATH.smartDescription": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage this turn.",
+  "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "Do Not Fear Death"
 }

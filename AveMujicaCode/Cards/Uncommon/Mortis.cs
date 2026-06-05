@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
-public class Doloris() : AllyCard(2,
+public class Mortis() : AllyCard(2,
     CardType.Power, CardRarity.Uncommon,
     TargetType.None)
 {
@@ -16,7 +16,7 @@ public class Doloris() : AllyCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await AllyHelper.Awaken<DolorisAlly>(choiceContext, Owner, DolorisAlly.StartingHP, this);
+        await AllyHelper.Awaken<MortisAlly>(choiceContext, Owner, MortisAlly.StartingHP, this);
     }
 
     protected override void OnUpgrade()
@@ -26,6 +26,6 @@ public class Doloris() : AllyCard(2,
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Awaken),
-        DolorisAlly.GenerateCardHoverTip()
+        MortisAlly.GenerateCardHoverTip()
     ];
 }
