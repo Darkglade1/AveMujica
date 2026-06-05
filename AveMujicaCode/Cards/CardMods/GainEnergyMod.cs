@@ -10,7 +10,7 @@ public class GainEnergyMod : CardModifier
 {
     public int GainEnergyAmt { get; set; }
     
-    public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay play)
+    public override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         if (Owner != null && play.Card == Owner)
         {

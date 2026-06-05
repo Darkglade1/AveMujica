@@ -10,7 +10,7 @@ public class DrawCardMod : CardModifier
 {
     public int DrawCardAmt { get; set; }
     
-    public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay play)
+    public override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         if (Owner != null && play.Card == Owner)
         {

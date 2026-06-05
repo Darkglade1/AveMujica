@@ -9,9 +9,13 @@ namespace AveMujica.AveMujicaCode.Cards.CardMods;
 
 public class FlexMod : CardModifier
 {
+    public FlexMod()
+    {
+        Priority = 25;
+    }
     public int FlexAmt { get; set; }
     
-    public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay play)
+    public override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         if (Owner != null && play.Card == Owner)
         {

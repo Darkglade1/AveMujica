@@ -11,9 +11,13 @@ namespace AveMujica.AveMujicaCode.Cards.CardMods;
 
 public class ShackleMod : CardModifier
 {
+    public ShackleMod()
+    {
+        Priority = 50;
+    }
     public int ShackleAmt { get; set; }
     
-    public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay play)
+    public override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         if (Owner != null && play.Card == Owner)
         {
@@ -22,9 +26,9 @@ public class ShackleMod : CardModifier
         }
     }
     
-    public override void AfterClonedOnCard(CardModel card)
+    public override void OnInitialApplication()
     {
-        if (card is Song song)
+        if (Owner is Song song)
         {
             song.IsTargeted = true;
         }

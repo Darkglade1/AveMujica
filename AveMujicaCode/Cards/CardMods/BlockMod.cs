@@ -10,13 +10,17 @@ namespace AveMujica.AveMujicaCode.Cards.CardMods;
 
 public class BlockMod : CardModifier
 {
+    public BlockMod()
+    {
+        Priority = -100;
+    }
     public DynamicVar? BlockVar
     {
         get;
         set;
     }
     
-    public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay play)
+    public override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         if (Owner != null && play.Card == Owner && BlockVar != null)
         {

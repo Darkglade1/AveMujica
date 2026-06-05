@@ -10,9 +10,13 @@ namespace AveMujica.AveMujicaCode.Cards.CardMods;
 
 public class RandomDamageMod : CardModifier
 {
+    public RandomDamageMod()
+    {
+        Priority = -25;
+    }
     public int DamageAmt { get; set; }
     
-    public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay play)
+    public override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         if (Owner != null && Owner.CombatState != null && play.Card == Owner)
         {
@@ -20,9 +24,9 @@ public class RandomDamageMod : CardModifier
         }
     }
     
-    public override void AfterClonedOnCard(CardModel card)
+    public override void OnInitialApplication()
     {
-        if (card is Song song)
+        if (Owner is Song song)
         {
             song.IsAttack = true;
         }
