@@ -1,4 +1,5 @@
-﻿using Godot;
+﻿using AveMujica.AveMujicaCode.Cards.Allies;
+using Godot;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
@@ -17,41 +18,59 @@ public class AllyHelper
         var combatState = summoner.Creature.CombatState;
         ArgumentNullException.ThrowIfNull(combatState);
         ArgumentNullException.ThrowIfNull(summoner.PlayerCombatState);
-        var existing = combatState.Allies.FirstOrDefault(c => c.Monster is T && c.PetOwner == summoner);
+        var existing = combatState.Allies.FirstOrDefault(c => c.Monster is T && c.PetOwner == summoner && c.IsAlive);
     
-        var isReviving = existing is { IsAlive: false };
-    
-        if (existing is { IsAlive: true })
+        if (existing != null)
         {
             await CreatureCmd.GainMaxHp(existing, hp);
-            return existing;
         }
-    
-        if (isReviving)
-            summoner.PlayerCombatState.AddPetInternal(existing!);
         else
         {
             existing = await PlayerCmd.AddPet<T>(summoner);
-            var node = NCombatRoom.Instance?.GetCreatureNode(existing);
             var playerNode = NCombatRoom.Instance?.GetCreatureNode(summoner.Creature);
- 
-            if (node != null && source is CardModel && playerNode != null)
+            var index = 0;
+            foreach (Creature pet in summoner.Creature.Pets)
             {
-                node.Position = playerNode.Position + new Vector2(250f, -75f);
-                node.Modulate = Colors.Transparent;
-                node.CreateTween()
-                    .TweenProperty(node, "modulate", Colors.White, 0.35)
-                    .SetDelay(0.1);
+                if (pet.Monster is AbstractAlly && pet.IsAlive)
+                {
+                    var node = NCombatRoom.Instance?.GetCreatureNode(pet);
+                    if (node != null && source is CardModel && playerNode != null)
+                    {
+                        node.Position = CalculatePosition(index);
+                        node.Modulate = Colors.Transparent;
+                        node.CreateTween()
+                            .TweenProperty(node, "modulate", Colors.White, 0.35)
+                            .SetDelay(0.1);
+                    }
+                    node?.TrackBlockStatus(summoner.Creature);
+                    node?.ToggleIsInteractable(true);
+                    index++;
+                }
             }
-            node?.TrackBlockStatus(summoner.Creature);
-            node?.ToggleIsInteractable(true); 
+            await CreatureCmd.SetMaxHp(existing, hp);
+            await CreatureCmd.Heal(existing, hp, false);
         }
-
-        ArgumentNullException.ThrowIfNull(existing);
-        await CreatureCmd.SetMaxHp(existing, hp);
-        await CreatureCmd.Heal(existing, hp, isReviving);
         
         return existing;
+    }
+
+    public static Vector2 CalculatePosition(int index)
+    {
+        var firstPosition = new Vector2(-230f, 125f);
+        var secondPosition = new Vector2(-630f, 125f);
+        var thirdPosition = new Vector2(-780f, 125f);
+        var fourthPosition = new Vector2(-80f, 125f);
+        switch (index)
+        {
+            case 0:
+                return firstPosition;
+            case 1:
+                return secondPosition;
+            case 2:
+                return thirdPosition;
+            default:
+                return fourthPosition;
+        }
     }
 }
 
