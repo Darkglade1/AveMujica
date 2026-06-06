@@ -19,6 +19,8 @@ public class Afterglow() : AveMujicaCard(1,
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [EnergyHoverTip, HoverTipFactory.FromKeyword(AveMujicaKeywords.Perform)];
     
     protected override bool ShouldGlowGoldInternal => PerformedThisTurn;
+    
+    public override bool GainsBlock => true;
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

@@ -50,7 +50,6 @@ public sealed class AmorisAlly : AbstractAlly
             await CreatureCmd.Damage(new BlockingPlayerChoiceContext(), hittableEnemy, damage, ValueProp.Move, Creature);
           }
         }
-        
       }
       await CreatureCmd.GainMaxHp(Creature, autoSkillHPGain);
     }

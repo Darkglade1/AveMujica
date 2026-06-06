@@ -122,5 +122,20 @@
   "AVEMUJICA-AL_FINE.title": "Al Fine",
 
   "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "Gain {Oblivion:diff()} [gold]Oblivion[/gold] X times.",
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "Crescent Moon Echos"
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "Crescent Moon Echos",
+
+  "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain {Oblivion:diff()} [gold]Oblivion[/gold] for each enemy in combat.",
+  "AVEMUJICA-FULL_MOON_MASQUERADE.title": "Full Moon Masquerade",
+
+  "AVEMUJICA-WAXING_MOON_LONGING.description": "Gain [gold]Block[/gold] equal to your [gold]Oblivion[/gold]{IfUpgraded:show:+3}.{InCombat:\\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold])|}",
+  "AVEMUJICA-WAXING_MOON_LONGING.title": "Waxing Moon's Longing",
+
+  "AVEMUJICA-WHITE_KEYS_BLACK_KEYS.description": "[gold]Perform Skill:[/gold] Apply {WeakPower:diff()} [gold]Weak[/gold].\n[gold]Perform Attack:[/gold] Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
+  "AVEMUJICA-WHITE_KEYS_BLACK_KEYS.title": "White Keys, Black Keys",
+
+  "AVEMUJICA-FERMATA.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Perform Attack Skill:[/gold] Draw a card next turn.",
+  "AVEMUJICA-FERMATA.title": "Fermata",
+
+  "AVEMUJICA-FULL_HOUSE.description": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each time you [gold]Performed[/gold] this combat.",
+  "AVEMUJICA-FULL_HOUSE.title": "Full House"
 }
