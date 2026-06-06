@@ -9,5 +9,13 @@
 
   "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage this turn.",
   "AVEMUJICA-DO_NOT_FEAR_DEATH.smartDescription": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage this turn.",
-  "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "Do Not Fear Death"
+  "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "Do Not Fear Death",
+
+  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "Receives double damage from Attacks this turn.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION.smartDescription": "Receives double damage from Attacks this turn.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION.title": "Moonlight Execution",
+
+  "AVEMUJICA-AS_FIERCE_AS_FIRE.description": "Whenever you Attack this turn, [gold]Amoris[/gold] gains [blue]1[/blue] [gold]Strength[/gold].",
+  "AVEMUJICA-AS_FIERCE_AS_FIRE.smartDescription": "Whenever you Attack this turn, [gold]Amoris[/gold] gains [blue]{Amount}[/blue] [gold]Strength[/gold].",
+  "AVEMUJICA-AS_FIERCE_AS_FIRE.title": "As Fierce As Fire"
 }

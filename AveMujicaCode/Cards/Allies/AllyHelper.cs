@@ -58,8 +58,8 @@ public class AllyHelper
     {
         var firstPosition = new Vector2(-230f, 125f);
         var secondPosition = new Vector2(-630f, 125f);
-        var thirdPosition = new Vector2(-780f, 125f);
-        var fourthPosition = new Vector2(-80f, 125f);
+        var thirdPosition = new Vector2(-800f, 125f);
+        var fourthPosition = new Vector2(-60f, 125f);
         switch (index)
         {
             case 0:

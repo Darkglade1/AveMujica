@@ -43,20 +43,17 @@ public class HowDareYou : AveMujicaPower
     {
         if (target != Owner || dealer == null || !props.IsPoweredAttack() && !(cardSource is Omnislice))
             return;
-        var existing = Owner.CombatState?.Allies.FirstOrDefault(c => c.Monster is DolorisAlly && c.PetOwner == Owner.Player);
-        if (existing is { IsAlive: true })
+        var existing = Owner.CombatState?.Allies.FirstOrDefault(c => c.Monster is DolorisAlly && c.PetOwner == Owner.Player && c.IsAlive);
+        if (existing != null && existing.Monster != null)
         {
-            if (existing.Monster != null)
+            Flash();
+            if (!triggeredAnimThisTurn)
             {
-                Flash();
-                if (!triggeredAnimThisTurn)
-                {
-                    await CreatureCmd.TriggerAnim(existing, "Attack", 0);
-                    triggeredAnimThisTurn = true;
-                }
-                await CreatureCmd.Damage(choiceContext, dealer, Amount, ValueProp.Unpowered | ValueProp.SkipHurtAnim, existing, null);
-                Amount++;
+                await CreatureCmd.TriggerAnim(existing, "Attack", 0);
+                triggeredAnimThisTurn = true;
             }
+            await CreatureCmd.Damage(choiceContext, dealer, Amount, ValueProp.Unpowered | ValueProp.SkipHurtAnim, existing, null);
+            Amount++;
         }
     }
 }

@@ -58,6 +58,7 @@ public sealed class MortisAlly : AbstractAlly
     var owner = Creature.PetOwner;
     if (owner != null)
     {
+      ActedThisTurn = true;
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
       await PaySkillCost(skill1HPCost);
       await CardPileCmd.Draw(new ThrowingPlayerChoiceContext(), cardDraw, owner);

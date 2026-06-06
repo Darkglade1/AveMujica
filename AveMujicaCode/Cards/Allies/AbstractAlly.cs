@@ -10,6 +10,8 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
+using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.MonsterMoves.Intents;
 using MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine;
 using MegaCrit.Sts2.Core.Nodes.Cards;
@@ -166,5 +168,26 @@ public static class SetAllyIntentHoverTip
     {
       __result = ally.GetAutoSkillHoverTip();
     }
+  }
+}
+
+[HarmonyPatch(typeof(PersonalHivePower), nameof(PersonalHivePower.AfterDamageReceived))]
+public static class PatchEntomancer
+{
+  public static bool Prefix(PersonalHivePower __instance, PlayerChoiceContext choiceContext,
+    Creature target,
+    DamageResult _,
+    ValueProp props,
+    Creature? dealer,
+    CardModel? cardSource,
+    ref Task __result)
+  {
+    if (dealer != null && dealer.Monster is AbstractAlly)
+    {
+      __result = Task.CompletedTask;
+      return false;
+    }
+
+    return true;
   }
 }

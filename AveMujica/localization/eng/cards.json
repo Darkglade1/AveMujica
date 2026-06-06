@@ -83,5 +83,11 @@
   "AVEMUJICA-DOLORIS.title": "Doloris",
 
   "AVEMUJICA-MORTIS.description": "[gold]Awaken Mortis[/gold].",
-  "AVEMUJICA-MORTIS.title": "Mortis"
+  "AVEMUJICA-MORTIS.title": "Mortis",
+
+  "AVEMUJICA-TIMORIS.description": "[gold]Awaken Timoris[/gold].",
+  "AVEMUJICA-TIMORIS.title": "Timoris",
+
+  "AVEMUJICA-AMORIS.description": "[gold]Awaken Amoris[/gold].",
+  "AVEMUJICA-AMORIS.title": "Amoris"
 }

@@ -10,10 +10,26 @@
   "AVEMUJICA-DOLORIS_ALLY_SKILL_2.description": "-\\{0\\} HP: Whenever you are attacked, [gold]Doloris[/gold] deals \\{1\\} damage to the attacker and increases this effect's damage by \\{2\\}.",
 
   "AVEMUJICA-MORTIS_ALLY.title": "Mortis",
-  "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.title": "Defense",
+  "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.title": "Defend",
   "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.description": "+\\{0\\} HP: You gain \\{1\\} [gold]Block[/gold].",
   "AVEMUJICA-MORTIS_ALLY_SKILL_1.title": "Halves of a Whole",
   "AVEMUJICA-MORTIS_ALLY_SKILL_1.description": "-\\{0\\} HP: You draw \\{1\\} cards.",
   "AVEMUJICA-MORTIS_ALLY_SKILL_2.title": "Do Not Fear Death",
-  "AVEMUJICA-MORTIS_ALLY_SKILL_2.description": "-\\{0\\} HP: [gold]Mortis[/gold] gains \\{1\\} [gold]Intangible[/gold] and absorbs all incoming unblocked attack damage this turn."
+  "AVEMUJICA-MORTIS_ALLY_SKILL_2.description": "-\\{0\\} HP: [gold]Mortis[/gold] gains \\{1\\} [gold]Intangible[/gold] and absorbs all incoming unblocked attack damage this turn.",
+
+  "AVEMUJICA-TIMORIS_ALLY.title": "Timoris",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.title": "Debuffing Attack",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description": "+\\{0\\} HP: Deals \\{1\\} damage and applies \\{2\\} [gold]Vulnerable[/gold] to the highest HP enemy.",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title": "Moonlight Execution",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "-\\{0\\} HP: ALL [gold]Vulnerable[/gold] enemies take double damage from Attacks this turn.",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title": "Shuddering Strings",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "-\\{0\\} HP: ALL enemies lose \\{1\\} [gold]Strength[/gold] this turn.",
+
+  "AVEMUJICA-AMORIS_ALLY.title": "Amoris",
+  "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.title": "Area Attack",
+  "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.description": "+\\{0\\} HP: Deal \\{1\\} damage \\{2\\} times to ALL enemies.",
+  "AVEMUJICA-AMORIS_ALLY_SKILL_1.title": "As Fierce as Flame",
+  "AVEMUJICA-AMORIS_ALLY_SKILL_1.description": "-\\{0\\} HP: Whenever you Attack this turn, [gold]Amoris[/gold] gains \\{1\\} [gold]Strength[/gold].",
+  "AVEMUJICA-AMORIS_ALLY_SKILL_2.title": "As Strong as Wheat",
+  "AVEMUJICA-AMORIS_ALLY_SKILL_2.description": "-\\{0\\} HP: [gold]Amoris[/gold] hits \\{1\\} more times with her \"+\" ability this combat."
 }

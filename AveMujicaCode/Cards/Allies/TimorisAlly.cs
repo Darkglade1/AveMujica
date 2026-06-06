@@ -16,42 +16,55 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Allies;
 
-public sealed class DolorisAlly : AbstractAlly
+public sealed class TimorisAlly : AbstractAlly
 {
-  public static int StartingHP = 4;
-  private static int block = 16;
-  private static int damage = 6;
-  private static int damageIncrease = 1;
-  private static int playerStrength = 1;
+  public static int StartingHP = 3;
+  private static int damage = 9;
+  private static int vulnerable = 1;
+  private static int strengthLoss = 10;
   private static int autoSkillHPGain = 2;
-  private static int skill1HPCost = 3;
-  private static int skill2HPCost = 6;
-  public override string CustomVisualPath => "doloris/doloris.tscn".CharacterPath();
+  private static int skill1HPCost = 4;
+  private static int skill2HPCost = 5;
+  public override string CustomVisualPath => "timoris/timoris.tscn".CharacterPath();
   
   protected override MoveState GetDefaultMoveState()
   {
-    return new MoveState("BUFF_MOVE", Buff, new BuffIntent());
+    return new MoveState("ATTACK_MOVE", Attack, new SingleAttackIntent(damage));
   }
   
-  private async Task Buff(IReadOnlyList<Creature> targets)
+  private async Task Attack(IReadOnlyList<Creature> targets)
   {
     var owner = Creature.PetOwner;
     if (owner != null && !ActedThisTurn)
     {
-      await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
-      await PowerCmd.Apply<StrengthPower>(new ThrowingPlayerChoiceContext(), owner.Creature, playerStrength, Creature, null);
+      await CreatureCmd.TriggerAnim(Creature, "Attack", 0);
+      IReadOnlyList<Creature>? hittableEnemies = Creature.CombatState?.HittableEnemies;
+      if (hittableEnemies != null && hittableEnemies.Count != 0)
+      {
+        Creature? strongestEnemy = hittableEnemies.MaxBy((Func<Creature, int>) (c => c.CurrentHp));
+        if (strongestEnemy != null)
+        {
+          await CreatureCmd.Damage(new BlockingPlayerChoiceContext(), strongestEnemy, damage, ValueProp.Move, Creature);
+          var power = await PowerCmd.Apply<VulnerablePower>(new ThrowingPlayerChoiceContext(), strongestEnemy, vulnerable, Creature, null);
+          if (power != null && power.Amount == 1)
+          {
+            power.SkipNextDurationTick = true;
+          }
+        }
+      }
+      
       await CreatureCmd.GainMaxHp(Creature, autoSkillHPGain);
     }
   }
 
   protected override void SetUpSkill1Button()
   {
-    SetUpSkillButton("res://AveMujica/images/charui/BlockIcon.png", 1);
+    SetUpSkillButton("res://AveMujica/images/charui/DebuffIcon.png", 1);
   }
 
   protected override void SetUpSkill2Button()
   {
-    SetUpSkillButton("res://AveMujica/images/charui/BuffIcon.png", 2);
+    SetUpSkillButton("res://AveMujica/images/charui/StrongDebuffIcon.png", 2);
   }
   
   public override async Task Skill1()
@@ -62,7 +75,17 @@ public sealed class DolorisAlly : AbstractAlly
       ActedThisTurn = true;
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
       await PaySkillCost(skill1HPCost);
-      await CreatureCmd.GainBlock(owner.Creature, block, ValueProp.Unpowered, null);
+      if (Creature.CombatState != null)
+      {
+        foreach (Creature enemy in Creature.CombatState.HittableEnemies)
+        {
+          VulnerablePower? enemyVulnerable = enemy.GetPower<VulnerablePower>();
+          if (enemyVulnerable != null)
+          {
+            await PowerCmd.Apply<MoonlightExecution>(new ThrowingPlayerChoiceContext(), enemy, 1, Creature, null);
+          }
+        }
+      }
     }
   }
   
@@ -74,7 +97,13 @@ public sealed class DolorisAlly : AbstractAlly
       ActedThisTurn = true;
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
       await PaySkillCost(skill2HPCost);
-      await PowerCmd.Apply<HowDareYou>(new ThrowingPlayerChoiceContext(), owner.Creature, damage, Creature, null);
+      if (Creature.CombatState != null)
+      {
+        foreach (Creature enemy in Creature.CombatState.HittableEnemies)
+        {
+          await PowerCmd.Apply<ShudderingStrings>(new ThrowingPlayerChoiceContext(), enemy, strengthLoss, Creature, null);
+        }
+      }
     }
   }
   
@@ -86,10 +115,10 @@ public sealed class DolorisAlly : AbstractAlly
   public static HoverTip AutoSkillHoverTip()
   {
     var hoverTip = new HoverTip(
-      new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.title"),
-      new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.description"),
-      PreloadManager.Cache.GetTexture2D(ImageHelper.GetImagePath("atlases/intent_atlas.sprites/intent_buff.tres")));
-    hoverTip.Description = String.Format(hoverTip.Description, autoSkillHPGain, playerStrength);
+      new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.title"),
+      new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description"),
+      PreloadManager.Cache.GetTexture2D(ImageHelper.GetImagePath("atlases/intent_atlas.sprites/attack/intent_attack_2.tres")));
+    hoverTip.Description = String.Format(hoverTip.Description, autoSkillHPGain, damage, vulnerable);
     return hoverTip;
   }
 
@@ -101,9 +130,9 @@ public sealed class DolorisAlly : AbstractAlly
   public static HoverTip Skill1HoverTip()
   {
     var hoverTip = new HoverTip(
-      new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_1.title"),
-      new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_1.description"));
-    hoverTip.Description = String.Format(hoverTip.Description, skill1HPCost, block);
+      new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title"),
+      new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description"));
+    hoverTip.Description = String.Format(hoverTip.Description, skill1HPCost);
     return hoverTip;
   }
 
@@ -115,9 +144,9 @@ public sealed class DolorisAlly : AbstractAlly
   public static HoverTip Skill2HoverTip()
   {
     var hoverTip = new HoverTip(
-      new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_2.title"),
-      new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_2.description"));
-    hoverTip.Description = String.Format(hoverTip.Description, skill2HPCost, damage, damageIncrease);
+      new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title"),
+      new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description"));
+    hoverTip.Description = String.Format(hoverTip.Description, skill2HPCost, strengthLoss);
     return hoverTip;
   }
 
@@ -130,7 +159,7 @@ public sealed class DolorisAlly : AbstractAlly
     var hoverTipDescription = startingHPText + "\n" + autoSkillHoverTip.Description + "\n" + 
                               skill1HoverTip.Description + "\n" + skill2HoverTip.Description;
     return new HoverTip(
-      new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY.title"),
+      new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY.title"),
       hoverTipDescription);
   }
 
@@ -148,20 +177,14 @@ public sealed class DolorisAlly : AbstractAlly
   {
     AnimState startState = new AnimState("Start");
     AnimState animState = new AnimState("Idle", isLooping: true);
-    AnimState animState2 = new AnimState("Skill_1_Begin");
-    AnimState animState3 = new AnimState("Skill_2_Begin");
-    AnimState animState4 = new AnimState("Skill_2_Loop");
-    AnimState animState5 = new AnimState("Skill_2_End");
+    AnimState animState2 = new AnimState("Skill_1");
     AnimState state = new AnimState("Die");
     startState.NextState = animState;
     animState2.NextState = animState;
-    animState3.NextState = animState4;
-    animState4.NextState = animState5;
-    animState5.NextState = animState;
     CreatureAnimator creatureAnimator = new CreatureAnimator(startState, controller);
     creatureAnimator.AddAnyState("Idle", animState);
     creatureAnimator.AddAnyState("Dead", state);
-    creatureAnimator.AddAnyState("Attack", animState4);
+    creatureAnimator.AddAnyState("Attack", animState2);
     creatureAnimator.AddAnyState("Cast", animState2);
     return creatureAnimator;
   }
