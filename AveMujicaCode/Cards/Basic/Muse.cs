@@ -9,7 +9,7 @@ namespace AveMujica.AveMujicaCode.Cards.Basic;
 
 public class Muse() : AveMujicaCard(0,
     CardType.Skill, CardRarity.Basic,
-    TargetType.None)
+    TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
 

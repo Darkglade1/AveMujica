@@ -11,7 +11,7 @@ namespace AveMujica.AveMujicaCode.Cards.Common;
 
 public class Allegro() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Common,
-    TargetType.None)
+    TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2), new ComposeVar(2)];
     

@@ -1,4 +1,5 @@
-﻿using AveMujica.AveMujicaCode.Powers;
+﻿using AveMujica.AveMujicaCode.Cards;
+using AveMujica.AveMujicaCode.Cards.Token;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -9,36 +10,31 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
-public class FirstQuarterYearning() : AveMujicaCard(0,
+public class Recital() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
-    
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromPower(ModelDb.Power<Oblivion>()),
-        HoverTipFactory.FromKeyword(CardKeyword.Exhaust)
-    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
         CardSelectorPrefs prefs = new CardSelectorPrefs(SelectionScreenPrompt, 1);
-        CardModel? card = (await CardSelectCmd.FromCombatPile(choiceContext, PileType.Discard.GetPile(Owner), Owner, prefs)).FirstOrDefault();
-        if (card == null)
+        CardModel? selection = (await CardSelectCmd.FromCombatPile(choiceContext,  PileType.Exhaust.GetPile(Owner), Owner, prefs, c => c is Song)).FirstOrDefault();
+        if (selection == null)
             return;
-        if (!card.Tags.Contains(AveMujicaCardTags.GainsOblivion))
-        {
-            CardCmd.ApplyKeyword(card, CardKeyword.Exhaust);
-        }
-        await CardPileCmd.Add(card, PileType.Hand);
+        await CardPileCmd.Add(selection, PileType.Hand);
     }
 
     protected override void OnUpgrade()
     {
-        RemoveKeyword(CardKeyword.Exhaust);
+        EnergyCost.UpgradeBy(-1);
     }
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose)
+    ];
 }

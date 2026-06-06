@@ -7,7 +7,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 public class Timoris() : AllyCard(2,
     CardType.Power, CardRarity.Uncommon,
-    TargetType.None)
+    TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
 

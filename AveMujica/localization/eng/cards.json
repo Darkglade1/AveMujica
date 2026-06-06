@@ -89,5 +89,22 @@
   "AVEMUJICA-TIMORIS.title": "Timoris",
 
   "AVEMUJICA-AMORIS.description": "[gold]Awaken Amoris[/gold].",
-  "AVEMUJICA-AMORIS.title": "Amoris"
+  "AVEMUJICA-AMORIS.title": "Amoris",
+
+  "AVEMUJICA-RECITAL.description": "Put a [gold]Song[/gold] from your [gold]Exhaust Pile[/gold] into your [gold]Hand[/gold].",
+  "AVEMUJICA-RECITAL.selectionScreenPrompt": "Choose a [gold]Song[/gold] to add to your [gold]Hand[/gold].",
+  "AVEMUJICA-RECITAL.title": "Recital",
+
+  "AVEMUJICA-TRANSCRIBE.description": "Gain {Block:diff()} [gold]Block[/gold].\nAdd a copy of the in-progress [gold]Song[/gold] into your [gold]Hand[/gold].",
+  "AVEMUJICA-TRANSCRIBE.title": "Transcribe",
+
+  "AVEMUJICA-DISTRIBUTE.description": "Choose a [gold]Song[/gold]. Add {IfUpgraded:show:{Cards} copies|a copy} of that card into your [gold]Hand[/gold].",
+  "AVEMUJICA-DISTRIBUTE.selectionScreenPrompt": "Choose a [gold]Song[/gold] to Copy.",
+  "AVEMUJICA-DISTRIBUTE.title": "Distribute Copies",
+
+  "AVEMUJICA-FORTISSIMO.description": "[gold]Compose[/gold] \"Gain {Compose:diff()} [gold]Strength[/gold].\"",
+  "AVEMUJICA-FORTISSIMO.title": "Fortissimo",
+
+  "AVEMUJICA-ARIA.description": "Deal {Damage:diff()} damage.\n[gold]Compose[/gold] \"Deal {Compose:diff()} damage.\"",
+  "AVEMUJICA-ARIA.title": "Aria in Red"
 }

@@ -8,7 +8,7 @@ namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
 public class Mortis() : AllyCard(2,
     CardType.Power, CardRarity.Uncommon,
-    TargetType.None)
+    TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
 
