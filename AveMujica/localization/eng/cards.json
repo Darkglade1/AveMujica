@@ -106,5 +106,21 @@
   "AVEMUJICA-FORTISSIMO.title": "Fortissimo",
 
   "AVEMUJICA-ARIA.description": "Deal {Damage:diff()} damage.\n[gold]Compose[/gold] \"Deal {Compose:diff()} damage.\"",
-  "AVEMUJICA-ARIA.title": "Aria in Red"
+  "AVEMUJICA-ARIA.title": "Aria in Red",
+
+  "AVEMUJICA-A_CAPPELLA.description": "Deal {Damage:diff()} damage.\n[gold]Compose[/gold] \"Gain {Energy:energyIcons()}.\"",
+  "AVEMUJICA-A_CAPPELLA.title": "A Cappella in Yellow",
+
+  "AVEMUJICA-DA_CAPO.description": "{IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold].\nIf you played a [gold]Song[/gold] this turn, add [gold]Replay[/gold] and [gold]Exhaust[/gold] to a card in your [gold]Hand[/gold].",
+  "AVEMUJICA-DA_CAPO.selectionScreenPrompt": "Choose a card to add [gold]Replay[/gold] and [gold]Exhaust[/gold] to.",
+  "AVEMUJICA-DA_CAPO.title": "Da Capo",
+
+  "AVEMUJICA-AL_CODA.description": "Deal {Damage:diff()} damage.\nIf you played a [gold]Song[/gold] this turn, {IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold] twice.",
+  "AVEMUJICA-AL_CODA.title": "Al Coda",
+
+  "AVEMUJICA-AL_FINE.description": "Deal {Damage:diff()} damage.\nIf you played a [gold]Song[/gold] this turn, gain {Oblivion:diff()} [gold]Oblivion[/gold] twice.",
+  "AVEMUJICA-AL_FINE.title": "Al Fine",
+
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "Gain {Oblivion:diff()} [gold]Oblivion[/gold] X times.",
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "Crescent Moon Echos"
 }
