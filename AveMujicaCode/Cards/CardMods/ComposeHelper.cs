@@ -40,7 +40,6 @@ public class ComposeHelper
         {
             CardModel song = (CardModel)ModelDb.Card<Song>().MutableClone();
             CardModifier.AddModifier(song, composeEffects[i]);
-            composeEffects[i].AfterClonedOnCard(song);
             cardsToChoose[i] = song;
         }
         var cardsList = cardsToChoose.ToList();
@@ -77,7 +76,6 @@ public class ComposeHelper
             foreach (var cardMod in mods)
             {
                 CardModifier.AddModifier(currentSong, cardMod);
-                cardMod.AfterClonedOnCard(currentSong);
             }
 
             var numComposes = ComposeFields.CurrentComposeNum.Get(combatState);
