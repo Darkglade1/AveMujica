@@ -5,6 +5,7 @@ using HarmonyLib;
 using MegaCrit.Sts2.Core.Assets;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
@@ -87,6 +88,10 @@ public abstract class AbstractAlly : CustomMonsterModel
 
   protected void SetUpSkillButton(string path, int skillNum)
   {
+    if (!LocalContext.IsMe(Creature.PetOwner))
+    {
+      return;
+    }
     NCreature? creatureNode = NCombatRoom.Instance?.GetCreatureNode(Creature);
     Marker2D? specialNode = creatureNode?.GetSpecialNode<Marker2D>("%IntentPos");
     if (specialNode != null)

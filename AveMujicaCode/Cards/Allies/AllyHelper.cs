@@ -2,6 +2,7 @@
 using AveMujica.AveMujicaCode.Cards.Allies;
 using Godot;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -10,7 +11,7 @@ using MegaCrit.Sts2.Core.Nodes.Rooms;
 
 public class AllyHelper
 {
-    public static async Task<Creature> Awaken<T>(
+    public static async Task Awaken<T>(
         PlayerChoiceContext ctx,
         Player summoner,
         int hp,
@@ -51,8 +52,6 @@ public class AllyHelper
             await CreatureCmd.SetMaxHp(existing, hp);
             await CreatureCmd.Heal(existing, hp, false);
         }
-        
-        return existing;
     }
 
     public static Vector2 CalculatePosition(int index)
