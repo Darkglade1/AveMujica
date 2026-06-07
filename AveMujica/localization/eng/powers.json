@@ -21,5 +21,9 @@
 
   "AVEMUJICA-FUGUE_POWER.description": "The next card you play that [gold]Exhausts[/gold] or [gold]Retains[/gold] costs [blue]0[/blue].",
   "AVEMUJICA-FUGUE_POWER.smartDescription": "The next [blue]{Amount}[/blue] {Amount:plural:card|cards} you play that [gold]{Amount:plural:Exhausts|Exhaust}[/gold] or [gold]{Amount:plural:Retains|Retain}[/gold] {Amount:plural:costs|cost} [blue]0[/blue].",
-  "AVEMUJICA-FUGUE_POWER.title": "Fugue in Black"
+  "AVEMUJICA-FUGUE_POWER.title": "Fugue in Black",
+
+  "AVEMUJICA-LARGE_REPERTOIRE_POWER.description": "At the end of your turn, gain [gold]Block[/gold] equal to the number of cards in your [gold]Hand[/gold].",
+  "AVEMUJICA-LARGE_REPERTOIRE_POWER.smartDescription": "At the end of your turn, gain [blue]{Amount}[/blue] [gold]Block[/gold] for each card in your [gold]Hand[/gold].",
+  "AVEMUJICA-LARGE_REPERTOIRE_POWER.title": "Large Repertoire"
 }

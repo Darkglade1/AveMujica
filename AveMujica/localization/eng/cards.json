@@ -153,5 +153,20 @@
   "AVEMUJICA-SYMBOL_AIR.title": "Symbol II: Air",
 
   "AVEMUJICA-FUGUE.description": "Deal {Damage:diff()} damage.\nThe next card you play that [gold]Exhausts[/gold] or [gold]Retains[/gold] costs [blue]0[/blue].",
-  "AVEMUJICA-FUGUE.title": "Fugue in Black"
+  "AVEMUJICA-FUGUE.title": "Fugue in Black",
+
+  "AVEMUJICA-SYMBOL_WATER.description": "Gain {Block:diff()} [gold]Block[/gold].",
+  "AVEMUJICA-SYMBOL_WATER.title": "Symbol III: Water",
+
+  "AVEMUJICA-SYMBOL_EARTH.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.\nWhen [gold]Retained[/gold], increase the number of hits by 1 this combat.",
+  "AVEMUJICA-SYMBOL_EARTH.title": "Symbol IV: Earth",
+
+  "AVEMUJICA-CONCERTO.description": "Deal {Damage:diff()} damage.\nGain [gold]Vigor[/gold] equal to the number of cards in your [gold]Hand[/gold].",
+  "AVEMUJICA-CONCERTO.title": "Concerto in White",
+
+  "AVEMUJICA-WRITERS_BLOCK.description": "Gain {Block:diff()} [gold]Block[/gold].\nAdd {Cards:diff()} [gold]Blank Songs[/gold] to your [gold]Hand[/gold].",
+  "AVEMUJICA-WRITERS_BLOCK.title": "Writer's Block",
+
+  "AVEMUJICA-LARGE_REPERTOIRE.description": "At the end of your turn, gain [gold]Block[/gold] equal to the number of cards in your [gold]Hand[/gold].",
+  "AVEMUJICA-LARGE_REPERTOIRE.title": "Large Repertoire"
 }
