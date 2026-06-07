@@ -23,7 +23,23 @@
   "AVEMUJICA-FUGUE_POWER.smartDescription": "The next [blue]{Amount}[/blue] {Amount:plural:card|cards} you play that [gold]{Amount:plural:Exhausts|Exhaust}[/gold] or [gold]{Amount:plural:Retains|Retain}[/gold] {Amount:plural:costs|cost} [blue]0[/blue].",
   "AVEMUJICA-FUGUE_POWER.title": "Fugue in Black",
 
+  "AVEMUJICA-INSPIRING_SONGS_POWER.description": "Whenever you play 3 [gold]Songs[/gold], gain an Energy.",
+  "AVEMUJICA-INSPIRING_SONGS_POWER.smartDescription": "Whenever you play {Cards:diff()} [gold]Songs[/gold], gain {Amount:energyIcons()}.",
+  "AVEMUJICA-INSPIRING_SONGS_POWER.title": "Inspiring Songs",
+
+  "AVEMUJICA-CANTABILE_POWER.description": "Whenever you [gold]Perform[/gold], gain [gold]Block[/gold].",
+  "AVEMUJICA-CANTABILE_POWER.smartDescription": "Whenever you [gold]Perform[/gold], gain [blue]{Amount}[/blue] [gold]Block[/gold].",
+  "AVEMUJICA-CANTABILE_POWER.title": "Cantabile in Violet",
+
   "AVEMUJICA-LARGE_REPERTOIRE_POWER.description": "At the end of your turn, gain [gold]Block[/gold] equal to the number of cards in your [gold]Hand[/gold].",
   "AVEMUJICA-LARGE_REPERTOIRE_POWER.smartDescription": "At the end of your turn, gain [blue]{Amount}[/blue] [gold]Block[/gold] for each card in your [gold]Hand[/gold].",
-  "AVEMUJICA-LARGE_REPERTOIRE_POWER.title": "Large Repertoire"
+  "AVEMUJICA-LARGE_REPERTOIRE_POWER.title": "Large Repertoire",
+
+  "AVEMUJICA-MOONLIGHT_SONATA_POWER.description": "Whenever you gain [gold]Oblivion[/gold], draw a card.",
+  "AVEMUJICA-MOONLIGHT_SONATA_POWER.smartDescription": "Whenever you gain [gold]Oblivion[/gold], draw [blue]{Amount}[/blue] {Amount:plural:card|cards}.",
+  "AVEMUJICA-MOONLIGHT_SONATA_POWER.title": "Moonlight Sonata",
+
+  "AVEMUJICA-MELODY_POWER.description": "At the end of your turn, if you [gold]Performed[/gold] this turn, gain [gold]Strength[/gold].",
+  "AVEMUJICA-MELODY_POWER.smartDescription": "At the end of your turn, if you [gold]Performed[/gold] this turn, gain [blue]{Amount}[/blue] [gold]Strength[/gold].",
+  "AVEMUJICA-MELODY_POWER.title": "Melody"
 }

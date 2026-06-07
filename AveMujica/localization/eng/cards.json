@@ -167,6 +167,21 @@
   "AVEMUJICA-WRITERS_BLOCK.description": "Gain {Block:diff()} [gold]Block[/gold].\nAdd {Cards:diff()} [gold]Blank Songs[/gold] to your [gold]Hand[/gold].",
   "AVEMUJICA-WRITERS_BLOCK.title": "Writer's Block",
 
+  "AVEMUJICA-INSPIRING_SONGS.description": "Whenever you play {Cards:diff()} [gold]Songs[/gold], gain {Energy:energyIcons()}.",
+  "AVEMUJICA-INSPIRING_SONGS.title": "Inspiring Songs",
+
+  "AVEMUJICA-CANTABILE.description": "Whenever you [gold]Perform[/gold], gain {CantabilePower:diff()} [gold]Block[/gold].",
+  "AVEMUJICA-CANTABILE.title": "Cantabile in Violet",
+
   "AVEMUJICA-LARGE_REPERTOIRE.description": "At the end of your turn, gain [gold]Block[/gold] equal to the number of cards in your [gold]Hand[/gold].",
-  "AVEMUJICA-LARGE_REPERTOIRE.title": "Large Repertoire"
+  "AVEMUJICA-LARGE_REPERTOIRE.title": "Large Repertoire",
+
+  "AVEMUJICA-MOONLIGHT_SONATA.description": "Whenever you gain [gold]Oblivion[/gold], draw {MoonlightSonataPower:diff()} {MoonlightSonataPower:plural:card|cards}.",
+  "AVEMUJICA-MOONLIGHT_SONATA.title": "Moonlight Sonata",
+
+  "AVEMUJICA-MELODY.description": "At the end of your turn, if you [gold]Performed[/gold] this turn, gain {MelodyPower:diff()} [gold]Strength[/gold].",
+  "AVEMUJICA-MELODY.title": "Melody",
+
+  "AVEMUJICA-BAND_RECRUITMENT.description": "Choose 1 of 3 {IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Awaken[/gold] cards to add to your [gold]Hand[/gold].",
+  "AVEMUJICA-BAND_RECRUITMENT.title": "Band Recruitment"
 }

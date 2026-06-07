@@ -3,14 +3,17 @@ using BaseLib.Extensions;
 using BaseLib.Utils;
 using AveMujica.AveMujicaCode.Character;
 using AveMujica.AveMujicaCode.Extensions;
+using AveMujica.AveMujicaCode.Powers;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Combat.History;
 using MegaCrit.Sts2.Core.Combat.History.Entries;
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards;
 
@@ -47,6 +50,12 @@ public abstract class PerformCard(int cost, CardType type, CardRarity rarity, Ta
         if (IsPerformActiveForSequence(cardTypes))
         {
             await DoPerformEffect(choiceContext, play, cardTypes);
+            var cantabilePower = play.Card.Owner.Creature.GetPower<CantabilePower>();
+            if (cantabilePower != null)
+            {
+                cantabilePower.Flash();
+                await CreatureCmd.GainBlock(play.Card.Owner.Creature, cantabilePower.Amount, ValueProp.Unpowered, null);
+            }
             ICombatState? combatState = CombatState ?? Owner.Creature.CombatState;
             if (!CombatManager.Instance.IsOverOrEnding && combatState != null)
             {

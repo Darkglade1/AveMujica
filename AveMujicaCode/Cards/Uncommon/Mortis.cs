@@ -21,7 +21,7 @@ public class Mortis() : AllyCard(2,
 
     protected override void OnUpgrade()
     {
-
+        EnergyCost.UpgradeBy(-1);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
