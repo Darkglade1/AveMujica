@@ -21,8 +21,8 @@ namespace AveMujica.AveMujicaCode.Cards.CardMods;
 public class ComposeHelper
 {
     public class ComposeFields {
-        public static readonly SpireField<ICombatState, int> CurrentComposeNum = new(() => 0);
-        public static readonly SpireField<ICombatState, CardModel> CurrentSong = new(() => null);
+        public static readonly SpireField<ICombatState, Dictionary<Player, int>> CurrentComposeNum = new(() => new Dictionary<Player, int>());
+        public static readonly SpireField<ICombatState, Dictionary<Player, CardModel?>> CurrentSong = new(() => new Dictionary<Player, CardModel?>());
     }
 
     public static int NumComposesSongComplete = 3;
@@ -66,7 +66,12 @@ public class ComposeHelper
         var combatState = owner.Creature.CombatState;
         if (combatState != null)
         {
-            CardModel? currentSong = ComposeFields.CurrentSong.Get(combatState);
+            var songDict = ComposeFields.CurrentSong.Get(combatState);
+            if (songDict == null)
+            {
+                songDict = new Dictionary<Player, CardModel?>();
+            }
+            CardModel? currentSong = songDict.GetValueOrDefault(owner);
             if (currentSong == null)
             {
                 Song newSong = combatState.CreateCard<Song>(owner);
@@ -78,20 +83,28 @@ public class ComposeHelper
                 CardModifier.AddModifier(currentSong, cardMod);
             }
 
-            var numComposes = ComposeFields.CurrentComposeNum.Get(combatState);
+            var numComposeDict = ComposeFields.CurrentComposeNum.Get(combatState);
+            if (numComposeDict == null)
+            {
+                numComposeDict = new Dictionary<Player, int>();
+            }
+
+            var numComposes = numComposeDict.GetValueOrDefault(owner);
             numComposes++;
             if (numComposes >= NumComposesSongComplete)
             {
                 await CardPileCmd.AddGeneratedCardToCombat(currentSong, PileType.Hand, owner);
-                ComposeFields.CurrentSong.Set(combatState, null);
-                ComposeFields.CurrentComposeNum.Set(combatState, 0);
+                songDict[owner] = null;
+                numComposeDict[owner] = 0;
             }
             else
             {
-                ComposeFields.CurrentSong.Set(combatState, currentSong);
-                ComposeFields.CurrentComposeNum.Set(combatState, numComposes);
+                songDict[owner] = currentSong;
+                numComposeDict[owner] = numComposes;
             }
-            SongPreview.Instance?.UpdateDisplay(combatState);
+            ComposeFields.CurrentSong.Set(combatState, songDict);
+            ComposeFields.CurrentComposeNum.Set(combatState, numComposeDict);
+            SongPreview.Instance?.UpdateDisplay(combatState, owner);
         }
     }
 

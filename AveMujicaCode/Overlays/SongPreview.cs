@@ -4,6 +4,7 @@ using HarmonyLib;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Nodes.Cards;
 using MegaCrit.Sts2.Core.Nodes.Combat;
@@ -15,7 +16,7 @@ public partial class SongPreview : Control
 {
     public static SongPreview? Instance { get; private set; }
 
-    private NCard? _cardDisplay;
+    private Dictionary<Player, NCard?> _cardDisplayDict = new();
 
     public override void _Ready()
     {
@@ -24,53 +25,66 @@ public partial class SongPreview : Control
         MouseFilter = MouseFilterEnum.Ignore; 
     }
 
-    public void UpdateDisplay(ICombatState? combatState)
+    public void UpdateDisplay(ICombatState? combatState, Player owner)
     {
         if (combatState != null)
         {
-            if (_cardDisplay != null)
+            if (!_cardDisplayDict.ContainsKey(owner))
             {
-                _cardDisplay.Show();
-                var currentSong = ComposeHelper.ComposeFields.CurrentSong.Get(combatState);
-                if (currentSong != null)
+                SetupDisplay(combatState, owner);
+            }
+            var cardDisplay = _cardDisplayDict[owner];
+            if (cardDisplay != null)
+            {
+                cardDisplay.Show();
+                var songDict = ComposeHelper.ComposeFields.CurrentSong.Get(combatState);
+                if (songDict != null)
                 {
-                    _cardDisplay.Model = currentSong;
-                    _cardDisplay.UpdateVisuals(PileType.Deck, CardPreviewMode.Normal);
-                }
-                else
-                {
-                    _cardDisplay.Hide();
+                    var currentSong = songDict[owner];
+                    if (currentSong != null)
+                    {
+                        cardDisplay.Model = currentSong;
+                        cardDisplay.UpdateVisuals(PileType.Deck, CardPreviewMode.Normal);
+                    }
+                    else
+                    {
+                        cardDisplay.Hide();
+                    }
                 }
             }
             else
             {
-                SetupDisplay(combatState);
+                SetupDisplay(combatState, owner);
             }
         }
     }
 
-    private void SetupDisplay(ICombatState? combatState)
+    private void SetupDisplay(ICombatState? combatState, Player owner)
     {
         if (combatState != null)
         {
-            var currentSong = ComposeHelper.ComposeFields.CurrentSong.Get(combatState);
-            if (currentSong != null)
+            var songDict = ComposeHelper.ComposeFields.CurrentSong.Get(combatState);
+            if (songDict != null)
             {
-                if (NCombatRoom.Instance != null)
+                var currentSong = songDict[owner];
+                if (currentSong != null)
                 {
-                    NCreature? creatureNode = NCombatRoom.Instance.GetCreatureNode(currentSong.Owner.Creature);
-                    Marker2D? specialNode = creatureNode?.GetSpecialNode<Marker2D>("%IntentPos");
-                    if (specialNode != null)
+                    if (NCombatRoom.Instance != null)
                     {
-                        NCard? nCard = NCard.Create(currentSong);
-                        specialNode.AddChildSafely(nCard);
-                        if (nCard != null)
+                        NCreature? creatureNode = NCombatRoom.Instance.GetCreatureNode(currentSong.Owner.Creature);
+                        Marker2D? specialNode = creatureNode?.GetSpecialNode<Marker2D>("%IntentPos");
+                        if (specialNode != null)
                         {
-                            nCard.Position += new Vector2(0, -100f); // Settings.scale needed??? idk
-                            nCard.Scale = new Vector2(0.5f, 0.5f);
-                            nCard.UpdateVisuals(PileType.Deck, CardPreviewMode.Normal);
-                            _cardDisplay = nCard;
-                            _cardDisplay.Show();
+                            NCard? nCard = NCard.Create(currentSong);
+                            specialNode.AddChildSafely(nCard);
+                            if (nCard != null)
+                            {
+                                nCard.Position += new Vector2(0, -100f); // Settings.scale needed??? idk
+                                nCard.Scale = new Vector2(0.5f, 0.5f);
+                                nCard.UpdateVisuals(PileType.Deck, CardPreviewMode.Normal);
+                                _cardDisplayDict[currentSong.Owner] = nCard;
+                                _cardDisplayDict[currentSong.Owner]?.Show();
+                            }
                         }
                     }
                 }

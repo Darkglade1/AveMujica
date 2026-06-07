@@ -1,6 +1,4 @@
 ﻿using AveMujica.AveMujicaCode.Cards.CardMods;
-using AveMujica.AveMujicaCode.Cards.Token;
-using BaseLib.Abstracts;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -27,10 +25,14 @@ public class Transcribe() : AveMujicaCard(2,
         await CommonActions.CardBlock(this, DynamicVars.Block, play);
         if (Owner.Creature.CombatState != null)
         {
-            CardModel? currentSong = ComposeHelper.ComposeFields.CurrentSong.Get(Owner.Creature.CombatState);
-            if (currentSong != null)
+            var songDict = ComposeHelper.ComposeFields.CurrentSong.Get(Owner.Creature.CombatState);
+            if (songDict != null)
             {
-                await CardPileCmd.AddGeneratedCardToCombat(currentSong.CreateClone(), PileType.Hand, Owner);
+                CardModel? currentSong = songDict[Owner];
+                if (currentSong != null)
+                {
+                    await CardPileCmd.AddGeneratedCardToCombat(currentSong.CreateClone(), PileType.Hand, Owner);
+                }
             }
         }
     }
