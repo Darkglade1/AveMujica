@@ -17,5 +17,9 @@
 
   "AVEMUJICA-AS_FIERCE_AS_FIRE.description": "Whenever you Attack this turn, [gold]Amoris[/gold] gains [blue]1[/blue] [gold]Strength[/gold].",
   "AVEMUJICA-AS_FIERCE_AS_FIRE.smartDescription": "Whenever you Attack this turn, [gold]Amoris[/gold] gains [blue]{Amount}[/blue] [gold]Strength[/gold].",
-  "AVEMUJICA-AS_FIERCE_AS_FIRE.title": "As Fierce As Fire"
+  "AVEMUJICA-AS_FIERCE_AS_FIRE.title": "As Fierce As Fire",
+
+  "AVEMUJICA-FUGUE_POWER.description": "The next card you play that [gold]Exhausts[/gold] or [gold]Retains[/gold] costs [blue]0[/blue].",
+  "AVEMUJICA-FUGUE_POWER.smartDescription": "The next [blue]{Amount}[/blue] {Amount:plural:card|cards} you play that [gold]{Amount:plural:Exhausts|Exhaust}[/gold] or [gold]{Amount:plural:Retains|Retain}[/gold] {Amount:plural:costs|cost} [blue]0[/blue].",
+  "AVEMUJICA-FUGUE_POWER.title": "Fugue in Black"
 }
