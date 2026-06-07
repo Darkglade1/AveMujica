@@ -1,4 +1,5 @@
-﻿using AveMujica.AveMujicaCode.Cards.Allies;
+﻿using AveMujica.AveMujicaCode;
+using AveMujica.AveMujicaCode.Cards.Allies;
 using Godot;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -36,7 +37,7 @@ public class AllyHelper
                     var node = NCombatRoom.Instance?.GetCreatureNode(pet);
                     if (node != null && source is CardModel && playerNode != null)
                     {
-                        node.Position = CalculatePosition(index);
+                        node.Position = CalculatePosition(index) + playerNode.Position;
                         node.Modulate = Colors.Transparent;
                         node.CreateTween()
                             .TweenProperty(node, "modulate", Colors.White, 0.35)
@@ -56,10 +57,10 @@ public class AllyHelper
 
     public static Vector2 CalculatePosition(int index)
     {
-        var firstPosition = new Vector2(-230f, 125f);
-        var secondPosition = new Vector2(-630f, 125f);
-        var thirdPosition = new Vector2(-800f, 125f);
-        var fourthPosition = new Vector2(-60f, 125f);
+        var firstPosition = new Vector2(250f, -75f);
+        var secondPosition = new Vector2(-150f, -75f);
+        var thirdPosition = new Vector2(-320f, -75f);
+        var fourthPosition = new Vector2(420f, -75f);
         switch (index)
         {
             case 0:
