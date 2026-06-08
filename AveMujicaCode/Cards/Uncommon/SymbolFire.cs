@@ -14,7 +14,7 @@ public class SymbolFire() : AveMujicaCard(2,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AllEnemies)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(18, ValueProp.Move), new PowerVar<StrengthPower>(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(16, ValueProp.Move), new PowerVar<StrengthPower>(2)];
 
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     

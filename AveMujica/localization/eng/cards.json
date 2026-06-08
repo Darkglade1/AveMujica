@@ -183,5 +183,20 @@
   "AVEMUJICA-MELODY.title": "Melody",
 
   "AVEMUJICA-BAND_RECRUITMENT.description": "Choose 1 of 3 {IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Awaken[/gold] cards to add to your [gold]Hand[/gold].",
-  "AVEMUJICA-BAND_RECRUITMENT.title": "Band Recruitment"
+  "AVEMUJICA-BAND_RECRUITMENT.title": "Band Recruitment",
+
+  "AVEMUJICA-IMPRISONED.description": "[gold]Compose[/gold] \"Lose {StrengthPower:diff()} [gold]Strength[/gold].\"\n[gold]Compose[/gold] \"Put {Cards:diff()} {Cards:plural:card|cards} from your [gold]Draw Pile[/gold] into your [gold]Hand[/gold].\"",
+  "AVEMUJICA-IMPRISONED.title": "Imprisoned XII",
+
+  "AVEMUJICA-ENCORE.description": "[gold]Songs[/gold] have [gold]Replay[/gold] {EncorePower:diff()}.",
+  "AVEMUJICA-ENCORE.title": "Encore",
+
+  "AVEMUJICA-MEMENTO_MORI.description": "Deal {Damage:diff()} damage to ALL enemies.\n[gold]Compose[/gold] \"Lose {HpLoss:diff()} HP.\"",
+  "AVEMUJICA-MEMENTO_MORI.title": "Memento Mori",
+
+  "AVEMUJICA-MUSICA_CAELESTIS.description": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each [gold]Song[/gold] in your [gold]Exhaust Pile[/gold].",
+  "AVEMUJICA-MUSICA_CAELESTIS.title": "Musica Caelestis",
+
+  "AVEMUJICA-ODE_TO_WAR.description": "Deal {Damage:diff()} damage.\n[gold]Compose[/gold] \"Deal {Compose:diff()} damage.\" until the current [gold]Song[/gold] is complete.",
+  "AVEMUJICA-ODE_TO_WAR.title": "Ode To War"
 }

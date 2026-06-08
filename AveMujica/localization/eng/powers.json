@@ -41,5 +41,9 @@
 
   "AVEMUJICA-MELODY_POWER.description": "At the end of your turn, if you [gold]Performed[/gold] this turn, gain [gold]Strength[/gold].",
   "AVEMUJICA-MELODY_POWER.smartDescription": "At the end of your turn, if you [gold]Performed[/gold] this turn, gain [blue]{Amount}[/blue] [gold]Strength[/gold].",
-  "AVEMUJICA-MELODY_POWER.title": "Melody"
+  "AVEMUJICA-MELODY_POWER.title": "Melody",
+
+  "AVEMUJICA-ENCORE_POWER.description": "[gold]Songs[/gold] have [gold]Replay[/gold] [blue]1[/blue].",
+  "AVEMUJICA-ENCORE_POWER.smartDescription": "[gold]Songs[/gold] have [gold]Replay[/gold] [blue]{Amount}[/blue].",
+  "AVEMUJICA-ENCORE_POWER.title": "Encore"
 }
