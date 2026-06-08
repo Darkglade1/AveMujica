@@ -1,7 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://duri8w04pxjrg"]
 
 [ext_resource type="Texture2D" uid="uid://b8u2y7yv6bcbx" path="res://AveMujica/images/charui/combat_reticle.png" id="2_75ikg"]
-[ext_resource type="Script" path="res://AveMujicaCode/Vfx/AveMujicaNSelectionReticle.cs" id="3_xjcoh"]
+[ext_resource type="Script" path="res://AveMujicaCode/Nodes/AveMujicaNSelectionReticle.cs" id="3_xjcoh"]
 
 [node name="SelectionReticle" type="Control"]
 layout_mode = 3

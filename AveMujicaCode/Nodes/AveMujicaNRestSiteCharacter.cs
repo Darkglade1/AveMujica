@@ -1,11 +1,10 @@
 using Godot;
 using MegaCrit.Sts2.Core.Bindings.MegaSpine;
 using MegaCrit.Sts2.Core.Helpers;
-using MegaCrit.Sts2.Core.Nodes.Combat;
 using MegaCrit.Sts2.Core.Nodes.RestSite;
 using MegaCrit.Sts2.Core.Random;
 
-namespace AveMujica.AveMujicaCode.Vfx;
+namespace AveMujica.AveMujicaCode.Nodes;
 
 [GlobalClass]
 public partial class AveMujicaNRestSiteCharacter : NRestSiteCharacter
@@ -19,8 +18,5 @@ public partial class AveMujicaNRestSiteCharacter : NRestSiteCharacter
                 MegaTrackEntry? megaTrackEntry = animState.SetAnimation("Sit");
                 megaTrackEntry?.SetTrackTime(megaTrackEntry.GetAnimationEnd() * Rng.Chaotic.NextFloat());
             }));
-        //var isFlipped = _characterIndex % 2 == 1;
-        //var node = GetNode<TextureRect>("SpineSprite");
-        //if (isFlipped) node.FlipH = true;
     }
 }
