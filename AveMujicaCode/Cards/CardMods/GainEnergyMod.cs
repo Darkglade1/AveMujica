@@ -1,19 +1,28 @@
 ﻿using BaseLib.Abstracts;
+using BaseLib.Patches.UI;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization;
+using MegaCrit.Sts2.Core.Runs;
 
 namespace AveMujica.AveMujicaCode.Cards.CardMods;
 
 public class GainEnergyMod : CardModifier
 {
     private string locString;
+    private string energyIcon;
     public GainEnergyMod()
     {
         Priority = 125;
         locString = new LocString("card_mods", "AVEMUJICA-ENERGY-MOD.description").GetRawText();
+        var characterEnergyPrefix = RunManager.Instance.GetLocalCharacterEnergyIconPrefix();
+        if (characterEnergyPrefix == null)
+        {
+            characterEnergyPrefix = "colorless";
+        }
+        energyIcon = $"[img]res://images/packed/sprite_fonts/{characterEnergyPrefix}_energy_icon.png[/img]";
     }
     public int GainEnergyAmt { get; set; }
     
@@ -27,6 +36,7 @@ public class GainEnergyMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += String.Format(locString, GainEnergyAmt) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+        var energyIcons = string.Concat(Enumerable.Repeat(energyIcon, GainEnergyAmt));
+        description += String.Format(locString, energyIcons) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
 }

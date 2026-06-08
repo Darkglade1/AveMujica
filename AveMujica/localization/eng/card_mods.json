@@ -4,7 +4,7 @@
   "AVEMUJICA-DRAW-CARD-MOD.description": "Draw {0} card.",
   "AVEMUJICA-DRAW-CARD-MOD.plural_description": "Draw {0} cards.",
   "AVEMUJICA-FLEX-MOD.description": "Gain {0} [gold]Strength[/gold] this turn.",
-  "AVEMUJICA-ENERGY-MOD.description": "Gain {0} [gold]Energy[/gold].",
+  "AVEMUJICA-ENERGY-MOD.description": "Gain {0}.",
   "AVEMUJICA-SHACKLE-MOD.description": "Enemy loses {0} [gold]Strength[/gold] this turn.",
   "AVEMUJICA-STRENGTH-MOD.description": "Gain {0} [gold]Strength[/gold].",
   "AVEMUJICA-VULNERABLE-MOD.description": "Apply {0} [gold]Vulnerable[/gold].",
