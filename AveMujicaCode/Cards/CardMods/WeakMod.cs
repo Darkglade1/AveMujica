@@ -4,16 +4,18 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
-using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace AveMujica.AveMujicaCode.Cards.CardMods;
 
 public class WeakMod : CardModifier
 {
+    private string locString;
     public WeakMod()
     {
         Priority = 75;
+        locString = new LocString("card_mods", "AVEMUJICA-WEAK-MOD.description").GetRawText();
     }
     public int WeakAmt { get; set; }
     
@@ -36,6 +38,6 @@ public class WeakMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += $"Apply {WeakAmt} [gold]Weak[/gold]." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+        description += String.Format(locString, WeakAmt) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
 }

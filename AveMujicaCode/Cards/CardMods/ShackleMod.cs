@@ -5,15 +5,18 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Models;
 
 namespace AveMujica.AveMujicaCode.Cards.CardMods;
 
 public class ShackleMod : CardModifier
 {
+    private string locString;
     public ShackleMod()
     {
         Priority = 50;
+        locString = new LocString("card_mods", "AVEMUJICA-SHACKLE-MOD.description").GetRawText();
     }
     public int ShackleAmt { get; set; }
     
@@ -36,6 +39,6 @@ public class ShackleMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += $"Enemy loses {ShackleAmt} [gold]Strength[/gold] this turn." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+        description += String.Format(locString, ShackleAmt) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
 }

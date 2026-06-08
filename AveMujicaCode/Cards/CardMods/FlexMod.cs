@@ -4,14 +4,17 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Localization;
 
 namespace AveMujica.AveMujicaCode.Cards.CardMods;
 
 public class FlexMod : CardModifier
 {
+    private string locString;
     public FlexMod()
     {
         Priority = 25;
+        locString = new LocString("card_mods", "AVEMUJICA-FLEX-MOD.description").GetRawText();
     }
     public int FlexAmt { get; set; }
     
@@ -25,6 +28,6 @@ public class FlexMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += $"Gain {FlexAmt} [gold]Strength[/gold] this turn." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+        description += String.Format(locString, FlexAmt) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
 }

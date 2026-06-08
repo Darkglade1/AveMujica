@@ -4,16 +4,18 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
-using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace AveMujica.AveMujicaCode.Cards.CardMods;
 
 public class VulnerableMod : CardModifier
 {
+    private string locString;
     public VulnerableMod()
     {
         Priority = 100;
+        locString = new LocString("card_mods", "AVEMUJICA-VULNERABLE-MOD.description").GetRawText();
     }
     public int VulnerableAmt { get; set; }
     
@@ -36,6 +38,6 @@ public class VulnerableMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += $"Apply {VulnerableAmt} [gold]Vulnerable[/gold]." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+        description += String.Format(locString, VulnerableAmt) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
 }

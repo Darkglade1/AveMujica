@@ -3,6 +3,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.ValueProps;
 
@@ -10,9 +11,11 @@ namespace AveMujica.AveMujicaCode.Cards.CardMods;
 
 public class BlockMod : CardModifier
 {
+    private string locString;
     public BlockMod()
     {
         Priority = -100;
+        locString = new LocString("card_mods", "AVEMUJICA-BLOCK-MOD.description").GetRawText();
     }
     public DynamicVar? BlockVar
     {
@@ -32,21 +35,23 @@ public class BlockMod : CardModifier
     {
         if (BlockVar != null)
         {
-            var roundedBLock = Math.Floor(BlockVar.PreviewValue);
-            if (roundedBLock != BlockVar.BaseValue)
+            var roundedBlock = Math.Floor(BlockVar.PreviewValue);
+            if (roundedBlock != BlockVar.BaseValue)
             {
-                if (roundedBLock > BlockVar.BaseValue)
+                if (roundedBlock > BlockVar.BaseValue)
                 {
-                    description += $"Gain [green]{roundedBLock}[/green] [gold]Block[/gold]." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+                    var greenBlock = $"[green]{roundedBlock}[/green]";
+                    description += String.Format(locString, greenBlock) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
                 }
                 else
                 {
-                    description += $"Gain [red]{roundedBLock}[/red] [gold]Block[/gold]." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+                    var redBlock = $"[red]{roundedBlock}[/red]";
+                    description += String.Format(locString, redBlock) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
                 }
             }
             else
             {
-                description += $"Gain {BlockVar.BaseValue} [gold]Block[/gold]." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+                description += String.Format(locString, BlockVar.BaseValue) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
             }
         }
     }

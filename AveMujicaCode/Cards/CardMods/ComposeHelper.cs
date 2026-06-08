@@ -114,8 +114,6 @@ public class ComposeHelper
         damageMod.DamageVar = new DamageVar(isUpgraded ? 8 : 6, ValueProp.Move);
         var blockMod = (BlockMod)ModelDb.Get<BlockMod>().MutableClone();
         blockMod.BlockVar = new BlockVar(isUpgraded ? 6 : 4, ValueProp.Move);
-        var randomDamageMod = (RandomDamageMod)ModelDb.Get<RandomDamageMod>().MutableClone();
-        randomDamageMod.DamageAmt = isUpgraded ? 10 : 8;
         var shackleMod = (ShackleMod)ModelDb.Get<ShackleMod>().MutableClone();
         shackleMod.ShackleAmt = isUpgraded ? 4 : 3;
         var weakMod = (WeakMod)ModelDb.Get<WeakMod>().MutableClone();

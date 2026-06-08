@@ -4,15 +4,18 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace AveMujica.AveMujicaCode.Cards.CardMods;
 
 public class StrengthMod : CardModifier
 {
+    private string locString;
     public StrengthMod()
     {
         Priority = 20;
+        locString = new LocString("card_mods", "AVEMUJICA-STRENGTH-MOD.description").GetRawText();
     }
     public int StrengthAmt { get; set; }
     
@@ -26,6 +29,6 @@ public class StrengthMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += $"Gain {StrengthAmt} [gold]Strength[/gold]." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+        description += String.Format(locString, StrengthAmt) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
 }

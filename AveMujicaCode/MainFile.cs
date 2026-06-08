@@ -1,4 +1,5 @@
 using System.Reflection;
+using BaseLib.Utils;
 using Godot;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Modding;
@@ -22,5 +23,7 @@ public partial class MainFile : Node
         Harmony harmony = new(ModId);
 
         harmony.PatchAll();
+        
+        CustomLocTableManager.Register("card_mods");
     }
 }

@@ -4,16 +4,18 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models;
 
 namespace AveMujica.AveMujicaCode.Cards.CardMods;
 
 public class DamageMod : CardModifier
 {
+    private string locString;
     public DamageMod()
     {
         Priority = -50;
+        locString = new LocString("card_mods", "AVEMUJICA-DAMAGE-MOD.description").GetRawText();
     }
     public DynamicVar? DamageVar
     {
@@ -49,16 +51,18 @@ public class DamageMod : CardModifier
             {
                 if (roundedDamage > DamageVar.BaseValue)
                 {
-                    description += $"Deal [green]{roundedDamage}[/green] damage." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+                    var greenDamage = $"[green]{roundedDamage}[/green]";
+                    description += String.Format(locString, greenDamage) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
                 }
                 else
                 {
-                    description += $"Deal [red]{roundedDamage}[/red] damage." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+                    var redDamage = $"[red]{roundedDamage}[/red]";
+                    description += String.Format(locString, redDamage) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
                 }
             }
             else
             {
-                description += $"Deal {DamageVar.BaseValue} damage." + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+                description += String.Format(locString, DamageVar.BaseValue) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
             }
         }
     }
