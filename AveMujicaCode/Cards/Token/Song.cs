@@ -1,8 +1,11 @@
-﻿using MegaCrit.Sts2.Core.Entities.Cards;
+﻿using BaseLib.Utils;
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Models.CardPools;
 
 namespace AveMujica.AveMujicaCode.Cards.Token;
 
+[Pool(typeof(TokenCardPool))]
 public class Song() : AveMujicaCard(0,
     CardType.Skill, CardRarity.Token,
     TargetType.AnyEnemy)
