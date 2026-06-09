@@ -16,7 +16,7 @@ public class MoonlitStrike() : AveMujicaCard(1,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(7, ValueProp.Move), new PowerVar<Oblivion>(2)];
 
-    protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.GainsOblivion];
+    protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.GainsOblivion, CardTag.Strike];
     
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
