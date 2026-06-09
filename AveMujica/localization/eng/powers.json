@@ -45,5 +45,9 @@
 
   "AVEMUJICA-ENCORE_POWER.description": "[gold]Songs[/gold] have [gold]Replay[/gold] [blue]1[/blue].",
   "AVEMUJICA-ENCORE_POWER.smartDescription": "[gold]Songs[/gold] have [gold]Replay[/gold] [blue]{Amount}[/blue].",
-  "AVEMUJICA-ENCORE_POWER.title": "Encore"
+  "AVEMUJICA-ENCORE_POWER.title": "Encore",
+
+  "AVEMUJICA-BLUE_MOON_POWER.description": "At the end of your turn, gain [gold]Oblivion[/gold].",
+  "AVEMUJICA-BLUE_MOON_POWER.smartDescription": "At the end of your turn, gain [blue]{Amount}[/blue] [gold]Oblivion[/gold].",
+  "AVEMUJICA-BLUE_MOON_POWER.title": "Blue Moon's Sorrow"
 }

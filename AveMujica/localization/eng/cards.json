@@ -197,6 +197,21 @@
   "AVEMUJICA-MUSICA_CAELESTIS.description": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each [gold]Song[/gold] in your [gold]Exhaust Pile[/gold].",
   "AVEMUJICA-MUSICA_CAELESTIS.title": "Musica Caelestis",
 
-  "AVEMUJICA-ODE_TO_WAR.description": "Deal {Damage:diff()} damage.\n[gold]Compose[/gold] \"Deal {Compose:diff()} damage.\" until the current [gold]Song[/gold] is complete.",
-  "AVEMUJICA-ODE_TO_WAR.title": "Ode To War"
+  "AVEMUJICA-ODE_TO_WAR.description": "Deal {Damage:diff()} damage.\n[gold]Compose[/gold] \"Deal {Compose:diff()} damage.\" until you finish [gold]Composing[/gold] a [gold]Song[/gold].",
+  "AVEMUJICA-ODE_TO_WAR.title": "Ode To War",
+
+  "AVEMUJICA-SOPHIE.description": "[gold]Compose[/gold] \"Gain {VulnerablePower:diff()} [gold]Vulnerable[/gold].\"\n[gold]Compose[/gold] \"Gain {Oblivion:diff()} [gold]Oblivion[/gold].\"",
+  "AVEMUJICA-SOPHIE.title": "Sophie",
+
+  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.description": "[gold]Exhaust[/gold] your [gold]Hand[/gold].\nGain {Oblivion:diff()} [gold]Oblivion[/gold] for each card [gold]Exhausted[/gold].",
+  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.title": "Do Not Fear Forgetting",
+
+  "AVEMUJICA-BLOOD_MOON.description": "Deal {Damage:diff()} damage.\nGain [gold]Oblivion[/gold] equal to damage dealt.",
+  "AVEMUJICA-BLOOD_MOON.title": "Blood Moon's Wrath",
+
+  "AVEMUJICA-TWO_MOONS.description": "Gain {Oblivion:diff()} [gold]Oblivion[/gold] twice.",
+  "AVEMUJICA-TWO_MOONS.title": "Two Moons",
+
+  "AVEMUJICA-BLUE_MOON.description": "At the end of your turn, gain {BlueMoonPower:diff()} [gold]Oblivion[/gold].",
+  "AVEMUJICA-BLUE_MOON.title": "Blue Moon's Sorrow"
 }
