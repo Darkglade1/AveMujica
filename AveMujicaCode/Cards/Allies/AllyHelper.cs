@@ -1,5 +1,6 @@
 ﻿using AveMujica.AveMujicaCode;
 using AveMujica.AveMujicaCode.Cards.Allies;
+using AveMujica.AveMujicaCode.Cards.Uncommon;
 using Godot;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Context;
@@ -71,6 +72,16 @@ public class AllyHelper
             default:
                 return fourthPosition;
         }
+    }
+
+    public static List<CardModel> AllyCardList()
+    {
+        var cardList = new List<CardModel>();
+        cardList.Add((CardModel)ModelDb.Card<Doloris>().MutableClone());
+        cardList.Add((CardModel)ModelDb.Card<Mortis>().MutableClone());
+        cardList.Add((CardModel)ModelDb.Card<Timoris>().MutableClone());
+        cardList.Add((CardModel)ModelDb.Card<Amoris>().MutableClone());
+        return cardList;
     }
 }
 

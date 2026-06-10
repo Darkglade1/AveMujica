@@ -242,6 +242,14 @@
   "AVEMUJICA-CONSIGN.description": "Deal {Damage:diff()} damage.\nIf [gold]Fatal[/gold], you may remove a card from your [gold]Deck[/gold] at the end of combat.",
   "AVEMUJICA-CONSIGN.title": "Consign to Oblivion",
 
+  "AVEMUJICA-LOFT_MOON.description": "[gold]Awaken[/gold] an ally of your choice.\nAt the end of your turn, allies gain {LoftMoonPower:diff()} HP.",
+  "AVEMUJICA-LOFT_MOON.selectionScreenPrompt": "Choose an ally to [gold]Awaken[/gold].",
+  "AVEMUJICA-LOFT_MOON.title": "Loft Moon",
+
   "AVEMUJICA-SPARK.description": "{IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold] {Repeat:diff()} times.",
-  "AVEMUJICA-SPARK.title": "Spark of Inspiration"
+  "AVEMUJICA-SPARK.title": "Spark of Inspiration",
+
+  "AVEMUJICA-KNIGHTS.description": "[gold]Awaken[/gold] {Repeat:diff()} allies of your choice.",
+  "AVEMUJICA-KNIGHTS.selectionScreenPrompt": "Choose allies to [gold]Awaken[/gold].",
+  "AVEMUJICA-KNIGHTS.title": "Knights of Oblivionis"
 }

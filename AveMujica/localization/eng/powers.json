@@ -69,5 +69,9 @@
 
   "AVEMUJICA-CONSIGN_POWER.description": "At the end of combat, remove a card from your [gold]Deck[/gold].",
   "AVEMUJICA-CONSIGN_POWER.smartDescription": "At the end of combat, remove [blue]{Amount}[/blue] {Amount:plural:card|cards} from your [gold]Deck[/gold].",
-  "AVEMUJICA-CONSIGN_POWER.title": "Consign to Oblivion"
+  "AVEMUJICA-CONSIGN_POWER.title": "Consign to Oblivion",
+
+  "AVEMUJICA-LOFT_MOON_POWER.description": "At the end of your turn, allies gain [blue]{Amount}[/blue] HP.",
+  "AVEMUJICA-LOFT_MOON_POWER.smartDescription": "At the end of your turn, allies gain [blue]{Amount}[/blue] HP.",
+  "AVEMUJICA-LOFT_MOON_POWER.title": "Loft Moon"
 }
