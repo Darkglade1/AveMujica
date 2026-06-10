@@ -1,3 +1,9 @@
 {
-  
+  "AVEMUJICA-KEYBOARD.description": "At the start of combat, [gold]Compose[/gold] \"Gain [blue]{Compose}[/blue] [gold]Block[/gold].\"",
+  "AVEMUJICA-KEYBOARD.flavor": "The instrument has been with her since childhood. It is one of the last connections she has to her beloved mother.",
+  "AVEMUJICA-KEYBOARD.title": "Keyboard",
+
+  "AVEMUJICA-GRAND_PIANO.description": "At the start of your first {Turns:plural:turn|[blue]{}[/blue] turns}, [gold]Compose[/gold] \"Gain [blue]{Compose}[/blue] [gold]Block[/gold].\"",
+  "AVEMUJICA-GRAND_PIANO.flavor": "It beckons her to take to the stage once again.",
+  "AVEMUJICA-GRAND_PIANO.title": "Grand Piano"
 }

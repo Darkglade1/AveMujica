@@ -3,6 +3,7 @@ using AveMujica.AveMujicaCode.Cards.Basic;
 using BaseLib.Abstracts;
 using BaseLib.Utils.NodeFactories;
 using AveMujica.AveMujicaCode.Extensions;
+using AveMujica.AveMujicaCode.Relics;
 using BaseLib.Utils;
 using Godot;
 using MegaCrit.Sts2.Core.Animation;
@@ -41,7 +42,7 @@ public class AveMujica : PlaceholderCharacterModel
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
     [
-        ModelDb.Relic<BurningBlood>()
+        ModelDb.Relic<Keyboard>()
     ];
 
     public override CardPoolModel CardPool => ModelDb.CardPool<AveMujicaCardPool>();
