@@ -1,18 +1,9 @@
-﻿using BaseLib.Abstracts;
-using BaseLib.Extensions;
-using BaseLib.Utils;
-using AveMujica.AveMujicaCode.Character;
-using AveMujica.AveMujicaCode.Extensions;
-using AveMujica.AveMujicaCode.Powers;
+﻿using AveMujica.AveMujicaCode.Powers;
 using MegaCrit.Sts2.Core.Combat;
-using MegaCrit.Sts2.Core.Combat.History;
-using MegaCrit.Sts2.Core.Combat.History.Entries;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
-using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
-using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards;
@@ -32,6 +23,11 @@ public abstract class PerformCard(int cost, CardType type, CardRarity rarity, Ta
     
     public bool IsPerformActiveForSequence(CardType[] cardTypes)
     {
+        var flawlessPerformance = Owner.Creature.GetPower<FlawlessPerformancePower>();
+        if (flawlessPerformance != null)
+        {
+            return true;
+        }
         var numSkills = cardTypes.Count(e => e == CardType.Skill);
         var numSkillsPlayedThisTurn = CombatManager.Instance.History.CardPlaysFinished.Count(e =>
             e.CardPlay.Card.Type == CardType.Skill && e.CardPlay.Card.Owner == Owner &&
@@ -49,17 +45,31 @@ public abstract class PerformCard(int cost, CardType type, CardRarity rarity, Ta
     {
         if (IsPerformActiveForSequence(cardTypes))
         {
-            await DoPerformEffect(choiceContext, play, cardTypes);
-            var cantabilePower = play.Card.Owner.Creature.GetPower<CantabilePower>();
-            if (cantabilePower != null)
+            var perfectCombo = Owner.Creature.GetPower<PerfectComboPower>();
+            var numTriggers = 1;
+            if (perfectCombo != null)
             {
-                cantabilePower.Flash();
-                await CreatureCmd.GainBlock(play.Card.Owner.Creature, cantabilePower.Amount, ValueProp.Unpowered, null);
+                numTriggers += CombatManager.Instance.History.Entries.OfType<PerformCardEntry>()
+                    .Count(e => e.Card.Owner == Owner && e.HappenedThisTurn(CombatState));
+                if (numTriggers > 1)
+                {
+                    perfectCombo.Flash();
+                }
             }
-            ICombatState? combatState = CombatState ?? Owner.Creature.CombatState;
-            if (!CombatManager.Instance.IsOverOrEnding && combatState != null)
+            for (int i = 0; i < numTriggers; i++)
             {
-                CombatManager.Instance.History.Add(combatState, new PerformCardEntry(this, combatState.RoundNumber, combatState.CurrentSide, CombatManager.Instance.History, combatState.Players));
+                await DoPerformEffect(choiceContext, play, cardTypes);
+                var cantabilePower = play.Card.Owner.Creature.GetPower<CantabilePower>();
+                if (cantabilePower != null)
+                {
+                    cantabilePower.Flash();
+                    await CreatureCmd.GainBlock(play.Card.Owner.Creature, cantabilePower.Amount, ValueProp.Unpowered, null);
+                }
+                ICombatState? combatState = CombatState ?? Owner.Creature.CombatState;
+                if (!CombatManager.Instance.IsOverOrEnding && combatState != null)
+                {
+                    CombatManager.Instance.History.Add(combatState, new PerformCardEntry(this, combatState.RoundNumber, combatState.CurrentSide, CombatManager.Instance.History, combatState.Players));
+                }
             }
         }
     }

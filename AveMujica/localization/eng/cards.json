@@ -213,5 +213,20 @@
   "AVEMUJICA-TWO_MOONS.title": "Two Moons",
 
   "AVEMUJICA-BLUE_MOON.description": "At the end of your turn, gain {BlueMoonPower:diff()} [gold]Oblivion[/gold].",
-  "AVEMUJICA-BLUE_MOON.title": "Blue Moon's Sorrow"
+  "AVEMUJICA-BLUE_MOON.title": "Blue Moon's Sorrow",
+
+  "AVEMUJICA-OBLIVION_FORM.description": "Gain {Oblivion:diff()} [gold]Oblivion[/gold].\n[gold]Oblivion[/gold] also triggers when you [gold]Exhaust[/gold] a card.",
+  "AVEMUJICA-OBLIVION_FORM.title": "Oblivion Form",
+
+  "AVEMUJICA-FLAWLESS_PERFORMANCE.description": "[gold]Perform[/gold] effects always trigger.",
+  "AVEMUJICA-FLAWLESS_PERFORMANCE.title": "Flawless Performance",
+
+  "AVEMUJICA-BLACK_BIRTHDAY.description": "Deal {Damage:diff()} damage to ALL enemies.\n[gold]Perform Attack Attack:[/gold] Hits {Repeat:diff()} more times.",
+  "AVEMUJICA-BLACK_BIRTHDAY.title": "Black Birthday",
+
+  "AVEMUJICA-PERFECT_COMBO.description": "Your [gold]Perform[/gold] effects trigger an additional time for each time a [gold]Perform[/gold] effect has triggered this turn.",
+  "AVEMUJICA-PERFECT_COMBO.title": "Perfect Combo Storm",
+
+  "AVEMUJICA-GEORGETTE_ME.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Perform Skill Skill:[/gold] Double your [gold]Block[/gold].",
+  "AVEMUJICA-GEORGETTE_ME.title": "Georgette Me, Georgette You"
 }
