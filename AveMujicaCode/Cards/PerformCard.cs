@@ -1,9 +1,11 @@
-﻿using AveMujica.AveMujicaCode.Powers;
+﻿using AveMujica.AveMujicaCode.Cards.Rare;
+using AveMujica.AveMujicaCode.Powers;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
+using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards;
@@ -70,6 +72,19 @@ public abstract class PerformCard(int cost, CardType type, CardRarity rarity, Ta
                 {
                     CombatManager.Instance.History.Add(combatState, new PerformCardEntry(this, combatState.RoundNumber, combatState.CurrentSide, CombatManager.Instance.History, combatState.Players));
                 }
+            }
+
+            var foundCards = new List<CardModel>();
+            foreach (var card in PileType.Discard.GetPile(Owner).Cards)
+            {
+                if (card is EndlessPerformance)
+                {
+                    foundCards.Add(card);
+                }
+            }
+            foreach (var card in foundCards)
+            {
+                await CardPileCmd.Add(card, PileType.Hand);
             }
         }
     }

@@ -8,5 +8,5 @@ public class FlawlessPerformancePower() : AveMujicaPower
         PowerType.Buff;
 
     public override PowerStackType StackType =>
-        PowerStackType.Counter;
+        PowerStackType.Single;
 }

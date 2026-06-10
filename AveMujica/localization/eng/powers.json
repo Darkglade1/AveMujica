@@ -61,5 +61,13 @@
 
   "AVEMUJICA-PERFECT_COMBO_POWER.description": "Your [gold]Perform[/gold] effects trigger an additional time for each time a [gold]Perform[/gold] effect has triggered this turn.",
   "AVEMUJICA-PERFECT_COMBO_POWER.smartDescription": "Your [gold]Perform[/gold] effects trigger an additional time for each time a [gold]Perform[/gold] effect has triggered this turn.",
-  "AVEMUJICA-PERFECT_COMBO_POWER.title": "Perfect Combo Storm"
+  "AVEMUJICA-PERFECT_COMBO_POWER.title": "Perfect Combo Storm",
+
+  "AVEMUJICA-ETHER_POWER.description": "Your cards that [gold]Exhaust[/gold] when played cost [blue]0[/blue].",
+  "AVEMUJICA-ETHER_POWER.smartDescription": "Your cards that [gold]Exhaust[/gold] when played cost [blue]0[/blue].",
+  "AVEMUJICA-ETHER_POWER.title": "Ether",
+
+  "AVEMUJICA-CONSIGN_POWER.description": "At the end of combat, remove a card from your [gold]Deck[/gold].",
+  "AVEMUJICA-CONSIGN_POWER.smartDescription": "At the end of combat, remove [blue]{Amount}[/blue] {Amount:plural:card|cards} from your [gold]Deck[/gold].",
+  "AVEMUJICA-CONSIGN_POWER.title": "Consign to Oblivion"
 }

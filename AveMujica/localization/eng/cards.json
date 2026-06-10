@@ -228,5 +228,20 @@
   "AVEMUJICA-PERFECT_COMBO.title": "Perfect Combo Storm",
 
   "AVEMUJICA-GEORGETTE_ME.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Perform Skill Skill:[/gold] Double your [gold]Block[/gold].",
-  "AVEMUJICA-GEORGETTE_ME.title": "Georgette Me, Georgette You"
+  "AVEMUJICA-GEORGETTE_ME.title": "Georgette Me, Georgette You",
+
+  "AVEMUJICA-ENDLESS_PERFORMANCE.description": "Deal {Damage:diff()} damage.\nWhenever you [gold]Perform[/gold], put this card from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
+  "AVEMUJICA-ENDLESS_PERFORMANCE.title": "Endless Performance",
+
+  "AVEMUJICA-ETHER.description": "Your cards that [gold]Exhaust[/gold] when played cost 0.",
+  "AVEMUJICA-ETHER.title": "Ether",
+
+  "AVEMUJICA-ALEA_IACTA_EST.description": "Gain {StrengthPower:diff()} [gold]Strength[/gold].\nIf you take unblocked attack damage this combat, die.",
+  "AVEMUJICA-ALEA_IACTA_EST.title": "Alea Iacta Est",
+
+  "AVEMUJICA-CONSIGN.description": "Deal {Damage:diff()} damage.\nIf [gold]Fatal[/gold], you may remove a card from your [gold]Deck[/gold] at the end of combat.",
+  "AVEMUJICA-CONSIGN.title": "Consign to Oblivion",
+
+  "AVEMUJICA-SPARK.description": "{IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold] {Repeat:diff()} times.",
+  "AVEMUJICA-SPARK.title": "Spark of Inspiration"
 }

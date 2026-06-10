@@ -2,11 +2,11 @@
 
 namespace AveMujica.AveMujicaCode.Powers;
 
-public class PerfectComboPower() : AveMujicaPower
+public class ConsignPower() : AveMujicaPower
 {
     public override PowerType Type =>
         PowerType.Buff;
 
     public override PowerStackType StackType =>
-        PowerStackType.Single;
+        PowerStackType.Counter;
 }
