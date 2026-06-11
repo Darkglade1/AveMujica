@@ -51,8 +51,8 @@
   "AVEMUJICA-DIMINUENDO.description": "Enemy loses {StrengthLoss:diff()} [gold]Strength[/gold] this turn.",
   "AVEMUJICA-DIMINUENDO.title": "Diminuendo",
 
-  "AVEMUJICA-SELF_IMPROVEMENT.description": "{IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold].\n[gold]Upgrade[/gold] {Cards:diff()} random cards in your [gold]Draw Pile[/gold].",
-  "AVEMUJICA-SELF_IMPROVEMENT.title": "Self Improvement",
+  "AVEMUJICA-RONDO.description": "Deal {Damage:diff()} damage.\n{IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold].",
+  "AVEMUJICA-RONDO.title": "Rondo",
 
   "AVEMUJICA-LATE_NIGHTS.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Compose[/gold] twice.",
   "AVEMUJICA-LATE_NIGHTS.title": "Late Nights",

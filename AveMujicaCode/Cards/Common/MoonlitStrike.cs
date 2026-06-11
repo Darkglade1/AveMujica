@@ -14,7 +14,7 @@ public class MoonlitStrike() : AveMujicaCard(1,
     CardType.Attack, CardRarity.Common,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(7, ValueProp.Move), new PowerVar<Oblivion>(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move), new PowerVar<Oblivion>(2)];
 
     protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.GainsOblivion, CardTag.Strike];
     
