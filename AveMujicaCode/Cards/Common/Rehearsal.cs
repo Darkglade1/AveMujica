@@ -3,8 +3,6 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace AveMujica.AveMujicaCode.Cards.Common;
 
@@ -12,13 +10,13 @@ public class Rehearsal() : PerformCard(1,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<VigorPower>(4), new EnergyVar(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(1)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await PowerCmd.Apply<VigorPower>(choiceContext, Owner.Creature, DynamicVars["VigorPower"].IntValue, Owner.Creature, this);
+        await PlayerCmd.GainEnergy(DynamicVars.Energy.BaseValue, Owner);
         await ExecutePerformEffect(choiceContext, play, PerformSequences()[0]);
     }
     
@@ -35,11 +33,10 @@ public class Rehearsal() : PerformCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars["VigorPower"].UpgradeValueBy(2);
+        EnergyCost.UpgradeBy(-1);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromPower(ModelDb.Power<VigorPower>()),
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Perform),
         EnergyHoverTip
     ];

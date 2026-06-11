@@ -57,7 +57,7 @@
   "AVEMUJICA-LATE_NIGHTS.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Compose[/gold] twice.",
   "AVEMUJICA-LATE_NIGHTS.title": "Late Nights",
 
-  "AVEMUJICA-REHEARSAL.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].\n[gold]Perform Attack:[/gold] Gain {Energy:energyIcons()}.",
+  "AVEMUJICA-REHEARSAL.description": "Gain {Energy:energyIcons()}.\n[gold]Perform Attack:[/gold] Gain {Energy:energyIcons()}.",
   "AVEMUJICA-REHEARSAL.title": "Rehearsal",
 
   "AVEMUJICA-REPETITION.description": "Deal {Damage:diff()} damage.\n[gold]Perform Attack Skill:[/gold] Deal {Damage:diff()} damage again.",
