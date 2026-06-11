@@ -11,7 +11,7 @@
   "AVEMUJICA-MUSE.description": "{IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold].",
   "AVEMUJICA-MUSE.title": "Muse",
 
-  "AVEMUJICA-SONG.description": "",
+  "AVEMUJICA-SONG.description": "{IfUpgraded:show:Draw a card.}",
   "AVEMUJICA-SONG.title": "Song",
 
   "AVEMUJICA-MOONLIT_STRIKE.description": "Deal {Damage:diff()} damage.\nGain {Oblivion:diff()} [gold]Oblivion[/gold].",

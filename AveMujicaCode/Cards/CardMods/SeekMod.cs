@@ -29,10 +29,11 @@ public class SeekMod : CardModifier
         if (Owner != null && play.Card == Owner)
         {
             CardSelectorPrefs prefs = new CardSelectorPrefs(selectionScreenPrompt, SeekAmt);
-            CardModel? card = (await CardSelectCmd.FromCombatPile(choiceContext, PileType.Draw.GetPile(Owner.Owner), Owner.Owner, prefs)).FirstOrDefault();
-            if (card == null)
-                return;
-            await CardPileCmd.Add(card, PileType.Hand);
+            var cards = await CardSelectCmd.FromCombatPile(choiceContext, PileType.Draw.GetPile(Owner.Owner), Owner.Owner, prefs);
+            foreach (var card in cards)
+            {
+                await CardPileCmd.Add(card, PileType.Hand);
+            }
         }
     }
     
