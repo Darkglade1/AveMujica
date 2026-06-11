@@ -42,7 +42,7 @@ public class Oblivion : AveMujicaPower
         CardModel card,
         bool _)
     {
-        var oblivionForm = Owner.GetPower<OblivionFormPower>();
+        var oblivionForm = Owner.GetPower<GoddessOfOblivionPower>();
         if (card.Owner.Creature != Owner || oblivionForm == null)
             return;
         if (Owner.CombatState != null)

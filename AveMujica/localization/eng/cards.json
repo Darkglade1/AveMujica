@@ -215,8 +215,8 @@
   "AVEMUJICA-BLUE_MOON.description": "At the end of your turn, gain {BlueMoonPower:diff()} [gold]Oblivion[/gold].",
   "AVEMUJICA-BLUE_MOON.title": "Blue Moon's Sorrow",
 
-  "AVEMUJICA-OBLIVION_FORM.description": "Gain {Oblivion:diff()} [gold]Oblivion[/gold].\n[gold]Oblivion[/gold] also triggers when you [gold]Exhaust[/gold] a card.",
-  "AVEMUJICA-OBLIVION_FORM.title": "Oblivion Form",
+  "AVEMUJICA-GODDESS_OF_OBLIVION.description": "Gain {Oblivion:diff()} [gold]Oblivion[/gold].\n[gold]Oblivion[/gold] also triggers when you [gold]Exhaust[/gold] a card.",
+  "AVEMUJICA-GODDESS_OF_OBLIVION.title": "Goddess of Oblivion",
 
   "AVEMUJICA-FLAWLESS_PERFORMANCE.description": "[gold]Perform[/gold] effects always trigger.",
   "AVEMUJICA-FLAWLESS_PERFORMANCE.title": "Flawless Performance",
@@ -245,6 +245,10 @@
   "AVEMUJICA-LOFT_MOON.description": "[gold]Awaken[/gold] an ally of your choice.\nAt the end of your turn, allies gain {LoftMoonPower:diff()} HP.",
   "AVEMUJICA-LOFT_MOON.selectionScreenPrompt": "Choose an ally to [gold]Awaken[/gold].",
   "AVEMUJICA-LOFT_MOON.title": "Loft Moon",
+
+  "AVEMUJICA-PULL_FROM_OBLIVION.description": "Put a card from your [gold]Exhaust Pile[/gold] into your [gold]Hand[/gold].",
+  "AVEMUJICA-PULL_FROM_OBLIVION.selectionScreenPrompt": "Choose a card to add to your [gold]Hand[/gold].",
+  "AVEMUJICA-PULL_FROM_OBLIVION.title": "Pull From Oblivion",
 
   "AVEMUJICA-SPARK.description": "{IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold] {Repeat:diff()} times.",
   "AVEMUJICA-SPARK.title": "Spark of Inspiration",

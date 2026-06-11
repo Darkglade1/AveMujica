@@ -2,7 +2,7 @@
 
 namespace AveMujica.AveMujicaCode.Powers;
 
-public class OblivionFormPower() : AveMujicaPower
+public class GoddessOfOblivionPower() : AveMujicaPower
 {
     public override PowerType Type =>
         PowerType.Buff;

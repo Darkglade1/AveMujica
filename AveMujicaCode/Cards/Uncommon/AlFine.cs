@@ -41,7 +41,7 @@ public class AlFine() : AveMujicaCard(2,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(2);
+        DynamicVars.Damage.UpgradeValueBy(3);
         DynamicVars["Oblivion"].UpgradeValueBy(1);
     }
     

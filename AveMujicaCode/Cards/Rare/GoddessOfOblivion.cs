@@ -7,7 +7,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace AveMujica.AveMujicaCode.Cards.Rare;
 
-public class OblivionForm() : AveMujicaCard(3,
+public class GoddessOfOblivion() : AveMujicaCard(3,
     CardType.Power, CardRarity.Rare,
     TargetType.Self)
 {
@@ -25,7 +25,7 @@ public class OblivionForm() : AveMujicaCard(3,
         CardPlay play)
     {
         await PowerCmd.Apply<Oblivion>(choiceContext, Owner.Creature, DynamicVars["Oblivion"].BaseValue, Owner.Creature, this);
-        await PowerCmd.Apply<OblivionFormPower>(choiceContext, Owner.Creature, 1, Owner.Creature, this);
+        await PowerCmd.Apply<GoddessOfOblivionPower>(choiceContext, Owner.Creature, 1, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()
