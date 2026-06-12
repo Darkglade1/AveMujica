@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://caje1mnjbbxko"
-path="res://.godot/imported/muse.png-a80349d863849b3e41f6ebec7e56b3a1.ctex"
+uid="uid://v13nnb81d4ci"
+path="res://.godot/imported/masterful.png-4afe290c7f7778f07a612023f7a46f09.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/card_portraits/muse.png"
-dest_files=["res://.godot/imported/muse.png-a80349d863849b3e41f6ebec7e56b3a1.ctex"]
+source_file="res://AveMujica/images/enchantments/masterful.png"
+dest_files=["res://.godot/imported/masterful.png-4afe290c7f7778f07a612023f7a46f09.ctex"]
 
 [params]
 

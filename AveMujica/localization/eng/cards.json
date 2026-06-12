@@ -161,7 +161,8 @@
   "AVEMUJICA-SYMBOL_EARTH.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.\nWhen [gold]Retained[/gold], increase the number of hits by 1 this combat.",
   "AVEMUJICA-SYMBOL_EARTH.title": "Symbol IV: Earth",
 
-  "AVEMUJICA-CONCERTO.description": "Deal {Damage:diff()} damage.\nGain [gold]Vigor[/gold] equal to the number of cards in your [gold]Hand[/gold].",
+  "AVEMUJICA-CONCERTO.description": "Deal {Damage:diff()} damage.\n[gold]Enchant[/gold] a card with [gold]Masterful[/gold] equal to the number of cards in your [gold]Hand[/gold].",
+  "AVEMUJICA-CONCERTO.selectionScreenPrompt": "Choose a card to [gold]Enchant[/gold].",
   "AVEMUJICA-CONCERTO.title": "Concerto in White",
 
   "AVEMUJICA-WRITERS_BLOCK.description": "Gain {Block:diff()} [gold]Block[/gold].\nAdd {Cards:diff()} [gold]Blank Songs[/gold] to your [gold]Hand[/gold].",
@@ -249,6 +250,9 @@
   "AVEMUJICA-PULL_FROM_OBLIVION.description": "Put a card from your [gold]Exhaust Pile[/gold] into your [gold]Hand[/gold].",
   "AVEMUJICA-PULL_FROM_OBLIVION.selectionScreenPrompt": "Choose a card to add to your [gold]Hand[/gold].",
   "AVEMUJICA-PULL_FROM_OBLIVION.title": "Pull From Oblivion",
+
+  "AVEMUJICA-VIRTUOSO_FORM.description": "At the start of your turn, [gold]Enchant[/gold] ALL cards in your [gold]Hand[/gold] with [gold]Masterful[/gold] {VirtuosoFormPower:diff()}.",
+  "AVEMUJICA-VIRTUOSO_FORM.title": "Virtuoso's Form",
 
   "AVEMUJICA-SPARK.description": "{IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold] {Repeat:diff()} times.",
   "AVEMUJICA-SPARK.title": "Spark of Inspiration",

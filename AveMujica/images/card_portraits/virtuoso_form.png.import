@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://caje1mnjbbxko"
-path="res://.godot/imported/muse.png-a80349d863849b3e41f6ebec7e56b3a1.ctex"
+uid="uid://4pd06cpm5oei"
+path="res://.godot/imported/virtuoso_form.png-eab68554639e2d6220699456a0d199ca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/card_portraits/muse.png"
-dest_files=["res://.godot/imported/muse.png-a80349d863849b3e41f6ebec7e56b3a1.ctex"]
+source_file="res://AveMujica/images/card_portraits/virtuoso_form.png"
+dest_files=["res://.godot/imported/virtuoso_form.png-eab68554639e2d6220699456a0d199ca.ctex"]
 
 [params]
 

@@ -73,5 +73,9 @@
 
   "AVEMUJICA-LOFT_MOON_POWER.description": "At the end of your turn, allies gain [blue]{Amount}[/blue] HP.",
   "AVEMUJICA-LOFT_MOON_POWER.smartDescription": "At the end of your turn, allies gain [blue]{Amount}[/blue] HP.",
-  "AVEMUJICA-LOFT_MOON_POWER.title": "Loft Moon"
+  "AVEMUJICA-LOFT_MOON_POWER.title": "Loft Moon",
+
+  "AVEMUJICA-VIRTUOSO_FORM_POWER.description": "At the start of your turn, [gold]Enchant[/gold] ALL cards in your [gold]Hand[/gold] with [gold]Masterful[/gold].",
+  "AVEMUJICA-VIRTUOSO_FORM_POWER.smartDescription": "At the start of your turn, [gold]Enchant[/gold] ALL cards in your [gold]Hand[/gold] with [gold]Masterful[/gold] [blue]{Amount}[/blue].",
+  "AVEMUJICA-VIRTUOSO_FORM_POWER.title": "Virtuoso's Form"
 }
