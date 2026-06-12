@@ -1,7 +1,9 @@
-﻿using Godot;
+﻿using AveMujica.AveMujicaCode.Actions;
+using Godot;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Nodes.HoverTips;
+using MegaCrit.Sts2.Core.Runs;
 
 namespace AveMujica.AveMujicaCode.Cards.Allies;
 
@@ -75,16 +77,12 @@ public partial class NAllyButton : BaseButton
         }
     }
 
-    private async void Skill()
+    private void Skill()
     {
         NHoverTipSet.Remove(this);
-        if (skillNum == 1)
+        if (owner.Creature.PetOwner != null)
         {
-            await owner.Skill1();
-        }
-        else
-        {
-            await owner.Skill2();
+            RunManager.Instance.ActionQueueSynchronizer.RequestEnqueue(new AllyButtonAction(owner.Creature.PetOwner, skillNum, owner.Creature.ModelId));
         }
     }
 
