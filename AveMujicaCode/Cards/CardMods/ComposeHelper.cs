@@ -1,5 +1,6 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Allies;
 using AveMujica.AveMujicaCode.Cards.Token;
+using AveMujica.AveMujicaCode.Hooks;
 using AveMujica.AveMujicaCode.Overlays;
 using BaseLib.Abstracts;
 using BaseLib.Utils;
@@ -94,6 +95,7 @@ public class ComposeHelper
             if (numComposes >= NumComposesSongComplete)
             {
                 await CardPileCmd.AddGeneratedCardToCombat(currentSong, PileType.Hand, owner);
+                await AveMujicaHooks.OnFinishComposing(owner.RunState, owner.Creature.CombatState, currentSong);
                 songDict[owner] = null;
                 numComposeDict[owner] = 0;
             }

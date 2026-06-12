@@ -77,5 +77,9 @@
 
   "AVEMUJICA-VIRTUOSO_FORM_POWER.description": "At the start of your turn, [gold]Enchant[/gold] ALL cards in your [gold]Hand[/gold] with [gold]Masterful[/gold].",
   "AVEMUJICA-VIRTUOSO_FORM_POWER.smartDescription": "At the start of your turn, [gold]Enchant[/gold] ALL cards in your [gold]Hand[/gold] with [gold]Masterful[/gold] [blue]{Amount}[/blue].",
-  "AVEMUJICA-VIRTUOSO_FORM_POWER.title": "Virtuoso's Form"
+  "AVEMUJICA-VIRTUOSO_FORM_POWER.title": "Virtuoso's Form",
+
+  "AVEMUJICA-GROUP_PERFORMANCE_POWER.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], also give [blue]1[/blue] copy to ALL players.",
+  "AVEMUJICA-GROUP_PERFORMANCE_POWER.smartDescription": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], also give [blue]{Amount}[/blue] {Amount:plural:copy|copies} to ALL players.",
+  "AVEMUJICA-GROUP_PERFORMANCE_POWER.title": "Group Performance"
 }
