@@ -2,11 +2,9 @@
 using AveMujica.AveMujicaCode.Hooks;
 using BaseLib.Abstracts;
 using BaseLib.Extensions;
-using Godot;
 using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.Entities.Cards;
-using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.Models;
 
@@ -26,13 +24,14 @@ public class GroupPerformancePower() : AveMujicaPower, IOnFinishComposing
         {
             return;
         }
-        foreach (Creature creature in Owner.CombatState.GetTeammatesOf(Owner).Where(c => c.IsAlive && c.IsPlayer))
+
+        foreach (Player player in CombatState.Players.Where(p => p.Creature.IsAlive && p != Owner.Player))
         {
-            if (creature.Player != null && creature.CombatState != null)
+            if (player.Creature.CombatState != null)
             {
                 for (int i = 0; i < Amount; i++)
                 {
-                    var copySong = creature.CombatState.CreateCard<Song>(creature.Player);
+                    var copySong = player.Creature.CombatState.CreateCard<Song>(player);
                     foreach (CardModifier modifier in CardModifier.Modifiers(card))
                     {
                         CardModifier modifier2 = (CardModifier)modifier.MutableClone();

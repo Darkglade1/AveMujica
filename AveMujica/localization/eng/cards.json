@@ -254,7 +254,7 @@
   "AVEMUJICA-VIRTUOSO_FORM.description": "At the start of your turn, [gold]Enchant[/gold] ALL cards in your [gold]Hand[/gold] with [gold]Masterful[/gold] {VirtuosoFormPower:diff()}.",
   "AVEMUJICA-VIRTUOSO_FORM.title": "Virtuoso's Form",
 
-  "AVEMUJICA-GROUP_PERFORMANCE.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], also give {Cards:diff()} copy to ALL players.",
+  "AVEMUJICA-GROUP_PERFORMANCE.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], also give {Cards:diff()} copy to ALL other players.",
   "AVEMUJICA-GROUP_PERFORMANCE.title": "Group Performance",
 
   "AVEMUJICA-SPARK.description": "{IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold] {Repeat:diff()} times.",
