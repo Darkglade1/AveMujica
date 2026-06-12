@@ -38,6 +38,7 @@ public sealed class DolorisAlly : AbstractAlly
     var owner = Creature.PetOwner;
     if (owner != null && !ActedThisTurn)
     {
+      ActedThisTurn = true;
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
       await PowerCmd.Apply<StrengthPower>(new ThrowingPlayerChoiceContext(), owner.Creature, playerStrength, Creature, null);
       await CreatureCmd.GainMaxHp(Creature, autoSkillHPGain);

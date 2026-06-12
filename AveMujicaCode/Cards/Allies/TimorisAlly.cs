@@ -37,6 +37,7 @@ public sealed class TimorisAlly : AbstractAlly
     var owner = Creature.PetOwner;
     if (owner != null && !ActedThisTurn)
     {
+      ActedThisTurn = true;
       await CreatureCmd.TriggerAnim(Creature, "Attack", 0);
       IReadOnlyList<Creature>? hittableEnemies = Creature.CombatState?.HittableEnemies;
       if (hittableEnemies != null && hittableEnemies.Count != 0)

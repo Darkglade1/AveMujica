@@ -37,6 +37,7 @@ public sealed class MortisAlly : AbstractAlly
     var owner = Creature.PetOwner;
     if (owner != null && !ActedThisTurn)
     {
+      ActedThisTurn = true;
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
       await CreatureCmd.GainBlock(owner.Creature, block, ValueProp.Unpowered, null);
       await CreatureCmd.GainMaxHp(Creature, autoSkillHPGain);
