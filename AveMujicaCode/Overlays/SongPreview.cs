@@ -27,7 +27,7 @@ public partial class SongPreview : Control
 
     public void UpdateDisplay(ICombatState? combatState, Player owner)
     {
-        if (combatState != null)
+        if (combatState != null && LocalContext.IsMe(owner))
         {
             if (!_cardDisplayDict.ContainsKey(owner))
             {
@@ -61,7 +61,7 @@ public partial class SongPreview : Control
 
     private void SetupDisplay(ICombatState? combatState, Player owner)
     {
-        if (combatState != null)
+        if (combatState != null && LocalContext.IsMe(owner))
         {
             var songDict = ComposeHelper.ComposeFields.CurrentSong.Get(combatState);
             if (songDict != null)
