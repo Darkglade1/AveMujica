@@ -1,4 +1,5 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Rare;
+using AveMujica.AveMujicaCode.Hooks;
 using AveMujica.AveMujicaCode.Powers;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
@@ -61,31 +62,14 @@ public abstract class PerformCard(int cost, CardType type, CardRarity rarity, Ta
             for (int i = 0; i < numTriggers; i++)
             {
                 await DoPerformEffect(choiceContext, play, cardTypes);
-                var cantabilePower = play.Card.Owner.Creature.GetPower<CantabilePower>();
-                if (cantabilePower != null)
-                {
-                    cantabilePower.Flash();
-                    await CreatureCmd.GainBlock(play.Card.Owner.Creature, cantabilePower.Amount, ValueProp.Unpowered, null);
-                }
+                await AveMujicaHooks.AfterPerform(Owner.RunState, Owner.Creature.CombatState, choiceContext, play);
                 ICombatState? combatState = CombatState ?? Owner.Creature.CombatState;
                 if (!CombatManager.Instance.IsOverOrEnding && combatState != null)
                 {
                     CombatManager.Instance.History.Add(combatState, new PerformCardEntry(this, combatState.RoundNumber, combatState.CurrentSide, CombatManager.Instance.History, combatState.Players));
                 }
             }
-
-            var foundCards = new List<CardModel>();
-            foreach (var card in PileType.Discard.GetPile(Owner).Cards)
-            {
-                if (card is EndlessPerformance)
-                {
-                    foundCards.Add(card);
-                }
-            }
-            foreach (var card in foundCards)
-            {
-                await CardPileCmd.Add(card, PileType.Hand);
-            }
+            perfectCombo?.UpdateCounter();
         }
     }
     

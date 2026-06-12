@@ -231,7 +231,7 @@
   "AVEMUJICA-GEORGETTE_ME.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Perform Skill Skill:[/gold] Double your [gold]Block[/gold].",
   "AVEMUJICA-GEORGETTE_ME.title": "Georgette Me, Georgette You",
 
-  "AVEMUJICA-ENDLESS_PERFORMANCE.description": "Deal {Damage:diff()} damage.\nWhenever you [gold]Perform[/gold], put this card from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
+  "AVEMUJICA-ENDLESS_PERFORMANCE.description": "Deal {Damage:diff()} damage.\nWhenever you [gold]Perform[/gold], put this into your [gold]Hand[/gold].",
   "AVEMUJICA-ENDLESS_PERFORMANCE.title": "Endless Performance",
 
   "AVEMUJICA-ETHER.description": "Your cards that [gold]Exhaust[/gold] when played cost 0.",
