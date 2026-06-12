@@ -1,5 +1,6 @@
 ﻿using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Runs;
@@ -31,8 +32,8 @@ public class AveMujicaHooks
         return DispatchAsync<IAfterPerform>(rs, cs, m => m.AfterPerform(choiceContext, play));
     }
     
-    public static Task OnFinishComposing(IRunState? rs, ICombatState? cs, CardModel card)
+    public static Task OnFinishComposing(IRunState? rs, ICombatState? cs, Player player, CardModel card)
     {
-        return DispatchAsync<IOnFinishComposing>(rs, cs, m => m.OnFinishComposing(card));
+        return DispatchAsync<IOnFinishComposing>(rs, cs, m => m.OnFinishComposing(player, card));
     }
 }

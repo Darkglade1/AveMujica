@@ -18,9 +18,9 @@ public class GroupPerformancePower() : AveMujicaPower, IOnFinishComposing
     public override PowerStackType StackType =>
         PowerStackType.Counter;
 
-    public async Task OnFinishComposing(CardModel card)
+    public async Task OnFinishComposing(Player composer, CardModel card)
     {
-        if (Owner.CombatState == null)
+        if (Owner.CombatState == null || Owner != composer.Creature)
         {
             return;
         }

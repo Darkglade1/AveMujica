@@ -95,7 +95,7 @@ public class ComposeHelper
             if (numComposes >= NumComposesSongComplete)
             {
                 await CardPileCmd.AddGeneratedCardToCombat(currentSong, PileType.Hand, owner);
-                await AveMujicaHooks.OnFinishComposing(owner.RunState, owner.Creature.CombatState, currentSong);
+                await AveMujicaHooks.OnFinishComposing(owner.RunState, owner.Creature.CombatState, owner, currentSong);
                 songDict[owner] = null;
                 numComposeDict[owner] = 0;
             }
