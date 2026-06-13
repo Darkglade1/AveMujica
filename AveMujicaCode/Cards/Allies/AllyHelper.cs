@@ -45,7 +45,6 @@ public class AllyHelper
                             .TweenProperty(node, "modulate", Colors.White, 0.35)
                             .SetDelay(0.1);
                     }
-                    node?.TrackBlockStatus(summoner.Creature);
                     node?.ToggleIsInteractable(true);
                     index++;
                 }

@@ -24,10 +24,6 @@ namespace AveMujica.AveMujicaCode.Cards.Allies;
 
 public abstract class AbstractAlly : CustomMonsterModel
 {
-  public AbstractAlly()
-  {
-    CustomContentDictionary.RegisterType(GetType());
-  }
   public override int MinInitialHp => 1;
 
   public override int MaxInitialHp => 1;
