@@ -37,7 +37,7 @@ public class DoNotFearDeath : AveMujicaPower
         Creature? dealer,
         CardModel? cardSource)
     {
-        if (Owner.Monster is MortisAlly && dealer != Owner)
+        if (Owner.Monster is MortisAlly && target == Owner)
         {
             await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Owner, result.UnblockedDamage, false);
         }
