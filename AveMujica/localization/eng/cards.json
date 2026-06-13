@@ -195,7 +195,8 @@
   "AVEMUJICA-MEMENTO_MORI.description": "Deal {Damage:diff()} damage to ALL enemies.\n[gold]Compose[/gold] \"Lose {HpLoss:diff()} HP.\"",
   "AVEMUJICA-MEMENTO_MORI.title": "Memento Mori",
 
-  "AVEMUJICA-MUSICA_CAELESTIS.description": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each [gold]Song[/gold] in your [gold]Exhaust Pile[/gold].",
+  "AVEMUJICA-MUSICA_CAELESTIS.description": "Deal {Damage:diff()} damage.\nPlay a [gold]Song[/gold] in your [gold]Exhaust Pile[/gold], then remove it from combat.",
+  "AVEMUJICA-MUSICA_CAELESTIS.selectionScreenPrompt": "Choose a [gold]Song[/gold] to play.",
   "AVEMUJICA-MUSICA_CAELESTIS.title": "Musica Caelestis",
 
   "AVEMUJICA-ODE_TO_WAR.description": "Deal {Damage:diff()} damage.\n[gold]Compose[/gold] \"Deal {Compose:diff()} damage.\" until you finish [gold]Composing[/gold] a [gold]Song[/gold].",
