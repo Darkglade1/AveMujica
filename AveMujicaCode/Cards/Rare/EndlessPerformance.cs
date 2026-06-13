@@ -28,9 +28,10 @@ public class EndlessPerformance() : AveMujicaCard(0,
 
     public async Task AfterPerform(PlayerChoiceContext choiceContext, CardPlay play)
     {
-        if (!PileType.Hand.GetPile(Owner).Cards.Contains(this))
+        if (play.Card.Owner != Owner || Pile?.Type == PileType.Hand || Pile?.Type == PileType.Deck)
         {
-            await CardPileCmd.Add(this, PileType.Hand);
+            return;
         }
+        await CardPileCmd.Add(this, PileType.Hand);
     }
 }
