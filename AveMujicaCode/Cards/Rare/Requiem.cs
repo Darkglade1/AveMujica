@@ -8,11 +8,11 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Rare;
 
-public class MementoMori() : AveMujicaCard(2,
+public class Requiem() : AveMujicaCard(2,
     CardType.Attack, CardRarity.Rare,
     TargetType.AllEnemies)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(22, ValueProp.Move), new HpLossVar(5)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(22, ValueProp.Move), new HpLossVar(3)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

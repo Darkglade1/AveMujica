@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pxmb5vv1mn6j"
-path="res://.godot/imported/memento_mori.png-8af483d5ccf823b9f1f565c3cbb26005.ctex"
+uid="uid://exhk3d5i5yji"
+path="res://.godot/imported/canon.png-0e0b2d97565aa46b85052e61848173b8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/card_portraits/memento_mori.png"
-dest_files=["res://.godot/imported/memento_mori.png-8af483d5ccf823b9f1f565c3cbb26005.ctex"]
+source_file="res://AveMujica/images/card_portraits/big/canon.png"
+dest_files=["res://.godot/imported/canon.png-0e0b2d97565aa46b85052e61848173b8.ctex"]
 
 [params]
 

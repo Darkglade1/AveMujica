@@ -63,8 +63,8 @@
   "AVEMUJICA-PERFECT_COMBO_POWER.smartDescription": "Your [gold]Perform[/gold] effects trigger an additional time for each time a [gold]Perform[/gold] effect has triggered this turn.\n(Currently triggers [blue]{Amount}[/blue] extra time(s))",
   "AVEMUJICA-PERFECT_COMBO_POWER.title": "Perfect Combo Storm",
 
-  "AVEMUJICA-ETHER_POWER.description": "Your cards that [gold]Exhaust[/gold] when played cost [blue]0[/blue].",
-  "AVEMUJICA-ETHER_POWER.smartDescription": "Your cards that [gold]Exhaust[/gold] when played cost [blue]0[/blue].",
+  "AVEMUJICA-ETHER_POWER.description": "Your cards that [gold]Retain[/gold] [gold]Exhaust[/gold] when played.\nYour cards that [gold]Exhaust[/gold] when played cost [blue]0[/blue].",
+  "AVEMUJICA-ETHER_POWER.smartDescription": "Your cards that [gold]Retain[/gold] [gold]Exhaust[/gold] when played.\nYour cards that [gold]Exhaust[/gold] when played cost [blue]0[/blue].",
   "AVEMUJICA-ETHER_POWER.title": "Ether",
 
   "AVEMUJICA-CONSIGN_POWER.description": "At the end of combat, remove a card from your [gold]Deck[/gold].",

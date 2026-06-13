@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkyfewagalwd0"
-path="res://.godot/imported/rondo.png-c7d1ce4fe3c521da38b311af1152fadb.ctex"
+uid="uid://uxje8o5wsfto"
+path="res://.godot/imported/canon.png-666299b7b40de1ca4a09f4663feddf5c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/card_portraits/rondo.png"
-dest_files=["res://.godot/imported/rondo.png-c7d1ce4fe3c521da38b311af1152fadb.ctex"]
+source_file="res://AveMujica/images/card_portraits/canon.png"
+dest_files=["res://.godot/imported/canon.png-666299b7b40de1ca4a09f4663feddf5c.ctex"]
 
 [params]
 

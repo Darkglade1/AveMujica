@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bydsm4vrmbsm1"
-path="res://.godot/imported/rondo.png-973ce7547085e2cbd966d677a5bddecb.ctex"
+uid="uid://c2hck406p254d"
+path="res://.godot/imported/requiem.png-553a4f63a56f0bc9d8a3e87fccab7e95.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/card_portraits/big/rondo.png"
-dest_files=["res://.godot/imported/rondo.png-973ce7547085e2cbd966d677a5bddecb.ctex"]
+source_file="res://AveMujica/images/card_portraits/requiem.png"
+dest_files=["res://.godot/imported/requiem.png-553a4f63a56f0bc9d8a3e87fccab7e95.ctex"]
 
 [params]
 

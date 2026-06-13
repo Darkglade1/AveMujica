@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3fs07atwo8xc"
-path="res://.godot/imported/memento_mori.png-92eb6a67814e0952a36a859ad2af1c05.ctex"
+uid="uid://c5xtub2608f3e"
+path="res://.godot/imported/requiem.png-1d2f3db49427decd5044436182be676b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/card_portraits/big/memento_mori.png"
-dest_files=["res://.godot/imported/memento_mori.png-92eb6a67814e0952a36a859ad2af1c05.ctex"]
+source_file="res://AveMujica/images/card_portraits/big/requiem.png"
+dest_files=["res://.godot/imported/requiem.png-1d2f3db49427decd5044436182be676b.ctex"]
 
 [params]
 

@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Common;
 
-public class Rondo() : AveMujicaCard(1,
+public class Fermata() : AveMujicaCard(1,
     CardType.Attack, CardRarity.Common,
     TargetType.AnyEnemy)
 {
