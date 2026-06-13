@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1q6choeg0lyo"
-path="res://.godot/imported/diminuendo_power.png-7ace2c422f46d56a35b78202663d48a4.ctex"
+uid="uid://dajp0v5qu2diw"
+path="res://.godot/imported/shackle.png-bac05b444bdc5731f44086453fbc89ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/powers/big/diminuendo_power.png"
-dest_files=["res://.godot/imported/diminuendo_power.png-7ace2c422f46d56a35b78202663d48a4.ctex"]
+source_file="res://AveMujica/images/powers/big/shackle.png"
+dest_files=["res://.godot/imported/shackle.png-bac05b444bdc5731f44086453fbc89ab.ctex"]
 
 [params]
 
