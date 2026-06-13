@@ -18,6 +18,9 @@ public class CantabilePower() : AveMujicaPower, IAfterPerform
     public async Task AfterPerform(PlayerChoiceContext choiceContext, CardPlay play)
     {
         Flash();
-        await CreatureCmd.GainBlock(play.Card.Owner.Creature, Amount, ValueProp.Unpowered, null);
+        if (play.Card.Owner.Creature == Owner)
+        {
+            await CreatureCmd.GainBlock(play.Card.Owner.Creature, Amount, ValueProp.Unpowered, null);
+        }
     }
 }

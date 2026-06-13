@@ -19,6 +19,10 @@ public class VirtuosoFormPower : AveMujicaPower
 
     public override Task AfterPlayerTurnStartLate(PlayerChoiceContext choiceContext, Player player)
     {
+        if (player.Creature != Owner)
+        {
+            return Task.CompletedTask;
+        }
         Flash();
         foreach (var card in PileType.Hand.GetPile(player).Cards)
         {

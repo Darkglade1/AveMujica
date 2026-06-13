@@ -23,13 +23,19 @@ public class PerfectComboPower : AveMujicaPower
         Creature? applier,
         CardModel? cardSource)
     {
-        UpdateCounter();
+        if (applier == Owner)
+        {
+            UpdateCounter();
+        }
         return Task.CompletedTask;
     }
     
     public override Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
     {
-        UpdateCounter();
+        if (player.Creature == Owner)
+        {
+            UpdateCounter();
+        }
         return Task.CompletedTask;
     }
     
