@@ -1,4 +1,5 @@
 ﻿using AveMujica.AveMujicaCode.Cards.CardMods;
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
@@ -16,6 +17,7 @@ public class Spark() : AveMujicaCard(0,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         for (int i = 0; i < DynamicVars.Repeat.BaseValue; i++)
         {
             await ComposeHelper.RandomCompose(Owner, choiceContext, IsUpgraded);

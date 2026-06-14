@@ -1,4 +1,5 @@
-﻿using AveMujica.AveMujicaCode.Extensions;
+﻿using AveMujica.AveMujicaCode.Audio;
+using AveMujica.AveMujicaCode.Extensions;
 using AveMujica.AveMujicaCode.Powers;
 using MegaCrit.Sts2.Core.Animation;
 using MegaCrit.Sts2.Core.Assets;
@@ -39,6 +40,7 @@ public sealed class TimorisAlly : AbstractAlly
     {
       ActedThisTurn = true;
       await CreatureCmd.TriggerAnim(Creature, "Attack", 0);
+      Sfx.ATK_GUITAR.Play();
       IReadOnlyList<Creature>? hittableEnemies = Creature.CombatState?.HittableEnemies;
       if (hittableEnemies != null && hittableEnemies.Count != 0)
       {
@@ -75,6 +77,7 @@ public sealed class TimorisAlly : AbstractAlly
     {
       ActedThisTurn = true;
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
+      Sfx.SKILL_BASS.Play();
       await PaySkillCost(skill1HPCost);
       if (Creature.CombatState != null)
       {
@@ -97,6 +100,7 @@ public sealed class TimorisAlly : AbstractAlly
     {
       ActedThisTurn = true;
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
+      Sfx.SKILL_BASS.Play();
       await PaySkillCost(skill2HPCost);
       if (Creature.CombatState != null)
       {

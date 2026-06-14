@@ -1,4 +1,5 @@
-﻿using AveMujica.AveMujicaCode.Cards.Allies;
+﻿using AveMujica.AveMujicaCode.Audio;
+using AveMujica.AveMujicaCode.Cards.Allies;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -50,6 +51,7 @@ public class HowDareYou : AveMujicaPower
             if (!triggeredAnimThisTurn)
             {
                 await CreatureCmd.TriggerAnim(existing, "Attack", 0);
+                Sfx.SKILL_GUITAR_VOCALS3.Play();
                 triggeredAnimThisTurn = true;
             }
             await CreatureCmd.Damage(choiceContext, dealer, Amount, ValueProp.Unpowered | ValueProp.SkipHurtAnim, existing, null);

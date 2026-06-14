@@ -1,4 +1,5 @@
-﻿using AveMujica.AveMujicaCode.Extensions;
+﻿using AveMujica.AveMujicaCode.Audio;
+using AveMujica.AveMujicaCode.Extensions;
 using AveMujica.AveMujicaCode.Powers;
 using MegaCrit.Sts2.Core.Animation;
 using MegaCrit.Sts2.Core.Assets;
@@ -41,6 +42,7 @@ public sealed class AmorisAlly : AbstractAlly
     {
       ActedThisTurn = true;
       await CreatureCmd.TriggerAnim(Creature, "Attack", 0f);
+      Sfx.SKILL_DRUM2.Play();
       IReadOnlyList<Creature>? hittableEnemies = Creature.CombatState?.HittableEnemies;
       if (hittableEnemies != null && hittableEnemies.Count != 0)
       {
@@ -73,6 +75,7 @@ public sealed class AmorisAlly : AbstractAlly
     {
       ActedThisTurn = true;
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
+      Sfx.SKILL_DRUM.Play();
       await PaySkillCost(skill1HPCost);
       await PowerCmd.Apply<AsFierceAsFire>(new ThrowingPlayerChoiceContext(), owner.Creature, strength, Creature, null);
     }
@@ -85,6 +88,7 @@ public sealed class AmorisAlly : AbstractAlly
     {
       ActedThisTurn = true;
       await CreatureCmd.TriggerAnim(Creature, "Cast2", 0);
+      Sfx.SKILL_DRUM.Play();
       await PaySkillCost(skill2HPCost);
       currentHits += buffHits;
     }

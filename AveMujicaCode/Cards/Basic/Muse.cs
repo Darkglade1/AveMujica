@@ -1,6 +1,7 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Ancient;
 using AveMujica.AveMujicaCode.Cards.CardMods;
 using BaseLib.Abstracts;
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
@@ -20,6 +21,7 @@ public class Muse() : AveMujicaCard(0,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         await ComposeHelper.RandomCompose(Owner, choiceContext, IsUpgraded);
     }
 

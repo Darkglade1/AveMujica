@@ -1,5 +1,7 @@
-﻿using AveMujica.AveMujicaCode.Extensions;
+﻿using AveMujica.AveMujicaCode.Audio;
+using AveMujica.AveMujicaCode.Extensions;
 using AveMujica.AveMujicaCode.Powers;
+using BaseLib.Audio;
 using MegaCrit.Sts2.Core.Animation;
 using MegaCrit.Sts2.Core.Assets;
 using MegaCrit.Sts2.Core.Bindings.MegaSpine;
@@ -61,6 +63,7 @@ public sealed class MortisAlly : AbstractAlly
     {
       ActedThisTurn = true;
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
+      Sfx.SKILL_GUITAR.Play();
       await PaySkillCost(skill1HPCost);
       await CardPileCmd.Draw(new ThrowingPlayerChoiceContext(), cardDraw, owner);
     }

@@ -1,6 +1,8 @@
 ﻿using AveMujica.AveMujicaCode.Actions;
+using AveMujica.AveMujicaCode.Audio;
 using AveMujica.AveMujicaCode.Extensions;
 using AveMujica.AveMujicaCode.Powers;
+using BaseLib.Audio;
 using MegaCrit.Sts2.Core.Animation;
 using MegaCrit.Sts2.Core.Assets;
 using MegaCrit.Sts2.Core.Bindings.MegaSpine;
@@ -67,6 +69,7 @@ public sealed class DolorisAlly : AbstractAlly
     {
       ActedThisTurn = true;
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
+      Sfx.SKILL_GUITAR_VOCALS.Play();
       await PaySkillCost(skill1HPCost);
       await CreatureCmd.GainBlock(owner.Creature, block, ValueProp.Unpowered, null);
     }
@@ -79,6 +82,7 @@ public sealed class DolorisAlly : AbstractAlly
     {
       ActedThisTurn = true;
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
+      Sfx.SKILL_GUITAR_VOCALS.Play();
       await PaySkillCost(skill2HPCost);
       await PowerCmd.Apply<HowDareYou>(new ThrowingPlayerChoiceContext(), owner.Creature, damage, Creature, null);
     }
