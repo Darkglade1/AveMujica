@@ -12,7 +12,7 @@ public class CrescentMoonEchos() : AveMujicaCard(0,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<Oblivion>(4)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<Oblivion>(3)];
 
     protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.GainsOblivion];
     
@@ -34,7 +34,7 @@ public class CrescentMoonEchos() : AveMujicaCard(0,
 
     protected override void OnUpgrade()
     {
-        DynamicVars["Oblivion"].UpgradeValueBy(2);
+        DynamicVars["Oblivion"].UpgradeValueBy(1);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
