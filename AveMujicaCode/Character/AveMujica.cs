@@ -88,4 +88,9 @@ public class AveMujica : PlaceholderCharacterModel
     public override string CustomCharacterSelectIconPath => "char_select.png".CharacterUiPath();
     public override string CustomCharacterSelectLockedIconPath => "char_select_char_name_locked.png".CharacterUiPath();
     public override string CustomMapMarkerPath => "map_marker_char_name.png".CharacterUiPath();
+    public override string CharacterSelectSfx => "skill_keyboard.ogg".AudioPath();
+
+    public override string CustomAttackSfx => "atk_keyboard.ogg".AudioPath();
+
+    public override string CustomCastSfx => "skill_keyboard4.ogg".AudioPath();
 }

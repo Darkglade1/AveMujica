@@ -78,4 +78,9 @@ public static class StringExtensions
     {
         return Path.Join(MainFile.ResPath, "images", "enchantments", path);
     }
+    
+    public static string AudioPath(this string path)
+    {
+        return Path.Join(MainFile.ResPath, "audio", path);
+    }
 }
