@@ -14,6 +14,7 @@ public class Ether() : AveMujicaCard(2,
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromKeyword(CardKeyword.Retain),
         HoverTipFactory.FromKeyword(CardKeyword.Exhaust)
     ];
 

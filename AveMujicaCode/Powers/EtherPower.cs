@@ -17,21 +17,29 @@ public class EtherPower() : AveMujicaPower
         Decimal originalCost,
         out Decimal modifiedCost)
     {
-        if (card.Owner.Creature != Owner)
+        if (card.Owner.Creature == Owner)
         {
-            modifiedCost = originalCost;
-            return false;
-        }
-        if (card.Keywords.Contains(CardKeyword.Retain))
-        {
-            card.AddKeyword(CardKeyword.Exhaust);
-        }
-        if (card.Keywords.Contains(CardKeyword.Exhaust))
-        {
-            modifiedCost = 0M;
-            return true;
+            if (card.Keywords.Contains(CardKeyword.Exhaust) || card.Keywords.Contains(CardKeyword.Retain))
+            {
+                modifiedCost = 0M;
+                return true;
+            }
         }
         modifiedCost = originalCost;
         return false;
+    }
+    
+    public override (PileType, CardPilePosition) ModifyCardPlayResultPileTypeAndPosition(
+        CardModel card,
+        bool isAutoPlay,
+        ResourceInfo resources,
+        PileType pileType,
+        CardPilePosition position)
+    {
+        if (card.Owner.Creature == Owner && card.Keywords.Contains(CardKeyword.Retain))
+        {
+            return (PileType.Exhaust, position);
+        }
+        return (pileType, position);
     }
 }
