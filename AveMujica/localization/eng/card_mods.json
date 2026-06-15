@@ -15,5 +15,6 @@
   "AVEMUJICA-SEEK-MOD.plural_description": "Put {0} cards from your [gold]Draw Pile[/gold] into your [gold]Hand[/gold].",
   "AVEMUJICA-SEEK-MOD.selectionScreenPrompt": "Select a card to put in your Hand.",
   "AVEMUJICA-LOSE-HP-MOD.description": "Lose {0} HP.",
-  "AVEMUJICA-OBLIVION-MOD.description": "Gain {0} [gold]Oblivion[/gold]."
+  "AVEMUJICA-OBLIVION-MOD.description": "Gain {0} [gold]Oblivion[/gold].",
+  "AVEMUJICA-DREAM-THREAD-MOD.description": "Gain {0} [gold]Dream Thread[/gold]."
 }

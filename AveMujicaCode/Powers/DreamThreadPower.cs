@@ -32,6 +32,7 @@ public class DreamThreadPower : AveMujicaPower
         if (Owner.CombatState != null && power is DreamThreadPower && Owner == applier && Owner.Player != null)
         {
             var numTriggers = Amount / AwakenIncrement;
+            int numUsedTriggers = 0;
             if (numTriggers > 0)
             {
                 for (int i = 0; i < numTriggers; i++)
@@ -107,11 +108,13 @@ public class DreamThreadPower : AveMujicaPower
                             {
                                 await AllyHelper.Awaken<AmorisAlly>(choiceContext, Owner.Player, 1);
                             }
-                            Amount %= AwakenIncrement;
-                            InvokeDisplayAmountChanged();
+                            numUsedTriggers++;
                         }
                     }
                 }
+                var usedThread = numUsedTriggers * AwakenIncrement;
+                Amount -= usedThread;
+                InvokeDisplayAmountChanged();
             }
         }
     }

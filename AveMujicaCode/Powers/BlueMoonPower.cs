@@ -22,7 +22,7 @@ public class BlueMoonPower() : AveMujicaPower
         if (side == CombatSide.Player && Owner.Player != null)
         {
             Flash();
-            await PowerCmd.Apply<Oblivion>(choiceContext, Owner, Amount, Owner, null);
+            await PowerCmd.Apply<DreamThreadPower>(choiceContext, Owner, Amount, Owner, null);
         }
     }
 }

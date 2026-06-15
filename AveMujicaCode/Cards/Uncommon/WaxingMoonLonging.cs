@@ -1,6 +1,7 @@
-﻿using AveMujica.AveMujicaCode.Powers;
+﻿using AveMujica.AveMujicaCode.Cards.Allies;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
@@ -16,9 +17,28 @@ public class WaxingMoonLonging() : AveMujicaCard(1,
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new CalculationBaseVar(0),
         new CalculationExtraVar(1),
-        new CalculatedBlockVar(ValueProp.Move).WithMultiplier((c, _) 
-            => c.IsUpgraded ? c.Owner.Creature.GetPowerAmount<Oblivion>() + 3 : c.Owner.Creature.GetPowerAmount<Oblivion>())
+        new CalculatedBlockVar(ValueProp.Move).WithMultiplier(MultiplierCalc)
     ];
+
+    private static decimal MultiplierCalc(CardModel card, Creature? creature)
+    {
+        if (card.Owner.Creature.CombatState == null)
+        {
+            return 0;
+        }
+
+        int totalHP = 0;
+        foreach (var ally in card.Owner.Creature.CombatState.Allies)
+        {
+            if (ally.IsPet && ally.IsAlive && ally.PetOwner == card.Owner && ally.Monster is AbstractAlly)
+            {
+                totalHP += ally.CurrentHp;
+            }
+        }
+        return totalHP;
+    }
+    
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     
     public override bool GainsBlock => true;
 
@@ -31,10 +51,9 @@ public class WaxingMoonLonging() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-
+        RemoveKeyword(CardKeyword.Exhaust);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromPower(ModelDb.Power<Oblivion>())
     ];
 }

@@ -51,12 +51,12 @@
   "AVEMUJICA-ENCORE_POWER.smartDescription": "[gold]Songs[/gold] have [gold]Replay[/gold] [blue]{Amount}[/blue].",
   "AVEMUJICA-ENCORE_POWER.title": "Encore",
 
-  "AVEMUJICA-BLUE_MOON_POWER.description": "At the end of your turn, gain [gold]Oblivion[/gold].",
-  "AVEMUJICA-BLUE_MOON_POWER.smartDescription": "At the end of your turn, gain [blue]{Amount}[/blue] [gold]Oblivion[/gold].",
+  "AVEMUJICA-BLUE_MOON_POWER.description": "At the end of your turn, gain [gold]Dream Thread[/gold].",
+  "AVEMUJICA-BLUE_MOON_POWER.smartDescription": "At the end of your turn, gain [blue]{Amount}[/blue] [gold]Dream Thread[/gold].",
   "AVEMUJICA-BLUE_MOON_POWER.title": "Blue Moon's Sorrow",
 
-  "AVEMUJICA-GODDESS_OF_OBLIVION_POWER.description": "[gold]Oblivion[/gold] also triggers when you [gold]Exhaust[/gold] a card.",
-  "AVEMUJICA-GODDESS_OF_OBLIVION_POWER.smartDescription": "[gold]Oblivion[/gold] also triggers when you [gold]Exhaust[/gold] a card.",
+  "AVEMUJICA-GODDESS_OF_OBLIVION_POWER.description": "At the start of your turn, ALL [gold]Dolls[/gold] gain [gold]Strength[/gold] and [gold]Dexterity[/gold].",
+  "AVEMUJICA-GODDESS_OF_OBLIVION_POWER.smartDescription": "At the start of your turn, ALL [gold]Dolls[/gold] gain [blue]{Amount}[/blue] [gold]Strength[/gold] and [gold]Dexterity[/gold].",
   "AVEMUJICA-GODDESS_OF_OBLIVION_POWER.title": "Goddess of Oblivion",
 
   "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.description": "[gold]Perform[/gold] effects always trigger.",
@@ -75,8 +75,8 @@
   "AVEMUJICA-CONSIGN_POWER.smartDescription": "At the end of combat, remove [blue]{Amount}[/blue] {Amount:plural:card|cards} from your [gold]Deck[/gold].",
   "AVEMUJICA-CONSIGN_POWER.title": "Consign to Oblivion",
 
-  "AVEMUJICA-LOFT_MOON_POWER.description": "At the end of your turn, allies gain [blue]{Amount}[/blue] HP.",
-  "AVEMUJICA-LOFT_MOON_POWER.smartDescription": "At the end of your turn, allies gain [blue]{Amount}[/blue] HP.",
+  "AVEMUJICA-LOFT_MOON_POWER.description": "At the end of your turn, [gold]Dolls[/gold] gain [blue]{Amount}[/blue] HP.",
+  "AVEMUJICA-LOFT_MOON_POWER.smartDescription": "At the end of your turn, [gold]Dolls[/gold] gain [blue]{Amount}[/blue] HP.",
   "AVEMUJICA-LOFT_MOON_POWER.title": "Loft Moon",
 
   "AVEMUJICA-VIRTUOSO_FORM_POWER.description": "At the start of your turn, [gold]Enchant[/gold] ALL cards in your [gold]Hand[/gold] with [gold]Masterful[/gold].",

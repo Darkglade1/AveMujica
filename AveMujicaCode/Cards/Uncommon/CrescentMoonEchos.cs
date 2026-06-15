@@ -1,20 +1,18 @@
-﻿using AveMujica.AveMujicaCode.Powers;
-using MegaCrit.Sts2.Core.Commands;
+﻿using AveMujica.AveMujicaCode.Cards.Allies;
+using AveMujica.AveMujicaCode.Powers;
+using BaseLib.Patches.Features;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
 public class CrescentMoonEchos() : AveMujicaCard(0,
     CardType.Skill, CardRarity.Uncommon,
-    TargetType.Self)
+    CustomTargetType.PetOrSelf)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<Oblivion>(3)];
-
-    protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.GainsOblivion];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DreamspinVar(3)];
     
     protected override bool HasEnergyCostX => true;
     
@@ -25,19 +23,17 @@ public class CrescentMoonEchos() : AveMujicaCard(0,
         int num = ResolveEnergyXValue();
         if (num > 0)
         {
-            for (int i = 0; i < num; i++)
-            {
-                await PowerCmd.Apply<Oblivion>(choiceContext, Owner.Creature, DynamicVars["Oblivion"].BaseValue, Owner.Creature, this);
-            }
+            await AllyHelper.Dreamspin(choiceContext, Owner, DynamicVars["Dreamspin"].IntValue * num, play.Target, this);
         }
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars["Oblivion"].UpgradeValueBy(1);
+        DynamicVars["Dreamspin"].UpgradeValueBy(1);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromPower(ModelDb.Power<Oblivion>())
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin),
+        HoverTipFactory.FromPower<DreamThreadPower>()
     ];
 }

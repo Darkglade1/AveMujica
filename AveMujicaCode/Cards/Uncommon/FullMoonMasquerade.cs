@@ -1,21 +1,21 @@
-﻿using AveMujica.AveMujicaCode.Powers;
+﻿using AveMujica.AveMujicaCode.Cards.Allies;
+using AveMujica.AveMujicaCode.Powers;
+using BaseLib.Patches.Features;
 using BaseLib.Utils;
-using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
 public class FullMoonMasquerade() : AveMujicaCard(2,
     CardType.Skill, CardRarity.Uncommon,
-    TargetType.Self)
+    CustomTargetType.PetOrSelf)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(11, ValueProp.Move), new PowerVar<Oblivion>(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(11, ValueProp.Move), new DreamspinVar(2)];
     
     protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.GainsOblivion];
     
@@ -29,20 +29,18 @@ public class FullMoonMasquerade() : AveMujicaCard(2,
         IReadOnlyList<Creature>? hittableEnemies = Owner.Creature.CombatState?.HittableEnemies;
         if (hittableEnemies != null && hittableEnemies.Count != 0)
         {
-            foreach (var unused in hittableEnemies)
-            {
-                await PowerCmd.Apply<Oblivion>(choiceContext, Owner.Creature, DynamicVars["Oblivion"].BaseValue, Owner.Creature, this);
-            }
+            await AllyHelper.Dreamspin(choiceContext, Owner, DynamicVars["Dreamspin"].IntValue * hittableEnemies.Count, play.Target, this);
         }
     }
 
     protected override void OnUpgrade()
     {
         DynamicVars.Block.UpgradeValueBy(3);
-        DynamicVars["Oblivion"].UpgradeValueBy(1);
+        DynamicVars["Dreamspin"].UpgradeValueBy(1);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromPower(ModelDb.Power<Oblivion>())
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin),
+        HoverTipFactory.FromPower<DreamThreadPower>()
     ];
 }

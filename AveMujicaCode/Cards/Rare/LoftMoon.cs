@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace AveMujica.AveMujicaCode.Cards.Rare;
 
-public class LoftMoon() : AveMujicaCard(3,
+public class LoftMoon() : AveMujicaCard(2,
     CardType.Power, CardRarity.Rare,
     CustomTargetType.PetOrSelf)
 {
@@ -29,6 +29,7 @@ public class LoftMoon() : AveMujicaCard(3,
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin)
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin),
+        HoverTipFactory.FromPower<DreamThreadPower>()
     ];
 }

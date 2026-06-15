@@ -32,7 +32,6 @@ public class MoonlitStrike() : AveMujicaCard(1,
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromPower(ModelDb.Power<DreamThreadPower>()),
-        HoverTipFactory.FromKeyword(AveMujicaKeywords.Awaken)
+        HoverTipFactory.FromPower(ModelDb.Power<DreamThreadPower>())
     ];
 }

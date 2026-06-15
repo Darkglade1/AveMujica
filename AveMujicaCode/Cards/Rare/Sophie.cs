@@ -13,11 +13,11 @@ public class Sophie() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Rare,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<Oblivion>(10), new PowerVar<VulnerablePower>(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<DreamThreadPower>(8), new PowerVar<VulnerablePower>(2)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose),
-        HoverTipFactory.FromPower<Oblivion>(),
+        HoverTipFactory.FromPower<DreamThreadPower>(),
         HoverTipFactory.FromPower<VulnerablePower>()
     ];
     
@@ -31,13 +31,14 @@ public class Sophie() : AveMujicaCard(1,
         gainVulnerableMod.VulnerableAmt = (int)DynamicVars["VulnerablePower"].BaseValue;
         await ComposeHelper.AddComposeEffectsToSong([gainVulnerableMod], Owner);
         
-        var oblivionMod = (OblivionMod)ModelDb.Get<OblivionMod>().MutableClone();
-        oblivionMod.OblivionAmt = (int)DynamicVars["Oblivion"].BaseValue;
-        await ComposeHelper.AddComposeEffectsToSong([oblivionMod], Owner);
+        var dreamThreadMod = (DreamThreadMod)ModelDb.Get<DreamThreadMod>().MutableClone();
+        dreamThreadMod.DreamThreadAmt = (int)DynamicVars["DreamThreadPower"].BaseValue;
+        await ComposeHelper.AddComposeEffectsToSong([dreamThreadMod], Owner);
     }
 
     protected override void OnUpgrade()
     {
         DynamicVars["VulnerablePower"].UpgradeValueBy(-1);
+        DynamicVars["DreamThreadPower"].UpgradeValueBy(2);
     }
 }

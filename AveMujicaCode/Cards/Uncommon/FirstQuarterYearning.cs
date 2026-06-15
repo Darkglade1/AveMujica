@@ -1,24 +1,25 @@
-﻿using AveMujica.AveMujicaCode.Powers;
-using MegaCrit.Sts2.Core.CardSelection;
+﻿using BaseLib.Patches.Features;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
 public class FirstQuarterYearning() : AveMujicaCard(0,
     CardType.Skill, CardRarity.Uncommon,
-    TargetType.Self)
+    CustomTargetType.Pet)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<StrengthPower>(1)];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromPower(ModelDb.Power<Oblivion>()),
+        HoverTipFactory.FromPower(ModelDb.Power<StrengthPower>()),
+        HoverTipFactory.FromPower(ModelDb.Power<DexterityPower>()),
         HoverTipFactory.FromKeyword(CardKeyword.Exhaust)
     ];
 
@@ -26,19 +27,15 @@ public class FirstQuarterYearning() : AveMujicaCard(0,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        CardSelectorPrefs prefs = new CardSelectorPrefs(SelectionScreenPrompt, 1);
-        CardModel? card = (await CardSelectCmd.FromCombatPile(choiceContext, PileType.Discard.GetPile(Owner), Owner, prefs)).FirstOrDefault();
-        if (card == null)
-            return;
-        if (!card.Tags.Contains(AveMujicaCardTags.GainsOblivion))
+        if (play.Target != null)
         {
-            CardCmd.ApplyKeyword(card, CardKeyword.Exhaust);
+            await PowerCmd.Apply<StrengthPower>(choiceContext, play.Target, DynamicVars["StrengthPower"].BaseValue, Owner.Creature,this);
+            await PowerCmd.Apply<DexterityPower>(choiceContext, play.Target, DynamicVars["StrengthPower"].BaseValue, Owner.Creature,this);   
         }
-        await CardPileCmd.Add(card, PileType.Hand);
     }
 
     protected override void OnUpgrade()
     {
-        RemoveKeyword(CardKeyword.Exhaust);
+        DynamicVars["StrengthPower"].UpgradeValueBy(1);
     }
 }

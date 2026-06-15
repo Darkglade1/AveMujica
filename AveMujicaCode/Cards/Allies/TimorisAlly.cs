@@ -21,8 +21,8 @@ public sealed class TimorisAlly : AbstractAlly
 {
   private static int damage = 5;
   private static int strengthLoss = 10;
-  private static int skill1HPCost = 4;
-  private static int skill2HPCost = 5;
+  private static int skill1HPCost = 5;
+  private static int skill2HPCost = 6;
   public override string CustomVisualPath => "timoris/timoris.tscn".CharacterPath();
   
   protected override MoveState GetDefaultMoveState()
@@ -143,10 +143,11 @@ public sealed class TimorisAlly : AbstractAlly
 
   public static HoverTip GenerateCardHoverTip()
   {
+    var defaultText = new LocString("static_hover_tips", "AVEMUJICA-DEFAULT_TEXT.description");
     var autoSkillHoverTip = AutoSkillHoverTip();
     var skill1HoverTip = Skill1HoverTip();
     var skill2HoverTip = Skill2HoverTip();
-    var hoverTipDescription = autoSkillHoverTip.Description + "\n" + 
+    var hoverTipDescription = defaultText.GetFormattedText() + autoSkillHoverTip.Description + "\n" + 
                               skill1HoverTip.Description + "\n" + skill2HoverTip.Description;
     return new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY.title"),

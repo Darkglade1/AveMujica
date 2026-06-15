@@ -30,7 +30,6 @@ public class WaningMoonDesire() : AveMujicaCard(0,
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromPower(ModelDb.Power<DreamThreadPower>()),
-        HoverTipFactory.FromKeyword(AveMujicaKeywords.Awaken)
+        HoverTipFactory.FromPower(ModelDb.Power<DreamThreadPower>())
     ];
 }

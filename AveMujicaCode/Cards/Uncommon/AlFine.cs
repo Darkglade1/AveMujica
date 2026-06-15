@@ -16,13 +16,13 @@ public class AlFine() : AveMujicaCard(2,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(12, ValueProp.Move), new PowerVar<Oblivion>(3)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(12, ValueProp.Move), new PowerVar<DreamThreadPower>(5)];
     
     protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.GainsOblivion];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose),
-        HoverTipFactory.FromPower(ModelDb.Power<Oblivion>())
+        HoverTipFactory.FromPower(ModelDb.Power<DreamThreadPower>())
     ];
     
     protected override bool ShouldGlowGoldInternal => PlayedSongThisTurn;
@@ -34,15 +34,14 @@ public class AlFine() : AveMujicaCard(2,
         await CommonActions.CardAttack(this, play).Execute(choiceContext);
         if (PlayedSongThisTurn)
         {
-            await PowerCmd.Apply<Oblivion>(choiceContext, Owner.Creature, DynamicVars["Oblivion"].BaseValue, Owner.Creature, this);
-            await PowerCmd.Apply<Oblivion>(choiceContext, Owner.Creature, DynamicVars["Oblivion"].BaseValue, Owner.Creature, this);
+            await PowerCmd.Apply<DreamThreadPower>(choiceContext, Owner.Creature, DynamicVars["DreamThreadPower"].BaseValue, Owner.Creature, this);
         }
     }
 
     protected override void OnUpgrade()
     {
         DynamicVars.Damage.UpgradeValueBy(3);
-        DynamicVars["Oblivion"].UpgradeValueBy(1);
+        DynamicVars["DreamThreadPower"].UpgradeValueBy(2);
     }
     
     public bool PlayedSongThisTurn

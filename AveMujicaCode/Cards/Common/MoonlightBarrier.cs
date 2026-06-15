@@ -36,6 +36,7 @@ public class MoonlightBarrier() : AveMujicaCard(1,
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin)
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin),
+        HoverTipFactory.FromPower(ModelDb.Power<DreamThreadPower>()),
     ];
 }

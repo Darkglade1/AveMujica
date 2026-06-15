@@ -23,8 +23,8 @@ public sealed class DolorisAlly : AbstractAlly
   private static int damage = 6;
   private static int damageIncrease = 1;
   private static int playerStrength = 3;
-  private static int skill1HPCost = 3;
-  private static int skill2HPCost = 6;
+  private static int skill1HPCost = 4;
+  private static int skill2HPCost = 8;
   public override string CustomVisualPath => "doloris/doloris.tscn".CharacterPath();
   
   protected override MoveState GetDefaultMoveState()
@@ -39,7 +39,7 @@ public sealed class DolorisAlly : AbstractAlly
     {
       numSkillsPerTurn = 0; // hack to prevent player from clicking skill button during enemy turn
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
-      await CreatureCmd.GainBlock(owner.Creature, block, ValueProp.Move, null);
+      await CreatureCmd.GainBlock(owner.Creature, CalcBlockWithDex(block), ValueProp.Unpowered, null);
     }
   }
 
@@ -124,10 +124,11 @@ public sealed class DolorisAlly : AbstractAlly
 
   public static HoverTip GenerateCardHoverTip()
   {
+    var defaultText = new LocString("static_hover_tips", "AVEMUJICA-DEFAULT_TEXT.description");
     var autoSkillHoverTip = AutoSkillHoverTip();
     var skill1HoverTip = Skill1HoverTip();
     var skill2HoverTip = Skill2HoverTip();
-    var hoverTipDescription = autoSkillHoverTip.Description + "\n" + 
+    var hoverTipDescription = defaultText.GetFormattedText() + autoSkillHoverTip.Description + "\n" + 
                               skill1HoverTip.Description + "\n" + skill2HoverTip.Description;
     return new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY.title"),

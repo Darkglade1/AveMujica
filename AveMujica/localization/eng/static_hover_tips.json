@@ -1,7 +1,8 @@
 {
+  "AVEMUJICA-DEFAULT_TEXT.description": "Default: ",
   "AVEMUJICA-DOLORIS_ALLY.title": "Doloris",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.title": "Defend",
-  "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.description": "Default: You gain \\{0\\} [gold]Block[/gold].",
+  "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.description": "You gain \\{0\\} [gold]Block[/gold].",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_1.title": "Encouragement",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_1.description": "-\\{0\\} HP: You gain \\{1\\} [gold]Strength[/gold].",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_2.title": "How Dare You!",
@@ -9,7 +10,7 @@
 
   "AVEMUJICA-MORTIS_ALLY.title": "Mortis",
   "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.title": "Defend",
-  "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.description": "Default: You gain \\{0\\} [gold]Block[/gold].",
+  "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.description": "You gain \\{0\\} [gold]Block[/gold].",
   "AVEMUJICA-MORTIS_ALLY_SKILL_1.title": "Halves of a Whole",
   "AVEMUJICA-MORTIS_ALLY_SKILL_1.description": "-\\{0\\} HP: You draw \\{1\\} cards.",
   "AVEMUJICA-MORTIS_ALLY_SKILL_2.title": "Do Not Fear Death",
@@ -17,7 +18,7 @@
 
   "AVEMUJICA-TIMORIS_ALLY.title": "Timoris",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.title": "Attack",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description": "Default: Deals \\{0\\} damage to the lowest HP enemy.",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description": "Deals \\{0\\} damage to the lowest HP enemy.",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title": "Moonlight Execution",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "-\\{0\\} HP: ALL enemies take double damage from Attacks this turn.",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title": "Shuddering Strings",
@@ -25,7 +26,7 @@
 
   "AVEMUJICA-AMORIS_ALLY.title": "Amoris",
   "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.title": "Area Attack",
-  "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.description": "Default: Deal \\{0\\} damage \\{1\\} times to ALL enemies.",
+  "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.description": "Deal \\{0\\} damage \\{1\\} times to ALL enemies.",
   "AVEMUJICA-AMORIS_ALLY_SKILL_1.title": "As Fierce as Flame",
   "AVEMUJICA-AMORIS_ALLY_SKILL_1.description": "-\\{0\\} HP: Whenever you Attack this turn, [gold]Amoris[/gold] gains \\{1\\} [gold]Strength[/gold].",
   "AVEMUJICA-AMORIS_ALLY_SKILL_2.title": "As Strong as Wheat",

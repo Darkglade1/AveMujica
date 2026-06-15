@@ -150,6 +150,17 @@ public abstract class AbstractAlly : CustomMonsterModel
   public abstract int GetSkill1HPCost();
 
   public abstract int GetSkill2HPCost();
+
+  protected int CalcBlockWithDex(int block)
+  {
+    int dexAmt = 0;
+    var dexterity = Creature.GetPower<DexterityPower>();
+    if (dexterity != null)
+    {
+      dexAmt += dexterity.Amount;
+    }
+    return block + dexAmt;
+  }
 }
 
 [HarmonyPatch(typeof(AbstractIntent), nameof(AbstractIntent.GetHoverTip))]
