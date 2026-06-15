@@ -1,0 +1,8 @@
+{
+  "AVEMUJICA-KEYBOARD.description": "戦闘開始時、[gold]作曲[/gold]:[blue]{Compose}[/blue] [gold]ブロック[/gold]を得る。",
+  "AVEMUJICA-KEYBOARD.flavor": "幼少期から一緒だった楽器。最愛の母との最後の繋がり。",
+  "AVEMUJICA-KEYBOARD.title": "キーボード",
+  "AVEMUJICA-GRAND_PIANO.description": "最初の{Turns:plural:ターン|[blue]{}[/blue] ターン}の開始時、[gold]作曲[/gold]:[blue]{Compose}[/blue] [gold]ブロック[/gold]を得る",
+  "AVEMUJICA-GRAND_PIANO.flavor": "再び舞台に立つよう、彼女を誘っている。",
+  "AVEMUJICA-GRAND_PIANO.title": "グランドピアノ"
+}

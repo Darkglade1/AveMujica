@@ -1,0 +1,19 @@
+{
+  "AVEMUJICA-BLOCK-MOD.description": "{0}[gold]ブロック[/gold]を得る。",
+  "AVEMUJICA-DAMAGE-MOD.description": "{0}ダメージを与える。",
+  "AVEMUJICA-DRAW-CARD-MOD.description": "カードを{0}枚引く。",
+  "AVEMUJICA-DRAW-CARD-MOD.plural_description": "カードを{0}枚引く。",
+  "AVEMUJICA-FLEX-MOD.description": "このターン、[gold]筋力[/gold]{0}を得る。",
+  "AVEMUJICA-ENERGY-MOD.description": "{0}を得る。",
+  "AVEMUJICA-SHACKLE-MOD.description": "ターン終了時まで敵は[gold]筋力[/gold]{0}を失う。",
+  "AVEMUJICA-STRENGTH-MOD.description": "[gold]筋力[/gold]{0}を得る。",
+  "AVEMUJICA-LOSE-STRENGTH-MOD.description": "[gold]筋力[/gold]{0}を失う。",
+  "AVEMUJICA-VULNERABLE-MOD.description": "[gold]弱体[/gold]{0}を与える。",
+  "AVEMUJICA-GAIN-VULNERABLE-MOD.description": "[gold]弱体[/gold]{0}を得る。",
+  "AVEMUJICA-WEAK-MOD.description": "[gold]脱力[/gold]{0}を与える。",
+  "AVEMUJICA-SEEK-MOD.description": "[gold]山札[/gold]から{0}枚のカードを選択して[gold]手札[/gold]に加える。",
+  "AVEMUJICA-SEEK-MOD.plural_description": "[gold]山札[/gold]から{0}枚のカードを選択して[gold]手札[/gold]に加える。",
+  "AVEMUJICA-SEEK-MOD.selectionScreenPrompt": "手札に加えるカードを選択。",
+  "AVEMUJICA-LOSE-HP-MOD.description": "HP{0}を失う。",
+  "AVEMUJICA-OBLIVION-MOD.description": "[gold]忘却[/gold]{0}を得る。"
+}
