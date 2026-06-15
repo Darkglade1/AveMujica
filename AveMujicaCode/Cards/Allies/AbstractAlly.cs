@@ -33,7 +33,7 @@ public abstract class AbstractAlly : CustomMonsterModel
   public int baseNumSkillsPerTurn = 1;
   public int numSkillsPerTurn = 1;
   protected int numSkillsUsedThisTurn = 0;
-  
+  protected bool canUseAbilitiesThisTurn = true;
   private bool hasSetUp;
 
   protected abstract MoveState GetDefaultMoveState();
@@ -60,6 +60,13 @@ public abstract class AbstractAlly : CustomMonsterModel
     );
   }
   
+  protected void SetEmptyIntent()
+  {
+    MoveState emptyState = new MoveState("NOTHING_MOVE", _ => Task.CompletedTask);
+    emptyState.FollowUpState = emptyState;
+    SetMoveImmediate(emptyState);
+  }
+  
   public override Task BeforeSideTurnStart(
     PlayerChoiceContext choiceContext,
     CombatSide side,
@@ -70,6 +77,7 @@ public abstract class AbstractAlly : CustomMonsterModel
     {
       numSkillsPerTurn = baseNumSkillsPerTurn;
       numSkillsUsedThisTurn = 0;
+      canUseAbilitiesThisTurn = true;
     }
     return Task.CompletedTask;
   }
@@ -124,7 +132,7 @@ public abstract class AbstractAlly : CustomMonsterModel
 
   public bool CanUseSkill()
   {
-    return numSkillsPerTurn > numSkillsUsedThisTurn;
+    return numSkillsPerTurn > numSkillsUsedThisTurn && canUseAbilitiesThisTurn;
   }
 
   protected async Task PaySkillCost(int skillCost)
@@ -192,6 +200,26 @@ public static class PatchEntomancer
       return false;
     }
 
+    return true;
+  }
+}
+
+[HarmonyPatch(typeof(ThornsPower), nameof(ThornsPower.BeforeDamageReceived))]
+public static class PatchThorns
+{
+  public static bool Prefix(ThornsPower __instance, PlayerChoiceContext choiceContext,
+    Creature target,
+    Decimal amount,
+    ValueProp props,
+    Creature? dealer,
+    CardModel? cardSource,
+    ref Task __result)
+  {
+    if (dealer != null && dealer.Monster is AbstractAlly)
+    {
+      __result = Task.CompletedTask;
+      return false;
+    }
     return true;
   }
 }

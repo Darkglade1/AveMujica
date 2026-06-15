@@ -14,11 +14,11 @@
   "AVEMUJICA-MORTIS_ALLY_SKILL_1.title": "Halves of a Whole",
   "AVEMUJICA-MORTIS_ALLY_SKILL_1.description": "-\\{0\\} HP: You draw \\{1\\} cards.",
   "AVEMUJICA-MORTIS_ALLY_SKILL_2.title": "Do Not Fear Death",
-  "AVEMUJICA-MORTIS_ALLY_SKILL_2.description": "-\\{0\\} HP: [gold]Mortis[/gold] gains \\{1\\} [gold]Intangible[/gold] and absorbs all incoming unblocked attack damage this turn.",
+  "AVEMUJICA-MORTIS_ALLY_SKILL_2.description": "-\\{0\\} HP: [gold]Mortis[/gold] gains \\{1\\} [gold]Intangible[/gold], absorbs all incoming unblocked attack damage this turn, and can't use other abilities this turn.",
 
   "AVEMUJICA-TIMORIS_ALLY.title": "Timoris",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.title": "Attack",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description": "Deals \\{0\\} damage to the lowest HP enemy.",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description": "Deals \\{0\\} damage to the highest HP enemy.",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title": "Moonlight Execution",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "-\\{0\\} HP: ALL enemies take double damage from Attacks this turn.",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title": "Shuddering Strings",

@@ -12,7 +12,7 @@
   "AVEMUJICA-HOW_DARE_YOU.title": "How Dare You!",
 
   "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage this turn.",
-  "AVEMUJICA-DO_NOT_FEAR_DEATH.smartDescription": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage this turn.",
+  "AVEMUJICA-DO_NOT_FEAR_DEATH.smartDescription": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage and can't use other abilities this turn.",
   "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "Do Not Fear Death",
 
   "AVEMUJICA-MOONLIGHT_EXECUTION.description": "Receives double damage from Attacks this turn.",

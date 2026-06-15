@@ -35,7 +35,7 @@ public sealed class MortisAlly : AbstractAlly
   private async Task Block(IReadOnlyList<Creature> targets)
   {
     var owner = Creature.PetOwner;
-    if (owner != null)
+    if (owner != null && canUseAbilitiesThisTurn)
     {
       numSkillsPerTurn = 0; // hack to prevent player from clicking skill button during enemy turn
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
@@ -76,6 +76,8 @@ public sealed class MortisAlly : AbstractAlly
       await PaySkillCost(skill2HPCost);
       await PowerCmd.Apply<IntangiblePower>(new ThrowingPlayerChoiceContext(), Creature, intangible, Creature, null);
       await PowerCmd.Apply<DoNotFearDeath>(new ThrowingPlayerChoiceContext(), Creature, 1, Creature, null);
+      canUseAbilitiesThisTurn = false;
+      SetEmptyIntent();
     }
   }
   

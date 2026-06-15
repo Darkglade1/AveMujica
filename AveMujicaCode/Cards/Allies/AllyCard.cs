@@ -33,7 +33,7 @@ public static class FullArtAllyCards
             __instance._ancientBorder.Texture = __instance.Model.AncientBorder;
             __instance._ancientTextBg.Texture = ResourceLoader.Load<Texture2D>(ImageHelper.GetImagePath($"atlases/compressed_atlas.sprites/ancient_text_bg_{__instance.Model.Type.ToString().ToLowerInvariant()}.png.tres"));
             __instance._ancientPortrait.Texture = __instance.Model.Portrait;
-            __instance._banner.Material = null;
+            //__instance._banner.Material = null;
             __instance.ReloadOverlay();
             __instance._frame.Visible = false;
             __instance._ancientBorder.Visible = true;
