@@ -1,9 +1,8 @@
 ﻿using AveMujica.AveMujicaCode;
 using AveMujica.AveMujicaCode.Cards.Allies;
-using AveMujica.AveMujicaCode.Cards.Uncommon;
+using AveMujica.AveMujicaCode.Powers;
 using Godot;
 using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -15,8 +14,7 @@ public class AllyHelper
     public static async Task Awaken<T>(
         PlayerChoiceContext ctx,
         Player summoner,
-        int hp,
-        AbstractModel? source) where T : MonsterModel
+        int hp) where T : MonsterModel
     {
         var combatState = summoner.Creature.CombatState;
         ArgumentNullException.ThrowIfNull(combatState);
@@ -37,9 +35,12 @@ public class AllyHelper
                 if (pet.Monster is AbstractAlly && pet.IsAlive)
                 {
                     var node = NCombatRoom.Instance?.GetCreatureNode(pet);
-                    if (node != null && source is CardModel && playerNode != null)
+                    if (node != null && playerNode != null)
                     {
+                        MainFile.Logger.Info("INDEX: " + index);
+                        MainFile.Logger.Info("NODE POSITION: " + node.Position);
                         node.Position = CalculatePosition(index) + playerNode.Position;
+                        MainFile.Logger.Info("NODE POSITION AFTER: " + node.Position);
                         node.Modulate = Colors.Transparent;
                         node.CreateTween()
                             .TweenProperty(node, "modulate", Colors.White, 0.35)
@@ -73,14 +74,23 @@ public class AllyHelper
         }
     }
 
-    public static List<CardModel> AllyCardList()
+    public static async Task Dreamspin(PlayerChoiceContext choiceContext, Player player, int amount, Creature? target, CardModel sourceCard)
     {
-        var cardList = new List<CardModel>();
-        cardList.Add((CardModel)ModelDb.Card<Doloris>().MutableClone());
-        cardList.Add((CardModel)ModelDb.Card<Mortis>().MutableClone());
-        cardList.Add((CardModel)ModelDb.Card<Timoris>().MutableClone());
-        cardList.Add((CardModel)ModelDb.Card<Amoris>().MutableClone());
-        return cardList;
+        if (target != null && target.IsPet)
+        {
+            int totalDreamthread = amount;
+            var playerDreamthread = player.Creature.GetPower<DreamThreadPower>();
+            if (playerDreamthread != null)
+            {
+                totalDreamthread += playerDreamthread.Amount;
+            }
+            await CreatureCmd.GainMaxHp(target, totalDreamthread);
+            await PowerCmd.Remove<DreamThreadPower>(player.Creature);
+        }
+        else
+        {
+            await PowerCmd.Apply<DreamThreadPower>(choiceContext, player.Creature, amount, player.Creature, sourceCard);
+        }
     }
 }
 

@@ -13,4 +13,7 @@ public static class AveMujicaKeywords
     
     [CustomEnum] [KeywordProperties(AutoKeywordPosition.After)]
     public static CardKeyword Awaken;
+    
+    [CustomEnum] [KeywordProperties(AutoKeywordPosition.After)]
+    public static CardKeyword Dreamspin;
 }

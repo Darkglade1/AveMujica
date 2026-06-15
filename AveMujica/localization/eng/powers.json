@@ -3,6 +3,10 @@
   "AVEMUJICA-OBLIVION.smartDescription": "Whenever you gain [gold]Oblivion[/gold], deal damage to the lowest HP enemy equal to your [gold]Oblivion[/gold].",
   "AVEMUJICA-OBLIVION.title": "Oblivion",
 
+  "AVEMUJICA-DREAM_THREAD_POWER.description": "When you have [blue]3[/blue] [gold]Dream Thread[/gold], consume them to [gold]Awaken[/gold] a [gold]Doll[/gold].",
+  "AVEMUJICA-DREAM_THREAD_POWER.smartDescription": "When you have [blue]3[/blue] [gold]Dream Thread[/gold], consume them to [gold]Awaken[/gold] a [gold]Doll[/gold].",
+  "AVEMUJICA-DREAM_THREAD_POWER.title": "Dream Thread",
+
   "AVEMUJICA-HOW_DARE_YOU.description": "Whenever you are attacked, [gold]Doloris[/gold] deals [blue]6[/blue] damage to the attacker and increases this effect's damage by [blue]1[/blue].",
   "AVEMUJICA-HOW_DARE_YOU.smartDescription": "Whenever you are attacked, [gold]Doloris[/gold] deals [blue]{Amount}[/blue] damage to the attacker and increases this effect's damage by [blue]1[/blue].",
   "AVEMUJICA-HOW_DARE_YOU.title": "How Dare You!",

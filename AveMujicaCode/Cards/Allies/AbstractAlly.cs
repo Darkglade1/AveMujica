@@ -30,7 +30,10 @@ public abstract class AbstractAlly : CustomMonsterModel
 
   public override bool IsHealthBarVisible => Creature.IsAlive;
 
-  public bool ActedThisTurn;
+  public int baseNumSkillsPerTurn = 1;
+  public int numSkillsPerTurn = 1;
+  protected int numSkillsUsedThisTurn = 0;
+  
   private bool hasSetUp;
 
   protected abstract MoveState GetDefaultMoveState();
@@ -65,8 +68,8 @@ public abstract class AbstractAlly : CustomMonsterModel
   {
     if (side == CombatSide.Player)
     {
-      ActedThisTurn = false;
-      SetMoveImmediate(GetDefaultMoveState());
+      numSkillsPerTurn = baseNumSkillsPerTurn;
+      numSkillsUsedThisTurn = 0;
     }
     return Task.CompletedTask;
   }
@@ -119,19 +122,15 @@ public abstract class AbstractAlly : CustomMonsterModel
     }
   }
 
-  protected void SetEmptyIntent()
+  public bool CanUseSkill()
   {
-    ActedThisTurn = true;
-    MoveState emptyState = new MoveState("NOTHING_MOVE", _ => Task.CompletedTask);
-    emptyState.FollowUpState = emptyState;
-    SetMoveImmediate(emptyState);
+    return numSkillsPerTurn > numSkillsUsedThisTurn;
   }
 
   protected async Task PaySkillCost(int skillCost)
   {
     await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Creature, skillCost, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, Creature);
     await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Creature, skillCost, false);
-    SetEmptyIntent();
   }
 
   protected abstract void SetUpSkill1Button();
@@ -151,13 +150,6 @@ public abstract class AbstractAlly : CustomMonsterModel
   public abstract int GetSkill1HPCost();
 
   public abstract int GetSkill2HPCost();
-
-  public static string GetStartingHPText(int startingHP)
-  {
-    var startingHPLoc = new LocString("static_hover_tips", "AVEMUJICA-ALLY_STARTING_HP.description");
-    var startingHPText = startingHPLoc.GetFormattedText();
-    return String.Format(startingHPText, startingHP);
-  }
 }
 
 [HarmonyPatch(typeof(AbstractIntent), nameof(AbstractIntent.GetHoverTip))]

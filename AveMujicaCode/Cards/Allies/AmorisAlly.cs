@@ -18,13 +18,11 @@ namespace AveMujica.AveMujicaCode.Cards.Allies;
 
 public sealed class AmorisAlly : AbstractAlly
 {
-  public static int StartingHP = 3;
-  private static int damage = 3;
+  private static int damage = 2;
   private static int hits = 2;
   private static int strength = 1;
   private static int buffHits = 2;
-  private static int autoSkillHPGain = 2;
-  private static int skill1HPCost = 0;
+  private static int skill1HPCost = 1;
   private static int skill2HPCost = 4;
   public override string CustomVisualPath => "amoris/amoris.tscn".CharacterPath();
 
@@ -38,9 +36,9 @@ public sealed class AmorisAlly : AbstractAlly
   private async Task Attack(IReadOnlyList<Creature> targets)
   {
     var owner = Creature.PetOwner;
-    if (owner != null && !ActedThisTurn)
+    if (owner != null)
     {
-      ActedThisTurn = true;
+      numSkillsPerTurn = 0; // hack to prevent player from clicking skill button during enemy turn
       await CreatureCmd.TriggerAnim(Creature, "Attack", 0f);
       Sfx.SKILL_DRUM2.Play();
       IReadOnlyList<Creature>? hittableEnemies = Creature.CombatState?.HittableEnemies;
@@ -54,7 +52,6 @@ public sealed class AmorisAlly : AbstractAlly
           }
         }
       }
-      await CreatureCmd.GainMaxHp(Creature, autoSkillHPGain);
     }
   }
 
@@ -73,7 +70,7 @@ public sealed class AmorisAlly : AbstractAlly
     var owner = Creature.PetOwner;
     if (owner != null)
     {
-      ActedThisTurn = true;
+      numSkillsUsedThisTurn++;
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
       Sfx.SKILL_DRUM.Play();
       await PaySkillCost(skill1HPCost);
@@ -86,7 +83,7 @@ public sealed class AmorisAlly : AbstractAlly
     var owner = Creature.PetOwner;
     if (owner != null)
     {
-      ActedThisTurn = true;
+      numSkillsUsedThisTurn++;
       await CreatureCmd.TriggerAnim(Creature, "Cast2", 0);
       Sfx.SKILL_DRUM.Play();
       await PaySkillCost(skill2HPCost);
@@ -105,7 +102,7 @@ public sealed class AmorisAlly : AbstractAlly
       new LocString("static_hover_tips", "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.title"),
       new LocString("static_hover_tips", "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.description"),
       PreloadManager.Cache.GetTexture2D(ImageHelper.GetImagePath("atlases/intent_atlas.sprites/attack/intent_attack_2.tres")));
-    hoverTip.Description = String.Format(hoverTip.Description, autoSkillHPGain, damage, hits);
+    hoverTip.Description = String.Format(hoverTip.Description, damage, hits);
     return hoverTip;
   }
 
@@ -139,11 +136,10 @@ public sealed class AmorisAlly : AbstractAlly
 
   public static HoverTip GenerateCardHoverTip()
   {
-    var startingHPText = GetStartingHPText(StartingHP);
     var autoSkillHoverTip = AutoSkillHoverTip();
     var skill1HoverTip = Skill1HoverTip();
     var skill2HoverTip = Skill2HoverTip();
-    var hoverTipDescription = startingHPText + "\n" + autoSkillHoverTip.Description + "\n" + 
+    var hoverTipDescription = autoSkillHoverTip.Description + "\n" + 
                               skill1HoverTip.Description + "\n" + skill2HoverTip.Description;
     return new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-AMORIS_ALLY.title"),

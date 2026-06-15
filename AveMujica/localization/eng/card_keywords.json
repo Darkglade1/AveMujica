@@ -3,6 +3,8 @@
   "AVEMUJICA-PERFORM.title": "Perform",
   "AVEMUJICA-COMPOSE.description": "Adds the specified effect to the current [gold]Song[/gold]. If no effect is specified, choose a random effect to add. After [gold]Composing[/gold] [blue]3[/blue] times, add the [gold]Song[/gold] to your hand.",
   "AVEMUJICA-COMPOSE.title": "Compose",
-  "AVEMUJICA-AWAKEN.description": "Summons an ally to assist you. If the ally is already present, they gain HP instead. Allies automatically use their “+” ability at the end of your turn. You can trigger their “-“ abilities if they have sufficient HP by clicking the buttons next to their intent. Allies can only take 1 action per turn.",
-  "AVEMUJICA-AWAKEN.title": "Awaken"
+  "AVEMUJICA-AWAKEN.description": "Summons a [gold]Doll[/gold] to assist you. [gold]Dolls[/gold] use their default ability at the end of your turn. You can trigger their skills if they have sufficient HP by clicking the buttons next to their intent.",
+  "AVEMUJICA-AWAKEN.title": "Awaken",
+  "AVEMUJICA-DREAMSPIN.description": "Gain [gold]Dream Thread[/gold]. Cards that [gold]Dreamspin[/gold] can target a [gold]Doll[/gold] to consume all your [gold]Dream Thread[/gold] and give the [gold]Doll[/gold] equivalent HP.",
+  "AVEMUJICA-DREAMSPIN.title": "Dreamspin"
 }

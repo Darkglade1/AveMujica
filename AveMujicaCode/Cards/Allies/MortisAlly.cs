@@ -20,11 +20,9 @@ namespace AveMujica.AveMujicaCode.Cards.Allies;
 
 public sealed class MortisAlly : AbstractAlly
 {
-  public static int StartingHP = 4;
-  private static int block = 5;
+  private static int block = 3;
   private static int cardDraw = 3;
   private static int intangible = 1;
-  private static int autoSkillHPGain = 3;
   private static int skill1HPCost = 2;
   private static int skill2HPCost = 8;
   public override string CustomVisualPath => "mortis/mortis.tscn".CharacterPath();
@@ -37,12 +35,11 @@ public sealed class MortisAlly : AbstractAlly
   private async Task Block(IReadOnlyList<Creature> targets)
   {
     var owner = Creature.PetOwner;
-    if (owner != null && !ActedThisTurn)
+    if (owner != null)
     {
-      ActedThisTurn = true;
+      numSkillsPerTurn = 0; // hack to prevent player from clicking skill button during enemy turn
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
-      await CreatureCmd.GainBlock(owner.Creature, block, ValueProp.Unpowered, null);
-      await CreatureCmd.GainMaxHp(Creature, autoSkillHPGain);
+      await CreatureCmd.GainBlock(owner.Creature, block, ValueProp.Move, null);
     }
   }
 
@@ -61,7 +58,7 @@ public sealed class MortisAlly : AbstractAlly
     var owner = Creature.PetOwner;
     if (owner != null)
     {
-      ActedThisTurn = true;
+      numSkillsUsedThisTurn++;
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
       Sfx.SKILL_GUITAR.Play();
       await PaySkillCost(skill1HPCost);
@@ -74,7 +71,7 @@ public sealed class MortisAlly : AbstractAlly
     var owner = Creature.PetOwner;
     if (owner != null)
     {
-      ActedThisTurn = true;
+      numSkillsUsedThisTurn++;
       await CreatureCmd.TriggerAnim(Creature, "SwitchIn", 0);
       await PaySkillCost(skill2HPCost);
       await PowerCmd.Apply<IntangiblePower>(new ThrowingPlayerChoiceContext(), Creature, intangible, Creature, null);
@@ -93,7 +90,7 @@ public sealed class MortisAlly : AbstractAlly
       new LocString("static_hover_tips", "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.title"),
       new LocString("static_hover_tips", "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.description"),
       PreloadManager.Cache.GetTexture2D(ImageHelper.GetImagePath("atlases/intent_atlas.sprites/intent_defend.tres")));
-    hoverTip.Description = String.Format(hoverTip.Description, autoSkillHPGain, block);
+    hoverTip.Description = String.Format(hoverTip.Description, block);
     return hoverTip;
   }
 
@@ -127,11 +124,10 @@ public sealed class MortisAlly : AbstractAlly
 
   public static HoverTip GenerateCardHoverTip()
   {
-    var startingHPText = GetStartingHPText(StartingHP);
     var autoSkillHoverTip = AutoSkillHoverTip();
     var skill1HoverTip = Skill1HoverTip();
     var skill2HoverTip = Skill2HoverTip();
-    var hoverTipDescription = startingHPText + "\n" + autoSkillHoverTip.Description + "\n" + 
+    var hoverTipDescription = autoSkillHoverTip.Description + "\n" + 
                               skill1HoverTip.Description + "\n" + skill2HoverTip.Description;
     return new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-MORTIS_ALLY.title"),

@@ -1,65 +1,56 @@
-﻿using AveMujica.AveMujicaCode.Actions;
-using AveMujica.AveMujicaCode.Audio;
+﻿using AveMujica.AveMujicaCode.Audio;
 using AveMujica.AveMujicaCode.Extensions;
 using AveMujica.AveMujicaCode.Powers;
-using BaseLib.Audio;
 using MegaCrit.Sts2.Core.Animation;
 using MegaCrit.Sts2.Core.Assets;
 using MegaCrit.Sts2.Core.Bindings.MegaSpine;
-using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.MonsterMoves.Intents;
 using MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine;
 using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.Context;
-using MegaCrit.Sts2.Core.GameActions;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Models.Powers;
-using MegaCrit.Sts2.Core.Runs;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Allies;
 
 public sealed class DolorisAlly : AbstractAlly
 {
-  public static int StartingHP = 4;
-  private static int block = 16;
+  private static int block = 3;
   private static int damage = 6;
   private static int damageIncrease = 1;
-  private static int playerStrength = 1;
-  private static int autoSkillHPGain = 2;
+  private static int playerStrength = 3;
   private static int skill1HPCost = 3;
   private static int skill2HPCost = 6;
   public override string CustomVisualPath => "doloris/doloris.tscn".CharacterPath();
   
   protected override MoveState GetDefaultMoveState()
   {
-    return new MoveState("BUFF_MOVE", Buff, new BuffIntent());
+    return new MoveState("BLOCK_MOVE", Block, new DefendIntent());
   }
   
-  private async Task Buff(IReadOnlyList<Creature> targets)
+  private async Task Block(IReadOnlyList<Creature> targets)
   {
     var owner = Creature.PetOwner;
-    if (owner != null && !ActedThisTurn)
+    if (owner != null)
     {
-      ActedThisTurn = true;
+      numSkillsPerTurn = 0; // hack to prevent player from clicking skill button during enemy turn
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
-      await PowerCmd.Apply<StrengthPower>(new ThrowingPlayerChoiceContext(), owner.Creature, playerStrength, Creature, null);
-      await CreatureCmd.GainMaxHp(Creature, autoSkillHPGain);
+      await CreatureCmd.GainBlock(owner.Creature, block, ValueProp.Move, null);
     }
   }
 
   protected override void SetUpSkill1Button()
   {
-    SetUpSkillButton("res://AveMujica/images/charui/BlockIcon.png", 1);
+    SetUpSkillButton("res://AveMujica/images/charui/BuffIcon.png", 1);
   }
 
   protected override void SetUpSkill2Button()
   {
-    SetUpSkillButton("res://AveMujica/images/charui/BuffIcon.png", 2);
+    SetUpSkillButton("res://AveMujica/images/charui/AttackBuffIcon.png", 2);
   }
   
   public override async Task Skill1()
@@ -67,11 +58,11 @@ public sealed class DolorisAlly : AbstractAlly
     var owner = Creature.PetOwner;
     if (owner != null)
     {
-      ActedThisTurn = true;
+      numSkillsUsedThisTurn++;
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
       Sfx.SKILL_GUITAR_VOCALS.Play();
       await PaySkillCost(skill1HPCost);
-      await CreatureCmd.GainBlock(owner.Creature, block, ValueProp.Unpowered, null);
+      await PowerCmd.Apply<StrengthPower>(new ThrowingPlayerChoiceContext(), owner.Creature, playerStrength, Creature, null);
     }
   }
   
@@ -80,7 +71,7 @@ public sealed class DolorisAlly : AbstractAlly
     var owner = Creature.PetOwner;
     if (owner != null)
     {
-      ActedThisTurn = true;
+      numSkillsUsedThisTurn++;
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
       Sfx.SKILL_GUITAR_VOCALS.Play();
       await PaySkillCost(skill2HPCost);
@@ -98,8 +89,8 @@ public sealed class DolorisAlly : AbstractAlly
     var hoverTip = new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.title"),
       new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.description"),
-      PreloadManager.Cache.GetTexture2D(ImageHelper.GetImagePath("atlases/intent_atlas.sprites/intent_buff.tres")));
-    hoverTip.Description = String.Format(hoverTip.Description, autoSkillHPGain, playerStrength);
+      PreloadManager.Cache.GetTexture2D(ImageHelper.GetImagePath("atlases/intent_atlas.sprites/intent_defend.tres")));
+    hoverTip.Description = String.Format(hoverTip.Description, block);
     return hoverTip;
   }
 
@@ -113,7 +104,7 @@ public sealed class DolorisAlly : AbstractAlly
     var hoverTip = new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_1.title"),
       new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_1.description"));
-    hoverTip.Description = String.Format(hoverTip.Description, skill1HPCost, block);
+    hoverTip.Description = String.Format(hoverTip.Description, skill1HPCost, playerStrength);
     return hoverTip;
   }
 
@@ -133,11 +124,10 @@ public sealed class DolorisAlly : AbstractAlly
 
   public static HoverTip GenerateCardHoverTip()
   {
-    var startingHPText = GetStartingHPText(StartingHP);
     var autoSkillHoverTip = AutoSkillHoverTip();
     var skill1HoverTip = Skill1HoverTip();
     var skill2HoverTip = Skill2HoverTip();
-    var hoverTipDescription = startingHPText + "\n" + autoSkillHoverTip.Description + "\n" + 
+    var hoverTipDescription = autoSkillHoverTip.Description + "\n" + 
                               skill1HoverTip.Description + "\n" + skill2HoverTip.Description;
     return new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY.title"),

@@ -1,4 +1,6 @@
-﻿using AveMujica.AveMujicaCode.Powers;
+﻿using AveMujica.AveMujicaCode.Cards.Allies;
+using AveMujica.AveMujicaCode.Powers;
+using BaseLib.Patches.Features;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -12,9 +14,9 @@ namespace AveMujica.AveMujicaCode.Cards.Common;
 
 public class MoonlightBarrier() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Common,
-    TargetType.Self)
+    CustomTargetType.PetOrSelf)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(5, ValueProp.Move), new PowerVar<Oblivion>(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(5, ValueProp.Move), new DreamspinVar(2)];
     
     protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.GainsOblivion];
     
@@ -25,16 +27,15 @@ public class MoonlightBarrier() : AveMujicaCard(1,
         CardPlay play)
     {
         await CommonActions.CardBlock(this, DynamicVars.Block, play);
-        await PowerCmd.Apply<Oblivion>(choiceContext, Owner.Creature, DynamicVars["Oblivion"].BaseValue, Owner.Creature, this);
+        await AllyHelper.Dreamspin(choiceContext, Owner, DynamicVars["Dreamspin"].IntValue, play.Target, this);
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Block.UpgradeValueBy(2);
-        DynamicVars["Oblivion"].UpgradeValueBy(1);
+        DynamicVars.Block.UpgradeValueBy(3);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromPower(ModelDb.Power<Oblivion>())
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin)
     ];
 }

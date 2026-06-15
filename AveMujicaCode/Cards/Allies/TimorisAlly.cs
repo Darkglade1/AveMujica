@@ -19,11 +19,8 @@ namespace AveMujica.AveMujicaCode.Cards.Allies;
 
 public sealed class TimorisAlly : AbstractAlly
 {
-  public static int StartingHP = 3;
-  private static int damage = 9;
-  private static int vulnerable = 1;
+  private static int damage = 5;
   private static int strengthLoss = 10;
-  private static int autoSkillHPGain = 2;
   private static int skill1HPCost = 4;
   private static int skill2HPCost = 5;
   public override string CustomVisualPath => "timoris/timoris.tscn".CharacterPath();
@@ -36,27 +33,20 @@ public sealed class TimorisAlly : AbstractAlly
   private async Task Attack(IReadOnlyList<Creature> targets)
   {
     var owner = Creature.PetOwner;
-    if (owner != null && !ActedThisTurn)
+    if (owner != null)
     {
-      ActedThisTurn = true;
+      numSkillsPerTurn = 0; // hack to prevent player from clicking skill button during enemy turn
       await CreatureCmd.TriggerAnim(Creature, "Attack", 0);
       Sfx.ATK_GUITAR.Play();
       IReadOnlyList<Creature>? hittableEnemies = Creature.CombatState?.HittableEnemies;
       if (hittableEnemies != null && hittableEnemies.Count != 0)
       {
-        Creature? strongestEnemy = hittableEnemies.MaxBy((Func<Creature, int>) (c => c.CurrentHp));
-        if (strongestEnemy != null)
+        Creature? weakestEnemy = hittableEnemies.MinBy((Func<Creature, int>) (c => c.CurrentHp));
+        if (weakestEnemy != null)
         {
-          await CreatureCmd.Damage(new BlockingPlayerChoiceContext(), strongestEnemy, damage, ValueProp.Move, Creature);
-          var power = await PowerCmd.Apply<VulnerablePower>(new ThrowingPlayerChoiceContext(), strongestEnemy, vulnerable, Creature, null);
-          if (power != null && power.Amount == 1)
-          {
-            power.SkipNextDurationTick = true;
-          }
+          await CreatureCmd.Damage(new BlockingPlayerChoiceContext(), weakestEnemy, damage, ValueProp.Move, Creature);
         }
       }
-      
-      await CreatureCmd.GainMaxHp(Creature, autoSkillHPGain);
     }
   }
 
@@ -75,7 +65,7 @@ public sealed class TimorisAlly : AbstractAlly
     var owner = Creature.PetOwner;
     if (owner != null)
     {
-      ActedThisTurn = true;
+      numSkillsUsedThisTurn++;
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
       Sfx.SKILL_BASS.Play();
       await PaySkillCost(skill1HPCost);
@@ -83,11 +73,7 @@ public sealed class TimorisAlly : AbstractAlly
       {
         foreach (Creature enemy in Creature.CombatState.HittableEnemies)
         {
-          VulnerablePower? enemyVulnerable = enemy.GetPower<VulnerablePower>();
-          if (enemyVulnerable != null)
-          {
-            await PowerCmd.Apply<MoonlightExecution>(new ThrowingPlayerChoiceContext(), enemy, 1, Creature, null);
-          }
+          await PowerCmd.Apply<MoonlightExecution>(new ThrowingPlayerChoiceContext(), enemy, 1, Creature, null);
         }
       }
     }
@@ -98,7 +84,7 @@ public sealed class TimorisAlly : AbstractAlly
     var owner = Creature.PetOwner;
     if (owner != null)
     {
-      ActedThisTurn = true;
+      numSkillsUsedThisTurn++;
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
       Sfx.SKILL_BASS.Play();
       await PaySkillCost(skill2HPCost);
@@ -123,7 +109,7 @@ public sealed class TimorisAlly : AbstractAlly
       new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.title"),
       new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description"),
       PreloadManager.Cache.GetTexture2D(ImageHelper.GetImagePath("atlases/intent_atlas.sprites/attack/intent_attack_2.tres")));
-    hoverTip.Description = String.Format(hoverTip.Description, autoSkillHPGain, damage, vulnerable);
+    hoverTip.Description = String.Format(hoverTip.Description, damage);
     return hoverTip;
   }
 
@@ -157,11 +143,10 @@ public sealed class TimorisAlly : AbstractAlly
 
   public static HoverTip GenerateCardHoverTip()
   {
-    var startingHPText = GetStartingHPText(StartingHP);
     var autoSkillHoverTip = AutoSkillHoverTip();
     var skill1HoverTip = Skill1HoverTip();
     var skill2HoverTip = Skill2HoverTip();
-    var hoverTipDescription = startingHPText + "\n" + autoSkillHoverTip.Description + "\n" + 
+    var hoverTipDescription = autoSkillHoverTip.Description + "\n" + 
                               skill1HoverTip.Description + "\n" + skill2HoverTip.Description;
     return new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY.title"),

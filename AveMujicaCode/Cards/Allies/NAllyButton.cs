@@ -58,7 +58,7 @@ public partial class NAllyButton : BaseButton
         {
             skillCost = owner.GetSkill2HPCost();
         }
-        Disabled = skillCost > allyHp || owner.ActedThisTurn;
+        Disabled = skillCost > allyHp || !owner.CanUseSkill();
 
         if (_icon != null)
         {

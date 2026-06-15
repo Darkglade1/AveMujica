@@ -14,7 +14,7 @@
   "AVEMUJICA-SONG.description": "{IfUpgraded:show:Draw a card.}",
   "AVEMUJICA-SONG.title": "Song",
 
-  "AVEMUJICA-MOONLIT_STRIKE.description": "Deal {Damage:diff()} damage.\nGain {Oblivion:diff()} [gold]Oblivion[/gold].",
+  "AVEMUJICA-MOONLIT_STRIKE.description": "Deal {Damage:diff()} damage.\nGain {DreamThreadPower:diff()} [gold]Dream Thread[/gold].",
   "AVEMUJICA-MOONLIT_STRIKE.title": "Moonlit Strike",
 
   "AVEMUJICA-FORTE.description": "Deal {Damage:diff()} damage.\n[gold]Compose[/gold] \"Gain {Compose:diff()} [gold]Strength[/gold] this turn.\"",
@@ -26,17 +26,17 @@
   "AVEMUJICA-FEEL_THE_BEAT.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Perform Skill:[/gold] Draw {Cards:diff()} cards.",
   "AVEMUJICA-FEEL_THE_BEAT.title": "Feel the Beat",
 
-  "AVEMUJICA-MOONLIGHT_BARRIER.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain {Oblivion:diff()} [gold]Oblivion[/gold].",
+  "AVEMUJICA-MOONLIGHT_BARRIER.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Dreamspin[/gold] {Dreamspin:diff()}.",
   "AVEMUJICA-MOONLIGHT_BARRIER.title": "Moonlight Barrier",
 
-  "AVEMUJICA-NEW_MOON_AWAKENING.description": "Gain {Oblivion:diff()} [gold]Oblivion[/gold].\n[gold]Exhaust[/gold] {Cards:diff()} card.",
+  "AVEMUJICA-NEW_MOON_AWAKENING.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.\n[gold]Exhaust[/gold] {Cards:diff()} card{IfUpgraded:show:| at random}.",
   "AVEMUJICA-NEW_MOON_AWAKENING.title": "New Moon Awakening",
 
   "AVEMUJICA-FIRST_QUARTER_YEARNING.description": "Put a card from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold]. If it doesn't gain [gold]Oblivion[/gold], add [gold]Exhaust[/gold] to it.",
   "AVEMUJICA-FIRST_QUARTER_YEARNING.title": "First Quarter's Yearning",
   "AVEMUJICA-FIRST_QUARTER_YEARNING.selectionScreenPrompt": "Choose a card to put back in your Hand.",
 
-  "AVEMUJICA-WANING_MOON_DESIRE.description": "Deal {Damage:diff()} damage.\nGain {Oblivion:diff()} [gold]Oblivion[/gold].",
+  "AVEMUJICA-WANING_MOON_DESIRE.description": "Deal {Damage:diff()} damage.\nGain {DreamThreadPower:diff()} [gold]Dream Thread[/gold].",
   "AVEMUJICA-WANING_MOON_DESIRE.title": "Waning Moon's Desire",
 
   "AVEMUJICA-AFTERGLOW.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf you [gold]Performed[/gold] this turn, gain {Energy:energyIcons()} next turn.",
@@ -244,7 +244,7 @@
   "AVEMUJICA-CONSIGN.description": "Deal {Damage:diff()} damage.\nIf [gold]Fatal[/gold], you may remove a card from your [gold]Deck[/gold] at the end of combat.",
   "AVEMUJICA-CONSIGN.title": "Consign to Oblivion",
 
-  "AVEMUJICA-LOFT_MOON.description": "[gold]Awaken[/gold] an ally of your choice.\nAt the end of your turn, allies gain {LoftMoonPower:diff()} HP.",
+  "AVEMUJICA-LOFT_MOON.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.\nAt the end of your turn, [gold]Dolls[/gold] gain {LoftMoonPower:diff()} HP.",
   "AVEMUJICA-LOFT_MOON.selectionScreenPrompt": "Choose an ally to [gold]Awaken[/gold].",
   "AVEMUJICA-LOFT_MOON.title": "Loft Moon",
 

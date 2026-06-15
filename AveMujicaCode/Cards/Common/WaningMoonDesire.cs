@@ -14,25 +14,23 @@ public class WaningMoonDesire() : AveMujicaCard(0,
     CardType.Attack, CardRarity.Common,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(2, ValueProp.Move), new PowerVar<Oblivion>(1)];
-
-    protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.GainsOblivion];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(4, ValueProp.Move), new PowerVar<DreamThreadPower>(1)];
     
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
         await CommonActions.CardAttack(this, play).Execute(choiceContext);
-        await PowerCmd.Apply<Oblivion>(choiceContext, Owner.Creature, DynamicVars["Oblivion"].BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<DreamThreadPower>(choiceContext, Owner.Creature, DynamicVars["DreamThreadPower"].BaseValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(1);
-        DynamicVars["Oblivion"].UpgradeValueBy(1);
+        DynamicVars.Damage.UpgradeValueBy(3);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromPower(ModelDb.Power<Oblivion>())
+        HoverTipFactory.FromPower(ModelDb.Power<DreamThreadPower>()),
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Awaken)
     ];
 }
