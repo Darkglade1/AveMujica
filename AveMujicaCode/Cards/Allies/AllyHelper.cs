@@ -37,10 +37,7 @@ public class AllyHelper
                     var node = NCombatRoom.Instance?.GetCreatureNode(pet);
                     if (node != null && playerNode != null)
                     {
-                        MainFile.Logger.Info("INDEX: " + index);
-                        MainFile.Logger.Info("NODE POSITION: " + node.Position);
                         node.Position = CalculatePosition(index) + playerNode.Position;
-                        MainFile.Logger.Info("NODE POSITION AFTER: " + node.Position);
                         node.Modulate = Colors.Transparent;
                         node.CreateTween()
                             .TweenProperty(node, "modulate", Colors.White, 0.35)
