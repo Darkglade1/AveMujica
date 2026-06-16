@@ -38,11 +38,12 @@ public class AsFierceAsFire() : AveMujicaPower
         Creature target,
         CardModel? cardSource)
     {
-        if (dealer == null || dealer != Owner && dealer.PetOwner?.Creature != Owner || !props.IsPoweredAttack() || result.TotalDamage <= 0)
+        if (dealer == null || dealer != Owner || !props.IsPoweredAttack() || result.TotalDamage <= 0)
             return;
         var existing = Owner.CombatState?.Allies.FirstOrDefault(c => c.Monster is AmorisAlly && c.PetOwner == Owner.Player && c.IsAlive);
         if (existing != null && existing.Monster != null)
         {
+            Flash();
             await PowerCmd.Apply<StrengthPower>(choiceContext, existing.Monster.Creature, Amount, Owner, null);
         }
     }

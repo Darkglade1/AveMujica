@@ -32,8 +32,8 @@ public class DaCapo() : AveMujicaCard(1,
         await ComposeHelper.RandomCompose(Owner, choiceContext, IsUpgraded);
         if (PlayedSongThisTurn)
         {
-            IEnumerable<CardModel> cardToTransfigure = await CardSelectCmd.FromHand(choiceContext, Owner, new CardSelectorPrefs(SelectionScreenPrompt, 1),null,this);
             await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
+            IEnumerable<CardModel> cardToTransfigure = await CardSelectCmd.FromHand(choiceContext, Owner, new CardSelectorPrefs(SelectionScreenPrompt, 1),null,this);
             foreach (CardModel cardModel in cardToTransfigure)
             {
                 cardModel.BaseReplayCount++;

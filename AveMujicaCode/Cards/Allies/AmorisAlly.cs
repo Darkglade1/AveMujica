@@ -88,6 +88,7 @@ public sealed class AmorisAlly : AbstractAlly
       Sfx.SKILL_DRUM.Play();
       await PaySkillCost(skill2HPCost);
       currentHits += buffHits;
+      SetMoveImmediate(GetDefaultMoveState());
     }
   }
   

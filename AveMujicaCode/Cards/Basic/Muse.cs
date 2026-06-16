@@ -21,7 +21,6 @@ public class Muse() : AveMujicaCard(0,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         await ComposeHelper.RandomCompose(Owner, choiceContext, IsUpgraded);
     }
 
