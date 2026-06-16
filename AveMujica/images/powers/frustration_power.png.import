@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://p7dsqq8t3wov"
-path="res://.godot/imported/song_temp_str_power.png-cd58a7b9687ed880a77e0b8eff3a148f.ctex"
+uid="uid://ctnlmxthdpfg1"
+path="res://.godot/imported/frustration_power.png-01f5b8cc018a00d9f03f51fef92bf418.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/powers/song_temp_str_power.png"
-dest_files=["res://.godot/imported/song_temp_str_power.png-cd58a7b9687ed880a77e0b8eff3a148f.ctex"]
+source_file="res://AveMujica/images/powers/frustration_power.png"
+dest_files=["res://.godot/imported/frustration_power.png-01f5b8cc018a00d9f03f51fef92bf418.ctex"]
 
 [params]
 

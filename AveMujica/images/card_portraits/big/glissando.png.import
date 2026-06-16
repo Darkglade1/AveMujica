@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clwjok8yp10ye"
-path="res://.godot/imported/sonic_blast.png-647eb767524fc9413e8617244f51236d.ctex"
+uid="uid://chpy61r73vstb"
+path="res://.godot/imported/glissando.png-c9587fe90de893d3ff024d1fd8dacb41.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/card_portraits/sonic_blast.png"
-dest_files=["res://.godot/imported/sonic_blast.png-647eb767524fc9413e8617244f51236d.ctex"]
+source_file="res://AveMujica/images/card_portraits/big/glissando.png"
+dest_files=["res://.godot/imported/glissando.png-c9587fe90de893d3ff024d1fd8dacb41.ctex"]
 
 [params]
 

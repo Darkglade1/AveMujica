@@ -7,24 +7,25 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
-public class Garden() : AveMujicaCard(1,
+public class ExplosiveFinale() : AveMujicaCard(1,
     CardType.Power, CardRarity.Uncommon,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<GardenPower>(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<ExplosiveFinalePower>(9)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose)
     ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await PowerCmd.Apply<GardenPower>(choiceContext, Owner.Creature, DynamicVars["GardenPower"].BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<ExplosiveFinalePower>(choiceContext, Owner.Creature,DynamicVars["ExplosiveFinalePower"].BaseValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars["GardenPower"].UpgradeValueBy(1);
+        DynamicVars["ExplosiveFinalePower"].UpgradeValueBy(4);
     }
 }

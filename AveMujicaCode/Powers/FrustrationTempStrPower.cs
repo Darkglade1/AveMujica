@@ -1,15 +1,14 @@
-﻿using AveMujica.AveMujicaCode.Cards.Token;
+﻿using AveMujica.AveMujicaCode.Cards.Uncommon;
 using AveMujica.AveMujicaCode.Extensions;
 using BaseLib.Abstracts;
-using BaseLib.Extensions;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace AveMujica.AveMujicaCode.Powers;
 
-public class SongTempStrPower : TemporaryStrengthPower, ICustomPower
+public class FrustrationTempStrPower : TemporaryStrengthPower, ICustomPower
 {
-    public override AbstractModel OriginModel => ModelDb.Card<Song>();
+    public override AbstractModel OriginModel => ModelDb.Card<Frustration>();
     
     public string CustomPackedIconPath => "flex.png".PowerImagePath();
     public string CustomBigIconPath => "flex.png".BigPowerImagePath();

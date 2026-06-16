@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ck4cwh8aygu6f"
-path="res://.godot/imported/as_fierce_as_fire.png-8e5cc32a91f13fba359d90cce3725a08.ctex"
+uid="uid://j6htrpa8l0bm"
+path="res://.godot/imported/gibbous_moon_envy.png-162fb77b617300aa495be0a2b8eeac43.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/powers/as_fierce_as_fire.png"
-dest_files=["res://.godot/imported/as_fierce_as_fire.png-8e5cc32a91f13fba359d90cce3725a08.ctex"]
+source_file="res://AveMujica/images/card_portraits/big/gibbous_moon_envy.png"
+dest_files=["res://.godot/imported/gibbous_moon_envy.png-162fb77b617300aa495be0a2b8eeac43.ctex"]
 
 [params]
 

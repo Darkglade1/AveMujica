@@ -13,7 +13,7 @@ public class MoonlightExecution() : AveMujicaPower
         PowerType.Debuff;
 
     public override PowerStackType StackType =>
-        PowerStackType.Single;
+        PowerStackType.Counter;
 
     public override Decimal ModifyDamageMultiplicative(
         Creature? target,
@@ -24,7 +24,7 @@ public class MoonlightExecution() : AveMujicaPower
     {
         if (target != Owner || !props.IsPoweredAttack())
             return 1M;
-        return 2.0M;
+        return 1.0M + (Amount / 100.0M);
     }
 
     public override async Task AfterSideTurnEnd(

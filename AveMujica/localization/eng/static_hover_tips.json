@@ -3,8 +3,8 @@
   "AVEMUJICA-DOLORIS_ALLY.title": "Doloris",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.title": "Defend",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.description": "You gain \\{0\\} [gold]Block[/gold].",
-  "AVEMUJICA-DOLORIS_ALLY_SKILL_1.title": "Skill: Encouragement",
-  "AVEMUJICA-DOLORIS_ALLY_SKILL_1.description": "-\\{0\\} HP: You gain \\{1\\} [gold]Strength[/gold].",
+  "AVEMUJICA-DOLORIS_ALLY_SKILL_1.title": "Skill: Protectiveness",
+  "AVEMUJICA-DOLORIS_ALLY_SKILL_1.description": "-\\{0\\} HP: You gain \\{1\\} [gold]Block[/gold].",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_2.title": "Skill: How Dare You!",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_2.description": "-\\{0\\} HP: Whenever you are attacked, [gold]Doloris[/gold] deals \\{1\\} damage to the attacker and increases this effect's damage by \\{2\\}.",
 
@@ -20,7 +20,7 @@
   "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.title": "Attack",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description": "Deals \\{0\\} damage to the highest HP enemy.",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title": "Skill: Moonlight Execution",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "-\\{0\\} HP: ALL enemies take double damage from Attacks this turn.",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "-\\{0\\} HP: ALL enemies take \\{1\\}% more damage from Attacks this turn.",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title": "Skill: Shuddering Strings",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "-\\{0\\} HP: ALL enemies lose \\{1\\} [gold]Strength[/gold] this turn.",
 
@@ -28,7 +28,7 @@
   "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.title": "Area Attack",
   "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.description": "Deal \\{0\\} damage \\{1\\} times to ALL enemies.",
   "AVEMUJICA-AMORIS_ALLY_SKILL_1.title": "Skill: As Fierce as Flame",
-  "AVEMUJICA-AMORIS_ALLY_SKILL_1.description": "-\\{0\\} HP: Whenever you Attack this turn, [gold]Amoris[/gold] gains \\{1\\} [gold]Strength[/gold].",
+  "AVEMUJICA-AMORIS_ALLY_SKILL_1.description": "-\\{0\\} HP: [gold]Amoris[/gold] gains \\{1\\} [gold]Strength[/gold].",
   "AVEMUJICA-AMORIS_ALLY_SKILL_2.title": "Skill: As Strong as Wheat",
   "AVEMUJICA-AMORIS_ALLY_SKILL_2.description": "-\\{0\\} HP: [gold]Amoris[/gold] hits \\{1\\} more times with her default ability this combat."
 }

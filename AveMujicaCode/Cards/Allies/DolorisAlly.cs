@@ -22,8 +22,8 @@ public sealed class DolorisAlly : AbstractAlly
   private static int block = 3;
   private static int damage = 6;
   private static int damageIncrease = 1;
-  private static int playerStrength = 3;
-  private static int skill1HPCost = 4;
+  private static int skillBlock = 7;
+  private static int skill1HPCost = 3;
   private static int skill2HPCost = 8;
   public override string CustomVisualPath => "doloris/doloris.tscn".CharacterPath();
   
@@ -45,7 +45,7 @@ public sealed class DolorisAlly : AbstractAlly
 
   protected override void SetUpSkill1Button()
   {
-    SetUpSkillButton("res://AveMujica/images/charui/BuffIcon.png", 1);
+    SetUpSkillButton("res://AveMujica/images/charui/BlockIcon.png", 1);
   }
 
   protected override void SetUpSkill2Button()
@@ -62,7 +62,7 @@ public sealed class DolorisAlly : AbstractAlly
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
       Sfx.SKILL_GUITAR_VOCALS.Play();
       await PaySkillCost(skill1HPCost);
-      await PowerCmd.Apply<StrengthPower>(new ThrowingPlayerChoiceContext(), owner.Creature, playerStrength, Creature, null);
+      await CreatureCmd.GainBlock(owner.Creature, CalcBlockWithDex(skillBlock), ValueProp.Unpowered, null);
     }
   }
   
@@ -104,7 +104,7 @@ public sealed class DolorisAlly : AbstractAlly
     var hoverTip = new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_1.title"),
       new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_1.description"));
-    hoverTip.Description = String.Format(hoverTip.Description, skill1HPCost, playerStrength);
+    hoverTip.Description = String.Format(hoverTip.Description, skill1HPCost, skillBlock);
     return hoverTip;
   }
 

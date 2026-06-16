@@ -65,8 +65,8 @@
   "AVEMUJICA-ALLEGRO.description": "Draw {Cards:diff()} cards.\n[gold]Compose[/gold] \"Draw {Compose:diff()} cards.\"",
   "AVEMUJICA-ALLEGRO.title": "Allegro",
 
-  "AVEMUJICA-SONIC_BLAST.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.",
-  "AVEMUJICA-SONIC_BLAST.title": "Sonic Blast",
+  "AVEMUJICA-GLISSANDO.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.",
+  "AVEMUJICA-GLISSANDO.title": "Glissando",
 
   "AVEMUJICA-PROPER_TIMING.description": "Gain {Block:diff()} [gold]Block[/gold].\nAdd [gold]Retain[/gold] to a card in your [gold]Hand[/gold].",
   "AVEMUJICA-PROPER_TIMING.selectionScreenPrompt": "Select a card to add [gold]Retain[/gold] to.",
@@ -120,7 +120,7 @@
   "AVEMUJICA-AL_FINE.description": "Deal {Damage:diff()} damage to ALL enemies.\nIf you played a [gold]Song[/gold] this turn, [gold]Dreamspin[/gold] {Dreamspin:diff()}.",
   "AVEMUJICA-AL_FINE.title": "Al Fine",
 
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()} X times.",
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()} X{IfUpgraded:show:+1} times.",
   "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "Crescent Moon Echos",
 
   "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gain {Block:diff()} [gold]Block[/gold].\nALL [gold]Dolls[/gold] gain {Heal:diff()} HP.",
@@ -254,7 +254,7 @@
   "AVEMUJICA-VIRTUOSO_FORM.description": "At the start of your turn, [gold]Enchant[/gold] ALL cards in your [gold]Hand[/gold] with [gold]Masterful[/gold] {VirtuosoFormPower:diff()}.",
   "AVEMUJICA-VIRTUOSO_FORM.title": "Virtuoso's Form",
 
-  "AVEMUJICA-GARDEN.description": "Whenever a [gold]Doll's Skill[/gold] is activated, draw {GardenPower:diff()} cards.",
+  "AVEMUJICA-GARDEN.description": "Whenever a [gold]Doll's Skill[/gold] is activated, draw {GardenPower:diff()} {GardenPower:plural:card|cards}.",
   "AVEMUJICA-GARDEN.title": "Garden of Lilies",
 
   "AVEMUJICA-CRUCIFIX.description": "Deal {Damage:diff()} damage.\nGain {ThornsPower:diff()} [gold]Thorns[/gold].",
@@ -268,7 +268,16 @@
   "AVEMUJICA-PURSUIT_OF_MASTERY.title": "Pursuit of Mastery",
   "AVEMUJICA-PURSUIT_OF_MASTERY.selectionScreenPrompt": "Choose a card to [gold]Enchant[/gold].",
 
-  "AVEMUJICA-GROUP_PERFORMANCE.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], also give {Cards:diff()} copy to ALL other players.",
+  "AVEMUJICA-GIBBOUS_MOON_ENVY.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.",
+  "AVEMUJICA-GIBBOUS_MOON_ENVY.title": "Gibbous Moon's Envy",
+
+  "AVEMUJICA-EXPLOSIVE_FINALE.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], deal {ExplosiveFinalePower:diff()} damage to ALL enemies.",
+  "AVEMUJICA-EXPLOSIVE_FINALE.title": "Explosive Finale",
+
+  "AVEMUJICA-FRUSTRATION.description": "Whenever a card is [gold]Exhausted[/gold], gain {FrustrationPower:diff()} [gold]Strength[/gold] this turn.",
+  "AVEMUJICA-FRUSTRATION.title": "Frustration",
+
+  "AVEMUJICA-GROUP_PERFORMANCE.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], also give {Cards:diff()} {Cards:plural:copy|copies} to ALL other players.",
   "AVEMUJICA-GROUP_PERFORMANCE.title": "Group Performance",
 
   "AVEMUJICA-SPARK.description": "{IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold] {Repeat:diff()} times.",

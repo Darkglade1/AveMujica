@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Common;
 
-public class SonicBlast() : AveMujicaCard(2,
+public class Glissando() : AveMujicaCard(2,
     CardType.Attack, CardRarity.Common,
     TargetType.AnyEnemy)
 {

@@ -12,6 +12,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
+using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Allies;
@@ -22,7 +23,7 @@ public sealed class AmorisAlly : AbstractAlly
   private static int hits = 2;
   private static int strength = 1;
   private static int buffHits = 2;
-  private static int skill1HPCost = 2;
+  private static int skill1HPCost = 3;
   private static int skill2HPCost = 6;
   public override string CustomVisualPath => "amoris/amoris.tscn".CharacterPath();
 
@@ -74,7 +75,7 @@ public sealed class AmorisAlly : AbstractAlly
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
       Sfx.SKILL_DRUM.Play();
       await PaySkillCost(skill1HPCost);
-      await PowerCmd.Apply<AsFierceAsFire>(new ThrowingPlayerChoiceContext(), owner.Creature, strength, Creature, null);
+      await PowerCmd.Apply<StrengthPower>(new ThrowingPlayerChoiceContext(), Creature, strength, Creature, null);
     }
   }
   

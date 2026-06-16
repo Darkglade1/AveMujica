@@ -19,8 +19,7 @@ public class FirstQuarterYearning() : AveMujicaCard(1,
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromPower(ModelDb.Power<StrengthPower>()),
-        HoverTipFactory.FromPower(ModelDb.Power<DexterityPower>()),
-        HoverTipFactory.FromKeyword(CardKeyword.Exhaust)
+        HoverTipFactory.FromPower(ModelDb.Power<DexterityPower>())
     ];
 
     protected override async Task OnPlay(
@@ -36,6 +35,6 @@ public class FirstQuarterYearning() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars["StrengthPower"].UpgradeValueBy(1);
+        EnergyCost.UpgradeBy(-1);
     }
 }

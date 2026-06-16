@@ -15,8 +15,8 @@
   "AVEMUJICA-DO_NOT_FEAR_DEATH.smartDescription": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage and can't use other abilities this turn.",
   "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "Do Not Fear Death",
 
-  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "Receives double damage from Attacks this turn.",
-  "AVEMUJICA-MOONLIGHT_EXECUTION.smartDescription": "Receives double damage from Attacks this turn.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "Receives more damage from Attacks this turn.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION.smartDescription": "Receives [blue]{Amount}%[/blue] more damage from Attacks this turn.",
   "AVEMUJICA-MOONLIGHT_EXECUTION.title": "Moonlight Execution",
 
   "AVEMUJICA-AS_FIERCE_AS_FIRE.description": "Whenever you Attack this turn, [gold]Amoris[/gold] gains [blue]1[/blue] [gold]Strength[/gold].",
@@ -84,8 +84,16 @@
   "AVEMUJICA-VIRTUOSO_FORM_POWER.title": "Virtuoso's Form",
 
   "AVEMUJICA-GARDEN_POWER.description": "Whenever a [gold]Doll's Skill[/gold] is activated, draw cards.",
-  "AVEMUJICA-GARDEN_POWER.smartDescription": "Whenever a [gold]Doll's Skill[/gold] is activated, draw [blue]{Amount}[/blue] cards.",
+  "AVEMUJICA-GARDEN_POWER.smartDescription": "Whenever a [gold]Doll's Skill[/gold] is activated, draw [blue]{Amount}[/blue] {Amount:plural:card|cards}.",
   "AVEMUJICA-GARDEN_POWER.title": "Garden of Lilies",
+
+  "AVEMUJICA-EXPLOSIVE_FINALE_POWER.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], deal damage to ALL enemies.",
+  "AVEMUJICA-EXPLOSIVE_FINALE_POWER.smartDescription": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], deal [blue]{Amount}[/blue] damage to ALL enemies.",
+  "AVEMUJICA-EXPLOSIVE_FINALE_POWER.title": "Explosive Finale",
+
+  "AVEMUJICA-FRUSTRATION_POWER.description": "Whenever a card is [gold]Exhausted[/gold], gain [gold]Strength[/gold] this turn.",
+  "AVEMUJICA-FRUSTRATION_POWER.smartDescription": "Whenever a card is [gold]Exhausted[/gold], gain [blue]{Amount}[/blue] [gold]Strength[/gold] this turn.",
+  "AVEMUJICA-FRUSTRATION_POWER.title": "Frustration",
 
   "AVEMUJICA-GROUP_PERFORMANCE_POWER.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], also give [blue]1[/blue] copy to ALL other players.",
   "AVEMUJICA-GROUP_PERFORMANCE_POWER.smartDescription": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], also give [blue]{Amount}[/blue] {Amount:plural:copy|copies} to ALL other players.",

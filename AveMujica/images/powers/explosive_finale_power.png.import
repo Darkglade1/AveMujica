@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cptkyki8kvkr5"
-path="res://.godot/imported/as_fierce_as_fire.png-4420b88ec52abcc1290761eaa0b51329.ctex"
+uid="uid://ful5ft3hrtns"
+path="res://.godot/imported/explosive_finale_power.png-4160deb2b2da1502d58f5630c9048059.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/powers/big/as_fierce_as_fire.png"
-dest_files=["res://.godot/imported/as_fierce_as_fire.png-4420b88ec52abcc1290761eaa0b51329.ctex"]
+source_file="res://AveMujica/images/powers/explosive_finale_power.png"
+dest_files=["res://.godot/imported/explosive_finale_power.png-4160deb2b2da1502d58f5630c9048059.ctex"]
 
 [params]
 
