@@ -29,7 +29,6 @@ public class ProperTiming() : AveMujicaCard(1,
         if (card == null)
             return;
         CardCmd.ApplyKeyword(card, CardKeyword.Retain);
-        
     }
 
     protected override void OnUpgrade()

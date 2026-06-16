@@ -29,7 +29,6 @@ public class LoftMoon() : AveMujicaCard(2,
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin),
-        HoverTipFactory.FromPower<DreamThreadPower>()
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin)
     ];
 }

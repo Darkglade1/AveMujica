@@ -9,12 +9,12 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
-public class EmotionalOutburst() : AveMujicaCard(1,
+public class EmotionalOutburst() : AveMujicaCard(0,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DamageVar(7, ValueProp.Move),
+        new DamageVar(5, ValueProp.Move),
         new CalculationBaseVar(0M),
         new CalculationExtraVar(1M),
         new CalculatedVar("CalculatedHits").WithMultiplier((card, _) => CombatManager.Instance.History.Entries.OfType<CardExhaustedEntry>().Count((Func<CardExhaustedEntry, bool>) (e => e.HappenedThisTurn(card.CombatState) && e.Card.Owner == card.Owner)))

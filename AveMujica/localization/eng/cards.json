@@ -204,7 +204,7 @@
   "AVEMUJICA-SOPHIE.description": "[gold]Compose[/gold] \"Gain {VulnerablePower:diff()} [gold]Vulnerable[/gold].\"\n[gold]Compose[/gold] \"Enemy loses {HpLoss:diff()} HP.\"",
   "AVEMUJICA-SOPHIE.title": "Sophie",
 
-  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.description": "[gold]Exhaust[/gold] your [gold]Hand[/gold].\nGain {Oblivion:diff()} [gold]Oblivion[/gold] for each card [gold]Exhausted[/gold].",
+  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.description": "Gain {Block:diff()} [gold]Block[/gold] X times.\n[gold]Exhaust[/gold] X cards.",
   "AVEMUJICA-DO_NOT_FEAR_FORGETTING.title": "Do Not Fear Forgetting",
 
   "AVEMUJICA-BLOOD_MOON.description": "Deal {Damage:diff()} damage to a random enemy.\n[gold]Dreamspin[/gold] equal to the damage dealt.",
@@ -256,6 +256,17 @@
 
   "AVEMUJICA-GARDEN.description": "Whenever a [gold]Doll's Skill[/gold] is activated, draw {GardenPower:diff()} cards.",
   "AVEMUJICA-GARDEN.title": "Garden of Lilies",
+
+  "AVEMUJICA-CRUCIFIX.description": "Deal {Damage:diff()} damage.\nGain {ThornsPower:diff()} [gold]Thorns[/gold].",
+  "AVEMUJICA-CRUCIFIX.title": "Crucifix X",
+
+  "AVEMUJICA-PRELUDE.description": "Put {Cards:diff()} cards from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold] and add [gold]Retain[/gold] to them.",
+  "AVEMUJICA-PRELUDE.title": "Prelude in Blue",
+  "AVEMUJICA-PRELUDE.selectionScreenPrompt": "Choose cards to put back in your Hand.",
+
+  "AVEMUJICA-PURSUIT_OF_MASTERY.description": "[gold]Enchant[/gold] a card with [gold]Masterful[/gold] {Enchant:diff()}.\nWhen [gold]Retained[/gold], increase the amount by {EnchantGrow:diff()}.",
+  "AVEMUJICA-PURSUIT_OF_MASTERY.title": "Pursuit of Mastery",
+  "AVEMUJICA-PURSUIT_OF_MASTERY.selectionScreenPrompt": "Choose a card to [gold]Enchant[/gold].",
 
   "AVEMUJICA-GROUP_PERFORMANCE.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], also give {Cards:diff()} copy to ALL other players.",
   "AVEMUJICA-GROUP_PERFORMANCE.title": "Group Performance",

@@ -37,6 +37,5 @@ public class MoonlightSonata() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-        EnergyCost.UpgradeBy(-1);
     }
 }
