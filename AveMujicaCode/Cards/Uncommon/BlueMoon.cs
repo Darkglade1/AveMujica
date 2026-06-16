@@ -5,19 +5,17 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
-namespace AveMujica.AveMujicaCode.Cards.Rare;
+namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
 public class BlueMoon() : AveMujicaCard(1,
-    CardType.Power, CardRarity.Rare,
+    CardType.Power, CardRarity.Uncommon,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<BlueMoonPower>(2)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromPower<Oblivion>()
+        HoverTipFactory.FromPower<DreamThreadPower>()
     ];
-    
-    protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.GainsOblivion];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -28,6 +26,6 @@ public class BlueMoon() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars["BlueMoonPower"].UpgradeValueBy(1);
+        EnergyCost.UpgradeBy(-1);
     }
 }

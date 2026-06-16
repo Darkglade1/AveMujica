@@ -1,48 +1,39 @@
-﻿using AveMujica.AveMujicaCode.Cards.Allies;
-using AveMujica.AveMujicaCode.Powers;
-using BaseLib.Utils;
+﻿using BaseLib.Patches.Features;
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Rare;
 
 public class BloodMoon() : AveMujicaCard(1,
     CardType.Attack, CardRarity.Rare,
-    TargetType.AnyEnemy)
+    CustomTargetType.PetOrSelf)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(9, ValueProp.Move)];
-
-    protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.GainsOblivion];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(4, ValueProp.Move)];
+    
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromPower(ModelDb.Power<Oblivion>())
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin)
     ];
     
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        int numDolls = 0;
-        if (Owner.Creature.CombatState != null)
+        if (CombatState != null)
         {
-            foreach (var ally in Owner.Creature.CombatState.Allies)
-            {
-                if (ally.IsPet && ally.IsAlive && ally.PetOwner == Owner && ally.Monster is AbstractAlly)
-                {
-                    numDolls++;
-                }
-            }
+            var attackCommand = await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this).TargetingRandomOpponents(CombatState).Execute(choiceContext);
+            await AllyHelper.Dreamspin(choiceContext, Owner, attackCommand.Results.SelectMany(r => r).Sum((Func<DamageResult, int>) (r => r.TotalDamage + r.OverkillDamage)), play.Target, this);
         }
-        await CommonActions.CardAttack(this, play, numDolls + 1).Execute(choiceContext);
-        
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(2);
+        RemoveKeyword(CardKeyword.Exhaust);
     }
 }

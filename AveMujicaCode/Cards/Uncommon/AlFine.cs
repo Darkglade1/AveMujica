@@ -1,28 +1,25 @@
-﻿using AveMujica.AveMujicaCode.Cards.Token;
-using AveMujica.AveMujicaCode.Powers;
-using BaseLib.Utils;
+﻿using AveMujica.AveMujicaCode.Cards.Allies;
+using AveMujica.AveMujicaCode.Cards.Token;
+using BaseLib.Patches.Features;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
 public class AlFine() : AveMujicaCard(2,
     CardType.Attack, CardRarity.Uncommon,
-    TargetType.AnyEnemy)
+    CustomTargetType.PetOrSelf)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(12, ValueProp.Move), new PowerVar<DreamThreadPower>(5)];
-    
-    protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.GainsOblivion];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(12, ValueProp.Move), new DreamspinVar(4)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose),
-        HoverTipFactory.FromPower(ModelDb.Power<DreamThreadPower>())
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin)
     ];
     
     protected override bool ShouldGlowGoldInternal => PlayedSongThisTurn;
@@ -31,17 +28,20 @@ public class AlFine() : AveMujicaCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CommonActions.CardAttack(this, play).Execute(choiceContext);
-        if (PlayedSongThisTurn)
+        if (CombatState != null)
         {
-            await PowerCmd.Apply<DreamThreadPower>(choiceContext, Owner.Creature, DynamicVars["DreamThreadPower"].BaseValue, Owner.Creature, this);
+            await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this).TargetingAllOpponents(CombatState).Execute(choiceContext);
+            if (PlayedSongThisTurn)
+            {
+                await AllyHelper.Dreamspin(choiceContext, Owner, DynamicVars["Dreamspin"].IntValue, play.Target, this);
+            }
         }
     }
 
     protected override void OnUpgrade()
     {
         DynamicVars.Damage.UpgradeValueBy(3);
-        DynamicVars["DreamThreadPower"].UpgradeValueBy(2);
+        DynamicVars["Dreamspin"].UpgradeValueBy(1);
     }
     
     public bool PlayedSongThisTurn

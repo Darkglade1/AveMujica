@@ -12,7 +12,7 @@ public class CrescentMoonEchos() : AveMujicaCard(0,
     CardType.Skill, CardRarity.Uncommon,
     CustomTargetType.PetOrSelf)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DreamspinVar(3)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DreamspinVar(2)];
     
     protected override bool HasEnergyCostX => true;
     
@@ -33,7 +33,6 @@ public class CrescentMoonEchos() : AveMujicaCard(0,
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin),
-        HoverTipFactory.FromPower<DreamThreadPower>()
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin)
     ];
 }

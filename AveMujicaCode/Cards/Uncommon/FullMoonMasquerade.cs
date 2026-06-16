@@ -1,9 +1,7 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Allies;
-using AveMujica.AveMujicaCode.Powers;
-using BaseLib.Patches.Features;
 using BaseLib.Utils;
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
-using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
@@ -13,11 +11,9 @@ namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
 public class FullMoonMasquerade() : AveMujicaCard(2,
     CardType.Skill, CardRarity.Uncommon,
-    CustomTargetType.PetOrSelf)
+    TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(11, ValueProp.Move), new DreamspinVar(2)];
-    
-    protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.GainsOblivion];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(11, ValueProp.Move), new HealVar(2)];
     
     public override bool GainsBlock => true;
 
@@ -26,21 +22,23 @@ public class FullMoonMasquerade() : AveMujicaCard(2,
         CardPlay play)
     {
         await CommonActions.CardBlock(this, DynamicVars.Block, play);
-        IReadOnlyList<Creature>? hittableEnemies = Owner.Creature.CombatState?.HittableEnemies;
-        if (hittableEnemies != null && hittableEnemies.Count != 0)
+        if (Owner.Creature.CombatState != null)
         {
-            await AllyHelper.Dreamspin(choiceContext, Owner, DynamicVars["Dreamspin"].IntValue * hittableEnemies.Count, play.Target, this);
+            foreach (var ally in Owner.Creature.CombatState.Allies)
+            {
+                if (ally.Monster is AbstractAlly)
+                {
+                    await CreatureCmd.GainMaxHp(ally, DynamicVars.Heal.BaseValue);
+                }
+            }
         }
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Block.UpgradeValueBy(3);
-        DynamicVars["Dreamspin"].UpgradeValueBy(1);
+        DynamicVars.Block.UpgradeValueBy(5);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin),
-        HoverTipFactory.FromPower<DreamThreadPower>()
     ];
 }

@@ -51,8 +51,8 @@
   "AVEMUJICA-ENCORE_POWER.smartDescription": "[gold]Songs[/gold] have [gold]Replay[/gold] [blue]{Amount}[/blue].",
   "AVEMUJICA-ENCORE_POWER.title": "Encore",
 
-  "AVEMUJICA-BLUE_MOON_POWER.description": "At the end of your turn, gain [gold]Dream Thread[/gold].",
-  "AVEMUJICA-BLUE_MOON_POWER.smartDescription": "At the end of your turn, gain [blue]{Amount}[/blue] [gold]Dream Thread[/gold].",
+  "AVEMUJICA-BLUE_MOON_POWER.description": "At the start of your turn, gain [gold]Dream Thread[/gold].",
+  "AVEMUJICA-BLUE_MOON_POWER.smartDescription": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Dream Thread[/gold].",
   "AVEMUJICA-BLUE_MOON_POWER.title": "Blue Moon's Sorrow",
 
   "AVEMUJICA-GODDESS_OF_OBLIVION_POWER.description": "At the start of your turn, ALL [gold]Dolls[/gold] gain [gold]Strength[/gold] and [gold]Dexterity[/gold].",
@@ -82,6 +82,10 @@
   "AVEMUJICA-VIRTUOSO_FORM_POWER.description": "At the start of your turn, [gold]Enchant[/gold] ALL cards in your [gold]Hand[/gold] with [gold]Masterful[/gold].",
   "AVEMUJICA-VIRTUOSO_FORM_POWER.smartDescription": "At the start of your turn, [gold]Enchant[/gold] ALL cards in your [gold]Hand[/gold] with [gold]Masterful[/gold] [blue]{Amount}[/blue].",
   "AVEMUJICA-VIRTUOSO_FORM_POWER.title": "Virtuoso's Form",
+
+  "AVEMUJICA-GARDEN_POWER.description": "Whenever a [gold]Doll's Skill[/gold] is activated, draw cards.",
+  "AVEMUJICA-GARDEN_POWER.smartDescription": "Whenever a [gold]Doll's Skill[/gold] is activated, draw [blue]{Amount}[/blue] cards.",
+  "AVEMUJICA-GARDEN_POWER.title": "Garden of Lilies",
 
   "AVEMUJICA-GROUP_PERFORMANCE_POWER.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], also give [blue]1[/blue] copy to ALL other players.",
   "AVEMUJICA-GROUP_PERFORMANCE_POWER.smartDescription": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], also give [blue]{Amount}[/blue] {Amount:plural:copy|copies} to ALL other players.",

@@ -14,7 +14,7 @@
   "AVEMUJICA-SONG.description": "{IfUpgraded:show:Draw a card.}",
   "AVEMUJICA-SONG.title": "Song",
 
-  "AVEMUJICA-MOONLIT_STRIKE.description": "Deal {Damage:diff()} damage.\nGain {DreamThreadPower:diff()} [gold]Dream Thread[/gold].",
+  "AVEMUJICA-MOONLIT_STRIKE.description": "Deal {Damage:diff()} damage to a random enemy.\n[gold]Dreamspin[/gold] {Dreamspin:diff()}.",
   "AVEMUJICA-MOONLIT_STRIKE.title": "Moonlit Strike",
 
   "AVEMUJICA-FORTE.description": "Deal {Damage:diff()} damage.\n[gold]Compose[/gold] \"Gain {Compose:diff()} [gold]Strength[/gold] this turn.\"",
@@ -35,7 +35,7 @@
   "AVEMUJICA-FIRST_QUARTER_YEARNING.description": "Give a [gold]Doll[/gold] {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold].",
   "AVEMUJICA-FIRST_QUARTER_YEARNING.title": "First Quarter's Yearning",
 
-  "AVEMUJICA-WANING_MOON_DESIRE.description": "Deal {Damage:diff()} damage.\nGain {DreamThreadPower:diff()} [gold]Dream Thread[/gold].",
+  "AVEMUJICA-WANING_MOON_DESIRE.description": "Deal {Damage:diff()} damage.\nThe oldest [gold]Doll[/gold] heals {Heal:diff()} HP.",
   "AVEMUJICA-WANING_MOON_DESIRE.title": "Waning Moon's Desire",
 
   "AVEMUJICA-AFTERGLOW.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf you [gold]Performed[/gold] this turn, gain {Energy:energyIcons()} next turn.",
@@ -117,13 +117,13 @@
   "AVEMUJICA-AL_CODA.description": "Deal {Damage:diff()} damage.\nIf you played a [gold]Song[/gold] this turn, {IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold] twice.",
   "AVEMUJICA-AL_CODA.title": "Al Coda",
 
-  "AVEMUJICA-AL_FINE.description": "Deal {Damage:diff()} damage.\nIf you played a [gold]Song[/gold] this turn, gain {DreamThreadPower:diff()} [gold]Dream Thread[/gold].",
+  "AVEMUJICA-AL_FINE.description": "Deal {Damage:diff()} damage to ALL enemies.\nIf you played a [gold]Song[/gold] this turn, [gold]Dreamspin[/gold] {Dreamspin:diff()}.",
   "AVEMUJICA-AL_FINE.title": "Al Fine",
 
   "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()} X times.",
   "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "Crescent Moon Echos",
 
-  "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Dreamspin[/gold] {Dreamspin:diff()} for each enemy in combat.",
+  "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gain {Block:diff()} [gold]Block[/gold].\nALL [gold]Dolls[/gold] gain {Heal:diff()} HP.",
   "AVEMUJICA-FULL_MOON_MASQUERADE.title": "Full Moon Masquerade",
 
   "AVEMUJICA-WAXING_MOON_LONGING.description": "Gain [gold]Block[/gold] equal to the total HP of your [gold]Dolls[/gold].{InCombat:\\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold])|}",
@@ -176,7 +176,7 @@
   "AVEMUJICA-LARGE_REPERTOIRE.description": "At the end of your turn, gain [gold]Block[/gold] equal to the number of cards in your [gold]Hand[/gold].",
   "AVEMUJICA-LARGE_REPERTOIRE.title": "Large Repertoire",
 
-  "AVEMUJICA-MOONLIGHT_SONATA.description": "Whenever you gain [gold]Oblivion[/gold], draw {MoonlightSonataPower:diff()} {MoonlightSonataPower:plural:card|cards}.",
+  "AVEMUJICA-MOONLIGHT_SONATA.description": "For every [gold]Doll[/gold] present, {IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold].",
   "AVEMUJICA-MOONLIGHT_SONATA.title": "Moonlight Sonata",
 
   "AVEMUJICA-MELODY.description": "At the end of your turn, if you [gold]Performed[/gold] this turn, gain {MelodyPower:diff()} [gold]Strength[/gold].",
@@ -201,19 +201,19 @@
   "AVEMUJICA-ODE_TO_WAR.description": "Deal {Damage:diff()} damage.\n[gold]Compose[/gold] \"Deal {Compose:diff()} damage.\" until you finish [gold]Composing[/gold] a [gold]Song[/gold].",
   "AVEMUJICA-ODE_TO_WAR.title": "Ode To War",
 
-  "AVEMUJICA-SOPHIE.description": "[gold]Compose[/gold] \"Gain {VulnerablePower:diff()} [gold]Vulnerable[/gold].\"\n[gold]Compose[/gold] \"Gain {DreamThreadPower:diff()} [gold]Dream Thread[/gold].\"",
+  "AVEMUJICA-SOPHIE.description": "[gold]Compose[/gold] \"Gain {VulnerablePower:diff()} [gold]Vulnerable[/gold].\"\n[gold]Compose[/gold] \"Enemy loses {HpLoss:diff()} HP.\"",
   "AVEMUJICA-SOPHIE.title": "Sophie",
 
   "AVEMUJICA-DO_NOT_FEAR_FORGETTING.description": "[gold]Exhaust[/gold] your [gold]Hand[/gold].\nGain {Oblivion:diff()} [gold]Oblivion[/gold] for each card [gold]Exhausted[/gold].",
   "AVEMUJICA-DO_NOT_FEAR_FORGETTING.title": "Do Not Fear Forgetting",
 
-  "AVEMUJICA-BLOOD_MOON.description": "Deal {Damage:diff()} damage.\nDeals damage again for every [gold]Doll[/gold] present.",
+  "AVEMUJICA-BLOOD_MOON.description": "Deal {Damage:diff()} damage to a random enemy.\n[gold]Dreamspin[/gold] equal to the damage dealt.",
   "AVEMUJICA-BLOOD_MOON.title": "Blood Moon's Wrath",
 
-  "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.\nIf the target is a [gold]Doll[/gold], they can use Skills twice this turn.",
+  "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.\nIf the target is a [gold]Doll[/gold], they can use an additional [gold]Skill[/gold] this turn.",
   "AVEMUJICA-TWO_MOONS.title": "Two Moons",
 
-  "AVEMUJICA-BLUE_MOON.description": "At the end of your turn, gain {BlueMoonPower:diff()} [gold]Dream Thread[/gold].",
+  "AVEMUJICA-BLUE_MOON.description": "At the start of your turn, gain {BlueMoonPower:diff()} [gold]Dream Thread[/gold].",
   "AVEMUJICA-BLUE_MOON.title": "Blue Moon's Sorrow",
 
   "AVEMUJICA-GODDESS_OF_OBLIVION.description": "At the start of your turn, ALL [gold]Dolls[/gold] gain {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold].",
@@ -253,6 +253,9 @@
 
   "AVEMUJICA-VIRTUOSO_FORM.description": "At the start of your turn, [gold]Enchant[/gold] ALL cards in your [gold]Hand[/gold] with [gold]Masterful[/gold] {VirtuosoFormPower:diff()}.",
   "AVEMUJICA-VIRTUOSO_FORM.title": "Virtuoso's Form",
+
+  "AVEMUJICA-GARDEN.description": "Whenever a [gold]Doll's Skill[/gold] is activated, draw {GardenPower:diff()} cards.",
+  "AVEMUJICA-GARDEN.title": "Garden of Lilies",
 
   "AVEMUJICA-GROUP_PERFORMANCE.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], also give {Cards:diff()} copy to ALL other players.",
   "AVEMUJICA-GROUP_PERFORMANCE.title": "Group Performance",

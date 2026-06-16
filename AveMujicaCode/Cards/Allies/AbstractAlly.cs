@@ -1,4 +1,5 @@
-﻿using BaseLib.Abstracts;
+﻿using AveMujica.AveMujicaCode.Hooks;
+using BaseLib.Abstracts;
 using BaseLib.Patches.Content;
 using Godot;
 using HarmonyLib;
@@ -139,6 +140,10 @@ public abstract class AbstractAlly : CustomMonsterModel
   {
     await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Creature, skillCost, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, Creature);
     await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Creature, skillCost, false);
+    if (Creature.PetOwner != null)
+    {
+      await AveMujicaHooks.AfterDollSkill(Creature.PetOwner.RunState, Creature.PetOwner.Creature.CombatState, Creature.PetOwner, this);
+    }
   }
 
   protected abstract void SetUpSkill1Button();

@@ -1,5 +1,4 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Allies;
-using AveMujica.AveMujicaCode.Powers;
 using BaseLib.Patches.Features;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
@@ -47,7 +46,6 @@ public class NewMoonAwakening() : AveMujicaCard(1,
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin),
-        HoverTipFactory.FromPower(ModelDb.Power<DreamThreadPower>()),
         HoverTipFactory.FromKeyword(CardKeyword.Exhaust)
     ];
 }

@@ -14,8 +14,6 @@ public class TwoMoons() : AveMujicaCard(0,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DreamspinVar(2)];
     
-    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
-    
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
@@ -29,11 +27,10 @@ public class TwoMoons() : AveMujicaCard(0,
 
     protected override void OnUpgrade()
     {
-        RemoveKeyword(CardKeyword.Exhaust);
+        DynamicVars["Dreamspin"].UpgradeValueBy(1);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin),
-        HoverTipFactory.FromPower<DreamThreadPower>()
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin)
     ];
 }

@@ -1,4 +1,5 @@
-﻿using MegaCrit.Sts2.Core.Combat;
+﻿using AveMujica.AveMujicaCode.Cards.Allies;
+using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -35,5 +36,10 @@ public class AveMujicaHooks
     public static Task OnFinishComposing(IRunState? rs, ICombatState? cs, Player player, CardModel card)
     {
         return DispatchAsync<IOnFinishComposing>(rs, cs, m => m.OnFinishComposing(player, card));
+    }
+    
+    public static Task AfterDollSkill(IRunState? rs, ICombatState? cs, Player player, AbstractAlly ally)
+    {
+        return DispatchAsync<IAfterDollSkill>(rs, cs, m => m.AfterDollSkill(player, ally));
     }
 }

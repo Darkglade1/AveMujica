@@ -24,7 +24,7 @@ public class LoftMoonPower() : AveMujicaPower
         {
             foreach (var ally in Owner.CombatState.Allies)
             {
-                if (ally.Monster is AbstractAlly)
+                if (ally.Monster is AbstractAlly && ally.IsAlive && ally.PetOwner == Owner.Player)
                 {
                     await CreatureCmd.GainMaxHp(ally, Amount);
                 }

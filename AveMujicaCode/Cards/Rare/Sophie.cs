@@ -1,5 +1,4 @@
 ﻿using AveMujica.AveMujicaCode.Cards.CardMods;
-using AveMujica.AveMujicaCode.Powers;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
@@ -13,11 +12,10 @@ public class Sophie() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Rare,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<DreamThreadPower>(8), new PowerVar<VulnerablePower>(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new HpLossVar(30), new PowerVar<VulnerablePower>(2)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose),
-        HoverTipFactory.FromPower<DreamThreadPower>(),
         HoverTipFactory.FromPower<VulnerablePower>()
     ];
     
@@ -31,14 +29,14 @@ public class Sophie() : AveMujicaCard(1,
         gainVulnerableMod.VulnerableAmt = (int)DynamicVars["VulnerablePower"].BaseValue;
         await ComposeHelper.AddComposeEffectsToSong([gainVulnerableMod], Owner);
         
-        var dreamThreadMod = (DreamThreadMod)ModelDb.Get<DreamThreadMod>().MutableClone();
-        dreamThreadMod.DreamThreadAmt = (int)DynamicVars["DreamThreadPower"].BaseValue;
-        await ComposeHelper.AddComposeEffectsToSong([dreamThreadMod], Owner);
+        var enemyLoseHPMod = (EnemyLoseHPMod)ModelDb.Get<EnemyLoseHPMod>().MutableClone();
+        enemyLoseHPMod.HPLossAmt = (int)DynamicVars["HpLoss"].BaseValue;
+        await ComposeHelper.AddComposeEffectsToSong([enemyLoseHPMod], Owner);
     }
 
     protected override void OnUpgrade()
     {
         DynamicVars["VulnerablePower"].UpgradeValueBy(-1);
-        DynamicVars["DreamThreadPower"].UpgradeValueBy(2);
+        DynamicVars.HpLoss.UpgradeValueBy(10);
     }
 }

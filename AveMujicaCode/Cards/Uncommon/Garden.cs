@@ -7,21 +7,20 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
-public class MoonlightSonata() : AveMujicaCard(1,
+public class Garden() : AveMujicaCard(1,
     CardType.Power, CardRarity.Uncommon,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<MoonlightSonataPower>(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<GardenPower>(2)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromPower<Oblivion>()
     ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await PowerCmd.Apply<MoonlightSonataPower>(choiceContext, Owner.Creature, DynamicVars["MoonlightSonataPower"].BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<GardenPower>(choiceContext, Owner.Creature, DynamicVars["GardenPower"].BaseValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()
