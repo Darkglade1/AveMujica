@@ -43,7 +43,7 @@ public class AlCoda() : AveMujicaCard(1,
     {
         get
         {
-            return CombatManager.Instance.History.CardPlaysFinished.Any(e => e.CardPlay.Card is Song && e.HappenedThisTurn(CombatState));
+            return CombatManager.Instance.History.CardPlaysFinished.Any(e => e.CardPlay.Card is Song && e.CardPlay.Card.Owner == Owner && e.HappenedThisTurn(CombatState));
         }
     }
 }
