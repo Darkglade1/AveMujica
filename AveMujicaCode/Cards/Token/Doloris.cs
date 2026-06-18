@@ -10,7 +10,7 @@ namespace AveMujica.AveMujicaCode.Cards.Token;
 
 [Pool(typeof(TokenCardPool))]
 public class Doloris() : AllyCard(-1,
-    CardType.Skill, CardRarity.Token,
+    CardType.Power, CardRarity.Token,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];

@@ -52,6 +52,9 @@ public static class FullArtAllyCards
     {
         if (__instance.Model is AllyCard && __instance.IsNodeReady())
         {
+            __instance._portraitBorder.Visible = false;
+            __instance._portrait.Visible = false;
+            __instance._frame.Visible = false;
             __instance._ancientPortrait.Visible = true;
             __instance._ancientBorderGlassOverlay.Visible = true;
             __instance._ancientBorder.Visible = true;
@@ -63,8 +66,9 @@ public static class FullArtAllyCards
             __instance._ancientTextBg.Texture = ResourceLoader.Load<Texture2D>(ImageHelper.GetImagePath($"atlases/compressed_atlas.sprites/ancient_text_bg_{__instance.Model.Type.ToString().ToLowerInvariant()}.png.tres"));
             __instance._ancientPortrait.Texture = __instance.Model.Portrait;
             __instance.ReloadOverlay();
-            __instance._frame.Visible = false;
             __instance._ancientBorder.Visible = true;
+            __instance._frame.Texture = null;
+            //__instance._banner.Material = null;
         }
     }
 }

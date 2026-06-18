@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 namespace AveMujica.AveMujicaCode.Cards.Token;
 [Pool(typeof(TokenCardPool))]
 public class Timoris() : AllyCard(-1,
-    CardType.Skill, CardRarity.Token,
+    CardType.Power, CardRarity.Token,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
