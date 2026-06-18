@@ -95,6 +95,16 @@ public sealed class MortisAlly : AbstractAlly
     hoverTip.Description = String.Format(hoverTip.Description, block);
     return hoverTip;
   }
+  
+  public override HoverTip GetInCombatAutoSkillHoverTip()
+  {
+    var hoverTip = new HoverTip(
+      new LocString("static_hover_tips", "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.title"),
+      new LocString("static_hover_tips", "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.description"),
+      PreloadManager.Cache.GetTexture2D(ImageHelper.GetImagePath("atlases/intent_atlas.sprites/intent_defend.tres")));
+    hoverTip.Description = String.Format(hoverTip.Description, CalcBlockWithDex(block));
+    return hoverTip;
+  }
 
   public override HoverTip GetSkill1HoverTip()
   {

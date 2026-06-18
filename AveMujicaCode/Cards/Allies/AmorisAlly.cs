@@ -13,6 +13,7 @@ using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Models.Powers;
+using MegaCrit.Sts2.Core.Nodes.Combat;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Allies;
@@ -106,6 +107,16 @@ public sealed class AmorisAlly : AbstractAlly
       new LocString("static_hover_tips", "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.description"),
       PreloadManager.Cache.GetTexture2D(ImageHelper.GetImagePath("atlases/intent_atlas.sprites/attack/intent_attack_2.tres")));
     hoverTip.Description = String.Format(hoverTip.Description, damage, hits);
+    return hoverTip;
+  }
+  
+  public override HoverTip GetInCombatAutoSkillHoverTip()
+  {
+    var hoverTip = new HoverTip(
+      new LocString("static_hover_tips", "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.title"),
+      new LocString("static_hover_tips", "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.description"),
+      PreloadManager.Cache.GetTexture2D(ImageHelper.GetImagePath("atlases/intent_atlas.sprites/attack/intent_attack_2.tres")));
+    hoverTip.Description = String.Format(hoverTip.Description, CalcAttackWithStr(damage), hits);
     return hoverTip;
   }
 

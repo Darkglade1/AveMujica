@@ -31,15 +31,6 @@ public partial class NAllyButton : BaseButton
         
         marginContainer.SetAnchorsPreset(LayoutPreset.FullRect);
 
-        if (skillNum == 1)
-        {
-            _hoverTip = owner.GetSkill1HoverTip(); 
-        }
-        else
-        {
-            _hoverTip = owner.GetSkill2HoverTip();
-        }
-
         MouseFilter = MouseFilterEnum.Pass;
         Connect(Control.SignalName.MouseEntered, Callable.From(OnHovered));
         Connect(Control.SignalName.MouseExited, Callable.From(OnUnhovered));
@@ -88,6 +79,14 @@ public partial class NAllyButton : BaseButton
 
     private void OnHovered()
     {
+        if (skillNum == 1)
+        {
+            _hoverTip = owner.GetSkill1HoverTip(); 
+        }
+        else
+        {
+            _hoverTip = owner.GetSkill2HoverTip();
+        }
         if (_hoverTip != null)
         {
             NHoverTipSet? nHoverTipSet = NHoverTipSet.CreateAndShow(this, _hoverTip);

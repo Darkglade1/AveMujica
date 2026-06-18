@@ -155,6 +155,7 @@ public abstract class AbstractAlly : CustomMonsterModel
   public abstract Task Skill2();
   
   public abstract HoverTip GetAutoSkillHoverTip();
+  public abstract HoverTip GetInCombatAutoSkillHoverTip();
   
   public abstract HoverTip GetSkill1HoverTip();
   
@@ -174,57 +175,14 @@ public abstract class AbstractAlly : CustomMonsterModel
     }
     return block + dexAmt;
   }
-}
-
-[HarmonyPatch(typeof(AbstractIntent), nameof(AbstractIntent.GetHoverTip))]
-public static class SetAllyIntentHoverTip
-{
-  public static void Postfix(AbstractIntent __instance, IEnumerable<Creature> targets, Creature owner, ref HoverTip __result)
+  protected int CalcAttackWithStr(int damage)
   {
-    if (owner.Monster is AbstractAlly ally)
+    int strAmt = 0;
+    var strength = Creature.GetPower<StrengthPower>();
+    if (strength != null)
     {
-      __result = ally.GetAutoSkillHoverTip();
+      strAmt += strength.Amount;
     }
-  }
-}
-
-[HarmonyPatch(typeof(PersonalHivePower), nameof(PersonalHivePower.AfterDamageReceived))]
-public static class PatchEntomancer
-{
-  public static bool Prefix(PersonalHivePower __instance, PlayerChoiceContext choiceContext,
-    Creature target,
-    DamageResult _,
-    ValueProp props,
-    Creature? dealer,
-    CardModel? cardSource,
-    ref Task __result)
-  {
-    if (dealer != null && dealer.Monster is AbstractAlly)
-    {
-      __result = Task.CompletedTask;
-      return false;
-    }
-
-    return true;
-  }
-}
-
-[HarmonyPatch(typeof(ThornsPower), nameof(ThornsPower.BeforeDamageReceived))]
-public static class PatchThorns
-{
-  public static bool Prefix(ThornsPower __instance, PlayerChoiceContext choiceContext,
-    Creature target,
-    Decimal amount,
-    ValueProp props,
-    Creature? dealer,
-    CardModel? cardSource,
-    ref Task __result)
-  {
-    if (dealer != null && dealer.Monster is AbstractAlly)
-    {
-      __result = Task.CompletedTask;
-      return false;
-    }
-    return true;
+    return damage + strAmt;
   }
 }

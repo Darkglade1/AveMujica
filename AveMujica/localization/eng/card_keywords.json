@@ -5,6 +5,6 @@
   "AVEMUJICA-COMPOSE.title": "Compose",
   "AVEMUJICA-AWAKEN.description": "Summons a [gold]Doll[/gold] to assist you. [gold]Dolls[/gold] use their default ability at the end of your turn. You can trigger their skills if they have sufficient HP by clicking the buttons next to their intent.",
   "AVEMUJICA-AWAKEN.title": "Awaken",
-  "AVEMUJICA-DREAMSPIN.description": "Can target yourself to gain [gold]Dream Thread[/gold]. [blue]3[/blue] [gold]Dream Thread[/gold] is used to [gold]Awaken[/gold] a [gold]Doll[/gold].\nCan target a [gold]Doll[/gold] to consume all your [gold]Dream Thread[/gold] and give the [gold]Doll[/gold] equivalent HP.",
+  "AVEMUJICA-DREAMSPIN.description": "Can target yourself to gain [gold]Dream Thread[/gold]. [blue]3[/blue] [gold]Dream Thread[/gold] is used to [gold]Awaken[/gold] a [gold]Doll[/gold].\nCan target a [gold]Doll[/gold] to give the [gold]Doll[/gold] HP. Any [gold]Dream Thread[/gold] you have is consumed to give additional HP.",
   "AVEMUJICA-DREAMSPIN.title": "Dreamspin"
 }

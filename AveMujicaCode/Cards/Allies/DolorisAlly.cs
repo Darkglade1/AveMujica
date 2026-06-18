@@ -93,10 +93,24 @@ public sealed class DolorisAlly : AbstractAlly
     hoverTip.Description = String.Format(hoverTip.Description, block);
     return hoverTip;
   }
+  
+  public override HoverTip GetInCombatAutoSkillHoverTip()
+  {
+    var hoverTip = new HoverTip(
+      new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.title"),
+      new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.description"),
+      PreloadManager.Cache.GetTexture2D(ImageHelper.GetImagePath("atlases/intent_atlas.sprites/intent_defend.tres")));
+    hoverTip.Description = String.Format(hoverTip.Description, CalcBlockWithDex(block));
+    return hoverTip;
+  }
 
   public override HoverTip GetSkill1HoverTip()
   {
-    return Skill1HoverTip();
+    var hoverTip = new HoverTip(
+      new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_1.title"),
+      new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_1.description"));
+    hoverTip.Description = String.Format(hoverTip.Description, skill1HPCost, CalcBlockWithDex(skillBlock));
+    return hoverTip;
   }
   
   public static HoverTip Skill1HoverTip()
