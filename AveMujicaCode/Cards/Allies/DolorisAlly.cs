@@ -19,7 +19,7 @@ namespace AveMujica.AveMujicaCode.Cards.Allies;
 
 public sealed class DolorisAlly : AbstractAlly
 {
-  private static int block = 3;
+  private static int block = 2;
   private static int damage = 6;
   private static int damageIncrease = 1;
   private static int skillBlock = 7;

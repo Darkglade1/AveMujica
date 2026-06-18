@@ -19,10 +19,10 @@ namespace AveMujica.AveMujicaCode.Cards.Allies;
 
 public sealed class AmorisAlly : AbstractAlly
 {
-  private static int damage = 2;
-  private static int hits = 2;
+  private static int damage = 1;
+  private static int hits = 3;
   private static int strength = 1;
-  private static int buffHits = 2;
+  private static int buffHits = 3;
   private static int skill1HPCost = 3;
   private static int skill2HPCost = 6;
   public override string CustomVisualPath => "amoris/amoris.tscn".CharacterPath();
@@ -42,14 +42,15 @@ public sealed class AmorisAlly : AbstractAlly
       numSkillsPerTurn = 0; // hack to prevent player from clicking skill button during enemy turn
       await CreatureCmd.TriggerAnim(Creature, "Attack", 0f);
       Sfx.SKILL_DRUM2.Play();
-      IReadOnlyList<Creature>? hittableEnemies = Creature.CombatState?.HittableEnemies;
-      if (hittableEnemies != null && hittableEnemies.Count != 0)
+      for (int i = 0; i < currentHits; i++)
       {
-        for (int i = 0; i < currentHits; i++)
+        IReadOnlyList<Creature>? hittableEnemies = Creature.CombatState?.HittableEnemies;
+        if (hittableEnemies != null)
         {
-          foreach (var hittableEnemy in hittableEnemies)
+          var enemy = owner.RunState.Rng.CombatTargets.NextItem(hittableEnemies);
+          if (enemy != null)
           {
-            await CreatureCmd.Damage(new BlockingPlayerChoiceContext(), hittableEnemy, damage, ValueProp.Move, Creature);
+            await CreatureCmd.Damage(new BlockingPlayerChoiceContext(), enemy, damage, ValueProp.Move, Creature);
           }
         }
       }

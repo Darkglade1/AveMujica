@@ -19,11 +19,11 @@ namespace AveMujica.AveMujicaCode.Cards.Allies;
 
 public sealed class TimorisAlly : AbstractAlly
 {
-  private static int damage = 5;
-  private static int damageIncrease = 50;
-  private static int strengthLoss = 10;
+  private static int damage = 4;
+  private static int damageIncrease = 100;
+  private static int debuff = 1;
   private static int skill1HPCost = 3;
-  private static int skill2HPCost = 6;
+  private static int skill2HPCost = 8;
   public override string CustomVisualPath => "timoris/timoris.tscn".CharacterPath();
   
   protected override MoveState GetDefaultMoveState()
@@ -74,7 +74,8 @@ public sealed class TimorisAlly : AbstractAlly
       {
         foreach (Creature enemy in Creature.CombatState.HittableEnemies)
         {
-          await PowerCmd.Apply<MoonlightExecution>(new ThrowingPlayerChoiceContext(), enemy, damageIncrease, Creature, null);
+          await PowerCmd.Apply<WeakPower>(new ThrowingPlayerChoiceContext(), enemy, debuff, Creature, null);
+          await PowerCmd.Apply<VulnerablePower>(new ThrowingPlayerChoiceContext(), enemy, debuff, Creature, null);
         }
       }
     }
@@ -93,7 +94,7 @@ public sealed class TimorisAlly : AbstractAlly
       {
         foreach (Creature enemy in Creature.CombatState.HittableEnemies)
         {
-          await PowerCmd.Apply<ShudderingStrings>(new ThrowingPlayerChoiceContext(), enemy, strengthLoss, Creature, null);
+          await PowerCmd.Apply<MoonlightExecution>(new ThrowingPlayerChoiceContext(), enemy, damageIncrease, Creature, null);
         }
       }
     }
@@ -124,7 +125,7 @@ public sealed class TimorisAlly : AbstractAlly
     var hoverTip = new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title"),
       new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description"));
-    hoverTip.Description = String.Format(hoverTip.Description, skill1HPCost, damageIncrease);
+    hoverTip.Description = String.Format(hoverTip.Description, skill1HPCost, debuff);
     return hoverTip;
   }
 
@@ -138,7 +139,7 @@ public sealed class TimorisAlly : AbstractAlly
     var hoverTip = new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title"),
       new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description"));
-    hoverTip.Description = String.Format(hoverTip.Description, skill2HPCost, strengthLoss);
+    hoverTip.Description = String.Format(hoverTip.Description, skill2HPCost, damageIncrease);
     return hoverTip;
   }
 

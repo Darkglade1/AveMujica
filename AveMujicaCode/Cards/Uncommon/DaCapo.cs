@@ -16,6 +16,7 @@ public class DaCapo() : AveMujicaCard(1,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose),
@@ -44,7 +45,7 @@ public class DaCapo() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-        
+        RemoveKeyword(CardKeyword.Exhaust);
     }
     
     public bool PlayedSongThisTurn

@@ -20,7 +20,7 @@ namespace AveMujica.AveMujicaCode.Cards.Allies;
 
 public sealed class MortisAlly : AbstractAlly
 {
-  private static int block = 3;
+  private static int block = 2;
   private static int cardDraw = 2;
   private static int intangible = 1;
   private static int skill1HPCost = 3;
