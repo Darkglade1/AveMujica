@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace AveMujica.AveMujicaCode.Cards.Rare;
 
-public class GoddessOfOblivion() : AveMujicaCard(2,
+public class KnightsOfOblivionis() : AveMujicaCard(2,
     CardType.Power, CardRarity.Rare,
     TargetType.Self)
 {
@@ -23,7 +23,7 @@ public class GoddessOfOblivion() : AveMujicaCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await PowerCmd.Apply<GoddessOfOblivionPower>(choiceContext, Owner.Creature, DynamicVars["StrengthPower"].BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<KnightsOfOblivionisPower>(choiceContext, Owner.Creature, DynamicVars["StrengthPower"].BaseValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()

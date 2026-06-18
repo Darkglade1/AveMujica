@@ -38,8 +38,6 @@ public class WaxingMoonLonging() : AveMujicaCard(1,
         return totalHP;
     }
     
-    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
-    
     public override bool GainsBlock => true;
 
     protected override async Task OnPlay(
@@ -51,7 +49,7 @@ public class WaxingMoonLonging() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-        RemoveKeyword(CardKeyword.Exhaust);
+        EnergyCost.UpgradeBy(-1);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [

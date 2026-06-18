@@ -74,7 +74,6 @@ public sealed class TimorisAlly : AbstractAlly
       {
         foreach (Creature enemy in Creature.CombatState.HittableEnemies)
         {
-          await PowerCmd.Apply<WeakPower>(new ThrowingPlayerChoiceContext(), enemy, debuff, Creature, null);
           await PowerCmd.Apply<VulnerablePower>(new ThrowingPlayerChoiceContext(), enemy, debuff, Creature, null);
         }
       }

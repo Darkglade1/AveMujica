@@ -14,6 +14,8 @@ public class Imprisoned() : AveMujicaCard(0,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<StrengthPower>(1), new CardsVar(1)];
     
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
+    
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose),
         HoverTipFactory.FromPower<StrengthPower>()

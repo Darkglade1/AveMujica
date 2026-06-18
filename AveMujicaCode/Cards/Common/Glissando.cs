@@ -23,6 +23,6 @@ public class Glissando() : AveMujicaCard(2,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(2);
+        DynamicVars.Repeat.UpgradeValueBy(1);
     }
 }

@@ -1,10 +1,7 @@
-﻿using AveMujica.AveMujicaCode.Cards.Allies;
-using MegaCrit.Sts2.Core.Combat;
-using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.Entities.Creatures;
+﻿using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
-using MegaCrit.Sts2.Core.Models.Powers;
+using MegaCrit.Sts2.Core.Models;
 
 namespace AveMujica.AveMujicaCode.Powers;
 
@@ -16,23 +13,15 @@ public class GoddessOfOblivionPower() : AveMujicaPower
     public override PowerStackType StackType =>
         PowerStackType.Counter;
     
-    public override async Task BeforeSideTurnStart(
+    public override async Task AfterCardExhausted(
         PlayerChoiceContext choiceContext,
-        CombatSide side,
-        IReadOnlyList<Creature> participants,
-        ICombatState combatState)
+        CardModel card,
+        bool _)
     {
-        if (side == CombatSide.Player && Owner.CombatState != null)
+        if (card.Owner.Creature == Owner)
         {
             Flash();
-            foreach (var ally in Owner.CombatState.Allies)
-            {
-                if (ally.IsPet && ally.IsAlive && ally.PetOwner == Owner.Player && ally.Monster is AbstractAlly)
-                {
-                    await PowerCmd.Apply<StrengthPower>(choiceContext, ally, Amount, Owner,null);
-                    await PowerCmd.Apply<DexterityPower>(choiceContext, ally, Amount, Owner,null);   
-                }
-            }
+            await PowerCmd.Apply<Oblivion>(choiceContext, Owner, Amount, Owner,null);
         }
     }
 }

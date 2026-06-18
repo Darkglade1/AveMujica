@@ -10,7 +10,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Common;
 
-public class LingeringRegrets() : AveMujicaCard(1,
+public class Regrets() : AveMujicaCard(1,
     CardType.Attack, CardRarity.Common,
     TargetType.AnyEnemy)
 {

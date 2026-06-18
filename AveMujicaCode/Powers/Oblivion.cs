@@ -36,27 +36,4 @@ public class Oblivion : AveMujicaPower
             }
         }
     }
-    
-    public override async Task AfterCardExhausted(
-        PlayerChoiceContext choiceContext,
-        CardModel card,
-        bool _)
-    {
-        var oblivionForm = Owner.GetPower<GoddessOfOblivionPower>();
-        if (card.Owner.Creature != Owner || oblivionForm == null)
-            return;
-        if (Owner.CombatState != null)
-        {
-            IReadOnlyList<Creature> hittableEnemies = Owner.CombatState.HittableEnemies;
-            if (hittableEnemies.Count != 0)
-            {
-                Creature? weakestEnemy = hittableEnemies.MinBy((Func<Creature, int>) (c => c.CurrentHp));
-                if (weakestEnemy != null)
-                {
-                    Flash();
-                    await CreatureCmd.Damage(new BlockingPlayerChoiceContext(), weakestEnemy, Amount, ValueProp.Unpowered, Owner);
-                }
-            }
-        }
-    }
 }

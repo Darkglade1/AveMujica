@@ -10,7 +10,7 @@ namespace AveMujica.AveMujicaCode.Powers;
 
 public class InspiringSongsPower() : AveMujicaPower
 {
-    public static int EnergyIncrement = 3;
+    public static int EnergyIncrement = 2;
     
     public override int DisplayAmount => GetInternalData<Data>().songsPlayed % EnergyIncrement;
 
@@ -30,7 +30,7 @@ public class InspiringSongsPower() : AveMujicaPower
 
     public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        if (cardPlay.Card.Owner.Creature != Owner || !(cardPlay.Card is Song))
+        if (cardPlay.Card.Owner.Creature != Owner || !(cardPlay.Card is Song) || cardPlay.IsAutoPlay)
         {
             return;
         }

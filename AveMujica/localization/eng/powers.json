@@ -27,8 +27,8 @@
   "AVEMUJICA-FUGUE_POWER.smartDescription": "The next [blue]{Amount}[/blue] {Amount:plural:card|cards} you play that [gold]{Amount:plural:Exhausts|Exhaust}[/gold] or [gold]{Amount:plural:Retains|Retain}[/gold] {Amount:plural:costs|cost} [blue]0[/blue].",
   "AVEMUJICA-FUGUE_POWER.title": "Fugue in Grey",
 
-  "AVEMUJICA-INSPIRING_SONGS_POWER.description": "Whenever you play 3 [gold]Songs[/gold], gain an Energy.",
-  "AVEMUJICA-INSPIRING_SONGS_POWER.smartDescription": "Whenever you play {Cards:diff()} [gold]Songs[/gold], gain {Amount:energyIcons()}.",
+  "AVEMUJICA-INSPIRING_SONGS_POWER.description": "Whenever you play [gold]Songs[/gold] from your [gold]Hand[/gold], gain Energy.",
+  "AVEMUJICA-INSPIRING_SONGS_POWER.smartDescription": "Whenever you play {Cards:diff()} [gold]Songs[/gold] from your [gold]Hand[/gold], gain {Amount:energyIcons()}.",
   "AVEMUJICA-INSPIRING_SONGS_POWER.title": "Inspiring Songs",
 
   "AVEMUJICA-CANTABILE_POWER.description": "Whenever you [gold]Perform[/gold], gain [gold]Block[/gold].",
@@ -55,8 +55,12 @@
   "AVEMUJICA-BLUE_MOON_POWER.smartDescription": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Dream Thread[/gold].",
   "AVEMUJICA-BLUE_MOON_POWER.title": "Blue Moon's Sorrow",
 
-  "AVEMUJICA-GODDESS_OF_OBLIVION_POWER.description": "At the start of your turn, ALL [gold]Dolls[/gold] gain [gold]Strength[/gold] and [gold]Dexterity[/gold].",
-  "AVEMUJICA-GODDESS_OF_OBLIVION_POWER.smartDescription": "At the start of your turn, ALL [gold]Dolls[/gold] gain [blue]{Amount}[/blue] [gold]Strength[/gold] and [gold]Dexterity[/gold].",
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS_POWER.description": "At the start of your turn, ALL [gold]Dolls[/gold] gain [gold]Strength[/gold] and [gold]Dexterity[/gold].",
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS_POWER.smartDescription": "At the start of your turn, ALL [gold]Dolls[/gold] gain [blue]{Amount}[/blue] [gold]Strength[/gold] and [gold]Dexterity[/gold].",
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS_POWER.title": "Knights of Oblivionis",
+
+  "AVEMUJICA-GODDESS_OF_OBLIVION_POWER.description": "Whenever a card is [gold]Exhausted[/gold], gain [gold]Oblivion[/gold].",
+  "AVEMUJICA-GODDESS_OF_OBLIVION_POWER.smartDescription": "Whenever a card is [gold]Exhausted[/gold], gain [blue]{Amount}[/blue] [gold]Oblivion[/gold].",
   "AVEMUJICA-GODDESS_OF_OBLIVION_POWER.title": "Goddess of Oblivion",
 
   "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.description": "[gold]Perform[/gold] effects always trigger.",
@@ -94,6 +98,10 @@
   "AVEMUJICA-FRUSTRATION_POWER.description": "Whenever a card is [gold]Exhausted[/gold], gain [gold]Strength[/gold] this turn.",
   "AVEMUJICA-FRUSTRATION_POWER.smartDescription": "Whenever a card is [gold]Exhausted[/gold], gain [blue]{Amount}[/blue] [gold]Strength[/gold] this turn.",
   "AVEMUJICA-FRUSTRATION_POWER.title": "Frustration",
+
+  "AVEMUJICA-AFTERGLOW_POWER.description": "The next time you [gold]Perform[/gold], gain Energy.",
+  "AVEMUJICA-AFTERGLOW_POWER.smartDescription": "The next time you [gold]Perform[/gold], gain {Amount:energyIcons()}.",
+  "AVEMUJICA-AFTERGLOW_POWER.title": "Afterglow",
 
   "AVEMUJICA-GROUP_PERFORMANCE_POWER.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], also give [blue]1[/blue] copy to ALL other players.",
   "AVEMUJICA-GROUP_PERFORMANCE_POWER.smartDescription": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], also give [blue]{Amount}[/blue] {Amount:plural:copy|copies} to ALL other players.",

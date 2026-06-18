@@ -13,7 +13,7 @@ public class ACappella() : AveMujicaCard(2,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(12, ValueProp.Move), new EnergyVar(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(13, ValueProp.Move), new EnergyVar(2)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose),

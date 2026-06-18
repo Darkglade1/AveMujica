@@ -20,7 +20,7 @@
   "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.title": "Attack",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description": "Deals [blue]\\{0\\}[/blue] damage to the highest HP enemy.",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title": "Skill: Shuddering Strings",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "-[blue]\\{0\\}[/blue] HP: Apply [blue]\\{1\\}[/blue] [gold]Weak[/gold] and [gold]Vulnerable[/gold] to ALL enemies.",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "-[blue]\\{0\\}[/blue] HP: Apply [blue]\\{1\\}[/blue] [gold]Vulnerable[/gold] to ALL enemies.",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title": "Skill: Moonlight Execution",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "-[blue]\\{0\\}[/blue] HP: ALL enemies take [blue]\\{1\\}%[/blue] more damage from Attacks this turn.",
 
