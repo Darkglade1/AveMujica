@@ -116,7 +116,7 @@ public sealed class AmorisAlly : AbstractAlly
       new LocString("static_hover_tips", "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.title"),
       new LocString("static_hover_tips", "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.description"),
       PreloadManager.Cache.GetTexture2D(ImageHelper.GetImagePath("atlases/intent_atlas.sprites/attack/intent_attack_2.tres")));
-    hoverTip.Description = String.Format(hoverTip.Description, CalcAttackWithStr(damage), hits);
+    hoverTip.Description = String.Format(hoverTip.Description, CalcAttackWithStr(damage), currentHits);
     return hoverTip;
   }
 
