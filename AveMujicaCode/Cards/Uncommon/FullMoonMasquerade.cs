@@ -40,5 +40,6 @@ public class FullMoonMasquerade() : AveMujicaCard(2,
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Doll)
     ];
 }

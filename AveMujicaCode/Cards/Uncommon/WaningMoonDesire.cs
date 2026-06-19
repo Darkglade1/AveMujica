@@ -15,7 +15,7 @@ public class WaningMoonDesire() : AveMujicaCard(0,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(3, ValueProp.Move), new HealVar(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(5, ValueProp.Move), new HealVar(2)];
     
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -40,5 +40,6 @@ public class WaningMoonDesire() : AveMujicaCard(0,
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Doll)
     ];
 }

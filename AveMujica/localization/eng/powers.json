@@ -11,7 +11,7 @@
   "AVEMUJICA-HOW_DARE_YOU.smartDescription": "Whenever you are attacked, [gold]Doloris[/gold] deals [blue]{Amount}[/blue] damage to the attacker and increases this effect's damage by [blue]1[/blue].",
   "AVEMUJICA-HOW_DARE_YOU.title": "How Dare You!",
 
-  "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage this turn.",
+  "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage this turn and can't use other abilities this turn..",
   "AVEMUJICA-DO_NOT_FEAR_DEATH.smartDescription": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage and can't use other abilities this turn.",
   "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "Do Not Fear Death",
 
@@ -19,16 +19,12 @@
   "AVEMUJICA-MOONLIGHT_EXECUTION.smartDescription": "Receives [blue]{Amount}%[/blue] more damage from Attacks this turn.",
   "AVEMUJICA-MOONLIGHT_EXECUTION.title": "Moonlight Execution",
 
-  "AVEMUJICA-AS_FIERCE_AS_FIRE.description": "Whenever you Attack this turn, [gold]Amoris[/gold] gains [blue]1[/blue] [gold]Strength[/gold].",
-  "AVEMUJICA-AS_FIERCE_AS_FIRE.smartDescription": "Whenever you Attack this turn, [gold]Amoris[/gold] gains [blue]{Amount}[/blue] [gold]Strength[/gold].",
-  "AVEMUJICA-AS_FIERCE_AS_FIRE.title": "As Fierce As Fire",
-
   "AVEMUJICA-FUGUE_POWER.description": "The next card you play that [gold]Exhausts[/gold] or [gold]Retains[/gold] costs [blue]0[/blue].",
   "AVEMUJICA-FUGUE_POWER.smartDescription": "The next [blue]{Amount}[/blue] {Amount:plural:card|cards} you play that [gold]{Amount:plural:Exhausts|Exhaust}[/gold] or [gold]{Amount:plural:Retains|Retain}[/gold] {Amount:plural:costs|cost} [blue]0[/blue].",
   "AVEMUJICA-FUGUE_POWER.title": "Fugue in Grey",
 
-  "AVEMUJICA-INSPIRING_SONGS_POWER.description": "Whenever you play [gold]Songs[/gold] from your [gold]Hand[/gold], gain Energy.",
-  "AVEMUJICA-INSPIRING_SONGS_POWER.smartDescription": "Whenever you play {Cards:diff()} [gold]Songs[/gold] from your [gold]Hand[/gold], gain {Amount:energyIcons()}.",
+  "AVEMUJICA-INSPIRING_SONGS_POWER.description": "Whenever you play [gold]Songs[/gold], gain Energy.",
+  "AVEMUJICA-INSPIRING_SONGS_POWER.smartDescription": "Whenever you play {Cards:diff()} [gold]Songs[/gold], gain {Amount:energyIcons()}.",
   "AVEMUJICA-INSPIRING_SONGS_POWER.title": "Inspiring Songs",
 
   "AVEMUJICA-CANTABILE_POWER.description": "Whenever you [gold]Perform[/gold], gain [gold]Block[/gold].",
@@ -38,10 +34,6 @@
   "AVEMUJICA-LARGE_REPERTOIRE_POWER.description": "At the end of your turn, gain [gold]Block[/gold] equal to the number of cards in your [gold]Hand[/gold].",
   "AVEMUJICA-LARGE_REPERTOIRE_POWER.smartDescription": "At the end of your turn, gain [blue]{Amount}[/blue] [gold]Block[/gold] for each card in your [gold]Hand[/gold].",
   "AVEMUJICA-LARGE_REPERTOIRE_POWER.title": "Large Repertoire",
-
-  "AVEMUJICA-MOONLIGHT_SONATA_POWER.description": "Whenever you gain [gold]Oblivion[/gold], draw a card.",
-  "AVEMUJICA-MOONLIGHT_SONATA_POWER.smartDescription": "Whenever you gain [gold]Oblivion[/gold], draw [blue]{Amount}[/blue] {Amount:plural:card|cards}.",
-  "AVEMUJICA-MOONLIGHT_SONATA_POWER.title": "Moonlight Sonata",
 
   "AVEMUJICA-MELODY_POWER.description": "At the end of your turn, if you [gold]Performed[/gold] this turn, gain [gold]Strength[/gold].",
   "AVEMUJICA-MELODY_POWER.smartDescription": "At the end of your turn, if you [gold]Performed[/gold] this turn, gain [blue]{Amount}[/blue] [gold]Strength[/gold].",

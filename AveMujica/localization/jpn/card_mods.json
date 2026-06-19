@@ -15,5 +15,8 @@
   "AVEMUJICA-SEEK-MOD.plural_description": "[gold]山札[/gold]から{0}枚のカードを選択して[gold]手札[/gold]に加える。",
   "AVEMUJICA-SEEK-MOD.selectionScreenPrompt": "手札に加えるカードを選択。",
   "AVEMUJICA-LOSE-HP-MOD.description": "HP{0}を失う。",
-  "AVEMUJICA-OBLIVION-MOD.description": "[gold]忘却[/gold]{0}を得る。"
+  "AVEMUJICA-ENEMY-LOSE-HP-MOD.description": "Enemy loses {0} HP.",
+  "AVEMUJICA-OBLIVION-MOD.description": "[gold]忘却[/gold]{0}を得る。",
+  "AVEMUJICA-DREAM-THREAD-MOD.description": "Gain {0} [gold]Dream Thread[/gold].",
+  "AVEMUJICA-MASTERFUL-MOD.description": "\n[purple]Masterful {0}[/purple]."
 }

@@ -14,6 +14,7 @@ public class Garden() : AveMujicaCard(1,
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<GardenPower>(1)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Doll)
     ];
 
     protected override async Task OnPlay(

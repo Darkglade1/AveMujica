@@ -42,10 +42,10 @@ public sealed class TimorisAlly : AbstractAlly
       IReadOnlyList<Creature>? hittableEnemies = Creature.CombatState?.HittableEnemies;
       if (hittableEnemies != null && hittableEnemies.Count != 0)
       {
-        Creature? strongestEnemy = hittableEnemies.MaxBy((Func<Creature, int>) (c => c.CurrentHp));
-        if (strongestEnemy != null)
+        Creature? weakestEnemy = hittableEnemies.MinBy((Func<Creature, int>) (c => c.CurrentHp));
+        if (weakestEnemy != null)
         {
-          await CreatureCmd.Damage(new BlockingPlayerChoiceContext(), strongestEnemy, damage, ValueProp.Move, Creature);
+          await CreatureCmd.Damage(new BlockingPlayerChoiceContext(), weakestEnemy, damage, ValueProp.Move, Creature);
         }
       }
     }

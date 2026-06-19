@@ -30,7 +30,7 @@ public class InspiringSongsPower() : AveMujicaPower
 
     public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        if (cardPlay.Card.Owner.Creature != Owner || !(cardPlay.Card is Song) || cardPlay.IsAutoPlay)
+        if (cardPlay.Card.Owner.Creature != Owner || !(cardPlay.Card is Song))
         {
             return;
         }

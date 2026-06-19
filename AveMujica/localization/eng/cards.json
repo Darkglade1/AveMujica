@@ -167,7 +167,7 @@
   "AVEMUJICA-WRITERS_BLOCK.description": "Gain {Block:diff()} [gold]Block[/gold].\nAdd {Cards:diff()} [gold]Blank Songs[/gold] to your [gold]Hand[/gold].",
   "AVEMUJICA-WRITERS_BLOCK.title": "Writer's Block",
 
-  "AVEMUJICA-INSPIRING_SONGS.description": "Whenever you play {Cards:diff()} [gold]Songs[/gold] from your [gold]Hand[/gold], gain {Energy:energyIcons()}.",
+  "AVEMUJICA-INSPIRING_SONGS.description": "Whenever you play {Cards:diff()} [gold]Songs[/gold], gain {Energy:energyIcons()}.",
   "AVEMUJICA-INSPIRING_SONGS.title": "Inspiring Songs",
 
   "AVEMUJICA-CANTABILE.description": "Whenever you [gold]Perform[/gold], gain {CantabilePower:diff()} [gold]Block[/gold].",
@@ -181,9 +181,6 @@
 
   "AVEMUJICA-MELODY.description": "At the end of your turn, if you [gold]Performed[/gold] this turn, gain {MelodyPower:diff()} [gold]Strength[/gold].",
   "AVEMUJICA-MELODY.title": "Melody",
-
-  "AVEMUJICA-BAND_RECRUITMENT.description": "Choose 1 of 3 {IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Awaken[/gold] cards to add to your [gold]Hand[/gold].",
-  "AVEMUJICA-BAND_RECRUITMENT.title": "Band Recruitment",
 
   "AVEMUJICA-IMPRISONED.description": "[gold]Compose[/gold] \"Lose {StrengthPower:diff()} [gold]Strength[/gold].\"\n[gold]Compose[/gold] \"Put {Cards:diff()} {Cards:plural:card|cards} from your [gold]Draw Pile[/gold] into your [gold]Hand[/gold].\"",
   "AVEMUJICA-IMPRISONED.title": "Imprisoned XII",
@@ -244,7 +241,6 @@
   "AVEMUJICA-CONSIGN.title": "Consign to Oblivion",
 
   "AVEMUJICA-LOFT_MOON.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.\nAt the end of your turn, [gold]Dolls[/gold] gain {LoftMoonPower:diff()} HP.",
-  "AVEMUJICA-LOFT_MOON.selectionScreenPrompt": "Choose an ally to [gold]Awaken[/gold].",
   "AVEMUJICA-LOFT_MOON.title": "Loft Moon",
 
   "AVEMUJICA-PULL_FROM_OBLIVION.description": "Put a card from your [gold]Exhaust Pile[/gold] into your [gold]Hand[/gold].",

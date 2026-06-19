@@ -16,7 +16,8 @@ public class MoonlightSonata() : AveMujicaCard(1,
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Retain];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose)
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose),
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Doll)
     ];
 
     protected override async Task OnPlay(

@@ -19,7 +19,8 @@ public class FirstQuarterYearning() : AveMujicaCard(1,
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromPower(ModelDb.Power<StrengthPower>()),
-        HoverTipFactory.FromPower(ModelDb.Power<DexterityPower>())
+        HoverTipFactory.FromPower(ModelDb.Power<DexterityPower>()),
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Doll)
     ];
 
     protected override async Task OnPlay(

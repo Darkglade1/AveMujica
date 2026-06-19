@@ -35,6 +35,7 @@ public class NewMoonAwakening() : AveMujicaCard(1,
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin)
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin),
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Doll)
     ];
 }

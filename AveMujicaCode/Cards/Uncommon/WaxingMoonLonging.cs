@@ -53,5 +53,6 @@ public class WaxingMoonLonging() : AveMujicaCard(1,
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Doll)
     ];
 }

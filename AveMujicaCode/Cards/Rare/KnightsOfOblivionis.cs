@@ -17,6 +17,7 @@ public class KnightsOfOblivionis() : AveMujicaCard(2,
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromPower<StrengthPower>(),
         HoverTipFactory.FromPower<DexterityPower>(),
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Doll)
     ];
 
     protected override async Task OnPlay(
