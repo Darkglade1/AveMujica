@@ -11,11 +11,11 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
-public class AlFine() : AveMujicaCard(2,
+public class AlFine() : AveMujicaCard(1,
     CardType.Attack, CardRarity.Uncommon,
     CustomTargetType.PetOrSelf)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(12, ValueProp.Move), new DreamspinVar(4)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(8, ValueProp.Move), new DreamspinVar(4)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose),
@@ -40,8 +40,8 @@ public class AlFine() : AveMujicaCard(2,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(3);
-        DynamicVars["Dreamspin"].UpgradeValueBy(1);
+        DynamicVars.Damage.UpgradeValueBy(1);
+        DynamicVars["Dreamspin"].UpgradeValueBy(2);
     }
     
     public bool PlayedSongThisTurn

@@ -44,6 +44,16 @@ public class MasterfulMod : CardModifier
         }
         return 0;
     }
+
+    public override bool ApplyStacked(CardModifier newApplied)
+    {
+        if (newApplied is MasterfulMod masterfulMod)
+        {
+            BuffAmt += masterfulMod.BuffAmt;
+            return true;
+        }
+        return false;
+    }
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
