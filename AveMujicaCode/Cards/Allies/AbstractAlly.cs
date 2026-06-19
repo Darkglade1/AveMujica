@@ -33,7 +33,7 @@ public abstract class AbstractAlly : CustomMonsterModel
 
   public int baseNumSkillsPerTurn = 1;
   public int numSkillsPerTurn = 1;
-  protected int numSkillsUsedThisTurn = 0;
+  protected int numSkillsUsedThisTurn;
   protected bool canUseAbilitiesThisTurn = true;
   private bool hasSetUp;
 

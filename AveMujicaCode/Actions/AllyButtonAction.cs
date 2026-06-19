@@ -36,11 +36,17 @@ public sealed class AllyButtonAction : GameAction
     {
       if (ButtonNum == 1)
       {
-        await ally.Skill1();
+        if (ally.Creature.CurrentHp >= ally.GetSkill1HPCost() && ally.CanUseSkill())
+        {
+          await ally.Skill1();
+        }
       }
       else
       {
-        await ally.Skill2();
+        if (ally.Creature.CurrentHp >= ally.GetSkill2HPCost() && ally.CanUseSkill())
+        {
+          await ally.Skill2();
+        }
       }
     }
   }
