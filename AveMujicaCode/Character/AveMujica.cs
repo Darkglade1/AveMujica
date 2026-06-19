@@ -91,4 +91,5 @@ public class AveMujica : PlaceholderCharacterModel
     public override string CharacterSelectSfx => "skill_keyboard.ogg".AudioPath();
     public override string CustomAttackSfx => "atk_keyboard.ogg".AudioPath();
     public override string CustomCastSfx => "skill_keyboard5.ogg".AudioPath();
+    public override string CustomEnergyCounterPath => "energy_counter/character_energy_counter.tscn".CharacterUiPath();
 }

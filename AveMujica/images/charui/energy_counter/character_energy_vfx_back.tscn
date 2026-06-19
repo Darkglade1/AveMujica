@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cman4p6qby87s"]
+
+[ext_resource type="Script" path="res://AveMujicaCode/Nodes/AveMujicaNParticlesContainer.cs" id="1_dcan6"]
+[ext_resource type="PackedScene" path="res://AveMujica/images/charui/energy_counter/character_vfx_glow.tscn" id="2_y5gtb"]
+
+[node name="AveMujicaEnergyVfxBack" type="Node2D"]
+script = ExtResource("1_dcan6")
+
+[node name="vfx_common_glow" parent="." instance=ExtResource("2_y5gtb")]
+rotation = 0.045707636
+one_shot = true

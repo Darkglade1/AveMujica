@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bbv4sgi1dra5o"]
+
+[ext_resource type="Script" path="res://AveMujicaCode/Nodes/AveMujicaNParticlesContainer.cs" id="1_ek0ca"]
+[ext_resource type="PackedScene" path="res://AveMujica/images/charui/energy_counter/character_vfx_specks.tscn" id="2_peqvm"]
+
+[node name="AveMujicaEnergyVfxFront" type="Node2D" node_paths=PackedStringArray("_particles")]
+script = ExtResource("1_ek0ca")
+_particles = [NodePath("vfx_common_specks")]
+
+[node name="vfx_common_specks" parent="." instance=ExtResource("2_peqvm")]

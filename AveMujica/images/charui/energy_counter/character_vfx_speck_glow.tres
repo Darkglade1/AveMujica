@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://ciajeu6kdkgth"]
+
+[ext_resource type="Shader" path="res://AveMujica/images/charui/energy_counter/greyscale_shader.gdshader" id="1_dews7"]
+
+[resource]
+shader = ExtResource("1_dews7")
+shader_parameter/pivot_offset = Vector2(0, 0)
