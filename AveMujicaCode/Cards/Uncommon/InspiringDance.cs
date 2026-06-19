@@ -14,6 +14,8 @@ public class InspiringDance() : AveMujicaCard(0,
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Retain, CardKeyword.Exhaust];
     
+    public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
+    
     protected override bool HasEnergyCostX => true;
     
     protected override async Task OnPlay(
