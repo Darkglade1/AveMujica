@@ -1,7 +1,7 @@
-[gd_resource type="SpineSkeletonDataResource" load_steps=3 format=3]
+[gd_resource type="SpineSkeletonDataResource" load_steps=3 format=3 uid="uid://dx3i83qwjg04"]
 
-[ext_resource type="SpineAtlasResource" path="res://AveMujica/images/character/oblivionis/build_char_4182_oblvns.atlas.spatlas" id="1_atlas"]
-[ext_resource type="SpineSkeletonFileResource" path="res://AveMujica/images/character/oblivionis/build_char_4182_oblvns.skel.spskel" id="2_skel"]
+[ext_resource type="SpineAtlasResource" uid="uid://uh2vibbv536s" path="res://AveMujica/images/character/oblivionis/build_char_4182_oblvns.atlas.spatlas" id="1_atlas"]
+[ext_resource type="SpineSkeletonFileResource" uid="uid://dbgkgwe3j6g8s" path="res://AveMujica/images/character/oblivionis/build_char_4182_oblvns.skel.spskel" id="2_skel"]
 
 [resource]
 atlas_res = ExtResource("1_atlas")
