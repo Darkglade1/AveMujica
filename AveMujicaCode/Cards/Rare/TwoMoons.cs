@@ -12,7 +12,7 @@ public class TwoMoons() : AveMujicaCard(0,
     CardType.Skill, CardRarity.Rare,
     CustomTargetType.PetOrSelf)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DreamspinVar(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DreamspinVar(3)];
     
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
