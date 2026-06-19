@@ -1,11 +1,9 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Token;
 using AveMujica.AveMujicaCode.Enchantments;
-using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
-using MegaCrit.Sts2.Core.Models;
 
 namespace AveMujica.AveMujicaCode.Powers;
 
@@ -28,11 +26,7 @@ public class VirtuosoFormPower : AveMujicaPower
         {
             if (card.Type == CardType.Attack || card.GainsBlock || card is Song)
             {
-                var enchantment = ModelDb.Enchantment<Masterful>();
-                if (enchantment.CanEnchant(card))
-                {
-                    CardCmd.Enchant<Masterful>(card, Amount);
-                }
+                Masterful.TryEnchantCardWithMasterful(card, Amount);
             }
         }
         return Task.CompletedTask;

@@ -3,10 +3,10 @@
   "name": "Ave Mujica",
   "author": "Darkglade",
   "description": "Adds piano girl from Arknights as a character.",
-  "version": "v0.0.2",
+  "version": "v1.0.0",
   "min_game_version": "0.107.0",
   "has_pck": true,
   "has_dll": true,
-  "dependencies": [{"id": "BaseLib", "min_version": "3.2.1"}],
+  "dependencies": [{"id": "BaseLib", "min_version": "3.3.0"}],
   "affects_gameplay": true
 }

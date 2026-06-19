@@ -26,12 +26,11 @@ public class Concerto() : AveMujicaCard(1,
     {
         await CommonActions.CardAttack(this, play).Execute(choiceContext);
         var buffAmt = PileType.Hand.GetPile(Owner).Cards.Count;
-        var enchantment = ModelDb.Enchantment<Masterful>();
         CardSelectorPrefs prefs = new CardSelectorPrefs(SelectionScreenPrompt, 1);
-        CardModel? selection = (await CardSelectCmd.FromHand(choiceContext, Owner, prefs, (Func<CardModel, bool>) (c => (c.Type == CardType.Attack || c.GainsBlock || c is Song) && enchantment.CanEnchant(c)), this)).FirstOrDefault();
+        CardModel? selection = (await CardSelectCmd.FromHand(choiceContext, Owner, prefs, (Func<CardModel, bool>) (c => c.Type == CardType.Attack || c.GainsBlock || c is Song), this)).FirstOrDefault();
         if (selection != null)
         {
-            CardCmd.Enchant<Masterful>(selection, buffAmt);
+            Masterful.TryEnchantCardWithMasterful(selection, buffAmt);
         }
     }
 

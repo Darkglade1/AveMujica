@@ -1,4 +1,8 @@
-﻿using MegaCrit.Sts2.Core.ValueProps;
+﻿using AveMujica.AveMujicaCode.Cards.CardMods;
+using BaseLib.Abstracts;
+using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Enchantments;
 
@@ -16,5 +20,20 @@ public class Masterful : AveMujicaEnchantment
     public override Decimal EnchantBlockAdditive(Decimal originalBlock)
     {
         return Amount;
+    }
+
+    public static void TryEnchantCardWithMasterful(CardModel card, int amount)
+    {
+        var enchantment = ModelDb.Enchantment<Masterful>();
+        if (enchantment.CanEnchant(card))
+        {
+            CardCmd.Enchant<Masterful>(card, amount);
+        }
+        else
+        {
+            var masterfulMod = (MasterfulMod)ModelDb.Get<MasterfulMod>().MutableClone();
+            masterfulMod.BuffAmt = amount;
+            CardModifier.AddModifier(card, masterfulMod);
+        }
     }
 }

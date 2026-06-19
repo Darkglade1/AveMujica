@@ -26,12 +26,11 @@ public class PursuitOfMastery() : AveMujicaCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        var enchantment = ModelDb.Enchantment<Masterful>();
         CardSelectorPrefs prefs = new CardSelectorPrefs(SelectionScreenPrompt, 1);
-        CardModel? selection = (await CardSelectCmd.FromHand(choiceContext, Owner, prefs, (Func<CardModel, bool>) (c => (c.Type == CardType.Attack || c.GainsBlock || c is Song) && enchantment.CanEnchant(c)), this)).FirstOrDefault();
+        CardModel? selection = (await CardSelectCmd.FromHand(choiceContext, Owner, prefs, (Func<CardModel, bool>) (c => c.Type == CardType.Attack || c.GainsBlock || c is Song), this)).FirstOrDefault();
         if (selection != null)
         {
-            CardCmd.Enchant<Masterful>(selection, DynamicVars["Enchant"].BaseValue);
+            Masterful.TryEnchantCardWithMasterful(selection, DynamicVars["Enchant"].IntValue);
         }
     }
     

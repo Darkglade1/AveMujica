@@ -17,5 +17,6 @@
   "AVEMUJICA-LOSE-HP-MOD.description": "Lose {0} HP.",
   "AVEMUJICA-ENEMY-LOSE-HP-MOD.description": "Enemy loses {0} HP.",
   "AVEMUJICA-OBLIVION-MOD.description": "Gain {0} [gold]Oblivion[/gold].",
-  "AVEMUJICA-DREAM-THREAD-MOD.description": "Gain {0} [gold]Dream Thread[/gold]."
+  "AVEMUJICA-DREAM-THREAD-MOD.description": "Gain {0} [gold]Dream Thread[/gold].",
+  "AVEMUJICA-MASTERFUL-MOD.description": "\n[purple]Masterful {0}[/purple]."
 }
