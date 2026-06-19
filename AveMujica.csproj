@@ -32,10 +32,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Reference Include="BaseLib" Condition="'true'">
-            <HintPath>C:\Users\jeffr\Documents\mods\BaseLib-StS2\publish\BaseLib.dll</HintPath>
-            <Private>false</Private>
-        </Reference>
+        <PackageReference Include="Alchyr.Sts2.BaseLib" Version="3.3.0" PrivateAssets="All" />
         <PackageReference Include="Krafs.Publicizer" Version="2.3.0" PrivateAssets="all" />
         <PackageReference Include="Alchyr.Sts2.ModAnalyzers" Version="*" />
         <!-- Generates a .pck file when building if only using simple assets. May not work on all setups. Uncomment to test. -->
