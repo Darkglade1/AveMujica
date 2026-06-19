@@ -14,7 +14,8 @@ public class FlawlessPerformance() : AveMujicaCard(1,
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromKeyword(AveMujicaKeywords.Perform)
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Perform),
+        HoverTipFactory.FromKeyword(CardKeyword.Retain)
     ];
 
     protected override async Task OnPlay(

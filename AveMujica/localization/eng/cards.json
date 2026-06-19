@@ -219,7 +219,7 @@
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "At the start of your turn, ALL [gold]Dolls[/gold] gain {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold].",
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "Knights of Oblivionis",
 
-  "AVEMUJICA-FLAWLESS_PERFORMANCE.description": "[gold]Perform[/gold] effects always trigger.",
+  "AVEMUJICA-FLAWLESS_PERFORMANCE.description": "[gold]Perform[/gold] cards [gold]Retain[/gold].\n[gold]Perform[/gold] effects always trigger.",
   "AVEMUJICA-FLAWLESS_PERFORMANCE.title": "Flawless Performance",
 
   "AVEMUJICA-BLACK_BIRTHDAY.description": "Deal {Damage:diff()} damage to ALL enemies.\n[gold]Perform Attack Attack:[/gold] Hits {Repeat:diff()} more times.",
@@ -276,6 +276,12 @@
 
   "AVEMUJICA-FRUSTRATION.description": "Whenever a card is [gold]Exhausted[/gold], gain {FrustrationPower:diff()} [gold]Strength[/gold] this turn.",
   "AVEMUJICA-FRUSTRATION.title": "Frustration",
+
+  "AVEMUJICA-RONDO.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.\n[gold]Perform Attack:[/gold] Gain {Block:diff()} [gold]Block[/gold].",
+  "AVEMUJICA-RONDO.title": "Rondo in Orange",
+
+  "AVEMUJICA-INSPIRING_DANCE.description": "Another player gains X{IfUpgraded:show:+1} {Energy:energyIcons()} and draws X{IfUpgraded:show:+1} cards.",
+  "AVEMUJICA-INSPIRING_DANCE.title": "Inspiring Dance",
 
   "AVEMUJICA-GROUP_PERFORMANCE.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], also give {Cards:diff()} {Cards:plural:copy|copies} to ALL other players.",
   "AVEMUJICA-GROUP_PERFORMANCE.title": "Group Performance",

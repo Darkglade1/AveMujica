@@ -63,8 +63,8 @@
   "AVEMUJICA-GODDESS_OF_OBLIVION_POWER.smartDescription": "Whenever a card is [gold]Exhausted[/gold], gain [blue]{Amount}[/blue] [gold]Oblivion[/gold].",
   "AVEMUJICA-GODDESS_OF_OBLIVION_POWER.title": "Goddess of Oblivion",
 
-  "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.description": "[gold]Perform[/gold] effects always trigger.",
-  "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.smartDescription": "[gold]Perform[/gold] effects always trigger.",
+  "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.description": "[gold]Perform[/gold] cards [gold]Retain[/gold].\ngold]Perform[/gold] effects always trigger.",
+  "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.smartDescription": "[gold]Perform[/gold] cards [gold]Retain[/gold].\n[gold]Perform[/gold] effects always trigger.",
   "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.title": "Flawless Performance",
 
   "AVEMUJICA-PERFECT_COMBO_POWER.description": "Your [gold]Perform[/gold] effects trigger an additional time for each time a [gold]Perform[/gold] effect has triggered this turn.",
