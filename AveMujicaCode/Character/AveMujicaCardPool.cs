@@ -28,7 +28,7 @@ public class AveMujicaCardPool : CustomCardPoolModel
     }*/
 
     //Color of small card icons
-    public override Color DeckEntryCardColor => new("ffffff");
+    public override Color DeckEntryCardColor => Color.Color8(119, 153, 204);
 
     public override bool IsColorless => false;
 }

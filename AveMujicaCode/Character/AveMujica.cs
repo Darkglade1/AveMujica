@@ -8,6 +8,7 @@ using MegaCrit.Sts2.Core.Animation;
 using MegaCrit.Sts2.Core.Bindings.MegaSpine;
 using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Nodes.Vfx;
 
 namespace AveMujica.AveMujicaCode.Character;
 
@@ -87,4 +88,6 @@ public class AveMujica : PlaceholderCharacterModel
     public override string CustomAttackSfx => "atk_keyboard.ogg".AudioPath();
     public override string CustomCastSfx => "skill_keyboard5.ogg".AudioPath();
     public override string CustomEnergyCounterPath => "energy_counter/character_energy_counter.tscn".CharacterUiPath();
+    public override Color MapDrawingColor => Color.Color8(119, 153, 204);
+    public override VfxColor SpeechBubbleColor => VfxColor.Blue;
 }
