@@ -10,10 +10,11 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
-public class WaxingMoonLonging() : AveMujicaCard(1,
+public class WaxingMoonLonging() : AveMujicaCard(0,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new CalculationBaseVar(0),
         new CalculationExtraVar(1),
@@ -49,7 +50,7 @@ public class WaxingMoonLonging() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-        EnergyCost.UpgradeBy(-1);
+        RemoveKeyword(CardKeyword.Exhaust);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
