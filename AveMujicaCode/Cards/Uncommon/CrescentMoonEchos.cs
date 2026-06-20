@@ -7,33 +7,26 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
-public class CrescentMoonEchos() : AveMujicaCard(0,
+public class CrescentMoonEchos() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Uncommon,
     CustomTargetType.PetOrSelf)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DreamspinVar(3)];
-    
-    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
-    
-    protected override bool HasEnergyCostX => true;
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DreamspinVar(2)];
     
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        int num = ResolveEnergyXValue();
-        if (IsUpgraded)
+        await AllyHelper.Dreamspin(choiceContext, Owner, DynamicVars["Dreamspin"].IntValue, play.Target, this);
+        if (play.Target == Owner.Creature)
         {
-            num++;
-        }
-        if (num > 0)
-        {
-            await AllyHelper.Dreamspin(choiceContext, Owner, DynamicVars["Dreamspin"].IntValue * num, play.Target, this);
+            await AllyHelper.Dreamspin(choiceContext, Owner, DynamicVars["Dreamspin"].IntValue, play.Target, this);
         }
     }
 
     protected override void OnUpgrade()
     {
+        DynamicVars["Dreamspin"].UpgradeValueBy(1);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [

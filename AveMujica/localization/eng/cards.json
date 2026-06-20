@@ -120,7 +120,7 @@
   "AVEMUJICA-AL_FINE.description": "Deal {Damage:diff()} damage to ALL enemies.\nIf you played a [gold]Song[/gold] this turn, [gold]Dreamspin[/gold] {Dreamspin:diff()}.",
   "AVEMUJICA-AL_FINE.title": "Al Fine",
 
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()} X{IfUpgraded:show:+1} times.",
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.\nIf you targeted yourself, [gold]Dreamspin[/gold] {Dreamspin:diff()} again.",
   "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "Crescent Moon Echos",
 
   "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gain {Block:diff()} [gold]Block[/gold].\nALL [gold]Dolls[/gold] gain {Heal:diff()} HP.",
