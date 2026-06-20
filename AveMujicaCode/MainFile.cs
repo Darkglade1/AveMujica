@@ -1,5 +1,6 @@
 using System.Reflection;
 using BaseLib.Audio;
+using BaseLib.Config;
 using BaseLib.Utils;
 using Godot;
 using HarmonyLib;
@@ -12,7 +13,6 @@ public partial class MainFile : Node
 {
     public const string ModId = "AveMujica"; //Used for resource filepath
     public const string ResPath = $"res://{ModId}";
-    public static readonly AutoModAudio Audio = new($"res://{ModId}/audio");
 
     public static MegaCrit.Sts2.Core.Logging.Logger Logger { get; } =
         new(ModId, MegaCrit.Sts2.Core.Logging.LogType.Generic);
@@ -27,5 +27,6 @@ public partial class MainFile : Node
         harmony.PatchAll();
         
         CustomLocTableManager.Register("card_mods");
+        ModConfigRegistry.Register(ModId, new Config());
     }
 }

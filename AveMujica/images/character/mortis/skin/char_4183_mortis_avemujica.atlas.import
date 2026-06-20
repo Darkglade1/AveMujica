@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://cnnxtfhjcgq1m"
+path="res://.godot/imported/char_4183_mortis_avemujica.atlas-7a07f7af2445bbe992b9647a51d5dabf.spatlas"
+
+[deps]
+
+source_file="res://AveMujica/images/character/mortis/skin/char_4183_mortis_avemujica.atlas"
+dest_files=["res://.godot/imported/char_4183_mortis_avemujica.atlas-7a07f7af2445bbe992b9647a51d5dabf.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

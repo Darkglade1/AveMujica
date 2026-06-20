@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://bfukltvjccb01"
+path="res://.godot/imported/char_4186_tmoris.skel-04d14a03fafc4e6a7eb0385b0c855755.spskel"
+
+[deps]
+
+source_file="res://AveMujica/images/character/timoris/skin/char_4186_tmoris.skel"
+dest_files=["res://.godot/imported/char_4186_tmoris.skel-04d14a03fafc4e6a7eb0385b0c855755.spskel"]
+
+[params]
+

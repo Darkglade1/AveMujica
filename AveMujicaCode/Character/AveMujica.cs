@@ -75,9 +75,9 @@ public class AveMujica : PlaceholderCharacterModel
         return creatureAnimator;
     }
     
-    public override string CustomVisualPath => "oblivionis/oblvns.tscn".CharacterPath();
-    public override string CustomMerchantAnimPath => "oblivionis/merchant.tscn".CharacterPath();
-    public override string CustomRestSiteAnimPath => "oblivionis/rest_site.tscn".CharacterPath();
+    public override string CustomVisualPath => Config.UseOblivionisSkin ? "oblivionis/skin/oblvns.tscn".CharacterPath() : "oblivionis/oblvns.tscn".CharacterPath();
+    public override string CustomMerchantAnimPath => Config.UseOblivionisSkin ? "oblivionis/skin/merchant.tscn".CharacterPath() : "oblivionis/merchant.tscn".CharacterPath();
+    public override string CustomRestSiteAnimPath => Config.UseOblivionisSkin ? "oblivionis/skin/rest_site.tscn".CharacterPath() : "oblivionis/rest_site.tscn".CharacterPath();
     public override string CustomCharacterSelectBg => "selection_screen.tscn".CharacterUiPath();
     public override string CustomIconTexturePath => "character_icon_char_name.png".CharacterUiPath();
     public override string CustomIconOutlineTexturePath => "character_icon_char_name_outline.png".CharacterUiPath();
