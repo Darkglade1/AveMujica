@@ -24,7 +24,7 @@ public sealed class TimorisAlly : AbstractAlly
   private static int debuff = 1;
   private static int skill1HPCost = 3;
   private static int skill2HPCost = 8;
-  public override string CustomVisualPath => "timoris/timoris.tscn".CharacterPath();
+  public override string CustomVisualPath => Config.UseTimorisSkin ? "timoris/skin/timoris.tscn".CharacterPath() : "timoris/timoris.tscn".CharacterPath();
   
   protected override MoveState GetDefaultMoveState()
   {

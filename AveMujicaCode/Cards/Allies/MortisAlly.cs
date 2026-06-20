@@ -25,7 +25,7 @@ public sealed class MortisAlly : AbstractAlly
   private static int intangible = 1;
   private static int skill1HPCost = 3;
   private static int skill2HPCost = 10;
-  public override string CustomVisualPath => "mortis/mortis.tscn".CharacterPath();
+  public override string CustomVisualPath => Config.UseMortisSkin ? "mortis/skin/mortis.tscn".CharacterPath() : "mortis/mortis.tscn".CharacterPath();
   
   protected override MoveState GetDefaultMoveState()
   {

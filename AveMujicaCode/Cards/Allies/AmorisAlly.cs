@@ -26,7 +26,7 @@ public sealed class AmorisAlly : AbstractAlly
   private static int buffHits = 3;
   private static int skill1HPCost = 3;
   private static int skill2HPCost = 6;
-  public override string CustomVisualPath => "amoris/amoris.tscn".CharacterPath();
+  public override string CustomVisualPath => Config.UseAmorisSkin ? "amoris/skin/amoris.tscn".CharacterPath() : "amoris/amoris.tscn".CharacterPath();
 
   private int currentHits = hits;
   

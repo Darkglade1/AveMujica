@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckg0o3lqhgpq8"
-path="res://.godot/imported/char_4186_tmoris.png-161c3a5a43621796d88f70a2bd0a32fb.ctex"
+uid="uid://c231qhcpjxo5i"
+path="res://.godot/imported/char_4185_amoris_avemujica.png-09de3a6294f14fc746136a89ae357d1c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/character/timoris/skin/char_4186_tmoris.png"
-dest_files=["res://.godot/imported/char_4186_tmoris.png-161c3a5a43621796d88f70a2bd0a32fb.ctex"]
+source_file="res://AveMujica/images/character/amoris/skin/char_4185_amoris_avemujica.png"
+dest_files=["res://.godot/imported/char_4185_amoris_avemujica.png-09de3a6294f14fc746136a89ae357d1c.ctex"]
 
 [params]
 

@@ -25,7 +25,7 @@ public sealed class DolorisAlly : AbstractAlly
   private static int skillBlock = 7;
   private static int skill1HPCost = 3;
   private static int skill2HPCost = 8;
-  public override string CustomVisualPath => "doloris/doloris.tscn".CharacterPath();
+  public override string CustomVisualPath => Config.UseDolorisSkin ? "doloris/skin/doloris.tscn".CharacterPath() : "doloris/doloris.tscn".CharacterPath();
   
   protected override MoveState GetDefaultMoveState()
   {
