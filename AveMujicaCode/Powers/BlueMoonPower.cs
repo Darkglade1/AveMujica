@@ -15,7 +15,10 @@ public class BlueMoonPower() : AveMujicaPower
 
     public override async Task AfterPlayerTurnStartLate(PlayerChoiceContext choiceContext, Player player)
     {
-        Flash();
-        await PowerCmd.Apply<DreamThreadPower>(choiceContext, Owner, Amount, Owner, null);
+        if (player == Owner.Player)
+        {
+            Flash();
+            await PowerCmd.Apply<DreamThreadPower>(choiceContext, Owner, Amount, Owner, null);
+        }
     }
 }
