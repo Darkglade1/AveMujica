@@ -8,7 +8,7 @@
   "AVEMUJICA-WALTZ.description": "Deal {Damage:diff()} damage.\n[gold]Compose[/gold] \"Deal {Compose:diff()} damage.\"",
   "AVEMUJICA-WALTZ.title": "Waltz",
   
-  "AVEMUJICA-MUSE.description": "{IfUpgraded:show:[gold]Upgraded[/gold]}[gold]Compose[/gold].",
+  "AVEMUJICA-MUSE.description": "{IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold].",
   "AVEMUJICA-MUSE.title": "Muse",
 
   "AVEMUJICA-SONG.description": "{IfUpgraded:show:Draw a card.}",
