@@ -28,4 +28,9 @@ public class Amoris() : AllyCard(-1,
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Awaken),
         AmorisAlly.GenerateCardHoverTip()
     ];
+    
+    protected override bool IsSkinEnabled()
+    {
+        return Config.UseAmorisSkin;
+    }
 }

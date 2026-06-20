@@ -1,4 +1,6 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Allies;
+using AveMujica.AveMujicaCode.Extensions;
+using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -29,4 +31,9 @@ public class Doloris() : AllyCard(-1,
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Awaken),
         DolorisAlly.GenerateCardHoverTip()
     ];
+
+    protected override bool IsSkinEnabled()
+    {
+        return Config.UseDolorisSkin;
+    }
 }

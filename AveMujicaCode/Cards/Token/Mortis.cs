@@ -29,4 +29,9 @@ public class Mortis() : AllyCard(-1,
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Awaken),
         MortisAlly.GenerateCardHoverTip()
     ];
+    
+    protected override bool IsSkinEnabled()
+    {
+        return Config.UseMortisSkin;
+    }
 }

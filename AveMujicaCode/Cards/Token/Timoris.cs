@@ -29,4 +29,9 @@ public class Timoris() : AllyCard(-1,
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Awaken),
         TimorisAlly.GenerateCardHoverTip()
     ];
+    
+    protected override bool IsSkinEnabled()
+    {
+        return Config.UseTimorisSkin;
+    }
 }
