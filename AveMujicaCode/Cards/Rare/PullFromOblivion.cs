@@ -24,11 +24,14 @@ public class PullFromOblivion() : AveMujicaCard(1,
         if (selection == null)
             return;
         await CardPileCmd.Add(selection, PileType.Hand);
+        if (IsUpgraded)
+        {
+            selection.SetToFreeThisCombat();
+        }
     }
 
     protected override void OnUpgrade()
     {
-        EnergyCost.UpgradeBy(-1);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [

@@ -48,7 +48,7 @@ public class PursuitOfMastery() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars["Enchant"].UpgradeValueBy(2);
+        DynamicVars["Enchant"].UpgradeValueBy(1);
         DynamicVars["EnchantGrow"].UpgradeValueBy(1);
     }
 }

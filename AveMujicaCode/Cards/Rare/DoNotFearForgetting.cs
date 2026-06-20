@@ -14,7 +14,7 @@ public class DoNotFearForgetting() : AveMujicaCard(0,
     CardType.Skill, CardRarity.Rare,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(6, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(8, ValueProp.Move)];
     
     protected override bool HasEnergyCostX => true;
     

@@ -32,5 +32,5 @@ public class MusicaCaelestis() : AveMujicaCard(1,
         await CardPileCmd.RemoveFromCombat(selection, true);
     }
 
-    protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(3);
+    protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(4);
 }

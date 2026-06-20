@@ -243,7 +243,7 @@
   "AVEMUJICA-LOFT_MOON.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.\nAt the end of your turn, [gold]Dolls[/gold] gain {LoftMoonPower:diff()} HP.",
   "AVEMUJICA-LOFT_MOON.title": "Loft Moon",
 
-  "AVEMUJICA-PULL_FROM_OBLIVION.description": "Put a card from your [gold]Exhaust Pile[/gold] into your [gold]Hand[/gold].",
+  "AVEMUJICA-PULL_FROM_OBLIVION.description": "Put a card from your [gold]Exhaust Pile[/gold] into your [gold]Hand[/gold].{IfUpgraded:show:\nIt costs 0 this combat.}",
   "AVEMUJICA-PULL_FROM_OBLIVION.selectionScreenPrompt": "Choose a card to add to your [gold]Hand[/gold].",
   "AVEMUJICA-PULL_FROM_OBLIVION.title": "Pull From Oblivion",
 
