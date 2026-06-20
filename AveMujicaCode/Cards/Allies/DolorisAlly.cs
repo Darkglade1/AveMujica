@@ -38,7 +38,7 @@ public sealed class DolorisAlly : AbstractAlly
     if (owner != null)
     {
       numSkillsPerTurn = 0; // hack to prevent player from clicking skill button during enemy turn
-      await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
+      await PlayCastAnimation();
       await CreatureCmd.GainBlock(owner.Creature, CalcBlockWithDex(block), ValueProp.Unpowered, null);
     }
   }
@@ -59,7 +59,7 @@ public sealed class DolorisAlly : AbstractAlly
     if (owner != null)
     {
       numSkillsUsedThisTurn++;
-      await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
+      await PlayCastAnimation();
       Sfx.SKILL_GUITAR_VOCALS.Play();
       await PaySkillCost(skill1HPCost);
       await CreatureCmd.GainBlock(owner.Creature, CalcBlockWithDex(skillBlock), ValueProp.Unpowered, null);
@@ -72,10 +72,22 @@ public sealed class DolorisAlly : AbstractAlly
     if (owner != null)
     {
       numSkillsUsedThisTurn++;
-      await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
+      await PlayCastAnimation();
       Sfx.SKILL_GUITAR_VOCALS.Play();
       await PaySkillCost(skill2HPCost);
       await PowerCmd.Apply<HowDareYou>(new ThrowingPlayerChoiceContext(), owner.Creature, damage, Creature, null);
+    }
+  }
+  
+  private async Task PlayCastAnimation()
+  {
+    if (Config.UseDolorisSkin)
+    {
+      await CreatureCmd.TriggerAnim(Creature, "Cast2", 0);
+    }
+    else
+    {
+      await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
     }
   }
   
@@ -164,6 +176,7 @@ public sealed class DolorisAlly : AbstractAlly
     AnimState startState = new AnimState("Start");
     AnimState animState = new AnimState("Idle", isLooping: true);
     AnimState animState2 = new AnimState("Skill_1_Begin");
+    AnimState animState6 = new AnimState("Skill_1_End");
     AnimState animState3 = new AnimState("Skill_2_Begin");
     AnimState animState4 = new AnimState("Skill_2_Loop");
     AnimState animState5 = new AnimState("Skill_2_End");
@@ -173,11 +186,13 @@ public sealed class DolorisAlly : AbstractAlly
     animState3.NextState = animState4;
     animState4.NextState = animState5;
     animState5.NextState = animState;
+    animState6.NextState = animState;
     CreatureAnimator creatureAnimator = new CreatureAnimator(startState, controller);
     creatureAnimator.AddAnyState("Idle", animState);
     creatureAnimator.AddAnyState("Dead", state);
     creatureAnimator.AddAnyState("Attack", animState4);
     creatureAnimator.AddAnyState("Cast", animState2);
+    creatureAnimator.AddAnyState("Cast2", animState6);
     return creatureAnimator;
   }
 }
