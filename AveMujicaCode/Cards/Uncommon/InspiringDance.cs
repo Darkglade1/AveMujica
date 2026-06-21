@@ -29,6 +29,7 @@ public class InspiringDance() : AveMujicaCard(0,
         }
         if (num > 0 && play.Target != null && play.Target.Player != null)
         {
+            await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
             await PlayerCmd.GainEnergy(num, play.Target.Player);
             await CardPileCmd.Draw(choiceContext, num, play.Target.Player);
         }

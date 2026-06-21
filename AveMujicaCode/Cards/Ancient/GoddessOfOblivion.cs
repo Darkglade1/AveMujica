@@ -1,4 +1,5 @@
-﻿using AveMujica.AveMujicaCode.Powers;
+﻿using AveMujica.AveMujicaCode.Audio;
+using AveMujica.AveMujicaCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -17,6 +18,7 @@ public class GoddessOfOblivion() : AveMujicaCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        Sfx.SKILL_KEYBOARD2.Play();
         await PowerCmd.Apply<Oblivion>(choiceContext, Owner.Creature, DynamicVars["Oblivion"].BaseValue, Owner.Creature,this);
         await PowerCmd.Apply<GoddessOfOblivionPower>(choiceContext, Owner.Creature, DynamicVars["GoddessOfOblivionPower"].BaseValue, Owner.Creature,this);
     }

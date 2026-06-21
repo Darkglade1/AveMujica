@@ -22,6 +22,7 @@ public class Recital() : AveMujicaCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         CardSelectorPrefs prefs = new CardSelectorPrefs(SelectionScreenPrompt, 1);
         CardModel? selection = (await CardSelectCmd.FromCombatPile(choiceContext,  PileType.Exhaust.GetPile(Owner), Owner, prefs, c => c is Song)).FirstOrDefault();
         if (selection == null)

@@ -30,7 +30,7 @@ public sealed class AmorisAlly : AbstractAlly
 
   private int currentHits = hits;
   
-  protected override MoveState GetDefaultMoveState()
+  public override MoveState GetDefaultMoveState()
   {
     return new MoveState("ATTACK_MOVE", Attack, new MultiAttackIntent(damage, currentHits));
   }

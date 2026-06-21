@@ -1,4 +1,5 @@
 ﻿using AveMujica.AveMujicaCode.Cards.CardMods;
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
@@ -25,6 +26,7 @@ public class Sophie() : AveMujicaCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         var gainVulnerableMod = (GainVulnerableMod)ModelDb.Get<GainVulnerableMod>().MutableClone();
         gainVulnerableMod.VulnerableAmt = (int)DynamicVars["VulnerablePower"].BaseValue;
         await ComposeHelper.AddComposeEffectsToSong([gainVulnerableMod], Owner);

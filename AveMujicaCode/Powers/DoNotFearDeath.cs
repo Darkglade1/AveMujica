@@ -51,9 +51,10 @@ public class DoNotFearDeath : AveMujicaPower
         if (side == CombatSide.Enemy)
         {
             await PowerCmd.Remove<DoNotFearDeath>(Owner);
-            if (Owner.Monster is MortisAlly)
+            if (Owner.Monster is MortisAlly ally)
             {
                 await CreatureCmd.TriggerAnim(Owner, "SwitchOut", 0);
+                ally.SetMoveImmediate(ally.GetDefaultMoveState());
             }
         }
     }

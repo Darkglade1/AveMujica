@@ -26,6 +26,7 @@ public class SymbolAir() : AveMujicaCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
         await PowerCmd.Apply<WeakPower>(choiceContext, play.Target, DynamicVars["WeakPower"].BaseValue, Owner.Creature, this);
         await CommonActions.Draw(this, choiceContext);

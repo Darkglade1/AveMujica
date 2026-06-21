@@ -12,7 +12,6 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
-using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Allies;
@@ -27,7 +26,7 @@ public sealed class DolorisAlly : AbstractAlly
   private static int skill2HPCost = 8;
   public override string CustomVisualPath => Config.UseDolorisSkin ? "doloris/skin/doloris.tscn".CharacterPath() : "doloris/doloris.tscn".CharacterPath();
   
-  protected override MoveState GetDefaultMoveState()
+  public override MoveState GetDefaultMoveState()
   {
     return new MoveState("BLOCK_MOVE", Block, new DefendIntent());
   }

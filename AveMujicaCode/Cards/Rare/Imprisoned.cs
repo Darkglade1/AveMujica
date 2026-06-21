@@ -1,4 +1,5 @@
 ﻿using AveMujica.AveMujicaCode.Cards.CardMods;
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
@@ -25,6 +26,7 @@ public class Imprisoned() : AveMujicaCard(0,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         var loseStrengthMod = (LoseStrengthMod)ModelDb.Get<LoseStrengthMod>().MutableClone();
         loseStrengthMod.StrengthAmt = (int)DynamicVars["StrengthPower"].BaseValue;
         await ComposeHelper.AddComposeEffectsToSong([loseStrengthMod], Owner);

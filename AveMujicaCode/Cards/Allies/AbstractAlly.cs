@@ -37,7 +37,7 @@ public abstract class AbstractAlly : CustomMonsterModel
   protected bool canUseAbilitiesThisTurn = true;
   private bool hasSetUp;
 
-  protected abstract MoveState GetDefaultMoveState();
+  public abstract MoveState GetDefaultMoveState();
 
   public override Task AfterCurrentHpChanged(Creature creature, Decimal delta)
   {

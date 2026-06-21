@@ -1,4 +1,5 @@
-﻿using AveMujica.AveMujicaCode.Enchantments;
+﻿using AveMujica.AveMujicaCode.Audio;
+using AveMujica.AveMujicaCode.Enchantments;
 using AveMujica.AveMujicaCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -20,6 +21,7 @@ public class VirtuosoForm() : AveMujicaCard(3,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        Sfx.SKILL_KEYBOARD3.Play();
         await PowerCmd.Apply<VirtuosoFormPower>(choiceContext, Owner.Creature, DynamicVars["VirtuosoFormPower"].BaseValue, Owner.Creature, this);
     }
 
