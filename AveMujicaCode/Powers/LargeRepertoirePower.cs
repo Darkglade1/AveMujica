@@ -29,7 +29,7 @@ public class LargeRepertoirePower : AveMujicaPower
                 return;
             int amount = cards.Count * Amount;
             Flash();
-            await CreatureCmd.GainBlock(Owner.Player.Creature, amount, ValueProp.Unpowered, null);
+            await CreatureCmd.GainBlock(Owner, amount, ValueProp.Unpowered, null);
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using AveMujica.AveMujicaCode;
 using AveMujica.AveMujicaCode.Cards.Allies;
+using AveMujica.AveMujicaCode.Hooks;
 using AveMujica.AveMujicaCode.Powers;
 using Godot;
 using MegaCrit.Sts2.Core.Commands;
@@ -12,7 +13,7 @@ using MegaCrit.Sts2.Core.Nodes.Rooms;
 public class AllyHelper
 {
     public static async Task Awaken<T>(
-        PlayerChoiceContext ctx,
+        PlayerChoiceContext choiceContext,
         Player summoner,
         int hp) where T : MonsterModel
     {
@@ -49,6 +50,10 @@ public class AllyHelper
             }
             await CreatureCmd.SetMaxHp(existing, hp);
             await CreatureCmd.Heal(existing, hp, false);
+            if (existing.Monster is AbstractAlly ally)
+            {
+                await AveMujicaHooks.AfterAwaken(summoner.RunState, summoner.Creature.CombatState, choiceContext, summoner, ally);
+            }
         }
     }
 

@@ -42,4 +42,9 @@ public class AveMujicaHooks
     {
         return DispatchAsync<IAfterDollSkill>(rs, cs, m => m.AfterDollSkill(player, ally));
     }
+    
+    public static Task AfterAwaken(IRunState? rs, ICombatState? cs, PlayerChoiceContext choiceContext, Player player, AbstractAlly ally)
+    {
+        return DispatchAsync<IAfterAwaken>(rs, cs, m => m.AfterAwaken(choiceContext, player, ally));
+    }
 }
