@@ -4,5 +4,20 @@
   "AVEMUJICA-KEYBOARD.title": "キーボード",
   "AVEMUJICA-GRAND_PIANO.description": "最初の{Turns:plural:ターン|[blue]{}[/blue] ターン}の開始時、[gold]作曲[/gold]:[blue]{Compose}[/blue] [gold]ブロック[/gold]を得る",
   "AVEMUJICA-GRAND_PIANO.flavor": "再び舞台に立つよう、彼女を誘っている。",
-  "AVEMUJICA-GRAND_PIANO.title": "グランドピアノ"
+  "AVEMUJICA-GRAND_PIANO.title": "グランドピアノ",
+  "AVEMUJICA-PLAYFUL_CORETTON.description": "At the start of each combat, gain [blue]{DreamThreadPower}[/blue] [gold]Dream Thread[/gold].",
+  "AVEMUJICA-PLAYFUL_CORETTON.flavor": "She found it unnerving how quickly they could switch from cute to terrifying.",
+  "AVEMUJICA-PLAYFUL_CORETTON.title": "Playful Coretton",
+  "AVEMUJICA-NOSTALGIC_SHEET_MUSIC.description": "Whenever you play a [gold]Song[/gold], gain [blue]{Block}[/blue] [gold]Block[/gold].",
+  "AVEMUJICA-NOSTALGIC_SHEET_MUSIC.flavor": "Even if their lines would never intersect again, that didn't mean they couldn't still walk side-by-side.",
+  "AVEMUJICA-NOSTALGIC_SHEET_MUSIC.title": "Nostalgic Sheet Music",
+  "AVEMUJICA-MASQUERADE_MASK.description": "The first time you [gold]Perform[/gold] each turn, draw a card.",
+  "AVEMUJICA-MASQUERADE_MASK.flavor": "The masquerade begins. The dolls stir to life.",
+  "AVEMUJICA-MASQUERADE_MASK.title": "Masquerade Mask",
+  "AVEMUJICA-NOTEBOOK.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], gain [blue]{StrengthPower}[/blue] [gold]Strength[/gold].",
+  "AVEMUJICA-NOTEBOOK.flavor": "In times of hardship, she finds strength in the words inside.",
+  "AVEMUJICA-NOTEBOOK.title": "Notebook",
+  "AVEMUJICA-PUPPET_STRINGS.description": "[gold]Dolls[/gold] enter with [blue]{StrengthPower}[/blue] [gold]Strength[/gold] and [gold]Dexterity[/gold].",
+  "AVEMUJICA-PUPPET_STRINGS.flavor": "She thinks it ironic that even in such a strange place, there were still so many puppets futily dancing on their strings.",
+  "AVEMUJICA-PUPPET_STRINGS.title": "Puppet Strings"
 }
