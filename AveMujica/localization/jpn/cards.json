@@ -85,7 +85,7 @@
   "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "三日月の残響",
   "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gain {Block:diff()} [gold]Block[/gold].\nALL [gold]Dolls[/gold] gain {Heal:diff()} HP.",
   "AVEMUJICA-FULL_MOON_MASQUERADE.title": "満月の仮面舞踏会",
-  "AVEMUJICA-WAXING_MOON_LONGING.description": "Gain [gold]Block[/gold] equal to the total HP of your [gold]Dolls[/gold].{InCombat:\\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold])|}",
+  "AVEMUJICA-WAXING_MOON_LONGING.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.{IfUpgraded:show:\nDraw a card.}",
   "AVEMUJICA-WAXING_MOON_LONGING.title": "満ちゆく月の想い",
   "AVEMUJICA-WHITE_KEYS_BLACK_KEYS.description": "[gold]パフォーム スキル:[/gold] [gold]脱力[/gold]{WeakPower:diff()}を付与する。\n[gold]パフォーム アタック:[/gold] [gold]弱体[/gold]{VulnerablePower:diff()}を付与する。",
   "AVEMUJICA-WHITE_KEYS_BLACK_KEYS.title": "白鍵と黒鍵",

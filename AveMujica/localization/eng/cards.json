@@ -126,7 +126,7 @@
   "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gain {Block:diff()} [gold]Block[/gold].\nALL [gold]Dolls[/gold] gain {Heal:diff()} HP.",
   "AVEMUJICA-FULL_MOON_MASQUERADE.title": "Full Moon Masquerade",
 
-  "AVEMUJICA-WAXING_MOON_LONGING.description": "Gain [gold]Block[/gold] equal to the total HP of your [gold]Dolls[/gold].{InCombat:\\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold])|}",
+  "AVEMUJICA-WAXING_MOON_LONGING.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.{IfUpgraded:show:\nDraw a card.}",
   "AVEMUJICA-WAXING_MOON_LONGING.title": "Waxing Moon's Longing",
 
   "AVEMUJICA-WHITE_KEYS_BLACK_KEYS.description": "[gold]Perform Skill:[/gold] Apply {WeakPower:diff()} [gold]Weak[/gold].\n[gold]Perform Attack:[/gold] Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
