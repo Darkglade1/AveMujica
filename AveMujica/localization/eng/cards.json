@@ -35,7 +35,7 @@
   "AVEMUJICA-FIRST_QUARTER_YEARNING.description": "Give a [gold]Doll[/gold] {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold].",
   "AVEMUJICA-FIRST_QUARTER_YEARNING.title": "First Quarter's Yearning",
 
-  "AVEMUJICA-WANING_MOON_DESIRE.description": "Deal {Damage:diff()} damage.\nThe oldest [gold]Doll[/gold] heals {Heal:diff()} HP.",
+  "AVEMUJICA-WANING_MOON_DESIRE.description": "Deal {Damage:diff()} damage.\nThe oldest [gold]Doll[/gold] gains {Heal:diff()} HP.",
   "AVEMUJICA-WANING_MOON_DESIRE.title": "Waning Moon's Desire",
 
   "AVEMUJICA-AFTERGLOW.description": "Gain {Block:diff()} [gold]Block[/gold].\nThe next time you [gold]Perform[/gold], gain {Energy:energyIcons()}.",

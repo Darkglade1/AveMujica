@@ -23,7 +23,7 @@
   "AVEMUJICA-NEW_MOON_AWAKENING.title": "新月の覚醒",
   "AVEMUJICA-FIRST_QUARTER_YEARNING.description": "Give a [gold]Doll[/gold] {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold].",
   "AVEMUJICA-FIRST_QUARTER_YEARNING.title": "上弦の渇望",
-  "AVEMUJICA-WANING_MOON_DESIRE.description": "Deal {Damage:diff()} damage.\nThe oldest [gold]Doll[/gold] heals {Heal:diff()} HP.",
+  "AVEMUJICA-WANING_MOON_DESIRE.description": "Deal {Damage:diff()} damage.\nThe oldest [gold]Doll[/gold] gains {Heal:diff()} HP.",
   "AVEMUJICA-WANING_MOON_DESIRE.title": "下弦の欲望",
   "AVEMUJICA-AFTERGLOW.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\nThe next time you [gold]Perform[/gold], gain {Energy:energyIcons()}.",
   "AVEMUJICA-AFTERGLOW.title": "残照",
