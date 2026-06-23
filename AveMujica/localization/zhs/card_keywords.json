@@ -1,0 +1,12 @@
+{
+  "AVEMUJICA-PERFORM.description": "演奏效果在你本回合打出了指定类型的牌后触发。",
+  "AVEMUJICA-PERFORM.title": "演奏",
+  "AVEMUJICA-COMPOSE.description": "将指定效果添加到当前的[gold]乐曲[/gold]中。若未指定效果，则随机添加一个效果。[gold]谱曲[/gold][blue]3[/blue]次后，将该[gold]乐曲[/gold]加入手牌。",
+  "AVEMUJICA-COMPOSE.title": "谱曲",
+  "AVEMUJICA-AWAKEN.description": "召唤一名[gold]娃娃[/gold]协助你。[gold]娃娃[/gold]会在你的回合结束时使用其默认能力。若娃娃有足够的生命值，你可以点击其意图旁的按钮触发其技能。",
+  "AVEMUJICA-AWAKEN.title": "唤醒",
+  "AVEMUJICA-DREAMSPIN.description": "[gold]梦旋[/gold]牌以自身或一名[gold]娃娃[/gold]为目标。\n以自身为目标可获得[gold]梦线[/gold]。积攒[blue]3[/blue]点[gold]梦线[/gold]后可[gold]唤醒[/gold]一名[gold]娃娃[/gold]。\n以[gold]娃娃[/gold]为目标可为其恢复生命值。你持有的[gold]梦线[/gold]会被消耗以额外恢复生命值。",
+  "AVEMUJICA-DREAMSPIN.title": "梦旋",
+  "AVEMUJICA-DOLL.description": "[gold]多洛里斯[/gold]、[gold]莫尔提斯[/gold]、[gold]提莫里斯[/gold]和[gold]阿莫里斯[/gold]。",
+  "AVEMUJICA-DOLL.title": "娃娃"
+}
