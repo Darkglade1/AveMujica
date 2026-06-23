@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace AveMujica.AveMujicaCode.Cards.Rare;
 
-public class LoftMoon() : AveMujicaCard(2,
+public class LoftMoon() : AveMujicaCard(1,
     CardType.Power, CardRarity.Rare,
     CustomTargetType.PetOrSelf)
 {
