@@ -1,198 +1,290 @@
 {
   "AVEMUJICA-STRIKE.description": "{Damage:diff()}ダメージを与える。",
   "AVEMUJICA-STRIKE.title": "ストライク",
+  
   "AVEMUJICA-DEFEND.description": "{Block:diff()}[gold]ブロック[/gold]を得る。",
   "AVEMUJICA-DEFEND.title": "防御",
-  "AVEMUJICA-WALTZ.description": "{Damage:diff()}ダメージを与える。\n[gold]作曲[/gold]: {Compose:diff()}ダメージを与える。",
+
+  "AVEMUJICA-WALTZ.description": "{Damage:diff()}ダメージを与える。\n[gold]作曲[/gold]「{Compose:diff()}ダメージを与える。」",
   "AVEMUJICA-WALTZ.title": "ワルツ",
+
   "AVEMUJICA-MUSE.description": "{IfUpgraded:show:[gold]アップグレード[/gold]}[gold]作曲[/gold]。",
   "AVEMUJICA-MUSE.title": "ミューズ",
+
   "AVEMUJICA-SONG.description": "{IfUpgraded:show:カードを1枚引く。}",
   "AVEMUJICA-SONG.title": "楽曲",
-  "AVEMUJICA-MOONLIT_STRIKE.description": "Deal {Damage:diff()} damage to a random enemy.\n[gold]Dreamspin[/gold] {Dreamspin:diff()}.",
+
+  "AVEMUJICA-MOONLIT_STRIKE.description": "ランダムな敵に{Damage:diff()}ダメージを与える。\n[gold]夢紡ぎ[/gold]{Dreamspin:diff()}。",
   "AVEMUJICA-MOONLIT_STRIKE.title": "月光のストライク",
-  "AVEMUJICA-FORTE.description": "{Damage:diff()}ダメージを与える。\n[gold]作曲[/gold]: ターン終了時まで[gold]筋力[/gold]{Compose:diff()}を得る。",
+
+  "AVEMUJICA-FORTE.description": "{Damage:diff()}ダメージを与える。\n[gold]作曲[/gold]「このターン、[gold]筋力[/gold]{Compose:diff()}を得る。」",
   "AVEMUJICA-FORTE.title": "フォルテ",
-  "AVEMUJICA-PIANO.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\n[gold]作曲[/gold]: {Compose:diff()}[gold]ブロック[/gold]を得る。",
+
+  "AVEMUJICA-PIANO.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\n[gold]作曲[/gold]「{Compose:diff()}[gold]ブロック[/gold]を得る。」",
   "AVEMUJICA-PIANO.title": "ピアノ",
+
   "AVEMUJICA-FEEL_THE_BEAT.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\n[gold]パフォーム スキル:[/gold] カードを{Cards:diff()}枚引く。",
   "AVEMUJICA-FEEL_THE_BEAT.title": "ビートを感じて",
-  "AVEMUJICA-MOONLIGHT_BARRIER.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Dreamspin[/gold] {Dreamspin:diff()}.",
+
+  "AVEMUJICA-MOONLIGHT_BARRIER.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\n[gold]夢紡ぎ[/gold]{Dreamspin:diff()}。",
   "AVEMUJICA-MOONLIGHT_BARRIER.title": "月光の障壁",
-  "AVEMUJICA-NEW_MOON_AWAKENING.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.\nIf the target is a [gold]Doll[/gold], give them {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold] this turn.",
+
+  "AVEMUJICA-NEW_MOON_AWAKENING.description": "[gold]夢紡ぎ[/gold]{Dreamspin:diff()}。\n対象が[gold]人形[/gold]の場合、このターン、その対象に[gold]筋力[/gold]と[gold]敏捷性[/gold]{StrengthPower:diff()}を与える。",
   "AVEMUJICA-NEW_MOON_AWAKENING.title": "新月の覚醒",
-  "AVEMUJICA-FIRST_QUARTER_YEARNING.description": "Give a [gold]Doll[/gold] {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold].",
+
+  "AVEMUJICA-FIRST_QUARTER_YEARNING.description": "[gold]人形[/gold]1体に[gold]筋力[/gold]と[gold]敏捷性[/gold]{StrengthPower:diff()}を与える。",
   "AVEMUJICA-FIRST_QUARTER_YEARNING.title": "上弦の渇望",
-  "AVEMUJICA-WANING_MOON_DESIRE.description": "Deal {Damage:diff()} damage.\nThe oldest [gold]Doll[/gold] gains {Heal:diff()} HP.",
+
+  "AVEMUJICA-WANING_MOON_DESIRE.description": "{Damage:diff()}ダメージを与える。\n最も古い[gold]人形[/gold]はHP{Heal:diff()}を得る。",
   "AVEMUJICA-WANING_MOON_DESIRE.title": "下弦の欲望",
-  "AVEMUJICA-AFTERGLOW.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\nThe next time you [gold]Perform[/gold], gain {Energy:energyIcons()}.",
-  "AVEMUJICA-AFTERGLOW.title": "残照",
+
+  "AVEMUJICA-AFTERGLOW.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\n次に[gold]パフォーム[/gold]した時、{Energy:energyIcons()}を得る。",
+  "AVEMUJICA-AFTERGLOW.title": "Afterglow",
+
   "AVEMUJICA-REGRETS.description": "{Damage:diff()}ダメージを与える。\nカードを{Cards:diff()}枚[gold]廃棄[/gold]する。",
-  "AVEMUJICA-REGRETS.title": "Cast Off Regrets",
+  "AVEMUJICA-REGRETS.title": "未練を断つ",
+
   "AVEMUJICA-CRESCENDO.description": "すべての敵に{Damage:diff()}ダメージを{Repeat:diff()}回与える。",
   "AVEMUJICA-CRESCENDO.title": "クレッシェンド",
-  "AVEMUJICA-DIMINUENDO.description": "ターン終了時まで敵は[gold]筋力[/gold]{StrengthLoss:diff()}を失う。",
+
+  "AVEMUJICA-DIMINUENDO.description": "このターン、敵は[gold]筋力[/gold]{StrengthLoss:diff()}を失う。",
   "AVEMUJICA-DIMINUENDO.title": "ディミヌエンド",
+
   "AVEMUJICA-FERMATA.description": "{Damage:diff()}ダメージを与える。\n{IfUpgraded:show:[gold]アップグレード[/gold]}[gold]作曲[/gold]。",
   "AVEMUJICA-FERMATA.title": "フェルマータ",
+
   "AVEMUJICA-LATE_NIGHTS.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\n[gold]作曲[/gold]を2回行う。",
   "AVEMUJICA-LATE_NIGHTS.title": "夜更かし",
+
   "AVEMUJICA-REHEARSAL.description": "{Energy:energyIcons()}を得る。\n[gold]パフォーム アタック:[/gold] {Energy:energyIcons()}を得る。",
   "AVEMUJICA-REHEARSAL.title": "リハーサル",
+
   "AVEMUJICA-REPETITION.description": "{Damage:diff()}ダメージを与える。\n[gold]パフォーム アタック スキル:[/gold] {Damage:diff()}ダメージを再び与える。",
   "AVEMUJICA-REPETITION.title": "リペティション",
-  "AVEMUJICA-ALLEGRO.description": "カードを{Cards:diff()}枚引く。\n[gold]作曲[/gold]: カードを{Compose:diff()}枚引く。",
+
+  "AVEMUJICA-ALLEGRO.description": "カードを{Cards:diff()}枚引く。\n[gold]作曲[/gold]「カードを{Compose:diff()}枚引く。」",
   "AVEMUJICA-ALLEGRO.title": "アレグロ",
+
   "AVEMUJICA-GLISSANDO.description": "{Damage:diff()}ダメージを{Repeat:diff()}回与える。",
-  "AVEMUJICA-GLISSANDO.title": "Glissando",
+  "AVEMUJICA-GLISSANDO.title": "グリッサンド",
+
   "AVEMUJICA-PROPER_TIMING.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\n[gold]手札[/gold]のカード1枚に[gold]保留[/gold]を付与する。",
   "AVEMUJICA-PROPER_TIMING.selectionScreenPrompt": "[gold]保留[/gold]を付与するカードを1枚選ぶ。",
   "AVEMUJICA-PROPER_TIMING.title": "好機",
+
   "AVEMUJICA-DISSATISFACTION.description": "{Damage:diff()}ダメージを与える。\n[gold]空白の楽曲[/gold]を1枚[gold]手札[/gold]に加える。",
   "AVEMUJICA-DISSATISFACTION.title": "不満",
+
   "AVEMUJICA-ARPEGGIO.description": "すべての敵に{Damage:diff()}ダメージを与える。",
   "AVEMUJICA-ARPEGGIO.title": "アルペジオ",
+
   "AVEMUJICA-DOLORIS.description": "[gold]ドロリス[/gold]を[gold]目覚め[/gold]させる。",
   "AVEMUJICA-DOLORIS.title": "ドロリス",
+
   "AVEMUJICA-MORTIS.description": "[gold]モーティス[/gold]を[gold]目覚め[/gold]させる。",
   "AVEMUJICA-MORTIS.title": "モーティス",
+
   "AVEMUJICA-TIMORIS.description": "[gold]ティモリス[/gold]を[gold]目覚め[/gold]させる。",
   "AVEMUJICA-TIMORIS.title": "ティモリス",
+
   "AVEMUJICA-AMORIS.description": "[gold]アモーリス[/gold]を[gold]目覚め[/gold]させる。",
   "AVEMUJICA-AMORIS.title": "アモーリス",
+
   "AVEMUJICA-RECITAL.description": "[gold]廃棄札[/gold]から[gold]楽曲[/gold]を1枚[gold]手札[/gold]に加える。",
   "AVEMUJICA-RECITAL.selectionScreenPrompt": "[gold]手札[/gold]に加える[gold]楽曲[/gold]を1枚選ぶ。",
   "AVEMUJICA-RECITAL.title": "リサイタル",
+
   "AVEMUJICA-TRANSCRIBE.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\n作曲中の[gold]楽曲[/gold]のコピーを1枚[gold]手札[/gold]に加える。",
   "AVEMUJICA-TRANSCRIBE.title": "写譜",
+  
   "AVEMUJICA-DISTRIBUTE.description": "[gold]楽曲[/gold]を1枚選ぶ。そのカードのコピーを{IfUpgraded:show:{Cards}枚|1枚}[gold]手札[/gold]に加える。",
   "AVEMUJICA-DISTRIBUTE.selectionScreenPrompt": "コピーする[gold]楽曲[/gold]を1枚選ぶ。",
   "AVEMUJICA-DISTRIBUTE.title": "楽譜配布",
-  "AVEMUJICA-FORTISSIMO.description": "[gold]作曲[/gold]: [gold]筋力[/gold]{Compose:diff()}を得る。",
+
+  "AVEMUJICA-FORTISSIMO.description": "[gold]作曲[/gold]「[gold]筋力[/gold]{Compose:diff()}を得る。」",
   "AVEMUJICA-FORTISSIMO.title": "フォルティッシモ",
-  "AVEMUJICA-ARIA.description": "{Damage:diff()}ダメージを与える。\n[gold]作曲[/gold]: {Compose:diff()}ダメージを与える。",
+
+  "AVEMUJICA-ARIA.description": "{Damage:diff()}ダメージを与える。\n[gold]作曲[/gold]「{Compose:diff()}ダメージを与える。」",
   "AVEMUJICA-ARIA.title": "赤のアリア",
-  "AVEMUJICA-A_CAPPELLA.description": "{Damage:diff()}ダメージを与える。\n[gold]作曲[/gold]: {Energy:energyIcons()}を得る。",
+
+  "AVEMUJICA-A_CAPPELLA.description": "{Damage:diff()}ダメージを与える。\n[gold]作曲[/gold]「{Energy:energyIcons()}を得る。」",
   "AVEMUJICA-A_CAPPELLA.title": "黄のアカペラ",
+
   "AVEMUJICA-DA_CAPO.description": "{IfUpgraded:show:[gold]アップグレード[/gold]}[gold]作曲[/gold]。\nこのターンに[gold]楽曲[/gold]をプレイしていた場合、[gold]手札[/gold]のカード1枚に[gold]リプレイ[/gold]と[gold]廃棄[/gold]を付与する。",
   "AVEMUJICA-DA_CAPO.selectionScreenPrompt": "[gold]リプレイ[/gold]と[gold]廃棄[/gold]を付与するカードを1枚選ぶ。",
   "AVEMUJICA-DA_CAPO.title": "ダ・カーポ",
+
   "AVEMUJICA-AL_CODA.description": "{Damage:diff()}ダメージを与える。\nこのターンに[gold]楽曲[/gold]をプレイしていた場合、{IfUpgraded:show:[gold]アップグレード[/gold]}[gold]作曲[/gold]を2回行う。",
   "AVEMUJICA-AL_CODA.title": "アル・コーダ",
-  "AVEMUJICA-AL_FINE.description": "Deal {Damage:diff()} damage to ALL enemies.\nIf you played a [gold]Song[/gold] this turn, [gold]Dreamspin[/gold] {Dreamspin:diff()}.",
+
+  "AVEMUJICA-AL_FINE.description": "すべての敵に{Damage:diff()}ダメージを与える。\nこのターンに[gold]楽曲[/gold]をプレイしていた場合、[gold]夢紡ぎ[/gold]{Dreamspin:diff()}。",
   "AVEMUJICA-AL_FINE.title": "アル・フィーネ",
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.\nIf you targeted yourself, [gold]Dreamspin[/gold] {Dreamspin:diff()} again.",
+
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "[gold]夢紡ぎ[/gold]{Dreamspin:diff()}。\n自身を対象とした場合、再び[gold]夢紡ぎ[/gold]{Dreamspin:diff()}。",
   "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "三日月の残響",
-  "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gain {Block:diff()} [gold]Block[/gold].\nALL [gold]Dolls[/gold] gain {Heal:diff()} HP.",
+
+  "AVEMUJICA-FULL_MOON_MASQUERADE.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\nすべての[gold]人形[/gold]はHP{Heal:diff()}を得る。",
   "AVEMUJICA-FULL_MOON_MASQUERADE.title": "満月の仮面舞踏会",
-  "AVEMUJICA-WAXING_MOON_LONGING.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.{IfUpgraded:show:\nDraw a card.}",
+
+  "AVEMUJICA-WAXING_MOON_LONGING.description": "[gold]夢紡ぎ[/gold]{Dreamspin:diff()}。{IfUpgraded:show:\nカードを1枚引く。}",
   "AVEMUJICA-WAXING_MOON_LONGING.title": "満ちゆく月の想い",
+
   "AVEMUJICA-WHITE_KEYS_BLACK_KEYS.description": "[gold]パフォーム スキル:[/gold] [gold]脱力[/gold]{WeakPower:diff()}を付与する。\n[gold]パフォーム アタック:[/gold] [gold]弱体[/gold]{VulnerablePower:diff()}を付与する。",
   "AVEMUJICA-WHITE_KEYS_BLACK_KEYS.title": "白鍵と黒鍵",
+
   "AVEMUJICA-CANON.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\n[gold]パフォーム アタック スキル:[/gold] 次のターン、カードを1枚引く。",
   "AVEMUJICA-CANON.title": "緑のカノン",
+
   "AVEMUJICA-FULL_HOUSE.description": "{CalculatedDamage:diff()}ダメージを与える。\nこの戦闘中に[gold]パフォーム[/gold]した回数1回につき、追加で{ExtraDamage:diff()}ダメージを与える。",
   "AVEMUJICA-FULL_HOUSE.title": "フルハウス",
+
   "AVEMUJICA-MAIDENS_CAPRICCIO.description": "カードを{Cards:diff()}枚引く。\n[gold]パフォーム スキル:[/gold] カードを最大{Exhaust:diff()}枚[gold]廃棄[/gold]する。",
   "AVEMUJICA-MAIDENS_CAPRICCIO.selectionScreenPrompt": "[gold]廃棄[/gold]するカードを最大{Exhaust:diff()}枚選ぶ。",
   "AVEMUJICA-MAIDENS_CAPRICCIO.title": "乙女のカプリッチョ",
+
   "AVEMUJICA-EMOTIONAL_OUTBURST.description": "{Damage:diff()}ダメージを与える。\nこのターンに[gold]廃棄[/gold]したカード1枚につき、{Damage:diff()}ダメージを再び与える。{InCombat:\n(追加で{CalculatedHits:diff()}回攻撃)|}",
   "AVEMUJICA-EMOTIONAL_OUTBURST.title": "感情の爆発",
+
   "AVEMUJICA-SYMBOL_FIRE.description": "すべての敵に{Damage:diff()}ダメージを与える。\n[gold]筋力[/gold]{StrengthPower:diff()}を得る。",
   "AVEMUJICA-SYMBOL_FIRE.title": "Symbol I : △",
+
   "AVEMUJICA-SYMBOL_AIR.description": "[gold]脱力[/gold]{WeakPower:diff()}を付与する。\nカードを{Cards:diff()}枚引く。\n{Energy:energyIcons()}を得る。",
-  "AVEMUJICA-SYMBOL_AIR.title": "Symbol II: Air",
+  "AVEMUJICA-SYMBOL_AIR.title": "Symbol II : Air",
+
   "AVEMUJICA-FUGUE.description": "{Damage:diff()}ダメージを与える。\n次にプレイする[gold]廃棄[/gold]か[gold]保留[/gold]を持つカードのコストは[blue]0[/blue]になる。",
   "AVEMUJICA-FUGUE.title": "灰色のフーガ",
+
   "AVEMUJICA-SYMBOL_WATER.description": "{Block:diff()}[gold]ブロック[/gold]を得る。",
-  "AVEMUJICA-SYMBOL_WATER.title": "Symbol III：▽",
+  "AVEMUJICA-SYMBOL_WATER.title": "Symbol III : ▽",
+
   "AVEMUJICA-SYMBOL_EARTH.description": "{Damage:diff()}ダメージを{Repeat:diff()}回与える。\n[gold]保留[/gold]した時、この戦闘中の攻撃回数が1増加する。",
-  "AVEMUJICA-SYMBOL_EARTH.title": "Symbol IV: Earth",
+  "AVEMUJICA-SYMBOL_EARTH.title": "Symbol IV : Earth",
+
   "AVEMUJICA-CONCERTO.description": "{Damage:diff()}ダメージを与える。\n[gold]手札[/gold]の枚数に等しい[gold]熟練[/gold]をカード1枚に[gold]エンチャント[/gold]する。",
   "AVEMUJICA-CONCERTO.selectionScreenPrompt": "[gold]エンチャント[/gold]するカードを1枚選ぶ。",
   "AVEMUJICA-CONCERTO.title": "白のコンチェルト",
+
   "AVEMUJICA-WRITERS_BLOCK.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\n[gold]空白の楽曲[/gold]を{Cards:diff()}枚[gold]手札[/gold]に加える。",
   "AVEMUJICA-WRITERS_BLOCK.title": "スランプ",
+
   "AVEMUJICA-INSPIRING_SONGS.description": "[gold]楽曲[/gold]を{Cards:diff()}枚プレイするたび、{Energy:energyIcons()}を得る。",
   "AVEMUJICA-INSPIRING_SONGS.title": "触発の旋律",
+
   "AVEMUJICA-CANTABILE.description": "[gold]パフォーム[/gold]するたび、{CantabilePower:diff()}[gold]ブロック[/gold]を得る。",
   "AVEMUJICA-CANTABILE.title": "紫のカンタービレ",
+
   "AVEMUJICA-LARGE_REPERTOIRE.description": "ターン終了時、[gold]手札[/gold]の枚数に等しい[gold]ブロック[/gold]を得る。",
   "AVEMUJICA-LARGE_REPERTOIRE.title": "豊富なレパートリー",
-  "AVEMUJICA-MOONLIGHT_SONATA.description": "For every [gold]Doll[/gold] present, {IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold].",
+
+  "AVEMUJICA-MOONLIGHT_SONATA.description": "存在する[gold]人形[/gold]1体につき、{IfUpgraded:show:[gold]アップグレード[/gold]}[gold]作曲[/gold]する。",
   "AVEMUJICA-MOONLIGHT_SONATA.title": "月光のソナタ",
+
   "AVEMUJICA-MELODY.description": "ターン終了時、このターンに[gold]パフォーム[/gold]していた場合、[gold]筋力[/gold]{MelodyPower:diff()}を得る。",
   "AVEMUJICA-MELODY.title": "メロディ",
-  "AVEMUJICA-IMPRISONED.description": "[gold]作曲[/gold]: [gold]筋力[/gold]{StrengthPower:diff()}を失う。\n[gold]作曲[/gold]: [gold]山札[/gold]からカードを{Cards:diff()}枚[gold]手札[/gold]に加える。",
+
+  "AVEMUJICA-IMPRISONED.description": "[gold]作曲[/gold]「[gold]筋力[/gold]{StrengthPower:diff()}を失う。」\n[gold]作曲[/gold]「[gold]山札[/gold]からカードを{Cards:diff()}枚[gold]手札[/gold]に加える。」",
   "AVEMUJICA-IMPRISONED.title": "Imprisoned XII",
+
   "AVEMUJICA-ENCORE.description": "[gold]楽曲[/gold]は[gold]リプレイ[/gold]{EncorePower:diff()}を持つ。",
   "AVEMUJICA-ENCORE.title": "アンコール",
-  "AVEMUJICA-REQUIEM.description": "すべての敵に{Damage:diff()}ダメージを与える。\n[gold]作曲[/gold]: HPを{HpLoss:diff()}失う。",
+
+  "AVEMUJICA-REQUIEM.description": "すべての敵に{Damage:diff()}ダメージを与える。\n[gold]作曲[/gold]「HPを{HpLoss:diff()}失う。」",
   "AVEMUJICA-REQUIEM.title": "黒のレクイエム",
+
   "AVEMUJICA-MUSICA_CAELESTIS.description": "{Damage:diff()}ダメージを与える。\n[gold]廃棄札[/gold]の[gold]楽曲[/gold]を1枚プレイし、戦闘から除外する。",
   "AVEMUJICA-MUSICA_CAELESTIS.selectionScreenPrompt": "プレイする[gold]楽曲[/gold]を1枚選ぶ。",
   "AVEMUJICA-MUSICA_CAELESTIS.title": "ムジカ・チェレスティス",
-  "AVEMUJICA-ODE_TO_WAR.description": "{Damage:diff()}ダメージを与える。\n[gold]楽曲[/gold]が完成するまで[gold]作曲[/gold]: {Compose:diff()}ダメージを与える。を繰り返す。",
+
+  "AVEMUJICA-ODE_TO_WAR.description": "{Damage:diff()}ダメージを与える。\n[gold]楽曲[/gold]が完成するまで[gold]作曲[/gold]「{Compose:diff()}ダメージを与える。」を繰り返す。",
   "AVEMUJICA-ODE_TO_WAR.title": "戦のオード",
-  "AVEMUJICA-SOPHIE.description": "[gold]作曲[/gold]: [gold]弱体[/gold]{VulnerablePower:diff()}を得る。\n[gold]Compose[/gold] \"Enemy loses {HpLoss:diff()} HP.\"",
+
+  "AVEMUJICA-SOPHIE.description": "[gold]作曲[/gold]「[gold]弱体[/gold]{VulnerablePower:diff()}を得る。」\n[gold]作曲[/gold]「敵はHP{HpLoss:diff()}を失う。」",
   "AVEMUJICA-SOPHIE.title": "Sophie",
-  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.description": "Gain {Block:diff()} [gold]Block[/gold] X times.\n[gold]Exhaust[/gold] X cards.",
+
+  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.description": "[gold]ブロック[/gold]{Block:diff()}をX回得る。\nカードをX枚[gold]廃棄[/gold]する。",
   "AVEMUJICA-DO_NOT_FEAR_FORGETTING.title": "忘却を恐れるな",
-  "AVEMUJICA-BLOOD_MOON.description": "Deal {Damage:diff()} damage to a random enemy.\n[gold]Dreamspin[/gold] equal to the damage dealt.",
+
+  "AVEMUJICA-BLOOD_MOON.description": "ランダムな敵に{Damage:diff()}ダメージを与える。\n与えたダメージに等しい[gold]夢紡ぎ[/gold]。",
   "AVEMUJICA-BLOOD_MOON.title": "血月の怒り",
-  "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.\nIf the target is a [gold]Doll[/gold], they can use an additional [gold]Skill[/gold] this turn.",
+
+  "AVEMUJICA-TWO_MOONS.description": "[gold]夢紡ぎ[/gold]{Dreamspin:diff()}。\n対象が[gold]人形[/gold]の場合、このターン、その対象は追加で[gold]スキル[/gold]を使用できる。",
   "AVEMUJICA-TWO_MOONS.title": "ふたつの月",
-  "AVEMUJICA-BLUE_MOON.description": "At the start of your turn, gain {BlueMoonPower:diff()} [gold]Dream Thread[/gold].",
+
+  "AVEMUJICA-BLUE_MOON.description": "ターン開始時、[gold]夢の糸[/gold]{BlueMoonPower:diff()}を得る。",
   "AVEMUJICA-BLUE_MOON.title": "蒼月の悲哀",
-  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "At the start of your turn, ALL [gold]Dolls[/gold] gain {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold].",
+
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "ターン開始時、すべての[gold]人形[/gold]が[gold]筋力[/gold]と[gold]敏捷性[/gold]{StrengthPower:diff()}を得る。",
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "オブリビオニスの騎士",
-  "AVEMUJICA-FLAWLESS_PERFORMANCE.description": "[gold]Perform[/gold] cards [gold]Retain[/gold].\n[gold]パフォーム[/gold]効果が常に発動する。",
+
+  "AVEMUJICA-FLAWLESS_PERFORMANCE.description": "[gold]パフォーム[/gold]カードは[gold]保留[/gold]され、\n[gold]パフォーム[/gold]効果が常に発動する。",
   "AVEMUJICA-FLAWLESS_PERFORMANCE.title": "完璧な演奏",
+
   "AVEMUJICA-BLACK_BIRTHDAY.description": "すべての敵に{Damage:diff()}ダメージを与える。\n[gold]パフォーム アタック アタック:[/gold] 追加で{Repeat:diff()}回攻撃する。",
   "AVEMUJICA-BLACK_BIRTHDAY.title": "黒のバースデイ",
+
   "AVEMUJICA-PERFECT_COMBO.description": "このターンに[gold]パフォーム[/gold]効果が発動した回数1回につき、[gold]パフォーム[/gold]効果が追加で1回発動する。",
   "AVEMUJICA-PERFECT_COMBO.title": "パーフェクトコンボストーム",
+
   "AVEMUJICA-GEORGETTE_ME.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\n[gold]パフォーム スキル スキル:[/gold] [gold]ブロック[/gold]を2倍にする。",
   "AVEMUJICA-GEORGETTE_ME.title": "Georgette Me, Georgette You",
+
   "AVEMUJICA-ENDLESS_PERFORMANCE.description": "{Damage:diff()}ダメージを与える。\n[gold]パフォーム[/gold]するたび、このカードを[gold]手札[/gold]に加える。",
   "AVEMUJICA-ENDLESS_PERFORMANCE.title": "終わりなき演奏",
+
   "AVEMUJICA-ETHER.description": "[gold]保留[/gold]を持つカードはプレイ時に[gold]廃棄[/gold]される。\nプレイ時に[gold]廃棄[/gold]されるカードのコストは0になる。",
   "AVEMUJICA-ETHER.title": "Ether",
+
   "AVEMUJICA-ALEA_IACTA_EST.description": "[gold]筋力[/gold]{StrengthPower:diff()}を得る。\nこの戦闘中にブロックされていないアタックダメージを受けた場合、死亡する。",
   "AVEMUJICA-ALEA_IACTA_EST.title": "賽は投げられた",
+
   "AVEMUJICA-CONSIGN.description": "{Damage:diff()}ダメージを与える。\n[gold]リーサル[/gold]時、戦闘終了時に[gold]デッキ[/gold]からカードを1枚削除してもよい。",
   "AVEMUJICA-CONSIGN.title": "忘却に捧ぐ",
-  "AVEMUJICA-LOFT_MOON.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.\nAt the end of your turn, [gold]Dolls[/gold] gain {LoftMoonPower:diff()} HP.",
+
+  "AVEMUJICA-LOFT_MOON.description": "[gold]夢紡ぎ[/gold]{Dreamspin:diff()}。\nターン終了時、[gold]人形[/gold]がHP{LoftMoonPower:diff()}を得る。",
   "AVEMUJICA-LOFT_MOON.title": "ロフト・ムーン",
-  "AVEMUJICA-PULL_FROM_OBLIVION.description": "[gold]廃棄札[/gold]のカードを1枚[gold]手札[/gold]に加える。{IfUpgraded:show:\nIt costs 0 this combat.}",
+
+  "AVEMUJICA-PULL_FROM_OBLIVION.description": "[gold]廃棄札[/gold]のカードを1枚[gold]手札[/gold]に加える。{IfUpgraded:show:\nこの戦闘中、そのカードのコストは0になる。}",
   "AVEMUJICA-PULL_FROM_OBLIVION.selectionScreenPrompt": "[gold]手札[/gold]に加えるカードを1枚選ぶ。",
   "AVEMUJICA-PULL_FROM_OBLIVION.title": "忘却からの回収",
+
   "AVEMUJICA-VIRTUOSO_FORM.description": "ターン開始時、[gold]手札[/gold]のすべてのカードに[gold]熟練[/gold]{VirtuosoFormPower:diff()}を[gold]エンチャント[/gold]する。",
   "AVEMUJICA-VIRTUOSO_FORM.title": "ヴィルトゥオーソの型",
-  "AVEMUJICA-GARDEN.description": "Whenever a [gold]Doll's Skill[/gold] is activated, draw {GardenPower:diff()} {GardenPower:plural:card|cards}.",
-  "AVEMUJICA-GARDEN.title": "Garden of Lilies",
-  "AVEMUJICA-CRUCIFIX.description": "Deal {Damage:diff()} damage.\nGain {ThornsPower:diff()} [gold]Thorns[/gold].",
+
+  "AVEMUJICA-GARDEN.description": "[gold]人形のスキル[/gold]が発動するたび、カードを{GardenPower:diff()}枚引く。",
+  "AVEMUJICA-GARDEN.title": "百合の庭園",
+
+  "AVEMUJICA-CRUCIFIX.description": "{Damage:diff()}ダメージを与える。\n[gold]トゲ[/gold]{ThornsPower:diff()}を得る。",
   "AVEMUJICA-CRUCIFIX.title": "Crucifix X",
-  "AVEMUJICA-PRELUDE.description": "Put {Cards:diff()} cards from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold] and add [gold]Retain[/gold] to them.",
-  "AVEMUJICA-PRELUDE.title": "Prelude in Blue",
-  "AVEMUJICA-PRELUDE.selectionScreenPrompt": "Choose cards to put back in your Hand.",
-  "AVEMUJICA-PURSUIT_OF_MASTERY.description": "[gold]Enchant[/gold] a card with [gold]Masterful[/gold] {Enchant:diff()}.\nWhen [gold]Retained[/gold], increase the amount by {EnchantGrow:diff()}.",
-  "AVEMUJICA-PURSUIT_OF_MASTERY.title": "Pursuit of Mastery",
-  "AVEMUJICA-PURSUIT_OF_MASTERY.selectionScreenPrompt": "Choose a card to [gold]Enchant[/gold].",
-  "AVEMUJICA-GIBBOUS_MOON_ENVY.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.",
-  "AVEMUJICA-GIBBOUS_MOON_ENVY.title": "Gibbous Moon's Envy",
-  "AVEMUJICA-EXPLOSIVE_FINALE.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], deal {ExplosiveFinalePower:diff()} damage to ALL enemies.",
-  "AVEMUJICA-EXPLOSIVE_FINALE.title": "Explosive Finale",
-  "AVEMUJICA-FRUSTRATION.description": "Whenever a card is [gold]Exhausted[/gold], gain {FrustrationPower:diff()} [gold]Strength[/gold] this turn.",
-  "AVEMUJICA-FRUSTRATION.title": "Frustration",
-  "AVEMUJICA-RONDO.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.\n[gold]Perform Attack:[/gold] Gain {Block:diff()} [gold]Block[/gold].",
-  "AVEMUJICA-RONDO.title": "Rondo in Orange",
-  "AVEMUJICA-INSPIRING_DANCE.description": "Another player gains X{IfUpgraded:show:+1} {Energy:energyIcons()} and draws X{IfUpgraded:show:+1} cards.",
-  "AVEMUJICA-INSPIRING_DANCE.title": "Inspiring Dance",
+
+  "AVEMUJICA-PRELUDE.description": "[gold]捨て札[/gold]からカードを{Cards:diff()}枚[gold]手札[/gold]に加え、[gold]保留[/gold]を付与する。",
+  "AVEMUJICA-PRELUDE.title": "青のプレリュード",
+  "AVEMUJICA-PRELUDE.selectionScreenPrompt": "[gold]手札[/gold]に戻すカードを選ぶ。",
+
+  "AVEMUJICA-PURSUIT_OF_MASTERY.description": "カード1枚に[gold]熟練[/gold]{Enchant:diff()}を[gold]エンチャント[/gold]する。\n[gold]保留[/gold]した時、その数値を{EnchantGrow:diff()}増加させる。",
+  "AVEMUJICA-PURSUIT_OF_MASTERY.title": "熟練の追求",
+  "AVEMUJICA-PURSUIT_OF_MASTERY.selectionScreenPrompt": "[gold]エンチャント[/gold]するカードを1枚選ぶ。",
+
+  "AVEMUJICA-GIBBOUS_MOON_ENVY.description": "[gold]夢紡ぎ[/gold]{Dreamspin:diff()}。",
+  "AVEMUJICA-GIBBOUS_MOON_ENVY.title": "盈月の嫉妬",
+
+  "AVEMUJICA-EXPLOSIVE_FINALE.description": "[gold]楽曲[/gold]を完成させるたび、すべての敵に{ExplosiveFinalePower:diff()}ダメージを与える。",
+  "AVEMUJICA-EXPLOSIVE_FINALE.title": "爆発的フィナーレ",
+
+  "AVEMUJICA-FRUSTRATION.description": "カードが[gold]廃棄[/gold]されるたび、このターン[gold]筋力[/gold]{FrustrationPower:diff()}を得る。",
+  "AVEMUJICA-FRUSTRATION.title": "フラストレーション",
+
+  "AVEMUJICA-RONDO.description": "{Damage:diff()}ダメージを{Repeat:diff()}回与える。\n[gold]パフォーム アタック:[/gold] {Block:diff()}[gold]ブロック[/gold]を得る。",
+  "AVEMUJICA-RONDO.title": "橙のロンド",
+
+  "AVEMUJICA-INSPIRING_DANCE.description": "他のプレイヤー1人はX{IfUpgraded:show:+1}{Energy:energyIcons()}を得て、カードをX{IfUpgraded:show:+1}枚引く。",
+  "AVEMUJICA-INSPIRING_DANCE.title": "触発のダンス",
+
   "AVEMUJICA-GROUP_PERFORMANCE.description": "[gold]楽曲[/gold]の[gold]作曲[/gold]を完成させるたび、他の全プレイヤーにもそのコピーを{Cards:diff()}枚与える。",
   "AVEMUJICA-GROUP_PERFORMANCE.title": "合同演奏",
+
   "AVEMUJICA-SPARK.description": "{IfUpgraded:show:[gold]アップグレード[/gold]}[gold]作曲[/gold]を{Repeat:diff()}回行う。",
   "AVEMUJICA-SPARK.title": "閃き",
-  "AVEMUJICA-GODDESS_OF_OBLIVION.description": "Gain {Oblivion:diff()} [gold]Oblivion[/gold].\nWhenever a card is [gold]Exhausted[/gold], gain {GoddessOfOblivionPower:diff()} [gold]Oblivion[/gold].",
+
+  "AVEMUJICA-GODDESS_OF_OBLIVION.description": "[gold]忘却[/gold]{Oblivion:diff()}を得る。\nカードが[gold]廃棄[/gold]されるたび、[gold]忘却[/gold]{GoddessOfOblivionPower:diff()}を得る。",
   "AVEMUJICA-GODDESS_OF_OBLIVION.title": "忘却の女神"
 }
