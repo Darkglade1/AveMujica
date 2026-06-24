@@ -1,8 +1,8 @@
-﻿{
+{
   "AVEMUJICA.mod_title": "Ave Mujica",
-  "AVEMUJICA-USE_OBLIVIONIS_SKIN.title": "Use alternate skin for Oblivionis.",
-  "AVEMUJICA-USE_DOLORIS_SKIN.title": "Use alternate skin for Doloris.",
-  "AVEMUJICA-USE_MORTIS_SKIN.title": "Use alternate skin for Mortis.",
-  "AVEMUJICA-USE_TIMORIS_SKIN.title": "Use alternate skin for Timoris.",
-  "AVEMUJICA-USE_AMORIS_SKIN.title": "Use alternate skin for Amoris."
+  "AVEMUJICA-USE_OBLIVIONIS_SKIN.title": "オブリビオニスの別スキンを使用する。",
+  "AVEMUJICA-USE_DOLORIS_SKIN.title": "ドロリスの別スキンを使用する。",
+  "AVEMUJICA-USE_MORTIS_SKIN.title": "モーティスの別スキンを使用する。",
+  "AVEMUJICA-USE_TIMORIS_SKIN.title": "ティモリスの別スキンを使用する。",
+  "AVEMUJICA-USE_AMORIS_SKIN.title": "アモーリスの別スキンを使用する。"
 }

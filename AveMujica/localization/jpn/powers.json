@@ -3,20 +3,20 @@
   "AVEMUJICA-OBLIVION.smartDescription": "[gold]忘却[/gold]を得るたび、最もHPの低い敵に[gold]忘却[/gold]に等しいダメージを与える。",
   "AVEMUJICA-OBLIVION.title": "忘却",
 
-  "AVEMUJICA-DREAM_THREAD_POWER.description": "When you have [blue]3[/blue] [gold]Dream Thread[/gold], consume them to [gold]Awaken[/gold] a [gold]Doll[/gold].",
-  "AVEMUJICA-DREAM_THREAD_POWER.smartDescription": "When you have [blue]3[/blue] [gold]Dream Thread[/gold], consume them to [gold]Awaken[/gold] a [gold]Doll[/gold].",
-  "AVEMUJICA-DREAM_THREAD_POWER.title": "Dream Thread",
+  "AVEMUJICA-DREAM_THREAD_POWER.description": "[gold]夢の糸[/gold]が[blue]3[/blue]つになると、消費して[gold]人形[/gold]を[gold]目覚め[/gold]させる。",
+  "AVEMUJICA-DREAM_THREAD_POWER.smartDescription": "[gold]夢の糸[/gold]が[blue]3[/blue]つになると、消費して[gold]人形[/gold]を[gold]目覚め[/gold]させる。",
+  "AVEMUJICA-DREAM_THREAD_POWER.title": "夢の糸",
 
   "AVEMUJICA-HOW_DARE_YOU.description": "アタックを受けるたび、[gold]ドロリス[/gold]が攻撃した敵に[blue]6[/blue]ダメージを与え、この効果のダメージが[blue]1[/blue]増加する。",
   "AVEMUJICA-HOW_DARE_YOU.smartDescription": "アタックを受けるたび、[gold]ドロリス[/gold]が攻撃した敵に[blue]{Amount}[/blue]ダメージを与え、この効果のダメージが[blue]1[/blue]増加する。",
   "AVEMUJICA-HOW_DARE_YOU.title": "許さない！",
 
-  "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage this turn and can't use other abilities this turn..",
-  "AVEMUJICA-DO_NOT_FEAR_DEATH.smartDescription": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage and can't use other abilities this turn.",
+  "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "このターン、[gold]モーティス[/gold]がブロックされなかったアタックダメージをすべて吸収する。このターン、他のアビリティは使用できない。",
+  "AVEMUJICA-DO_NOT_FEAR_DEATH.smartDescription": "このターン、[gold]モーティス[/gold]がブロックされなかったアタックダメージをすべて吸収する。このターン、他のアビリティは使用できない。",
   "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "死を恐れるなかれ",
 
-  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "Receives more damage from Attacks this turn.",
-  "AVEMUJICA-MOONLIGHT_EXECUTION.smartDescription": "Receives [blue]{Amount}%[/blue] more damage from Attacks this turn.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "このターン、アタックから受けるダメージが増加する。",
+  "AVEMUJICA-MOONLIGHT_EXECUTION.smartDescription": "このターン、アタックから受けるダメージが[blue]{Amount}%[/blue]増加する。",
   "AVEMUJICA-MOONLIGHT_EXECUTION.title": "月光の処刑",
 
   "AVEMUJICA-FUGUE_POWER.description": "次にプレイする[gold]廃棄[/gold]か[gold]保留[/gold]を持つカードのコストは[blue]0[/blue]になる。",
@@ -43,20 +43,20 @@
   "AVEMUJICA-ENCORE_POWER.smartDescription": "[gold]楽曲[/gold]は[gold]リプレイ[/gold][blue]{Amount}[/blue]を持つ。",
   "AVEMUJICA-ENCORE_POWER.title": "アンコール",
 
-  "AVEMUJICA-BLUE_MOON_POWER.description": "At the start of your turn, gain [gold]Dream Thread[/gold].",
-  "AVEMUJICA-BLUE_MOON_POWER.smartDescription": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Dream Thread[/gold].",
+  "AVEMUJICA-BLUE_MOON_POWER.description": "ターン開始時、[gold]夢の糸[/gold]を得る。",
+  "AVEMUJICA-BLUE_MOON_POWER.smartDescription": "ターン開始時、[gold]夢の糸[/gold][blue]{Amount}[/blue]を得る。",
   "AVEMUJICA-BLUE_MOON_POWER.title": "蒼月の悲哀",
 
-  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS_POWER.description": "At the start of your turn, ALL [gold]Dolls[/gold] gain [gold]Strength[/gold] and [gold]Dexterity[/gold].",
-  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS_POWER.smartDescription": "At the start of your turn, ALL [gold]Dolls[/gold] gain [blue]{Amount}[/blue] [gold]Strength[/gold] and [gold]Dexterity[/gold].",
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS_POWER.description": "ターン開始時、すべての[gold]人形[/gold]が[gold]筋力[/gold]と[gold]敏捷性[/gold]を得る。",
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS_POWER.smartDescription": "ターン開始時、すべての[gold]人形[/gold]が[gold]筋力[/gold]と[gold]敏捷性[/gold][blue]{Amount}[/blue]を得る。",
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS_POWER.title": "オブリビオニスの騎士",
 
-  "AVEMUJICA-GODDESS_OF_OBLIVION_POWER.description": "Whenever a card is [gold]Exhausted[/gold], gain [gold]Oblivion[/gold].",
-  "AVEMUJICA-GODDESS_OF_OBLIVION_POWER.smartDescription": "Whenever a card is [gold]Exhausted[/gold], gain [blue]{Amount}[/blue] [gold]Oblivion[/gold].",
+  "AVEMUJICA-GODDESS_OF_OBLIVION_POWER.description": "カードが[gold]廃棄[/gold]されるたび、[gold]忘却[/gold]を得る。",
+  "AVEMUJICA-GODDESS_OF_OBLIVION_POWER.smartDescription": "カードが[gold]廃棄[/gold]されるたび、[gold]忘却[/gold][blue]{Amount}[/blue]を得る。",
   "AVEMUJICA-GODDESS_OF_OBLIVION_POWER.title": "忘却の女神",
 
-  "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.description": "[gold]Perform[/gold] cards [gold]Retain[/gold].\n[gold]パフォーム[/gold]効果が常に発動する。",
-  "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.smartDescription": "[gold]Perform[/gold] cards [gold]Retain[/gold].\n[gold]パフォーム[/gold]効果が常に発動する。",
+  "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.description": "[gold]パフォーム[/gold]カードは[gold]保留[/gold]され、\n[gold]パフォーム[/gold]効果が常に発動する。",
+  "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.smartDescription": "[gold]パフォーム[/gold]カードは[gold]保留[/gold]され、\n[gold]パフォーム[/gold]効果が常に発動する。",
   "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.title": "完璧な演奏",
 
   "AVEMUJICA-PERFECT_COMBO_POWER.description": "このターンに[gold]パフォーム[/gold]効果が発動した回数1回につき、[gold]パフォーム[/gold]効果が追加で1回発動する。",
@@ -71,28 +71,28 @@
   "AVEMUJICA-CONSIGN_POWER.smartDescription": "戦闘終了時、[gold]デッキ[/gold]からカードを[blue]{Amount}[/blue]枚削除する。",
   "AVEMUJICA-CONSIGN_POWER.title": "忘却に捧ぐ",
 
-  "AVEMUJICA-LOFT_MOON_POWER.description": "At the end of your turn, [gold]Dolls[/gold] gain [blue]{Amount}[/blue] HP.",
-  "AVEMUJICA-LOFT_MOON_POWER.smartDescription": "At the end of your turn, [gold]Dolls[/gold] gain [blue]{Amount}[/blue] HP.",
+  "AVEMUJICA-LOFT_MOON_POWER.description": "ターン終了時、[gold]人形[/gold]がHP[blue]{Amount}[/blue]を得る。",
+  "AVEMUJICA-LOFT_MOON_POWER.smartDescription": "ターン終了時、[gold]人形[/gold]がHP[blue]{Amount}[/blue]を得る。",
   "AVEMUJICA-LOFT_MOON_POWER.title": "ロフト・ムーン",
 
   "AVEMUJICA-VIRTUOSO_FORM_POWER.description": "ターン開始時、[gold]手札[/gold]のすべてのカードに[gold]熟練[/gold]を[gold]エンチャント[/gold]する。",
   "AVEMUJICA-VIRTUOSO_FORM_POWER.smartDescription": "ターン開始時、[gold]手札[/gold]のすべてのカードに[gold]熟練[/gold][blue]{Amount}[/blue]を[gold]エンチャント[/gold]する。",
   "AVEMUJICA-VIRTUOSO_FORM_POWER.title": "ヴィルトゥオーソの型",
 
-  "AVEMUJICA-GARDEN_POWER.description": "Whenever a [gold]Doll's Skill[/gold] is activated, draw cards.",
-  "AVEMUJICA-GARDEN_POWER.smartDescription": "Whenever a [gold]Doll's Skill[/gold] is activated, draw [blue]{Amount}[/blue] {Amount:plural:card|cards}.",
-  "AVEMUJICA-GARDEN_POWER.title": "Garden of Lilies",
+  "AVEMUJICA-GARDEN_POWER.description": "[gold]人形のスキル[/gold]が発動するたび、カードを引く。",
+  "AVEMUJICA-GARDEN_POWER.smartDescription": "[gold]人形のスキル[/gold]が発動するたび、カードを[blue]{Amount}[/blue]枚引く。",
+  "AVEMUJICA-GARDEN_POWER.title": "百合の庭園",
 
-  "AVEMUJICA-EXPLOSIVE_FINALE_POWER.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], deal damage to ALL enemies.",
-  "AVEMUJICA-EXPLOSIVE_FINALE_POWER.smartDescription": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], deal [blue]{Amount}[/blue] damage to ALL enemies.",
-  "AVEMUJICA-EXPLOSIVE_FINALE_POWER.title": "Explosive Finale",
+  "AVEMUJICA-EXPLOSIVE_FINALE_POWER.description": "[gold]楽曲[/gold]を完成させるたび、全ての敵にダメージを与える。",
+  "AVEMUJICA-EXPLOSIVE_FINALE_POWER.smartDescription": "[gold]楽曲[/gold]を完成させるたび、全ての敵に[blue]{Amount}[/blue]ダメージを与える。",
+  "AVEMUJICA-EXPLOSIVE_FINALE_POWER.title": "爆発的フィナーレ",
 
-  "AVEMUJICA-FRUSTRATION_POWER.description": "Whenever a card is [gold]Exhausted[/gold], gain [gold]Strength[/gold] this turn.",
-  "AVEMUJICA-FRUSTRATION_POWER.smartDescription": "Whenever a card is [gold]Exhausted[/gold], gain [blue]{Amount}[/blue] [gold]Strength[/gold] this turn.",
-  "AVEMUJICA-FRUSTRATION_POWER.title": "Frustration",
+  "AVEMUJICA-FRUSTRATION_POWER.description": "カードが[gold]廃棄[/gold]されるたび、このターン[gold]筋力[/gold]を得る。",
+  "AVEMUJICA-FRUSTRATION_POWER.smartDescription": "カードが[gold]廃棄[/gold]されるたび、このターン[gold]筋力[/gold][blue]{Amount}[/blue]を得る。",
+  "AVEMUJICA-FRUSTRATION_POWER.title": "フラストレーション",
 
-  "AVEMUJICA-AFTERGLOW_POWER.description": "The next time you [gold]Perform[/gold], gain Energy.",
-  "AVEMUJICA-AFTERGLOW_POWER.smartDescription": "The next time you [gold]Perform[/gold], gain {Amount:energyIcons()}.",
+  "AVEMUJICA-AFTERGLOW_POWER.description": "次に[gold]パフォーム[/gold]した時、エナジーを得る。",
+  "AVEMUJICA-AFTERGLOW_POWER.smartDescription": "次に[gold]パフォーム[/gold]した時、{Amount:energyIcons()}を得る。",
   "AVEMUJICA-AFTERGLOW_POWER.title": "Afterglow",
 
   "AVEMUJICA-GROUP_PERFORMANCE_POWER.description": "[gold]楽曲[/gold]の[gold]作曲[/gold]を完成させるたび、他の全プレイヤーにもそのコピーを[blue]1[/blue]枚与える。",

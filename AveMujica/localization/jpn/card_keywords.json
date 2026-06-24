@@ -1,12 +1,12 @@
 {
-  "AVEMUJICA-PERFORM.description": "ターン中に特定のカードタイプをプレイしている場合、カードの[gold]パフォーム[/gold]効果が発動する。",
+  "AVEMUJICA-PERFORM.description": "このターン中に指定されたカードタイプをプレイしている場合、[gold]パフォーム[/gold]効果が発動する。",
   "AVEMUJICA-PERFORM.title": "パフォーム",
-  "AVEMUJICA-COMPOSE.description": "現在の[gold]楽曲[/gold]に特定の効果を追加する。効果が指定されていない場合、ランダムな選択肢から選んで追加する。[blue]3[/blue]回[gold]作曲[/gold]すると、[gold]楽曲[/gold]を[gold]手札[/gold]に加える。",
+  "AVEMUJICA-COMPOSE.description": "現在の[gold]楽曲[/gold]に指定された効果を追加する。効果が指定されていない場合、ランダムな効果を選んで追加する。[blue]3[/blue]回[gold]作曲[/gold]すると、[gold]楽曲[/gold]を手札に加える。",
   "AVEMUJICA-COMPOSE.title": "作曲",
-  "AVEMUJICA-AWAKEN.description": "あなたを助ける味方を召喚する。召喚した味方がすでにいる場合、代わりに味方のHPを回復する。味方はターン終了時に自動で「+」アビリティを使用する。味方の行動予告の横にあるボタンをクリックすることで、HPが十分にある場合「-」アビリティを発動できる。味方は1ターンにつき1回のみ行動できる。",
+  "AVEMUJICA-AWAKEN.description": "[gold]人形[/gold]を召喚する。[gold]人形[/gold]はターン終了時にデフォルトアビリティを使用する。行動予告の横にあるボタンをクリックすることで、HPが十分にある場合スキルを発動できる。",
   "AVEMUJICA-AWAKEN.title": "目覚め",
-  "AVEMUJICA-DREAMSPIN.description": "[gold]Dreamspin[/gold] cards target yourself or a [gold]Doll[/gold].\nTarget yourself to gain [gold]Dream Thread[/gold]. [blue]3[/blue] [gold]Dream Thread[/gold] is used to [gold]Awaken[/gold] a [gold]Doll[/gold].\nTarget a [gold]Doll[/gold] to give them HP. Any [gold]Dream Thread[/gold] you have is consumed to give additional HP.",
-  "AVEMUJICA-DREAMSPIN.title": "Dreamspin",
-  "AVEMUJICA-DOLL.description": "[gold]Doloris[/gold], [gold]Mortis[/gold], [gold]Timoris[/gold], and [gold]Amoris[/gold].",
-  "AVEMUJICA-DOLL.title": "Doll"
+  "AVEMUJICA-DREAMSPIN.description": "[gold]夢紡ぎ[/gold]カードは自分または[gold]人形[/gold]を対象にする。\n自分を対象にすると[gold]夢の糸[/gold]を得る。[blue]3[/blue]つの[gold]夢の糸[/gold]で[gold]人形[/gold]を[gold]目覚め[/gold]させる。\n[gold]人形[/gold]を対象にするとHPを回復する。[gold]夢の糸[/gold]を持っている場合、消費して追加のHPを与える。",
+  "AVEMUJICA-DREAMSPIN.title": "夢紡ぎ",
+  "AVEMUJICA-DOLL.description": "[gold]ドロリス[/gold]、[gold]モーティス[/gold]、[gold]ティモリス[/gold]、[gold]アモーリス[/gold]。",
+  "AVEMUJICA-DOLL.title": "人形"
 }
