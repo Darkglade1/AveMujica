@@ -13,7 +13,7 @@ public class Sophie() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Rare,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new HpLossVar(30), new PowerVar<VulnerablePower>(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new HpLossVar(35), new PowerVar<VulnerablePower>(1)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose),
@@ -26,11 +26,7 @@ public class Sophie() : AveMujicaCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
-        var gainVulnerableMod = (GainVulnerableMod)ModelDb.Get<GainVulnerableMod>().MutableClone();
-        gainVulnerableMod.VulnerableAmt = (int)DynamicVars["VulnerablePower"].BaseValue;
-        await ComposeHelper.AddComposeEffectsToSong([gainVulnerableMod], Owner);
-        
+        await PowerCmd.Apply<VulnerablePower>(choiceContext, Owner.Creature,  DynamicVars["VulnerablePower"].IntValue, Owner.Creature, this);
         var enemyLoseHPMod = (EnemyLoseHPMod)ModelDb.Get<EnemyLoseHPMod>().MutableClone();
         enemyLoseHPMod.HPLossAmt = (int)DynamicVars["HpLoss"].BaseValue;
         await ComposeHelper.AddComposeEffectsToSong([enemyLoseHPMod], Owner);
@@ -38,7 +34,6 @@ public class Sophie() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars["VulnerablePower"].UpgradeValueBy(-1);
-        DynamicVars.HpLoss.UpgradeValueBy(10);
+        DynamicVars.HpLoss.UpgradeValueBy(15);
     }
 }

@@ -12,7 +12,7 @@ namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
 public class SymbolFire() : AveMujicaCard(2,
     CardType.Attack, CardRarity.Uncommon,
-    TargetType.AllEnemies)
+    TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(16, ValueProp.Move), new PowerVar<StrengthPower>(2)];
 

@@ -145,7 +145,7 @@
   "AVEMUJICA-EMOTIONAL_OUTBURST.description": "Deal {Damage:diff()} damage.\nDeal {Damage:diff()} damage again for each card [gold]Exhausted[/gold] this turn.{InCombat:\n(Hits {CalculatedHits:diff()} extra {CalculatedHits:plural:time|times})|}",
   "AVEMUJICA-EMOTIONAL_OUTBURST.title": "Emotional Outburst",
 
-  "AVEMUJICA-SYMBOL_FIRE.description": "Deal {Damage:diff()} damage to ALL enemies.\nGain {StrengthPower:diff()} [gold]Strength[/gold].",
+  "AVEMUJICA-SYMBOL_FIRE.description": "Deal {Damage:diff()} damage.\nGain {StrengthPower:diff()} [gold]Strength[/gold].",
   "AVEMUJICA-SYMBOL_FIRE.title": "Symbol I: Fire",
 
   "AVEMUJICA-SYMBOL_AIR.description": "Apply {WeakPower:diff()} [gold]Weak[/gold].\nDraw {Cards:diff()} cards.\nGain {Energy:energyIcons()}.",
@@ -198,7 +198,7 @@
   "AVEMUJICA-ODE_TO_WAR.description": "Deal {Damage:diff()} damage.\n[gold]Compose[/gold] \"Deal {Compose:diff()} damage.\" until you finish [gold]Composing[/gold] a [gold]Song[/gold].",
   "AVEMUJICA-ODE_TO_WAR.title": "Ode To War",
 
-  "AVEMUJICA-SOPHIE.description": "[gold]Compose[/gold] \"Gain {VulnerablePower:diff()} [gold]Vulnerable[/gold].\"\n[gold]Compose[/gold] \"Enemy loses {HpLoss:diff()} HP.\"",
+  "AVEMUJICA-SOPHIE.description": "Gain {VulnerablePower:diff()} [gold]Vulnerable[/gold].\n[gold]Compose[/gold] \"Enemy loses {HpLoss:diff()} HP.\"",
   "AVEMUJICA-SOPHIE.title": "Sophie",
 
   "AVEMUJICA-DO_NOT_FEAR_FORGETTING.description": "Gain {Block:diff()} [gold]Block[/gold] X times.\n[gold]Exhaust[/gold] X cards.",
