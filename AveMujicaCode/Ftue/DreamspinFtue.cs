@@ -18,8 +18,8 @@ public class DreamspinFtue() : CustomSingletonModel(HookType.Combat)
 		CardModel card,
 		bool fromHandDraw)
 	{
-		if (LocalContext.IsMe(card.Owner) &&
-		    card.HoverTips.Contains(HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin)) && Config.ViewDreamspinFtue)
+		if (Config.ViewDreamspinFtue && LocalContext.IsMe(card.Owner) &&
+		    card.HoverTips.Contains(HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin)))
 		{
 			return TaskHelper.RunSafely(ShowCombatFtue());
 		}
