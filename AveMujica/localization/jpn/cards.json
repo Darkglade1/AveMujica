@@ -145,7 +145,7 @@
   "AVEMUJICA-EMOTIONAL_OUTBURST.description": "{Damage:diff()}ダメージを与える。\nこのターンに[gold]廃棄[/gold]したカード1枚につき、{Damage:diff()}ダメージを再び与える。{InCombat:\n(追加で{CalculatedHits:diff()}回攻撃)|}",
   "AVEMUJICA-EMOTIONAL_OUTBURST.title": "感情の爆発",
 
-  "AVEMUJICA-SYMBOL_FIRE.description": "すべての敵に{Damage:diff()}ダメージを与える。\n[gold]筋力[/gold]{StrengthPower:diff()}を得る。",
+  "AVEMUJICA-SYMBOL_FIRE.description": "{Damage:diff()}ダメージを与える。\n[gold]筋力[/gold]{StrengthPower:diff()}を得る。",
   "AVEMUJICA-SYMBOL_FIRE.title": "Symbol I : △",
 
   "AVEMUJICA-SYMBOL_AIR.description": "[gold]脱力[/gold]{WeakPower:diff()}を付与する。\nカードを{Cards:diff()}枚引く。\n{Energy:energyIcons()}を得る。",
@@ -198,7 +198,7 @@
   "AVEMUJICA-ODE_TO_WAR.description": "{Damage:diff()}ダメージを与える。\n[gold]楽曲[/gold]が完成するまで[gold]作曲[/gold]「{Compose:diff()}ダメージを与える。」を繰り返す。",
   "AVEMUJICA-ODE_TO_WAR.title": "戦のオード",
 
-  "AVEMUJICA-SOPHIE.description": "[gold]作曲[/gold]「[gold]弱体[/gold]{VulnerablePower:diff()}を得る。」\n[gold]作曲[/gold]「敵はHP{HpLoss:diff()}を失う。」",
+  "AVEMUJICA-SOPHIE.description": "[gold]弱体[/gold]{VulnerablePower:diff()}を得る。\n[gold]作曲[/gold]「敵はHP{HpLoss:diff()}を失う。」",
   "AVEMUJICA-SOPHIE.title": "Sophie",
 
   "AVEMUJICA-DO_NOT_FEAR_FORGETTING.description": "[gold]ブロック[/gold]{Block:diff()}をX回得る。\nカードをX枚[gold]廃棄[/gold]する。",

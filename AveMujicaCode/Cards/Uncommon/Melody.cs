@@ -28,6 +28,6 @@ public class Melody() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars["MelodyPower"].UpgradeValueBy(1);
+        EnergyCost.UpgradeBy(-1);
     }
 }
