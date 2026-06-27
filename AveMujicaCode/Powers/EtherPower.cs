@@ -29,17 +29,13 @@ public class EtherPower() : AveMujicaPower
         return false;
     }
     
-    public override (PileType, CardPilePosition) ModifyCardPlayResultPileTypeAndPosition(
-        CardModel card,
-        bool isAutoPlay,
-        ResourceInfo resources,
-        PileType pileType,
-        CardPilePosition position)
+    public override bool TryModifyKeywordsInCombat(CardModel card, ISet<CardKeyword> keywords)
     {
-        if (card.Owner.Creature == Owner && card.Keywords.Contains(CardKeyword.Retain))
+        // Don't add Exhaust to Powers since that makes them actually Exhaust instead of disappearing.
+        if (card.Owner == Owner.Player && keywords.Contains(CardKeyword.Retain) && card.Type != CardType.Power)
         {
-            return (PileType.Exhaust, position);
+            return keywords.Add(CardKeyword.Exhaust);
         }
-        return (pileType, position);
+        return false;
     }
 }
