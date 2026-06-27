@@ -18,7 +18,7 @@ public class CrescentMoonEchos() : AveMujicaCard(1,
         CardPlay play)
     {
         await AllyHelper.Dreamspin(choiceContext, Owner, DynamicVars["Dreamspin"].IntValue, play.Target, this);
-        if (play.Target == Owner.Creature)
+        if (play.Target == Owner.Creature || play.IsAutoPlay)
         {
             await AllyHelper.Dreamspin(choiceContext, Owner, DynamicVars["Dreamspin"].IntValue, play.Target, this);
         }
