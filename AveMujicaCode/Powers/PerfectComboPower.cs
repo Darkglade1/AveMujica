@@ -43,6 +43,7 @@ public class PerfectComboPower : AveMujicaPower
     {
         var numTriggers = CombatManager.Instance.History.Entries.OfType<PerformCardEntry>()
             .Count(e => e.Card.Owner.Creature == Owner && e.HappenedThisTurn(CombatState));
+        numTriggers = PerformCard.PerfectComboStormCap(numTriggers);
         Amount = numTriggers;
     }
 }

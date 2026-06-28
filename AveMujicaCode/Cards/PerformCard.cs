@@ -54,6 +54,7 @@ public abstract class PerformCard(int cost, CardType type, CardRarity rarity, Ta
             {
                 numTriggers += CombatManager.Instance.History.Entries.OfType<PerformCardEntry>()
                     .Count(e => e.Card.Owner == Owner && e.HappenedThisTurn(CombatState));
+                numTriggers = PerfectComboStormCap(numTriggers);
                 if (numTriggers > 1)
                 {
                     perfectCombo.Flash();
@@ -71,6 +72,11 @@ public abstract class PerformCard(int cost, CardType type, CardRarity rarity, Ta
             }
             perfectCombo?.UpdateCounter();
         }
+    }
+
+    public static int PerfectComboStormCap(int numTriggers)
+    {
+        return Math.Min(99, numTriggers);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
