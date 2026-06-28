@@ -1,0 +1,22 @@
+{
+  "AVEMUJICA-BLOCK-MOD.description": "Gagnez {0} [gold]Armure[/gold].",
+  "AVEMUJICA-DAMAGE-MOD.description": "Infligez {0} dégâts.",
+  "AVEMUJICA-DRAW-CARD-MOD.description": "Piochez {0} carte",
+  "AVEMUJICA-DRAW-CARD-MOD.plural_description": "Piochez {0} cartes",
+  "AVEMUJICA-DREAM-THREAD-MOD.description": "Gagnez {0} [gold]Tisse-rêve[/gold].",
+  "AVEMUJICA-ENEMY-LOSE-HP-MOD.description": "L'ennemi perd {0} PV.",
+  "AVEMUJICA-ENERGY-MOD.description": "Gagnez {0}.",
+  "AVEMUJICA-FLEX-MOD.description": "Gagnez {0} [gold]Force[/gold] ce tour.",
+  "AVEMUJICA-GAIN-VULNERABLE-MOD.description": "Gagnez {0} [gold]Vulnérable[/gold].",
+  "AVEMUJICA-LOSE-HP-MOD.description": "Perdez {0} PV.",
+  "AVEMUJICA-LOSE-STRENGTH-MOD.description": "Perdez {0} [gold]Force[/gold].",
+  "AVEMUJICA-MASTERFUL-MOD.description": "\n[purple]Magistral {0}[/purple]",
+  "AVEMUJICA-OBLIVION-MOD.description": "Gagnez {0} [gold]Oblivion[/gold]",
+  "AVEMUJICA-SEEK-MOD.description": "Sélectionnez {0} carte de votre [gold]Pioche[/gold] à placer dans votre [gold]Main[/gold].",
+  "AVEMUJICA-SEEK-MOD.plural_description": "Sélectionnez {0} cartes de votre [gold]Pioche[/gold] à placer dans votre [gold]Main[/gold].",
+  "AVEMUJICA-SEEK-MOD.selectionScreenPrompt": "Sélectionnez une carte à placer dans votre Main",
+  "AVEMUJICA-SHACKLE-MOD.description": "L'ennemi perd {0} [gold]Force[/gold] ce tour.",
+  "AVEMUJICA-STRENGTH-MOD.description": "Gagnez {0} [gold]Force[/gold].",
+  "AVEMUJICA-VULNERABLE-MOD.description": "Appliquez {0} [gold]Vulnérable[/gold].",
+  "AVEMUJICA-WEAK-MOD.description": "Appliquez {0} [gold]Affaibli[/gold]."
+}

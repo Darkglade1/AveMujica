@@ -1,0 +1,23 @@
+{
+  "AVEMUJICA-GRAND_PIANO.description": "Au début de votre premier {Turns:plural:tour|[blue]{}[/blue] tours}, [gold]Composer[/gold] Gagnez [blue]{Compose}[/blue] d'[gold]Armure[/gold].",
+  "AVEMUJICA-GRAND_PIANO.flavor": "Il lui fait signe de retourner sur la scène une fois de plus.",
+  "AVEMUJICA-GRAND_PIANO.title": "Grand Piano",
+  "AVEMUJICA-KEYBOARD.description": "Au début de chaque combat, [gold]Composer[/gold] Gagnez[blue]{Compose}[/blue] [gold]Armure[/gold].",
+  "AVEMUJICA-KEYBOARD.flavor": "Cet instrument la accompagné depuis son enfance. C'est l'une des dernières connection avec sa mère bien-aimé.",
+  "AVEMUJICA-KEYBOARD.title": "Synthétiseur",
+  "AVEMUJICA-MASQUERADE_MASK.description": "La première fois qu'une [gold]Interprétation[/gold] est activée chaque tour, piochez une carte",
+  "AVEMUJICA-MASQUERADE_MASK.flavor": "La mascarade commence. Les Poupées viennent à la vie.",
+  "AVEMUJICA-MASQUERADE_MASK.title": "Masque de Mascarade",
+  "AVEMUJICA-NOSTALGIC_SHEET_MUSIC.description": "Chaque fois qu'une [gold]Musique[/gold] est jouée, gagnez [blue]{Block}[/blue] [gold]Armure[/gold]",
+  "AVEMUJICA-NOSTALGIC_SHEET_MUSIC.flavor": "Même si leurs vies ne se croiseront plus jamais, cela ne les empêchera pas de marcher côte à côte.",
+  "AVEMUJICA-NOSTALGIC_SHEET_MUSIC.title": "Partition Nostalgique",
+  "AVEMUJICA-NOTEBOOK.description": "Chaque fois qu'une [gold]Musique[/gold] a fini d'être [gold]Composée[/gold], gagnez [blue]{StrengthPower}[/blue] [gold]Force[/gold].",
+  "AVEMUJICA-NOTEBOOK.flavor": "Quand les temps sont dures, elle trouve sa force dans les mots à l'intérieur.",
+  "AVEMUJICA-NOTEBOOK.title": "Carnet",
+  "AVEMUJICA-PLAYFUL_CORETTON.description": "Au début de chaque combat, gagnez [blue]{DreamThreadPower}[/blue] [gold]Soie Onirique[/gold].",
+  "AVEMUJICA-PLAYFUL_CORETTON.flavor": "Elle a toujours trouvé ça troublant à quel point elles pouvaient rapidement passez de mignones à terrifiantes.",
+  "AVEMUJICA-PLAYFUL_CORETTON.title": "Coretton Joueur",
+  "AVEMUJICA-PUPPET_STRINGS.description": "Les [gold]Poupées[/gold] apparaissent avec [blue]{StrengthPower}[/blue] de [gold]Force[/gold] et [gold]Dexterity[/gold].",
+  "AVEMUJICA-PUPPET_STRINGS.flavor": "Elle trouve ça ironique que dans un endroit aussi êtrange, il y a toujours autant de marionnettes dansant inutilement sur leurs fils",
+  "AVEMUJICA-PUPPET_STRINGS.title": "Fils de Marionnette"
+}

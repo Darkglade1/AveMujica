@@ -1,0 +1,16 @@
+{
+  "AVEMUJICA-AVE_MUJICA.aromaPrinciple": "[sine][blue]Je dois persévérer... pour le biens de mes compagnons... [/blue][/sine]",
+  "AVEMUJICA-AVE_MUJICA.banter.alive.endTurnPing": "The show must go on.",
+  "AVEMUJICA-AVE_MUJICA.banter.dead.endTurnPing": "...",
+  "AVEMUJICA-AVE_MUJICA.cardsModifierDescription": "Les cartes d'Oblivionis vont désormais apparaître dans les récompenses et les boutiques.",
+  "AVEMUJICA-AVE_MUJICA.cardsModifierTitle": "Cartes d'Oblivionis",
+  "AVEMUJICA-AVE_MUJICA.description": "La Tisse-Rêve vous soumet une épreuve :\nSurmontez la Flêche ou sombrez dans un sommeil éternel.",
+  "AVEMUJICA-AVE_MUJICA.eventDeathPrevention": "J'ai la vie de mes compagnons sur mes épaules.",
+  "AVEMUJICA-AVE_MUJICA.goldMonologue": "La richesse n'a pas de sens sans credo.",
+  "AVEMUJICA-AVE_MUJICA.possessiveAdjective": "sa",
+  "AVEMUJICA-AVE_MUJICA.pronounObject": "la",
+  "AVEMUJICA-AVE_MUJICA.pronounPossessive": "ses",
+  "AVEMUJICA-AVE_MUJICA.pronounSubject": "elle",
+  "AVEMUJICA-AVE_MUJICA.title": "Oblivionis",
+  "AVEMUJICA-AVE_MUJICA.titleObject": "Oblivionis"
+}
