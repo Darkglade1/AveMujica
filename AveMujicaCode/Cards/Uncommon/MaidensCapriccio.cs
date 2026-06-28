@@ -16,6 +16,7 @@ public class MaidensCapriccio() : PerformCard(1,
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2), new("Exhaust", 2)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Perform),
         HoverTipFactory.FromKeyword(CardKeyword.Exhaust)
     ];
 
