@@ -1,4 +1,5 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Token;
+using AveMujica.AveMujicaCode.Hooks;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
@@ -7,7 +8,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 
 namespace AveMujica.AveMujicaCode.Powers;
-public class EncorePower() : AveMujicaPower
+public class EncorePower() : AveMujicaPower, IOnFinishComposing
 {
     public override PowerType Type =>
         PowerType.Buff;
@@ -58,10 +59,10 @@ public class EncorePower() : AveMujicaPower
             }
         }
     }
-
-    public override async Task AfterCardGeneratedForCombat(CardModel card, Player? creator)
+    
+    public async Task OnFinishComposing(Player composer, CardModel card)
     {
-        if (creator == null || creator.Creature != Owner || !(card is Song))
+        if (composer.Creature != Owner || !(card is Song))
         {
             return;
         }
