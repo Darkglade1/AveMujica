@@ -45,7 +45,7 @@
   "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.smartDescription": "[gold]演奏[/gold]的牌具有[gold]保留[/gold]。\n[gold]演奏[/gold]效果必定触发。",
   "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.title": "完美演出",
   "AVEMUJICA-PERFECT_COMBO_POWER.description": "本回合每触发一次[gold]演奏[/gold]效果，你的[gold]演奏[/gold]效果额外多触发一次。",
-  "AVEMUJICA-PERFECT_COMBO_POWER.smartDescription": "本回合每触发一次[gold]演奏[/gold]效果，你的[gold]演奏[/gold]效果额外多触发一次。\n（当前额外触发[blue]{Amount}[/blue]次）",
+  "AVEMUJICA-PERFECT_COMBO_POWER.smartDescription": "本回合每触发一次[gold]演奏[/gold]效果，你的[gold]演奏[/gold]效果额外多触发一次。\n（当前额外触发[blue]{StormCounter:diff()}[/blue]次）",
   "AVEMUJICA-PERFECT_COMBO_POWER.title": "完美连击风暴",
   "AVEMUJICA-ETHER_POWER.description": "带有[gold]保留[/gold]的牌打出时会被[gold]消耗[/gold]。\n打出时会被[gold]消耗[/gold]的牌费用变为[blue]0[/blue]。",
   "AVEMUJICA-ETHER_POWER.smartDescription": "带有[gold]保留[/gold]的牌打出时会被[gold]消耗[/gold]。\n打出时会被[gold]消耗[/gold]的牌费用变为[blue]0[/blue]。",

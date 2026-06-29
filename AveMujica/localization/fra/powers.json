@@ -69,7 +69,7 @@
   "AVEMUJICA-OBLIVION.smartDescription": "Chaque fois qu'[gold]Oblivion[/gold] est obtenue, inflige des dégâts à l'ennemi avec les PV les plus bas d'une valeur égale à [gold]Oblivion[/gold]",
   "AVEMUJICA-OBLIVION.title": "Oblivion",
   "AVEMUJICA-PERFECT_COMBO_POWER.description": "Vos effets d'[gold]Interprétations[/gold] s'activent une fois supplémentaire pour chaque [gold]Interprétation[/gold] activée ce tour.",
-  "AVEMUJICA-PERFECT_COMBO_POWER.smartDescription": "Vos effets d'[gold]Interprétations[/gold] s'activent une fois supplémentaire pour chaque [gold]Interprétation[/gold] activée ce tour.\n(S'active [blue]{Amount}[/blue] fois de plus actuellement.",
+  "AVEMUJICA-PERFECT_COMBO_POWER.smartDescription": "Vos effets d'[gold]Interprétations[/gold] s'activent une fois supplémentaire pour chaque [gold]Interprétation[/gold] activée ce tour.\n(S'active [blue]{StormCounter:diff()}[/blue] fois de plus actuellement.",
   "AVEMUJICA-PERFECT_COMBO_POWER.title": "Combo Parfait Frénétique",
   "AVEMUJICA-VIRTUOSO_FORM_POWER.description": "Au début de votre tour, [gold]Enchantez[/gold] TOUTES les cartes de votre [gold]Main[/gold] avec [gold]Magistral[/gold].",
   "AVEMUJICA-VIRTUOSO_FORM_POWER.smartDescription": "Au début de votre tour, [gold]Enchantez[/gold] TOUTES les cartes de votre [gold]Main[/gold] avec [gold]Magistral[/gold] [blue]{Amount}[/blue].",

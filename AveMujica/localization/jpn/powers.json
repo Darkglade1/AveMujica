@@ -60,7 +60,7 @@
   "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.title": "完璧な演奏",
 
   "AVEMUJICA-PERFECT_COMBO_POWER.description": "このターンに[gold]パフォーム[/gold]効果が発動した回数1回につき、[gold]パフォーム[/gold]効果が追加で1回発動する。",
-  "AVEMUJICA-PERFECT_COMBO_POWER.smartDescription": "このターンに[gold]パフォーム[/gold]効果が発動した回数1回につき、[gold]パフォーム[/gold]効果が追加で1回発動する。\n(現在追加で[blue]{Amount}[/blue]回発動)",
+  "AVEMUJICA-PERFECT_COMBO_POWER.smartDescription": "このターンに[gold]パフォーム[/gold]効果が発動した回数1回につき、[gold]パフォーム[/gold]効果が追加で1回発動する。\n(現在追加で[blue]{StormCounter:diff()}[/blue]回発動)",
   "AVEMUJICA-PERFECT_COMBO_POWER.title": "パーフェクトコンボストーム",
 
   "AVEMUJICA-ETHER_POWER.description": "[gold]保留[/gold]を持つカードはプレイ時に[gold]廃棄[/gold]される。\nプレイ時に[gold]廃棄[/gold]されるカードのコストは[blue]0[/blue]になる。",
