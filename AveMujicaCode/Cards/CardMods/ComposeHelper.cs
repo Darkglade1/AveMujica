@@ -125,7 +125,7 @@ public class ComposeHelper
         var drawCardMod = (DrawCardMod)ModelDb.Get<DrawCardMod>().MutableClone();
         drawCardMod.DrawCardAmt = isUpgraded ? 2 : 1;
         var gainEnergyMod = (GainEnergyMod)ModelDb.Get<GainEnergyMod>().MutableClone();
-        gainEnergyMod.GainEnergyAmt = isUpgraded ? 2 : 1;
+        gainEnergyMod.GainEnergyAmt = 1;
         
         var items = new List<WeightedComposeEffect>
         {

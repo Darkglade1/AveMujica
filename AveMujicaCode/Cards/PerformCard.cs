@@ -1,6 +1,7 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Rare;
 using AveMujica.AveMujicaCode.Hooks;
 using AveMujica.AveMujicaCode.Powers;
+using BaseLib.Extensions;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;

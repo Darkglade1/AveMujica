@@ -14,6 +14,8 @@ public class Fortissimo() : AveMujicaCard(1,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new ComposeVar(2)];
     
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
+    
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose),
         HoverTipFactory.FromPower<StrengthPower>()
