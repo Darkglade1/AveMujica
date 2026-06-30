@@ -88,7 +88,7 @@ public abstract class AbstractAlly : CustomMonsterModel
     CombatSide side,
     IEnumerable<Creature> participants)
   {
-    if (side == CombatSide.Player)
+    if (side == CombatSide.Player && Creature.IsAlive)
     {
       await PerformMove();
     }
