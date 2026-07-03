@@ -34,6 +34,6 @@ public class BloodMoon() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-        RemoveKeyword(CardKeyword.Exhaust);
+        DynamicVars.Damage.UpgradeValueBy(2);
     }
 }

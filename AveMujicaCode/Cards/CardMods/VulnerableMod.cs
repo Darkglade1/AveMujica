@@ -4,6 +4,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Models.Powers;
 
@@ -39,5 +40,10 @@ public class VulnerableMod : CardModifier
     public override void ModifyDescription(Creature? target, ref string description)
     {
         description += String.Format(locString, VulnerableAmt) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+    }
+    
+    public override void AddTips(List<IHoverTip> tips)
+    {
+        tips.Add(HoverTipFactory.FromPower<VulnerablePower>());
     }
 }

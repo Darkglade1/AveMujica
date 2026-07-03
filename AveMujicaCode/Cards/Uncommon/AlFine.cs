@@ -29,10 +29,13 @@ public class AlFine() : AveMujicaCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CommonActions.CardAttack(this, play).Execute(choiceContext);
-        if (PlayedSongThisTurn)
+        if (CombatState != null)
         {
-            await AllyHelper.Dreamspin(choiceContext, Owner, DynamicVars["Dreamspin"].IntValue, play.Target, this);
+            await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this, play).TargetingAllOpponents(CombatState).Execute(choiceContext);
+            if (PlayedSongThisTurn)
+            {
+                await AllyHelper.Dreamspin(choiceContext, Owner, DynamicVars["Dreamspin"].IntValue, play.Target, this);
+            }
         }
     }
 

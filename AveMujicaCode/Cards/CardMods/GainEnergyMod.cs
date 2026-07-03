@@ -3,6 +3,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Runs;
 
@@ -37,5 +38,13 @@ public class GainEnergyMod : CardModifier
     {
         var energyIcons = string.Concat(Enumerable.Repeat(energyIcon, GainEnergyAmt));
         description += String.Format(locString, energyIcons) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+    }
+    
+    public override void AddTips(List<IHoverTip> tips)
+    {
+        if (Owner != null)
+        {
+            tips.Add(HoverTipFactory.ForEnergy(Owner));
+        }
     }
 }
