@@ -8,11 +8,11 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace AveMujica.AveMujicaCode.Cards.Rare;
 
-public class TwoMoons() : AveMujicaCard(0,
+public class TwoMoons() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Rare,
     CustomTargetType.PetOrSelf)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DreamspinVar(3)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DreamspinVar(4)];
     
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -27,7 +27,7 @@ public class TwoMoons() : AveMujicaCard(0,
 
     protected override void OnUpgrade()
     {
-        DynamicVars["Dreamspin"].UpgradeValueBy(1);
+        DynamicVars["Dreamspin"].UpgradeValueBy(2);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
