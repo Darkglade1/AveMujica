@@ -34,6 +34,21 @@ public class HowDareYou : AveMujicaPower
         return Task.CompletedTask;
     }
     
+    public override async Task BeforeSideTurnEnd(
+        PlayerChoiceContext choiceContext,
+        CombatSide side,
+        IEnumerable<Creature> participants)
+    {
+        if (side == CombatSide.Enemy && triggeredAnimThisTurn)
+        {
+            var existing = Owner.CombatState?.Allies.FirstOrDefault(c => c.Monster is DolorisAlly && c.PetOwner == Owner.Player && c.IsAlive);
+            if (existing != null && existing.Monster != null)
+            {
+                await CreatureCmd.TriggerAnim(existing, "AttackEnd", 0);
+            }
+        }
+    }
+    
     public override async Task BeforeDamageReceived(
         PlayerChoiceContext choiceContext,
         Creature target,
