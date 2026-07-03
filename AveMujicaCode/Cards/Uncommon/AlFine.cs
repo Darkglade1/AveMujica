@@ -1,6 +1,7 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Allies;
 using AveMujica.AveMujicaCode.Cards.Token;
 using BaseLib.Patches.Features;
+using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -28,13 +29,10 @@ public class AlFine() : AveMujicaCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        if (CombatState != null)
+        await CommonActions.CardAttack(this, play).Execute(choiceContext);
+        if (PlayedSongThisTurn)
         {
-            await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this).TargetingAllOpponents(CombatState).Execute(choiceContext);
-            if (PlayedSongThisTurn)
-            {
-                await AllyHelper.Dreamspin(choiceContext, Owner, DynamicVars["Dreamspin"].IntValue, play.Target, this);
-            }
+            await AllyHelper.Dreamspin(choiceContext, Owner, DynamicVars["Dreamspin"].IntValue, play.Target, this);
         }
     }
 

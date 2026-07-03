@@ -1,4 +1,5 @@
 ﻿using AveMujica.AveMujicaCode.Cards.CardMods;
+using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -20,7 +21,7 @@ public class Requiem() : AveMujicaCard(2,
     {
         if (CombatState != null)
         {
-            await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this).TargetingAllOpponents(CombatState).WithHitFx("vfx/vfx_attack_blunt", tmpSfx: "heavy_attack.mp3").Execute(choiceContext);
+            await CommonActions.CardAttack(this, play).Execute(choiceContext);
             var loseHPMod = (LoseHPMod)ModelDb.Get<LoseHPMod>().MutableClone();
             loseHPMod.HPLossAmt = (int)DynamicVars.HpLoss.BaseValue;
             await ComposeHelper.AddComposeEffectsToSong([loseHPMod], Owner);

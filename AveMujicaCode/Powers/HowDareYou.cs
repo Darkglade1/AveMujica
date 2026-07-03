@@ -54,7 +54,7 @@ public class HowDareYou : AveMujicaPower
                 Sfx.SKILL_GUITAR_VOCALS3.Play();
                 triggeredAnimThisTurn = true;
             }
-            await CreatureCmd.Damage(choiceContext, dealer, Amount, ValueProp.Unpowered | ValueProp.SkipHurtAnim, existing, null);
+            await CreatureCmd.Damage(choiceContext, dealer, Amount, ValueProp.Unpowered | ValueProp.SkipHurtAnim, existing);
             Amount++;
         }
     }

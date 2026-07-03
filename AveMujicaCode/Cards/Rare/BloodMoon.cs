@@ -27,7 +27,7 @@ public class BloodMoon() : AveMujicaCard(1,
     {
         if (CombatState != null)
         {
-            var attackCommand = await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this).TargetingRandomOpponents(CombatState).Execute(choiceContext);
+            var attackCommand = await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this, play).TargetingRandomOpponents(CombatState).Execute(choiceContext);
             await AllyHelper.Dreamspin(choiceContext, Owner, attackCommand.Results.SelectMany(r => r).Sum((Func<DamageResult, int>) (r => r.TotalDamage + r.OverkillDamage)), play.Target, this);
         }
     }

@@ -22,7 +22,7 @@ public class LoseHPMod : CardModifier
     {
         if (Owner != null && play.Card == Owner)
         {
-            await CreatureCmd.Damage(choiceContext, Owner.Owner.Creature, HPLossAmt, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, Owner);
+            await CreatureCmd.Damage(choiceContext, Owner.Owner.Creature, HPLossAmt, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, Owner.Owner.Creature);
         }
     }
     

@@ -23,6 +23,6 @@ public class ExplosiveFinalePower() : AveMujicaPower, IOnFinishComposing
             return;
         }
         Flash();
-        await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), CombatState.HittableEnemies, Amount, ValueProp.Unpowered, Owner, null);
+        await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), CombatState.HittableEnemies, Amount, ValueProp.Unpowered, Owner);
     }
 }
