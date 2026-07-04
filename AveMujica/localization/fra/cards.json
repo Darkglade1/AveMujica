@@ -161,7 +161,7 @@
   "AVEMUJICA-REQUIEM.title": "Requiem Onyx",
   "AVEMUJICA-RONDO.description": "Infligez {Damage:diff()} dégâts {Repeat:diff()} fois.\n[gold]Interprétation Attaque : [/gold] Gagnez {Block:diff()} [gold]Armure[/gold].",
   "AVEMUJICA-RONDO.title": "Rondo Ambre",
-  "AVEMUJICA-SONG.description": "{IfUpgraded:show:Piochez une carte}",
+  "AVEMUJICA-SONG.description": "{IfUpgraded:show:Piochez une carte\n}",
   "AVEMUJICA-SONG.title": "Musique",
   "AVEMUJICA-SOPHIE.description": "Gagnez {VulnerablePower:diff()} [gold]Vulnérable[/gold].\n[gold]Composer[/gold] L'ennemi perd {HpLoss:diff()} PV",
   "AVEMUJICA-SOPHIE.title": "Sophie",

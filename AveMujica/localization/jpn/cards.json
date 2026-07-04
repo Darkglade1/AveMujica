@@ -11,7 +11,7 @@
   "AVEMUJICA-MUSE.description": "{IfUpgraded:show:[gold]アップグレード[/gold]}[gold]作曲[/gold]。",
   "AVEMUJICA-MUSE.title": "ミューズ",
 
-  "AVEMUJICA-SONG.description": "{IfUpgraded:show:カードを1枚引く。}",
+  "AVEMUJICA-SONG.description": "{IfUpgraded:show:カードを1枚引く。\n}",
   "AVEMUJICA-SONG.title": "楽曲",
 
   "AVEMUJICA-MOONLIT_STRIKE.description": "ランダムな敵に{Damage:diff()}ダメージを与える。\n[gold]夢紡ぎ[/gold]{Dreamspin:diff()}。",

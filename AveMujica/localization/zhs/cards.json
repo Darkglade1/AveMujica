@@ -7,7 +7,7 @@
   "AVEMUJICA-WALTZ.title": "华尔兹",
   "AVEMUJICA-MUSE.description": "{IfUpgraded:show:[gold]升级过的[/gold]}[gold]谱曲[/gold]。",
   "AVEMUJICA-MUSE.title": "缪斯",
-  "AVEMUJICA-SONG.description": "{IfUpgraded:show:抽一张牌。}",
+  "AVEMUJICA-SONG.description": "{IfUpgraded:show:抽一张牌。\n}",
   "AVEMUJICA-SONG.title": "乐曲",
   "AVEMUJICA-MOONLIT_STRIKE.description": "对随机一名敌人造成{Damage:diff()}点伤害。\n[gold]梦旋[/gold]{Dreamspin:diff()}。",
   "AVEMUJICA-MOONLIT_STRIKE.title": "月光打击",
