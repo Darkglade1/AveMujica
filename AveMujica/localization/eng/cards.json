@@ -185,7 +185,7 @@
   "AVEMUJICA-IMPRISONED.description": "[gold]Compose[/gold] \"Lose {StrengthPower:diff()} [gold]Strength[/gold].\"\n[gold]Compose[/gold] \"Put {Cards:diff()} {Cards:plural:card|cards} from your [gold]Draw Pile[/gold] into your [gold]Hand[/gold].\"",
   "AVEMUJICA-IMPRISONED.title": "Imprisoned XII",
 
-  "AVEMUJICA-ENCORE.description": "[gold]Songs[/gold] have [gold]Replay[/gold] {EncorePower:diff()}.",
+  "AVEMUJICA-ENCORE.description": "[gold]Songs[/gold] gain [gold]Replay[/gold] {EncorePower:diff()}.",
   "AVEMUJICA-ENCORE.title": "Encore",
 
   "AVEMUJICA-REQUIEM.description": "Deal {Damage:diff()} damage to ALL enemies.\n[gold]Compose[/gold] \"Lose {HpLoss:diff()} HP.\"",
