@@ -23,7 +23,7 @@ public abstract class PerformCard(int cost, CardType type, CardRarity rarity, Ta
         return PerformSequences().Any(IsPerformActiveForSequence);
     }
 
-    protected abstract Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes);
+    protected abstract Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes, int numTriggers);
     
     public bool IsPerformActiveForSequence(CardType[] cardTypes)
     {
@@ -61,9 +61,9 @@ public abstract class PerformCard(int cost, CardType type, CardRarity rarity, Ta
                     perfectCombo.Flash();
                 }
             }
+            await DoPerformEffect(choiceContext, play, cardTypes, numTriggers);
             for (int i = 0; i < numTriggers; i++)
             {
-                await DoPerformEffect(choiceContext, play, cardTypes);
                 await AveMujicaHooks.AfterPerform(Owner.RunState, Owner.Creature.CombatState, choiceContext, play);
                 ICombatState? combatState = CombatState ?? Owner.Creature.CombatState;
                 if (!CombatManager.Instance.IsOverOrEnding && combatState != null)

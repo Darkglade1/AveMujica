@@ -28,8 +28,7 @@ public class EmotionalOutburst() : AveMujicaCard(0,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CommonActions.CardAttack(this, play).Execute(choiceContext);
-        await CommonActions.CardAttack(this, play, (int) ((CalculatedVar) DynamicVars["CalculatedHits"]).Calculate(play.Target)).Execute(choiceContext);
+        await CommonActions.CardAttack(this, play, (int) ((CalculatedVar) DynamicVars["CalculatedHits"]).Calculate(play.Target) + 1).Execute(choiceContext);
     }
 
     protected override void OnUpgrade()

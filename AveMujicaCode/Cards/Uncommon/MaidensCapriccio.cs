@@ -13,7 +13,7 @@ public class MaidensCapriccio() : PerformCard(1,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2), new("Exhaust", 2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2), new("BaseExhaust", 2), new("Exhaust", 2)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Perform),
@@ -34,8 +34,9 @@ public class MaidensCapriccio() : PerformCard(1,
         return [cardTypes];
     }
     
-    protected override async Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes)
+    protected override async Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes, int numTriggers)
     {
+        DynamicVars["Exhaust"].BaseValue = DynamicVars["BaseExhaust"].IntValue * numTriggers;
         CardSelectorPrefs prefs = new CardSelectorPrefs(SelectionScreenPrompt, 0, DynamicVars["Exhaust"].IntValue);
         foreach (CardModel card in await CardSelectCmd.FromHand(choiceContext, Owner, prefs, null, this))
         {

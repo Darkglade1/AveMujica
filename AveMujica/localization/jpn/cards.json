@@ -138,7 +138,7 @@
   "AVEMUJICA-FULL_HOUSE.description": "{CalculatedDamage:diff()}ダメージを与える。\nこの戦闘中に[gold]パフォーム[/gold]した回数1回につき、追加で{ExtraDamage:diff()}ダメージを与える。",
   "AVEMUJICA-FULL_HOUSE.title": "フルハウス",
 
-  "AVEMUJICA-MAIDENS_CAPRICCIO.description": "カードを{Cards:diff()}枚引く。\n[gold]パフォーム スキル:[/gold] カードを最大{Exhaust:diff()}枚[gold]廃棄[/gold]する。",
+  "AVEMUJICA-MAIDENS_CAPRICCIO.description": "カードを{Cards:diff()}枚引く。\n[gold]パフォーム スキル:[/gold] カードを最大{BaseExhaust:diff()}枚[gold]廃棄[/gold]する。",
   "AVEMUJICA-MAIDENS_CAPRICCIO.selectionScreenPrompt": "[gold]廃棄[/gold]するカードを最大{Exhaust:diff()}枚選ぶ。",
   "AVEMUJICA-MAIDENS_CAPRICCIO.title": "乙女のカプリッチョ",
 

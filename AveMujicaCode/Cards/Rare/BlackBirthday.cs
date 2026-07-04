@@ -14,8 +14,14 @@ public class BlackBirthday() : PerformCard(1,
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
-        await CommonActions.CardAttack(this, play).Execute(choiceContext);
-        await ExecutePerformEffect(choiceContext, play, PerformSequences()[0]);
+        if (IsPerformActive())
+        {
+            await ExecutePerformEffect(choiceContext, play, PerformSequences()[0]);
+        }
+        else
+        {
+            await CommonActions.CardAttack(this, play).Execute(choiceContext);   
+        }
     }
 
     protected override List<CardType[]> PerformSequences()
@@ -24,9 +30,9 @@ public class BlackBirthday() : PerformCard(1,
         return [cardTypes];
     }
 
-    protected override async Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes)
+    protected override async Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes, int numTriggers)
     {
-        await CommonActions.CardAttack(this, play, DynamicVars.Repeat.IntValue).Execute(choiceContext);
+        await CommonActions.CardAttack(this, play, (DynamicVars.Repeat.IntValue * numTriggers) + 1).Execute(choiceContext);
     }
 
     protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(3);

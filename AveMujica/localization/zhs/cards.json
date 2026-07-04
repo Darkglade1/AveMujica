@@ -93,7 +93,7 @@
   "AVEMUJICA-CANON.title": "绿色卡农",
   "AVEMUJICA-FULL_HOUSE.description": "造成{CalculatedDamage:diff()}点伤害。\n本次战斗每[gold]演奏[/gold]一次，额外造成{ExtraDamage:diff()}点伤害。",
   "AVEMUJICA-FULL_HOUSE.title": "满堂彩",
-  "AVEMUJICA-MAIDENS_CAPRICCIO.description": "抽{Cards:diff()}张牌。\n[gold]演奏技能：消耗[/gold]最多{Exhaust:diff()}张牌。",
+  "AVEMUJICA-MAIDENS_CAPRICCIO.description": "抽{Cards:diff()}张牌。\n[gold]演奏技能：消耗[/gold]最多{BaseExhaust:diff()}张牌。",
   "AVEMUJICA-MAIDENS_CAPRICCIO.selectionScreenPrompt": "选择最多{Exhaust:diff()}张牌以[gold]消耗[/gold]。",
   "AVEMUJICA-MAIDENS_CAPRICCIO.title": "少女随想曲",
   "AVEMUJICA-EMOTIONAL_OUTBURST.description": "造成{Damage:diff()}点伤害。\n本回合每[gold]消耗[/gold]一张牌，再次造成{Damage:diff()}点伤害。{InCombat:\n（额外命中{CalculatedHits:diff()}次）|}",

@@ -27,9 +27,12 @@ public class GeorgetteMe() : PerformCard(1,
         return [cardTypes];
     }
 
-    protected override async Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes)
+    protected override async Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes, int numTriggers)
     {
-        await CreatureCmd.GainBlock(Owner.Creature, Owner.Creature.Block, ValueProp.Unpowered | ValueProp.Move, play);
+        for (int i = 0; i < numTriggers; i++)
+        {
+            await CreatureCmd.GainBlock(Owner.Creature, Owner.Creature.Block, ValueProp.Unpowered | ValueProp.Move, play);
+        }
     }
 
     protected override void OnUpgrade() => DynamicVars.Block.UpgradeValueBy(3);

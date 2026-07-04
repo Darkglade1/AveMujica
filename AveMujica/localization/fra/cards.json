@@ -110,7 +110,7 @@
   "AVEMUJICA-LATE_NIGHTS.title": "Nuits tardives",
   "AVEMUJICA-LOFT_MOON.description": "[gold]Tisse-rêve[/gold] {Dreamspin:diff()}.\nÀ la fin de votre tour, les [gold]Poupées[/gold] gagnent {LoftMoonPower:diff()} PV.",
   "AVEMUJICA-LOFT_MOON.title": "Vers la Lune",
-  "AVEMUJICA-MAIDENS_CAPRICCIO.description": "Piochez {Cards:diff()} cartes.\n[gold]Interprétation Compétence: Épuisez[/gold] jusqu'à {Exhaust:diff()} cartes.",
+  "AVEMUJICA-MAIDENS_CAPRICCIO.description": "Piochez {Cards:diff()} cartes.\n[gold]Interprétation Compétence: Épuisez[/gold] jusqu'à {BaseExhaust:diff()} cartes.",
   "AVEMUJICA-MAIDENS_CAPRICCIO.selectionScreenPrompt": "Choisissez jusqu'à {Exhaust:diff()} cartes à [gold]Épuiser[/gold].",
   "AVEMUJICA-MAIDENS_CAPRICCIO.title": "Maiden's Capriccio",
   "AVEMUJICA-MELODY.description": "À la fin de votre tour, si vous avez réalisée une [gold]Interprétation[/gold], gagnez {MelodyPower:diff()} [gold]Force[/gold].",

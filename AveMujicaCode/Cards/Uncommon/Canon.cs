@@ -28,9 +28,9 @@ public class Canon() : PerformCard(0,
         return [cardTypes];
     }
 
-    protected override async Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes)
+    protected override async Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes, int numTriggers)
     {
-        await PowerCmd.Apply<DrawCardsNextTurnPower>(choiceContext, Owner.Creature, 1, Owner.Creature, this);
+        await PowerCmd.Apply<DrawCardsNextTurnPower>(choiceContext, Owner.Creature, numTriggers, Owner.Creature, this);
     }
 
     protected override void OnUpgrade() => DynamicVars.Block.UpgradeValueBy(3);

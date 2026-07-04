@@ -36,17 +36,17 @@ public class WhiteKeysBlackKeys() : PerformCard(0,
         return [cardTypes1, cardTypes2];
     }
     
-    protected override async Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes)
+    protected override async Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes, int numTriggers)
     {
         if (cardTypes[0] == CardType.Skill)
         {
             ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
-            await PowerCmd.Apply<WeakPower>(choiceContext, play.Target, DynamicVars["WeakPower"].BaseValue, Owner.Creature, this);
+            await PowerCmd.Apply<WeakPower>(choiceContext, play.Target, DynamicVars["WeakPower"].BaseValue * numTriggers, Owner.Creature, this);
         }
         if (cardTypes[0] == CardType.Attack)
         {
             ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
-            await PowerCmd.Apply<VulnerablePower>(choiceContext, play.Target, DynamicVars["VulnerablePower"].BaseValue, Owner.Creature, this);
+            await PowerCmd.Apply<VulnerablePower>(choiceContext, play.Target, DynamicVars["VulnerablePower"].BaseValue * numTriggers, Owner.Creature, this);
         }
     }
 

@@ -24,9 +24,12 @@ public class Rondo() : PerformCard(2,
         return [cardTypes];
     }
 
-    protected override async Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes)
+    protected override async Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes, int numTriggers)
     {
-        await CommonActions.CardBlock(this, DynamicVars.Block, play);
+        for (int i = 0; i < numTriggers; i++)
+        {
+            await CommonActions.CardBlock(this, DynamicVars.Block, play);   
+        }
     }
 
     protected override void OnUpgrade()

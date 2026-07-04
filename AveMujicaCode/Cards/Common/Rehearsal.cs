@@ -26,9 +26,9 @@ public class Rehearsal() : PerformCard(1,
         return [cardTypes];
     }
     
-    protected override async Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes)
+    protected override async Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes, int numTriggers)
     {
-        await PlayerCmd.GainEnergy(DynamicVars.Energy.BaseValue, Owner);
+        await PlayerCmd.GainEnergy(DynamicVars.Energy.BaseValue * numTriggers, Owner);
     }
 
     protected override void OnUpgrade()

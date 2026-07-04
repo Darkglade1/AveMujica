@@ -1,4 +1,5 @@
 ﻿using BaseLib.Utils;
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
@@ -28,9 +29,9 @@ public class FeelTheBeat() : PerformCard(1,
         return [cardTypes];
     }
     
-    protected override async Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes)
+    protected override async Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes, int numTriggers)
     {
-        await CommonActions.Draw(this, choiceContext);
+        await CardPileCmd.Draw(choiceContext, DynamicVars.Cards.BaseValue * numTriggers, Owner);
     }
 
     protected override void OnUpgrade()
