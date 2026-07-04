@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Rare;
 
-public class BlackBirthday() : PerformCard(1,
+public class BlackBirthday() : AbstractPerformCard(1,
     CardType.Attack, CardRarity.Rare,
     TargetType.AllEnemies)
 {

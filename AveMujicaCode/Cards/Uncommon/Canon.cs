@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
-public class Canon() : PerformCard(0,
+public class Canon() : AbstractPerformCard(0,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {

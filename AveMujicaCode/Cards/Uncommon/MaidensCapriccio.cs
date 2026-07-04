@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
-public class MaidensCapriccio() : PerformCard(1,
+public class MaidensCapriccio() : AbstractPerformCard(1,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {

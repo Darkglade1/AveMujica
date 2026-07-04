@@ -7,7 +7,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Common;
 
-public class Repetition() : PerformCard(0,
+public class Repetition() : AbstractPerformCard(0,
     CardType.Attack, CardRarity.Common,
     TargetType.AnyEnemy)
 {

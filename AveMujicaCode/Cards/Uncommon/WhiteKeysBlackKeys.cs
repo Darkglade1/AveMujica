@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
-public class WhiteKeysBlackKeys() : PerformCard(0,
+public class WhiteKeysBlackKeys() : AbstractPerformCard(0,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {

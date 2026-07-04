@@ -7,7 +7,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Rare;
 
-public class GeorgetteMe() : PerformCard(1,
+public class GeorgetteMe() : AbstractPerformCard(1,
     CardType.Skill, CardRarity.Rare,
     TargetType.Self)
 {

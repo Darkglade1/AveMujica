@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards;
 
-public abstract class PerformCard(int cost, CardType type, CardRarity rarity, TargetType target) :
+public abstract class AbstractPerformCard(int cost, CardType type, CardRarity rarity, TargetType target) :
     AveMujicaCard(cost, type, rarity, target)
 {
     protected abstract List<CardType[]> PerformSequences();

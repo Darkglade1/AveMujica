@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace AveMujica.AveMujicaCode.Cards.Common;
 
-public class Rehearsal() : PerformCard(1,
+public class Rehearsal() : AbstractPerformCard(1,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {

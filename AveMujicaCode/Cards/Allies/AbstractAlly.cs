@@ -1,4 +1,5 @@
-﻿using AveMujica.AveMujicaCode.Hooks;
+﻿using AveMujica.AveMujicaCode.Extensions;
+using AveMujica.AveMujicaCode.Hooks;
 using BaseLib.Abstracts;
 using BaseLib.Patches.Content;
 using Godot;
@@ -88,9 +89,21 @@ public abstract class AbstractAlly : CustomMonsterModel
     CombatSide side,
     IEnumerable<Creature> participants)
   {
-    if (side == CombatSide.Player && Creature.IsAlive)
+    if (side == CombatSide.Player && Creature.IsAlive && Creature.PetOwner != null && Creature.PetOwner.Creature.IsAlive)
     {
       await PerformMove();
+    }
+  }
+  
+  public override async Task AfterDeath(
+    PlayerChoiceContext choiceContext,
+    Creature creature,
+    bool wasRemovalPrevented,
+    float deathAnimLength)
+  {
+    if (creature == Creature.PetOwner?.Creature)
+    { 
+      await CreatureCmd.Kill(Creature);
     }
   }
 
@@ -185,4 +198,5 @@ public abstract class AbstractAlly : CustomMonsterModel
     }
     return damage + strAmt;
   }
+  public override string DeathSfx => "death_operator.ogg".AudioPath();
 }

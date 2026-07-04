@@ -7,7 +7,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Common;
 
-public class FeelTheBeat() : PerformCard(1,
+public class FeelTheBeat() : AbstractPerformCard(1,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {

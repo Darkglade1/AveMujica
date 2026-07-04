@@ -29,7 +29,7 @@ public class FlawlessPerformancePower() : AveMujicaPower
             var hand = PileType.Hand.GetPile(Owner.Player);
             foreach (CardModel card in hand.Cards)
             {
-                if (card is PerformCard)
+                if (card is AbstractPerformCard)
                 {
                     CardCmd.ApplyKeyword(card, CardKeyword.Retain);
                 }
@@ -37,7 +37,7 @@ public class FlawlessPerformancePower() : AveMujicaPower
             var drawPile = PileType.Draw.GetPile(Owner.Player);
             foreach (CardModel card in drawPile.Cards)
             {
-                if (card is PerformCard)
+                if (card is AbstractPerformCard)
                 {
                     CardCmd.ApplyKeyword(card, CardKeyword.Retain);
                 }
@@ -45,7 +45,7 @@ public class FlawlessPerformancePower() : AveMujicaPower
             var discardPile = PileType.Discard.GetPile(Owner.Player);
             foreach (CardModel card in discardPile.Cards)
             {
-                if (card is PerformCard)
+                if (card is AbstractPerformCard)
                 {
                     CardCmd.ApplyKeyword(card, CardKeyword.Retain);
                 }
@@ -53,7 +53,7 @@ public class FlawlessPerformancePower() : AveMujicaPower
             var exhaustPile = PileType.Exhaust.GetPile(Owner.Player);
             foreach (CardModel card in exhaustPile.Cards)
             {
-                if (card is PerformCard)
+                if (card is AbstractPerformCard)
                 {
                     CardCmd.ApplyKeyword(card, CardKeyword.Retain);
                 }
@@ -63,7 +63,7 @@ public class FlawlessPerformancePower() : AveMujicaPower
 
     public override async Task AfterCardGeneratedForCombat(CardModel card, Player? creator)
     {
-        if (creator == null || creator.Creature != Owner || !(card is PerformCard))
+        if (creator == null || creator.Creature != Owner || !(card is AbstractPerformCard))
         {
             return;
         }

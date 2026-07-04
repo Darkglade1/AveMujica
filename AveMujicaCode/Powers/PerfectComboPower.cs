@@ -48,7 +48,7 @@ public class PerfectComboPower : AveMujicaPower, IHasSecondAmount
     {
         var numTriggers = CombatManager.Instance.History.Entries.OfType<PerformCardEntry>()
             .Count(e => e.Card.Owner.Creature == Owner && e.HappenedThisTurn(CombatState));
-        DynamicVars["StormCounter"].BaseValue = PerformCard.PerfectComboStormCap(numTriggers);
+        DynamicVars["StormCounter"].BaseValue = AbstractPerformCard.PerfectComboStormCap(numTriggers);
         this.InvokeSecondAmountChanged();
     }
 
