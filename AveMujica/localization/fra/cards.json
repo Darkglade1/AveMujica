@@ -43,7 +43,7 @@
   "AVEMUJICA-DA_CAPO.title": "Da Capo",
   "AVEMUJICA-DEFEND.description": "Gagnez {Block:diff()} [gold]Armure[/gold].",
   "AVEMUJICA-DEFEND.title": "Défense",
-  "AVEMUJICA-DIMINUENDO.description": "L'ennemi perd {StrengthLoss:diff()} [gold]Force[/gold] ce tour.",
+  "AVEMUJICA-DIMINUENDO.description": "Gagnez {Block:diff()} [gold]Armure[/gold].\nTOUS les ennemis perdent {StrengthLoss:diff()} [gold]Force[/gold] ce tour.",
   "AVEMUJICA-DIMINUENDO.title": "Diminuendo",
   "AVEMUJICA-DISSATISFACTION.description": "Infligez {Damage:diff()} dégâts.\nAjoutez une [gold]Musique Vierge[/gold] à votre [gold]Main[/gold].",
   "AVEMUJICA-DISSATISFACTION.title": "Insatisfaction",

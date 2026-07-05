@@ -47,7 +47,7 @@
   "AVEMUJICA-CRESCENDO.description": "Deal {Damage:diff()} damage to ALL enemies {Repeat:diff()} times.",
   "AVEMUJICA-CRESCENDO.title": "Crescendo",
 
-  "AVEMUJICA-DIMINUENDO.description": "Enemy loses {StrengthLoss:diff()} [gold]Strength[/gold] this turn.",
+  "AVEMUJICA-DIMINUENDO.description": "Gain {Block:diff()} [gold]Block[/gold].\n ALL enemies loses {StrengthLoss:diff()} [gold]Strength[/gold] this turn.",
   "AVEMUJICA-DIMINUENDO.title": "Diminuendo",
 
   "AVEMUJICA-FERMATA.description": "Deal {Damage:diff()} damage.\n{IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold].",

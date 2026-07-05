@@ -31,7 +31,7 @@
   "AVEMUJICA-REGRETS.title": "抛却遗憾",
   "AVEMUJICA-CRESCENDO.description": "对所有敌人造成{Damage:diff()}点伤害，共{Repeat:diff()}次。",
   "AVEMUJICA-CRESCENDO.title": "渐强",
-  "AVEMUJICA-DIMINUENDO.description": "敌人本回合失去{StrengthLoss:diff()}点[gold]力量[/gold]。",
+  "AVEMUJICA-DIMINUENDO.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n所有敌人在本回合失去{StrengthLoss:diff()}点[gold]力量[/gold]。",
   "AVEMUJICA-DIMINUENDO.title": "渐弱",
   "AVEMUJICA-FERMATA.description": "造成{Damage:diff()}点伤害。\n{IfUpgraded:show:[gold]升级过的[/gold]}[gold]谱曲[/gold]。",
   "AVEMUJICA-FERMATA.title": "延音记号",

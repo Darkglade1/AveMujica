@@ -1,18 +1,22 @@
 ﻿using AveMujica.AveMujicaCode.Powers;
+using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
+using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Common;
 
 public class Diminuendo() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Common,
-    TargetType.AnyEnemy)
+    TargetType.AllEnemies)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new("StrengthLoss", 8)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(6, ValueProp.Move), new("StrengthLoss", 3)];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     
@@ -24,13 +28,20 @@ public class Diminuendo() : AveMujicaCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
-        await PowerCmd.Apply<DiminuendoPower>(choiceContext, play.Target, DynamicVars["StrengthLoss"].BaseValue, Owner.Creature, this);
+        await CommonActions.CardBlock(this, play);
+        if (CombatState != null)
+        {
+            foreach (Creature hittableEnemy in CombatState.HittableEnemies)
+            {
+                await PowerCmd.Apply<DiminuendoPower>(choiceContext, hittableEnemy, DynamicVars["StrengthLoss"].BaseValue, Owner.Creature, this);
+            }
+        }
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars["StrengthLoss"].UpgradeValueBy(6);
+        DynamicVars.Block.UpgradeValueBy(3);
+        DynamicVars["StrengthLoss"].UpgradeValueBy(1);
     }
 }

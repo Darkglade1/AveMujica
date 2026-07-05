@@ -47,7 +47,7 @@
   "AVEMUJICA-CRESCENDO.description": "すべての敵に{Damage:diff()}ダメージを{Repeat:diff()}回与える。",
   "AVEMUJICA-CRESCENDO.title": "クレッシェンド",
 
-  "AVEMUJICA-DIMINUENDO.description": "このターン、敵は[gold]筋力[/gold]{StrengthLoss:diff()}を失う。",
+  "AVEMUJICA-DIMINUENDO.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\nターン終了時まですべての敵は[gold]筋力[/gold]{StrengthLoss:diff()}を失う。",
   "AVEMUJICA-DIMINUENDO.title": "ディミヌエンド",
 
   "AVEMUJICA-FERMATA.description": "{Damage:diff()}ダメージを与える。\n{IfUpgraded:show:[gold]アップグレード[/gold]}[gold]作曲[/gold]。",
