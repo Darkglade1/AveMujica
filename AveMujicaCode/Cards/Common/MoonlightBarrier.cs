@@ -1,4 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Cards.Allies;
+﻿using AveMujica.AveMujicaCode.Cards.Dolls;
 using BaseLib.Patches.Features;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -13,7 +13,7 @@ public class MoonlightBarrier() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Common,
     CustomTargetType.PetOrSelf)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(3, ValueProp.Move), new DreamspinVar(3)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(3, ValueProp.Move)];
     
     protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.GainsOblivion];
     
@@ -24,7 +24,7 @@ public class MoonlightBarrier() : AveMujicaCard(1,
         CardPlay play)
     {
         await CommonActions.CardBlock(this, DynamicVars.Block, play);
-        await AllyHelper.Dreamspin(choiceContext, Owner, DynamicVars["Dreamspin"].IntValue, play.Target, this);
+        await DollHelper.Dreamspin(choiceContext, Owner, play.Target, this);
     }
 
     protected override void OnUpgrade()

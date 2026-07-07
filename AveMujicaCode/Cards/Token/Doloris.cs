@@ -1,4 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Cards.Allies;
+﻿using AveMujica.AveMujicaCode.Cards.Dolls;
 using AveMujica.AveMujicaCode.Extensions;
 using BaseLib.Extensions;
 using BaseLib.Utils;
@@ -29,7 +29,7 @@ public class Doloris() : AllyCard(-1,
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Awaken),
-        DolorisAlly.GenerateCardHoverTip()
+        DolorisDoll.GenerateCardHoverTip()
     ];
 
     protected override bool IsSkinEnabled()

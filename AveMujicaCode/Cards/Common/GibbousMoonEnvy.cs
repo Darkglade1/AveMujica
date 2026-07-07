@@ -1,4 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Cards.Allies;
+﻿using AveMujica.AveMujicaCode.Cards.Dolls;
 using BaseLib.Patches.Features;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -11,7 +11,7 @@ public class GibbousMoonEnvy() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Common,
     CustomTargetType.PetOrSelf)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DreamspinVar(6)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     
@@ -19,7 +19,8 @@ public class GibbousMoonEnvy() : AveMujicaCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await AllyHelper.Dreamspin(choiceContext, Owner, DynamicVars["Dreamspin"].IntValue, play.Target, this);
+        await DollHelper.Dreamspin(choiceContext, Owner, play.Target, this);
+        await DollHelper.Dreamspin(choiceContext, Owner, play.Target, this);
     }
 
     protected override void OnUpgrade()

@@ -1,4 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Powers;
+﻿using AveMujica.AveMujicaCode.Cards.Dolls;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -9,10 +9,10 @@ using MegaCrit.Sts2.Core.Models.Powers;
 namespace AveMujica.AveMujicaCode.Cards.Rare;
 
 public class KnightsOfOblivionis() : AveMujicaCard(2,
-    CardType.Power, CardRarity.Rare,
+    CardType.Skill, CardRarity.Rare,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<StrengthPower>(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<StrengthPower>(2)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromPower<StrengthPower>(),
@@ -24,7 +24,17 @@ public class KnightsOfOblivionis() : AveMujicaCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await PowerCmd.Apply<KnightsOfOblivionisPower>(choiceContext, Owner.Creature, DynamicVars["StrengthPower"].BaseValue, Owner.Creature, this);
+        if (Owner.Creature.CombatState != null)
+        {
+            foreach (var ally in Owner.Creature.CombatState.Allies)
+            {
+                if (ally.IsPet && ally.IsAlive && ally.PetOwner == Owner && ally.Monster is AbstractDoll)
+                {
+                    await PowerCmd.Apply<StrengthPower>(choiceContext, ally, DynamicVars["StrengthPower"].BaseValue, Owner.Creature, this);
+                    await PowerCmd.Apply<DexterityPower>(choiceContext, ally, DynamicVars["StrengthPower"].BaseValue, Owner.Creature,this);   
+                }
+            }
+        }
     }
 
     protected override void OnUpgrade()

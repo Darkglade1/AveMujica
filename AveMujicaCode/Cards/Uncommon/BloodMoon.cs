@@ -1,4 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Cards.Allies;
+﻿using AveMujica.AveMujicaCode.Cards.Dolls;
 using AveMujica.AveMujicaCode.Powers;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
@@ -11,11 +11,11 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
-public class WaningMoonDesire() : AveMujicaCard(0,
+public class BloodMoon() : AveMujicaCard(0,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(5, ValueProp.Move), new HealVar(3)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(5, ValueProp.Move), new HealVar(2)];
     
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -24,13 +24,15 @@ public class WaningMoonDesire() : AveMujicaCard(0,
         await CommonActions.CardAttack(this, play).Execute(choiceContext);
         if (CombatState != null)
         {
-            var existing = CombatState.Allies.FirstOrDefault(c => c.Monster is AbstractAlly && c.PetOwner == Owner && c.IsAlive);
-            if (existing != null)
+            foreach (var doll in CombatState.Allies)
             {
-                await CreatureCmd.GainMaxHp(existing, DynamicVars.Heal.BaseValue);
+                if (doll.Monster is AbstractDoll && doll.PetOwner == Owner && doll.IsAlive)
+                {
+                    await CreatureCmd.GainMaxHp(doll, DynamicVars.Heal.BaseValue);
+                    return;
+                }
             }
         }
-        
     }
 
     protected override void OnUpgrade()

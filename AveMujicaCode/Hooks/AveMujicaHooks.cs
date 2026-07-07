@@ -1,4 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Cards.Allies;
+﻿using AveMujica.AveMujicaCode.Cards.Dolls;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
@@ -38,13 +38,18 @@ public class AveMujicaHooks
         return DispatchAsync<IOnFinishComposing>(rs, cs, m => m.OnFinishComposing(player, card));
     }
     
-    public static Task AfterDollSkill(IRunState? rs, ICombatState? cs, Player player, AbstractAlly ally)
+    public static Task AfterDollSkill(IRunState? rs, ICombatState? cs, Player player, AbstractDoll doll)
     {
-        return DispatchAsync<IAfterDollSkill>(rs, cs, m => m.AfterDollSkill(player, ally));
+        return DispatchAsync<IAfterDollSkill>(rs, cs, m => m.AfterDollSkill(player, doll));
     }
     
-    public static Task AfterAwaken(IRunState? rs, ICombatState? cs, PlayerChoiceContext choiceContext, Player player, AbstractAlly ally)
+    public static Task AfterAwaken(IRunState? rs, ICombatState? cs, PlayerChoiceContext choiceContext, Player player, AbstractDoll doll)
     {
-        return DispatchAsync<IAfterAwaken>(rs, cs, m => m.AfterAwaken(choiceContext, player, ally));
+        return DispatchAsync<IAfterAwaken>(rs, cs, m => m.AfterAwaken(choiceContext, player, doll));
+    }
+    
+    public static Task AfterDreamspin(IRunState? rs, ICombatState? cs, PlayerChoiceContext choiceContext, Player player)
+    {
+        return DispatchAsync<IAfterDreamspin>(rs, cs, m => m.AfterDreamspin(choiceContext, player));
     }
 }

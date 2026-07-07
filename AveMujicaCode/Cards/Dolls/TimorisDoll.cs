@@ -4,26 +4,24 @@ using AveMujica.AveMujicaCode.Powers;
 using MegaCrit.Sts2.Core.Animation;
 using MegaCrit.Sts2.Core.Assets;
 using MegaCrit.Sts2.Core.Bindings.MegaSpine;
-using MegaCrit.Sts2.Core.Entities.Creatures;
-using MegaCrit.Sts2.Core.MonsterMoves.Intents;
-using MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Models.Powers;
+using MegaCrit.Sts2.Core.MonsterMoves.Intents;
+using MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace AveMujica.AveMujicaCode.Cards.Allies;
+namespace AveMujica.AveMujicaCode.Cards.Dolls;
 
-public sealed class TimorisAlly : AbstractAlly
+public sealed class TimorisDoll : AbstractDoll
 {
-  private static int damage = 4;
-  private static int damageIncrease = 100;
+  private static int damage = 5;
   private static int debuff = 1;
-  private static int skill1HPCost = 3;
-  private static int skill2HPCost = 8;
+  private static int damageIncrease = 100;
   public override string CustomVisualPath => Config.UseTimorisSkin ? "timoris/skin/timoris.tscn".CharacterPath() : "timoris/timoris.tscn".CharacterPath();
   
   public override MoveState GetDefaultMoveState()
@@ -36,7 +34,6 @@ public sealed class TimorisAlly : AbstractAlly
     var owner = Creature.PetOwner;
     if (owner != null)
     {
-      numSkillsPerTurn = 0; // hack to prevent player from clicking skill button during enemy turn
       await CreatureCmd.TriggerAnim(Creature, "Attack", 0);
       Sfx.ATK_GUITAR.Play();
       IReadOnlyList<Creature>? hittableEnemies = Creature.CombatState?.HittableEnemies;
@@ -50,50 +47,43 @@ public sealed class TimorisAlly : AbstractAlly
       }
     }
   }
-
-  protected override void SetUpSkill1Button()
-  {
-    SetUpSkillButton("res://AveMujica/images/charui/DebuffIcon.png", 1);
-  }
-
-  protected override void SetUpSkill2Button()
-  {
-    SetUpSkillButton("res://AveMujica/images/charui/StrongDebuffIcon.png", 2);
-  }
   
-  public override async Task Skill1()
+  public override async Task Skill()
   {
     var owner = Creature.PetOwner;
     if (owner != null)
     {
-      numSkillsUsedThisTurn++;
-      await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
-      Sfx.SKILL_BASS.Play();
-      await PaySkillCost(skill1HPCost);
-      if (Creature.CombatState != null)
+      if (UseMoonlightExecution())
       {
-        foreach (Creature enemy in Creature.CombatState.HittableEnemies)
+        await MoonlightExecution();
+      }
+      else
+      {
+        await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
+        Sfx.SKILL_BASS.Play();
+        if (Creature.CombatState != null)
         {
-          await PowerCmd.Apply<VulnerablePower>(new ThrowingPlayerChoiceContext(), enemy, debuff, Creature, null);
+          foreach (Creature enemy in Creature.CombatState.HittableEnemies)
+          {
+            await PowerCmd.Apply<VulnerablePower>(new ThrowingPlayerChoiceContext(), enemy, debuff, Creature, null);
+          }
         }
       }
     }
   }
   
-  public override async Task Skill2()
+  public async Task MoonlightExecution()
   {
     var owner = Creature.PetOwner;
     if (owner != null)
     {
-      numSkillsUsedThisTurn++;
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
       Sfx.SKILL_BASS.Play();
-      await PaySkillCost(skill2HPCost);
       if (Creature.CombatState != null)
       {
         foreach (Creature enemy in Creature.CombatState.HittableEnemies)
         {
-          await PowerCmd.Apply<MoonlightExecution>(new ThrowingPlayerChoiceContext(), enemy, damageIncrease, Creature, null);
+          await PowerCmd.Apply<MoonlightExecutionDebuff>(new ThrowingPlayerChoiceContext(), enemy, damageIncrease, Creature, null);
         }
       }
     }
@@ -124,31 +114,30 @@ public sealed class TimorisAlly : AbstractAlly
     return hoverTip;
   }
 
-  public override HoverTip GetSkill1HoverTip()
+  public override HoverTip GetSkillHoverTip()
   {
-    return Skill1HoverTip();
+    if (UseMoonlightExecution())
+    {
+      return MoonlightExecutionHovertip();
+    }
+    return SkillHoverTip();
   }
   
-  public static HoverTip Skill1HoverTip()
+  public static HoverTip SkillHoverTip()
   {
     var hoverTip = new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title"),
       new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description"));
-    hoverTip.Description = String.Format(hoverTip.Description, skill1HPCost, debuff);
+    hoverTip.Description = String.Format(hoverTip.Description, debuff);
     return hoverTip;
   }
-
-  public override HoverTip GetSkill2HoverTip()
-  {
-    return Skill2HoverTip();
-  }
   
-  public static HoverTip Skill2HoverTip()
+  public static HoverTip MoonlightExecutionHovertip()
   {
     var hoverTip = new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title"),
       new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description"));
-    hoverTip.Description = String.Format(hoverTip.Description, skill2HPCost, damageIncrease);
+    hoverTip.Description = String.Format(hoverTip.Description, damageIncrease);
     return hoverTip;
   }
 
@@ -156,23 +145,21 @@ public sealed class TimorisAlly : AbstractAlly
   {
     var defaultText = new LocString("static_hover_tips", "AVEMUJICA-DEFAULT_TEXT.description");
     var autoSkillHoverTip = AutoSkillHoverTip();
-    var skill1HoverTip = Skill1HoverTip();
-    var skill2HoverTip = Skill2HoverTip();
+    var skill1HoverTip = SkillHoverTip();
     var hoverTipDescription = defaultText.GetFormattedText() + autoSkillHoverTip.Description + "\n" + 
-                              skill1HoverTip.Description + "\n" + skill2HoverTip.Description;
+                              skill1HoverTip.Description;
     return new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY.title"),
       hoverTipDescription);
   }
 
-  public override int GetSkill1HPCost()
+  private bool UseMoonlightExecution()
   {
-    return skill1HPCost;
-  }
-
-  public override int GetSkill2HPCost()
-  {
-    return skill2HPCost;
+    if (Creature.PetOwner != null)
+    {
+      return Creature.PetOwner.Creature.HasPower<MoonlightExecutionPower>();
+    }
+    return false;
   }
 
   public override CreatureAnimator GenerateAnimator(MegaSprite controller)

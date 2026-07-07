@@ -1,4 +1,6 @@
-﻿using AveMujica.AveMujicaCode.Powers;
+﻿using AveMujica.AveMujicaCode.Cards;
+using AveMujica.AveMujicaCode.Cards.Dolls;
+using AveMujica.AveMujicaCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
@@ -13,9 +15,9 @@ public class PlayfulCoretton() : AveMujicaRelic
     public override RelicRarity Rarity =>
         RelicRarity.Common;
 
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<DreamThreadPower>(3)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [];
 
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<DreamThreadPower>()];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin)];
 
     public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
     {
@@ -24,6 +26,6 @@ public class PlayfulCoretton() : AveMujicaRelic
             return;
         }
         Flash();
-        await PowerCmd.Apply<DreamThreadPower>(choiceContext, Owner.Creature, DynamicVars["DreamThreadPower"].IntValue, Owner.Creature, null);
+        await DollHelper.Dreamspin(choiceContext, Owner, Owner.Creature, null);
     }
 }

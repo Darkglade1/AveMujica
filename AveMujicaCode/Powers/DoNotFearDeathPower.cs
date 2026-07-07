@@ -1,16 +1,15 @@
-﻿using AveMujica.AveMujicaCode.Cards.Allies;
+﻿using AveMujica.AveMujicaCode.Cards.Dolls;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Relics;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Powers;
 
-public class DoNotFearDeath : AveMujicaPower
+public class DoNotFearDeathPower : AveMujicaPower
 {
     public override PowerType Type =>
         PowerType.Buff;
@@ -37,7 +36,7 @@ public class DoNotFearDeath : AveMujicaPower
         Creature? dealer,
         CardModel? cardSource)
     {
-        if (Owner.Monster is MortisAlly && target == Owner)
+        if (Owner.Monster is MortisDoll && target == Owner)
         {
             await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Owner, result.UnblockedDamage, false);
         }
@@ -50,8 +49,8 @@ public class DoNotFearDeath : AveMujicaPower
     {
         if (side == CombatSide.Enemy)
         {
-            await PowerCmd.Remove<DoNotFearDeath>(Owner);
-            if (Owner.Monster is MortisAlly ally)
+            await PowerCmd.Remove<DoNotFearDeathPower>(Owner);
+            if (Owner.Monster is MortisDoll ally)
             {
                 await CreatureCmd.TriggerAnim(Owner, "SwitchOut", 0);
                 ally.SetMoveImmediate(ally.GetDefaultMoveState());

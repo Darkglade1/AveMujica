@@ -1,4 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Cards.Allies;
+﻿using AveMujica.AveMujicaCode.Cards.Dolls;
 using AveMujica.AveMujicaCode.Powers;
 using BaseLib.Patches.Features;
 using MegaCrit.Sts2.Core.Commands;
@@ -13,13 +13,13 @@ public class LoftMoon() : AveMujicaCard(1,
     CardType.Power, CardRarity.Rare,
     CustomTargetType.PetOrSelf)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DreamspinVar(3), new PowerVar<LoftMoonPower>(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<LoftMoonPower>(1)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await AllyHelper.Dreamspin(choiceContext, Owner, DynamicVars["Dreamspin"].IntValue, play.Target, this);
+        await DollHelper.Dreamspin(choiceContext, Owner, play.Target, this);
         await PowerCmd.Apply<LoftMoonPower>(choiceContext, Owner.Creature, DynamicVars["LoftMoonPower"].BaseValue, Owner.Creature, this);
     }
     

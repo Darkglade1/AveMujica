@@ -1,4 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Cards.Allies;
+﻿using AveMujica.AveMujicaCode.Cards.Dolls;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -24,7 +24,7 @@ public class LoftMoonPower() : AveMujicaPower
         {
             foreach (var ally in Owner.CombatState.Allies)
             {
-                if (ally.Monster is AbstractAlly && ally.IsAlive && ally.PetOwner == Owner.Player)
+                if (ally.Monster is AbstractDoll && ally.IsAlive && ally.PetOwner == Owner.Player)
                 {
                     await CreatureCmd.GainMaxHp(ally, Amount);
                 }

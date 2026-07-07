@@ -1,4 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Cards.Allies;
+﻿using AveMujica.AveMujicaCode.Cards.Dolls;
 using BaseLib.Patches.Features;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -11,22 +11,22 @@ public class CrescentMoonEchos() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Uncommon,
     CustomTargetType.PetOrSelf)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DreamspinVar(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [];
     
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await AllyHelper.Dreamspin(choiceContext, Owner, DynamicVars["Dreamspin"].IntValue, play.Target, this);
+        await DollHelper.Dreamspin(choiceContext, Owner, play.Target, this);
         if (play.Target == Owner.Creature || play.IsAutoPlay)
         {
-            await AllyHelper.Dreamspin(choiceContext, Owner, DynamicVars["Dreamspin"].IntValue, play.Target, this);
+            await DollHelper.Dreamspin(choiceContext, Owner, play.Target, this);
         }
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars["Dreamspin"].UpgradeValueBy(1);
+        AddKeyword(CardKeyword.Innate);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [

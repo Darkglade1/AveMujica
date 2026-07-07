@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://du2ybs8o3x1k7"
-path="res://.godot/imported/how_dare_you.png-366e94c7d04363c00f88fa1c11f29073.ctex"
+uid="uid://castb2oiy0eae"
+path="res://.godot/imported/how_dare_you_power.png-499c0ace13115ad6aa2069879c2a6895.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/powers/big/how_dare_you.png"
-dest_files=["res://.godot/imported/how_dare_you.png-366e94c7d04363c00f88fa1c11f29073.ctex"]
+source_file="res://AveMujica/images/powers/how_dare_you_power.png"
+dest_files=["res://.godot/imported/how_dare_you_power.png-499c0ace13115ad6aa2069879c2a6895.ctex"]
 
 [params]
 

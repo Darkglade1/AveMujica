@@ -1,4 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Cards.Allies;
+﻿using AveMujica.AveMujicaCode.Cards.Dolls;
 using AveMujica.AveMujicaCode.Cards.Token;
 using BaseLib.Patches.Features;
 using BaseLib.Utils;
@@ -16,7 +16,7 @@ public class AlFine() : AveMujicaCard(1,
     CardType.Attack, CardRarity.Uncommon,
     CustomTargetType.PetOrSelf)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(8, ValueProp.Move), new DreamspinVar(4)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(8, ValueProp.Move)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose),
@@ -34,15 +34,15 @@ public class AlFine() : AveMujicaCard(1,
             await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this, play).TargetingAllOpponents(CombatState).Execute(choiceContext);
             if (PlayedSongThisTurn)
             {
-                await AllyHelper.Dreamspin(choiceContext, Owner, DynamicVars["Dreamspin"].IntValue, play.Target, this);
+                await DollHelper.Dreamspin(choiceContext, Owner, play.Target, this);
+                await DollHelper.Dreamspin(choiceContext, Owner, play.Target, this);
             }
         }
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(1);
-        DynamicVars["Dreamspin"].UpgradeValueBy(2);
+        DynamicVars.Damage.UpgradeValueBy(3);
     }
     
     public bool PlayedSongThisTurn

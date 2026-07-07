@@ -1,4 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Cards.Allies;
+﻿using AveMujica.AveMujicaCode.Cards.Dolls;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -27,7 +27,7 @@ public class Mortis() : AllyCard(-1,
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Awaken),
-        MortisAlly.GenerateCardHoverTip()
+        MortisDoll.GenerateCardHoverTip()
     ];
     
     protected override bool IsSkinEnabled()

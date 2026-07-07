@@ -1,29 +1,23 @@
 ﻿using AveMujica.AveMujicaCode.Audio;
 using AveMujica.AveMujicaCode.Extensions;
-using AveMujica.AveMujicaCode.Powers;
 using MegaCrit.Sts2.Core.Animation;
 using MegaCrit.Sts2.Core.Assets;
 using MegaCrit.Sts2.Core.Bindings.MegaSpine;
-using MegaCrit.Sts2.Core.Entities.Creatures;
-using MegaCrit.Sts2.Core.MonsterMoves.Intents;
-using MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine;
 using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
+using MegaCrit.Sts2.Core.MonsterMoves.Intents;
+using MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace AveMujica.AveMujicaCode.Cards.Allies;
+namespace AveMujica.AveMujicaCode.Cards.Dolls;
 
-public sealed class DolorisAlly : AbstractAlly
+public sealed class DolorisDoll : AbstractDoll
 {
-  private static int block = 2;
-  private static int damage = 6;
-  private static int damageIncrease = 1;
-  private static int skillBlock = 7;
-  private static int skill1HPCost = 3;
-  private static int skill2HPCost = 8;
+  private static int block = 3;
+  private static int skillBlock = 6;
   public override string CustomVisualPath => Config.UseDolorisSkin ? "doloris/skin/doloris.tscn".CharacterPath() : "doloris/doloris.tscn".CharacterPath();
   
   public override MoveState GetDefaultMoveState()
@@ -36,47 +30,34 @@ public sealed class DolorisAlly : AbstractAlly
     var owner = Creature.PetOwner;
     if (owner != null)
     {
-      numSkillsPerTurn = 0; // hack to prevent player from clicking skill button during enemy turn
       await PlayCastAnimation();
       await CreatureCmd.GainBlock(owner.Creature, CalcBlockWithDex(block), ValueProp.Unpowered, null);
     }
   }
-
-  protected override void SetUpSkill1Button()
-  {
-    SetUpSkillButton("res://AveMujica/images/charui/BlockIcon.png", 1);
-  }
-
-  protected override void SetUpSkill2Button()
-  {
-    SetUpSkillButton("res://AveMujica/images/charui/AttackBuffIcon.png", 2);
-  }
   
-  public override async Task Skill1()
+  public override async Task Skill()
   {
     var owner = Creature.PetOwner;
     if (owner != null)
     {
-      numSkillsUsedThisTurn++;
       await PlayCastAnimation();
       Sfx.SKILL_GUITAR_VOCALS.Play();
-      await PaySkillCost(skill1HPCost);
       await CreatureCmd.GainBlock(owner.Creature, CalcBlockWithDex(skillBlock), ValueProp.Unpowered, null);
     }
   }
   
-  public override async Task Skill2()
-  {
-    var owner = Creature.PetOwner;
-    if (owner != null)
-    {
-      numSkillsUsedThisTurn++;
-      await PlayCastAnimation();
-      Sfx.SKILL_GUITAR_VOCALS.Play();
-      await PaySkillCost(skill2HPCost);
-      await PowerCmd.Apply<HowDareYou>(new ThrowingPlayerChoiceContext(), owner.Creature, damage, Creature, null);
-    }
-  }
+  // public override async Task Skill2()
+  // {
+  //   var owner = Creature.PetOwner;
+  //   if (owner != null)
+  //   {
+  //     numSkillsUsedThisTurn++;
+  //     await PlayCastAnimation();
+  //     Sfx.SKILL_GUITAR_VOCALS.Play();
+  //     await PaySkillCost(skill2HPCost);
+  //     await PowerCmd.Apply<HowDareYou>(new ThrowingPlayerChoiceContext(), owner.Creature, damage, Creature, null);
+  //   }
+  // }
   
   private async Task PlayCastAnimation()
   {
@@ -115,35 +96,21 @@ public sealed class DolorisAlly : AbstractAlly
     return hoverTip;
   }
 
-  public override HoverTip GetSkill1HoverTip()
+  public override HoverTip GetSkillHoverTip()
   {
     var hoverTip = new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_1.title"),
       new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_1.description"));
-    hoverTip.Description = String.Format(hoverTip.Description, skill1HPCost, CalcBlockWithDex(skillBlock));
+    hoverTip.Description = String.Format(hoverTip.Description, CalcBlockWithDex(skillBlock));
     return hoverTip;
   }
   
-  public static HoverTip Skill1HoverTip()
+  public static HoverTip SkillHoverTip()
   {
     var hoverTip = new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_1.title"),
       new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_1.description"));
-    hoverTip.Description = String.Format(hoverTip.Description, skill1HPCost, skillBlock);
-    return hoverTip;
-  }
-
-  public override HoverTip GetSkill2HoverTip()
-  {
-    return Skill2HoverTip();
-  }
-  
-  public static HoverTip Skill2HoverTip()
-  {
-    var hoverTip = new HoverTip(
-      new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_2.title"),
-      new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY_SKILL_2.description"));
-    hoverTip.Description = String.Format(hoverTip.Description, skill2HPCost, damage, damageIncrease);
+    hoverTip.Description = String.Format(hoverTip.Description, skillBlock);
     return hoverTip;
   }
 
@@ -151,23 +118,12 @@ public sealed class DolorisAlly : AbstractAlly
   {
     var defaultText = new LocString("static_hover_tips", "AVEMUJICA-DEFAULT_TEXT.description");
     var autoSkillHoverTip = AutoSkillHoverTip();
-    var skill1HoverTip = Skill1HoverTip();
-    var skill2HoverTip = Skill2HoverTip();
+    var skillHoverTip = SkillHoverTip();
     var hoverTipDescription = defaultText.GetFormattedText() + autoSkillHoverTip.Description + "\n" + 
-                              skill1HoverTip.Description + "\n" + skill2HoverTip.Description;
+                              skillHoverTip.Description;
     return new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-DOLORIS_ALLY.title"),
       hoverTipDescription);
-  }
-
-  public override int GetSkill1HPCost()
-  {
-    return skill1HPCost;
-  }
-
-  public override int GetSkill2HPCost()
-  {
-    return skill2HPCost;
   }
 
   public override CreatureAnimator GenerateAnimator(MegaSprite controller)

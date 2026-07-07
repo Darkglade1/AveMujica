@@ -1,4 +1,5 @@
-﻿using AveMujica.AveMujicaCode.Cards.Allies;
+﻿using AveMujica.AveMujicaCode;
+using AveMujica.AveMujicaCode.Cards.Dolls;
 using AveMujica.AveMujicaCode.Cards.Token;
 using Godot;
 using HarmonyLib;
@@ -18,8 +19,11 @@ public static class SetAllyIntentHoverTip
 {
     public static void Postfix(AbstractIntent __instance, IEnumerable<Creature> targets, Creature owner, ref HoverTip __result)
     {
-        if (owner.Monster is AbstractAlly ally)
+        MainFile.Logger.Info("PATCH");
+        if (owner.Monster is AbstractDoll ally)
         {
+            MainFile.Logger.Info("PATCH TRIGGERING");
+            MainFile.Logger.Info(ally.GetInCombatAutoSkillHoverTip().Description);
             __result = ally.GetInCombatAutoSkillHoverTip();
         }
     }
@@ -30,7 +34,7 @@ public static class AlterAllyAttackIntentPreview
 {
     public static void Postfix(AttackIntent __instance, IEnumerable<Creature> targets, Creature owner, ref int __result)
     {
-        if (owner.Monster is AbstractAlly)
+        if (owner.Monster is AbstractDoll)
         {
             if (__instance.DamageCalc != null)
             {
@@ -85,7 +89,7 @@ public static class PatchEntomancer
         CardModel? cardSource,
         ref Task __result)
     {
-        if (dealer != null && dealer.Monster is AbstractAlly)
+        if (dealer != null && dealer.Monster is AbstractDoll)
         {
             __result = Task.CompletedTask;
             return false;
@@ -106,7 +110,7 @@ public static class PatchThorns
         CardModel? cardSource,
         ref Task __result)
     {
-        if (dealer != null && dealer.Monster is AbstractAlly)
+        if (dealer != null && dealer.Monster is AbstractDoll)
         {
             __result = Task.CompletedTask;
             return false;

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4f23m6t3vqji"
-path="res://.godot/imported/moonlight_execution.png-06cde4fbf4a2110ee387b29154bcd4c0.ctex"
+uid="uid://cy4ix3ilwh0yv"
+path="res://.godot/imported/moonlight_execution_debuff.png-06c67132be326f7aba102a7e02a9e885.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/powers/moonlight_execution.png"
-dest_files=["res://.godot/imported/moonlight_execution.png-06cde4fbf4a2110ee387b29154bcd4c0.ctex"]
+source_file="res://AveMujica/images/powers/big/moonlight_execution_debuff.png"
+dest_files=["res://.godot/imported/moonlight_execution_debuff.png-06c67132be326f7aba102a7e02a9e885.ctex"]
 
 [params]
 

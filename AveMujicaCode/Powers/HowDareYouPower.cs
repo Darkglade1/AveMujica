@@ -1,5 +1,5 @@
 ﻿using AveMujica.AveMujicaCode.Audio;
-using AveMujica.AveMujicaCode.Cards.Allies;
+using AveMujica.AveMujicaCode.Cards.Dolls;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Powers;
 
-public class HowDareYou : AveMujicaPower
+public class HowDareYouPower : AveMujicaPower
 {
     private bool triggeredAnimThisTurn;
     
@@ -41,7 +41,7 @@ public class HowDareYou : AveMujicaPower
     {
         if (side == CombatSide.Enemy && triggeredAnimThisTurn)
         {
-            var existing = Owner.CombatState?.Allies.FirstOrDefault(c => c.Monster is DolorisAlly && c.PetOwner == Owner.Player && c.IsAlive);
+            var existing = Owner.CombatState?.Allies.FirstOrDefault(c => c.Monster is DolorisDoll && c.PetOwner == Owner.Player && c.IsAlive);
             if (existing != null && existing.Monster != null)
             {
                 await CreatureCmd.TriggerAnim(existing, "AttackEnd", 0);
@@ -59,7 +59,7 @@ public class HowDareYou : AveMujicaPower
     {
         if (target != Owner || dealer == null || !props.IsPoweredAttack() && !(cardSource is Omnislice))
             return;
-        var existing = Owner.CombatState?.Allies.FirstOrDefault(c => c.Monster is DolorisAlly && c.PetOwner == Owner.Player && c.IsAlive);
+        var existing = Owner.CombatState?.Allies.FirstOrDefault(c => c.Monster is DolorisDoll && c.PetOwner == Owner.Player && c.IsAlive);
         if (existing != null && existing.Monster != null)
         {
             Flash();

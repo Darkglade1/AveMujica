@@ -1,4 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Cards.Allies;
+﻿using AveMujica.AveMujicaCode.Cards.Dolls;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -13,7 +13,7 @@ public class FullMoonMasquerade() : AveMujicaCard(2,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(11, ValueProp.Move), new HealVar(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(11, ValueProp.Move), new HealVar(1)];
     
     public override bool GainsBlock => true;
 
@@ -26,7 +26,7 @@ public class FullMoonMasquerade() : AveMujicaCard(2,
         {
             foreach (var ally in Owner.Creature.CombatState.Allies)
             {
-                if (ally.Monster is AbstractAlly)
+                if (ally.Monster is AbstractDoll && ally.PetOwner == Owner && ally.IsAlive)
                 {
                     await CreatureCmd.GainMaxHp(ally, DynamicVars.Heal.BaseValue);
                 }
@@ -36,7 +36,8 @@ public class FullMoonMasquerade() : AveMujicaCard(2,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Block.UpgradeValueBy(5);
+        DynamicVars.Block.UpgradeValueBy(3);
+        DynamicVars.Heal.UpgradeValueBy(1);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [

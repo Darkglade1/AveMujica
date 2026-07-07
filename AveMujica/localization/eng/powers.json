@@ -7,17 +7,17 @@
   "AVEMUJICA-DREAM_THREAD_POWER.smartDescription": "When you have [blue]3[/blue] [gold]Dream Thread[/gold], consume them to [gold]Awaken[/gold] a [gold]Doll[/gold].\nWhen targeting a [gold]Doll[/gold] with [gold]Dreamspin[/gold], [gold]Dream Thread[/gold] is consumed to give additional HP.",
   "AVEMUJICA-DREAM_THREAD_POWER.title": "Dream Thread",
 
-  "AVEMUJICA-HOW_DARE_YOU.description": "Whenever you are attacked, [gold]Doloris[/gold] deals [blue]6[/blue] damage to the attacker and increases this effect's damage by [blue]1[/blue].",
-  "AVEMUJICA-HOW_DARE_YOU.smartDescription": "Whenever you are attacked, [gold]Doloris[/gold] deals [blue]{Amount}[/blue] damage to the attacker and increases this effect's damage by [blue]1[/blue].",
-  "AVEMUJICA-HOW_DARE_YOU.title": "How Dare You!",
+  "AVEMUJICA-HOW_DARE_YOU_POWER.description": "Whenever you are attacked, [gold]Doloris[/gold] deals [blue]6[/blue] damage to the attacker and increases this effect's damage by [blue]1[/blue].",
+  "AVEMUJICA-HOW_DARE_YOU_POWER.smartDescription": "Whenever you are attacked, [gold]Doloris[/gold] deals [blue]{Amount}[/blue] damage to the attacker and increases this effect's damage by [blue]1[/blue].",
+  "AVEMUJICA-HOW_DARE_YOU_POWER.title": "How Dare You!",
 
-  "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage this turn and can't use other abilities this turn..",
-  "AVEMUJICA-DO_NOT_FEAR_DEATH.smartDescription": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage and can't use other abilities this turn.",
-  "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "Do Not Fear Death",
+  "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.description": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage this turn and can't use other abilities this turn.",
+  "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.smartDescription": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage and can't use other abilities this turn.",
+  "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.title": "Do Not Fear Death",
 
-  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "Receives more damage from Attacks this turn.",
-  "AVEMUJICA-MOONLIGHT_EXECUTION.smartDescription": "Receives [blue]{Amount}%[/blue] more damage from Attacks this turn.",
-  "AVEMUJICA-MOONLIGHT_EXECUTION.title": "Moonlight Execution",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.description": "Receives more damage from Attacks this turn.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.smartDescription": "Receives [blue]{Amount}%[/blue] more damage from Attacks this turn.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.title": "Moonlight Execution",
 
   "AVEMUJICA-FUGUE_POWER.description": "The next card you play that [gold]Exhausts[/gold] or [gold]Retains[/gold] costs [blue]0[/blue].",
   "AVEMUJICA-FUGUE_POWER.smartDescription": "The next [blue]{Amount}[/blue] {Amount:plural:card|cards} you play that [gold]{Amount:plural:Exhausts|Exhaust}[/gold] or [gold]{Amount:plural:Retains|Retain}[/gold] {Amount:plural:costs|cost} [blue]0[/blue].",
@@ -97,5 +97,13 @@
 
   "AVEMUJICA-GROUP_PERFORMANCE_POWER.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], also give [blue]1[/blue] copy to ALL other players.",
   "AVEMUJICA-GROUP_PERFORMANCE_POWER.smartDescription": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], also give [blue]{Amount}[/blue] {Amount:plural:copy|copies} to ALL other players.",
-  "AVEMUJICA-GROUP_PERFORMANCE_POWER.title": "Group Performance"
+  "AVEMUJICA-GROUP_PERFORMANCE_POWER.title": "Group Performance",
+
+  "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.description": "[gold]Amoris[/gold] hits more times with her default ability.",
+  "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.smartDescription": "[gold]Amoris[/gold] hits [blue]{Amount}[/blue] more times with her default ability.",
+  "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.title": "As Strong As Wheat",
+
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take [blue]100%[/blue] more damage from attacks this turn.\"",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.smartDescription": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take [blue]100%[/blue] more damage from attacks this turn.\"",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.title": "Moonlight Execution"
 }

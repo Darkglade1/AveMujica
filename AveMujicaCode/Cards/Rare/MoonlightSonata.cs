@@ -1,5 +1,5 @@
-﻿using AveMujica.AveMujicaCode.Cards.Allies;
-using AveMujica.AveMujicaCode.Cards.CardMods;
+﻿using AveMujica.AveMujicaCode.Cards.CardMods;
+using AveMujica.AveMujicaCode.Cards.Dolls;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -30,7 +30,7 @@ public class MoonlightSonata() : AveMujicaCard(1,
         {
             foreach (var ally in CombatState.Allies)
             {
-                if (ally.Monster is AbstractAlly && ally.IsAlive && ally.PetOwner == Owner)
+                if (ally.Monster is AbstractDoll && ally.IsAlive && ally.PetOwner == Owner)
                 {
                     await ComposeHelper.RandomCompose(Owner, choiceContext, IsUpgraded);
                 }

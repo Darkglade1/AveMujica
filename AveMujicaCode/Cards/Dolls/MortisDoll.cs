@@ -1,30 +1,27 @@
 ﻿using AveMujica.AveMujicaCode.Audio;
 using AveMujica.AveMujicaCode.Extensions;
 using AveMujica.AveMujicaCode.Powers;
-using BaseLib.Audio;
 using MegaCrit.Sts2.Core.Animation;
 using MegaCrit.Sts2.Core.Assets;
 using MegaCrit.Sts2.Core.Bindings.MegaSpine;
-using MegaCrit.Sts2.Core.Entities.Creatures;
-using MegaCrit.Sts2.Core.MonsterMoves.Intents;
-using MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Models.Powers;
+using MegaCrit.Sts2.Core.MonsterMoves.Intents;
+using MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace AveMujica.AveMujicaCode.Cards.Allies;
+namespace AveMujica.AveMujicaCode.Cards.Dolls;
 
-public sealed class MortisAlly : AbstractAlly
+public sealed class MortisDoll : AbstractDoll
 {
-  private static int block = 2;
+  private static int block = 3;
   private static int cardDraw = 2;
-  private static int intangible = 1;
-  private static int skill1HPCost = 3;
-  private static int skill2HPCost = 10;
+ 
   public override string CustomVisualPath => Config.UseMortisSkin ? "mortis/skin/mortis.tscn".CharacterPath() : "mortis/mortis.tscn".CharacterPath();
   
   public override MoveState GetDefaultMoveState()
@@ -35,47 +32,36 @@ public sealed class MortisAlly : AbstractAlly
   private async Task Block(IReadOnlyList<Creature> targets)
   {
     var owner = Creature.PetOwner;
-    if (owner != null && canUseAbilitiesThisTurn)
+    if (owner != null)
     {
-      numSkillsPerTurn = 0; // hack to prevent player from clicking skill button during enemy turn
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
       await CreatureCmd.GainBlock(owner.Creature, CalcBlockWithDex(block), ValueProp.Unpowered, null);
     }
   }
-
-  protected override void SetUpSkill1Button()
-  {
-    SetUpSkillButton("res://AveMujica/images/charui/BuffIcon.png", 1);
-  }
-
-  protected override void SetUpSkill2Button()
-  {
-    SetUpSkillButton("res://AveMujica/images/charui/BlockBuffIcon.png", 2);
-  }
   
-  public override async Task Skill1()
+  public override async Task Skill()
   {
+    if (!canUseAbilitiesThisTurn)
+    {
+      return;
+    }
     var owner = Creature.PetOwner;
     if (owner != null)
     {
-      numSkillsUsedThisTurn++;
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
       Sfx.SKILL_GUITAR.Play();
-      await PaySkillCost(skill1HPCost);
       await CardPileCmd.Draw(new ThrowingPlayerChoiceContext(), cardDraw, owner);
     }
   }
   
-  public override async Task Skill2()
+  public async Task DoNotFearDeath()
   {
     var owner = Creature.PetOwner;
     if (owner != null)
     {
-      numSkillsUsedThisTurn++;
       await CreatureCmd.TriggerAnim(Creature, "SwitchIn", 0);
-      await PaySkillCost(skill2HPCost);
-      await PowerCmd.Apply<IntangiblePower>(new ThrowingPlayerChoiceContext(), Creature, intangible, Creature, null);
-      await PowerCmd.Apply<DoNotFearDeath>(new ThrowingPlayerChoiceContext(), Creature, 1, Creature, null);
+      await PowerCmd.Apply<IntangiblePower>(new ThrowingPlayerChoiceContext(), Creature, 1, Creature, null);
+      await PowerCmd.Apply<DoNotFearDeathPower>(new ThrowingPlayerChoiceContext(), Creature, 1, Creature, null);
       canUseAbilitiesThisTurn = false;
       SetEmptyIntent();
     }
@@ -106,31 +92,17 @@ public sealed class MortisAlly : AbstractAlly
     return hoverTip;
   }
 
-  public override HoverTip GetSkill1HoverTip()
+  public override HoverTip GetSkillHoverTip()
   {
-    return Skill1HoverTip();
+    return SkillHoverTip();
   }
   
-  public static HoverTip Skill1HoverTip()
+  public static HoverTip SkillHoverTip()
   {
     var hoverTip = new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-MORTIS_ALLY_SKILL_1.title"),
       new LocString("static_hover_tips", "AVEMUJICA-MORTIS_ALLY_SKILL_1.description"));
-    hoverTip.Description = String.Format(hoverTip.Description, skill1HPCost, cardDraw);
-    return hoverTip;
-  }
-
-  public override HoverTip GetSkill2HoverTip()
-  {
-    return Skill2HoverTip();
-  }
-  
-  public static HoverTip Skill2HoverTip()
-  {
-    var hoverTip = new HoverTip(
-      new LocString("static_hover_tips", "AVEMUJICA-MORTIS_ALLY_SKILL_2.title"),
-      new LocString("static_hover_tips", "AVEMUJICA-MORTIS_ALLY_SKILL_2.description"));
-    hoverTip.Description = String.Format(hoverTip.Description, skill2HPCost, intangible);
+    hoverTip.Description = String.Format(hoverTip.Description, cardDraw);
     return hoverTip;
   }
 
@@ -138,23 +110,12 @@ public sealed class MortisAlly : AbstractAlly
   {
     var defaultText = new LocString("static_hover_tips", "AVEMUJICA-DEFAULT_TEXT.description");
     var autoSkillHoverTip = AutoSkillHoverTip();
-    var skill1HoverTip = Skill1HoverTip();
-    var skill2HoverTip = Skill2HoverTip();
+    var skillHoverTip = SkillHoverTip();
     var hoverTipDescription = defaultText.GetFormattedText() + autoSkillHoverTip.Description + "\n" + 
-                              skill1HoverTip.Description + "\n" + skill2HoverTip.Description;
+                              skillHoverTip.Description;
     return new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-MORTIS_ALLY.title"),
       hoverTipDescription);
-  }
-
-  public override int GetSkill1HPCost()
-  {
-    return skill1HPCost;
-  }
-
-  public override int GetSkill2HPCost()
-  {
-    return skill2HPCost;
   }
 
   public override CreatureAnimator GenerateAnimator(MegaSprite controller)

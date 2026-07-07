@@ -14,7 +14,7 @@
   "AVEMUJICA-SONG.description": "{IfUpgraded:show:Draw a card.\n}",
   "AVEMUJICA-SONG.title": "Song",
 
-  "AVEMUJICA-MOONLIT_STRIKE.description": "Deal {Damage:diff()} damage to a random enemy.\n[gold]Dreamspin[/gold] {Dreamspin:diff()}.",
+  "AVEMUJICA-MOONLIT_STRIKE.description": "Deal {Damage:diff()} damage to a random enemy.\n[gold]Dreamspin[/gold].",
   "AVEMUJICA-MOONLIT_STRIKE.title": "Moonlit Strike",
 
   "AVEMUJICA-FORTE.description": "Deal {Damage:diff()} damage.\n[gold]Compose[/gold] \"Gain {Compose:diff()} [gold]Strength[/gold] this turn.\"",
@@ -26,17 +26,17 @@
   "AVEMUJICA-FEEL_THE_BEAT.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Perform Skill:[/gold] Draw {Cards:diff()} cards.",
   "AVEMUJICA-FEEL_THE_BEAT.title": "Feel the Beat",
 
-  "AVEMUJICA-MOONLIGHT_BARRIER.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Dreamspin[/gold] {Dreamspin:diff()}.",
+  "AVEMUJICA-MOONLIGHT_BARRIER.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Dreamspin[/gold].",
   "AVEMUJICA-MOONLIGHT_BARRIER.title": "Moonlight Barrier",
 
-  "AVEMUJICA-NEW_MOON_AWAKENING.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.\nIf the target is a [gold]Doll[/gold], give them {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold] this turn.",
+  "AVEMUJICA-NEW_MOON_AWAKENING.description": "[gold]Dreamspin[/gold].\nIf the target is a [gold]Doll[/gold], they gain {Heal:diff()} HP.",
   "AVEMUJICA-NEW_MOON_AWAKENING.title": "New Moon Awakening",
 
   "AVEMUJICA-FIRST_QUARTER_YEARNING.description": "Give a [gold]Doll[/gold] {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold].",
   "AVEMUJICA-FIRST_QUARTER_YEARNING.title": "First Quarter's Yearning",
 
-  "AVEMUJICA-WANING_MOON_DESIRE.description": "Deal {Damage:diff()} damage.\nThe oldest [gold]Doll[/gold] gains {Heal:diff()} HP.",
-  "AVEMUJICA-WANING_MOON_DESIRE.title": "Waning Moon's Desire",
+  "AVEMUJICA-BLOOD_MOON.description": "Deal {Damage:diff()} damage.\nThe oldest [gold]Doll[/gold] gains {Heal:diff()} HP.",
+  "AVEMUJICA-BLOOD_MOON.title": "Blood Moon's Wrath",
 
   "AVEMUJICA-AFTERGLOW.description": "Gain {Block:diff()} [gold]Block[/gold].\nThe next time you [gold]Perform[/gold], gain {Energy:energyIcons()}.",
   "AVEMUJICA-AFTERGLOW.title": "Afterglow",
@@ -117,17 +117,17 @@
   "AVEMUJICA-AL_CODA.description": "Deal {Damage:diff()} damage.\nIf you played a [gold]Song[/gold] this turn, {IfUpgraded:show:[gold]Upgraded [/gold]}[gold]Compose[/gold] twice.",
   "AVEMUJICA-AL_CODA.title": "Al Coda",
 
-  "AVEMUJICA-AL_FINE.description": "Deal {Damage:diff()} damage to ALL enemies.\nIf you played a [gold]Song[/gold] this turn, [gold]Dreamspin[/gold] {Dreamspin:diff()}.",
+  "AVEMUJICA-AL_FINE.description": "Deal {Damage:diff()} damage to ALL enemies.\nIf you played a [gold]Song[/gold] this turn, [gold]Dreamspin[/gold] twice.",
   "AVEMUJICA-AL_FINE.title": "Al Fine",
 
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.\nIf you targeted yourself, [gold]Dreamspin[/gold] {Dreamspin:diff()} again.",
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "[gold]Dreamspin[/gold].\nIf you targeted yourself, [gold]Dreamspin[/gold] again.",
   "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "Crescent Moon Echos",
 
   "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gain {Block:diff()} [gold]Block[/gold].\nALL [gold]Dolls[/gold] gain {Heal:diff()} HP.",
   "AVEMUJICA-FULL_MOON_MASQUERADE.title": "Full Moon Masquerade",
 
-  "AVEMUJICA-WAXING_MOON_LONGING.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.{IfUpgraded:show:\nDraw a card.}",
-  "AVEMUJICA-WAXING_MOON_LONGING.title": "Waxing Moon's Longing",
+  "AVEMUJICA-BLUE_MOON.description": "Gain {Block:diff()} [gold]Block[/gold].\nCosts {energyPrefix:energyIcons(1)} less this combat whenever you [gold]Dreamspin[/gold].",
+  "AVEMUJICA-BLUE_MOON.title": "Blue Moon's Sorrow",
 
   "AVEMUJICA-WHITE_KEYS_BLACK_KEYS.description": "[gold]Perform Skill:[/gold] Apply {WeakPower:diff()} [gold]Weak[/gold].\n[gold]Perform Attack:[/gold] Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
   "AVEMUJICA-WHITE_KEYS_BLACK_KEYS.title": "White Keys, Black Keys",
@@ -204,14 +204,8 @@
   "AVEMUJICA-DO_NOT_FEAR_FORGETTING.description": "Gain {Block:diff()} [gold]Block[/gold] X times.\n[gold]Exhaust[/gold] X cards.",
   "AVEMUJICA-DO_NOT_FEAR_FORGETTING.title": "Do Not Fear Forgetting",
 
-  "AVEMUJICA-BLOOD_MOON.description": "Deal {Damage:diff()} damage to a random enemy.\n[gold]Dreamspin[/gold] equal to the damage dealt.",
-  "AVEMUJICA-BLOOD_MOON.title": "Blood Moon's Wrath",
-
   "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.\nIf the target is a [gold]Doll[/gold], they can use an additional [gold]Skill[/gold] this turn.",
   "AVEMUJICA-TWO_MOONS.title": "Two Moons",
-
-  "AVEMUJICA-BLUE_MOON.description": "At the start of your turn, gain {BlueMoonPower:diff()} [gold]Dream Thread[/gold].",
-  "AVEMUJICA-BLUE_MOON.title": "Blue Moon's Sorrow",
 
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "At the start of your turn, ALL [gold]Dolls[/gold] gain {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold].",
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "Knights of Oblivionis",
@@ -250,9 +244,6 @@
   "AVEMUJICA-VIRTUOSO_FORM.description": "At the start of your turn, [gold]Enchant[/gold] ALL cards in your [gold]Hand[/gold] with [gold]Masterful[/gold] {VirtuosoFormPower:diff()}.",
   "AVEMUJICA-VIRTUOSO_FORM.title": "Virtuoso's Form",
 
-  "AVEMUJICA-GARDEN.description": "Whenever a [gold]Doll's Skill[/gold] is activated, draw {GardenPower:diff()} {GardenPower:plural:card|cards}.",
-  "AVEMUJICA-GARDEN.title": "Garden of Lilies",
-
   "AVEMUJICA-CRUCIFIX.description": "Deal {Damage:diff()} damage.\nGain {ThornsPower:diff()} [gold]Thorns[/gold].",
   "AVEMUJICA-CRUCIFIX.title": "Crucifix X",
 
@@ -264,7 +255,7 @@
   "AVEMUJICA-PURSUIT_OF_MASTERY.title": "Pursuit of Mastery",
   "AVEMUJICA-PURSUIT_OF_MASTERY.selectionScreenPrompt": "Choose a card to [gold]Enchant[/gold].",
 
-  "AVEMUJICA-GIBBOUS_MOON_ENVY.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.",
+  "AVEMUJICA-GIBBOUS_MOON_ENVY.description": "[gold]Dreamspin[/gold] twice.",
   "AVEMUJICA-GIBBOUS_MOON_ENVY.title": "Gibbous Moon's Envy",
 
   "AVEMUJICA-EXPLOSIVE_FINALE.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], deal {ExplosiveFinalePower:diff()} damage to ALL enemies.",
@@ -286,5 +277,17 @@
   "AVEMUJICA-SPARK.title": "Spark of Inspiration",
 
   "AVEMUJICA-GODDESS_OF_OBLIVION.description": "Gain {Oblivion:diff()} [gold]Oblivion[/gold].\nWhenever a card is [gold]Exhausted[/gold], gain {GoddessOfOblivionPower:diff()} [gold]Oblivion[/gold].",
-  "AVEMUJICA-GODDESS_OF_OBLIVION.title": "Goddess of Oblivion"
+  "AVEMUJICA-GODDESS_OF_OBLIVION.title": "Goddess of Oblivion",
+
+  "AVEMUJICA-AS_STRONG_AS_WHEAT.description": "[gold]Amoris[/gold] hits {AsStrongAsWheatPower:diff()} more times with her default ability.",
+  "AVEMUJICA-AS_STRONG_AS_WHEAT.title": "As Strong As Wheat",
+
+  "AVEMUJICA-HOW_DARE_YOU.description": "Whenever you are attacked, [gold]Doloris[/gold] deals {HowDareYouPower:diff()} damage to the attacker and increases this effect's damage by 1.",
+  "AVEMUJICA-HOW_DARE_YOU.title": "How Dare You!",
+
+  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take [blue]100%[/blue] more damage from attacks this turn.\"",
+  "AVEMUJICA-MOONLIGHT_EXECUTION.title": "Moonlight Execution",
+
+  "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "[gold]Mortis[/gold] gains 1 [gold]Intangible[/gold], absorbs all incoming unblocked attack damage this turn, and can't use other abilities this turn.",
+  "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "Do Not Fear Death"
 }

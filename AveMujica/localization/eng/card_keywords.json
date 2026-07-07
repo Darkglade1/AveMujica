@@ -3,9 +3,9 @@
   "AVEMUJICA-PERFORM.title": "Perform",
   "AVEMUJICA-COMPOSE.description": "Adds the specified effect to the current [gold]Song[/gold]. If no effect is specified, choose a random effect to add. After [gold]Composing[/gold] [blue]3[/blue] times, add the [gold]Song[/gold] to your hand.",
   "AVEMUJICA-COMPOSE.title": "Compose",
-  "AVEMUJICA-AWAKEN.description": "Summons a [gold]Doll[/gold] to assist you. [gold]Dolls[/gold] use their default ability at the end of your turn. You can trigger their skills if they have sufficient HP by clicking the buttons next to their intent.",
+  "AVEMUJICA-AWAKEN.description": "Summons a [gold]Doll[/gold]. [gold]Dolls[/gold] use their default ability and lose [blue]1[/blue] HP at the end of your turn.",
   "AVEMUJICA-AWAKEN.title": "Awaken",
-  "AVEMUJICA-DREAMSPIN.description": "[gold]Dreamspin[/gold] cards target yourself or a [gold]Doll[/gold].\nTarget yourself to gain [gold]Dream Thread[/gold]. [blue]3[/blue] [gold]Dream Thread[/gold] is used to [gold]Awaken[/gold] a [gold]Doll[/gold].\nTarget a [gold]Doll[/gold] to give them HP. Any [gold]Dream Thread[/gold] you have is consumed to give additional HP.",
+  "AVEMUJICA-DREAMSPIN.description": "[gold]Dreamspin[/gold] cards target yourself or a [gold]Doll[/gold].\nTarget yourself to [gold]Awaken[/gold] a [gold]Doll[/gold]. If all [gold]Dolls[/gold] are present, they gain [blue]1[/blue] HP instead.\nTarget a [gold]Doll[/gold] to activate their [gold]Skill[/gold].",
   "AVEMUJICA-DREAMSPIN.title": "Dreamspin",
   "AVEMUJICA-DOLL.description": "[gold]Doloris[/gold], [gold]Mortis[/gold], [gold]Timoris[/gold], and [gold]Amoris[/gold].",
   "AVEMUJICA-DOLL.title": "Doll"

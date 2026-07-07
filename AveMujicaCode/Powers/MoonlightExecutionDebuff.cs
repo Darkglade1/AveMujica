@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Powers;
-public class MoonlightExecution() : AveMujicaPower
+public class MoonlightExecutionDebuff() : AveMujicaPower
 {
     public override PowerType Type =>
         PowerType.Debuff;
@@ -36,7 +36,7 @@ public class MoonlightExecution() : AveMujicaPower
     {
         if (side == CombatSide.Enemy)
         {
-            await PowerCmd.Remove<MoonlightExecution>(Owner);
+            await PowerCmd.Remove<MoonlightExecutionDebuff>(Owner);
         }
     }
 }
