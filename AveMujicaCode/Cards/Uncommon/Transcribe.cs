@@ -1,4 +1,5 @@
 ﻿using AveMujica.AveMujicaCode.Cards.CardMods;
+using AveMujica.AveMujicaCode.Powers;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -31,7 +32,12 @@ public class Transcribe() : AveMujicaCard(2,
                 CardModel? currentSong = songDict[Owner];
                 if (currentSong != null)
                 {
-                    await CardPileCmd.AddGeneratedCardToCombat(currentSong.CreateClone(), PileType.Hand, Owner);
+                    var song = currentSong.CreateClone();
+                    if (Owner.Creature.HasPower<EncorePower>())
+                    {
+                        song._baseReplayCount = Owner.Creature.GetPowerAmount<EncorePower>();
+                    }
+                    await CardPileCmd.AddGeneratedCardToCombat(song, PileType.Hand, Owner);
                 }
             }
         }
