@@ -15,7 +15,7 @@ public class BlueMoon() : AveMujicaCard(4,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self), IAfterDreamspin
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(10, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(11, ValueProp.Move)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin)

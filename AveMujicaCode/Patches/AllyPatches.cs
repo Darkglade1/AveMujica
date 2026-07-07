@@ -19,11 +19,8 @@ public static class SetAllyIntentHoverTip
 {
     public static void Postfix(AbstractIntent __instance, IEnumerable<Creature> targets, Creature owner, ref HoverTip __result)
     {
-        MainFile.Logger.Info("PATCH");
         if (owner.Monster is AbstractDoll ally)
         {
-            MainFile.Logger.Info("PATCH TRIGGERING");
-            MainFile.Logger.Info(ally.GetInCombatAutoSkillHoverTip().Description);
             __result = ally.GetInCombatAutoSkillHoverTip();
         }
     }

@@ -204,10 +204,7 @@
   "AVEMUJICA-DO_NOT_FEAR_FORGETTING.description": "Gain {Block:diff()} [gold]Block[/gold] X times.\n[gold]Exhaust[/gold] X cards.",
   "AVEMUJICA-DO_NOT_FEAR_FORGETTING.title": "Do Not Fear Forgetting",
 
-  "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.\nIf the target is a [gold]Doll[/gold], they can use an additional [gold]Skill[/gold] this turn.",
-  "AVEMUJICA-TWO_MOONS.title": "Two Moons",
-
-  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "At the start of your turn, ALL [gold]Dolls[/gold] gain {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold].",
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "ALL [gold]Dolls[/gold] gain {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold].",
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "Knights of Oblivionis",
 
   "AVEMUJICA-FLAWLESS_PERFORMANCE.description": "[gold]Perform[/gold] cards [gold]Retain[/gold].\n[gold]Perform[/gold] effects always trigger.",
@@ -234,7 +231,7 @@
   "AVEMUJICA-CONSIGN.description": "Deal {Damage:diff()} damage.\nIf [gold]Fatal[/gold], you may remove a card from your [gold]Deck[/gold] at the end of combat.",
   "AVEMUJICA-CONSIGN.title": "Consign to Oblivion",
 
-  "AVEMUJICA-LOFT_MOON.description": "[gold]Dreamspin[/gold] {Dreamspin:diff()}.\nAt the end of your turn, [gold]Dolls[/gold] gain {LoftMoonPower:diff()} HP.",
+  "AVEMUJICA-LOFT_MOON.description": "[gold]Dreamspin[/gold].\nAt the end of your turn, [gold]Dolls[/gold] gain {LoftMoonPower:diff()} HP.",
   "AVEMUJICA-LOFT_MOON.title": "Loft Moon",
 
   "AVEMUJICA-PULL_FROM_OBLIVION.description": "Put a card from your [gold]Exhaust Pile[/gold] into your [gold]Hand[/gold].{IfUpgraded:show:\nIt costs 0 this combat.}",
@@ -285,7 +282,7 @@
   "AVEMUJICA-HOW_DARE_YOU.description": "Whenever you are attacked, [gold]Doloris[/gold] deals {HowDareYouPower:diff()} damage to the attacker and increases this effect's damage by 1.",
   "AVEMUJICA-HOW_DARE_YOU.title": "How Dare You!",
 
-  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take [blue]100%[/blue] more damage from attacks this turn.\"",
+  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take 100% more damage from attacks this turn.\"",
   "AVEMUJICA-MOONLIGHT_EXECUTION.title": "Moonlight Execution",
 
   "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "[gold]Mortis[/gold] gains 1 [gold]Intangible[/gold], absorbs all incoming unblocked attack damage this turn, and can't use other abilities this turn.",
