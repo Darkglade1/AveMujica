@@ -101,7 +101,7 @@ public abstract class AbstractAlly : CustomMonsterModel
     bool wasRemovalPrevented,
     float deathAnimLength)
   {
-    if (creature == Creature.PetOwner?.Creature)
+    if (creature == Creature.PetOwner?.Creature && !wasRemovalPrevented)
     { 
       await CreatureCmd.Kill(Creature);
     }
