@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 namespace AveMujica.AveMujicaCode.Cards.Token;
 
 [Pool(typeof(TokenCardPool))]
-public class Mortis() : AllyCard(-1,
+public class Mortis() : AbstractDollCard(-1,
     CardType.Power, CardRarity.Token,
     TargetType.Self)
 {

@@ -276,7 +276,7 @@
   "AVEMUJICA-GODDESS_OF_OBLIVION.description": "Gain {Oblivion:diff()} [gold]Oblivion[/gold].\nWhenever a card is [gold]Exhausted[/gold], gain {GoddessOfOblivionPower:diff()} [gold]Oblivion[/gold].",
   "AVEMUJICA-GODDESS_OF_OBLIVION.title": "Goddess of Oblivion",
 
-  "AVEMUJICA-AS_STRONG_AS_WHEAT.description": "[gold]Amoris[/gold] hits {AsStrongAsWheatPower:diff()} more times with her default ability.",
+  "AVEMUJICA-AS_STRONG_AS_WHEAT.description": "[gold]Amoris[/gold] hits {AsStrongAsWheatPower:diff()} more times with Attacks.",
   "AVEMUJICA-AS_STRONG_AS_WHEAT.title": "As Strong As Wheat",
 
   "AVEMUJICA-HOW_DARE_YOU.description": "Whenever you are attacked, [gold]Doloris[/gold] deals {HowDareYouPower:diff()} damage to the attacker and increases this effect's damage by 1.",

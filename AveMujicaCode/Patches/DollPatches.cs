@@ -1,5 +1,4 @@
-﻿using AveMujica.AveMujicaCode;
-using AveMujica.AveMujicaCode.Cards.Dolls;
+﻿using AveMujica.AveMujicaCode.Cards.Dolls;
 using AveMujica.AveMujicaCode.Cards.Token;
 using Godot;
 using HarmonyLib;
@@ -14,20 +13,43 @@ using MegaCrit.Sts2.Core.MonsterMoves.Intents;
 using MegaCrit.Sts2.Core.Nodes.Cards;
 using MegaCrit.Sts2.Core.ValueProps;
 
+namespace AveMujica.AveMujicaCode.Patches;
+
 [HarmonyPatch(typeof(AbstractIntent), nameof(AbstractIntent.GetHoverTip))]
-public static class SetAllyIntentHoverTip
+public static class SetDollIntentHoverTip
 {
     public static void Postfix(AbstractIntent __instance, IEnumerable<Creature> targets, Creature owner, ref HoverTip __result)
     {
-        if (owner.Monster is AbstractDoll ally)
+        if (owner.Monster is AbstractDoll doll)
         {
-            __result = ally.GetInCombatAutoSkillHoverTip();
+            __result = doll.GetInCombatAutoSkillHoverTip();
+        }
+    }
+}
+
+[HarmonyPatch(typeof(Creature), "get_HoverTips")]
+public static class AddDollSkillHoverTip
+{
+    public static void Postfix(Creature __instance, ref IEnumerable<IHoverTip> __result)
+    {
+        if (__instance.Monster is AbstractDoll doll)
+        {
+            var newList = __result.ToList();
+            if (doll.NextMove.Intents.Count > 0)
+            {
+                newList.Insert(1, doll.GetSkillHoverTip());
+            }
+            else
+            {
+                newList.Insert(0, doll.GetSkillHoverTip());
+            }
+            __result = newList;
         }
     }
 }
 
 [HarmonyPatch(typeof(AttackIntent), nameof(AttackIntent.GetSingleDamage))]
-public static class AlterAllyAttackIntentPreview
+public static class AlterDollAttackIntentPreview
 {
     public static void Postfix(AttackIntent __instance, IEnumerable<Creature> targets, Creature owner, ref int __result)
     {
@@ -48,11 +70,11 @@ public static class AlterAllyAttackIntentPreview
 }
 
 [HarmonyPatch(typeof(NCard), nameof(NCard.Reload))]
-public static class FullArtAllyCards
+public static class FullArtDollCards
 {
     public static void Postfix(NCard __instance)
     {
-        if (__instance.Model is AllyCard && __instance.IsNodeReady())
+        if (__instance.Model is AbstractDollCard && __instance.IsNodeReady())
         {
             __instance._portraitBorder.Visible = false;
             __instance._portrait.Visible = false;

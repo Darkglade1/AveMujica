@@ -99,11 +99,11 @@
   "AVEMUJICA-GROUP_PERFORMANCE_POWER.smartDescription": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], also give [blue]{Amount}[/blue] {Amount:plural:copy|copies} to ALL other players.",
   "AVEMUJICA-GROUP_PERFORMANCE_POWER.title": "Group Performance",
 
-  "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.description": "[gold]Amoris[/gold] hits more times with her default ability.",
-  "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.smartDescription": "[gold]Amoris[/gold] hits [blue]{Amount}[/blue] more times with her default ability.",
+  "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.description": "[gold]Amoris[/gold] hits more times with Attacks.",
+  "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.smartDescription": "[gold]Amoris[/gold] hits [blue]{Amount}[/blue] more times with Attacks.",
   "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.title": "As Strong As Wheat",
 
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take [blue]100%[/blue] more damage from attacks this turn.\"",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.smartDescription": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take [blue]100%[/blue] more damage from attacks this turn.\"",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take [blue]100%[/blue] more damage from Attacks this turn.\"",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.smartDescription": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take [blue]100%[/blue] more damage from Attacks this turn.\"",
   "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.title": "Moonlight Execution"
 }

@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 namespace AveMujica.AveMujicaCode.Cards.Token;
 
 [Pool(typeof(TokenCardPool))]
-public class Doloris() : AllyCard(-1,
+public class Doloris() : AbstractDollCard(-1,
     CardType.Power, CardRarity.Token,
     TargetType.Self)
 {

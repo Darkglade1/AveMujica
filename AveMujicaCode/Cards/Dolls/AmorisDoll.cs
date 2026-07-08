@@ -36,7 +36,7 @@ public sealed class AmorisDoll : AbstractDoll
     if (owner != null)
     {
       await CreatureCmd.TriggerAnim(Creature, "Attack", 0f);
-      Sfx.SKILL_DRUM2.Play();
+      Sfx.SKILL_DRUM.Play();
       for (int i = 0; i < currentHits; i++)
       {
         IReadOnlyList<Creature>? hittableEnemies = Creature.CombatState?.HittableEnemies;
@@ -58,7 +58,6 @@ public sealed class AmorisDoll : AbstractDoll
     if (owner != null)
     {
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
-      Sfx.SKILL_DRUM.Play();
       await PowerCmd.Apply<AmorisTempStrPower>(new ThrowingPlayerChoiceContext(), Creature, strength, Creature, null);
       await Attack(null);
     }

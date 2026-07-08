@@ -72,6 +72,7 @@ public abstract class AbstractDoll : CustomMonsterModel
     if (side == CombatSide.Player && Creature.IsAlive && Creature.PetOwner != null && Creature.PetOwner.Creature.IsAlive && canUseAbilitiesThisTurn)
     {
       await PerformMove();
+      await Cmd.Wait(0.25f);
       await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Creature, 1, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, Creature);
       await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Creature, 1, false);
     }
@@ -88,16 +89,6 @@ public abstract class AbstractDoll : CustomMonsterModel
       await CreatureCmd.Kill(Creature);
     }
   }
-
-  // protected async Task PaySkillCost(int skillCost)
-  // {
-  //   await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Creature, skillCost, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, Creature);
-  //   await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Creature, skillCost, false);
-  //   if (Creature.PetOwner != null)
-  //   {
-  //     await AveMujicaHooks.AfterDollSkill(Creature.PetOwner.RunState, Creature.PetOwner.Creature.CombatState, Creature.PetOwner, this);
-  //   }
-  //}
 
   public abstract Task Skill();
   
