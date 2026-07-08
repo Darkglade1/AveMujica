@@ -35,7 +35,7 @@
   "AVEMUJICA-FIRST_QUARTER_YEARNING.description": "Give a [gold]Doll[/gold] {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold].",
   "AVEMUJICA-FIRST_QUARTER_YEARNING.title": "First Quarter's Yearning",
 
-  "AVEMUJICA-BLOOD_MOON.description": "Deal {Damage:diff()} damage.\nThe oldest [gold]Doll[/gold] gains {Heal:diff()} HP.",
+  "AVEMUJICA-BLOOD_MOON.description": "Deal {Damage:diff()} damage.\nThe lowest HP [gold]Doll[/gold] gains {Heal:diff()} HP.",
   "AVEMUJICA-BLOOD_MOON.title": "Blood Moon's Wrath",
 
   "AVEMUJICA-AFTERGLOW.description": "Gain {Block:diff()} [gold]Block[/gold].\nThe next time you [gold]Perform[/gold], gain {Energy:energyIcons()}.",
@@ -110,7 +110,7 @@
   "AVEMUJICA-A_CAPPELLA.description": "Deal {Damage:diff()} damage.\n[gold]Compose[/gold] \"Gain {Energy:energyIcons()}.\"",
   "AVEMUJICA-A_CAPPELLA.title": "A Cappella in Yellow",
 
-  "AVEMUJICA-DA_CAPO.description": "{IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold].\nIf you played a [gold]Song[/gold] this turn, add [gold]Replay[/gold] and [gold]Exhaust[/gold] to a card in your [gold]Hand[/gold].",
+  "AVEMUJICA-DA_CAPO.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf you played a [gold]Song[/gold] this turn, add [gold]Replay[/gold] and [gold]Exhaust[/gold] to a card in your [gold]Hand[/gold].",
   "AVEMUJICA-DA_CAPO.selectionScreenPrompt": "Choose a card to add [gold]Replay[/gold] and [gold]Exhaust[/gold] to.",
   "AVEMUJICA-DA_CAPO.title": "Da Capo",
 
@@ -157,7 +157,7 @@
   "AVEMUJICA-SYMBOL_WATER.description": "Gain {Block:diff()} [gold]Block[/gold].",
   "AVEMUJICA-SYMBOL_WATER.title": "Symbol III: Water",
 
-  "AVEMUJICA-SYMBOL_EARTH.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.\nWhen [gold]Retained[/gold], increase the number of hits by 1 this combat.",
+  "AVEMUJICA-SYMBOL_EARTH.description": "Gain {Block:diff()} [gold]Block[/gold].\nDeal {Damage:diff()} damage.\nWhen [gold]Retained[/gold], increase this card's damage and [gold]Block[/gold] by {UpgradeVar:diff()} this combat.",
   "AVEMUJICA-SYMBOL_EARTH.title": "Symbol IV: Earth",
 
   "AVEMUJICA-CONCERTO.description": "Deal {Damage:diff()} damage.\n[gold]Enchant[/gold] a card with [gold]Masterful[/gold] equal to the number of cards in your [gold]Hand[/gold].",
@@ -231,7 +231,7 @@
   "AVEMUJICA-CONSIGN.description": "Deal {Damage:diff()} damage.\nIf [gold]Fatal[/gold], you may remove a card from your [gold]Deck[/gold] at the end of combat.",
   "AVEMUJICA-CONSIGN.title": "Consign to Oblivion",
 
-  "AVEMUJICA-LOFT_MOON.description": "[gold]Dreamspin[/gold].\nAt the end of your turn, [gold]Dolls[/gold] gain {LoftMoonPower:diff()} HP.",
+  "AVEMUJICA-LOFT_MOON.description": "[gold]Dreamspin[/gold]{IfUpgraded:show: twice}.\nAt the end of your turn, the lowest HP [gold]Doll[/gold] gains {LoftMoonPower:diff()} HP.",
   "AVEMUJICA-LOFT_MOON.title": "Loft Moon",
 
   "AVEMUJICA-PULL_FROM_OBLIVION.description": "Put a card from your [gold]Exhaust Pile[/gold] into your [gold]Hand[/gold].{IfUpgraded:show:\nIt costs 0 this combat.}",

@@ -27,7 +27,7 @@ public class NewMoonAwakening() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Heal.UpgradeValueBy(1);
+        DynamicVars.Heal.UpgradeValueBy(2);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [

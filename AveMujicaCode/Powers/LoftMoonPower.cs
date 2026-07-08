@@ -22,12 +22,22 @@ public class LoftMoonPower() : AveMujicaPower
     {
         if (side == CombatSide.Player && Owner.Player != null && Owner.CombatState != null)
         {
+            Creature? lowestHpDoll = null;
+            int lowestHP = 9999;
             foreach (var ally in Owner.CombatState.Allies)
             {
                 if (ally.Monster is AbstractDoll && ally.IsAlive && ally.PetOwner == Owner.Player)
                 {
-                    await CreatureCmd.GainMaxHp(ally, Amount);
+                    if (ally.CurrentHp < lowestHP)
+                    {
+                        lowestHpDoll = ally;
+                        lowestHP = ally.CurrentHp;
+                    }
                 }
+            }
+            if (lowestHpDoll != null)
+            {
+                await CreatureCmd.GainMaxHp(lowestHpDoll, Amount);
             }
         }
     }

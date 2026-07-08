@@ -11,11 +11,11 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
-public class BlueMoon() : AveMujicaCard(4,
+public class BlueMoon() : AveMujicaCard(5,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self), IAfterDreamspin
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(11, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(12, ValueProp.Move)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin)

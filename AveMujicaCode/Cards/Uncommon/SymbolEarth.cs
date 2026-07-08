@@ -12,7 +12,7 @@ public class SymbolEarth() : AveMujicaCard(2,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(5, ValueProp.Move), new RepeatVar(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(7, ValueProp.Move), new BlockVar(7, ValueProp.Move), new("UpgradeVar", 2)];
 
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Retain];
 
@@ -20,7 +20,8 @@ public class SymbolEarth() : AveMujicaCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CommonActions.CardAttack(this, play, DynamicVars.Repeat.IntValue).Execute(choiceContext);
+        await CommonActions.CardBlock(this, play);
+        await CommonActions.CardAttack(this, play).Execute(choiceContext);
     }
     
     public override Task BeforeSideTurnEnd(
@@ -30,13 +31,16 @@ public class SymbolEarth() : AveMujicaCard(2,
     {
         if (side == CombatSide.Player && PileType.Hand.GetPile(Owner).Cards.Contains(this))
         {
-            DynamicVars.Repeat.BaseValue += 1;
+            DynamicVars.Damage.BaseValue += DynamicVars["UpgradeVar"].IntValue;
+            DynamicVars.Block.BaseValue += DynamicVars["UpgradeVar"].IntValue;
         }
         return Task.CompletedTask;
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(2);
+        DynamicVars.Damage.UpgradeValueBy(1);
+        DynamicVars.Block.UpgradeValueBy(1);
+        DynamicVars["UpgradeVar"].UpgradeValueBy(1);
     }
 }

@@ -1,5 +1,5 @@
-﻿using AveMujica.AveMujicaCode.Cards.CardMods;
-using AveMujica.AveMujicaCode.Cards.Token;
+﻿using AveMujica.AveMujicaCode.Cards.Token;
+using BaseLib.Utils;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
@@ -8,6 +8,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
@@ -15,7 +16,7 @@ public class DaCapo() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(4, ValueProp.Move)];
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
@@ -30,7 +31,7 @@ public class DaCapo() : AveMujicaCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await ComposeHelper.RandomCompose(Owner, choiceContext, IsUpgraded);
+        await CommonActions.CardBlock(this, play);
         if (PlayedSongThisTurn)
         {
             await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
@@ -45,6 +46,7 @@ public class DaCapo() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
+        DynamicVars.Block.UpgradeValueBy(2);
         RemoveKeyword(CardKeyword.Exhaust);
     }
     

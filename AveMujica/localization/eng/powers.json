@@ -71,8 +71,8 @@
   "AVEMUJICA-CONSIGN_POWER.smartDescription": "At the end of combat, remove [blue]{Amount}[/blue] {Amount:plural:card|cards} from your [gold]Deck[/gold].",
   "AVEMUJICA-CONSIGN_POWER.title": "Consign to Oblivion",
 
-  "AVEMUJICA-LOFT_MOON_POWER.description": "At the end of your turn, [gold]Dolls[/gold] gain [blue]{Amount}[/blue] HP.",
-  "AVEMUJICA-LOFT_MOON_POWER.smartDescription": "At the end of your turn, [gold]Dolls[/gold] gain [blue]{Amount}[/blue] HP.",
+  "AVEMUJICA-LOFT_MOON_POWER.description": "At the end of your turn, the lowest HP [gold]Doll[/gold] gains [blue]{Amount}[/blue] HP.",
+  "AVEMUJICA-LOFT_MOON_POWER.smartDescription": "At the end of your turn, the lowest HP [gold]Doll[/gold] gains [blue]{Amount}[/blue] HP.",
   "AVEMUJICA-LOFT_MOON_POWER.title": "Loft Moon",
 
   "AVEMUJICA-VIRTUOSO_FORM_POWER.description": "At the start of your turn, [gold]Enchant[/gold] ALL cards in your [gold]Hand[/gold] with [gold]Masterful[/gold].",

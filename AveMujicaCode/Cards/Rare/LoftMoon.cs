@@ -13,19 +13,22 @@ public class LoftMoon() : AveMujicaCard(1,
     CardType.Power, CardRarity.Rare,
     CustomTargetType.PetOrSelf)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<LoftMoonPower>(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<LoftMoonPower>(2)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
         await DollHelper.Dreamspin(choiceContext, Owner, play.Target, this);
+        if (IsUpgraded)
+        {
+            await DollHelper.Dreamspin(choiceContext, Owner, play.Target, this);
+        }
         await PowerCmd.Apply<LoftMoonPower>(choiceContext, Owner.Creature, DynamicVars["LoftMoonPower"].BaseValue, Owner.Creature, this);
     }
     
     protected override void OnUpgrade()
     {
-        EnergyCost.UpgradeBy(-1);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [

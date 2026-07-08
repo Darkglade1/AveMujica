@@ -5,10 +5,10 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
-namespace AveMujica.AveMujicaCode.Cards.Common;
+namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
 public class GibbousMoonEnvy() : AveMujicaCard(1,
-    CardType.Skill, CardRarity.Common,
+    CardType.Skill, CardRarity.Uncommon,
     CustomTargetType.PetOrSelf)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
