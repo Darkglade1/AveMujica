@@ -1,7 +1,7 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=3 format=3 uid="uid://h8tja8m5jgt7"]
 
 [ext_resource type="SpineSkeletonDataResource" path="res://AveMujica/images/character/amoris/skin/amoris-data-res.tres" id="1_0a40p"]
-[ext_resource type="Script" path="res://AveMujicaCode/Nodes/AveMujicaNCreatureVisuals.cs" id="1_se58w"]
+[ext_resource type="Script" uid="uid://duclcpwgodg8e" path="res://AveMujicaCode/Nodes/AveMujicaNCreatureVisuals.cs" id="1_se58w"]
 
 [node name="Amoris" type="Node2D"]
 script = ExtResource("1_se58w")
@@ -21,7 +21,7 @@ position = Vector2(3, -95)
 
 [node name="IntentPos" type="Marker2D" parent="."]
 unique_name_in_owner = true
-position = Vector2(2, -218)
+position = Vector2(1, -237)
 
 [node name="Visuals" type="SpineSprite" parent="."]
 skeleton_data_res = ExtResource("1_0a40p")
