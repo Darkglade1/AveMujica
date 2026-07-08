@@ -5,6 +5,7 @@ using MegaCrit.Sts2.Core.Animation;
 using MegaCrit.Sts2.Core.Assets;
 using MegaCrit.Sts2.Core.Bindings.MegaSpine;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
@@ -36,7 +37,11 @@ public sealed class AmorisDoll : AbstractDoll
     if (owner != null)
     {
       await CreatureCmd.TriggerAnim(Creature, "Attack", 0f);
-      Sfx.SKILL_DRUM.Play();
+      if (canPlaySFX)
+      {
+        canPlaySFX = false;
+        Sfx.SKILL_DRUM.Play();
+      }
       for (int i = 0; i < currentHits; i++)
       {
         IReadOnlyList<Creature>? hittableEnemies = Creature.CombatState?.HittableEnemies;
@@ -52,12 +57,20 @@ public sealed class AmorisDoll : AbstractDoll
     }
   }
   
+  public override Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
+  {
+    if (cardPlay.Card.Owner == Creature.PetOwner)
+    {
+      canPlaySFX = true;
+    }
+    return Task.CompletedTask;
+  }
+  
   public override async Task Skill()
   {
     var owner = Creature.PetOwner;
     if (owner != null)
     {
-      await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
       await PowerCmd.Apply<AmorisTempStrPower>(new ThrowingPlayerChoiceContext(), Creature, strength, Creature, null);
       await Attack(null);
     }

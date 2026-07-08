@@ -21,6 +21,7 @@ public abstract class AbstractDoll : CustomMonsterModel
   
   protected bool canUseAbilitiesThisTurn = true;
   private bool hasSetUp;
+  protected bool canPlaySFX = true;
 
   public abstract MoveState GetDefaultMoveState();
 
@@ -59,6 +60,7 @@ public abstract class AbstractDoll : CustomMonsterModel
   {
     if (side == CombatSide.Player)
     {
+      canPlaySFX = true;
       canUseAbilitiesThisTurn = true;
     }
     return Task.CompletedTask;
@@ -71,6 +73,7 @@ public abstract class AbstractDoll : CustomMonsterModel
   {
     if (side == CombatSide.Player && Creature.IsAlive && Creature.PetOwner != null && Creature.PetOwner.Creature.IsAlive && canUseAbilitiesThisTurn)
     {
+      canPlaySFX = true;
       await PerformMove();
       await Cmd.Wait(0.25f);
       await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Creature, 1, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, Creature);
