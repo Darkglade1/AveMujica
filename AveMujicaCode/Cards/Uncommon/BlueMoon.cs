@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
-public class BlueMoon() : AveMujicaCard(5,
+public class BlueMoon() : AveMujicaCard(4,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self), IAfterDreamspin
 {

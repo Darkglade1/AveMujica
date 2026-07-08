@@ -280,9 +280,9 @@
   "AVEMUJICA-AS_STRONG_AS_WHEAT.title": "As Strong As Wheat",
 
   "AVEMUJICA-HOW_DARE_YOU.description": "Whenever you are attacked, [gold]Doloris[/gold] deals {HowDareYouPower:diff()} damage to the attacker and increases this effect's damage by 1.",
-  "AVEMUJICA-HOW_DARE_YOU.title": "How Dare You!",
+  "AVEMUJICA-HOW_DARE_YOU.title": "Entwined Fates",
 
-  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take 100% more damage from attacks this turn.\"",
+  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take 100% more damage from Attacks this turn.\"",
   "AVEMUJICA-MOONLIGHT_EXECUTION.title": "Moonlight Execution",
 
   "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "[gold]Mortis[/gold] gains 1 [gold]Intangible[/gold], absorbs all incoming unblocked attack damage this turn, and can't use other abilities this turn.",

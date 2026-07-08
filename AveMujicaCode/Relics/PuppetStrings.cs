@@ -14,7 +14,7 @@ namespace AveMujica.AveMujicaCode.Relics;
 public class PuppetStrings() : AveMujicaRelic, IAfterAwaken
 {
     public override RelicRarity Rarity =>
-        RelicRarity.Shop;
+        RelicRarity.Rare;
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<StrengthPower>(1)];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(AveMujicaKeywords.Doll), HoverTipFactory.FromPower<StrengthPower>(), HoverTipFactory.FromPower<DexterityPower>()];
