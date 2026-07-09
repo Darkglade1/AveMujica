@@ -15,7 +15,7 @@ public class LoftMoonPower() : AveMujicaPower
     public override PowerStackType StackType =>
         PowerStackType.Counter;
     
-    public override async Task BeforeSideTurnEnd(
+    public override async Task BeforeSideTurnEndEarly(
         PlayerChoiceContext choiceContext,
         CombatSide side,
         IEnumerable<Creature> participants)

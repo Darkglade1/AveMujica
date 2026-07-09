@@ -65,7 +65,7 @@ public abstract class AbstractDoll : CustomMonsterModel
     return Task.CompletedTask;
   }
   
-  public override async Task BeforeSideTurnEndEarly(
+  public override async Task BeforeSideTurnEnd(
     PlayerChoiceContext choiceContext,
     CombatSide side,
     IEnumerable<Creature> participants)
@@ -75,8 +75,11 @@ public abstract class AbstractDoll : CustomMonsterModel
       canPlaySFX = true;
       await PerformMove();
       await Cmd.Wait(0.25f);
-      await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Creature, 1, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, Creature);
-      await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Creature, 1, false);
+      if (!CombatManager.Instance.IsEnding)
+      {
+        await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Creature, 1, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, Creature);
+        await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Creature, 1, false);
+      }
     }
   }
   
