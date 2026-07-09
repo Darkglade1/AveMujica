@@ -78,6 +78,10 @@ public class AveMujica : PlaceholderCharacterModel
     public override string CustomVisualPath => Config.UseOblivionisSkin ? "oblivionis/skin/oblvns.tscn".CharacterPath() : "oblivionis/oblvns.tscn".CharacterPath();
     public override string CustomMerchantAnimPath => Config.UseOblivionisSkin ? "oblivionis/skin/merchant.tscn".CharacterPath() : "oblivionis/merchant.tscn".CharacterPath();
     public override string CustomRestSiteAnimPath => Config.UseOblivionisSkin ? "oblivionis/skin/rest_site.tscn".CharacterPath() : "oblivionis/rest_site.tscn".CharacterPath();
+    public override string CustomArmPointingTexturePath => Config.UseOblivionisSkin ? "skin_index.png".CharacterUiPath() : "index.png".CharacterUiPath();
+    public override string CustomArmRockTexturePath => Config.UseOblivionisSkin ? "skin_rock.png".CharacterUiPath() : "rock.png".CharacterUiPath();
+    public override string CustomArmPaperTexturePath => Config.UseOblivionisSkin ? "skin_paper.png".CharacterUiPath() : "paper.png".CharacterUiPath();
+    public override string CustomArmScissorsTexturePath => Config.UseOblivionisSkin ? "skin_scissors.png".CharacterUiPath() : "scissors.png".CharacterUiPath();
     public override string CustomCharacterSelectBg => "selection_screen.tscn".CharacterUiPath();
     public override string CustomIconTexturePath => "character_icon_char_name.png".CharacterUiPath();
     public override string CustomIconOutlineTexturePath => "character_icon_char_name_outline.png".CharacterUiPath();
