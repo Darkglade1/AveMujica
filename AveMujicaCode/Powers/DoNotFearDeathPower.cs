@@ -15,7 +15,7 @@ public class DoNotFearDeathPower : AveMujicaPower
         PowerType.Buff;
 
     public override PowerStackType StackType =>
-        PowerStackType.Single;
+        PowerStackType.Counter;
 
     public override Creature ModifyUnblockedDamageTarget(
         Creature target,
@@ -49,12 +49,17 @@ public class DoNotFearDeathPower : AveMujicaPower
     {
         if (side == CombatSide.Enemy)
         {
-            await PowerCmd.Remove<DoNotFearDeathPower>(Owner);
-            if (Owner.Monster is MortisDoll ally)
-            {
-                await CreatureCmd.TriggerAnim(Owner, "SwitchOut", 0);
-                ally.SetMoveImmediate(ally.GetDefaultMoveState());
-            }
+            await PowerCmd.TickDownDuration(this);
+        }
+    }
+
+    public override async Task AfterRemoved(Creature oldOwner)
+    {
+        if (oldOwner.Monster is MortisDoll ally)
+        {
+            await CreatureCmd.TriggerAnim(Owner, "SwitchOut", 0);
+            ally.SetMoveImmediate(ally.GetDefaultMoveState());
+            ally.canUseAbilitiesThisTurn = true;
         }
     }
 }

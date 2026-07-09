@@ -11,8 +11,8 @@
   "AVEMUJICA-HOW_DARE_YOU_POWER.smartDescription": "Whenever you are attacked, [gold]Doloris[/gold] deals [blue]{Amount}[/blue] damage to the attacker and increases this effect's damage by [blue]1[/blue].",
   "AVEMUJICA-HOW_DARE_YOU_POWER.title": "How Dare You!",
 
-  "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.description": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage this turn and can't use other abilities this turn.",
-  "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.smartDescription": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage and can't use other abilities this turn.",
+  "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.description": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage and can't use other abilities this turn.",
+  "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.smartDescription": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage and can't use other abilities {Amount:plural:this turn|for [blue]{Amount}[/blue] turns}.",
   "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.title": "Do Not Fear Death",
 
   "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.description": "Receives more damage from Attacks this turn.",
@@ -100,10 +100,10 @@
   "AVEMUJICA-GROUP_PERFORMANCE_POWER.title": "Group Performance",
 
   "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.description": "[gold]Amoris[/gold] hits more times with Attacks.",
-  "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.smartDescription": "[gold]Amoris[/gold] hits [blue]{Amount}[/blue] more times with Attacks.",
+  "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.smartDescription": "[gold]Amoris[/gold] hits [blue]{Amount}[/blue] more {Amount:plural:time|times} with Attacks.",
   "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.title": "As Strong As Wheat",
 
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take [blue]100%[/blue] more damage from Attacks this turn.\"",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.smartDescription": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take [blue]100%[/blue] more damage from Attacks this turn.\"",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take more damage from Attacks this turn.\"",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.smartDescription": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take [blue]{Amount}%[/blue] more damage from Attacks this turn.\"",
   "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.title": "Moonlight Execution"
 }

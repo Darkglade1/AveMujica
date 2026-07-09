@@ -14,7 +14,7 @@ namespace AveMujica.AveMujicaCode.Cards.Dolls;
 
 public class DollHelper
 {
-    public static int StartingHp = 3;
+    public static int StartingHp = 4;
     public static async Task Awaken<T>(
         PlayerChoiceContext choiceContext,
         Player summoner,

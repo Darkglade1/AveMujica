@@ -13,13 +13,13 @@ namespace AveMujica.AveMujicaCode.Cards.Dolls;
 
 public abstract class AbstractDoll : CustomMonsterModel
 {
-  public override int MinInitialHp => 3;
+  public override int MinInitialHp => DollHelper.StartingHp;
 
-  public override int MaxInitialHp => 3;
+  public override int MaxInitialHp => DollHelper.StartingHp;
 
   public override bool IsHealthBarVisible => Creature.IsAlive;
   
-  protected bool canUseAbilitiesThisTurn = true;
+  public bool canUseAbilitiesThisTurn = true;
   private bool hasSetUp;
   protected bool canPlaySFX = true;
 
@@ -61,7 +61,6 @@ public abstract class AbstractDoll : CustomMonsterModel
     if (side == CombatSide.Player)
     {
       canPlaySFX = true;
-      canUseAbilitiesThisTurn = true;
     }
     return Task.CompletedTask;
   }

@@ -56,7 +56,7 @@
   "AVEMUJICA-LATE_NIGHTS.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Compose[/gold] twice.",
   "AVEMUJICA-LATE_NIGHTS.title": "Late Nights",
 
-  "AVEMUJICA-REHEARSAL.description": "Gain {Energy:energyIcons()}.\n[gold]Perform Attack:[/gold] Gain {Energy:energyIcons()}.",
+  "AVEMUJICA-REHEARSAL.description": "Gain {Energy:energyIcons()} next turn.\n[gold]Perform Attack:[/gold] Gain {Energy:energyIcons()}.",
   "AVEMUJICA-REHEARSAL.title": "Rehearsal",
 
   "AVEMUJICA-REPETITION.description": "Deal {Damage:diff()} damage.\n[gold]Perform Attack Skill:[/gold] Deal {Damage:diff()} damage again.",
@@ -126,7 +126,7 @@
   "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gain {Block:diff()} [gold]Block[/gold].\nALL [gold]Dolls[/gold] gain {Heal:diff()} HP.",
   "AVEMUJICA-FULL_MOON_MASQUERADE.title": "Full Moon Masquerade",
 
-  "AVEMUJICA-BLUE_MOON.description": "Gain {Block:diff()} [gold]Block[/gold].\nCosts {energyPrefix:energyIcons(1)} less this combat whenever you [gold]Dreamspin[/gold].",
+  "AVEMUJICA-BLUE_MOON.description": "Gain [gold]Block[/gold] equal to the total HP of your [gold]Dolls[/gold].{InCombat:\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold])|}",
   "AVEMUJICA-BLUE_MOON.title": "Blue Moon's Sorrow",
 
   "AVEMUJICA-WHITE_KEYS_BLACK_KEYS.description": "[gold]Perform Skill:[/gold] Apply {WeakPower:diff()} [gold]Weak[/gold].\n[gold]Perform Attack:[/gold] Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
@@ -276,13 +276,13 @@
   "AVEMUJICA-GODDESS_OF_OBLIVION.description": "Gain {Oblivion:diff()} [gold]Oblivion[/gold].\nWhenever a card is [gold]Exhausted[/gold], gain {GoddessOfOblivionPower:diff()} [gold]Oblivion[/gold].",
   "AVEMUJICA-GODDESS_OF_OBLIVION.title": "Goddess of Oblivion",
 
-  "AVEMUJICA-AS_STRONG_AS_WHEAT.description": "[gold]Amoris[/gold] hits {AsStrongAsWheatPower:diff()} more times with Attacks.",
+  "AVEMUJICA-AS_STRONG_AS_WHEAT.description": "[gold]Amoris[/gold] hits {AsStrongAsWheatPower:diff()} more {AsStrongAsWheatPower:plural:time|times} with Attacks.",
   "AVEMUJICA-AS_STRONG_AS_WHEAT.title": "As Strong As Wheat",
 
   "AVEMUJICA-HOW_DARE_YOU.description": "Whenever you are attacked, [gold]Doloris[/gold] deals {HowDareYouPower:diff()} damage to the attacker and increases this effect's damage by 1.",
   "AVEMUJICA-HOW_DARE_YOU.title": "Entwined Fates",
 
-  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take 100% more damage from Attacks this turn.\"",
+  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take {MoonlightExecutionPower:diff()}% more damage from Attacks this turn.\"",
   "AVEMUJICA-MOONLIGHT_EXECUTION.title": "Moonlight Execution",
 
   "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "[gold]Mortis[/gold] gains 1 [gold]Intangible[/gold], absorbs all incoming unblocked attack damage this turn, and can't use other abilities this turn.",

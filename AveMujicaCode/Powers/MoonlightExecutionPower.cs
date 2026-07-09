@@ -8,7 +8,7 @@ public class MoonlightExecutionPower() : AveMujicaPower
         PowerType.Buff;
 
     public override PowerStackType StackType =>
-        PowerStackType.None;
+        PowerStackType.Counter;
 
     // public override async Task AfterPowerAmountChanged(
     //     PlayerChoiceContext choiceContext,

@@ -21,7 +21,6 @@ public sealed class TimorisDoll : AbstractDoll
 {
   private static int damage = 5;
   private static int debuff = 1;
-  private static int damageIncrease = 100;
   public override string CustomVisualPath => Config.UseTimorisSkin ? "timoris/skin/timoris.tscn".CharacterPath() : "timoris/timoris.tscn".CharacterPath();
   
   public override MoveState GetDefaultMoveState()
@@ -83,7 +82,7 @@ public sealed class TimorisDoll : AbstractDoll
       {
         foreach (Creature enemy in Creature.CombatState.HittableEnemies)
         {
-          await PowerCmd.Apply<MoonlightExecutionDebuff>(new ThrowingPlayerChoiceContext(), enemy, damageIncrease, Creature, null);
+          await PowerCmd.Apply<MoonlightExecutionDebuff>(new ThrowingPlayerChoiceContext(), enemy, GetMoonlightExecutionAmount(), Creature, null);
         }
       }
     }
@@ -132,12 +131,12 @@ public sealed class TimorisDoll : AbstractDoll
     return hoverTip;
   }
   
-  public static HoverTip MoonlightExecutionHovertip()
+  public HoverTip MoonlightExecutionHovertip()
   {
     var hoverTip = new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title"),
       new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description"));
-    hoverTip.Description = String.Format(hoverTip.Description, damageIncrease);
+    hoverTip.Description = String.Format(hoverTip.Description, GetMoonlightExecutionAmount());
     return hoverTip;
   }
 
@@ -160,6 +159,15 @@ public sealed class TimorisDoll : AbstractDoll
       return Creature.PetOwner.Creature.HasPower<MoonlightExecutionPower>();
     }
     return false;
+  }
+  
+  private int GetMoonlightExecutionAmount()
+  {
+    if (Creature.PetOwner != null && Creature.PetOwner.Creature.HasPower<MoonlightExecutionPower>())
+    {
+      return Creature.PetOwner.Creature.GetPowerAmount<MoonlightExecutionPower>();
+    }
+    return 0;
   }
 
   public override CreatureAnimator GenerateAnimator(MegaSprite controller)

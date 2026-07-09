@@ -13,7 +13,7 @@ public class AsStrongAsWheat() : AveMujicaCard(2,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new PowerVar<AsStrongAsWheatPower>(2)
+        new PowerVar<AsStrongAsWheatPower>(1)
     ];
 
     protected override async Task OnPlay(
