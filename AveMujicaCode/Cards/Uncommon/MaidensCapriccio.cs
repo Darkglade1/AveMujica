@@ -13,7 +13,7 @@ public class MaidensCapriccio() : AbstractPerformCard(1,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2), new("BaseExhaust", 2), new("Exhaust", 2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(3), new("BaseExhaust", 1), new("Exhaust", 1)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Perform),

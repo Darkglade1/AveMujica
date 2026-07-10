@@ -138,8 +138,8 @@
   "AVEMUJICA-FULL_HOUSE.description": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each time you [gold]Performed[/gold] this combat.",
   "AVEMUJICA-FULL_HOUSE.title": "Full House",
 
-  "AVEMUJICA-MAIDENS_CAPRICCIO.description": "Draw {Cards:diff()} cards.\n[gold]Perform Skill: Exhaust[/gold] up to {BaseExhaust:diff()} cards.",
-  "AVEMUJICA-MAIDENS_CAPRICCIO.selectionScreenPrompt": "Choose up to {Exhaust:diff()} cards to [gold]Exhaust[/gold].",
+  "AVEMUJICA-MAIDENS_CAPRICCIO.description": "Draw {Cards:diff()} cards.\n[gold]Perform Skill: Exhaust[/gold] up to {BaseExhaust:diff()} {BaseExhaust:plural:card|cards}.",
+  "AVEMUJICA-MAIDENS_CAPRICCIO.selectionScreenPrompt": "Choose up to {Exhaust:diff()} {Exhaust:plural:card|cards} to [gold]Exhaust[/gold].",
   "AVEMUJICA-MAIDENS_CAPRICCIO.title": "Maiden's Capriccio",
 
   "AVEMUJICA-EMOTIONAL_OUTBURST.description": "Deal {Damage:diff()} damage.\nDeal {Damage:diff()} damage again for each card [gold]Exhausted[/gold] this turn.{InCombat:\n(Hits {CalculatedHits:diff()} extra {CalculatedHits:plural:time|times})|}",

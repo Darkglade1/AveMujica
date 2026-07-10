@@ -12,7 +12,7 @@ public class Melody() : AveMujicaCard(1,
     CardType.Power, CardRarity.Uncommon,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<MelodyPower>(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<MelodyPower>(1)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Perform),
@@ -28,6 +28,6 @@ public class Melody() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-        EnergyCost.UpgradeBy(-1);
+        DynamicVars["MelodyPower"].UpgradeValueBy(1);
     }
 }

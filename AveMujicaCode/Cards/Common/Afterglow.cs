@@ -13,7 +13,7 @@ public class Afterglow() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(7, ValueProp.Move), new EnergyVar(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(8, ValueProp.Move), new EnergyVar(1)];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [EnergyHoverTip, HoverTipFactory.FromKeyword(AveMujicaKeywords.Perform)];
     public override bool GainsBlock => true;
 
