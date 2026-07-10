@@ -286,5 +286,8 @@
   "AVEMUJICA-MOONLIGHT_EXECUTION.title": "Moonlight Execution",
 
   "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "[gold]Mortis[/gold] gains 1 [gold]Intangible[/gold], absorbs all incoming unblocked attack damage this turn, and can't use other abilities this turn.",
-  "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "Do Not Fear Death"
+  "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "Do Not Fear Death",
+
+  "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold].\nIf the target is a [gold]Doll[/gold], they lose {IfUpgraded:show:up to }{HpLoss:diff()} HP{IfUpgraded:show: twice} to [gold]Dreamspin[/gold] again.",
+  "AVEMUJICA-TWO_MOONS.title": "Two Moons"
 }
