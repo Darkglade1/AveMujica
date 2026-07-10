@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://x3fcf7bjbe6j"
-path="res://.godot/imported/knights_of_oblivionis_power.png-a30af022092983a98788520a668cb1a9.ctex"
+uid="uid://wfpx0kj0nh60"
+path="res://.godot/imported/hymn.png-4e4d7d3149a995fafca751fbe8a63a83.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/powers/big/knights_of_oblivionis_power.png"
-dest_files=["res://.godot/imported/knights_of_oblivionis_power.png-a30af022092983a98788520a668cb1a9.ctex"]
+source_file="res://AveMujica/images/card_portraits/big/hymn.png"
+dest_files=["res://.godot/imported/hymn.png-4e4d7d3149a995fafca751fbe8a63a83.ctex"]
 
 [params]
 

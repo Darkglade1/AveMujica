@@ -1,10 +1,14 @@
 ﻿using AveMujica.AveMujicaCode.Audio;
+using AveMujica.AveMujicaCode.Cards.Uncommon;
 using AveMujica.AveMujicaCode.Extensions;
+using AveMujica.AveMujicaCode.Powers;
 using MegaCrit.Sts2.Core.Animation;
 using MegaCrit.Sts2.Core.Assets;
 using MegaCrit.Sts2.Core.Bindings.MegaSpine;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
@@ -32,6 +36,7 @@ public sealed class DolorisDoll : AbstractDoll
     {
       await PlayCastAnimation();
       await CreatureCmd.GainBlock(owner.Creature, CalcBlockWithDex(block), ValueProp.Unpowered, null);
+      await CheckGiveBlockToAllPlayers(CalcBlockWithDex(block));
     }
   }
   
@@ -43,6 +48,22 @@ public sealed class DolorisDoll : AbstractDoll
       await PlayCastAnimation();
       Sfx.SKILL_GUITAR_VOCALS.Play();
       await CreatureCmd.GainBlock(owner.Creature, CalcBlockWithDex(skillBlock), ValueProp.Unpowered, null);
+      await CheckGiveBlockToAllPlayers(CalcBlockWithDex(skillBlock));
+    }
+  }
+
+  private async Task CheckGiveBlockToAllPlayers(int amount)
+  {
+    var owner = Creature.PetOwner;
+    if (owner != null && owner.Creature.HasPower<HymnPower>())
+    {
+      foreach (Player player in CombatState.Players)
+      {
+        if (player != owner)
+        {
+          await CreatureCmd.GainBlock(player.Creature, amount, ValueProp.Unpowered, null);
+        }
+      }
     }
   }
   

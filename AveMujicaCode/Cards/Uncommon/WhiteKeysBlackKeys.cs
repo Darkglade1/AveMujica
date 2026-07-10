@@ -17,6 +17,7 @@ public class WhiteKeysBlackKeys() : AbstractPerformCard(0,
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Perform),
         HoverTipFactory.FromPower(ModelDb.Power<WeakPower>()),
         HoverTipFactory.FromPower(ModelDb.Power<VulnerablePower>())
     ];

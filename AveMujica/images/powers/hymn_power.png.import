@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cc1jdfe67pvwa"
-path="res://.godot/imported/glissando.png-a914739f50bf9ef6b2f4d945df5cfcc3.ctex"
+uid="uid://s7vq6q6nsf0s"
+path="res://.godot/imported/hymn_power.png-45fa5aa656752d8da5f281fe92d630c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/card_portraits/glissando.png"
-dest_files=["res://.godot/imported/glissando.png-a914739f50bf9ef6b2f4d945df5cfcc3.ctex"]
+source_file="res://AveMujica/images/powers/hymn_power.png"
+dest_files=["res://.godot/imported/hymn_power.png-45fa5aa656752d8da5f281fe92d630c6.ctex"]
 
 [params]
 

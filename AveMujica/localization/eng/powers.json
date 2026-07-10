@@ -105,5 +105,9 @@
 
   "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take more damage from Attacks this turn.\"",
   "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.smartDescription": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take [blue]{Amount}%[/blue] more damage from Attacks this turn.\"",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.title": "Moonlight Execution"
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.title": "Moonlight Execution",
+
+  "AVEMUJICA-HYMN_POWER.description": "[gold]Doloris[/gold] gives [gold]Block[/gold] to ALL players this turn.",
+  "AVEMUJICA-HYMN_POWER.smartDescription": "[gold]Doloris[/gold] gives [gold]Block[/gold] to ALL players {Amount:plural:this turn|for [blue]{Amount}[/blue] turns}.",
+  "AVEMUJICA-HYMN_POWER.title": "Hymn of Valor"
 }

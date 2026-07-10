@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cc1jdfe67pvwa"
-path="res://.godot/imported/glissando.png-a914739f50bf9ef6b2f4d945df5cfcc3.ctex"
+uid="uid://bri0x2sfsk7c0"
+path="res://.godot/imported/anthem.png-c1734782885b745cd9cacee5bc954964.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/card_portraits/glissando.png"
-dest_files=["res://.godot/imported/glissando.png-a914739f50bf9ef6b2f4d945df5cfcc3.ctex"]
+source_file="res://AveMujica/images/card_portraits/anthem.png"
+dest_files=["res://.godot/imported/anthem.png-c1734782885b745cd9cacee5bc954964.ctex"]
 
 [params]
 

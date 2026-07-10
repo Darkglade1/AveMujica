@@ -289,5 +289,11 @@
   "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "Do Not Fear Death",
 
   "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold].\nIf the target is a [gold]Doll[/gold], they lose {IfUpgraded:show:up to }{HpLoss:diff()} HP{IfUpgraded:show: twice} to [gold]Dreamspin[/gold] again.",
-  "AVEMUJICA-TWO_MOONS.title": "Two Moons"
+  "AVEMUJICA-TWO_MOONS.title": "Two Moons",
+
+  "AVEMUJICA-HYMN.description": "This turn, [gold]Doloris[/gold] gives [gold]Block[/gold] to ALL players.\n[gold]Dreamspin[/gold].",
+  "AVEMUJICA-HYMN.title": "Hymn of Valor",
+
+  "AVEMUJICA-ANTHEM.description": "[gold]Perform Attack:[/gold] ALL players gain {StrengthPower:diff()} [gold]Strength[/gold] this turn.\n[gold]Perform Skill:[/gold] ALL players gain {DexterityPower:diff()} [gold]Dexterity[/gold] this turn.",
+  "AVEMUJICA-ANTHEM.title": "Anthem of Battle"
 }

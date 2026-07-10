@@ -23,7 +23,7 @@ public class GroupPerformance() : AveMujicaCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await PowerCmd.Apply<GroupPerformancePower>(choiceContext, Owner.Creature,DynamicVars.Cards.BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<GroupPerformancePower>(choiceContext, Owner.Creature, DynamicVars.Cards.BaseValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()
