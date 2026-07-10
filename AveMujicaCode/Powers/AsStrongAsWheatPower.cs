@@ -27,7 +27,7 @@ public class AsStrongAsWheatPower() : AveMujicaPower, IAfterAwaken
         {
             foreach (var ally in Owner.CombatState.Allies)
             {
-                if (ally.Monster is AmorisDoll amoris && ally.IsAlive)
+                if (ally.Monster is AmorisDoll amoris && ally.IsAlive && ally.PetOwner?.Creature == Owner)
                 {
                     Flash();
                     amoris.currentHits = AmorisDoll.baseHits + Amount;

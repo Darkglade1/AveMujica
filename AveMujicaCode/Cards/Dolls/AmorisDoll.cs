@@ -76,20 +76,6 @@ public sealed class AmorisDoll : AbstractDoll
     }
   }
   
-  // public override async Task Skill2()
-  // {
-  //   var owner = Creature.PetOwner;
-  //   if (owner != null)
-  //   {
-  //     numSkillsUsedThisTurn++;
-  //     await CreatureCmd.TriggerAnim(Creature, "Cast2", 0);
-  //     Sfx.SKILL_DRUM.Play();
-  //     await PaySkillCost(skill2HPCost);
-  //     currentHits += buffHits;
-  //     SetMoveImmediate(GetDefaultMoveState());
-  //   }
-  // }
-  
   public override HoverTip GetAutoSkillHoverTip()
   {
     return AutoSkillHoverTip();

@@ -46,19 +46,6 @@ public sealed class DolorisDoll : AbstractDoll
     }
   }
   
-  // public override async Task Skill2()
-  // {
-  //   var owner = Creature.PetOwner;
-  //   if (owner != null)
-  //   {
-  //     numSkillsUsedThisTurn++;
-  //     await PlayCastAnimation();
-  //     Sfx.SKILL_GUITAR_VOCALS.Play();
-  //     await PaySkillCost(skill2HPCost);
-  //     await PowerCmd.Apply<HowDareYou>(new ThrowingPlayerChoiceContext(), owner.Creature, damage, Creature, null);
-  //   }
-  // }
-  
   private async Task PlayCastAnimation()
   {
     if (Config.UseDolorisSkin)
