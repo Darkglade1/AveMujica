@@ -25,5 +25,9 @@
 
   "AVEMUJICA-PUPPET_STRINGS.description": "[gold]Dolls[/gold] enter with [blue]{StrengthPower}[/blue] [gold]Strength[/gold] and [gold]Dexterity[/gold].",
   "AVEMUJICA-PUPPET_STRINGS.flavor": "She thinks it ironic that even in such a strange place, there were still so many puppets futily dancing on their strings.",
-  "AVEMUJICA-PUPPET_STRINGS.title": "Puppet Strings"
+  "AVEMUJICA-PUPPET_STRINGS.title": "Puppet Strings",
+
+  "AVEMUJICA-VIOLIN.description": "Upon pickup, [gold]Enchant[/gold] up to [blue]{Cards}[/blue] cards with [purple]Masterful[/purple] [blue]{Masterful}[/blue].",
+  "AVEMUJICA-VIOLIN.flavor": "She could tell her mysterious friend shouldered the burden of many lives, much like herself.",
+  "AVEMUJICA-VIOLIN.title": "Violin"
 }
