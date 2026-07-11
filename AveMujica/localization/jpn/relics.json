@@ -19,5 +19,9 @@
   "AVEMUJICA-NOTEBOOK.title": "ノートブック",
   "AVEMUJICA-PUPPET_STRINGS.description": "[gold]人形[/gold]は[gold]筋力[/gold]と[gold]敏捷性[/gold][blue]{StrengthPower}[/blue]を持った状態で登場する。",
   "AVEMUJICA-PUPPET_STRINGS.flavor": "こんな奇妙な場所でさえ、糸に操られ虚しく踊る人形がこれほど多いとは、皮肉なものだと彼女は思った。",
-  "AVEMUJICA-PUPPET_STRINGS.title": "操り糸"
+  "AVEMUJICA-PUPPET_STRINGS.title": "操り糸",
+
+  "AVEMUJICA-VIOLIN.description": "Upon pickup, [gold]Enchant[/gold] up to [blue]{Cards}[/blue] cards with [purple]Masterful[/purple] [blue]{Masterful}[/blue].",
+  "AVEMUJICA-VIOLIN.flavor": "She could tell her mysterious friend shouldered the burden of many lives, much like herself.",
+  "AVEMUJICA-VIOLIN.title": "Violin"
 }

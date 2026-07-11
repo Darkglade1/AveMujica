@@ -3,10 +3,11 @@
   "AVEMUJICA-PERFORM.title": "パフォーム",
   "AVEMUJICA-COMPOSE.description": "現在の[gold]楽曲[/gold]に指定された効果を追加する。効果が指定されていない場合、ランダムな効果を選んで追加する。[blue]3[/blue]回[gold]作曲[/gold]すると、[gold]楽曲[/gold]を手札に加える。",
   "AVEMUJICA-COMPOSE.title": "作曲",
-  "AVEMUJICA-AWAKEN.description": "[gold]人形[/gold]を召喚する。[gold]人形[/gold]はターン終了時にデフォルトアビリティを使用する。行動予告の横にあるボタンをクリックすることで、HPが十分にある場合スキルを発動できる。",
-  "AVEMUJICA-AWAKEN.title": "目覚め",
-  "AVEMUJICA-DREAMSPIN.description": "[gold]夢紡ぎ[/gold]カードは自分または[gold]人形[/gold]を対象にする。\n自分を対象にすると[gold]夢の糸[/gold]を得る。[blue]3[/blue]つの[gold]夢の糸[/gold]で[gold]人形[/gold]を[gold]目覚め[/gold]させる。\n[gold]人形[/gold]を対象にするとHPを回復する。[gold]夢の糸[/gold]を持っている場合、消費して追加のHPを与える。",
-  "AVEMUJICA-DREAMSPIN.title": "夢紡ぎ",
   "AVEMUJICA-DOLL.description": "[gold]ドロリス[/gold]、[gold]モーティス[/gold]、[gold]ティモリス[/gold]、[gold]アモーリス[/gold]。",
-  "AVEMUJICA-DOLL.title": "人形"
+  "AVEMUJICA-DOLL.title": "人形",
+
+  "AVEMUJICA-AWAKEN.description": "Summons a [gold]Doll[/gold]. [gold]Dolls[/gold] use their passive ability and lose [blue]1[/blue] HP at the end of your turn.",
+  "AVEMUJICA-AWAKEN.title": "Awaken",
+  "AVEMUJICA-DREAMSPIN.description": "[gold]Dreamspin[/gold] cards target yourself or a [gold]Doll[/gold].\nTarget yourself to [gold]Awaken[/gold] a [gold]Doll[/gold]. If all [gold]Dolls[/gold] are present, they gain [blue]1[/blue] HP instead.\nTarget a [gold]Doll[/gold] to activate their [gold]Skill[/gold].",
+  "AVEMUJICA-DREAMSPIN.title": "Dreamspin"
 }

@@ -14,7 +14,7 @@
   "AVEMUJICA-SONG.description": "{IfUpgraded:show:カードを1枚引く。\n}",
   "AVEMUJICA-SONG.title": "楽曲",
 
-  "AVEMUJICA-MOONLIT_STRIKE.description": "ランダムな敵に{Damage:diff()}ダメージを与える。\n[gold]夢紡ぎ[/gold]{Dreamspin:diff()}。",
+  "AVEMUJICA-MOONLIT_STRIKE.description": "ランダムな敵に{Damage:diff()}ダメージを与える。\n[gold]夢紡ぎ[/gold]。",
   "AVEMUJICA-MOONLIT_STRIKE.title": "月光のストライク",
 
   "AVEMUJICA-FORTE.description": "{Damage:diff()}ダメージを与える。\n[gold]作曲[/gold]「このターン、[gold]筋力[/gold]{Compose:diff()}を得る。」",
@@ -26,17 +26,11 @@
   "AVEMUJICA-FEEL_THE_BEAT.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\n[gold]パフォーム スキル:[/gold] カードを{Cards:diff()}枚引く。",
   "AVEMUJICA-FEEL_THE_BEAT.title": "ビートを感じて",
 
-  "AVEMUJICA-MOONLIGHT_BARRIER.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\n[gold]夢紡ぎ[/gold]{Dreamspin:diff()}。",
+  "AVEMUJICA-MOONLIGHT_BARRIER.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\n[gold]夢紡ぎ[/gold]。",
   "AVEMUJICA-MOONLIGHT_BARRIER.title": "月光の障壁",
-
-  "AVEMUJICA-NEW_MOON_AWAKENING.description": "[gold]夢紡ぎ[/gold]{Dreamspin:diff()}。\n対象が[gold]人形[/gold]の場合、このターン、その対象に[gold]筋力[/gold]と[gold]敏捷性[/gold]{StrengthPower:diff()}を与える。",
-  "AVEMUJICA-NEW_MOON_AWAKENING.title": "新月の覚醒",
 
   "AVEMUJICA-FIRST_QUARTER_YEARNING.description": "[gold]人形[/gold]1体に[gold]筋力[/gold]と[gold]敏捷性[/gold]{StrengthPower:diff()}を与える。",
   "AVEMUJICA-FIRST_QUARTER_YEARNING.title": "上弦の渇望",
-
-  "AVEMUJICA-WANING_MOON_DESIRE.description": "{Damage:diff()}ダメージを与える。\n最も古い[gold]人形[/gold]はHP{Heal:diff()}を得る。",
-  "AVEMUJICA-WANING_MOON_DESIRE.title": "下弦の欲望",
 
   "AVEMUJICA-AFTERGLOW.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\n次に[gold]パフォーム[/gold]した時、{Energy:energyIcons()}を得る。",
   "AVEMUJICA-AFTERGLOW.title": "Afterglow",
@@ -56,7 +50,7 @@
   "AVEMUJICA-LATE_NIGHTS.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\n[gold]作曲[/gold]を2回行う。",
   "AVEMUJICA-LATE_NIGHTS.title": "夜更かし",
 
-  "AVEMUJICA-REHEARSAL.description": "{Energy:energyIcons()}を得る。\n[gold]パフォーム アタック:[/gold] {Energy:energyIcons()}を得る。",
+  "AVEMUJICA-REHEARSAL.description": "次のターン {Energy:energyIcons()}を得る。\n[gold]パフォーム アタック:[/gold] {Energy:energyIcons()}を得る。",
   "AVEMUJICA-REHEARSAL.title": "リハーサル",
 
   "AVEMUJICA-REPETITION.description": "{Damage:diff()}ダメージを与える。\n[gold]パフォーム アタック スキル:[/gold] {Damage:diff()}ダメージを再び与える。",
@@ -110,18 +104,21 @@
   "AVEMUJICA-A_CAPPELLA.description": "{Damage:diff()}ダメージを与える。\n[gold]作曲[/gold]「{Energy:energyIcons()}を得る。」",
   "AVEMUJICA-A_CAPPELLA.title": "黄のアカペラ",
 
-  "AVEMUJICA-DA_CAPO.description": "{IfUpgraded:show:[gold]アップグレード[/gold]}[gold]作曲[/gold]。\nこのターンに[gold]楽曲[/gold]をプレイしていた場合、[gold]手札[/gold]のカード1枚に[gold]リプレイ[/gold]と[gold]廃棄[/gold]を付与する。",
+  "AVEMUJICA-DA_CAPO.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\nこのターンに[gold]楽曲[/gold]をプレイしていた場合、[gold]手札[/gold]のカード1枚に[gold]リプレイ[/gold]と[gold]廃棄[/gold]を付与する。",
   "AVEMUJICA-DA_CAPO.selectionScreenPrompt": "[gold]リプレイ[/gold]と[gold]廃棄[/gold]を付与するカードを1枚選ぶ。",
   "AVEMUJICA-DA_CAPO.title": "ダ・カーポ",
 
   "AVEMUJICA-AL_CODA.description": "{Damage:diff()}ダメージを与える。\nこのターンに[gold]楽曲[/gold]をプレイしていた場合、{IfUpgraded:show:[gold]アップグレード[/gold]}[gold]作曲[/gold]を2回行う。",
   "AVEMUJICA-AL_CODA.title": "アル・コーダ",
 
-  "AVEMUJICA-AL_FINE.description": "すべての敵に{Damage:diff()}ダメージを与える。\nこのターンに[gold]楽曲[/gold]をプレイしていた場合、[gold]夢紡ぎ[/gold]{Dreamspin:diff()}。",
-  "AVEMUJICA-AL_FINE.title": "アル・フィーネ",
-
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "[gold]夢紡ぎ[/gold]{Dreamspin:diff()}。\n自身を対象とした場合、再び[gold]夢紡ぎ[/gold]{Dreamspin:diff()}。",
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "[gold]夢紡ぎ[/gold]。\n自身を対象とした場合、再び[gold]夢紡ぎ[/gold]。",
   "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "三日月の残響",
+
+  "AVEMUJICA-GIBBOUS_MOON_ENVY.description": "[gold]夢紡ぎ[/gold]を2回行う。",
+  "AVEMUJICA-GIBBOUS_MOON_ENVY.title": "盈月の嫉妬",
+
+  "AVEMUJICA-AL_FINE.description": "すべての敵に{Damage:diff()}ダメージを与える。\nこのターンに[gold]楽曲[/gold]をプレイしていた場合、[gold]夢紡ぎ[/gold]を2回行う。。",
+  "AVEMUJICA-AL_FINE.title": "アル・フィーネ",
 
   "AVEMUJICA-FULL_MOON_MASQUERADE.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\nすべての[gold]人形[/gold]はHP{Heal:diff()}を得る。",
   "AVEMUJICA-FULL_MOON_MASQUERADE.title": "満月の仮面舞踏会",
@@ -156,9 +153,6 @@
 
   "AVEMUJICA-SYMBOL_WATER.description": "{Block:diff()}[gold]ブロック[/gold]を得る。",
   "AVEMUJICA-SYMBOL_WATER.title": "Symbol III : ▽",
-
-  "AVEMUJICA-SYMBOL_EARTH.description": "{Damage:diff()}ダメージを{Repeat:diff()}回与える。\n[gold]保留[/gold]した時、この戦闘中の攻撃回数が1増加する。",
-  "AVEMUJICA-SYMBOL_EARTH.title": "Symbol IV : Earth",
 
   "AVEMUJICA-CONCERTO.description": "{Damage:diff()}ダメージを与える。\n[gold]手札[/gold]の枚数に等しい[gold]熟練[/gold]をカード1枚に[gold]エンチャント[/gold]する。",
   "AVEMUJICA-CONCERTO.selectionScreenPrompt": "[gold]エンチャント[/gold]するカードを1枚選ぶ。",
@@ -204,16 +198,7 @@
   "AVEMUJICA-DO_NOT_FEAR_FORGETTING.description": "[gold]ブロック[/gold]{Block:diff()}をX回得る。\nカードをX枚[gold]廃棄[/gold]する。",
   "AVEMUJICA-DO_NOT_FEAR_FORGETTING.title": "忘却を恐れるな",
 
-  "AVEMUJICA-BLOOD_MOON.description": "ランダムな敵に{Damage:diff()}ダメージを与える。\n与えたダメージに等しい[gold]夢紡ぎ[/gold]。",
-  "AVEMUJICA-BLOOD_MOON.title": "血月の怒り",
-
-  "AVEMUJICA-TWO_MOONS.description": "[gold]夢紡ぎ[/gold]{Dreamspin:diff()}。\n対象が[gold]人形[/gold]の場合、このターン、その対象は追加で[gold]スキル[/gold]を使用できる。",
-  "AVEMUJICA-TWO_MOONS.title": "ふたつの月",
-
-  "AVEMUJICA-BLUE_MOON.description": "ターン開始時、[gold]夢の糸[/gold]{BlueMoonPower:diff()}を得る。",
-  "AVEMUJICA-BLUE_MOON.title": "蒼月の悲哀",
-
-  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "ターン開始時、すべての[gold]人形[/gold]が[gold]筋力[/gold]と[gold]敏捷性[/gold]{StrengthPower:diff()}を得る。",
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "すべての[gold]人形[/gold]が[gold]筋力[/gold]と[gold]敏捷性[/gold]{StrengthPower:diff()}を得る。",
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "オブリビオニスの騎士",
 
   "AVEMUJICA-FLAWLESS_PERFORMANCE.description": "[gold]パフォーム[/gold]カードは[gold]保留[/gold]され、\n[gold]パフォーム[/gold]効果が常に発動する。",
@@ -240,9 +225,6 @@
   "AVEMUJICA-CONSIGN.description": "{Damage:diff()}ダメージを与える。\n[gold]リーサル[/gold]時、戦闘終了時に[gold]デッキ[/gold]からカードを1枚削除してもよい。",
   "AVEMUJICA-CONSIGN.title": "忘却に捧ぐ",
 
-  "AVEMUJICA-LOFT_MOON.description": "[gold]夢紡ぎ[/gold]{Dreamspin:diff()}。\nターン終了時、[gold]人形[/gold]がHP{LoftMoonPower:diff()}を得る。",
-  "AVEMUJICA-LOFT_MOON.title": "ロフト・ムーン",
-
   "AVEMUJICA-PULL_FROM_OBLIVION.description": "[gold]廃棄札[/gold]のカードを1枚[gold]手札[/gold]に加える。{IfUpgraded:show:\nこの戦闘中、そのカードのコストは0になる。}",
   "AVEMUJICA-PULL_FROM_OBLIVION.selectionScreenPrompt": "[gold]手札[/gold]に加えるカードを1枚選ぶ。",
   "AVEMUJICA-PULL_FROM_OBLIVION.title": "忘却からの回収",
@@ -264,9 +246,6 @@
   "AVEMUJICA-PURSUIT_OF_MASTERY.title": "熟練の追求",
   "AVEMUJICA-PURSUIT_OF_MASTERY.selectionScreenPrompt": "[gold]エンチャント[/gold]するカードを1枚選ぶ。",
 
-  "AVEMUJICA-GIBBOUS_MOON_ENVY.description": "[gold]夢紡ぎ[/gold]{Dreamspin:diff()}。",
-  "AVEMUJICA-GIBBOUS_MOON_ENVY.title": "盈月の嫉妬",
-
   "AVEMUJICA-EXPLOSIVE_FINALE.description": "[gold]楽曲[/gold]を完成させるたび、すべての敵に{ExplosiveFinalePower:diff()}ダメージを与える。",
   "AVEMUJICA-EXPLOSIVE_FINALE.title": "爆発的フィナーレ",
 
@@ -286,5 +265,30 @@
   "AVEMUJICA-SPARK.title": "閃き",
 
   "AVEMUJICA-GODDESS_OF_OBLIVION.description": "[gold]忘却[/gold]{Oblivion:diff()}を得る。\nカードが[gold]廃棄[/gold]されるたび、[gold]忘却[/gold]{GoddessOfOblivionPower:diff()}を得る。",
-  "AVEMUJICA-GODDESS_OF_OBLIVION.title": "忘却の女神"
+  "AVEMUJICA-GODDESS_OF_OBLIVION.title": "忘却の女神",
+
+  "AVEMUJICA-NEW_MOON_AWAKENING.description": "[gold]夢紡ぎ[/gold]。\n対象が[gold]人形[/gold]の場合、they gain {Heal:diff()} HP.",
+  "AVEMUJICA-NEW_MOON_AWAKENING.title": "新月の覚醒",
+  "AVEMUJICA-BLOOD_MOON.description": "{Damage:diff()}ダメージを与える。\nThe lowest HP [gold]Doll[/gold] gains {Heal:diff()} HP.",
+  "AVEMUJICA-BLOOD_MOON.title": "下弦の欲望",
+  "AVEMUJICA-BLUE_MOON.description": "Gain [gold]Block[/gold] equal to the total HP of your [gold]Dolls[/gold].{InCombat:\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold])|}",
+  "AVEMUJICA-BLUE_MOON.title": "蒼月の悲哀",
+  "AVEMUJICA-SYMBOL_EARTH.description": "Gain {Block:diff()} [gold]Block[/gold].\nDeal {Damage:diff()} damage.\nWhen [gold]Retained[/gold], increase this card's damage and [gold]Block[/gold] by {UpgradeVar:diff()} this combat.",
+  "AVEMUJICA-SYMBOL_EARTH.title": "Symbol IV: Earth",
+  "AVEMUJICA-LOFT_MOON.description": "[gold]Dreamspin[/gold]{IfUpgraded:show: twice}.\nAt the end of your turn, the lowest HP [gold]Doll[/gold] gains {LoftMoonPower:diff()} HP.",
+  "AVEMUJICA-LOFT_MOON.title": "ロフト・ムーン",
+  "AVEMUJICA-AS_STRONG_AS_WHEAT.description": "[gold]Amoris[/gold] hits {AsStrongAsWheatPower:diff()} more {AsStrongAsWheatPower:plural:time|times} with Attacks.",
+  "AVEMUJICA-AS_STRONG_AS_WHEAT.title": "As Strong As Wheat",
+  "AVEMUJICA-HOW_DARE_YOU.description": "Whenever you are attacked, [gold]Doloris[/gold] deals {HowDareYouPower:diff()} damage to the attacker and increases this effect's damage by 1.",
+  "AVEMUJICA-HOW_DARE_YOU.title": "Entwined Fates",
+  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take {MoonlightExecutionPower:diff()}% more damage from Attacks this turn.\"",
+  "AVEMUJICA-MOONLIGHT_EXECUTION.title": "Moonlight Execution",
+  "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "[gold]Mortis[/gold] gains 1 [gold]Intangible[/gold], absorbs all incoming unblocked attack damage this turn, and can't use other abilities this turn.",
+  "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "Do Not Fear Death",
+  "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold].\nIf the target is a [gold]Doll[/gold], they lose {IfUpgraded:show:up to }{HpLoss:diff()} HP{IfUpgraded:show: twice} to [gold]Dreamspin[/gold] again.",
+  "AVEMUJICA-TWO_MOONS.title": "ふたつの月",
+  "AVEMUJICA-HYMN.description": "This turn, [gold]Doloris[/gold] gives [gold]Block[/gold] to ALL players.\n[gold]Dreamspin[/gold].",
+  "AVEMUJICA-HYMN.title": "Hymn of Valor",
+  "AVEMUJICA-ANTHEM.description": "[gold]Perform Attack:[/gold] ALL players gain {StrengthPower:diff()} [gold]Strength[/gold] this turn.\n[gold]Perform Skill:[/gold] ALL players gain {DexterityPower:diff()} [gold]Dexterity[/gold] this turn.",
+  "AVEMUJICA-ANTHEM.title": "Anthem of Battle"
 }

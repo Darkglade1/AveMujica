@@ -19,5 +19,9 @@
   "AVEMUJICA-PLAYFUL_CORETTON.title": "Coretton Joueur",
   "AVEMUJICA-PUPPET_STRINGS.description": "Les [gold]Poupées[/gold] apparaissent avec [blue]{StrengthPower}[/blue] de [gold]Force[/gold] et [gold]Dexterity[/gold].",
   "AVEMUJICA-PUPPET_STRINGS.flavor": "Elle trouve ça ironique que dans un endroit aussi êtrange, il y a toujours autant de marionnettes dansant inutilement sur leurs fils",
-  "AVEMUJICA-PUPPET_STRINGS.title": "Fils de Marionnette"
+  "AVEMUJICA-PUPPET_STRINGS.title": "Fils de Marionnette",
+
+  "AVEMUJICA-VIOLIN.description": "Upon pickup, [gold]Enchant[/gold] up to [blue]{Cards}[/blue] cards with [purple]Masterful[/purple] [blue]{Masterful}[/blue].",
+  "AVEMUJICA-VIOLIN.flavor": "She could tell her mysterious friend shouldered the burden of many lives, much like herself.",
+  "AVEMUJICA-VIOLIN.title": "Violin"
 }

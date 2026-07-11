@@ -1,12 +1,13 @@
 {
-  "AVEMUJICA-AWAKEN.description": "Invoque une [gold]Poupée[/gold] pour vous aider. Les [gold]Poupées[/gold] utilisent leurs capacités basiques à la fin du tour. Vous pouvez activez leurs compétences si elles ont des PV suffisant en cliquant sur les boutons à côté de leurs intentions.",
-  "AVEMUJICA-AWAKEN.title": "Éveiller",
   "AVEMUJICA-COMPOSE.description": "Ajoute l'effet spécifié à la [gold]Musique[/gold]. Si aucun effet n'est spécifié, un effet aléatoire est ajouté. Après avoir [gold]Composer[/gold] [blue]3[/blue] fois, ajoute la [gold]Musique[/gold] à votre main.",
   "AVEMUJICA-COMPOSE.title": "Composer",
   "AVEMUJICA-DOLL.description": "[gold]Doloris[/gold], [gold]Mortis[/gold], [gold]Timoris[/gold], et [gold]Amoris[/gold].",
   "AVEMUJICA-DOLL.title": "Poupée",
-  "AVEMUJICA-DREAMSPIN.description": "Les cartes [gold]Tisse-rêve[/gold] peuvent cibler les [gold]Poupées[/gold] ou vous-même.\nCiblez vous-même pour obtenir de la [gold]Soie Onirique[/gold].  [blue]3[/blue] [gold]Soie Onirique[/gold] sont utilisées pour [gold]Éveiller[/gold] une [gold]Poupée[/gold]\nCiblez une [gold]Poupée[/gold] pour leur donner des PV. Chaque [gold]Tisse-rêve[/gold] consommé donne des PV additionnels à la [gold]Poupée[/gold].",
-  "AVEMUJICA-DREAMSPIN.title": "Tisse-rêve",
   "AVEMUJICA-PERFORM.description": "Les effets [gold]Interprétation[/gold] sont activés si vous avez joué les types de cartes spécifiés ce tour.",
-  "AVEMUJICA-PERFORM.title": "Interprétation"
+  "AVEMUJICA-PERFORM.title": "Interprétation",
+
+  "AVEMUJICA-AWAKEN.description": "Summons a [gold]Doll[/gold]. [gold]Dolls[/gold] use their passive ability and lose [blue]1[/blue] HP at the end of your turn.",
+  "AVEMUJICA-AWAKEN.title": "Éveiller",
+  "AVEMUJICA-DREAMSPIN.description": "[gold]Dreamspin[/gold] cards target yourself or a [gold]Doll[/gold].\nTarget yourself to [gold]Awaken[/gold] a [gold]Doll[/gold]. If all [gold]Dolls[/gold] are present, they gain [blue]1[/blue] HP instead.\nTarget a [gold]Doll[/gold] to activate their [gold]Skill[/gold].",
+  "AVEMUJICA-DREAMSPIN.title": "Tisse-rêve"
 }

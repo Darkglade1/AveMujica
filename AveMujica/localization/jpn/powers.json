@@ -7,17 +7,13 @@
   "AVEMUJICA-DREAM_THREAD_POWER.smartDescription": "[gold]夢の糸[/gold]が[blue]3[/blue]つになると、消費して[gold]人形[/gold]を[gold]目覚め[/gold]させる。",
   "AVEMUJICA-DREAM_THREAD_POWER.title": "夢の糸",
 
-  "AVEMUJICA-HOW_DARE_YOU.description": "アタックを受けるたび、[gold]ドロリス[/gold]が攻撃した敵に[blue]6[/blue]ダメージを与え、この効果のダメージが[blue]1[/blue]増加する。",
-  "AVEMUJICA-HOW_DARE_YOU.smartDescription": "アタックを受けるたび、[gold]ドロリス[/gold]が攻撃した敵に[blue]{Amount}[/blue]ダメージを与え、この効果のダメージが[blue]1[/blue]増加する。",
-  "AVEMUJICA-HOW_DARE_YOU.title": "許さない！",
+  "AVEMUJICA-HOW_DARE_YOU_POWER.description": "アタックを受けるたび、[gold]ドロリス[/gold]が攻撃した敵に[blue]6[/blue]ダメージを与え、この効果のダメージが[blue]1[/blue]増加する。",
+  "AVEMUJICA-HOW_DARE_YOU_POWER.smartDescription": "アタックを受けるたび、[gold]ドロリス[/gold]が攻撃した敵に[blue]{Amount}[/blue]ダメージを与え、この効果のダメージが[blue]1[/blue]増加する。",
+  "AVEMUJICA-HOW_DARE_YOU_POWER.title": "許さない！",
 
-  "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "このターン、[gold]モーティス[/gold]がブロックされなかったアタックダメージをすべて吸収する。このターン、他のアビリティは使用できない。",
-  "AVEMUJICA-DO_NOT_FEAR_DEATH.smartDescription": "このターン、[gold]モーティス[/gold]がブロックされなかったアタックダメージをすべて吸収する。このターン、他のアビリティは使用できない。",
-  "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "死を恐れるなかれ",
-
-  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "このターン、アタックから受けるダメージが増加する。",
-  "AVEMUJICA-MOONLIGHT_EXECUTION.smartDescription": "このターン、アタックから受けるダメージが[blue]{Amount}%[/blue]増加する。",
-  "AVEMUJICA-MOONLIGHT_EXECUTION.title": "月光の処刑",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.description": "このターン、アタックから受けるダメージが増加する。",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.smartDescription": "このターン、アタックから受けるダメージが[blue]{Amount}%[/blue]増加する。",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.title": "月光の処刑",
 
   "AVEMUJICA-FUGUE_POWER.description": "次にプレイする[gold]廃棄[/gold]か[gold]保留[/gold]を持つカードのコストは[blue]0[/blue]になる。",
   "AVEMUJICA-FUGUE_POWER.smartDescription": "次にプレイする[gold]廃棄[/gold]か[gold]保留[/gold]を持つカードを[blue]{Amount}[/blue]枚まで、コスト[blue]0[/blue]でプレイできる。",
@@ -71,10 +67,6 @@
   "AVEMUJICA-CONSIGN_POWER.smartDescription": "戦闘終了時、[gold]デッキ[/gold]からカードを[blue]{Amount}[/blue]枚削除する。",
   "AVEMUJICA-CONSIGN_POWER.title": "忘却に捧ぐ",
 
-  "AVEMUJICA-LOFT_MOON_POWER.description": "ターン終了時、[gold]人形[/gold]がHP[blue]{Amount}[/blue]を得る。",
-  "AVEMUJICA-LOFT_MOON_POWER.smartDescription": "ターン終了時、[gold]人形[/gold]がHP[blue]{Amount}[/blue]を得る。",
-  "AVEMUJICA-LOFT_MOON_POWER.title": "ロフト・ムーン",
-
   "AVEMUJICA-VIRTUOSO_FORM_POWER.description": "ターン開始時、[gold]手札[/gold]のすべてのカードに[gold]熟練[/gold]を[gold]エンチャント[/gold]する。",
   "AVEMUJICA-VIRTUOSO_FORM_POWER.smartDescription": "ターン開始時、[gold]手札[/gold]のすべてのカードに[gold]熟練[/gold][blue]{Amount}[/blue]を[gold]エンチャント[/gold]する。",
   "AVEMUJICA-VIRTUOSO_FORM_POWER.title": "ヴィルトゥオーソの型",
@@ -97,5 +89,21 @@
 
   "AVEMUJICA-GROUP_PERFORMANCE_POWER.description": "[gold]楽曲[/gold]の[gold]作曲[/gold]を完成させるたび、他の全プレイヤーにもそのコピーを[blue]1[/blue]枚与える。",
   "AVEMUJICA-GROUP_PERFORMANCE_POWER.smartDescription": "[gold]楽曲[/gold]の[gold]作曲[/gold]を完成させるたび、他の全プレイヤーにもそのコピーを[blue]{Amount}[/blue]枚与える。",
-  "AVEMUJICA-GROUP_PERFORMANCE_POWER.title": "合同演奏"
+  "AVEMUJICA-GROUP_PERFORMANCE_POWER.title": "合同演奏",
+
+  "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.description": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage and can't use other abilities this turn.",
+  "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.smartDescription": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage and can't use other abilities {Amount:plural:this turn|for [blue]{Amount}[/blue] turns}.",
+  "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.title": "死を恐れるなかれ",
+  "AVEMUJICA-LOFT_MOON_POWER.description": "At the end of your turn, the lowest HP [gold]Doll[/gold] gains [blue]{Amount}[/blue] HP.",
+  "AVEMUJICA-LOFT_MOON_POWER.smartDescription": "At the end of your turn, the lowest HP [gold]Doll[/gold] gains [blue]{Amount}[/blue] HP.",
+  "AVEMUJICA-LOFT_MOON_POWER.title": "ロフト・ムーン",
+  "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.description": "[gold]Amoris[/gold] hits more times with Attacks.",
+  "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.smartDescription": "[gold]Amoris[/gold] hits [blue]{Amount}[/blue] more {Amount:plural:time|times} with Attacks.",
+  "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.title": "As Strong As Wheat",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take more damage from Attacks this turn.\"",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.smartDescription": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take [blue]{Amount}%[/blue] more damage from Attacks this turn.\"",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.title": "Moonlight Execution",
+  "AVEMUJICA-HYMN_POWER.description": "[gold]Doloris[/gold] gives [gold]Block[/gold] to ALL players this turn.",
+  "AVEMUJICA-HYMN_POWER.smartDescription": "[gold]Doloris[/gold] gives [gold]Block[/gold] to ALL players {Amount:plural:this turn|for [blue]{Amount}[/blue] turns}.",
+  "AVEMUJICA-HYMN_POWER.title": "Hymn of Valor"
 }

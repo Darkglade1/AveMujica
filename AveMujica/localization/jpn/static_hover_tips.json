@@ -1,36 +1,29 @@
 {
-  "AVEMUJICA-DEFAULT_TEXT.description": "Default: ",
-  "AVEMUJICA-ALLY_STARTING_HP.description": "\\{0\\} HPで開始する。",
+  "AVEMUJICA-DEFAULT_TEXT.description": "Passive: ",
 
   "AVEMUJICA-DOLORIS_ALLY.title": "ドロリス",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.title": "防御",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.description": "[gold]ブロック[/gold][blue]\\{0\\}[/blue]を得る。",
-  "AVEMUJICA-DOLORIS_ALLY_SKILL_1.title": "スキル：守護",
-  "AVEMUJICA-DOLORIS_ALLY_SKILL_1.description": "-[blue]\\{0\\}[/blue] HP: [gold]ブロック[/gold][blue]\\{1\\}[/blue]を得る。",
-  "AVEMUJICA-DOLORIS_ALLY_SKILL_2.title": "スキル：許さない！",
-  "AVEMUJICA-DOLORIS_ALLY_SKILL_2.description": "-[blue]\\{0\\}[/blue] HP: アタックを受けるたび、[gold]ドロリス[/gold]がアタックしてきた敵に[blue]\\{1\\}[/blue]ダメージを与え、この効果のダメージが[blue]\\{2\\}[/blue]増加する。",
+  "AVEMUJICA-DOLORIS_ALLY_SKILL_1.title": "守護",
+  "AVEMUJICA-DOLORIS_ALLY_SKILL_1.description": "スキル: [gold]ブロック[/gold][blue]\\{0\\}[/blue]を得る。",
   
   "AVEMUJICA-MORTIS_ALLY.title": "モーティス",
   "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.title": "防御",
   "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.description": "[gold]ブロック[/gold][blue]\\{0\\}[/blue]を得る。",
-  "AVEMUJICA-MORTIS_ALLY_SKILL_1.title": "スキル：一心同体",
-  "AVEMUJICA-MORTIS_ALLY_SKILL_1.description": "-[blue]\\{0\\}[/blue] HP: カードを[blue]\\{1\\}[/blue]枚引く。",
-  "AVEMUJICA-MORTIS_ALLY_SKILL_2.title": "スキル：死を恐れるなかれ",
-  "AVEMUJICA-MORTIS_ALLY_SKILL_2.description": "-[blue]\\{0\\}[/blue] HP: [gold]モーティス[/gold]が[gold]霊体[/gold][blue]\\{1\\}[/blue]を得て、このターンブロックされなかったアタックダメージをすべて吸収する。このターン、他のアビリティは使用できない。",
+  "AVEMUJICA-MORTIS_ALLY_SKILL_1.title": "一心同体",
+  "AVEMUJICA-MORTIS_ALLY_SKILL_1.description": "スキル: カードを[blue]\\{0\\}[/blue]枚引く。",
   
   "AVEMUJICA-TIMORIS_ALLY.title": "ティモリス",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.title": "攻撃",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description": "最もHPの低い敵に[blue]\\{0\\}[/blue]ダメージを与える。",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title": "スキル：震撼の弦",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "-[blue]\\{0\\}[/blue] HP: 全ての敵に[gold]弱体[/gold][blue]\\{1\\}[/blue]を与える。",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title": "スキル：月光の処刑",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "-[blue]\\{0\\}[/blue] HP: このターン、全ての敵がアタックから受けるダメージが[blue]\\{1\\}%[/blue]増加する。",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title": "震撼の弦",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "スキル: 全ての敵に[gold]弱体[/gold][blue]\\{0\\}[/blue]を与える。",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title": "月光の処刑",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "スキル: このターン、全ての敵がアタックから受けるダメージが[blue]\\{0\\}%[/blue]増加する。",
   
   "AVEMUJICA-AMORIS_ALLY.title": "アモーリス",
   "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.title": "攻撃",
   "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.description": "ランダムな敵に[blue]\\{0\\}[/blue]ダメージを[blue]\\{1\\}[/blue]回与える。",
-  "AVEMUJICA-AMORIS_ALLY_SKILL_1.title": "スキル：炎の如く激しく",
-  "AVEMUJICA-AMORIS_ALLY_SKILL_1.description": "-[blue]\\{0\\}[/blue] HP: [gold]アモーリス[/gold]が[gold]筋力[/gold][blue]\\{1\\}[/blue]を得る。",
-  "AVEMUJICA-AMORIS_ALLY_SKILL_2.title": "スキル：麦の如く強く",
-  "AVEMUJICA-AMORIS_ALLY_SKILL_2.description": "-[blue]\\{0\\}[/blue] HP: この戦闘中、[gold]アモーリス[/gold]のデフォルトアビリティの攻撃回数が[blue]\\{1\\}[/blue]回増加する。"
+  "AVEMUJICA-AMORIS_ALLY_SKILL_1.title": "炎の如く激しく",
+  "AVEMUJICA-AMORIS_ALLY_SKILL_1.description": "Skill: [gold]Amoris[/gold] gains [blue]\\{0\\}[/blue] [gold]Strength[/gold] this turn and [gold]Attacks[/gold] immediately."
 }
