@@ -1,13 +1,16 @@
 {
   "AVEMUJICA-COMPOSE.description": "Ajoute l'effet spécifié à la [gold]Musique[/gold]. Si aucun effet n'est spécifié, un effet aléatoire est ajouté. Après avoir [gold]Composer[/gold] [blue]3[/blue] fois, ajoute la [gold]Musique[/gold] à votre main.",
   "AVEMUJICA-COMPOSE.title": "Composer",
+
   "AVEMUJICA-DOLL.description": "[gold]Doloris[/gold], [gold]Mortis[/gold], [gold]Timoris[/gold], et [gold]Amoris[/gold].",
   "AVEMUJICA-DOLL.title": "Poupée",
+
   "AVEMUJICA-PERFORM.description": "Les effets [gold]Interprétation[/gold] sont activés si vous avez joué les types de cartes spécifiés ce tour.",
   "AVEMUJICA-PERFORM.title": "Interprétation",
 
-  "AVEMUJICA-AWAKEN.description": "Summons a [gold]Doll[/gold]. [gold]Dolls[/gold] use their passive ability and lose [blue]1[/blue] HP at the end of your turn.",
+  "AVEMUJICA-AWAKEN.description": "Invoque une [gold]Poupée[/gold]. Les [gold]Poupées[/gold] utilisent leurs capacités passives et perdent [blue]1[/blue] PV à la fin de votre tour.",
   "AVEMUJICA-AWAKEN.title": "Éveiller",
-  "AVEMUJICA-DREAMSPIN.description": "[gold]Dreamspin[/gold] cards target yourself or a [gold]Doll[/gold].\nTarget yourself to [gold]Awaken[/gold] a [gold]Doll[/gold]. If all [gold]Dolls[/gold] are present, they gain [blue]1[/blue] HP instead.\nTarget a [gold]Doll[/gold] to activate their [gold]Skill[/gold].",
+  
+  "AVEMUJICA-DREAMSPIN.description": "Les cartes [gold]Tisse-rêve[/gold] peuvent cibler votre personnage ou une [gold]Poupée[/gold].\nCiblez votre personnage pour [gold]Éveiller[/gold] une [gold]Poupée[/gold]. Si toutes les [gold]Poupées[/gold] sont présentes, elles gagnent [blue]1[/blue] PV à la place.\nCiblez une [gold]Poupée[/gold] pour activer une [gold]Compétence[/gold].",
   "AVEMUJICA-DREAMSPIN.title": "Tisse-rêve"
 }
