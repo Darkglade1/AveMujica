@@ -2,86 +2,112 @@
   "AVEMUJICA-AFTERGLOW_POWER.description": "La prochaine fois que vous réalisez une [gold]Interprétation[/gold], gagnez de l'Énergie",
   "AVEMUJICA-AFTERGLOW_POWER.smartDescription": "La prochaine fois que vous réalisez une [gold]Interprétation[/gold], gagnez {Amount:energyIcons()}. ",
   "AVEMUJICA-AFTERGLOW_POWER.title": "Afterglow",
+
   "AVEMUJICA-BLUE_MOON_POWER.description": "Au début de votre tour, gagnez de la [gold]Soie Onirique[/gold].",
   "AVEMUJICA-BLUE_MOON_POWER.smartDescription": "Au début de votre tour, gagnez [blue]{Amount}[/blue] [gold]Soie Onirique[/gold].",
   "AVEMUJICA-BLUE_MOON_POWER.title": "Mélancholie de la Lune Bleue",
+
   "AVEMUJICA-CANTABILE_POWER.description": "Chaque fois que vous réalisez une [gold]Interprétation[/gold], gagnez de l'[gold]Armure[/gold].",
   "AVEMUJICA-CANTABILE_POWER.smartDescription": "Chaque fois que vous réalisez une [gold]Interprétation[/gold], gagnez [blue]{Amount}[/blue] [gold]Armure[/gold].",
   "AVEMUJICA-CANTABILE_POWER.title": "Cantabile Améthyste",
+
   "AVEMUJICA-CONSIGN_POWER.description": "À la fin du combat, retirez une carte de votre [gold]Deck[/gold].",
   "AVEMUJICA-CONSIGN_POWER.smartDescription": "À la fin du combat, retirez [blue]{Amount}[/blue] {Amount:plural:carte|cartes} de votre [gold]Deck[/gold].",
   "AVEMUJICA-CONSIGN_POWER.title": "Consigner vers l'Oblivion.",
+
   "AVEMUJICA-DREAM_THREAD_POWER.description": "Quand vous possédez [blue]3[/blue] [gold]Soie Onirique[/gold], les consomment pour [gold]Éveiller[/gold] une [gold]Poupée[/gold].",
   "AVEMUJICA-DREAM_THREAD_POWER.smartDescription": "Quand vous possédez [blue]3[/blue] [gold]Soie Onirique[/gold], les consomment pour [gold]Éveiller[/gold] une [gold]Poupée[/gold].",
   "AVEMUJICA-DREAM_THREAD_POWER.title": "Soie Onirique",
+
   "AVEMUJICA-ENCORE_POWER.description": "Les [gold]Musiques[/gold] ont [gold]Écho[/gold] [blue]1[/blue].",
   "AVEMUJICA-ENCORE_POWER.smartDescription": "Les [gold]Musiques[/gold] ont [gold]Écho[/gold] [blue]{Amount}[/blue].",
   "AVEMUJICA-ENCORE_POWER.title": "Encore",
+
   "AVEMUJICA-ETHER_POWER.description": "Vos cartes qui ont [gold]Retenue[/gold] s'[gold]Épuise[/gold] lorsqu'elle sont jouées.\nVos cartes qui s'[gold]Épuisent[/gold] coûtent [blue]0[/blue].",
   "AVEMUJICA-ETHER_POWER.smartDescription": "Vos cartes qui ont [gold]Retenue[/gold] s'[gold]Épuise[/gold] lorsqu'elle sont jouées.\nVos cartes qui s'[gold]Épuisent[/gold] coûtent [blue]0[/blue].",
   "AVEMUJICA-ETHER_POWER.title": "Éther",
+
   "AVEMUJICA-EXPLOSIVE_FINALE_POWER.description": "Chaque fois qu'une [gold]Musique[/gold] est complétée, infligez des dégâts à TOUS les ennemis.",
   "AVEMUJICA-EXPLOSIVE_FINALE_POWER.smartDescription": "Chaque fois qu'une [gold]Musique[/gold] est complétée, infligez [blue]{Amount}[/blue] dégâts à TOUS les ennemis.",
   "AVEMUJICA-EXPLOSIVE_FINALE_POWER.title": "Final Explosif",
+
   "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.description": "Les cartes avec [gold]Interprétation[/gold] gagnent [gold]Retenu[/gold].\nLes effets d'[gold]Interprétation[/gold] s'activent tous le temps.",
   "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.smartDescription": "Les cartes avec [gold]Interprétation[/gold] gagnent [gold]Retenu[/gold].\nLes effets d'[gold]Interprétation[/gold] s'activent tous le temps.",
   "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.title": "Performance Parfaite",
+
   "AVEMUJICA-FRUSTRATION_POWER.description": "Chaque fois qu'une carte est [gold]Épuisée[/gold], gagnez de la [gold]Force[/gold] ce tour.",
   "AVEMUJICA-FRUSTRATION_POWER.smartDescription": "Chaque fois qu'une carte est [gold]Épuisée[/gold], gagnez [blue]{Amount}[/blue] [gold]Force[/gold] ce tour.",
   "AVEMUJICA-FRUSTRATION_POWER.title": "Frustration",
+
   "AVEMUJICA-FUGUE_POWER.description": "La prochaine carte que vous jouez qui a [gold]Épuisé[/gold] ou [gold]Retenu[/gold] coûte [blue]0[/blue].",
   "AVEMUJICA-FUGUE_POWER.smartDescription": "Les prochaines [blue]{Amount}[/blue] {Amount:plural:carte|cartes} que vous jouez qui a [gold]Épuisé[/gold] ou [gold]Retenu[/gold] {Amount:plural:coûte|coûtent} [blue]0[/blue].",
   "AVEMUJICA-FUGUE_POWER.title": "Fugue Calcite",
+
   "AVEMUJICA-GARDEN_POWER.description": "Chaque fois qu'une [gold]Compétence[/gold] d'une [gold]Poupée[/gold] est activée, piochez.",
   "AVEMUJICA-GARDEN_POWER.smartDescription": "Chaque fois qu'une [gold]Compétence[/gold] d'une [gold]Poupée[/gold] est activée, piochez [blue]{Amount}[/blue] {Amount:plural:carte|cartes}.",
   "AVEMUJICA-GARDEN_POWER.title": "Jardin de Lys",
+
   "AVEMUJICA-GODDESS_OF_OBLIVION_POWER.description": "Chaque fois qu'une carte est [gold]Épuisée[/gold], gagnez [Gold]Oblivion[/gold].",
   "AVEMUJICA-GODDESS_OF_OBLIVION_POWER.smartDescription": "Chaque fois qu'une carte est [gold]Épuisée[/gold], gagnez [blue]{Amount}[/blue] [Gold]Oblivion[/gold].",
   "AVEMUJICA-GODDESS_OF_OBLIVION_POWER.title": "Déesse de l'Oblivion",
+
   "AVEMUJICA-GROUP_PERFORMANCE_POWER.description": "Chaque fois qu'une [gold]Musique[/gold] est complétée, donne [blue]1[/blue] copie de cette [gold]Musique[/gold] à TOUS les autres joueurs.",
   "AVEMUJICA-GROUP_PERFORMANCE_POWER.smartDescription": "Chaque fois qu'une [gold]Musique[/gold] est complétée, donne [blue]{Amount}[/blue] {Amount:plural:copie|copies} de cette [gold]Musique[/gold] à TOUS les autres joueurs.",
   "AVEMUJICA-GROUP_PERFORMANCE_POWER.title": "Représentation de Groupe",
+
   "AVEMUJICA-HOW_DARE_YOU_POWER.description": "Chaque fois que vous êtes attaqué, [gold]Doloris[/gold] inflige [blue]6[/blue] dégâts à l'aggresseur et augmente les dégâts de cet effet de [blue]1[/blue]",
   "AVEMUJICA-HOW_DARE_YOU_POWER.smartDescription": "Chaque fois que vous êtes attaqué, [gold]Doloris[/gold] inflige [blue]{Amount}[/blue] dégâts à l'aggresseur et augmente les dégâts de cet effet de [blue]1[/blue]",
-  "AVEMUJICA-HOW_DARE_YOU_POWER.title": "Comment Oses-tu !",
+  "AVEMUJICA-HOW_DARE_YOU_POWER.title": "Destins Liés",
+
   "AVEMUJICA-INSPIRING_SONGS_POWER.description": "Chaque fois qu'une [gold]Musique[/gold] est jouée, gagnez de l'Énergie.",
   "AVEMUJICA-INSPIRING_SONGS_POWER.smartDescription": "Chaque fois que vous jouez {Cards:diff()} [gold]Musique[/gold], gagnez {Amount:energyIcons()}",
   "AVEMUJICA-INSPIRING_SONGS_POWER.title": "Musiques Inspirantes",
+
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS_POWER.description": "Au début de votre tour, TOUTES les [gold]Poupées[/gold] gagnent de la [gold]Force[/gold] et de la [gold]Dextérité[/gold].",
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS_POWER.smartDescription": "Au début de votre tour, TOUTES les [gold]Poupées[/gold] gagnent [blue]{Amount}[/blue] [gold]Force[/gold] et [gold]Dextérité[/gold].",
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS_POWER.title": "Chevaliers d'Oblivionis",
+
   "AVEMUJICA-LARGE_REPERTOIRE_POWER.description": "À la fin de votre tour, gagné de l'[gold]Armure[/gold] égal au nombre de cartes dans votre [gold]Main[/gold].",
   "AVEMUJICA-LARGE_REPERTOIRE_POWER.smartDescription": "À la fin de votre tour, gagné [blue]{Amount}[/blue] [gold]Armure[/gold] égal au nombre de cartes dans votre [gold]Main[/gold].",
   "AVEMUJICA-LARGE_REPERTOIRE_POWER.title": "Large Répertoire",
+
   "AVEMUJICA-MELODY_POWER.description": "À la fin de votre tour, si vous avez activé une [gold]Interprétation[/gold] pendant ce tour, gagnez de la [gold]Force[/gold]",
   "AVEMUJICA-MELODY_POWER.smartDescription": "À la fin de votre tour, si vous avez activé une [gold]Interprétation[/gold] pendant ce tour, gagnez [blue]{Amount}[/blue] [gold]Force[/gold]",
   "AVEMUJICA-MELODY_POWER.title": "Mélodie",
+
   "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.description": "Reçoit plus de dégâts des Attaques ce tour.",
   "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.smartDescription": "Reçoit [blue]{Amount}%[/blue] dégâts supplémentaires des Attaques ce tour. ",
   "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.title": "Exécution au Clair de Lune",
+
   "AVEMUJICA-OBLIVION.description": "Chaque fois qu'[gold]Oblivion[/gold] est obtenue, inflige des dégâts à l'ennemi avec les PV les plus bas d'une valeur égale à [gold]Oblivion[/gold]",
   "AVEMUJICA-OBLIVION.smartDescription": "Chaque fois qu'[gold]Oblivion[/gold] est obtenue, inflige des dégâts à l'ennemi avec les PV les plus bas d'une valeur égale à [gold]Oblivion[/gold]",
   "AVEMUJICA-OBLIVION.title": "Oblivion",
+
   "AVEMUJICA-PERFECT_COMBO_POWER.description": "Vos effets d'[gold]Interprétations[/gold] s'activent une fois supplémentaire pour chaque [gold]Interprétation[/gold] activée ce tour.",
   "AVEMUJICA-PERFECT_COMBO_POWER.smartDescription": "Vos effets d'[gold]Interprétations[/gold] s'activent une fois supplémentaire pour chaque [gold]Interprétation[/gold] activée ce tour.\n(S'active [blue]{StormCounter:diff()}[/blue] fois de plus actuellement.",
   "AVEMUJICA-PERFECT_COMBO_POWER.title": "Combo Parfait Frénétique",
+
   "AVEMUJICA-VIRTUOSO_FORM_POWER.description": "Au début de votre tour, [gold]Enchantez[/gold] TOUTES les cartes de votre [gold]Main[/gold] avec [gold]Magistral[/gold].",
   "AVEMUJICA-VIRTUOSO_FORM_POWER.smartDescription": "Au début de votre tour, [gold]Enchantez[/gold] TOUTES les cartes de votre [gold]Main[/gold] avec [gold]Magistral[/gold] [blue]{Amount}[/blue].",
   "AVEMUJICA-VIRTUOSO_FORM_POWER.title": "Forme de la Virtuose",
 
-  "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.description": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage and can't use other abilities this turn.",
-  "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.smartDescription": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage and can't use other abilities {Amount:plural:this turn|for [blue]{Amount}[/blue] turns}.",
+  "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.description": "[gold]Mortis[/gold] gagne 1 [gold]Intangible[/gold] et absorbe tous les dégâts d'Attaque non bloqué pendant ce tour. [gold]Mortis[/gold] ne peut plus utiliser de capacités ce tour.",
+  "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.smartDescription": "[gold]Mortis[/gold] absorbe tous les dégâts d'Attaque non bloqué et ne peut plus utiliser de capacité {Amount:plural:ce tour|pendant [blue]{Amount}[/blue] tours}.",
   "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.title": "Ne Craint pas la Mort",
-  "AVEMUJICA-LOFT_MOON_POWER.description": "At the end of your turn, the lowest HP [gold]Doll[/gold] gains [blue]{Amount}[/blue] HP.",
-  "AVEMUJICA-LOFT_MOON_POWER.smartDescription": "At the end of your turn, the lowest HP [gold]Doll[/gold] gains [blue]{Amount}[/blue] HP.",
+
+  "AVEMUJICA-LOFT_MOON_POWER.description": "A la fin de votre tour, la [gold]Poupée[/gold] avec les PV les plus bas gagne [blue]{Amount}[/blue] PV.",
+  "AVEMUJICA-LOFT_MOON_POWER.smartDescription": "A la fin de votre tour, la [gold]Poupée[/gold] avec les PV les plus bas gagne [blue]{Amount}[/blue] PV.",
   "AVEMUJICA-LOFT_MOON_POWER.title": "Vers la Lune",
-  "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.description": "[gold]Amoris[/gold] hits more times with Attacks.",
-  "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.smartDescription": "[gold]Amoris[/gold] hits [blue]{Amount}[/blue] more {Amount:plural:time|times} with Attacks.",
-  "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.title": "As Strong As Wheat",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take more damage from Attacks this turn.\"",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.smartDescription": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take [blue]{Amount}%[/blue] more damage from Attacks this turn.\"",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.title": "Moonlight Execution",
-  "AVEMUJICA-HYMN_POWER.description": "[gold]Doloris[/gold] gives [gold]Block[/gold] to ALL players this turn.",
-  "AVEMUJICA-HYMN_POWER.smartDescription": "[gold]Doloris[/gold] gives [gold]Block[/gold] to ALL players {Amount:plural:this turn|for [blue]{Amount}[/blue] turns}.",
-  "AVEMUJICA-HYMN_POWER.title": "Hymn of Valor"
+  
+  "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.description": "Augmente le nombre d'instances de dégâts des Attaques d'[gold]Amoris[/gold].",
+  "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.smartDescription": "Augmente le nombre d'instances de dégâts des Attaques d'[gold]Amoris[/gold] de [blue]{Amount}[/blue].",
+  "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.title": "Aussi Fort que le Blé",
+
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.description": "La [gold]Compétence[/gold] de [gold]Timoris[/gold] devient \"TOUS les ennemis subissent plus de dégâts des Attaques ce tour.\"",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.smartDescription": "La [gold]Compétence[/gold] de [gold]Timoris[/gold] devient \"TOUS les ennemis subissent [blue]{Amount}%[/blue] de dégâts supplémentaires des Attaques ce tour.\"",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.title": "Execution au Clair de Lune",
+
+  "AVEMUJICA-HYMN_POWER.description": "[gold]Doloris[/gold] donne de l'[gold]Armure[/gold] à TOUS les joueurs ce tour.",
+  "AVEMUJICA-HYMN_POWER.smartDescription": "[gold]Doloris[/gold] donne de l'[gold]Armure[/gold] à TOUS les joueurs {Amount:plural:ce tour|pendant [blue]{Amount}[/blue] tours}.",
+  "AVEMUJICA-HYMN_POWER.title": "Hymne à la Bravoure"
 }

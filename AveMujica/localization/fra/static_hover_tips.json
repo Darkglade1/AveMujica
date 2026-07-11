@@ -1,14 +1,17 @@
 {
+  "AVEMUJICA-DEFAULT_TEXT.description": "Passif : ",
   "AVEMUJICA-DOLORIS_ALLY.title": "Doloris",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_1.description": "Compétence : Gagnez [blue]\\{0\\}[/blue] [gold]Armure[/gold].",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_1.title": "Attitude Protectrice",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.description": "Gagnez [blue]\\{0\\}[/blue] [gold]Armure[/gold].",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.title": "Défense",
+
   "AVEMUJICA-MORTIS_ALLY.title": "Mortis",
   "AVEMUJICA-MORTIS_ALLY_SKILL_1.description": "Compétence : Piochez [blue]\\{0\\}[/blue] cartes.",
   "AVEMUJICA-MORTIS_ALLY_SKILL_1.title": "Moitiés d'un Tout",
   "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.description": "Gagnez [blue]\\{0\\}[/blue] [gold]Armure[/gold].",
   "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.title": "Défense",
+
   "AVEMUJICA-TIMORIS_ALLY.title": "Timoris",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "Compétence : Applique [blue]\\{0\\}[/blue] [gold]Vulnérable[/gold] à TOUS les ennemis",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title": "Cordes Frissonnantes",
@@ -17,9 +20,8 @@
   "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description": "Inflige [blue]\\{0\\}[/blue] dégâts à l'ennemi avec le moins de PV.",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.title": "Attaque",
 
-  "AVEMUJICA-DEFAULT_TEXT.description": "Passive : ",
   "AVEMUJICA-AMORIS_ALLY.title": "Amoris",
-  "AVEMUJICA-AMORIS_ALLY_SKILL_1.description": "Skill: [gold]Amoris[/gold] gains [blue]\\{0\\}[/blue] [gold]Strength[/gold] this turn and [gold]Attacks[/gold] immediately.",
+  "AVEMUJICA-AMORIS_ALLY_SKILL_1.description": "Compétence : [gold]Amoris[/gold] gagne [blue]\\{0\\}[/blue] de [gold]Strength[/gold] ce tour et [gold]Attaque[/gold] immédiatement.",
   "AVEMUJICA-AMORIS_ALLY_SKILL_1.title": "Aussi Féroce qu'un Brasier",
   "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.description": "Inflige [blue]\\{0\\}[/blue] dégâts à un ennemi aléatoire [blue]\\{1\\}[/blue] fois.",
   "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.title": "Attaque"
