@@ -6,8 +6,8 @@
   "AVEMUJICA-DOLL.description": "[gold]ドロリス[/gold]、[gold]モーティス[/gold]、[gold]ティモリス[/gold]、[gold]アモーリス[/gold]。",
   "AVEMUJICA-DOLL.title": "人形",
 
-  "AVEMUJICA-AWAKEN.description": "Summons a [gold]Doll[/gold]. [gold]Dolls[/gold] use their passive ability and lose [blue]1[/blue] HP at the end of your turn.",
-  "AVEMUJICA-AWAKEN.title": "Awaken",
-  "AVEMUJICA-DREAMSPIN.description": "[gold]Dreamspin[/gold] cards target yourself or a [gold]Doll[/gold].\nTarget yourself to [gold]Awaken[/gold] a [gold]Doll[/gold]. If all [gold]Dolls[/gold] are present, they gain [blue]1[/blue] HP instead.\nTarget a [gold]Doll[/gold] to activate their [gold]Skill[/gold].",
-  "AVEMUJICA-DREAMSPIN.title": "Dreamspin"
+  "AVEMUJICA-AWAKEN.description": "[gold]人形[/gold]を1体召喚する。[gold]人形[/gold]はパッシブ能力を使用し、ターン終了時にHPを[blue]1[/blue]失う。",
+  "AVEMUJICA-AWAKEN.title": "目覚め",
+  "AVEMUJICA-DREAMSPIN.description": "[gold]夢紡ぎ[/gold]を持つカードは、自身か[gold]人形[/gold]を対象にする。\n自身を対象にすると[gold]人形[/gold]を[gold]目覚め[/gold]させる。すべての[gold]人形[/gold]が揃っている場合、代わりにHP[blue]1[/blue]を得る。\n[gold]人形[/gold]を対象にすると、その[gold]スキル[/gold]を発動させる。",
+  "AVEMUJICA-DREAMSPIN.title": "夢紡ぎ"
 }

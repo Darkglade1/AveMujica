@@ -1,5 +1,5 @@
 {
-  "AVEMUJICA-DEFAULT_TEXT.description": "Passive: ",
+  "AVEMUJICA-DEFAULT_TEXT.description": "パッシブ: ",
 
   "AVEMUJICA-DOLORIS_ALLY.title": "ドロリス",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.title": "防御",
@@ -25,5 +25,5 @@
   "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.title": "攻撃",
   "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.description": "ランダムな敵に[blue]\\{0\\}[/blue]ダメージを[blue]\\{1\\}[/blue]回与える。",
   "AVEMUJICA-AMORIS_ALLY_SKILL_1.title": "炎の如く激しく",
-  "AVEMUJICA-AMORIS_ALLY_SKILL_1.description": "Skill: [gold]Amoris[/gold] gains [blue]\\{0\\}[/blue] [gold]Strength[/gold] this turn and [gold]Attacks[/gold] immediately."
+  "AVEMUJICA-AMORIS_ALLY_SKILL_1.description": "スキル: [gold]アモーリス[/gold]はこのターン[gold]筋力[/gold][blue]\\{0\\}[/blue]を得て、即座に[gold]アタック[/gold]を行う。"
 }

@@ -21,7 +21,7 @@
   "AVEMUJICA-PUPPET_STRINGS.flavor": "こんな奇妙な場所でさえ、糸に操られ虚しく踊る人形がこれほど多いとは、皮肉なものだと彼女は思った。",
   "AVEMUJICA-PUPPET_STRINGS.title": "操り糸",
 
-  "AVEMUJICA-VIOLIN.description": "Upon pickup, [gold]Enchant[/gold] up to [blue]{Cards}[/blue] cards with [purple]Masterful[/purple] [blue]{Masterful}[/blue].",
-  "AVEMUJICA-VIOLIN.flavor": "She could tell her mysterious friend shouldered the burden of many lives, much like herself.",
-  "AVEMUJICA-VIOLIN.title": "Violin"
+  "AVEMUJICA-VIOLIN.description": "入手した時、カードを最大[blue]{Cards}[/blue]枚[purple]熟練[/purple][blue]{Masterful}[/blue]で[gold]エンチャント[/gold]する。",
+  "AVEMUJICA-VIOLIN.flavor": "彼女には分かっていた。この不思議な友人もまた、自分と同じように多くの命の重荷を背負っているのだと。",
+  "AVEMUJICA-VIOLIN.title": "ヴァイオリン"
 }

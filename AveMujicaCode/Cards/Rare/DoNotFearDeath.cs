@@ -3,6 +3,7 @@ using AveMujica.AveMujicaCode.Cards.Token;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
+using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace AveMujica.AveMujicaCode.Cards.Rare;
 public class DoNotFearDeath() : AveMujicaCard(2,
@@ -34,6 +35,7 @@ public class DoNotFearDeath() : AveMujicaCard(2,
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromCard<Mortis>()
+        HoverTipFactory.FromCard<Mortis>(),
+        HoverTipFactory.FromPower<IntangiblePower>()
     ];
 }
