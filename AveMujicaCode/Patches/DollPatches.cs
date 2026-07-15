@@ -37,10 +37,12 @@ public static class AddDollSkillHoverTip
             var newList = __result.ToList();
             if (doll.NextMove.Intents.Count > 0)
             {
+                newList.Insert(1, doll.GetEnhancedSkillHoverTip());
                 newList.Insert(1, doll.GetSkillHoverTip());
             }
             else
             {
+                newList.Insert(0, doll.GetEnhancedSkillHoverTip());
                 newList.Insert(0, doll.GetSkillHoverTip());
             }
             __result = newList;

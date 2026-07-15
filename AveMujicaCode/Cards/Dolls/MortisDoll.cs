@@ -54,6 +54,22 @@ public sealed class MortisDoll : AbstractDoll
     }
   }
   
+  public override async Task EnhancedSkill()
+  {
+    if (!canUseAbilitiesThisTurn)
+    {
+      return;
+    }
+    var owner = Creature.PetOwner;
+    if (owner != null)
+    {
+      await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
+      Sfx.SKILL_GUITAR.Play();
+      await CardPileCmd.Draw(new ThrowingPlayerChoiceContext(), cardDraw, owner);
+      await PowerCmd.Apply<RetainHandPower>(new ThrowingPlayerChoiceContext(), owner.Creature, 1, Creature, null);
+    }
+  }
+  
   public async Task DoNotFearDeath()
   {
     var owner = Creature.PetOwner;
@@ -97,11 +113,25 @@ public sealed class MortisDoll : AbstractDoll
     return SkillHoverTip();
   }
   
+  public override HoverTip GetEnhancedSkillHoverTip()
+  {
+    return EnhancedSkillHoverTip();
+  }
+  
   public static HoverTip SkillHoverTip()
   {
     var hoverTip = new HoverTip(
-      new LocString("static_hover_tips", "AVEMUJICA-MORTIS_ALLY_SKILL_1.title"),
+      new LocString("static_hover_tips", "AVEMUJICA-SKILL_TEXT.description"),
       new LocString("static_hover_tips", "AVEMUJICA-MORTIS_ALLY_SKILL_1.description"));
+    hoverTip.Description = String.Format(hoverTip.Description, cardDraw);
+    return hoverTip;
+  }
+  
+  public static HoverTip EnhancedSkillHoverTip()
+  {
+    var hoverTip = new HoverTip(
+      new LocString("static_hover_tips", "AVEMUJICA-ENHANCED_SKILL_TEXT.description"),
+      new LocString("static_hover_tips", "AVEMUJICA-MORTIS_ALLY_SKILL_2.description"));
     hoverTip.Description = String.Format(hoverTip.Description, cardDraw);
     return hoverTip;
   }
@@ -109,10 +139,14 @@ public sealed class MortisDoll : AbstractDoll
   public static HoverTip GenerateCardHoverTip()
   {
     var defaultText = new LocString("static_hover_tips", "AVEMUJICA-DEFAULT_TEXT.description");
+    var skillText = new LocString("static_hover_tips", "AVEMUJICA-SKILL_TEXT.description");
+    var enhancedSkillText = new LocString("static_hover_tips", "AVEMUJICA-ENHANCED_SKILL_TEXT.description");
     var autoSkillHoverTip = AutoSkillHoverTip();
     var skillHoverTip = SkillHoverTip();
+    var enhancedSkillHoverTip = EnhancedSkillHoverTip();
     var hoverTipDescription = defaultText.GetFormattedText() + autoSkillHoverTip.Description + "\n" + 
-                              skillHoverTip.Description;
+                              "[gold]" + skillText.GetFormattedText() + ":" + "[/gold] " + skillHoverTip.Description + "\n" +
+                              "[gold]" + enhancedSkillText.GetFormattedText() + ":" + "[/gold] " + enhancedSkillHoverTip.Description;
     return new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-MORTIS_ALLY.title"),
       hoverTipDescription);

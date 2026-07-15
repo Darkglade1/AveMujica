@@ -109,5 +109,9 @@
 
   "AVEMUJICA-HYMN_POWER.description": "[gold]Doloris[/gold] gives [gold]Block[/gold] to ALL players this turn.",
   "AVEMUJICA-HYMN_POWER.smartDescription": "[gold]Doloris[/gold] gives [gold]Block[/gold] to ALL players {Amount:plural:this turn|for [blue]{Amount}[/blue] turns}.",
-  "AVEMUJICA-HYMN_POWER.title": "Hymn of Valor"
+  "AVEMUJICA-HYMN_POWER.title": "Hymn of Valor",
+
+  "AVEMUJICA-DREAMSPIN_POWER.description": "Every 3rd [gold]Doll-targeted[/gold] [gold]Dreamspin[/gold] activates an [gold]Enhanced Skill[/gold] instead.",
+  "AVEMUJICA-DREAMSPIN_POWER.smartDescription": "Every 3rd [gold]Doll-targeted[/gold] [gold]Dreamspin[/gold] activates an [gold]Enhanced Skill[/gold] instead.",
+  "AVEMUJICA-DREAMSPIN_POWER.title": "Dreamspin"
 }

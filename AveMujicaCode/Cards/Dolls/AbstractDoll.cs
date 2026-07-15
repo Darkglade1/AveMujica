@@ -96,11 +96,13 @@ public abstract class AbstractDoll : CustomMonsterModel
   }
 
   public abstract Task Skill();
+  public abstract Task EnhancedSkill();
   
   public abstract HoverTip GetAutoSkillHoverTip();
   public abstract HoverTip GetInCombatAutoSkillHoverTip();
   
   public abstract HoverTip GetSkillHoverTip();
+  public abstract HoverTip GetEnhancedSkillHoverTip();
 
   protected int CalcBlockWithDex(int block)
   {

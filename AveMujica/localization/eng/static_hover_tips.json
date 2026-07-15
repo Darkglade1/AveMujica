@@ -1,28 +1,30 @@
 {
-  "AVEMUJICA-DEFAULT_TEXT.description": "Passive: ",
+  "AVEMUJICA-DEFAULT_TEXT.description": "[gold]Passive:[/gold] ",
+  "AVEMUJICA-SKILL_TEXT.description": "Skill",
+  "AVEMUJICA-ENHANCED_SKILL_TEXT.description": "Enhanced Skill",
+  
   "AVEMUJICA-DOLORIS_ALLY.title": "Doloris",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.title": "Defend",
   "AVEMUJICA-DOLORIS_ALLY_SKILL_AUTO.description": "You gain [blue]\\{0\\}[/blue] [gold]Block[/gold].",
-  "AVEMUJICA-DOLORIS_ALLY_SKILL_1.title": "Protectiveness",
-  "AVEMUJICA-DOLORIS_ALLY_SKILL_1.description": "Skill: You gain [blue]\\{0\\}[/blue] [gold]Block[/gold].",
+  "AVEMUJICA-DOLORIS_ALLY_SKILL_1.description": "You gain [blue]\\{0\\}[/blue] [gold]Block[/gold].",
+  "AVEMUJICA-DOLORIS_ALLY_SKILL_2.description": "You gain [blue]\\{0\\}[/blue] [gold]Block[/gold]. [gold]Block[/gold] is not removed at the start of your next turn.",
 
   "AVEMUJICA-MORTIS_ALLY.title": "Mortis",
   "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.title": "Defend",
   "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.description": "You gain [blue]\\{0\\}[/blue] [gold]Block[/gold].",
-  "AVEMUJICA-MORTIS_ALLY_SKILL_1.title": "Halves of a Whole",
-  "AVEMUJICA-MORTIS_ALLY_SKILL_1.description": "Skill: You draw [blue]\\{0\\}[/blue] cards.",
+  "AVEMUJICA-MORTIS_ALLY_SKILL_1.description": "You draw [blue]\\{0\\}[/blue] cards.",
+  "AVEMUJICA-MORTIS_ALLY_SKILL_2.description": "You draw [blue]\\{0\\}[/blue] cards. [gold]Retain[/gold] your [gold]Hand[/gold] this turn.",
 
   "AVEMUJICA-TIMORIS_ALLY.title": "Timoris",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.title": "Attack",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description": "Deals [blue]\\{0\\}[/blue] damage to the lowest HP enemy.",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title": "Shuddering Strings",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "Skill: Apply [blue]\\{0\\}[/blue] [gold]Vulnerable[/gold] to ALL enemies.",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title": "Moonlight Execution",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "Skill: ALL enemies take [blue]\\{0\\}%[/blue] more damage from Attacks this turn.",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "Apply [blue]\\{0\\}[/blue] [gold]Vulnerable[/gold] to ALL enemies.",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "Apply [blue]\\{0\\}[/blue] [gold]Weak[/gold] and [gold]Vulnerable[/gold] to ALL enemies.",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_3.description": "ALL enemies take [blue]\\{0\\}%[/blue] more damage from Attacks this turn.",
 
   "AVEMUJICA-AMORIS_ALLY.title": "Amoris",
   "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.title": "Attack",
   "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.description": "Deal [blue]\\{0\\}[/blue] damage to a random enemy [blue]\\{1\\}[/blue] times.",
-  "AVEMUJICA-AMORIS_ALLY_SKILL_1.title": "As Fierce as Flame",
-  "AVEMUJICA-AMORIS_ALLY_SKILL_1.description": "Skill: [gold]Amoris[/gold] gains [blue]\\{0\\}[/blue] [gold]Strength[/gold] this turn and [gold]Attacks[/gold] immediately."
+  "AVEMUJICA-AMORIS_ALLY_SKILL_1.description": "[gold]Amoris[/gold] gains [blue]\\{0\\}[/blue] [gold]Strength[/gold] this turn and [gold]Attacks[/gold] immediately.",
+  "AVEMUJICA-AMORIS_ALLY_SKILL_2.description": "[gold]Amoris[/gold] gains [blue]\\{0\\}[/blue] [gold]Strength[/gold] and [gold]Attacks[/gold] immediately."
 }

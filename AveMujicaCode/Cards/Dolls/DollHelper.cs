@@ -1,5 +1,6 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Token;
 using AveMujica.AveMujicaCode.Hooks;
+using AveMujica.AveMujicaCode.Powers;
 using Godot;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
@@ -83,7 +84,18 @@ public class DollHelper
     {
         if (target != null && target.IsPet && target.Monster is AbstractDoll ally)
         {
-            await ally.Skill();
+            var dreamspinPower = player.Creature.GetPower<DreamspinPower>();
+            if (dreamspinPower != null && dreamspinPower.Amount >= 2)
+            {
+                await ally.EnhancedSkill();
+                dreamspinPower.Amount = 0;
+                dreamspinPower.InvokeDisplayAmountChanged();
+            }
+            else
+            {
+                await ally.Skill();
+                await PowerCmd.Apply<DreamspinPower>(choiceContext, player.Creature, 1, player.Creature, null);
+            }
         }
         else
         {

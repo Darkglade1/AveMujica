@@ -5,7 +5,7 @@
   "AVEMUJICA-COMPOSE.title": "Compose",
   "AVEMUJICA-AWAKEN.description": "Summons a [gold]Doll[/gold]. [gold]Dolls[/gold] use their passive ability and lose [blue]1[/blue] HP at the end of your turn.",
   "AVEMUJICA-AWAKEN.title": "Awaken",
-  "AVEMUJICA-DREAMSPIN.description": "[gold]Dreamspin[/gold] cards target yourself or a [gold]Doll[/gold].\nTarget yourself to [gold]Awaken[/gold] a [gold]Doll[/gold]. If all [gold]Dolls[/gold] are present, they gain [blue]1[/blue] HP instead.\nTarget a [gold]Doll[/gold] to activate their [gold]Skill[/gold].",
+  "AVEMUJICA-DREAMSPIN.description": "Target yourself to [gold]Awaken[/gold] a [gold]Doll[/gold]. If all [gold]Dolls[/gold] are present, they gain [blue]1[/blue] HP instead.\nTarget a [gold]Doll[/gold] to activate their [gold]Skill[/gold]. Every 3rd [gold]Doll-targeted[/gold] [gold]Dreamspin[/gold] activates an [gold]Enhanced Skill[/gold] instead.",
   "AVEMUJICA-DREAMSPIN.title": "Dreamspin",
   "AVEMUJICA-DOLL.description": "[gold]Doloris[/gold], [gold]Mortis[/gold], [gold]Timoris[/gold], and [gold]Amoris[/gold].",
   "AVEMUJICA-DOLL.title": "Doll"

@@ -71,6 +71,24 @@ public sealed class TimorisDoll : AbstractDoll
     }
   }
   
+  public override async Task EnhancedSkill()
+  {
+    var owner = Creature.PetOwner;
+    if (owner != null)
+    {
+      await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
+      Sfx.SKILL_BASS.Play();
+      if (Creature.CombatState != null)
+      {
+        foreach (Creature enemy in Creature.CombatState.HittableEnemies)
+        {
+          await PowerCmd.Apply<WeakPower>(new ThrowingPlayerChoiceContext(), enemy, debuff, Creature, null);
+          await PowerCmd.Apply<VulnerablePower>(new ThrowingPlayerChoiceContext(), enemy, debuff, Creature, null);
+        }
+      }
+    }
+  }
+  
   public async Task MoonlightExecution()
   {
     var owner = Creature.PetOwner;
@@ -122,11 +140,25 @@ public sealed class TimorisDoll : AbstractDoll
     return SkillHoverTip();
   }
   
+  public override HoverTip GetEnhancedSkillHoverTip()
+  {
+    return EnhancedSkillHoverTip();
+  }
+  
   public static HoverTip SkillHoverTip()
   {
     var hoverTip = new HoverTip(
-      new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title"),
+      new LocString("static_hover_tips", "AVEMUJICA-SKILL_TEXT.description"),
       new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description"));
+    hoverTip.Description = String.Format(hoverTip.Description, debuff);
+    return hoverTip;
+  }
+  
+  public static HoverTip EnhancedSkillHoverTip()
+  {
+    var hoverTip = new HoverTip(
+      new LocString("static_hover_tips", "AVEMUJICA-ENHANCED_SKILL_TEXT.description"),
+      new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description"));
     hoverTip.Description = String.Format(hoverTip.Description, debuff);
     return hoverTip;
   }
@@ -134,8 +166,8 @@ public sealed class TimorisDoll : AbstractDoll
   public HoverTip MoonlightExecutionHovertip()
   {
     var hoverTip = new HoverTip(
-      new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title"),
-      new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description"));
+      new LocString("static_hover_tips", "AVEMUJICA-SKILL_TEXT.description"),
+      new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_3.description"));
     hoverTip.Description = String.Format(hoverTip.Description, GetMoonlightExecutionAmount());
     return hoverTip;
   }
@@ -143,10 +175,14 @@ public sealed class TimorisDoll : AbstractDoll
   public static HoverTip GenerateCardHoverTip()
   {
     var defaultText = new LocString("static_hover_tips", "AVEMUJICA-DEFAULT_TEXT.description");
+    var skillText = new LocString("static_hover_tips", "AVEMUJICA-SKILL_TEXT.description");
+    var enhancedSkillText = new LocString("static_hover_tips", "AVEMUJICA-ENHANCED_SKILL_TEXT.description");
     var autoSkillHoverTip = AutoSkillHoverTip();
-    var skill1HoverTip = SkillHoverTip();
+    var skillHoverTip = SkillHoverTip();
+    var enhancedSkillHoverTip = EnhancedSkillHoverTip();
     var hoverTipDescription = defaultText.GetFormattedText() + autoSkillHoverTip.Description + "\n" + 
-                              skill1HoverTip.Description;
+                              "[gold]" + skillText.GetFormattedText() + ":" + "[/gold] " + skillHoverTip.Description + "\n" +
+                              "[gold]" + enhancedSkillText.GetFormattedText() + ":" + "[/gold] " + enhancedSkillHoverTip.Description;
     return new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY.title"),
       hoverTipDescription);
