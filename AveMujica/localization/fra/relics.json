@@ -18,10 +18,6 @@
   "AVEMUJICA-NOTEBOOK.description": "Chaque fois qu'une [gold]Musique[/gold] a fini d'être [gold]Composée[/gold], gagnez [blue]{StrengthPower}[/blue] [gold]Force[/gold].",
   "AVEMUJICA-NOTEBOOK.flavor": "Quand les temps sont dures, elle trouve sa force dans les mots à l'intérieur.",
   "AVEMUJICA-NOTEBOOK.title": "Carnet",
-
-  "AVEMUJICA-PLAYFUL_CORETTON.description": "Au début de chaque combat, gagnez [blue]{DreamThreadPower}[/blue] [gold]Soie Onirique[/gold].",
-  "AVEMUJICA-PLAYFUL_CORETTON.flavor": "Elle a toujours trouvé ça troublant à quel point elles pouvaient rapidement passez de mignones à terrifiantes.",
-  "AVEMUJICA-PLAYFUL_CORETTON.title": "Coretton Joueur",
   
   "AVEMUJICA-PUPPET_STRINGS.description": "Les [gold]Poupées[/gold] apparaissent avec [blue]{StrengthPower}[/blue] de [gold]Force[/gold] et [gold]Dexterity[/gold].",
   "AVEMUJICA-PUPPET_STRINGS.flavor": "Elle trouve ça ironique que dans un endroit aussi êtrange, il y a toujours autant de marionnettes dansant inutilement sur leurs fils",
@@ -29,5 +25,10 @@
 
   "AVEMUJICA-VIOLIN.description": "Lorque vous obtenez cette relique, [gold]Enchantez[/gold] jusqu'à [blue]{Cards}[/blue] cartes avec [purple]Magistral[/purple] [blue]{Masterful}[/blue].",
   "AVEMUJICA-VIOLIN.flavor": "Elle a compris que sa mystérieuse amie, tout comme elle, porte plusieurs vies sur ses épaules.",
-  "AVEMUJICA-VIOLIN.title": "Violon"
+  "AVEMUJICA-VIOLIN.title": "Violon",
+
+
+  "AVEMUJICA-PLAYFUL_CORETTON.description": "At the start of each combat, [gold]Dreamspin[/gold].",
+  "AVEMUJICA-PLAYFUL_CORETTON.flavor": "Elle a toujours trouvé ça troublant à quel point elles pouvaient rapidement passez de mignones à terrifiantes.",
+  "AVEMUJICA-PLAYFUL_CORETTON.title": "Coretton Joueur"
 }

@@ -1,4 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Cards.Dolls;
+﻿using AveMujica.AveMujicaCode.Cards.Token;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -13,34 +13,23 @@ public class FullMoonMasquerade() : AveMujicaCard(2,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(11, ValueProp.Move), new HealVar(1)];
-    
-    public override bool GainsBlock => true;
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(12, ValueProp.Move)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
         await CommonActions.CardBlock(this, DynamicVars.Block, play);
-        if (Owner.Creature.CombatState != null)
-        {
-            foreach (var ally in Owner.Creature.CombatState.Allies)
-            {
-                if (ally.Monster is AbstractDoll && ally.PetOwner == Owner && ally.IsAlive)
-                {
-                    await CreatureCmd.GainMaxHp(ally, DynamicVars.Heal.BaseValue);
-                }
-            }
-        }
+        await CardPileCmd.AddToCombatAndPreview<Weave>(Owner.Creature, PileType.Draw, 1, Owner, CardPilePosition.Random);
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Block.UpgradeValueBy(3);
-        DynamicVars.Heal.UpgradeValueBy(1);
+        DynamicVars.Block.UpgradeValueBy(5);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromKeyword(AveMujicaKeywords.Doll)
+        HoverTipFactory.FromCard<Weave>(),
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin)
     ];
 }

@@ -261,9 +261,6 @@
   "AVEMUJICA-WAXING_MOON_LONGING.description": "[gold]Tisse-rêve[/gold] {Dreamspin:diff()}.{IfUpgraded:show:\nPiochez une carte.}",
   "AVEMUJICA-WAXING_MOON_LONGING.title": "Aspiration de la Lune Croissante",
 
-  "AVEMUJICA-WHITE_KEYS_BLACK_KEYS.description": "[gold]Interprétation Compétence:[/gold] Appliquez {WeakPower:diff()} [gold]Affaibli[/gold].\n[gold]Interprétation Attaque:[/gold] Appliquez {VulnerablePower:diff()} [gold]Vulnérable[/gold].",
-  "AVEMUJICA-WHITE_KEYS_BLACK_KEYS.title": "Clefs Blanches, Clefs Noirs",
-
   "AVEMUJICA-WRITERS_BLOCK.description": "Gagnez {Block:diff()} [gold]Armure[/gold].\nAjoutez {Cards:diff()} [gold]Musiques Vierges[/gold] à votre [gold]Main[/gold].",
   "AVEMUJICA-WRITERS_BLOCK.title": "Page Blanche",
   
@@ -301,5 +298,9 @@
   "AVEMUJICA-HYMN.title": "Hymne à la Bravoure",
 
   "AVEMUJICA-ANTHEM.description": "[gold]Interprétation Attaque :[/gold] TOUS les joueurs gagnent {StrengthPower:diff()} de [gold]Force[/gold] ce tour.\n[gold]Interprétation Compétence :[/gold] TOUS les joueurs gagnent {DexterityPower:diff()} de [gold]Dexterité[/gold] ce tour.",
-  "AVEMUJICA-ANTHEM.title": "Hymne de Bataille"
+  "AVEMUJICA-ANTHEM.title": "Hymne de Bataille",
+
+  
+  "AVEMUJICA-WHITE_SWORD_BLACK_SWORD.description": "[gold]Interprétation Compétence:[/gold] Appliquez {WeakPower:diff()} [gold]Affaibli[/gold].\n[gold]Interprétation Attaque:[/gold] Appliquez {VulnerablePower:diff()} [gold]Vulnérable[/gold].",
+  "AVEMUJICA-WHITE_SWORD_BLACK_SWORD.title": "White Sword, Black Sword"
 }

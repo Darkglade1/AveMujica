@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Rare;
 
-public class Consign() : AveMujicaCard(1,
+public class Consign() : AveMujicaCard(2,
     CardType.Attack, CardRarity.Rare,
     TargetType.AnyEnemy)
 {

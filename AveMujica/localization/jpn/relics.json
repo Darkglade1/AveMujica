@@ -5,9 +5,6 @@
   "AVEMUJICA-GRAND_PIANO.description": "最初の[blue]{Turns}[/blue]ターンの開始時、[gold]作曲[/gold]「[blue]{Compose}[/blue] [gold]ブロック[/gold]を得る。」",
   "AVEMUJICA-GRAND_PIANO.flavor": "再び舞台に立つよう、彼女を誘っている。",
   "AVEMUJICA-GRAND_PIANO.title": "グランドピアノ",
-  "AVEMUJICA-PLAYFUL_CORETTON.description": "戦闘開始時、[gold]夢の糸[/gold][blue]{DreamThreadPower}[/blue]を得る。",
-  "AVEMUJICA-PLAYFUL_CORETTON.flavor": "可愛らしさから恐ろしさへ、その切り替えの速さに彼女は不安を覚えた。",
-  "AVEMUJICA-PLAYFUL_CORETTON.title": "陽気なコレットン",
   "AVEMUJICA-NOSTALGIC_SHEET_MUSIC.description": "[gold]楽曲[/gold]をプレイするたび、[gold]ブロック[/gold][blue]{Block}[/blue]を得る。",
   "AVEMUJICA-NOSTALGIC_SHEET_MUSIC.flavor": "たとえ二度と交わることがなくても、並んで歩けないわけではない。",
   "AVEMUJICA-NOSTALGIC_SHEET_MUSIC.title": "郷愁の楽譜",
@@ -20,8 +17,11 @@
   "AVEMUJICA-PUPPET_STRINGS.description": "[gold]人形[/gold]は[gold]筋力[/gold]と[gold]敏捷性[/gold][blue]{StrengthPower}[/blue]を持った状態で登場する。",
   "AVEMUJICA-PUPPET_STRINGS.flavor": "こんな奇妙な場所でさえ、糸に操られ虚しく踊る人形がこれほど多いとは、皮肉なものだと彼女は思った。",
   "AVEMUJICA-PUPPET_STRINGS.title": "操り糸",
-
   "AVEMUJICA-VIOLIN.description": "入手した時、カードを最大[blue]{Cards}[/blue]枚[purple]熟練[/purple][blue]{Masterful}[/blue]で[gold]エンチャント[/gold]する。",
   "AVEMUJICA-VIOLIN.flavor": "彼女には分かっていた。この不思議な友人もまた、自分と同じように多くの命の重荷を背負っているのだと。",
-  "AVEMUJICA-VIOLIN.title": "ヴァイオリン"
+  "AVEMUJICA-VIOLIN.title": "ヴァイオリン",
+
+  "AVEMUJICA-PLAYFUL_CORETTON.description": "At the start of each combat, [gold]Dreamspin[/gold].",
+  "AVEMUJICA-PLAYFUL_CORETTON.flavor": "可愛らしさから恐ろしさへ、その切り替えの速さに彼女は不安を覚えた。",
+  "AVEMUJICA-PLAYFUL_CORETTON.title": "陽気なコレットン"
 }

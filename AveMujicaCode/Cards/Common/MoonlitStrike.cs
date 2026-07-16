@@ -30,7 +30,7 @@ public class MoonlitStrike() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(3);
+        DynamicVars.Damage.UpgradeValueBy(4);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [

@@ -85,8 +85,6 @@
   "AVEMUJICA-FULL_MOON_MASQUERADE.title": "满月假面舞会",
   "AVEMUJICA-WAXING_MOON_LONGING.description": "[gold]梦旋[/gold]{Dreamspin:diff()}。{IfUpgraded:show:\n抽一张牌。}",
   "AVEMUJICA-WAXING_MOON_LONGING.title": "渐圆月的思念",
-  "AVEMUJICA-WHITE_KEYS_BLACK_KEYS.description": "[gold]演奏技能：[/gold]施加{WeakPower:diff()}层[gold]虚弱[/gold]。\n[gold]演奏攻击：[/gold]施加{VulnerablePower:diff()}层[gold]易伤[/gold]。",
-  "AVEMUJICA-WHITE_KEYS_BLACK_KEYS.title": "黑键与白键",
   "AVEMUJICA-CANON.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n[gold]演奏攻击技能：[/gold]下回合抽一张牌。",
   "AVEMUJICA-CANON.title": "绿色卡农",
   "AVEMUJICA-FULL_HOUSE.description": "造成{CalculatedDamage:diff()}点伤害。\n本次战斗每[gold]演奏[/gold]一次，额外造成{ExtraDamage:diff()}点伤害。",
@@ -204,5 +202,9 @@
   "AVEMUJICA-HYMN.description": "本回合，[gold]Doloris[/gold]为所有玩家提供[gold]格挡[/gold]。\n[gold]梦旋[/gold]。",
   "AVEMUJICA-HYMN.title": "英勇赞歌",
   "AVEMUJICA-ANTHEM.description": "[gold]演奏攻击：[/gold]本回合所有玩家获得{StrengthPower:diff()}点[gold]力量[/gold]。\n[gold]演奏技能：[/gold]本回合所有玩家获得{DexterityPower:diff()}点[gold]敏捷[/gold]。",
-  "AVEMUJICA-ANTHEM.title": "战斗赞歌"
+  "AVEMUJICA-ANTHEM.title": "战斗赞歌",
+
+  
+  "AVEMUJICA-WHITE_SWORD_BLACK_SWORD.description": "[gold]演奏技能：[/gold]施加{WeakPower:diff()}层[gold]虚弱[/gold]。\n[gold]演奏攻击：[/gold]施加{VulnerablePower:diff()}层[gold]易伤[/gold]。",
+  "AVEMUJICA-WHITE_SWORD_BLACK_SWORD.title": "White Sword, Black Sword"
 }

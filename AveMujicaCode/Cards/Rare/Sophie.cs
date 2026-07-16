@@ -1,4 +1,5 @@
 ﻿using AveMujica.AveMujicaCode.Cards.CardMods;
+using AveMujica.AveMujicaCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -13,11 +14,12 @@ public class Sophie() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Rare,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new HpLossVar(35), new PowerVar<VulnerablePower>(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<Oblivion>(8), new PowerVar<VulnerablePower>(1)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose),
-        HoverTipFactory.FromPower<VulnerablePower>()
+        HoverTipFactory.FromPower<VulnerablePower>(),
+        HoverTipFactory.FromPower<Oblivion>()
     ];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
@@ -27,13 +29,13 @@ public class Sophie() : AveMujicaCard(1,
         CardPlay play)
     {
         await PowerCmd.Apply<VulnerablePower>(choiceContext, Owner.Creature,  DynamicVars["VulnerablePower"].IntValue, Owner.Creature, this);
-        var enemyLoseHPMod = (EnemyLoseHPMod)ModelDb.Get<EnemyLoseHPMod>().MutableClone();
-        enemyLoseHPMod.HPLossAmt = (int)DynamicVars["HpLoss"].BaseValue;
-        await ComposeHelper.AddComposeEffectsToSong([enemyLoseHPMod], Owner);
+        var oblivionMod = (OblivionMod)ModelDb.Get<OblivionMod>().MutableClone();
+        oblivionMod.OblivionAmt = (int)DynamicVars["Oblivion"].BaseValue;
+        await ComposeHelper.AddComposeEffectsToSong([oblivionMod], Owner);
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.HpLoss.UpgradeValueBy(15);
+        DynamicVars["Oblivion"].UpgradeValueBy(4);
     }
 }

@@ -15,14 +15,12 @@ public class Oblivion : AveMujicaPower
     public override PowerStackType StackType =>
         PowerStackType.Counter;
     
-    public override async Task AfterPowerAmountChanged(
+    public override async Task AfterCardExhausted(
         PlayerChoiceContext choiceContext,
-        PowerModel power,
-        Decimal amount,
-        Creature? applier,
-        CardModel? cardSource)
+        CardModel card,
+        bool _)
     {
-        if (Owner.CombatState != null && power is Oblivion && Owner == applier)
+        if (Owner.CombatState != null && Owner.Player == card.Owner)
         {
             IReadOnlyList<Creature> hittableEnemies = Owner.CombatState.HittableEnemies;
             if (hittableEnemies.Count != 0)

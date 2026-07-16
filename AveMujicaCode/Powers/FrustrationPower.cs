@@ -1,7 +1,7 @@
 ﻿using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
-using MegaCrit.Sts2.Core.Models;
 
 namespace AveMujica.AveMujicaCode.Powers;
 public class FrustrationPower() : AveMujicaPower
@@ -12,16 +12,12 @@ public class FrustrationPower() : AveMujicaPower
     public override PowerStackType StackType =>
         PowerStackType.Counter;
     
-    public override async Task AfterCardExhausted(
-        PlayerChoiceContext choiceContext,
-        CardModel card,
-        bool _)
+    public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
     {
-        if (card.Owner.Creature != Owner)
+        if (player.Creature == Owner)
         {
-            return;
+            Flash();
+            await PowerCmd.Apply<Oblivion>(choiceContext, Owner, Amount, Owner, null);   
         }
-        Flash();
-        await PowerCmd.Apply<FrustrationTempStrPower>(choiceContext, Owner, Amount, Owner, null);
     }
 }

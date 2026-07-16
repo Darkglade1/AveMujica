@@ -60,11 +60,14 @@ public sealed class TimorisDoll : AbstractDoll
       {
         await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
         Sfx.SKILL_BASS.Play();
-        if (Creature.CombatState != null)
+        IReadOnlyList<Creature>? hittableEnemies = Creature.CombatState?.HittableEnemies;
+        if (hittableEnemies != null && hittableEnemies.Count != 0)
         {
-          foreach (Creature enemy in Creature.CombatState.HittableEnemies)
+          Creature? strongestEnemy = hittableEnemies.MaxBy((Func<Creature, int>) (c => c.CurrentHp));
+          if (strongestEnemy != null)
           {
-            await PowerCmd.Apply<VulnerablePower>(new ThrowingPlayerChoiceContext(), enemy, debuff, Creature, null);
+            await PowerCmd.Apply<WeakPower>(new ThrowingPlayerChoiceContext(), strongestEnemy, debuff, Creature, null);
+            await PowerCmd.Apply<VulnerablePower>(new ThrowingPlayerChoiceContext(), strongestEnemy, debuff, Creature, null);
           }
         }
       }

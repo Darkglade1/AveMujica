@@ -1,12 +1,4 @@
 {
-  "AVEMUJICA-OBLIVION.description": "Whenever you gain [gold]Oblivion[/gold], deal damage to the lowest HP enemy equal to your [gold]Oblivion[/gold].",
-  "AVEMUJICA-OBLIVION.smartDescription": "Whenever you gain [gold]Oblivion[/gold], deal damage to the lowest HP enemy equal to your [gold]Oblivion[/gold].",
-  "AVEMUJICA-OBLIVION.title": "Oblivion",
-
-  "AVEMUJICA-DREAM_THREAD_POWER.description": "When you have [blue]3[/blue] [gold]Dream Thread[/gold], consume them to [gold]Awaken[/gold] a [gold]Doll[/gold].\nWhen targeting a [gold]Doll[/gold] with [gold]Dreamspin[/gold], [gold]Dream Thread[/gold] is consumed to give additional HP.",
-  "AVEMUJICA-DREAM_THREAD_POWER.smartDescription": "When you have [blue]3[/blue] [gold]Dream Thread[/gold], consume them to [gold]Awaken[/gold] a [gold]Doll[/gold].\nWhen targeting a [gold]Doll[/gold] with [gold]Dreamspin[/gold], [gold]Dream Thread[/gold] is consumed to give additional HP.",
-  "AVEMUJICA-DREAM_THREAD_POWER.title": "Dream Thread",
-
   "AVEMUJICA-HOW_DARE_YOU_POWER.description": "Whenever you are attacked, [gold]Doloris[/gold] deals [blue]6[/blue] damage to the attacker and increases this effect's damage by [blue]1[/blue].",
   "AVEMUJICA-HOW_DARE_YOU_POWER.smartDescription": "Whenever you are attacked, [gold]Doloris[/gold] deals [blue]{Amount}[/blue] damage to the attacker and increases this effect's damage by [blue]1[/blue].",
   "AVEMUJICA-HOW_DARE_YOU_POWER.title": "How Dare You!",
@@ -87,10 +79,6 @@
   "AVEMUJICA-EXPLOSIVE_FINALE_POWER.smartDescription": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], deal [blue]{Amount}[/blue] damage to ALL enemies.",
   "AVEMUJICA-EXPLOSIVE_FINALE_POWER.title": "Explosive Finale",
 
-  "AVEMUJICA-FRUSTRATION_POWER.description": "Whenever a card is [gold]Exhausted[/gold], gain [gold]Strength[/gold] this turn.",
-  "AVEMUJICA-FRUSTRATION_POWER.smartDescription": "Whenever a card is [gold]Exhausted[/gold], gain [blue]{Amount}[/blue] [gold]Strength[/gold] this turn.",
-  "AVEMUJICA-FRUSTRATION_POWER.title": "Frustration",
-
   "AVEMUJICA-AFTERGLOW_POWER.description": "The next time you [gold]Perform[/gold], gain Energy.",
   "AVEMUJICA-AFTERGLOW_POWER.smartDescription": "The next time you [gold]Perform[/gold], gain {Amount:energyIcons()}.",
   "AVEMUJICA-AFTERGLOW_POWER.title": "Afterglow",
@@ -109,5 +97,18 @@
 
   "AVEMUJICA-HYMN_POWER.description": "[gold]Doloris[/gold] gives [gold]Block[/gold] to ALL players this turn.",
   "AVEMUJICA-HYMN_POWER.smartDescription": "[gold]Doloris[/gold] gives [gold]Block[/gold] to ALL players {Amount:plural:this turn|for [blue]{Amount}[/blue] turns}.",
-  "AVEMUJICA-HYMN_POWER.title": "Hymn of Valor"
+  "AVEMUJICA-HYMN_POWER.title": "Hymn of Valor",
+
+  
+  "AVEMUJICA-OBLIVION.description": "Whenever a card is [gold]Exhausted[/gold], deals damage to the lowest HP enemy.",
+  "AVEMUJICA-OBLIVION.smartDescription": "Whenever a card is [gold]Exhausted[/gold], deal [blue]{Amount}[/blue] damage to the lowest HP enemy.",
+  "AVEMUJICA-OBLIVION.title": "Oblivion",
+
+  "AVEMUJICA-FRUSTRATION_POWER.description": "At the start of your turn, gain [gold]Oblivion[/gold] this turn.",
+  "AVEMUJICA-FRUSTRATION_POWER.smartDescription": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Oblivion[/gold].",
+  "AVEMUJICA-FRUSTRATION_POWER.title": "Frustration",
+
+  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.description": "At the end of your turn, shuffle a [gold]Weave[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
+  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.smartDescription": "At the end of your turn, shuffle [blue]{Amount}[/blue] [gold]{Amount:plural:Weave|Weaves}[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
+  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.title": "Castle of Dreams"
 }

@@ -29,9 +29,6 @@
   "AVEMUJICA-MOONLIGHT_BARRIER.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Dreamspin[/gold].",
   "AVEMUJICA-MOONLIGHT_BARRIER.title": "Moonlight Barrier",
 
-  "AVEMUJICA-NEW_MOON_AWAKENING.description": "[gold]Dreamspin[/gold].\nIf the target is a [gold]Doll[/gold], they gain {Heal:diff()} HP.",
-  "AVEMUJICA-NEW_MOON_AWAKENING.title": "New Moon Awakening",
-
   "AVEMUJICA-FIRST_QUARTER_YEARNING.description": "Give a [gold]Doll[/gold] {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold].",
   "AVEMUJICA-FIRST_QUARTER_YEARNING.title": "First Quarter's Yearning",
 
@@ -43,9 +40,6 @@
 
   "AVEMUJICA-REGRETS.description": "Deal {Damage:diff()} damage.\n[gold]Exhaust[/gold] {Cards:diff()} card.",
   "AVEMUJICA-REGRETS.title": "Cast Off Regrets",
-
-  "AVEMUJICA-CRESCENDO.description": "Deal {Damage:diff()} damage to ALL enemies {Repeat:diff()} times.",
-  "AVEMUJICA-CRESCENDO.title": "Crescendo",
 
   "AVEMUJICA-DIMINUENDO.description": "Gain {Block:diff()} [gold]Block[/gold].\n ALL enemies loses {StrengthLoss:diff()} [gold]Strength[/gold] this turn.",
   "AVEMUJICA-DIMINUENDO.title": "Diminuendo",
@@ -120,18 +114,6 @@
   "AVEMUJICA-AL_FINE.description": "Deal {Damage:diff()} damage to ALL enemies.\nIf you played a [gold]Song[/gold] this turn, [gold]Dreamspin[/gold] twice.",
   "AVEMUJICA-AL_FINE.title": "Al Fine",
 
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "[gold]Dreamspin[/gold].\nIf you targeted yourself, [gold]Dreamspin[/gold] again.",
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "Crescent Moon Echos",
-
-  "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gain {Block:diff()} [gold]Block[/gold].\nALL [gold]Dolls[/gold] gain {Heal:diff()} HP.",
-  "AVEMUJICA-FULL_MOON_MASQUERADE.title": "Full Moon Masquerade",
-
-  "AVEMUJICA-BLUE_MOON.description": "Gain [gold]Block[/gold] equal to the total HP of your [gold]Dolls[/gold].{InCombat:\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold])|}",
-  "AVEMUJICA-BLUE_MOON.title": "Blue Moon's Sorrow",
-
-  "AVEMUJICA-WHITE_KEYS_BLACK_KEYS.description": "[gold]Perform Skill:[/gold] Apply {WeakPower:diff()} [gold]Weak[/gold].\n[gold]Perform Attack:[/gold] Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
-  "AVEMUJICA-WHITE_KEYS_BLACK_KEYS.title": "White Keys, Black Keys",
-
   "AVEMUJICA-CANON.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Perform Attack Skill:[/gold] Draw a card next turn.",
   "AVEMUJICA-CANON.title": "Canon in Green",
 
@@ -150,9 +132,6 @@
 
   "AVEMUJICA-SYMBOL_AIR.description": "Apply {WeakPower:diff()} [gold]Weak[/gold].\nDraw {Cards:diff()} cards.\nGain {Energy:energyIcons()}.",
   "AVEMUJICA-SYMBOL_AIR.title": "Symbol II: Air",
-
-  "AVEMUJICA-FUGUE.description": "Deal {Damage:diff()} damage.\nThe next card you play that [gold]Exhausts[/gold] or [gold]Retains[/gold] costs [blue]0[/blue].",
-  "AVEMUJICA-FUGUE.title": "Fugue in Grey",
 
   "AVEMUJICA-SYMBOL_WATER.description": "Gain {Block:diff()} [gold]Block[/gold].",
   "AVEMUJICA-SYMBOL_WATER.title": "Symbol III: Water",
@@ -198,14 +177,11 @@
   "AVEMUJICA-ODE_TO_WAR.description": "Deal {Damage:diff()} damage.\n[gold]Compose[/gold] \"Deal {Compose:diff()} damage.\" until you finish [gold]Composing[/gold] a [gold]Song[/gold].",
   "AVEMUJICA-ODE_TO_WAR.title": "Ode To War",
 
-  "AVEMUJICA-SOPHIE.description": "Gain {VulnerablePower:diff()} [gold]Vulnerable[/gold].\n[gold]Compose[/gold] \"Enemy loses {HpLoss:diff()} HP.\"",
+  "AVEMUJICA-SOPHIE.description": "Gain {VulnerablePower:diff()} [gold]Vulnerable[/gold].\n[gold]Compose[/gold] \"Gain {Oblivion:diff()} [gold]Oblivion[/gold].\"",
   "AVEMUJICA-SOPHIE.title": "Sophie",
 
   "AVEMUJICA-DO_NOT_FEAR_FORGETTING.description": "Gain {Block:diff()} [gold]Block[/gold] X times.\n[gold]Exhaust[/gold] X cards.",
   "AVEMUJICA-DO_NOT_FEAR_FORGETTING.title": "Do Not Fear Forgetting",
-
-  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "ALL [gold]Dolls[/gold] gain {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold].",
-  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "Knights of Oblivionis",
 
   "AVEMUJICA-FLAWLESS_PERFORMANCE.description": "[gold]Perform[/gold] cards [gold]Retain[/gold].\n[gold]Perform[/gold] effects always trigger.",
   "AVEMUJICA-FLAWLESS_PERFORMANCE.title": "Flawless Performance",
@@ -258,9 +234,6 @@
   "AVEMUJICA-EXPLOSIVE_FINALE.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], deal {ExplosiveFinalePower:diff()} damage to ALL enemies.",
   "AVEMUJICA-EXPLOSIVE_FINALE.title": "Explosive Finale",
 
-  "AVEMUJICA-FRUSTRATION.description": "Whenever a card is [gold]Exhausted[/gold], gain {FrustrationPower:diff()} [gold]Strength[/gold] this turn.",
-  "AVEMUJICA-FRUSTRATION.title": "Frustration",
-
   "AVEMUJICA-RONDO.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.\n[gold]Perform Attack:[/gold] Gain {Block:diff()} [gold]Block[/gold].",
   "AVEMUJICA-RONDO.title": "Rondo in Orange",
 
@@ -295,5 +268,39 @@
   "AVEMUJICA-HYMN.title": "Hymn of Valor",
 
   "AVEMUJICA-ANTHEM.description": "[gold]Perform Attack:[/gold] ALL players gain {StrengthPower:diff()} [gold]Strength[/gold] this turn.\n[gold]Perform Skill:[/gold] ALL players gain {DexterityPower:diff()} [gold]Dexterity[/gold] this turn.",
-  "AVEMUJICA-ANTHEM.title": "Anthem of Battle"
+  "AVEMUJICA-ANTHEM.title": "Anthem of Battle",
+
+
+  "AVEMUJICA-WEAVE.description": "[gold]Dreamspin[/gold]{IfUpgraded:show: twice}.",
+  "AVEMUJICA-WEAVE.title": "Weave",
+
+  "AVEMUJICA-NEW_MOON_AWAKENING.description": "[gold]Dreamspin[/gold].\nShuffle a [gold]Weave[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
+  "AVEMUJICA-NEW_MOON_AWAKENING.title": "New Moon Awakening",
+
+  "AVEMUJICA-SINK.description": "Gain {Oblivion:diff()} [gold]Oblivion[/gold].",
+  "AVEMUJICA-SINK.title": "Sink into Oblivion",
+
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "Deal {Damage:diff()} damage.\nIf [gold]Amoris[/gold] is present, she loses {HpLoss:diff()} HP to trigger her [gold]Skill[/gold] {SkillRepeat:diff()} {SkillRepeat:plural:time|times}.",
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "Crescent Moon Echos",
+
+  "AVEMUJICA-BLUE_MOON.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf [gold]Doloris[/gold] is present, she loses {HpLoss:diff()} HP to trigger her [gold]Skill[/gold] {SkillRepeat:diff()} {SkillRepeat:plural:time|times}.",
+  "AVEMUJICA-BLUE_MOON.title": "Blue Moon's Sorrow",
+
+  "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gain {Block:diff()} [gold]Block[/gold].\nShuffle a [gold]Weave[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
+  "AVEMUJICA-FULL_MOON_MASQUERADE.title": "Full Moon Masquerade",
+
+  "AVEMUJICA-WHITE_SWORD_BLACK_SWORD.description": "[gold]Perform Skill:[/gold] Apply {WeakPower:diff()} [gold]Weak[/gold].\n[gold]Perform Attack:[/gold] Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
+  "AVEMUJICA-WHITE_SWORD_BLACK_SWORD.title": "White Sword, Black Sword",
+
+  "AVEMUJICA-FUGUE.description": "Deal {Damage:diff()} damage.\nGain {Oblivion:diff()} [gold]Oblivion[/gold].",
+  "AVEMUJICA-FUGUE.title": "Fugue in Grey",
+
+  "AVEMUJICA-FRUSTRATION.description": "At the start of your turn, gain {FrustrationPower:diff()} [gold]Oblivion[/gold].",
+  "AVEMUJICA-FRUSTRATION.title": "Frustration",
+
+  "AVEMUJICA-CASTLE_OF_DREAMS.description": "At the end of your turn, shuffle {CastleOfDreamsPower:diff()} [gold]{CastleOfDreamsPower:plural:Weave|Weaves}[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
+  "AVEMUJICA-CASTLE_OF_DREAMS.title": "Castle of Dreams",
+
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "ALL [gold]Dolls[/gold] trigger their [gold]Skills[/gold].",
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "Knights of Oblivionis"
 }

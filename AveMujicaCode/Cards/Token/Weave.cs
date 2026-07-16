@@ -1,20 +1,20 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Dolls;
-using AveMujica.AveMujicaCode.Powers;
 using BaseLib.Patches.Features;
-using MegaCrit.Sts2.Core.Commands;
+using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
-using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models.CardPools;
 
-namespace AveMujica.AveMujicaCode.Cards.Rare;
+namespace AveMujica.AveMujicaCode.Cards.Token;
 
-public class LoftMoon() : AveMujicaCard(1,
-    CardType.Power, CardRarity.Rare,
+[Pool(typeof(TokenCardPool))]
+public class Weave() : AveMujicaCard(0,
+    CardType.Skill, CardRarity.Token,
     CustomTargetType.PetOrSelf)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<LoftMoonPower>(2)];
-
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Retain, CardKeyword.Exhaust];
+    
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
@@ -24,15 +24,13 @@ public class LoftMoon() : AveMujicaCard(1,
         {
             await DollHelper.Dreamspin(choiceContext, Owner, play.Target, this);
         }
-        await PowerCmd.Apply<LoftMoonPower>(choiceContext, Owner.Creature, DynamicVars["LoftMoonPower"].BaseValue, Owner.Creature, this);
     }
-    
+
     protected override void OnUpgrade()
     {
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin),
-        HoverTipFactory.FromKeyword(AveMujicaKeywords.Doll)
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin)
     ];
 }

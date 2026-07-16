@@ -84,6 +84,7 @@ public class DollHelper
         if (target != null && target.IsPet && target.Monster is AbstractDoll ally)
         {
             await ally.Skill();
+            await CreatureCmd.GainMaxHp(ally.Creature, 1);
         }
         else
         {

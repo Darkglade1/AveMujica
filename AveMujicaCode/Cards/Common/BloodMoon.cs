@@ -14,7 +14,7 @@ public class BloodMoon() : AveMujicaCard(0,
     CardType.Attack, CardRarity.Common,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(5, ValueProp.Move), new HealVar(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(5, ValueProp.Move), new HealVar(2)];
     
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

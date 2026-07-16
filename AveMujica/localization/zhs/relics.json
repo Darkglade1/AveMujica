@@ -5,9 +5,6 @@
   "AVEMUJICA-GRAND_PIANO.description": "在你最初的{Turns:plural:回合|[blue]{}[/blue]个回合}开始时，[gold]谱曲[/gold]“获得[blue]{Compose}[/blue]点[gold]格挡[/gold]。”",
   "AVEMUJICA-GRAND_PIANO.flavor": "它在召唤她，再一次登上舞台。",
   "AVEMUJICA-GRAND_PIANO.title": "大钢琴",
-  "AVEMUJICA-PLAYFUL_CORETTON.description": "每次战斗开始时，获得[blue]{DreamThreadPower}[/blue]点[gold]梦线[/gold]。",
-  "AVEMUJICA-PLAYFUL_CORETTON.flavor": "她觉得不可思议——它们竟能如此迅速地在可爱与恐怖之间切换。",
-  "AVEMUJICA-PLAYFUL_CORETTON.title": "顽皮科雷顿",
   "AVEMUJICA-NOSTALGIC_SHEET_MUSIC.description": "每当你打出一张[gold]乐曲[/gold]时，获得[blue]{Block}[/blue]点[gold]格挡[/gold]。",
   "AVEMUJICA-NOSTALGIC_SHEET_MUSIC.flavor": "即使她们的轨迹再也不会交汇，也不代表不能继续并肩前行。",
   "AVEMUJICA-NOSTALGIC_SHEET_MUSIC.title": "怀旧乐谱",
@@ -22,5 +19,9 @@
   "AVEMUJICA-PUPPET_STRINGS.title": "傀儡丝线",
   "AVEMUJICA-VIOLIN.description": "拾取时，为至多[blue]{Cards}[/blue]张牌[gold]附魔[/gold][blue]{Masterful}[/blue]层[purple]精通[/purple]。",
   "AVEMUJICA-VIOLIN.flavor": "她能感觉到，这位神秘的朋友肩负着许多人的重担，就像她自己一样。",
-  "AVEMUJICA-VIOLIN.title": "小提琴"
+  "AVEMUJICA-VIOLIN.title": "小提琴",
+
+  "AVEMUJICA-PLAYFUL_CORETTON.description": "At the start of each combat, [gold]Dreamspin[/gold].",
+  "AVEMUJICA-PLAYFUL_CORETTON.flavor": "她觉得不可思议——它们竟能如此迅速地在可爱与恐怖之间切换。",
+  "AVEMUJICA-PLAYFUL_CORETTON.title": "顽皮科雷顿"
 }

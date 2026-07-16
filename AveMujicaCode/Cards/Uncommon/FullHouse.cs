@@ -13,7 +13,7 @@ public class FullHouse() : AveMujicaCard(1,
     TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new CalculationBaseVar(6),
+        new CalculationBaseVar(8),
         new ExtraDamageVar(5),
         new CalculatedDamageVar(ValueProp.Move).WithMultiplier((c, _) 
             => CombatManager.Instance.History.Entries.OfType<PerformCardEntry>().Count(e => e.Card.Owner == c.Owner))

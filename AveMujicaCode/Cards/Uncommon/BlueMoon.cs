@@ -1,58 +1,49 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Dolls;
+using AveMujica.AveMujicaCode.Cards.Token;
+using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
-using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
-public class BlueMoon() : AveMujicaCard(0,
+public class BlueMoon() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
-    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
-    protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new CalculationBaseVar(0),
-        new CalculationExtraVar(1),
-        new CalculatedBlockVar(ValueProp.Move).WithMultiplier(MultiplierCalc)];
-    
-    private static decimal MultiplierCalc(CardModel card, Creature? creature)
-    {
-        if (card.Owner.Creature.CombatState == null)
-        {
-            return 0;
-        }
-
-        int totalHP = 0;
-        foreach (var ally in card.Owner.Creature.CombatState.Allies)
-        {
-            if (ally.IsPet && ally.IsAlive && ally.PetOwner == card.Owner && ally.Monster is AbstractDoll)
-            {
-                totalHP += ally.CurrentHp;
-            }
-        }
-        return totalHP;
-    }
-    
-    public override bool GainsBlock => true;
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(6, ValueProp.Move), new HpLossVar(2), new("SkillRepeat", 1)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromKeyword(AveMujicaKeywords.Doll)
+        HoverTipFactory.FromCard<Doloris>()
     ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.CalculatedBlock.Calculate(play.Target), DynamicVars.CalculatedBlock.Props, play);
+        await CommonActions.CardBlock(this, DynamicVars.Block, play);
+        if (CombatState != null)
+        {
+            foreach (var ally in CombatState.Allies)
+            {
+                if (ally.Monster is DolorisDoll doloris && ally.PetOwner == Owner && ally.IsAlive && ally.CurrentHp >= DynamicVars.HpLoss.BaseValue)
+                {
+                    for (int i = 0; i < DynamicVars["SkillRepeat"].IntValue; i++)
+                    {
+                        await doloris.Skill();
+                    }
+                    await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), ally, DynamicVars.HpLoss.BaseValue, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, ally);
+                    await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), ally, DynamicVars.HpLoss.BaseValue, false);
+                }
+            }
+        }
     }
 
     protected override void OnUpgrade()
     {
-        RemoveKeyword(CardKeyword.Exhaust);
+        DynamicVars["SkillRepeat"].UpgradeValueBy(1);
     }
 }
