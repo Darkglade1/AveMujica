@@ -23,6 +23,8 @@ public class AlFine() : AveMujicaCard(1,
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin)
     ];
     
+    protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.PerformsDreamspin];
+    
     protected override bool ShouldGlowGoldInternal => PlayedSongThisTurn;
 
     protected override async Task OnPlay(

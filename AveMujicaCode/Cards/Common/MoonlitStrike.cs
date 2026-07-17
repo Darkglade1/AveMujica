@@ -15,7 +15,7 @@ public class MoonlitStrike() : AveMujicaCard(1,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(5, ValueProp.Move)];
 
-    protected override HashSet<CardTag> CanonicalTags => [CardTag.Strike];
+    protected override HashSet<CardTag> CanonicalTags => [CardTag.Strike, AveMujicaCardTags.PerformsDreamspin];
     
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

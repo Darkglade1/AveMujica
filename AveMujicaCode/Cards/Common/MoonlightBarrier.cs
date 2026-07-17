@@ -15,7 +15,7 @@ public class MoonlightBarrier() : AveMujicaCard(1,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(3, ValueProp.Move)];
     
-    protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.GainsOblivion];
+    protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.PerformsDreamspin];
     
     public override bool GainsBlock => true;
 

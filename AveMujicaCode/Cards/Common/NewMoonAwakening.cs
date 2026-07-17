@@ -12,6 +12,7 @@ public class NewMoonAwakening() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Common,
     CustomTargetType.PetOrSelf)
 {
+    protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.PerformsDreamspin];
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)

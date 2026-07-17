@@ -16,6 +16,8 @@ public class Hymn() : AveMujicaCard(1,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
     
+    protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.PerformsDreamspin];
+    
     public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
     
     protected override async Task OnPlay(

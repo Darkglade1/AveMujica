@@ -5,7 +5,6 @@ using Godot;
 using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
-using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Nodes.CommonUi;
 
@@ -19,7 +18,7 @@ public class DreamspinFtue() : CustomSingletonModel(HookType.Combat)
 		bool fromHandDraw)
 	{
 		if (Config.ViewDreamspinFtue && LocalContext.IsMe(card.Owner) &&
-		    card.HoverTips.Contains(HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin)))
+		    card.Tags.Contains(AveMujicaCardTags.PerformsDreamspin))
 		{
 			return TaskHelper.RunSafely(ShowCombatFtue());
 		}

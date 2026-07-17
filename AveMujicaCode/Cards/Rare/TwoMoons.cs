@@ -18,6 +18,8 @@ public class TwoMoons() : AveMujicaCard(1,
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin)
     ];
+    
+    protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.PerformsDreamspin];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

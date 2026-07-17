@@ -6,5 +6,5 @@ namespace AveMujica.AveMujicaCode.Cards;
 public static class AveMujicaCardTags
 {
     [CustomEnum] 
-    public static CardTag GainsOblivion;
+    public static CardTag PerformsDreamspin;
 }
