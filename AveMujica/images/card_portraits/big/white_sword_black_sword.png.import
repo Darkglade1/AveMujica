@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0dm00tdtgqd5"
-path="res://.godot/imported/dream_thread_power.png-3fd9ca6dcd2efa06d5b4d7bb6df5cf4a.ctex"
+uid="uid://bs2exgxdv0dml"
+path="res://.godot/imported/white_sword_black_sword.png-ec48845f7822a10305eff870ab4104c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/powers/dream_thread_power.png"
-dest_files=["res://.godot/imported/dream_thread_power.png-3fd9ca6dcd2efa06d5b4d7bb6df5cf4a.ctex"]
+source_file="res://AveMujica/images/card_portraits/big/white_sword_black_sword.png"
+dest_files=["res://.godot/imported/white_sword_black_sword.png-ec48845f7822a10305eff870ab4104c0.ctex"]
 
 [params]
 

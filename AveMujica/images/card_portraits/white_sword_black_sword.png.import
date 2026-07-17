@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btpe3e5mxs2vb"
-path="res://.godot/imported/frustration_power.png-67a1c49060314ef094fe8a3d3e0a987f.ctex"
+uid="uid://vloepk4qlmt8"
+path="res://.godot/imported/white_sword_black_sword.png-521887673686053374ac238759676a05.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/powers/big/frustration_power.png"
-dest_files=["res://.godot/imported/frustration_power.png-67a1c49060314ef094fe8a3d3e0a987f.ctex"]
+source_file="res://AveMujica/images/card_portraits/white_sword_black_sword.png"
+dest_files=["res://.godot/imported/white_sword_black_sword.png-521887673686053374ac238759676a05.ctex"]
 
 [params]
 

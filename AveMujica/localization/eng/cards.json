@@ -261,9 +261,6 @@
   "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "[gold]Mortis[/gold] gains 1 [gold]Intangible[/gold], absorbs all incoming unblocked attack damage this turn, and can't use other abilities this turn.",
   "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "Do Not Fear Death",
 
-  "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold].\nIf the target is a [gold]Doll[/gold], they lose {IfUpgraded:show:up to }{HpLoss:diff()} HP{IfUpgraded:show: twice} to [gold]Dreamspin[/gold] again.",
-  "AVEMUJICA-TWO_MOONS.title": "Two Moons",
-
   "AVEMUJICA-HYMN.description": "This turn, [gold]Doloris[/gold] gives [gold]Block[/gold] to ALL players.\n[gold]Dreamspin[/gold].",
   "AVEMUJICA-HYMN.title": "Hymn of Valor",
 
@@ -302,5 +299,8 @@
   "AVEMUJICA-CASTLE_OF_DREAMS.title": "Castle of Dreams",
 
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "ALL [gold]Dolls[/gold] trigger their [gold]Skills[/gold].",
-  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "Knights of Oblivionis"
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "Knights of Oblivionis",
+
+  "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold].\nIf the target is a [gold]Doll[/gold], they lose {IfUpgraded:show:up to }{HpLoss:diff()} HP{IfUpgraded:show: twice} to trigger their [gold]Skill[/gold].",
+  "AVEMUJICA-TWO_MOONS.title": "Two Moons"
 }

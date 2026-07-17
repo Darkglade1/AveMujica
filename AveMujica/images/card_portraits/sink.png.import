@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ch6ioajrrc46q"
-path="res://.godot/imported/dream_thread_power.png-512862da22d3116599d600eed0489727.ctex"
+uid="uid://bh2jqmgfnj28s"
+path="res://.godot/imported/sink.png-f2538b06175872889bacea6d581fb1b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/powers/big/dream_thread_power.png"
-dest_files=["res://.godot/imported/dream_thread_power.png-512862da22d3116599d600eed0489727.ctex"]
+source_file="res://AveMujica/images/card_portraits/sink.png"
+dest_files=["res://.godot/imported/sink.png-f2538b06175872889bacea6d581fb1b9.ctex"]
 
 [params]
 

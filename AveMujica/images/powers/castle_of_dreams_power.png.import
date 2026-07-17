@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btpe3e5mxs2vb"
-path="res://.godot/imported/frustration_power.png-67a1c49060314ef094fe8a3d3e0a987f.ctex"
+uid="uid://bkcqqx654kfie"
+path="res://.godot/imported/castle_of_dreams_power.png-8f892161ccb3802807a0a14cbf5bb515.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/powers/big/frustration_power.png"
-dest_files=["res://.godot/imported/frustration_power.png-67a1c49060314ef094fe8a3d3e0a987f.ctex"]
+source_file="res://AveMujica/images/powers/castle_of_dreams_power.png"
+dest_files=["res://.godot/imported/castle_of_dreams_power.png-8f892161ccb3802807a0a14cbf5bb515.ctex"]
 
 [params]
 

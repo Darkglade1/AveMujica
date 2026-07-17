@@ -24,21 +24,18 @@ public class TwoMoons() : AveMujicaCard(1,
         CardPlay play)
     {
         await DollHelper.Dreamspin(choiceContext, Owner, play.Target, this);
-        if (play.Target != null && play.Target.Monster is AbstractDoll)
+        await SpendHPToUseSkill(choiceContext, play);
+        if (IsUpgraded)
         {
-            await SpendHPToDreamspin(choiceContext, play);
-            if (IsUpgraded)
-            {
-                await SpendHPToDreamspin(choiceContext, play);
-            }   
+            await SpendHPToUseSkill(choiceContext, play);
         }
     }
 
-    private async Task SpendHPToDreamspin(PlayerChoiceContext choiceContext, CardPlay play)
+    private async Task SpendHPToUseSkill(PlayerChoiceContext choiceContext, CardPlay play)
     {
-        if (play.Target != null && play.Target.CurrentHp >= DynamicVars.HpLoss.BaseValue)
+        if (play.Target != null && play.Target.Monster is AbstractDoll doll && play.Target.CurrentHp >= DynamicVars.HpLoss.BaseValue)
         {
-            await DollHelper.Dreamspin(choiceContext, Owner, play.Target, this);
+            await doll.Skill();
             await CreatureCmd.Damage(choiceContext, play.Target, DynamicVars.HpLoss.BaseValue, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, Owner.Creature);
             await CreatureCmd.LoseMaxHp(choiceContext, play.Target, DynamicVars.HpLoss.BaseValue, false);
         }

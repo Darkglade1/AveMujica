@@ -23,7 +23,7 @@ public class CastleOfDreams() : AveMujicaCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await PowerCmd.Apply<FrustrationPower>(choiceContext, Owner.Creature, DynamicVars["CastleOfDreamsPower"].BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<CastleOfDreamsPower>(choiceContext, Owner.Creature, DynamicVars["CastleOfDreamsPower"].BaseValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()

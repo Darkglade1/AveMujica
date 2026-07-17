@@ -15,6 +15,9 @@ public class CrescentMoonEchos() : AveMujicaCard(2,
     TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(10, ValueProp.Move), new HpLossVar(2), new("SkillRepeat", 2)];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromCard<Amoris>()
+    ];
     
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -42,8 +45,4 @@ public class CrescentMoonEchos() : AveMujicaCard(2,
     {
         DynamicVars["SkillRepeat"].UpgradeValueBy(1);
     }
-    
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromCard<Amoris>()
-    ];
 }

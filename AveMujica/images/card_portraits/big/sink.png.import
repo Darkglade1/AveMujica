@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://caoq2eh1ht6tn"
-path="res://.godot/imported/fugue_power.png-10960fc137f93b1d8951dceb89ece247.ctex"
+uid="uid://piekogb1l0aa"
+path="res://.godot/imported/sink.png-f15775991d7bbd33cdbc319b1c9ce57b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AveMujica/images/powers/fugue_power.png"
-dest_files=["res://.godot/imported/fugue_power.png-10960fc137f93b1d8951dceb89ece247.ctex"]
+source_file="res://AveMujica/images/card_portraits/big/sink.png"
+dest_files=["res://.godot/imported/sink.png-f15775991d7bbd33cdbc319b1c9ce57b.ctex"]
 
 [params]
 
