@@ -22,13 +22,12 @@ public class SeekMod : CardModifier
         pluralLocString = new LocString("card_mods", "AVEMUJICA-SEEK-MOD.plural_description").GetRawText();
         selectionScreenPrompt = new LocString("card_mods", "AVEMUJICA-SEEK-MOD.selectionScreenPrompt");
     }
-    public int SeekAmt { get; set; }
     
     public override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         if (Owner != null && play.Card == Owner)
         {
-            CardSelectorPrefs prefs = new CardSelectorPrefs(selectionScreenPrompt, SeekAmt);
+            CardSelectorPrefs prefs = new CardSelectorPrefs(selectionScreenPrompt, Amount);
             var cards = await CardSelectCmd.FromCombatPile(choiceContext, PileType.Draw.GetPile(Owner.Owner), Owner.Owner, prefs);
             foreach (var card in cards)
             {
@@ -39,13 +38,13 @@ public class SeekMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        if (SeekAmt > 1)
+        if (Amount > 1)
         {
-            description += String.Format(pluralLocString, SeekAmt) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+            description += String.Format(pluralLocString, Amount) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
         }
         else
         {
-            description += String.Format(locString, SeekAmt) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+            description += String.Format(locString, Amount) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
         }
     }
 }

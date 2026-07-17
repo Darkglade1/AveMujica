@@ -23,7 +23,7 @@ public class Keyboard() : AveMujicaRelic
     {
         Flash();
         var blockMod = (BlockMod)ModelDb.Get<BlockMod>().MutableClone();
-        blockMod.BlockVar = new BlockVar((int)DynamicVars["Compose"].BaseValue, ValueProp.Move);
+        blockMod.Amount = (int)DynamicVars["Compose"].BaseValue;
         await ComposeHelper.AddComposeEffectsToSong([blockMod], Owner);
     }
 }

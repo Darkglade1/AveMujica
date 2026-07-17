@@ -15,7 +15,6 @@ public class MasterfulMod : CardModifier
         Priority = 200;
         locString = new LocString("card_mods", "AVEMUJICA-MASTERFUL-MOD.description").GetRawText();
     }
-    public int BuffAmt { get; set; }
     
     public override Decimal ModifyDamageAdditive(
         Creature? target,
@@ -27,7 +26,7 @@ public class MasterfulMod : CardModifier
     {
         if (cardSource != null && cardSource == Owner)
         {
-            return !props.IsPoweredAttack() ? 0 : BuffAmt;
+            return !props.IsPoweredAttack() ? 0 : Amount;
         }
         return 0;
     }
@@ -41,7 +40,7 @@ public class MasterfulMod : CardModifier
     {
         if (cardSource != null && cardSource == Owner)
         {
-            return BuffAmt;
+            return Amount;
         }
         return 0;
     }
@@ -50,7 +49,7 @@ public class MasterfulMod : CardModifier
     {
         if (newApplied is MasterfulMod masterfulMod)
         {
-            BuffAmt += masterfulMod.BuffAmt;
+            Amount += masterfulMod.Amount;
             return true;
         }
         return false;
@@ -58,6 +57,6 @@ public class MasterfulMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += String.Format(locString, BuffAmt);
+        description += String.Format(locString, Amount);
     }
 }

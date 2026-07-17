@@ -16,18 +16,17 @@ public class OblivionMod : CardModifier
         Priority = 20;
         locString = new LocString("card_mods", "AVEMUJICA-OBLIVION-MOD.description").GetRawText();
     }
-    public int OblivionAmt { get; set; }
     
     public override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         if (Owner != null && play.Card == Owner)
         {
-            await PowerCmd.Apply<Oblivion>(choiceContext, Owner.Owner.Creature, OblivionAmt, Owner.Owner.Creature, Owner);
+            await PowerCmd.Apply<Oblivion>(choiceContext, Owner.Owner.Creature, Amount, Owner.Owner.Creature, Owner);
         }
     }
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += String.Format(locString, OblivionAmt) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+        description += String.Format(locString, Amount) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
 }

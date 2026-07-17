@@ -6,6 +6,7 @@ using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.CardMods;
 
@@ -35,6 +36,7 @@ public class DamageMod : CardModifier
     
     public override void OnInitialApplication()
     {
+        DamageVar = new DamageVar(Amount, ValueProp.Move);
         if (Owner is Song song)
         {
             song.IsAttack = true;

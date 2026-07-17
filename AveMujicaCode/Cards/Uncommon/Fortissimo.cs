@@ -26,7 +26,7 @@ public class Fortissimo() : AveMujicaCard(1,
         CardPlay play)
     {
         var strengthMod = (StrengthMod)ModelDb.Get<StrengthMod>().MutableClone();
-        strengthMod.StrengthAmt = (int)DynamicVars["Compose"].BaseValue;
+        strengthMod.Amount = DynamicVars["Compose"].IntValue;
         await ComposeHelper.AddComposeEffectsToSong([strengthMod], Owner);
     }
 

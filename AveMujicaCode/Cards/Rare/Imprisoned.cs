@@ -28,11 +28,11 @@ public class Imprisoned() : AveMujicaCard(0,
     {
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         var loseStrengthMod = (LoseStrengthMod)ModelDb.Get<LoseStrengthMod>().MutableClone();
-        loseStrengthMod.StrengthAmt = (int)DynamicVars["StrengthPower"].BaseValue;
+        loseStrengthMod.Amount = DynamicVars["StrengthPower"].IntValue;
         await ComposeHelper.AddComposeEffectsToSong([loseStrengthMod], Owner);
         
         var seekMod = (SeekMod)ModelDb.Get<SeekMod>().MutableClone();
-        seekMod.SeekAmt = DynamicVars.Cards.IntValue;
+        seekMod.Amount = DynamicVars.Cards.IntValue;
         await ComposeHelper.AddComposeEffectsToSong([seekMod], Owner);
     }
 

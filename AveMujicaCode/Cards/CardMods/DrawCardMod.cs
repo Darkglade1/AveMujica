@@ -18,25 +18,24 @@ public class DrawCardMod : CardModifier
         locString = new LocString("card_mods", "AVEMUJICA-DRAW-CARD-MOD.description").GetRawText();
         pluralLocString = new LocString("card_mods", "AVEMUJICA-DRAW-CARD-MOD.plural_description").GetRawText();
     }
-    public int DrawCardAmt { get; set; }
     
     public override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         if (Owner != null && play.Card == Owner)
         {
-            await CardPileCmd.Draw(choiceContext, DrawCardAmt, Owner.Owner);
+            await CardPileCmd.Draw(choiceContext, Amount, Owner.Owner);
         }
     }
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        if (DrawCardAmt > 1)
+        if (Amount > 1)
         {
-            description += String.Format(pluralLocString, DrawCardAmt) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+            description += String.Format(pluralLocString, Amount) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
         }
         else
         {
-            description += String.Format(locString, DrawCardAmt) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+            description += String.Format(locString, Amount) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
         }
     }
 }

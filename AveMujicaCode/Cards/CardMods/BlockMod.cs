@@ -32,6 +32,11 @@ public class BlockMod : CardModifier
         }
     }
     
+    public override void OnInitialApplication()
+    {
+        BlockVar = new BlockVar(Amount, ValueProp.Move);
+    }
+    
     public override void ModifyDescription(Creature? target, ref string description)
     {
         if (BlockVar != null)

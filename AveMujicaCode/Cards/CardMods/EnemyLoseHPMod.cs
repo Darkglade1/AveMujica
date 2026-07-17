@@ -17,13 +17,12 @@ public class EnemyLoseHPMod : CardModifier
         Priority = -15;
         locString = new LocString("card_mods", "AVEMUJICA-ENEMY-LOSE-HP-MOD.description").GetRawText();
     }
-    public int HPLossAmt { get; set; }
     
     public override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         if (Owner != null && play.Card == Owner && play.Target != null)
         {
-            await CreatureCmd.Damage(choiceContext, play.Target, HPLossAmt, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, Owner.Owner.Creature);
+            await CreatureCmd.Damage(choiceContext, play.Target, Amount, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, Owner.Owner.Creature);
         }
     }
     
@@ -37,6 +36,6 @@ public class EnemyLoseHPMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += String.Format(locString, HPLossAmt) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+        description += String.Format(locString, Amount) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
 }

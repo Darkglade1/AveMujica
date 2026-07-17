@@ -18,19 +18,18 @@ public class StrengthMod : CardModifier
         Priority = 20;
         locString = new LocString("card_mods", "AVEMUJICA-STRENGTH-MOD.description").GetRawText();
     }
-    public int StrengthAmt { get; set; }
     
     public override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         if (Owner != null && play.Card == Owner)
         {
-            await PowerCmd.Apply<StrengthPower>(choiceContext, Owner.Owner.Creature, StrengthAmt, Owner.Owner.Creature, Owner);
+            await PowerCmd.Apply<StrengthPower>(choiceContext, Owner.Owner.Creature, Amount, Owner.Owner.Creature, Owner);
         }
     }
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += String.Format(locString, StrengthAmt) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+        description += String.Format(locString, Amount) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
     
     public override void AddTips(List<IHoverTip> tips)

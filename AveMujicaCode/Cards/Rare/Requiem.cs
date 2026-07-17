@@ -23,7 +23,7 @@ public class Requiem() : AveMujicaCard(2,
         {
             await CommonActions.CardAttack(this, play).Execute(choiceContext);
             var loseHPMod = (LoseHPMod)ModelDb.Get<LoseHPMod>().MutableClone();
-            loseHPMod.HPLossAmt = (int)DynamicVars.HpLoss.BaseValue;
+            loseHPMod.Amount = DynamicVars.HpLoss.IntValue;
             await ComposeHelper.AddComposeEffectsToSong([loseHPMod], Owner);
         }
     }

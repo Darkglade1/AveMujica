@@ -18,14 +18,13 @@ public class VulnerableMod : CardModifier
         Priority = 100;
         locString = new LocString("card_mods", "AVEMUJICA-VULNERABLE-MOD.description").GetRawText();
     }
-    public int VulnerableAmt { get; set; }
     
     public override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         if (Owner != null && play.Card == Owner)
         {
             ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
-            await PowerCmd.Apply<VulnerablePower>(choiceContext, play.Target, VulnerableAmt, Owner.Owner.Creature, Owner);
+            await PowerCmd.Apply<VulnerablePower>(choiceContext, play.Target, Amount, Owner.Owner.Creature, Owner);
         }
     }
     
@@ -39,7 +38,7 @@ public class VulnerableMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += String.Format(locString, VulnerableAmt) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+        description += String.Format(locString, Amount) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
     
     public override void AddTips(List<IHoverTip> tips)

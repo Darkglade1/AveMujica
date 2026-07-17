@@ -20,14 +20,13 @@ public class ShackleMod : CardModifier
         Priority = 50;
         locString = new LocString("card_mods", "AVEMUJICA-SHACKLE-MOD.description").GetRawText();
     }
-    public int ShackleAmt { get; set; }
     
     public override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         if (Owner != null && play.Card == Owner)
         {
             ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
-            await PowerCmd.Apply<SongTempShacklePower>(choiceContext, play.Target, ShackleAmt, Owner.Owner.Creature, Owner);
+            await PowerCmd.Apply<SongTempShacklePower>(choiceContext, play.Target, Amount, Owner.Owner.Creature, Owner);
         }
     }
     
@@ -41,7 +40,7 @@ public class ShackleMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += String.Format(locString, ShackleAmt) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+        description += String.Format(locString, Amount) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
     
     public override void AddTips(List<IHoverTip> tips)

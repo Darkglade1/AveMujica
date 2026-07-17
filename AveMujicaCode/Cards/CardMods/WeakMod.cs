@@ -18,14 +18,13 @@ public class WeakMod : CardModifier
         Priority = 75;
         locString = new LocString("card_mods", "AVEMUJICA-WEAK-MOD.description").GetRawText();
     }
-    public int WeakAmt { get; set; }
     
     public override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         if (Owner != null && play.Card == Owner)
         {
             ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
-            await PowerCmd.Apply<WeakPower>(choiceContext, play.Target, WeakAmt, Owner.Owner.Creature, Owner);
+            await PowerCmd.Apply<WeakPower>(choiceContext, play.Target, Amount, Owner.Owner.Creature, Owner);
         }
     }
     
@@ -39,7 +38,7 @@ public class WeakMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += String.Format(locString, WeakAmt) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+        description += String.Format(locString, Amount) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
     
     public override void AddTips(List<IHoverTip> tips)

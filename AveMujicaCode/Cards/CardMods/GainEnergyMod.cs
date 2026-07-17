@@ -24,19 +24,18 @@ public class GainEnergyMod : CardModifier
         }
         energyIcon = $"[img]res://images/packed/sprite_fonts/{characterEnergyPrefix}_energy_icon.png[/img]";
     }
-    public int GainEnergyAmt { get; set; }
     
     public override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         if (Owner != null && play.Card == Owner)
         {
-            await PlayerCmd.GainEnergy(GainEnergyAmt, Owner.Owner);
+            await PlayerCmd.GainEnergy(Amount, Owner.Owner);
         }
     }
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        var energyIcons = string.Concat(Enumerable.Repeat(energyIcon, GainEnergyAmt));
+        var energyIcons = string.Concat(Enumerable.Repeat(energyIcon, Amount));
         description += String.Format(locString, energyIcons) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
     }
     

@@ -25,7 +25,7 @@ public class Allegro() : AveMujicaCard(1,
     {
         await CommonActions.Draw(this, choiceContext);
         var drawMod = (DrawCardMod)ModelDb.Get<DrawCardMod>().MutableClone();
-        drawMod.DrawCardAmt = (int)DynamicVars["Compose"].BaseValue;
+        drawMod.Amount = DynamicVars["Compose"].IntValue;
         await ComposeHelper.AddComposeEffectsToSong([drawMod], Owner);
     }
 

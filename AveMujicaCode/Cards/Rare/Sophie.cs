@@ -30,7 +30,7 @@ public class Sophie() : AveMujicaCard(1,
     {
         await PowerCmd.Apply<VulnerablePower>(choiceContext, Owner.Creature,  DynamicVars["VulnerablePower"].IntValue, Owner.Creature, this);
         var oblivionMod = (OblivionMod)ModelDb.Get<OblivionMod>().MutableClone();
-        oblivionMod.OblivionAmt = (int)DynamicVars["Oblivion"].BaseValue;
+        oblivionMod.Amount = DynamicVars["Oblivion"].IntValue;
         await ComposeHelper.AddComposeEffectsToSong([oblivionMod], Owner);
     }
 

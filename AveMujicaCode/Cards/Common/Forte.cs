@@ -27,7 +27,7 @@ public class Forte() : AveMujicaCard(1,
     {
         await CommonActions.CardAttack(this, play).Execute(choiceContext);
         var flexMod = (FlexMod)ModelDb.Get<FlexMod>().MutableClone();
-        flexMod.FlexAmt = (int)DynamicVars["Compose"].BaseValue;
+        flexMod.Amount = DynamicVars["Compose"].IntValue;
         await ComposeHelper.AddComposeEffectsToSong([flexMod], Owner);
     }
 

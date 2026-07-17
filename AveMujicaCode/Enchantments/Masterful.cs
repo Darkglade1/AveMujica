@@ -39,7 +39,7 @@ public class Masterful : AveMujicaEnchantment
         else
         {
             var masterfulMod = (MasterfulMod)ModelDb.Get<MasterfulMod>().MutableClone();
-            masterfulMod.BuffAmt = amount;
+            masterfulMod.Amount = amount;
             CardModifier.AddModifier(card, masterfulMod);
         }
     }

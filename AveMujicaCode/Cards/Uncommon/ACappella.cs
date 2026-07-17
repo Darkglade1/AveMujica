@@ -26,7 +26,7 @@ public class ACappella() : AveMujicaCard(2,
     {
         await CommonActions.CardAttack(this, play).Execute(choiceContext);
         var energyMod = (GainEnergyMod)ModelDb.Get<GainEnergyMod>().MutableClone();
-        energyMod.GainEnergyAmt = (int)DynamicVars.Energy.BaseValue;
+        energyMod.Amount = DynamicVars.Energy.IntValue;
         await ComposeHelper.AddComposeEffectsToSong([energyMod], Owner);
     }
 

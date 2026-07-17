@@ -37,7 +37,7 @@ public class OdeToWar() : AveMujicaCard(2,
             for (int i = 0; i < numRemainingComposes; i++)
             {
                 var damageMod = (DamageMod)ModelDb.Get<DamageMod>().MutableClone();
-                damageMod.DamageVar = new DamageVar(DynamicVars["Compose"].BaseValue, ValueProp.Move);
+                damageMod.Amount = DynamicVars["Compose"].IntValue;
                 await ComposeHelper.AddComposeEffectsToSong([damageMod], Owner);
             }
         }

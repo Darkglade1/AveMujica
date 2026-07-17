@@ -22,7 +22,7 @@ public class Waltz() : AveMujicaCard(1,
     {
         await CommonActions.CardAttack(this, play).Execute(choiceContext);
         var damageMod = (DamageMod)ModelDb.Get<DamageMod>().MutableClone();
-        damageMod.DamageVar = new DamageVar(DynamicVars["Compose"].BaseValue, ValueProp.Move);
+        damageMod.Amount = DynamicVars["Compose"].IntValue;
         await ComposeHelper.AddComposeEffectsToSong([damageMod], Owner);
     }
 
