@@ -14,7 +14,7 @@ public class Sophie() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Rare,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<Oblivion>(8), new PowerVar<VulnerablePower>(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<Oblivion>(10), new PowerVar<VulnerablePower>(1)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose),
@@ -36,6 +36,6 @@ public class Sophie() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars["Oblivion"].UpgradeValueBy(4);
+        DynamicVars["Oblivion"].UpgradeValueBy(5);
     }
 }
