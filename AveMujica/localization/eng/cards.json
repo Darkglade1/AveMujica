@@ -283,7 +283,7 @@
   "AVEMUJICA-BLUE_MOON.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf [gold]Doloris[/gold] is present, she loses {HpLoss:diff()} HP to trigger her [gold]Skill[/gold] {SkillRepeat:diff()} {SkillRepeat:plural:time|times}.",
   "AVEMUJICA-BLUE_MOON.title": "Blue Moon's Sorrow",
 
-  "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gain {Block:diff()} [gold]Block[/gold].\nShuffle a [gold]Weave[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
+  "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gain {Block:diff()} [gold]Block[/gold].\nShuffle a [gold]Weave{IfUpgraded:show:+}[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
   "AVEMUJICA-FULL_MOON_MASQUERADE.title": "Full Moon Masquerade",
 
   "AVEMUJICA-WHITE_SWORD_BLACK_SWORD.description": "[gold]Perform Skill:[/gold] Apply {WeakPower:diff()} [gold]Weak[/gold].\n[gold]Perform Attack:[/gold] Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
@@ -298,9 +298,9 @@
   "AVEMUJICA-CASTLE_OF_DREAMS.description": "At the end of your turn, shuffle {CastleOfDreamsPower:diff()} [gold]{CastleOfDreamsPower:plural:Weave|Weaves}[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
   "AVEMUJICA-CASTLE_OF_DREAMS.title": "Castle of Dreams",
 
-  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "ALL [gold]Dolls[/gold] trigger their [gold]Skills[/gold].",
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "Every [gold]Doll[/gold] present loses {HpLoss:diff()} HP to trigger their [gold]Skill[/gold].",
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "Knights of Oblivionis",
 
-  "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold].\nIf the target is a [gold]Doll[/gold], they lose {IfUpgraded:show:up to }{HpLoss:diff()} HP{IfUpgraded:show: twice} to trigger their [gold]Skill[/gold].",
+  "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold].\nAdd a [gold]Weave[/gold] into your [gold]Hand[/gold].",
   "AVEMUJICA-TWO_MOONS.title": "Two Moons"
 }

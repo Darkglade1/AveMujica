@@ -15,10 +15,6 @@
   "AVEMUJICA-NOSTALGIC_SHEET_MUSIC.flavor": "Even if their lines would never intersect again, that didn't mean they couldn't still walk side-by-side.",
   "AVEMUJICA-NOSTALGIC_SHEET_MUSIC.title": "Nostalgic Sheet Music",
 
-  "AVEMUJICA-MASQUERADE_MASK.description": "The first time you [gold]Perform[/gold] each turn, draw a card.",
-  "AVEMUJICA-MASQUERADE_MASK.flavor": "The masquerade begins. The dolls stir to life.",
-  "AVEMUJICA-MASQUERADE_MASK.title": "Masquerade Mask",
-
   "AVEMUJICA-NOTEBOOK.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], gain [blue]{StrengthPower}[/blue] [gold]Strength[/gold].",
   "AVEMUJICA-NOTEBOOK.flavor": "In times of hardship, she finds strength in the words inside.",
   "AVEMUJICA-NOTEBOOK.title": "Notebook",
@@ -29,5 +25,11 @@
 
   "AVEMUJICA-VIOLIN.description": "Upon pickup, [gold]Enchant[/gold] up to [blue]{Cards}[/blue] cards with [purple]Masterful[/purple] [blue]{Masterful}[/blue].",
   "AVEMUJICA-VIOLIN.flavor": "She could tell her mysterious friend shouldered the burden of many lives, much like herself.",
-  "AVEMUJICA-VIOLIN.title": "Violin"
+  "AVEMUJICA-VIOLIN.title": "Violin",
+  
+  
+
+  "AVEMUJICA-MASQUERADE_MASK.description": "The first time you [gold]Perform[/gold] each turn, draw a card next turn.",
+  "AVEMUJICA-MASQUERADE_MASK.flavor": "The masquerade begins. The dolls stir to life.",
+  "AVEMUJICA-MASQUERADE_MASK.title": "Masquerade Mask"
 }

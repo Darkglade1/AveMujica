@@ -8,6 +8,7 @@ using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.Rooms;
 
 namespace AveMujica.AveMujicaCode.Relics;
@@ -38,7 +39,7 @@ public class MasqueradeMask() : AveMujicaRelic, IAfterPerform
         {
             Flash();
             UsedThisTurn = true;
-            await CardPileCmd.Draw(choiceContext, DynamicVars.Cards.IntValue, Owner);
+            await PowerCmd.Apply<DrawCardsNextTurnPower>(choiceContext, Owner.Creature, DynamicVars.Cards.IntValue, Owner.Creature, null);
         }
     }
     
