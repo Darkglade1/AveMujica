@@ -302,5 +302,8 @@
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "Knights of Oblivionis",
 
   "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold].\nAdd a [gold]Weave[/gold] into your [gold]Hand[/gold].",
-  "AVEMUJICA-TWO_MOONS.title": "Two Moons"
+  "AVEMUJICA-TWO_MOONS.title": "Two Moons",
+
+  "AVEMUJICA-VIRTUOSO_BALLAD.description": "[gold]Enchant[/gold] ALL cards in another player's [gold]Hand[/gold] with [gold]Masterful[/gold] {Masterful:diff()}.",
+  "AVEMUJICA-VIRTUOSO_BALLAD.title": "Virtuoso's Ballad"
 }
