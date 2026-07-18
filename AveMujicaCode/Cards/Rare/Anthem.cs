@@ -44,14 +44,14 @@ public class Anthem() : AbstractPerformCard(1,
         {
             foreach (Player player in CombatState.Players)
             {
-                await PowerCmd.Apply<AnthemTempStrPower>(choiceContext, player.Creature, DynamicVars["StrengthPower"].BaseValue * numTriggers, Owner.Creature, this);
+                await PowerCmd.Apply<NextTurnTempStrPower>(choiceContext, player.Creature, DynamicVars["StrengthPower"].BaseValue * numTriggers, Owner.Creature, this);
             }
         }
         if (cardTypes[0] == CardType.Skill && CombatState != null)
         {
             foreach (Player player in CombatState.Players)
             {
-                await PowerCmd.Apply<AnthemTempDexPower>(choiceContext, player.Creature, DynamicVars["DexterityPower"].BaseValue * numTriggers, Owner.Creature, this);
+                await PowerCmd.Apply<NextTurnTempDexPower>(choiceContext, player.Creature, DynamicVars["DexterityPower"].BaseValue * numTriggers, Owner.Creature, this);
             }
         }
     }

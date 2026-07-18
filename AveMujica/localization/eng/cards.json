@@ -264,9 +264,6 @@
   "AVEMUJICA-HYMN.description": "This turn, [gold]Doloris[/gold] gives [gold]Block[/gold] to ALL players.\n[gold]Dreamspin[/gold].",
   "AVEMUJICA-HYMN.title": "Hymn of Valor",
 
-  "AVEMUJICA-ANTHEM.description": "[gold]Perform Attack:[/gold] ALL players gain {StrengthPower:diff()} [gold]Strength[/gold] this turn.\n[gold]Perform Skill:[/gold] ALL players gain {DexterityPower:diff()} [gold]Dexterity[/gold] this turn.",
-  "AVEMUJICA-ANTHEM.title": "Anthem of Battle",
-
 
   "AVEMUJICA-WEAVE.description": "[gold]Dreamspin[/gold]{IfUpgraded:show: twice}.",
   "AVEMUJICA-WEAVE.title": "Weave",
@@ -305,5 +302,8 @@
   "AVEMUJICA-TWO_MOONS.title": "Two Moons",
 
   "AVEMUJICA-VIRTUOSO_BALLAD.description": "[gold]Enchant[/gold] ALL cards in another player's [gold]Hand[/gold] with [gold]Masterful[/gold] {Masterful:diff()}.",
-  "AVEMUJICA-VIRTUOSO_BALLAD.title": "Virtuoso's Ballad"
+  "AVEMUJICA-VIRTUOSO_BALLAD.title": "Virtuoso's Ballad",
+
+  "AVEMUJICA-ANTHEM.description": "[gold]Perform Attack:[/gold] ALL players gain {StrengthPower:diff()} [gold]Temporary[/gold] [gold]Strength[/gold] next turn.\n[gold]Perform Skill:[/gold] ALL players gain {DexterityPower:diff()} [gold]Temporary[/gold] [gold]Dexterity[/gold] next turn.",
+  "AVEMUJICA-ANTHEM.title": "Anthem of Battle"
 }
