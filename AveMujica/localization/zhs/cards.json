@@ -185,47 +185,32 @@
   "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "无惧死亡",
   "AVEMUJICA-HYMN.description": "本回合，[gold]Doloris[/gold]为所有玩家提供[gold]格挡[/gold]。\n[gold]梦旋[/gold]。",
   "AVEMUJICA-HYMN.title": "英勇赞歌",
-
-  
   "AVEMUJICA-WHITE_SWORD_BLACK_SWORD.description": "[gold]演奏技能：[/gold]施加{WeakPower:diff()}层[gold]虚弱[/gold]。\n[gold]演奏攻击：[/gold]施加{VulnerablePower:diff()}层[gold]易伤[/gold]。",
-  "AVEMUJICA-WHITE_SWORD_BLACK_SWORD.title": "White Sword, Black Sword",
-
-  "AVEMUJICA-WEAVE.description": "[gold]Dreamspin[/gold]{IfUpgraded:show: twice}.",
-  "AVEMUJICA-WEAVE.title": "Weave",
-
-  "AVEMUJICA-NEW_MOON_AWAKENING.description": "[gold]Dreamspin[/gold].\nShuffle a [gold]Weave[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
+  "AVEMUJICA-WHITE_SWORD_BLACK_SWORD.title": "白剑与黑剑",
+  "AVEMUJICA-WEAVE.description": "[gold]梦旋[/gold]{IfUpgraded:show:两次}。",
+  "AVEMUJICA-WEAVE.title": "编织",
+  "AVEMUJICA-NEW_MOON_AWAKENING.description": "[gold]梦旋[/gold]。\n将一张[gold]编织[/gold]洗入你的[gold]抽[/gold][gold]牌堆[/gold]。",
   "AVEMUJICA-NEW_MOON_AWAKENING.title": "新月觉醒",
-
-  "AVEMUJICA-SINK.description": "Gain {Oblivion:diff()} [gold]Oblivion[/gold].",
-  "AVEMUJICA-SINK.title": "Sink into Oblivion",
-
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "Deal {Damage:diff()} damage.\nIf [gold]Amoris[/gold] is present, she loses {HpLoss:diff()} HP to trigger her [gold]Skill[/gold] {SkillRepeat:diff()} {SkillRepeat:plural:time|times}.",
+  "AVEMUJICA-SINK.description": "获得{Oblivion:diff()}层[gold]湮灭[/gold]。",
+  "AVEMUJICA-SINK.title": "沉入湮灭",
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "造成{Damage:diff()}点伤害。\n若[gold]Amoris[/gold]在场，她将失去{HpLoss:diff()}点生命值，触发{SkillRepeat:diff()}{SkillRepeat:plural:次|次}她的[gold]技能[/gold]。",
   "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "新月回响",
-
-  "AVEMUJICA-BLUE_MOON.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf [gold]Doloris[/gold] is present, she loses {HpLoss:diff()} HP to trigger her [gold]Skill[/gold] {SkillRepeat:diff()} {SkillRepeat:plural:time|times}.",
+  "AVEMUJICA-BLUE_MOON.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n若[gold]Doloris[/gold]在场，她将失去{HpLoss:diff()}点生命值，触发{SkillRepeat:diff()}{SkillRepeat:plural:次|次}她的[gold]技能[/gold]。",
   "AVEMUJICA-BLUE_MOON.title": "蓝月之哀",
-
-  "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gain {Block:diff()} [gold]Block[/gold].\nShuffle a [gold]Weave{IfUpgraded:show:+}[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
+  "AVEMUJICA-FULL_MOON_MASQUERADE.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n将一张[gold]编织{IfUpgraded:show:+}[/gold]洗入你的[gold]抽[/gold][gold]牌堆[/gold]。",
   "AVEMUJICA-FULL_MOON_MASQUERADE.title": "满月假面舞会",
-
-  "AVEMUJICA-FUGUE.description": "Deal {Damage:diff()} damage.\nGain {Oblivion:diff()} [gold]Oblivion[/gold].",
+  "AVEMUJICA-FUGUE.description": "造成{Damage:diff()}点伤害。\n获得{Oblivion:diff()}层[gold]湮灭[/gold]。",
   "AVEMUJICA-FUGUE.title": "灰色赋格",
-
-  "AVEMUJICA-FRUSTRATION.description": "At the start of your turn, gain {FrustrationPower:diff()} [gold]Oblivion[/gold].",
+  "AVEMUJICA-FRUSTRATION.description": "回合开始时，获得{FrustrationPower:diff()}层[gold]湮灭[/gold]。",
   "AVEMUJICA-FRUSTRATION.title": "挫败",
-
-  "AVEMUJICA-CASTLE_OF_DREAMS.description": "At the end of your turn, shuffle {CastleOfDreamsPower:diff()} [gold]{CastleOfDreamsPower:plural:Weave|Weaves}[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
-  "AVEMUJICA-CASTLE_OF_DREAMS.title": "Castle of Dreams",
-
-  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "Every [gold]Doll[/gold] present loses {HpLoss:diff()} HP to trigger their [gold]Skill[/gold].",
+  "AVEMUJICA-CASTLE_OF_DREAMS.description": "回合结束时，将{CastleOfDreamsPower:diff()}张[gold]{CastleOfDreamsPower:plural:编织|编织}[/gold]洗入你的[gold]抽[/gold][gold]牌堆[/gold]。",
+  "AVEMUJICA-CASTLE_OF_DREAMS.title": "梦之城堡",
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "每名在场的[gold]娃娃[/gold]将失去{HpLoss:diff()}点生命值，触发其[gold]技能[/gold]。",
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "湮灭骑士团",
-
-  "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold].\nAdd a [gold]Weave[/gold] into your [gold]Hand[/gold].",
+  "AVEMUJICA-TWO_MOONS.description": "[gold]梦旋[/gold]。\n将一张[gold]编织[/gold]加入[gold]手牌[/gold]。",
   "AVEMUJICA-TWO_MOONS.title": "双月",
-
-  "AVEMUJICA-VIRTUOSO_BALLAD.description": "[gold]Enchant[/gold] ALL cards in another player's [gold]Hand[/gold] with [gold]Masterful[/gold] {Masterful:diff()}.",
-  "AVEMUJICA-VIRTUOSO_BALLAD.title": "Virtuoso's Ballad",
-
-  "AVEMUJICA-ANTHEM.description": "[gold]Perform Attack:[/gold] ALL players gain {StrengthPower:diff()} [gold]Temporary[/gold] [gold]Strength[/gold] next turn.\n[gold]Perform Skill:[/gold] ALL players gain {DexterityPower:diff()} [gold]Temporary[/gold] [gold]Dexterity[/gold] next turn.",
+  "AVEMUJICA-VIRTUOSO_BALLAD.description": "为另一名玩家[gold]手牌[/gold]中的所有牌[gold]附魔[/gold]{Masterful:diff()}层[gold]精通[/gold]。",
+  "AVEMUJICA-VIRTUOSO_BALLAD.title": "大师之歌",
+  "AVEMUJICA-ANTHEM.description": "[gold]演奏攻击：[/gold]所有玩家在下回合获得{StrengthPower:diff()}点[gold]临时[/gold][gold]力量[/gold]。\n[gold]演奏技能：[/gold]所有玩家在下回合获得{DexterityPower:diff()}点[gold]临时[/gold][gold]敏捷[/gold]。",
   "AVEMUJICA-ANTHEM.title": "战斗赞歌"
 }

@@ -78,24 +78,23 @@
   "AVEMUJICA-HYMN_POWER.smartDescription": "[gold]Doloris[/gold]{Amount:plural:本回合|在接下来的[blue]{Amount}[/blue]个回合内}为所有玩家提供[gold]格挡[/gold]。",
   "AVEMUJICA-HYMN_POWER.title": "英勇赞歌",
 
-
-  "AVEMUJICA-OBLIVION.description": "Whenever a card is [gold]Exhausted[/gold], deals damage to the lowest HP enemy.",
-  "AVEMUJICA-OBLIVION.smartDescription": "Whenever a card is [gold]Exhausted[/gold], deal [blue]{Amount}[/blue] damage to the lowest HP enemy.",
+  "AVEMUJICA-OBLIVION.description": "每当一张牌被[gold]消耗[/gold]时，对生命值最低的敌人造成伤害。",
+  "AVEMUJICA-OBLIVION.smartDescription": "每当一张牌被[gold]消耗[/gold]时，对生命值最低的敌人造成[blue]{Amount}[/blue]点伤害。",
   "AVEMUJICA-OBLIVION.title": "湮灭",
 
-  "AVEMUJICA-FRUSTRATION_POWER.description": "At the start of your turn, gain [gold]Oblivion[/gold].",
-  "AVEMUJICA-FRUSTRATION_POWER.smartDescription": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Oblivion[/gold].",
+  "AVEMUJICA-FRUSTRATION_POWER.description": "回合开始时，获得[gold]湮灭[/gold]。",
+  "AVEMUJICA-FRUSTRATION_POWER.smartDescription": "回合开始时，获得[blue]{Amount}[/blue]层[gold]湮灭[/gold]。",
   "AVEMUJICA-FRUSTRATION_POWER.title": "挫败",
 
-  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.description": "At the end of your turn, shuffle a [gold]Weave[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
-  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.smartDescription": "At the end of your turn, shuffle [blue]{Amount}[/blue] [gold]{Amount:plural:Weave|Weaves}[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
-  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.title": "Castle of Dreams",
+  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.description": "回合结束时，将一张[gold]编织[/gold]洗入你的[gold]抽[/gold][gold]牌堆[/gold]。",
+  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.smartDescription": "回合结束时，将[blue]{Amount}[/blue]张[gold]{Amount:plural:编织|编织}[/gold]洗入你的[gold]抽[/gold][gold]牌堆[/gold]。",
+  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.title": "梦之城堡",
 
-  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.description": "Next turn, gain [gold]Temporary[/gold] [gold]Strength[/gold].",
-  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.smartDescription": "Next turn, gain [blue]{Amount}[/blue] [gold]Temporary[/gold] [gold]Strength[/gold].",
-  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.title": "Next Turn Temporary Strength",
+  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.description": "下回合获得[gold]临时[/gold][gold]力量[/gold]。",
+  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.smartDescription": "下回合获得[blue]{Amount}[/blue]点[gold]临时[/gold][gold]力量[/gold]。",
+  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.title": "下回合临时力量",
 
-  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.description": "Next turn, gain [blue]{Amount}[/blue] [gold]Temporary[/gold] [gold]Dexterity[/gold].",
-  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.smartDescription": "Next turn, gain [blue]{Amount}[/blue] [gold]Temporary[/gold] [gold]Dexterity[/gold].",
-  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.title": "Next Turn Temporary Dexterity"
+  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.description": "下回合获得[blue]{Amount}[/blue]点[gold]临时[/gold][gold]敏捷[/gold]。",
+  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.smartDescription": "下回合获得[blue]{Amount}[/blue]点[gold]临时[/gold][gold]敏捷[/gold]。",
+  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.title": "下回合临时敏捷"
 }

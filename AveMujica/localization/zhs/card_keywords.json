@@ -7,8 +7,6 @@
   "AVEMUJICA-DOLL.title": "娃娃",
   "AVEMUJICA-AWAKEN.description": "召唤一名[gold]娃娃[/gold]。[gold]娃娃[/gold]会使用其被动能力，并在你的回合结束时失去[blue]1[/blue]点生命值。",
   "AVEMUJICA-AWAKEN.title": "唤醒",
-
-
-  "AVEMUJICA-DREAMSPIN.description": "[gold]Dreamspin[/gold] targets yourself or a [gold]Doll[/gold].\nTarget yourself to [gold]Awaken[/gold] a [gold]Doll[/gold]. If all [gold]Dolls[/gold] are present, they gain [blue]1[/blue] HP instead.\nTarget a [gold]Doll[/gold] to activate their [gold]Skill[/gold] and give them [blue]1[/blue] HP.",
+  "AVEMUJICA-DREAMSPIN.description": "[gold]梦旋[/gold]的目标为你自己或一名[gold]娃娃[/gold]。\n以自己为目标可[gold]唤醒[/gold]一名[gold]娃娃[/gold]。若所有[gold]娃娃[/gold]均已在场，则改为使她们各恢复[blue]1[/blue]点生命值。\n以一名[gold]娃娃[/gold]为目标可激活其[gold]技能[/gold]并使其恢复[blue]1[/blue]点生命值。",
   "AVEMUJICA-DREAMSPIN.title": "梦旋"
 }

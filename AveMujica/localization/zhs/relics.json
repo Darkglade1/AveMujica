@@ -17,14 +17,10 @@
   "AVEMUJICA-VIOLIN.description": "拾取时，为至多[blue]{Cards}[/blue]张牌[gold]附魔[/gold][blue]{Masterful}[/blue]层[purple]精通[/purple]。",
   "AVEMUJICA-VIOLIN.flavor": "她能感觉到，这位神秘的朋友肩负着许多人的重担，就像她自己一样。",
   "AVEMUJICA-VIOLIN.title": "小提琴",
-
-  
-  
-  "AVEMUJICA-PLAYFUL_CORETTON.description": "At the start of each combat, [gold]Dreamspin[/gold].",
+  "AVEMUJICA-PLAYFUL_CORETTON.description": "每次战斗开始时，[gold]梦旋[/gold]。",
   "AVEMUJICA-PLAYFUL_CORETTON.flavor": "她觉得不可思议——它们竟能如此迅速地在可爱与恐怖之间切换。",
   "AVEMUJICA-PLAYFUL_CORETTON.title": "顽皮科雷顿",
-
-  "AVEMUJICA-MASQUERADE_MASK.description": "The first time you [gold]Perform[/gold] each turn, draw a card next turn.",
+  "AVEMUJICA-MASQUERADE_MASK.description": "每回合首次[gold]演奏[/gold]时，下回合抽一张牌。",
   "AVEMUJICA-MASQUERADE_MASK.flavor": "假面舞会拉开帷幕，娃娃们悄然苏醒。",
   "AVEMUJICA-MASQUERADE_MASK.title": "假面舞会面具"
 }
