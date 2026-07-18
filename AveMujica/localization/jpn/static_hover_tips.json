@@ -13,17 +13,18 @@
   "AVEMUJICA-MORTIS_ALLY_SKILL_1.title": "一心同体",
   "AVEMUJICA-MORTIS_ALLY_SKILL_1.description": "スキル: カードを[blue]\\{0\\}[/blue]枚引く。",
   
-  "AVEMUJICA-TIMORIS_ALLY.title": "ティモリス",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.title": "攻撃",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description": "最もHPの低い敵に[blue]\\{0\\}[/blue]ダメージを与える。",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title": "震撼の弦",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "スキル: 全ての敵に[gold]弱体[/gold][blue]\\{0\\}[/blue]を与える。",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title": "月光の処刑",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "スキル: このターン、全ての敵がアタックから受けるダメージが[blue]\\{0\\}%[/blue]増加する。",
-  
   "AVEMUJICA-AMORIS_ALLY.title": "アモーリス",
   "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.title": "攻撃",
   "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.description": "ランダムな敵に[blue]\\{0\\}[/blue]ダメージを[blue]\\{1\\}[/blue]回与える。",
   "AVEMUJICA-AMORIS_ALLY_SKILL_1.title": "炎の如く激しく",
-  "AVEMUJICA-AMORIS_ALLY_SKILL_1.description": "スキル: [gold]アモーリス[/gold]はこのターン[gold]筋力[/gold][blue]\\{0\\}[/blue]を得て、即座に[gold]アタック[/gold]を行う。"
+  "AVEMUJICA-AMORIS_ALLY_SKILL_1.description": "スキル: [gold]アモーリス[/gold]はこのターン[gold]筋力[/gold][blue]\\{0\\}[/blue]を得て、即座に[gold]アタック[/gold]を行う。",
+
+
+  "AVEMUJICA-TIMORIS_ALLY.title": "ティモリス",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.title": "攻撃",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description": "最もHPの低い敵に[blue]\\{0\\}[/blue]ダメージを与える。",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title": "震撼の弦",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "スキル: Apply [blue]\\{0\\}[/blue] [gold]Weak[/gold] and [gold]Vulnerable[/gold] to the highest HP enemy.",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title": "月光の処刑",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "スキル: このターン、全ての敵がアタックから受けるダメージが[blue]\\{0\\}%[/blue]増加する。"
 }

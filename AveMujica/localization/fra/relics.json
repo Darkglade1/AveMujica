@@ -7,10 +7,6 @@
   "AVEMUJICA-KEYBOARD.flavor": "Cet instrument la accompagné depuis son enfance. C'est l'une des dernières connection avec sa mère bien-aimé.",
   "AVEMUJICA-KEYBOARD.title": "Synthétiseur",
 
-  "AVEMUJICA-MASQUERADE_MASK.description": "La première fois qu'une [gold]Interprétation[/gold] est activée chaque tour, piochez une carte",
-  "AVEMUJICA-MASQUERADE_MASK.flavor": "La mascarade commence. Les Poupées viennent à la vie.",
-  "AVEMUJICA-MASQUERADE_MASK.title": "Masque de Mascarade",
-
   "AVEMUJICA-NOSTALGIC_SHEET_MUSIC.description": "Chaque fois qu'une [gold]Musique[/gold] est jouée, gagnez [blue]{Block}[/blue] d'[gold]Armure[/gold]",
   "AVEMUJICA-NOSTALGIC_SHEET_MUSIC.flavor": "Même si leurs vies ne se croiseront plus jamais, cela ne les empêchera pas de marcher côte à côte.",
   "AVEMUJICA-NOSTALGIC_SHEET_MUSIC.title": "Partition Nostalgique",
@@ -28,7 +24,12 @@
   "AVEMUJICA-VIOLIN.title": "Violon",
 
 
+  
   "AVEMUJICA-PLAYFUL_CORETTON.description": "At the start of each combat, [gold]Dreamspin[/gold].",
   "AVEMUJICA-PLAYFUL_CORETTON.flavor": "Elle a toujours trouvé ça troublant à quel point elles pouvaient rapidement passez de mignones à terrifiantes.",
-  "AVEMUJICA-PLAYFUL_CORETTON.title": "Coretton Joueur"
+  "AVEMUJICA-PLAYFUL_CORETTON.title": "Coretton Joueur",
+
+  "AVEMUJICA-MASQUERADE_MASK.description": "The first time you [gold]Perform[/gold] each turn, draw a card next turn.",
+  "AVEMUJICA-MASQUERADE_MASK.flavor": "La mascarade commence. Les Poupées viennent à la vie.",
+  "AVEMUJICA-MASQUERADE_MASK.title": "Masque de Mascarade"
 }

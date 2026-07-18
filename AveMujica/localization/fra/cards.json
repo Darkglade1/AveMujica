@@ -45,9 +45,6 @@
   "AVEMUJICA-CRESCENDO.description": "Infligez {Damage:diff()} dégâts à TOUS les ennemis {Repeat:diff()} fois.",
   "AVEMUJICA-CRESCENDO.title": "Crescendo",
 
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "[gold]Tisse-rêve[/gold].\nSi vous vous ciblez vous-même, [gold]Tisse-rêve[/gold] une fois de plus.",
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "Échos du Croissant de Lune",
-
   "AVEMUJICA-CRUCIFIX.description": "Infligez {Damage:diff()} dégâts.\nGagnez {ThornsPower:diff()} [gold]Épines[/gold].",
   "AVEMUJICA-CRUCIFIX.title": "Crucifix X",
 
@@ -107,17 +104,8 @@
   "AVEMUJICA-FORTISSIMO.description": "[gold]Composez[/gold] Gagnez {Compose:diff()} de [gold]Force[/gold].",
   "AVEMUJICA-FORTISSIMO.title": "Fortissimo",
 
-  "AVEMUJICA-FRUSTRATION.description": "Chaque fois qu'une carte est [gold]Épuisée[/gold], gagnez {FrustrationPower:diff()} de [gold]Force[/gold] ce tour.",
-  "AVEMUJICA-FRUSTRATION.title": "Frustration",
-
-  "AVEMUJICA-FUGUE.description": "Infligez {Damage:diff()} dégâts.\nLa prochaine carte que vous jouez qui a [gold]Épuisement[/gold] ou [gold]Retenue[/gold] coûte [blue]0[/blue].",
-  "AVEMUJICA-FUGUE.title": "Fugue Calcite",
-
   "AVEMUJICA-FULL_HOUSE.description": "Infligez {CalculatedDamage:diff()} dégâts.\nInfligez {ExtraDamage:diff()} dégâts additionnels pour chaque [gold]Interprétation[/gold] activée ce combat.",
   "AVEMUJICA-FULL_HOUSE.title": "Full House",
-
-  "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gagnez {Block:diff()} d'[gold]Armure[/gold].\nTOUTES les [gold]Poupées[/gold] gagnent {Heal:diff()} PV.",
-  "AVEMUJICA-FULL_MOON_MASQUERADE.title": "Mascarade de la Pleine Lune",
 
   "AVEMUJICA-GARDEN.description": "Chaque fois qu'une [gold]Compétence[/gold] d'une [gold]Poupée[/gold] est activée, piochez {GardenPower:diff()} {GardenPower:plural:carte|cartes}",
   "AVEMUJICA-GARDEN.title": "Jardin de Lys",
@@ -145,9 +133,6 @@
 
   "AVEMUJICA-INSPIRING_SONGS.description": "Chaque fois que vous jouez {Cards:diff()} [gold]Musiques[/gold], gagnez {Energy:energyIcons()}.",
   "AVEMUJICA-INSPIRING_SONGS.title": "Musiques Inspirantes",
-
-  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "TOUTES les [gold]Poupées[/gold] gagnent {StrengthPower:diff()} de [gold]Force[/gold] et [gold]Dexterité[/gold].",
-  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "Chevaliers d'Oblivionis",
 
   "AVEMUJICA-LARGE_REPERTOIRE.description": "À la fin de votre tour, gagnez un montant d'[gold]Armure[/gold] égal au nombre de cartes dans votre [gold]Main[/gold].",
   "AVEMUJICA-LARGE_REPERTOIRE.title": "Large Répertoire",
@@ -263,15 +248,9 @@
   
   "AVEMUJICA-WRITERS_BLOCK.description": "Gagnez {Block:diff()} [gold]Armure[/gold].\nAjoutez {Cards:diff()} [gold]Musiques Vierges[/gold] à votre [gold]Main[/gold].",
   "AVEMUJICA-WRITERS_BLOCK.title": "Page Blanche",
-  
-  "AVEMUJICA-NEW_MOON_AWAKENING.description": "[gold]Tisse-rêve[/gold].\nSi la cible est une [gold]Poupée[/gold], elle gagne {Heal:diff()} PV.",
-  "AVEMUJICA-NEW_MOON_AWAKENING.title": "Réveil de la Nouvelle Lune",
 
   "AVEMUJICA-BLOOD_MOON.description": "Infligez {Damage:diff()} dégâts.\nLa [gold]Poupée[/gold] avec les PV les plus bas gagne {Heal:diff()} PV.",
   "AVEMUJICA-BLOOD_MOON.title": "Fureur de la Lune de Sang",
-
-  "AVEMUJICA-BLUE_MOON.description": "Gagnez un montant d'[gold]Armure[/gold] égal à la somme des PV de toutes les [gold]Poupées[/gold].{InCombat:\n(Gagnez {CalculatedBlock:diff()} d'[gold]Armure[/gold])|}",
-  "AVEMUJICA-BLUE_MOON.title": "Mélancholie de la Lune Bleue",
 
   "AVEMUJICA-SYMBOL_EARTH.description": "Gagnez {Block:diff()} d'[gold]Armure[/gold].\nInfligez {Damage:diff()} dégâts.\nLorque cette carte est [gold]Retenue[/gold], augmente les dégâts et l'[gold]Armure[/gold] de cette carte de {UpgradeVar:diff()} pour le combat.",
   "AVEMUJICA-SYMBOL_EARTH.title": "Symbole IV : Terre",
@@ -291,16 +270,49 @@
   "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "[gold]Mortis[/gold] gagne 1 [gold]Intangible[/gold] et absorbe tous les dégâts d'Attaque non bloqué pendant ce tour. [gold]Mortis[/gold] ne peut plus utiliser de capacités ce tour.",
   "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "Ne Craint pas la Mort",
 
-  "AVEMUJICA-TWO_MOONS.description": "[gold]Tisse-rêve[/gold].\nSi la cible est une [gold]Poupée[/gold], elle perd {IfUpgraded:show:jusqu'à }{HpLoss:diff()} PV{IfUpgraded:show: deux fois} pour activer [gold]Tisse-rêve[/gold] à nouveau.",
-  "AVEMUJICA-TWO_MOONS.title": "Lunes Doubles",
-
   "AVEMUJICA-HYMN.description": "Ce tour, [gold]Doloris[/gold] donne de l'[gold]Armure[/gold] à TOUS les joueurs.\n[gold]Tisse-rêve[/gold].",
   "AVEMUJICA-HYMN.title": "Hymne à la Bravoure",
 
-  "AVEMUJICA-ANTHEM.description": "[gold]Interprétation Attaque :[/gold] TOUS les joueurs gagnent {StrengthPower:diff()} de [gold]Force[/gold] ce tour.\n[gold]Interprétation Compétence :[/gold] TOUS les joueurs gagnent {DexterityPower:diff()} de [gold]Dexterité[/gold] ce tour.",
-  "AVEMUJICA-ANTHEM.title": "Hymne de Bataille",
-
   
   "AVEMUJICA-WHITE_SWORD_BLACK_SWORD.description": "[gold]Interprétation Compétence:[/gold] Appliquez {WeakPower:diff()} [gold]Affaibli[/gold].\n[gold]Interprétation Attaque:[/gold] Appliquez {VulnerablePower:diff()} [gold]Vulnérable[/gold].",
-  "AVEMUJICA-WHITE_SWORD_BLACK_SWORD.title": "White Sword, Black Sword"
+  "AVEMUJICA-WHITE_SWORD_BLACK_SWORD.title": "White Sword, Black Sword",
+
+  "AVEMUJICA-WEAVE.description": "[gold]Dreamspin[/gold]{IfUpgraded:show: twice}.",
+  "AVEMUJICA-WEAVE.title": "Weave",
+
+  "AVEMUJICA-NEW_MOON_AWAKENING.description": "[gold]Dreamspin[/gold].\nShuffle a [gold]Weave[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
+  "AVEMUJICA-NEW_MOON_AWAKENING.title": "Réveil de la Nouvelle Lune",
+
+  "AVEMUJICA-SINK.description": "Gain {Oblivion:diff()} [gold]Oblivion[/gold].",
+  "AVEMUJICA-SINK.title": "Sink into Oblivion",
+
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "Deal {Damage:diff()} damage.\nIf [gold]Amoris[/gold] is present, she loses {HpLoss:diff()} HP to trigger her [gold]Skill[/gold] {SkillRepeat:diff()} {SkillRepeat:plural:time|times}.",
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "Échos du Croissant de Lune",
+
+  "AVEMUJICA-BLUE_MOON.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf [gold]Doloris[/gold] is present, she loses {HpLoss:diff()} HP to trigger her [gold]Skill[/gold] {SkillRepeat:diff()} {SkillRepeat:plural:time|times}.",
+  "AVEMUJICA-BLUE_MOON.title": "Mélancholie de la Lune Bleue",
+
+  "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gain {Block:diff()} [gold]Block[/gold].\nShuffle a [gold]Weave{IfUpgraded:show:+}[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
+  "AVEMUJICA-FULL_MOON_MASQUERADE.title": "Mascarade de la Pleine Lune",
+
+  "AVEMUJICA-FUGUE.description": "Deal {Damage:diff()} damage.\nGain {Oblivion:diff()} [gold]Oblivion[/gold].",
+  "AVEMUJICA-FUGUE.title": "Fugue Calcite",
+
+  "AVEMUJICA-FRUSTRATION.description": "At the start of your turn, gain {FrustrationPower:diff()} [gold]Oblivion[/gold].",
+  "AVEMUJICA-FRUSTRATION.title": "Frustration",
+
+  "AVEMUJICA-CASTLE_OF_DREAMS.description": "At the end of your turn, shuffle {CastleOfDreamsPower:diff()} [gold]{CastleOfDreamsPower:plural:Weave|Weaves}[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
+  "AVEMUJICA-CASTLE_OF_DREAMS.title": "Castle of Dreams",
+
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "Every [gold]Doll[/gold] present loses {HpLoss:diff()} HP to trigger their [gold]Skill[/gold].",
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "Chevaliers d'Oblivionis",
+
+  "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold].\nAdd a [gold]Weave[/gold] into your [gold]Hand[/gold].",
+  "AVEMUJICA-TWO_MOONS.title": "Lunes Doubles",
+
+  "AVEMUJICA-VIRTUOSO_BALLAD.description": "[gold]Enchant[/gold] ALL cards in another player's [gold]Hand[/gold] with [gold]Masterful[/gold] {Masterful:diff()}.",
+  "AVEMUJICA-VIRTUOSO_BALLAD.title": "Virtuoso's Ballad",
+
+  "AVEMUJICA-ANTHEM.description": "[gold]Perform Attack:[/gold] ALL players gain {StrengthPower:diff()} [gold]Temporary[/gold] [gold]Strength[/gold] next turn.\n[gold]Perform Skill:[/gold] ALL players gain {DexterityPower:diff()} [gold]Temporary[/gold] [gold]Dexterity[/gold] next turn.",
+  "AVEMUJICA-ANTHEM.title": "Hymne de Bataille"
 }

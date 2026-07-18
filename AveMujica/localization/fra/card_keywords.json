@@ -11,6 +11,7 @@
   "AVEMUJICA-AWAKEN.description": "Invoque une [gold]Poupée[/gold]. Les [gold]Poupées[/gold] utilisent leurs capacités passives et perdent [blue]1[/blue] PV à la fin de votre tour.",
   "AVEMUJICA-AWAKEN.title": "Éveiller",
   
-  "AVEMUJICA-DREAMSPIN.description": "Les cartes [gold]Tisse-rêve[/gold] peuvent cibler votre personnage ou une [gold]Poupée[/gold].\nCiblez votre personnage pour [gold]Éveiller[/gold] une [gold]Poupée[/gold]. Si toutes les [gold]Poupées[/gold] sont présentes, elles gagnent [blue]1[/blue] PV à la place.\nCiblez une [gold]Poupée[/gold] pour activer sa [gold]Compétence[/gold].",
+
+  "AVEMUJICA-DREAMSPIN.description": "[gold]Dreamspin[/gold] targets yourself or a [gold]Doll[/gold].\nTarget yourself to [gold]Awaken[/gold] a [gold]Doll[/gold]. If all [gold]Dolls[/gold] are present, they gain [blue]1[/blue] HP instead.\nTarget a [gold]Doll[/gold] to activate their [gold]Skill[/gold] and give them [blue]1[/blue] HP.",
   "AVEMUJICA-DREAMSPIN.title": "Tisse-rêve"
 }

@@ -12,17 +12,19 @@
   "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.description": "Gagnez [blue]\\{0\\}[/blue] [gold]Armure[/gold].",
   "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.title": "Défense",
 
-  "AVEMUJICA-TIMORIS_ALLY.title": "Timoris",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "Compétence : Applique [blue]\\{0\\}[/blue] [gold]Vulnérable[/gold] à TOUS les ennemis",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title": "Cordes Frissonnantes",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "Compétence : TOUS les ennemis subissent [blue]\\{0\\}%[/blue] dégâts supplémentaires des Attaques ce tour.",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title": "Exécution au Clair de Lune",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description": "Inflige [blue]\\{0\\}[/blue] dégâts à l'ennemi avec le moins de PV.",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.title": "Attaque",
-
   "AVEMUJICA-AMORIS_ALLY.title": "Amoris",
   "AVEMUJICA-AMORIS_ALLY_SKILL_1.description": "Compétence : [gold]Amoris[/gold] gagne [blue]\\{0\\}[/blue] de [gold]Strength[/gold] ce tour et [gold]Attaque[/gold] immédiatement.",
   "AVEMUJICA-AMORIS_ALLY_SKILL_1.title": "Aussi Féroce qu'un Brasier",
   "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.description": "Inflige [blue]\\{0\\}[/blue] dégâts à un ennemi aléatoire [blue]\\{1\\}[/blue] fois.",
-  "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.title": "Attaque"
+  "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.title": "Attaque",
+
+  
+  
+  "AVEMUJICA-TIMORIS_ALLY.title": "Timoris",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "Compétence : Apply [blue]\\{0\\}[/blue] [gold]Weak[/gold] and [gold]Vulnerable[/gold] to the highest HP enemy.",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title": "Cordes Frissonnantes",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "Compétence : TOUS les ennemis subissent [blue]\\{0\\}%[/blue] dégâts supplémentaires des Attaques ce tour.",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title": "Exécution au Clair de Lune",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description": "Inflige [blue]\\{0\\}[/blue] dégâts à l'ennemi avec le moins de PV.",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.title": "Attaque"
 }

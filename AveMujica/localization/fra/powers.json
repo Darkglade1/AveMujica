@@ -35,10 +35,6 @@
   "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.smartDescription": "Les cartes avec [gold]Interprétation[/gold] gagnent [gold]Retenu[/gold].\nLes effets d'[gold]Interprétation[/gold] s'activent tous le temps.",
   "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.title": "Interprétation Parfaite",
 
-  "AVEMUJICA-FRUSTRATION_POWER.description": "Chaque fois qu'une carte est [gold]Épuisée[/gold], gagnez de la [gold]Force[/gold] ce tour.",
-  "AVEMUJICA-FRUSTRATION_POWER.smartDescription": "Chaque fois qu'une carte est [gold]Épuisée[/gold], gagnez [blue]{Amount}[/blue] [gold]Force[/gold] ce tour.",
-  "AVEMUJICA-FRUSTRATION_POWER.title": "Frustration",
-
   "AVEMUJICA-FUGUE_POWER.description": "La prochaine carte que vous jouez qui a [gold]Épuisée[/gold] ou [gold]Retenue[/gold] coûte [blue]0[/blue].",
   "AVEMUJICA-FUGUE_POWER.smartDescription": "Les prochaines [blue]{Amount}[/blue] {Amount:plural:carte|cartes} que vous jouez qui {Amount:plural:a|ont} [gold]Épuisée[/gold] ou [gold]Retenue[/gold] {Amount:plural:coûte|coûtent} [blue]0[/blue].",
   "AVEMUJICA-FUGUE_POWER.title": "Fugue Calcite",
@@ -79,10 +75,6 @@
   "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.smartDescription": "Reçoit [blue]{Amount}%[/blue] dégâts supplémentaires des Attaques ce tour. ",
   "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.title": "Exécution au Clair de Lune",
 
-  "AVEMUJICA-OBLIVION.description": "Chaque fois qu'[gold]Oblivion[/gold] est obtenue, inflige des dégâts à l'ennemi avec les PV les plus bas d'une valeur égale à [gold]Oblivion[/gold]",
-  "AVEMUJICA-OBLIVION.smartDescription": "Chaque fois qu'[gold]Oblivion[/gold] est obtenue, inflige des dégâts à l'ennemi avec les PV les plus bas d'une valeur égale à [gold]Oblivion[/gold]",
-  "AVEMUJICA-OBLIVION.title": "Oblivion",
-
   "AVEMUJICA-PERFECT_COMBO_POWER.description": "Vos effets d'[gold]Interprétations[/gold] s'activent une fois supplémentaire pour chaque [gold]Interprétation[/gold] activée ce tour.",
   "AVEMUJICA-PERFECT_COMBO_POWER.smartDescription": "Vos effets d'[gold]Interprétations[/gold] s'activent une fois supplémentaire pour chaque [gold]Interprétation[/gold] activée ce tour.\n(S'active [blue]{StormCounter:diff()}[/blue] fois de plus actuellement.",
   "AVEMUJICA-PERFECT_COMBO_POWER.title": "Interprétation Frénétique",
@@ -109,5 +101,27 @@
 
   "AVEMUJICA-HYMN_POWER.description": "[gold]Doloris[/gold] donne de l'[gold]Armure[/gold] à TOUS les joueurs ce tour.",
   "AVEMUJICA-HYMN_POWER.smartDescription": "[gold]Doloris[/gold] donne de l'[gold]Armure[/gold] à TOUS les joueurs {Amount:plural:ce tour|pendant [blue]{Amount}[/blue] tours}.",
-  "AVEMUJICA-HYMN_POWER.title": "Hymne à la Bravoure"
+  "AVEMUJICA-HYMN_POWER.title": "Hymne à la Bravoure",
+  
+  
+
+  "AVEMUJICA-OBLIVION.description": "Whenever a card is [gold]Exhausted[/gold], deals damage to the lowest HP enemy.",
+  "AVEMUJICA-OBLIVION.smartDescription": "Whenever a card is [gold]Exhausted[/gold], deal [blue]{Amount}[/blue] damage to the lowest HP enemy.",
+  "AVEMUJICA-OBLIVION.title": "Oblivion",
+
+  "AVEMUJICA-FRUSTRATION_POWER.description": "At the start of your turn, gain [gold]Oblivion[/gold].",
+  "AVEMUJICA-FRUSTRATION_POWER.smartDescription": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Oblivion[/gold].",
+  "AVEMUJICA-FRUSTRATION_POWER.title": "Frustration",
+
+  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.description": "At the end of your turn, shuffle a [gold]Weave[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
+  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.smartDescription": "At the end of your turn, shuffle [blue]{Amount}[/blue] [gold]{Amount:plural:Weave|Weaves}[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
+  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.title": "Castle of Dreams",
+
+  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.description": "Next turn, gain [gold]Temporary[/gold] [gold]Strength[/gold].",
+  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.smartDescription": "Next turn, gain [blue]{Amount}[/blue] [gold]Temporary[/gold] [gold]Strength[/gold].",
+  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.title": "Next Turn Temporary Strength",
+
+  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.description": "Next turn, gain [blue]{Amount}[/blue] [gold]Temporary[/gold] [gold]Dexterity[/gold].",
+  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.smartDescription": "Next turn, gain [blue]{Amount}[/blue] [gold]Temporary[/gold] [gold]Dexterity[/gold].",
+  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.title": "Next Turn Temporary Dexterity"
 }

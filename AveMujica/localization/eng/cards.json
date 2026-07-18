@@ -264,6 +264,9 @@
   "AVEMUJICA-HYMN.description": "This turn, [gold]Doloris[/gold] gives [gold]Block[/gold] to ALL players.\n[gold]Dreamspin[/gold].",
   "AVEMUJICA-HYMN.title": "Hymn of Valor",
 
+  "AVEMUJICA-WHITE_SWORD_BLACK_SWORD.description": "[gold]Perform Skill:[/gold] Apply {WeakPower:diff()} [gold]Weak[/gold].\n[gold]Perform Attack:[/gold] Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
+  "AVEMUJICA-WHITE_SWORD_BLACK_SWORD.title": "White Sword, Black Sword",
+
 
   "AVEMUJICA-WEAVE.description": "[gold]Dreamspin[/gold]{IfUpgraded:show: twice}.",
   "AVEMUJICA-WEAVE.title": "Weave",
@@ -282,9 +285,6 @@
 
   "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gain {Block:diff()} [gold]Block[/gold].\nShuffle a [gold]Weave{IfUpgraded:show:+}[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
   "AVEMUJICA-FULL_MOON_MASQUERADE.title": "Full Moon Masquerade",
-
-  "AVEMUJICA-WHITE_SWORD_BLACK_SWORD.description": "[gold]Perform Skill:[/gold] Apply {WeakPower:diff()} [gold]Weak[/gold].\n[gold]Perform Attack:[/gold] Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
-  "AVEMUJICA-WHITE_SWORD_BLACK_SWORD.title": "White Sword, Black Sword",
 
   "AVEMUJICA-FUGUE.description": "Deal {Damage:diff()} damage.\nGain {Oblivion:diff()} [gold]Oblivion[/gold].",
   "AVEMUJICA-FUGUE.title": "Fugue in Grey",

@@ -1,7 +1,4 @@
 {
-  "AVEMUJICA-OBLIVION.description": "每当你获得[gold]湮灭[/gold]时，对生命值最低的敌人造成等同于你的[gold]湮灭[/gold]层数的伤害。",
-  "AVEMUJICA-OBLIVION.smartDescription": "每当你获得[gold]湮灭[/gold]时，对生命值最低的敌人造成等同于你的[gold]湮灭[/gold]层数的伤害。",
-  "AVEMUJICA-OBLIVION.title": "湮灭",
   "AVEMUJICA-DREAM_THREAD_POWER.description": "当你积攒了[blue]3[/blue]点[gold]梦线[/gold]时，消耗它们以[gold]唤醒[/gold]一名[gold]娃娃[/gold]。",
   "AVEMUJICA-DREAM_THREAD_POWER.smartDescription": "当你积攒了[blue]3[/blue]点[gold]梦线[/gold]时，消耗它们以[gold]唤醒[/gold]一名[gold]娃娃[/gold]。",
   "AVEMUJICA-DREAM_THREAD_POWER.title": "梦线",
@@ -59,9 +56,6 @@
   "AVEMUJICA-EXPLOSIVE_FINALE_POWER.description": "每当完成一首[gold]乐曲[/gold]的[gold]谱曲[/gold]时，对所有敌人造成伤害。",
   "AVEMUJICA-EXPLOSIVE_FINALE_POWER.smartDescription": "每当完成一首[gold]乐曲[/gold]的[gold]谱曲[/gold]时，对所有敌人造成[blue]{Amount}[/blue]点伤害。",
   "AVEMUJICA-EXPLOSIVE_FINALE_POWER.title": "爆炸性终章",
-  "AVEMUJICA-FRUSTRATION_POWER.description": "每当一张牌被[gold]消耗[/gold]时，本回合获得[gold]力量[/gold]。",
-  "AVEMUJICA-FRUSTRATION_POWER.smartDescription": "每当一张牌被[gold]消耗[/gold]时，本回合获得[blue]{Amount}[/blue]点[gold]力量[/gold]。",
-  "AVEMUJICA-FRUSTRATION_POWER.title": "挫败",
   "AVEMUJICA-AFTERGLOW_POWER.description": "下次[gold]演奏[/gold]时，获得费用。",
   "AVEMUJICA-AFTERGLOW_POWER.smartDescription": "下次[gold]演奏[/gold]时，获得{Amount:energyIcons()}。",
   "AVEMUJICA-AFTERGLOW_POWER.title": "余晖",
@@ -82,5 +76,26 @@
   "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.title": "月光处刑",
   "AVEMUJICA-HYMN_POWER.description": "[gold]Doloris[/gold]本回合为所有玩家提供[gold]格挡[/gold]。",
   "AVEMUJICA-HYMN_POWER.smartDescription": "[gold]Doloris[/gold]{Amount:plural:本回合|在接下来的[blue]{Amount}[/blue]个回合内}为所有玩家提供[gold]格挡[/gold]。",
-  "AVEMUJICA-HYMN_POWER.title": "英勇赞歌"
+  "AVEMUJICA-HYMN_POWER.title": "英勇赞歌",
+
+
+  "AVEMUJICA-OBLIVION.description": "Whenever a card is [gold]Exhausted[/gold], deals damage to the lowest HP enemy.",
+  "AVEMUJICA-OBLIVION.smartDescription": "Whenever a card is [gold]Exhausted[/gold], deal [blue]{Amount}[/blue] damage to the lowest HP enemy.",
+  "AVEMUJICA-OBLIVION.title": "湮灭",
+
+  "AVEMUJICA-FRUSTRATION_POWER.description": "At the start of your turn, gain [gold]Oblivion[/gold].",
+  "AVEMUJICA-FRUSTRATION_POWER.smartDescription": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Oblivion[/gold].",
+  "AVEMUJICA-FRUSTRATION_POWER.title": "挫败",
+
+  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.description": "At the end of your turn, shuffle a [gold]Weave[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
+  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.smartDescription": "At the end of your turn, shuffle [blue]{Amount}[/blue] [gold]{Amount:plural:Weave|Weaves}[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
+  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.title": "Castle of Dreams",
+
+  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.description": "Next turn, gain [gold]Temporary[/gold] [gold]Strength[/gold].",
+  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.smartDescription": "Next turn, gain [blue]{Amount}[/blue] [gold]Temporary[/gold] [gold]Strength[/gold].",
+  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.title": "Next Turn Temporary Strength",
+
+  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.description": "Next turn, gain [blue]{Amount}[/blue] [gold]Temporary[/gold] [gold]Dexterity[/gold].",
+  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.smartDescription": "Next turn, gain [blue]{Amount}[/blue] [gold]Temporary[/gold] [gold]Dexterity[/gold].",
+  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.title": "Next Turn Temporary Dexterity"
 }

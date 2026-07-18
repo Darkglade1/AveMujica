@@ -1,0 +1,10 @@
+﻿{
+  "AVEMUJICA-DROUGHT_OF_OBLIVION.description": "Gain {Oblivion:diff()} [gold]Oblivion[/gold].",
+  "AVEMUJICA-DROUGHT_OF_OBLIVION.title": "Drought of Oblivion",
+
+  "AVEMUJICA-BOTTLED_DREAMS.description": "[gold]Dreamspin[/gold] twice.",
+  "AVEMUJICA-BOTTLED_DREAMS.title": "Bottled Dreams",
+
+  "AVEMUJICA-JAR_OF_MELODIES.description": "[gold]Upgraded[/gold] [gold]Compose[/gold] {Repeat:diff()} times.",
+  "AVEMUJICA-JAR_OF_MELODIES.title": "Jar of Melodies"
+}

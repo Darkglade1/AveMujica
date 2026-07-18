@@ -75,14 +75,10 @@
   "AVEMUJICA-DA_CAPO.title": "反复记号",
   "AVEMUJICA-AL_CODA.description": "造成{Damage:diff()}点伤害。\n若本回合打出了一张[gold]乐曲[/gold]，{IfUpgraded:show:[gold]升级过的[/gold]}[gold]谱曲[/gold]两次。",
   "AVEMUJICA-AL_CODA.title": "跳房子记号",
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "[gold]梦旋[/gold]。\n若目标为自身，再次[gold]梦旋[/gold]。",
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "新月回响",
   "AVEMUJICA-GIBBOUS_MOON_ENVY.description": "[gold]梦旋[/gold]两次。",
   "AVEMUJICA-GIBBOUS_MOON_ENVY.title": "凸月之妒",
   "AVEMUJICA-AL_FINE.description": "对所有敌人造成{Damage:diff()}点伤害。\n若本回合打出了一张[gold]乐曲[/gold]，[gold]梦旋[/gold]两次。",
   "AVEMUJICA-AL_FINE.title": "终止记号",
-  "AVEMUJICA-FULL_MOON_MASQUERADE.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n所有[gold]娃娃[/gold]恢复{Heal:diff()}点生命值。",
-  "AVEMUJICA-FULL_MOON_MASQUERADE.title": "满月假面舞会",
   "AVEMUJICA-WAXING_MOON_LONGING.description": "[gold]梦旋[/gold]{Dreamspin:diff()}。{IfUpgraded:show:\n抽一张牌。}",
   "AVEMUJICA-WAXING_MOON_LONGING.title": "渐圆月的思念",
   "AVEMUJICA-CANON.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n[gold]演奏攻击技能：[/gold]下回合抽一张牌。",
@@ -98,8 +94,6 @@
   "AVEMUJICA-SYMBOL_FIRE.title": "符文一：火",
   "AVEMUJICA-SYMBOL_AIR.description": "施加{WeakPower:diff()}层[gold]虚弱[/gold]。\n抽{Cards:diff()}张牌。\n获得{Energy:energyIcons()}。",
   "AVEMUJICA-SYMBOL_AIR.title": "符文二：风",
-  "AVEMUJICA-FUGUE.description": "造成{Damage:diff()}点伤害。\n你下一张打出的带有[gold]消耗[/gold]或[gold]保留[/gold]的牌费用变为[blue]0[/blue]。",
-  "AVEMUJICA-FUGUE.title": "灰色赋格",
   "AVEMUJICA-SYMBOL_WATER.description": "获得{Block:diff()}点[gold]格挡[/gold]。",
   "AVEMUJICA-SYMBOL_WATER.title": "符文三：水",
   "AVEMUJICA-CONCERTO.description": "造成{Damage:diff()}点伤害。\n为一张牌[gold]附魔[/gold]数值等于[gold]手牌[/gold]数量的[gold]精通[/gold]。",
@@ -132,8 +126,6 @@
   "AVEMUJICA-SOPHIE.title": "索菲",
   "AVEMUJICA-DO_NOT_FEAR_FORGETTING.description": "获得{Block:diff()}点[gold]格挡[/gold] X次。\n[gold]消耗[/gold] X张牌。",
   "AVEMUJICA-DO_NOT_FEAR_FORGETTING.title": "无惧遗忘",
-  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "所有[gold]娃娃[/gold]获得{StrengthPower:diff()}点[gold]力量[/gold]和[gold]敏捷[/gold]。",
-  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "湮灭骑士团",
   "AVEMUJICA-FLAWLESS_PERFORMANCE.description": "[gold]演奏[/gold]的牌具有[gold]保留[/gold]。\n[gold]演奏[/gold]效果必定触发。",
   "AVEMUJICA-FLAWLESS_PERFORMANCE.title": "完美演出",
   "AVEMUJICA-BLACK_BIRTHDAY.description": "对所有敌人造成{Damage:diff()}点伤害。\n[gold]演奏攻击攻击：[/gold]额外命中{Repeat:diff()}次。",
@@ -167,8 +159,6 @@
   "AVEMUJICA-PURSUIT_OF_MASTERY.selectionScreenPrompt": "选择一张牌以[gold]附魔[/gold]。",
   "AVEMUJICA-EXPLOSIVE_FINALE.description": "每当完成一首[gold]乐曲[/gold]的[gold]谱曲[/gold]时，对所有敌人造成{ExplosiveFinalePower:diff()}点伤害。",
   "AVEMUJICA-EXPLOSIVE_FINALE.title": "爆炸性终章",
-  "AVEMUJICA-FRUSTRATION.description": "每当一张牌被[gold]消耗[/gold]时，本回合获得{FrustrationPower:diff()}点[gold]力量[/gold]。",
-  "AVEMUJICA-FRUSTRATION.title": "挫败",
   "AVEMUJICA-RONDO.description": "造成{Damage:diff()}点伤害，共{Repeat:diff()}次。\n[gold]演奏攻击：[/gold]获得{Block:diff()}点[gold]格挡[/gold]。",
   "AVEMUJICA-RONDO.title": "橙色回旋曲",
   "AVEMUJICA-INSPIRING_DANCE.description": "另一名玩家获得X{IfUpgraded:show:+1}个{Energy:energyIcons()}并抽X{IfUpgraded:show:+1}张牌。",
@@ -179,12 +169,8 @@
   "AVEMUJICA-SPARK.title": "灵感火花",
   "AVEMUJICA-GODDESS_OF_OBLIVION.description": "获得{Oblivion:diff()}层[gold]湮灭[/gold]。\n每当一张牌被[gold]消耗[/gold]时，获得{GoddessOfOblivionPower:diff()}层[gold]湮灭[/gold]。",
   "AVEMUJICA-GODDESS_OF_OBLIVION.title": "湮灭女神",
-  "AVEMUJICA-NEW_MOON_AWAKENING.description": "[gold]梦旋[/gold]。\n若目标为[gold]娃娃[/gold]，恢复{Heal:diff()}点生命值。",
-  "AVEMUJICA-NEW_MOON_AWAKENING.title": "新月觉醒",
   "AVEMUJICA-BLOOD_MOON.description": "造成{Damage:diff()}点伤害。\n生命值最低的[gold]娃娃[/gold]恢复{Heal:diff()}点生命值。",
   "AVEMUJICA-BLOOD_MOON.title": "残月的欲望",
-  "AVEMUJICA-BLUE_MOON.description": "获得等同于你的[gold]娃娃[/gold]生命值总和的[gold]格挡[/gold]。{InCombat:\n（获得{CalculatedBlock:diff()}点[gold]格挡[/gold]）|}",
-  "AVEMUJICA-BLUE_MOON.title": "蓝月之哀",
   "AVEMUJICA-SYMBOL_EARTH.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n造成{Damage:diff()}点伤害。\n[gold]保留[/gold]时，本次战斗中此牌的伤害和[gold]格挡[/gold]增加{UpgradeVar:diff()}点。",
   "AVEMUJICA-SYMBOL_EARTH.title": "符文四：土",
   "AVEMUJICA-LOFT_MOON.description": "[gold]梦旋[/gold]{IfUpgraded:show:两次}。\n回合结束时，生命值最低的[gold]娃娃[/gold]恢复{LoftMoonPower:diff()}点生命值。",
@@ -197,14 +183,49 @@
   "AVEMUJICA-MOONLIGHT_EXECUTION.title": "月光处刑",
   "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "[gold]Mortis[/gold]获得1层[gold]无形[/gold]，本回合吸收所有未被格挡的攻击伤害，且本回合无法使用其他技能。",
   "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "无惧死亡",
-  "AVEMUJICA-TWO_MOONS.description": "[gold]梦旋[/gold]。\n若目标为[gold]娃娃[/gold]，其失去{IfUpgraded:show:至多}{HpLoss:diff()}点生命值{IfUpgraded:show:两次}以再次[gold]梦旋[/gold]。",
-  "AVEMUJICA-TWO_MOONS.title": "双月",
   "AVEMUJICA-HYMN.description": "本回合，[gold]Doloris[/gold]为所有玩家提供[gold]格挡[/gold]。\n[gold]梦旋[/gold]。",
   "AVEMUJICA-HYMN.title": "英勇赞歌",
-  "AVEMUJICA-ANTHEM.description": "[gold]演奏攻击：[/gold]本回合所有玩家获得{StrengthPower:diff()}点[gold]力量[/gold]。\n[gold]演奏技能：[/gold]本回合所有玩家获得{DexterityPower:diff()}点[gold]敏捷[/gold]。",
-  "AVEMUJICA-ANTHEM.title": "战斗赞歌",
 
   
   "AVEMUJICA-WHITE_SWORD_BLACK_SWORD.description": "[gold]演奏技能：[/gold]施加{WeakPower:diff()}层[gold]虚弱[/gold]。\n[gold]演奏攻击：[/gold]施加{VulnerablePower:diff()}层[gold]易伤[/gold]。",
-  "AVEMUJICA-WHITE_SWORD_BLACK_SWORD.title": "White Sword, Black Sword"
+  "AVEMUJICA-WHITE_SWORD_BLACK_SWORD.title": "White Sword, Black Sword",
+
+  "AVEMUJICA-WEAVE.description": "[gold]Dreamspin[/gold]{IfUpgraded:show: twice}.",
+  "AVEMUJICA-WEAVE.title": "Weave",
+
+  "AVEMUJICA-NEW_MOON_AWAKENING.description": "[gold]Dreamspin[/gold].\nShuffle a [gold]Weave[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
+  "AVEMUJICA-NEW_MOON_AWAKENING.title": "新月觉醒",
+
+  "AVEMUJICA-SINK.description": "Gain {Oblivion:diff()} [gold]Oblivion[/gold].",
+  "AVEMUJICA-SINK.title": "Sink into Oblivion",
+
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "Deal {Damage:diff()} damage.\nIf [gold]Amoris[/gold] is present, she loses {HpLoss:diff()} HP to trigger her [gold]Skill[/gold] {SkillRepeat:diff()} {SkillRepeat:plural:time|times}.",
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "新月回响",
+
+  "AVEMUJICA-BLUE_MOON.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf [gold]Doloris[/gold] is present, she loses {HpLoss:diff()} HP to trigger her [gold]Skill[/gold] {SkillRepeat:diff()} {SkillRepeat:plural:time|times}.",
+  "AVEMUJICA-BLUE_MOON.title": "蓝月之哀",
+
+  "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gain {Block:diff()} [gold]Block[/gold].\nShuffle a [gold]Weave{IfUpgraded:show:+}[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
+  "AVEMUJICA-FULL_MOON_MASQUERADE.title": "满月假面舞会",
+
+  "AVEMUJICA-FUGUE.description": "Deal {Damage:diff()} damage.\nGain {Oblivion:diff()} [gold]Oblivion[/gold].",
+  "AVEMUJICA-FUGUE.title": "灰色赋格",
+
+  "AVEMUJICA-FRUSTRATION.description": "At the start of your turn, gain {FrustrationPower:diff()} [gold]Oblivion[/gold].",
+  "AVEMUJICA-FRUSTRATION.title": "挫败",
+
+  "AVEMUJICA-CASTLE_OF_DREAMS.description": "At the end of your turn, shuffle {CastleOfDreamsPower:diff()} [gold]{CastleOfDreamsPower:plural:Weave|Weaves}[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
+  "AVEMUJICA-CASTLE_OF_DREAMS.title": "Castle of Dreams",
+
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "Every [gold]Doll[/gold] present loses {HpLoss:diff()} HP to trigger their [gold]Skill[/gold].",
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "湮灭骑士团",
+
+  "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold].\nAdd a [gold]Weave[/gold] into your [gold]Hand[/gold].",
+  "AVEMUJICA-TWO_MOONS.title": "双月",
+
+  "AVEMUJICA-VIRTUOSO_BALLAD.description": "[gold]Enchant[/gold] ALL cards in another player's [gold]Hand[/gold] with [gold]Masterful[/gold] {Masterful:diff()}.",
+  "AVEMUJICA-VIRTUOSO_BALLAD.title": "Virtuoso's Ballad",
+
+  "AVEMUJICA-ANTHEM.description": "[gold]Perform Attack:[/gold] ALL players gain {StrengthPower:diff()} [gold]Temporary[/gold] [gold]Strength[/gold] next turn.\n[gold]Perform Skill:[/gold] ALL players gain {DexterityPower:diff()} [gold]Temporary[/gold] [gold]Dexterity[/gold] next turn.",
+  "AVEMUJICA-ANTHEM.title": "战斗赞歌"
 }

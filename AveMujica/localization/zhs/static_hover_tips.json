@@ -10,16 +10,17 @@
   "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.description": "你获得[blue]\\{0\\}[/blue]点[gold]格挡[/gold]。",
   "AVEMUJICA-MORTIS_ALLY_SKILL_1.title": "同一整体的两半",
   "AVEMUJICA-MORTIS_ALLY_SKILL_1.description": "技能：你抽[blue]\\{0\\}[/blue]张牌。",
-  "AVEMUJICA-TIMORIS_ALLY.title": "Timoris",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.title": "攻击",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description": "对生命值最低的敌人造成[blue]\\{0\\}[/blue]点伤害。",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title": "颤抖的琴弦",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "技能：对所有敌人施加[blue]\\{0\\}[/blue]层[gold]易伤[/gold]。",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title": "月光处刑",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "技能：所有敌人本回合受到攻击时承受额外[blue]\\{0\\}%[/blue]的伤害。",
   "AVEMUJICA-AMORIS_ALLY.title": "Amoris",
   "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.title": "攻击",
   "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.description": "对随机一名敌人造成[blue]\\{0\\}[/blue]点伤害，共[blue]\\{1\\}[/blue]次。",
   "AVEMUJICA-AMORIS_ALLY_SKILL_1.title": "如火的炽烈",
-  "AVEMUJICA-AMORIS_ALLY_SKILL_1.description": "技能：[gold]Amoris[/gold]本回合获得[blue]\\{0\\}[/blue]点[gold]力量[/gold]，并立即发动[gold]攻击[/gold]。"
+  "AVEMUJICA-AMORIS_ALLY_SKILL_1.description": "技能：[gold]Amoris[/gold]本回合获得[blue]\\{0\\}[/blue]点[gold]力量[/gold]，并立即发动[gold]攻击[/gold]。",
+
+  "AVEMUJICA-TIMORIS_ALLY.title": "Timoris",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.title": "攻击",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description": "对生命值最低的敌人造成[blue]\\{0\\}[/blue]点伤害。",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title": "颤抖的琴弦",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "技能：Apply [blue]\\{0\\}[/blue] [gold]Weak[/gold] and [gold]Vulnerable[/gold] to the highest HP enemy.",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title": "月光处刑",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "技能：所有敌人本回合受到攻击时承受额外[blue]\\{0\\}%[/blue]的伤害。"
 }
