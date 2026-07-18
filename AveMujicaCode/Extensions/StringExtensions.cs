@@ -83,4 +83,9 @@ public static class StringExtensions
     {
         return Path.Join(MainFile.ResPath, "audio", path);
     }
+    
+    public static string PotionPath(this string path)
+    {
+        return Path.Join(MainFile.ResPath, "images", "potions", path);
+    }
 }

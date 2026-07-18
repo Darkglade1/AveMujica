@@ -104,7 +104,7 @@
   "AVEMUJICA-OBLIVION.smartDescription": "Whenever a card is [gold]Exhausted[/gold], deal [blue]{Amount}[/blue] damage to the lowest HP enemy.",
   "AVEMUJICA-OBLIVION.title": "Oblivion",
 
-  "AVEMUJICA-FRUSTRATION_POWER.description": "At the start of your turn, gain [gold]Oblivion[/gold] this turn.",
+  "AVEMUJICA-FRUSTRATION_POWER.description": "At the start of your turn, gain [gold]Oblivion[/gold].",
   "AVEMUJICA-FRUSTRATION_POWER.smartDescription": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Oblivion[/gold].",
   "AVEMUJICA-FRUSTRATION_POWER.title": "Frustration",
 
