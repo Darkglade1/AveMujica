@@ -2,7 +2,7 @@
   "AVEMUJICA-KEYBOARD.description": "每次战斗开始时，[gold]谱曲[/gold]“获得[blue]{Compose}[/blue]点[gold]格挡[/gold]。”",
   "AVEMUJICA-KEYBOARD.flavor": "这件乐器从她童年起便陪伴着她，是她与挚爱母亲之间最后的羁绊之一。",
   "AVEMUJICA-KEYBOARD.title": "键盘",
-  "AVEMUJICA-GRAND_PIANO.description": "在你最初的{Turns:plural:回合|[blue]{}[/blue]个回合}开始时，[gold]谱曲[/gold]“获得[blue]{Compose}[/blue]点[gold]格挡[/gold]。”",
+  "AVEMUJICA-GRAND_PIANO.description": "在你最初的[blue]{Turns}[/blue]个回合开始时，[gold]谱曲[/gold]“获得[blue]{Compose}[/blue]点[gold]格挡[/gold]。”",
   "AVEMUJICA-GRAND_PIANO.flavor": "它在召唤她，再一次登上舞台。",
   "AVEMUJICA-GRAND_PIANO.title": "大钢琴",
   "AVEMUJICA-NOSTALGIC_SHEET_MUSIC.description": "每当你打出一张[gold]乐曲[/gold]时，获得[blue]{Block}[/blue]点[gold]格挡[/gold]。",
