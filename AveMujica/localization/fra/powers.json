@@ -103,25 +103,23 @@
   "AVEMUJICA-HYMN_POWER.smartDescription": "[gold]Doloris[/gold] donne de l'[gold]Armure[/gold] à TOUS les joueurs {Amount:plural:ce tour|pendant [blue]{Amount}[/blue] tours}.",
   "AVEMUJICA-HYMN_POWER.title": "Hymne à la Bravoure",
   
-  
-
-  "AVEMUJICA-OBLIVION.description": "Whenever a card is [gold]Exhausted[/gold], deals damage to the lowest HP enemy.",
-  "AVEMUJICA-OBLIVION.smartDescription": "Whenever a card is [gold]Exhausted[/gold], deal [blue]{Amount}[/blue] damage to the lowest HP enemy.",
+  "AVEMUJICA-OBLIVION.description": "Chaque fois qu'une carte est [gold]Épuisée[/gold], infligez des dégâts à l'ennemi avec les PV les plus bas.",
+  "AVEMUJICA-OBLIVION.smartDescription": "Chaque fois qu'une carte est [gold]Épuisée[/gold], infligez [blue]{Amount}[/blue] dégâts à l'ennemi avec les PV les plus bas.",
   "AVEMUJICA-OBLIVION.title": "Oblivion",
 
-  "AVEMUJICA-FRUSTRATION_POWER.description": "At the start of your turn, gain [gold]Oblivion[/gold].",
-  "AVEMUJICA-FRUSTRATION_POWER.smartDescription": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Oblivion[/gold].",
+  "AVEMUJICA-FRUSTRATION_POWER.description": "Au début de votre tour, gagnez de l'[gold]Oblivion[/gold].",
+  "AVEMUJICA-FRUSTRATION_POWER.smartDescription": "Au début de votre tour, gagnez [blue]{Amount}[/blue] d'[gold]Oblivion[/gold].",
   "AVEMUJICA-FRUSTRATION_POWER.title": "Frustration",
 
-  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.description": "At the end of your turn, shuffle a [gold]Weave[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
-  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.smartDescription": "At the end of your turn, shuffle [blue]{Amount}[/blue] [gold]{Amount:plural:Weave|Weaves}[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
-  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.title": "Castle of Dreams",
+  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.description": "À la fin de votre tour, ajoutez un [gold]Fil Onirique[/gold] à votre [gold]Pioche[/gold].",
+  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.smartDescription": "À la fin de votre tour, ajoutez [blue]{Amount}[/blue] [gold]{Amount:plural:Fil Onirique|Fils Onirique}[/gold] à votre [gold]Pioche[/gold].",
+  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.title": "Château Onirique",
 
-  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.description": "Next turn, gain [gold]Temporary[/gold] [gold]Strength[/gold].",
-  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.smartDescription": "Next turn, gain [blue]{Amount}[/blue] [gold]Temporary[/gold] [gold]Strength[/gold].",
-  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.title": "Next Turn Temporary Strength",
+  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.description": "Au prochain tour, gagnez de la [gold]Force[/gold] [gold]Temporaire[/gold].",
+  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.smartDescription": "Au prochain tour, gagnez [blue]{Amount}[/blue] de [gold]Force[/gold] [gold]Temporaire[/gold].",
+  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.title": "Force Temporaire au prochain tour",
 
-  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.description": "Next turn, gain [blue]{Amount}[/blue] [gold]Temporary[/gold] [gold]Dexterity[/gold].",
-  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.smartDescription": "Next turn, gain [blue]{Amount}[/blue] [gold]Temporary[/gold] [gold]Dexterity[/gold].",
-  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.title": "Next Turn Temporary Dexterity"
+  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.description": "Au prochain tour, gagnez de la [gold]Dexterité[/gold] [gold]Temporaire[/gold] .",
+  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.smartDescription": "Au prochain tour, gagnez [blue]{Amount}[/blue] de [gold]Dexterité[/gold] [gold]Temporaire[/gold] .",
+  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.title": "Dextérité Temporaire au prochain tour"
 }

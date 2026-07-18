@@ -1,10 +1,10 @@
 ﻿{
-  "AVEMUJICA-DROUGHT_OF_OBLIVION.description": "Gain {Oblivion:diff()} [gold]Oblivion[/gold].",
-  "AVEMUJICA-DROUGHT_OF_OBLIVION.title": "Drought of Oblivion",
+  "AVEMUJICA-DROUGHT_OF_OBLIVION.description": "Gagnez {Oblivion:diff()} d'[gold]Oblivion[/gold].",
+  "AVEMUJICA-DROUGHT_OF_OBLIVION.title": "Sécheresse de l'Oblivion",
 
-  "AVEMUJICA-BOTTLED_DREAMS.description": "[gold]Dreamspin[/gold] twice.",
-  "AVEMUJICA-BOTTLED_DREAMS.title": "Bottled Dreams",
+  "AVEMUJICA-BOTTLED_DREAMS.description": "[gold]Tisse-Rêve[/gold] deux fois.",
+  "AVEMUJICA-BOTTLED_DREAMS.title": "Rêves en Bouteille",
 
-  "AVEMUJICA-JAR_OF_MELODIES.description": "[gold]Upgraded[/gold] [gold]Compose[/gold] {Repeat:diff()} times.",
-  "AVEMUJICA-JAR_OF_MELODIES.title": "Jar of Melodies"
+  "AVEMUJICA-JAR_OF_MELODIES.description": "[gold]Composez+[/gold] {Repeat:diff()} fois.",
+  "AVEMUJICA-JAR_OF_MELODIES.title": "Bocal de Notes"
 }
