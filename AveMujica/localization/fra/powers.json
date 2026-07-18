@@ -19,12 +19,12 @@
   "AVEMUJICA-DREAM_THREAD_POWER.smartDescription": "Quand vous possédez [blue]3[/blue] [gold]Soie Onirique[/gold], les consomment pour [gold]Éveiller[/gold] une [gold]Poupée[/gold].",
   "AVEMUJICA-DREAM_THREAD_POWER.title": "Soie Onirique",
 
-  "AVEMUJICA-ENCORE_POWER.description": "Les [gold]Musiques[/gold] ont [gold]Écho[/gold] [blue]1[/blue].",
+  "AVEMUJICA-ENCORE_POWER.description": "Les [gold]Musiques[/gold] gagnent [gold]Écho[/gold] [blue]1[/blue].",
   "AVEMUJICA-ENCORE_POWER.smartDescription": "Les [gold]Musiques[/gold] ont [gold]Écho[/gold] [blue]{Amount}[/blue].",
   "AVEMUJICA-ENCORE_POWER.title": "Encore",
 
-  "AVEMUJICA-ETHER_POWER.description": "Vos cartes qui ont [gold]Retenue[/gold] s'[gold]Épuise[/gold] lorsqu'elle sont jouées.\nVos cartes qui s'[gold]Épuisent[/gold] coûtent [blue]0[/blue].",
-  "AVEMUJICA-ETHER_POWER.smartDescription": "Vos cartes qui ont [gold]Retenue[/gold] s'[gold]Épuise[/gold] lorsqu'elle sont jouées.\nVos cartes qui s'[gold]Épuisent[/gold] coûtent [blue]0[/blue].",
+  "AVEMUJICA-ETHER_POWER.description": "Vos cartes qui ont [gold]Retenue[/gold] s'[gold]Épuisent[/gold] lorsqu'elle sont jouées.\nVos cartes qui s'[gold]Épuisent[/gold] coûtent [blue]0[/blue].",
+  "AVEMUJICA-ETHER_POWER.smartDescription": "Vos cartes qui ont [gold]Retenue[/gold] s'[gold]Épuisent[/gold] lorsqu'elle sont jouées.\nVos cartes qui s'[gold]Épuisent[/gold] coûtent [blue]0[/blue].",
   "AVEMUJICA-ETHER_POWER.title": "Éther",
 
   "AVEMUJICA-EXPLOSIVE_FINALE_POWER.description": "Chaque fois qu'une [gold]Musique[/gold] est complétée, infligez des dégâts à TOUS les ennemis.",
@@ -33,14 +33,14 @@
 
   "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.description": "Les cartes avec [gold]Interprétation[/gold] gagnent [gold]Retenu[/gold].\nLes effets d'[gold]Interprétation[/gold] s'activent tous le temps.",
   "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.smartDescription": "Les cartes avec [gold]Interprétation[/gold] gagnent [gold]Retenu[/gold].\nLes effets d'[gold]Interprétation[/gold] s'activent tous le temps.",
-  "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.title": "Performance Parfaite",
+  "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.title": "Interprétation Parfaite",
 
   "AVEMUJICA-FRUSTRATION_POWER.description": "Chaque fois qu'une carte est [gold]Épuisée[/gold], gagnez de la [gold]Force[/gold] ce tour.",
   "AVEMUJICA-FRUSTRATION_POWER.smartDescription": "Chaque fois qu'une carte est [gold]Épuisée[/gold], gagnez [blue]{Amount}[/blue] [gold]Force[/gold] ce tour.",
   "AVEMUJICA-FRUSTRATION_POWER.title": "Frustration",
 
-  "AVEMUJICA-FUGUE_POWER.description": "La prochaine carte que vous jouez qui a [gold]Épuisé[/gold] ou [gold]Retenu[/gold] coûte [blue]0[/blue].",
-  "AVEMUJICA-FUGUE_POWER.smartDescription": "Les prochaines [blue]{Amount}[/blue] {Amount:plural:carte|cartes} que vous jouez qui a [gold]Épuisé[/gold] ou [gold]Retenu[/gold] {Amount:plural:coûte|coûtent} [blue]0[/blue].",
+  "AVEMUJICA-FUGUE_POWER.description": "La prochaine carte que vous jouez qui a [gold]Épuisée[/gold] ou [gold]Retenue[/gold] coûte [blue]0[/blue].",
+  "AVEMUJICA-FUGUE_POWER.smartDescription": "Les prochaines [blue]{Amount}[/blue] {Amount:plural:carte|cartes} que vous jouez qui {Amount:plural:a|ont} [gold]Épuisée[/gold] ou [gold]Retenue[/gold] {Amount:plural:coûte|coûtent} [blue]0[/blue].",
   "AVEMUJICA-FUGUE_POWER.title": "Fugue Calcite",
 
   "AVEMUJICA-GARDEN_POWER.description": "Chaque fois qu'une [gold]Compétence[/gold] d'une [gold]Poupée[/gold] est activée, piochez.",
@@ -67,8 +67,8 @@
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS_POWER.smartDescription": "Au début de votre tour, TOUTES les [gold]Poupées[/gold] gagnent [blue]{Amount}[/blue] [gold]Force[/gold] et [gold]Dextérité[/gold].",
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS_POWER.title": "Chevaliers d'Oblivionis",
 
-  "AVEMUJICA-LARGE_REPERTOIRE_POWER.description": "À la fin de votre tour, gagné de l'[gold]Armure[/gold] égal au nombre de cartes dans votre [gold]Main[/gold].",
-  "AVEMUJICA-LARGE_REPERTOIRE_POWER.smartDescription": "À la fin de votre tour, gagné [blue]{Amount}[/blue] [gold]Armure[/gold] égal au nombre de cartes dans votre [gold]Main[/gold].",
+  "AVEMUJICA-LARGE_REPERTOIRE_POWER.description": "À la fin de votre tour, gagnez de l'[gold]Armure[/gold] égal au nombre de cartes dans votre [gold]Main[/gold].",
+  "AVEMUJICA-LARGE_REPERTOIRE_POWER.smartDescription": "À la fin de votre tour, gagnez [blue]{Amount}[/blue] d'[gold]Armure[/gold] pour chaque carte dans votre [gold]Main[/gold].",
   "AVEMUJICA-LARGE_REPERTOIRE_POWER.title": "Large Répertoire",
 
   "AVEMUJICA-MELODY_POWER.description": "À la fin de votre tour, si vous avez activé une [gold]Interprétation[/gold] pendant ce tour, gagnez de la [gold]Force[/gold]",
@@ -85,13 +85,13 @@
 
   "AVEMUJICA-PERFECT_COMBO_POWER.description": "Vos effets d'[gold]Interprétations[/gold] s'activent une fois supplémentaire pour chaque [gold]Interprétation[/gold] activée ce tour.",
   "AVEMUJICA-PERFECT_COMBO_POWER.smartDescription": "Vos effets d'[gold]Interprétations[/gold] s'activent une fois supplémentaire pour chaque [gold]Interprétation[/gold] activée ce tour.\n(S'active [blue]{StormCounter:diff()}[/blue] fois de plus actuellement.",
-  "AVEMUJICA-PERFECT_COMBO_POWER.title": "Combo Parfait Frénétique",
+  "AVEMUJICA-PERFECT_COMBO_POWER.title": "Interprétation Frénétique",
 
   "AVEMUJICA-VIRTUOSO_FORM_POWER.description": "Au début de votre tour, [gold]Enchantez[/gold] TOUTES les cartes de votre [gold]Main[/gold] avec [gold]Magistral[/gold].",
   "AVEMUJICA-VIRTUOSO_FORM_POWER.smartDescription": "Au début de votre tour, [gold]Enchantez[/gold] TOUTES les cartes de votre [gold]Main[/gold] avec [gold]Magistral[/gold] [blue]{Amount}[/blue].",
   "AVEMUJICA-VIRTUOSO_FORM_POWER.title": "Forme de la Virtuose",
 
-  "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.description": "[gold]Mortis[/gold] gagne 1 [gold]Intangible[/gold] et absorbe tous les dégâts d'Attaque non bloqué pendant ce tour. [gold]Mortis[/gold] ne peut plus utiliser de capacités ce tour.",
+  "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.description": "[gold]Mortis[/gold] gagne 1 d'[gold]Intangible[/gold] et absorbe tous les dégâts d'Attaque non bloqué pendant ce tour. [gold]Mortis[/gold] ne peut plus utiliser de capacités ce tour.",
   "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.smartDescription": "[gold]Mortis[/gold] absorbe tous les dégâts d'Attaque non bloqué et ne peut plus utiliser de capacité {Amount:plural:ce tour|pendant [blue]{Amount}[/blue] tours}.",
   "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.title": "Ne Craint pas la Mort",
 
