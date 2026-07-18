@@ -283,7 +283,7 @@
   "AVEMUJICA-NEW_MOON_AWAKENING.title": "Réveil de la Nouvelle Lune",
 
   "AVEMUJICA-SINK.description": "Gagnez {Oblivion:diff()} d'[gold]Oblivion[/gold].",
-  "AVEMUJICA-SINK.title": "Noyé dans Oblivion",
+  "AVEMUJICA-SINK.title": "Noyée dans Oblivion",
 
   "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "Infligez {Damage:diff()} dégâts.\nSi [gold]Amoris[/gold] est présente, elle perd {HpLoss:diff()} PV pour activer sa [gold]Compétence[/gold] {SkillRepeat:diff()} fois.",
   "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "Échos du Croissant de Lune",
