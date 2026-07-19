@@ -22,14 +22,12 @@
   "AVEMUJICA-VIOLIN.description": "Lorque vous obtenez cette relique, [gold]Enchantez[/gold] jusqu'à [blue]{Cards}[/blue] cartes avec [purple]Magistral[/purple] [blue]{Masterful}[/blue].",
   "AVEMUJICA-VIOLIN.flavor": "Elle a compris que sa mystérieuse amie, tout comme elle, porte plusieurs vies sur ses épaules.",
   "AVEMUJICA-VIOLIN.title": "Violon",
-
-
   
-  "AVEMUJICA-PLAYFUL_CORETTON.description": "At the start of each combat, [gold]Dreamspin[/gold].",
+  "AVEMUJICA-PLAYFUL_CORETTON.description": "Au début de chaque combat, [gold]Tisse-Rêve[/gold].",
   "AVEMUJICA-PLAYFUL_CORETTON.flavor": "Elle a toujours trouvé ça troublant à quel point elles pouvaient rapidement passez de mignones à terrifiantes.",
   "AVEMUJICA-PLAYFUL_CORETTON.title": "Coretton Joueur",
 
-  "AVEMUJICA-MASQUERADE_MASK.description": "The first time you [gold]Perform[/gold] each turn, draw a card next turn.",
+  "AVEMUJICA-MASQUERADE_MASK.description": "La première fois que vous activez une [gold]Interprétation[/gold] chaque tour, piochez une carte au tour suivant.",
   "AVEMUJICA-MASQUERADE_MASK.flavor": "La mascarade commence. Les Poupées viennent à la vie.",
   "AVEMUJICA-MASQUERADE_MASK.title": "Masque de Mascarade"
 }

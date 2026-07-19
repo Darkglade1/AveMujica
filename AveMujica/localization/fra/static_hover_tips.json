@@ -17,11 +17,9 @@
   "AVEMUJICA-AMORIS_ALLY_SKILL_1.title": "Aussi Féroce qu'un Brasier",
   "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.description": "Inflige [blue]\\{0\\}[/blue] dégâts à un ennemi aléatoire [blue]\\{1\\}[/blue] fois.",
   "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.title": "Attaque",
-
-  
   
   "AVEMUJICA-TIMORIS_ALLY.title": "Timoris",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "Compétence : Apply [blue]\\{0\\}[/blue] [gold]Weak[/gold] and [gold]Vulnerable[/gold] to the highest HP enemy.",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "Compétence : Applique [gold]Affaibli[/gold] ([blue]\\{0\\}[/blue]) et [gold]Vulnérable[/gold] ([blue]\\{0\\}[/blue]) à l'ennemi avec les PV les plus hauts.",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title": "Cordes Frissonnantes",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "Compétence : TOUS les ennemis subissent [blue]\\{0\\}%[/blue] dégâts supplémentaires des Attaques ce tour.",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title": "Exécution au Clair de Lune",
