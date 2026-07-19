@@ -71,21 +71,21 @@
   "AVEMUJICA-GARDEN_POWER.smartDescription": "[gold]人形のスキル[/gold]が発動するたび、カードを[blue]{Amount}[/blue]枚引く。",
   "AVEMUJICA-GARDEN_POWER.title": "百合の庭園",
 
-  "AVEMUJICA-EXPLOSIVE_FINALE_POWER.description": "[gold]楽曲[/gold]を完成させるたび、全ての敵にダメージを与える。",
-  "AVEMUJICA-EXPLOSIVE_FINALE_POWER.smartDescription": "[gold]楽曲[/gold]を完成させるたび、全ての敵に[blue]{Amount}[/blue]ダメージを与える。",
+  "AVEMUJICA-EXPLOSIVE_FINALE_POWER.description": "[gold]楽曲[/gold]を完成させるたび、すべての敵にダメージを与える。",
+  "AVEMUJICA-EXPLOSIVE_FINALE_POWER.smartDescription": "[gold]楽曲[/gold]を完成させるたび、すべての敵に[blue]{Amount}[/blue]ダメージを与える。",
   "AVEMUJICA-EXPLOSIVE_FINALE_POWER.title": "爆発的フィナーレ",
 
   "AVEMUJICA-AFTERGLOW_POWER.description": "次に[gold]パフォーム[/gold]した時、エナジーを得る。",
   "AVEMUJICA-AFTERGLOW_POWER.smartDescription": "次に[gold]パフォーム[/gold]した時、{Amount:energyIcons()}を得る。",
   "AVEMUJICA-AFTERGLOW_POWER.title": "Afterglow",
 
-  "AVEMUJICA-GROUP_PERFORMANCE_POWER.description": "[gold]楽曲[/gold]の[gold]作曲[/gold]を完成させるたび、他の全プレイヤーにもそのコピーを[blue]1[/blue]枚与える。",
-  "AVEMUJICA-GROUP_PERFORMANCE_POWER.smartDescription": "[gold]楽曲[/gold]の[gold]作曲[/gold]を完成させるたび、他の全プレイヤーにもそのコピーを[blue]{Amount}[/blue]枚与える。",
+  "AVEMUJICA-GROUP_PERFORMANCE_POWER.description": "[gold]楽曲[/gold]の[gold]作曲[/gold]を完成させるたび、他のすべてのプレイヤーにもそのコピーを[blue]1[/blue]枚与える。",
+  "AVEMUJICA-GROUP_PERFORMANCE_POWER.smartDescription": "[gold]楽曲[/gold]の[gold]作曲[/gold]を完成させるたび、他のすべてのプレイヤーにもそのコピーを[blue]{Amount}[/blue]枚与える。",
   "AVEMUJICA-GROUP_PERFORMANCE_POWER.title": "合同演奏",
 
   "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.description": "[gold]モーティス[/gold]はこのターン、ブロックされていないアタックダメージをすべて肩代わりし、他の能力を使用できなくなる。",
   "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.smartDescription": "[gold]モーティス[/gold]は{Amount:plural:このターン|[blue]{Amount}[/blue]ターンの間}、ブロックされていないアタックダメージをすべて肩代わりし、他の能力を使用できなくなる。",
-  "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.title": "死を恐れるなかれ",
+  "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.title": "死を恐れるな",
   "AVEMUJICA-LOFT_MOON_POWER.description": "ターン終了時、最もHPが低い[gold]人形[/gold]はHP[blue]{Amount}[/blue]を得る。",
   "AVEMUJICA-LOFT_MOON_POWER.smartDescription": "ターン終了時、最もHPが低い[gold]人形[/gold]はHP[blue]{Amount}[/blue]を得る。",
   "AVEMUJICA-LOFT_MOON_POWER.title": "ロフト・ムーン",
@@ -100,23 +100,23 @@
   "AVEMUJICA-HYMN_POWER.title": "勇気の賛美歌",
 
 
-  "AVEMUJICA-OBLIVION.description": "Whenever a card is [gold]Exhausted[/gold], deals damage to the lowest HP enemy.",
-  "AVEMUJICA-OBLIVION.smartDescription": "Whenever a card is [gold]Exhausted[/gold], deal [blue]{Amount}[/blue] damage to the lowest HP enemy.",
+  "AVEMUJICA-OBLIVION.description": "カードが[gold]廃棄[/gold]されるたび、最もHPが低い敵にダメージを与える。",
+  "AVEMUJICA-OBLIVION.smartDescription": "カードが[gold]廃棄[/gold]されるたび、最もHPが低い敵に[blue]{Amount}[/blue]ダメージを与える。",
   "AVEMUJICA-OBLIVION.title": "忘却",
 
-  "AVEMUJICA-FRUSTRATION_POWER.description": "At the start of your turn, gain [gold]Oblivion[/gold].",
-  "AVEMUJICA-FRUSTRATION_POWER.smartDescription": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Oblivion[/gold].",
+  "AVEMUJICA-FRUSTRATION_POWER.description": "ターン開始時、[gold]忘却[/gold]を得る。",
+  "AVEMUJICA-FRUSTRATION_POWER.smartDescription": "ターン開始時、[gold]忘却[/gold][blue]{Amount}[/blue]を得る。",
   "AVEMUJICA-FRUSTRATION_POWER.title": "フラストレーション",
 
-  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.description": "At the end of your turn, shuffle a [gold]Weave[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
-  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.smartDescription": "At the end of your turn, shuffle [blue]{Amount}[/blue] [gold]{Amount:plural:Weave|Weaves}[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
-  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.title": "Castle of Dreams",
+  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.description": "ターン終了時、[gold]ウィーヴ[/gold]を[gold]山札[/gold]に加えてシャッフルする。",
+  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.smartDescription": "ターン終了時、[gold]ウィーヴ[/gold]を[blue]{Amount}[/blue]枚[gold]山札[/gold]に加えてシャッフルする。",
+  "AVEMUJICA-CASTLE_OF_DREAMS_POWER.title": "夢の城",
 
-  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.description": "Next turn, gain [gold]Temporary[/gold] [gold]Strength[/gold].",
-  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.smartDescription": "Next turn, gain [blue]{Amount}[/blue] [gold]Temporary[/gold] [gold]Strength[/gold].",
-  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.title": "Next Turn Temporary Strength",
+  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.description": "次のターン、[gold]一時的[/gold]な[gold]筋力[/gold]を得る。",
+  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.smartDescription": "次のターン、[gold]一時的[/gold]な[gold]筋力[/gold][blue]{Amount}[/blue]を得る。",
+  "AVEMUJICA-NEXT_TURN_TEMP_STR_POWER.title": "次ターンの一時的筋力",
 
-  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.description": "Next turn, gain [blue]{Amount}[/blue] [gold]Temporary[/gold] [gold]Dexterity[/gold].",
-  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.smartDescription": "Next turn, gain [blue]{Amount}[/blue] [gold]Temporary[/gold] [gold]Dexterity[/gold].",
-  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.title": "Next Turn Temporary Dexterity"
+  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.description": "次のターン、[gold]一時的[/gold]な[gold]敏捷性[/gold]を得る。",
+  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.smartDescription": "次のターン、[gold]一時的[/gold]な[gold]敏捷性[/gold][blue]{Amount}[/blue]を得る。",
+  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.title": "次ターンの一時的敏捷性"
 }

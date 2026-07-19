@@ -9,6 +9,6 @@
   "AVEMUJICA-AWAKEN.title": "目覚め",
 
 
-  "AVEMUJICA-DREAMSPIN.description": "[gold]Dreamspin[/gold] targets yourself or a [gold]Doll[/gold].\nTarget yourself to [gold]Awaken[/gold] a [gold]Doll[/gold]. If all [gold]Dolls[/gold] are present, they gain [blue]1[/blue] HP instead.\nTarget a [gold]Doll[/gold] to activate their [gold]Skill[/gold] and give them [blue]1[/blue] HP.",
+  "AVEMUJICA-DREAMSPIN.description": "[gold]夢紡ぎ[/gold]は自分自身もしくは[gold]人形[/gold]を対象にする。\n自分自身を対象にすることで、[gold]人形[/gold]を[gold]目覚め[/gold]させる。すでにすべての[gold]人形[/gold]が存在している場合、 それらに[blue]1[/blue] HPを与える。\n[gold]人形[/gold]を対象にすることで、[gold]人形[/gold]の[gold]スキル[/gold]を発動させ、 [blue]1[/blue]HP与える。",
   "AVEMUJICA-DREAMSPIN.title": "夢紡ぎ"
 }

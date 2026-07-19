@@ -1,5 +1,5 @@
 {
-  "AVEMUJICA-KEYBOARD.description": "最初の[blue]{Turns}[/blue]ターンの開始時、[gold]作曲[/gold]「[blue]{Compose}[/blue] [gold]ブロック[/gold]を得る。」",
+  "AVEMUJICA-KEYBOARD.description": "戦闘開始時、[gold]作曲[/gold]「[blue]{Compose}[/blue] [gold]ブロック[/gold]を得る。」",
   "AVEMUJICA-KEYBOARD.flavor": "幼少期から一緒だった楽器。最愛の母との最後の繋がり。",
   "AVEMUJICA-KEYBOARD.title": "キーボード",
   "AVEMUJICA-GRAND_PIANO.description": "最初の[blue]{Turns}[/blue]ターンの開始時、[gold]作曲[/gold]「[blue]{Compose}[/blue] [gold]ブロック[/gold]を得る。」",
@@ -18,13 +18,13 @@
   "AVEMUJICA-VIOLIN.flavor": "彼女には分かっていた。この不思議な友人もまた、自分と同じように多くの命の重荷を背負っているのだと。",
   "AVEMUJICA-VIOLIN.title": "ヴァイオリン",
 
-  
-  
-  "AVEMUJICA-PLAYFUL_CORETTON.description": "At the start of each combat, [gold]Dreamspin[/gold].",
+
+
+  "AVEMUJICA-PLAYFUL_CORETTON.description": "戦闘開始時、[gold]夢紡ぎ[/gold]。",
   "AVEMUJICA-PLAYFUL_CORETTON.flavor": "可愛らしさから恐ろしさへ、その切り替えの速さに彼女は不安を覚えた。",
   "AVEMUJICA-PLAYFUL_CORETTON.title": "陽気なコレットン",
 
-  "AVEMUJICA-MASQUERADE_MASK.description": "The first time you [gold]Perform[/gold] each turn, draw a card next turn.",
+  "AVEMUJICA-MASQUERADE_MASK.description": "毎ターン最初に[gold]パフォーム[/gold]した時、次のターンカードを1枚引く。",
   "AVEMUJICA-MASQUERADE_MASK.flavor": "仮面舞踏会が始まる。人形たちが目を覚ます。",
   "AVEMUJICA-MASQUERADE_MASK.title": "舞踏会の仮面"
 }
