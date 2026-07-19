@@ -213,7 +213,7 @@
   "AVEMUJICA-SONG.description": "{IfUpgraded:show:Piochez une carte\n}",
   "AVEMUJICA-SONG.title": "Musique",
 
-  "AVEMUJICA-SOPHIE.description": "Gagnez {VulnerablePower:diff()} de [gold]Vulnérable[/gold].\n[gold]Composez[/gold] \"L'ennemi perd {HpLoss:diff()} PV.\"",
+  "AVEMUJICA-SOPHIE.description": "Gagnez {VulnerablePower:diff()} de [gold]Vulnérable[/gold].\n[gold]Composez[/gold] \"Gagnez {Oblivion:diff()} d'[gold]Oblivion[/gold].\"",
   "AVEMUJICA-SOPHIE.title": "Sophie",
 
   "AVEMUJICA-SPARK.description": "[gold]Composez[/gold]{IfUpgraded:show:[gold]+[/gold]} {Repeat:diff()} fois.",

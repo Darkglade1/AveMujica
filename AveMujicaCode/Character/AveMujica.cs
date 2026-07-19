@@ -89,9 +89,9 @@ public class AveMujica : PlaceholderCharacterModel
     public override string CustomCharacterSelectLockedIconPath => "char_select_char_name_locked.png".CharacterUiPath();
     public override string CustomMapMarkerPath => "map_marker_char_name.png".CharacterUiPath();
     public override string CharacterSelectSfx => "skill_keyboard.ogg".AudioPath();
-    public override string CustomAttackSfx => "atk_keyboard.ogg".AudioPath();
+    public override string CustomAttackSfx => Config.DisableAttackSoundEffect ? "event:/sfx/characters/ironclad/ironclad_attack" : "atk_keyboard.ogg".AudioPath();
     public override string CustomCastSfx => "skill_keyboard5.ogg".AudioPath();
     public override string CustomEnergyCounterPath => "energy_counter/character_energy_counter.tscn".CharacterUiPath();
-    public override Color MapDrawingColor => Color.Color8(119, 153, 204);
+    public override Color MapDrawingColor => Color.Color8(0, 38, 255);
     public override VfxColor SpeechBubbleColor => VfxColor.Blue;
 }

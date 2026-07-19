@@ -11,6 +11,9 @@ public class Config: SimpleModConfig
     public static bool UseTimorisSkin { get; set; } = false;
     public static bool UseAmorisSkin { get; set; } = false;
     
+    [ConfigSection("Sound")]
+    public static bool DisableAttackSoundEffect { get; set; } = false;
+    
     [ConfigSection("Tutorial")]
     public static bool ViewDreamspinFtue { get; set; } = true;
 }

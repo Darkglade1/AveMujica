@@ -180,7 +180,7 @@
   "AVEMUJICA-ODE_TO_WAR.description": "{Damage:diff()}ダメージを与える。\n[gold]楽曲[/gold]が完成するまで[gold]作曲[/gold]「{Compose:diff()}ダメージを与える。」を繰り返す。",
   "AVEMUJICA-ODE_TO_WAR.title": "戦のオード",
 
-  "AVEMUJICA-SOPHIE.description": "[gold]弱体[/gold]{VulnerablePower:diff()}を得る。\n[gold]作曲[/gold]「忘却を得る。」",
+  "AVEMUJICA-SOPHIE.description": "[gold]弱体[/gold]{VulnerablePower:diff()}を得る。\n[gold]作曲[/gold]「[gold]忘却[/gold]{Oblivion:diff()}を得る。」",
   "AVEMUJICA-SOPHIE.title": "Sophie",
 
   "AVEMUJICA-DO_NOT_FEAR_FORGETTING.description": "[gold]ブロック[/gold]{Block:diff()}をX回得る。\nカードをX枚[gold]廃棄[/gold]する。",

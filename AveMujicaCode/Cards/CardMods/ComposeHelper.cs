@@ -133,9 +133,13 @@ public class ComposeHelper
             new WeightedComposeEffect { ComposeEffect = shackleMod, Weight = 10 },
             new WeightedComposeEffect { ComposeEffect = weakMod, Weight = 10 },
             new WeightedComposeEffect { ComposeEffect = vulnerableMod, Weight = 10 },
-            new WeightedComposeEffect { ComposeEffect = drawCardMod, Weight = 5 },
-            new WeightedComposeEffect { ComposeEffect = gainEnergyMod, Weight = 5 }
+            new WeightedComposeEffect { ComposeEffect = drawCardMod, Weight = 5 }
         };
+
+        if (isUpgraded)
+        {
+            items.Add(new WeightedComposeEffect { ComposeEffect = gainEnergyMod, Weight = 5 });
+        }
 
         var returnedItems = GetWeightedRandom(items, owner,3);
         var returnedComposeEffects = new List<CardModifier>();

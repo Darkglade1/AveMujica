@@ -7,7 +7,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
-public class InspiringSongs() : AveMujicaCard(0,
+public class InspiringSongs() : AveMujicaCard(1,
     CardType.Power, CardRarity.Uncommon,
     TargetType.Self)
 {
