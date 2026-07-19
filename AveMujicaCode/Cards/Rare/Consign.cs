@@ -28,7 +28,7 @@ public class Consign() : AveMujicaCard(2,
         {
             ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
             bool shouldTriggerFatal = play.Target.Powers.All(p => p.ShouldOwnerDeathTriggerFatal());
-            AttackCommand attackCommand = await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this, play).Targeting(play.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
+            AttackCommand attackCommand = await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this).Targeting(play.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
             var targetKilled = attackCommand.Results.SelectMany(r => r)
                 .Any((Func<DamageResult, bool>)(r => r.WasTargetKilled));
             if (shouldTriggerFatal && targetKilled)

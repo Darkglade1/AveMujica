@@ -29,7 +29,7 @@ public class DamageMod : CardModifier
         if (Owner != null && play.Card == Owner && DamageVar != null)
         {
             ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
-            await DamageCmd.Attack(DamageVar.BaseValue).FromCard(Owner, play).Targeting(play.Target)
+            await DamageCmd.Attack(DamageVar.BaseValue).FromCard(Owner).Targeting(play.Target)
                 .WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
         }
     }

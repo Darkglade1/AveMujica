@@ -33,7 +33,7 @@ public class AlFine() : AveMujicaCard(1,
     {
         if (CombatState != null)
         {
-            await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this, play).TargetingAllOpponents(CombatState).Execute(choiceContext);
+            await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this).TargetingAllOpponents(CombatState).Execute(choiceContext);
             if (PlayedSongThisTurn)
             {
                 await DollHelper.Dreamspin(choiceContext, Owner, play.Target, this);

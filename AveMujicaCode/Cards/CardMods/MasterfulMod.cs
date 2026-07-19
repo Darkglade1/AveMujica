@@ -21,8 +21,7 @@ public class MasterfulMod : CardModifier
         Decimal amount,
         ValueProp props,
         Creature? dealer,
-        CardModel? cardSource,
-        CardPlay? cardPlay)
+        CardModel? cardSource)
     {
         if (cardSource != null && cardSource == Owner)
         {

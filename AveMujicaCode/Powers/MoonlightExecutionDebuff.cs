@@ -21,8 +21,7 @@ public class MoonlightExecutionDebuff() : AveMujicaPower
         Decimal amount,
         ValueProp props,
         Creature? dealer,
-        CardModel? cardSource,
-        CardPlay? cardPlay)
+        CardModel? cardSource)
     {
         if (target != Owner || !props.IsPoweredAttack())
             return 1M;
