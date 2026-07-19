@@ -91,7 +91,7 @@
   "AVEMUJICA-TRANSCRIBE.description": "Gain {Block:diff()} [gold]Block[/gold].\nAdd a copy of the in-progress [gold]Song[/gold] into your [gold]Hand[/gold].",
   "AVEMUJICA-TRANSCRIBE.title": "Transcribe",
 
-  "AVEMUJICA-DISTRIBUTE.description": "Choose a [gold]Song[/gold]. Add {IfUpgraded:show:{Cards} copies|a copy} of that card into your [gold]Hand[/gold].",
+  "AVEMUJICA-DISTRIBUTE.description": "Choose a [gold]Song[/gold]. Add a copy of that card into your [gold]Hand[/gold].",
   "AVEMUJICA-DISTRIBUTE.selectionScreenPrompt": "Choose a [gold]Song[/gold] to Copy.",
   "AVEMUJICA-DISTRIBUTE.title": "Distribute Copies",
 

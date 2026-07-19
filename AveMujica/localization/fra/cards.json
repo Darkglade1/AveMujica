@@ -61,7 +61,7 @@
   "AVEMUJICA-DISSATISFACTION.description": "Infligez {Damage:diff()} dégâts.\nAjoutez une [gold]Musique Vierge[/gold] à votre [gold]Main[/gold].",
   "AVEMUJICA-DISSATISFACTION.title": "Insatisfaction",
 
-  "AVEMUJICA-DISTRIBUTE.description": "Choisissez une [gold]Musique[/gold]. Ajoutez {IfUpgraded:show:{Cards} copies|une copie} de cette carte dans votre [gold]Main[/gold].",
+  "AVEMUJICA-DISTRIBUTE.description": "Choisissez une [gold]Musique[/gold]. Ajoutez une copie de cette carte dans votre [gold]Main[/gold].",
   "AVEMUJICA-DISTRIBUTE.selectionScreenPrompt": "Choisissez une [gold]Musique[/gold] à Copier.",
   "AVEMUJICA-DISTRIBUTE.title": "Distribution de Copies",
 
