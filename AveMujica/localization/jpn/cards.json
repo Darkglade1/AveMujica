@@ -91,7 +91,7 @@
   "AVEMUJICA-TRANSCRIBE.description": "{Block:diff()}[gold]ブロック[/gold]を得る。\n作曲中の[gold]楽曲[/gold]のコピーを1枚[gold]手札[/gold]に加える。",
   "AVEMUJICA-TRANSCRIBE.title": "写譜",
 
-  "AVEMUJICA-DISTRIBUTE.description": "[gold]楽曲[/gold]を1枚選ぶ。そのカードのコピーを{IfUpgraded:show:{Cards}枚|1枚}[gold]手札[/gold]に加える。",
+  "AVEMUJICA-DISTRIBUTE.description": "[gold]楽曲[/gold]を1枚選ぶ。そのカードのコピーを1枚[gold]手札[/gold]に加える。",
   "AVEMUJICA-DISTRIBUTE.selectionScreenPrompt": "コピーする[gold]楽曲[/gold]を1枚選ぶ。",
   "AVEMUJICA-DISTRIBUTE.title": "楽譜配布",
 
