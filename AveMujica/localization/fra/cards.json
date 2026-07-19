@@ -265,7 +265,7 @@
   "AVEMUJICA-HOW_DARE_YOU.title": "Destins Liés",
 
   "AVEMUJICA-MOONLIGHT_EXECUTION.description": "La [gold]Compétence[/gold] de [gold]Timoris[/gold] devient \"TOUS les ennemis subissent {MoonlightExecutionPower:diff()}% de dégâts supplémentaires des Attaques ce tour.\"",
-  "AVEMUJICA-MOONLIGHT_EXECUTION.title": "Execution au Clair de Lune",
+  "AVEMUJICA-MOONLIGHT_EXECUTION.title": "Exécution au Clair de Lune",
 
   "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "[gold]Mortis[/gold] gagne 1 [gold]Intangible[/gold] et absorbe tous les dégâts d'Attaque non bloqué pendant ce tour. [gold]Mortis[/gold] ne peut plus utiliser de capacités ce tour.",
   "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "Ne Craint pas la Mort",
@@ -288,7 +288,7 @@
   "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "Infligez {Damage:diff()} dégâts.\nSi [gold]Amoris[/gold] est présente, elle perd {HpLoss:diff()} PV pour activer sa [gold]Compétence[/gold] {SkillRepeat:diff()} fois.",
   "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "Échos du Croissant de Lune",
 
-  "AVEMUJICA-BLUE_MOON.description": "Gagnez {Block:diff()} d'[gold]Armure[/gold].\nSi [gold]Doloris[/gold] est présente, elle perde {HpLoss:diff()} PV pour activer sa [gold]Compétence[/gold] {SkillRepeat:diff()} fois.",
+  "AVEMUJICA-BLUE_MOON.description": "Gagnez {Block:diff()} d'[gold]Armure[/gold].\nSi [gold]Doloris[/gold] est présente, elle perd {HpLoss:diff()} PV pour activer sa [gold]Compétence[/gold] {SkillRepeat:diff()} fois.",
   "AVEMUJICA-BLUE_MOON.title": "Mélancholie de la Lune Bleue",
 
   "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gagnez {Block:diff()} d'[gold]Armure[/gold].\nAjoutez un [gold]Fil Onirique{IfUpgraded:show:+}[/gold] à votre [gold]Pioche[/gold].",

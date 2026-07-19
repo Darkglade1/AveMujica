@@ -97,7 +97,7 @@
 
   "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.description": "La [gold]Compétence[/gold] de [gold]Timoris[/gold] devient \"TOUS les ennemis subissent plus de dégâts des Attaques ce tour.\"",
   "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.smartDescription": "La [gold]Compétence[/gold] de [gold]Timoris[/gold] devient \"TOUS les ennemis subissent [blue]{Amount}%[/blue] de dégâts supplémentaires des Attaques ce tour.\"",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.title": "Execution au Clair de Lune",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.title": "Exécution au Clair de Lune",
 
   "AVEMUJICA-HYMN_POWER.description": "[gold]Doloris[/gold] donne de l'[gold]Armure[/gold] à TOUS les joueurs ce tour.",
   "AVEMUJICA-HYMN_POWER.smartDescription": "[gold]Doloris[/gold] donne de l'[gold]Armure[/gold] à TOUS les joueurs {Amount:plural:ce tour|pendant [blue]{Amount}[/blue] tours}.",
