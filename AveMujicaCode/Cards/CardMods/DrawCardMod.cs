@@ -31,11 +31,11 @@ public class DrawCardMod : CardModifier
     {
         if (Amount > 1)
         {
-            description += String.Format(pluralLocString, Amount) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+            description += ComposeHelper.FormatedComposeString(this, String.Format(pluralLocString, Amount));
         }
         else
         {
-            description += String.Format(locString, Amount) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+            description += ComposeHelper.FormatedComposeString(this, String.Format(locString, Amount));
         }
     }
 }

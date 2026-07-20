@@ -54,17 +54,17 @@ public class DamageMod : CardModifier
                 if (roundedDamage > DamageVar.BaseValue)
                 {
                     var greenDamage = $"[green]{roundedDamage}[/green]";
-                    description += String.Format(locString, greenDamage) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+                    description += ComposeHelper.FormatedComposeString(this, String.Format(locString, greenDamage));
                 }
                 else
                 {
                     var redDamage = $"[red]{roundedDamage}[/red]";
-                    description += String.Format(locString, redDamage) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+                    description += ComposeHelper.FormatedComposeString(this, String.Format(locString, redDamage));
                 }
             }
             else
             {
-                description += String.Format(locString, DamageVar.BaseValue) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+                description += ComposeHelper.FormatedComposeString(this, String.Format(locString, DamageVar.BaseValue));
             }
         }
     }

@@ -28,7 +28,7 @@ public class MusicaCaelestis() : AveMujicaCard(1,
         CardModel? selection = (await CardSelectCmd.FromCombatPile(choiceContext,  PileType.Exhaust.GetPile(Owner), Owner, prefs, c => c is Song)).FirstOrDefault();
         if (selection == null)
             return;
-        await CardCmd.AutoPlay(choiceContext, selection, play.Target);
+        await CardCmd.AutoPlay(choiceContext, selection, null);
         await CardPileCmd.RemoveFromCombat(selection, true);
     }
 
