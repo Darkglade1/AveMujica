@@ -210,7 +210,7 @@
   "AVEMUJICA-RONDO.description": "Infligez {Damage:diff()} dégâts {Repeat:diff()} fois.\n[gold]Interprétation Attaque : [/gold] Gagnez {Block:diff()} d'[gold]Armure[/gold].",
   "AVEMUJICA-RONDO.title": "Rondo Ambre",
 
-  "AVEMUJICA-SONG.description": "{IfUpgraded:show:Piochez une carte\n}",
+  "AVEMUJICA-SONG.description": "{IfUpgraded:show:Piochez une carte}",
   "AVEMUJICA-SONG.title": "Musique",
 
   "AVEMUJICA-SOPHIE.description": "Gagnez {VulnerablePower:diff()} de [gold]Vulnérable[/gold].\n[gold]Composez[/gold] \"Gagnez {Oblivion:diff()} d'[gold]Oblivion[/gold].\"",
