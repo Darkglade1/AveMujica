@@ -41,7 +41,7 @@
   "AVEMUJICA-REGRETS.description": "Deal {Damage:diff()} damage.\n[gold]Exhaust[/gold] {Cards:diff()} card.",
   "AVEMUJICA-REGRETS.title": "Cast Off Regrets",
 
-  "AVEMUJICA-DIMINUENDO.description": "Gain {Block:diff()} [gold]Block[/gold].\n ALL enemies loses {StrengthLoss:diff()} [gold]Strength[/gold] this turn.",
+  "AVEMUJICA-DIMINUENDO.description": "Gain {Block:diff()} [gold]Block[/gold].\n ALL enemies lose {StrengthLoss:diff()} [gold]Strength[/gold] this turn.",
   "AVEMUJICA-DIMINUENDO.title": "Diminuendo",
 
   "AVEMUJICA-FERMATA.description": "Deal {Damage:diff()} damage.\n{IfUpgraded:show:[gold]Upgraded[/gold]} [gold]Compose[/gold].",
