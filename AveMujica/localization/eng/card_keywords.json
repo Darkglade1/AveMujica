@@ -1,5 +1,5 @@
 {
-  "AVEMUJICA-PERFORM.description": "Perform effects trigger if you have played the specified card types this turn.",
+  "AVEMUJICA-PERFORM.description": "Perform effects trigger if you have played all the specified card types this turn.",
   "AVEMUJICA-PERFORM.title": "Perform",
   "AVEMUJICA-COMPOSE.description": "Adds the specified effect to the current [gold]Song[/gold]. If no effect is specified, choose a random effect to add. After [gold]Composing[/gold] [blue]3[/blue] times, add the [gold]Song[/gold] to your [gold]Hand[/gold].",
   "AVEMUJICA-COMPOSE.title": "Compose",
