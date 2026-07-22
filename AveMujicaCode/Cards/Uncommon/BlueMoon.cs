@@ -1,5 +1,4 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Dolls;
-using AveMujica.AveMujicaCode.Cards.Token;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -17,7 +16,7 @@ public class BlueMoon() : AveMujicaCard(1,
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(6, ValueProp.Move), new HpLossVar(2), new("SkillRepeat", 1)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromCard<Doloris>()
+        DolorisDoll.GenerateCardHoverTip()
     ];
 
     protected override async Task OnPlay(

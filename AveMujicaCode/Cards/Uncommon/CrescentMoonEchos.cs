@@ -1,5 +1,4 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Dolls;
-using AveMujica.AveMujicaCode.Cards.Token;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -16,7 +15,7 @@ public class CrescentMoonEchos() : AveMujicaCard(2,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(10, ValueProp.Move), new HpLossVar(2), new("SkillRepeat", 2)];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromCard<Amoris>()
+        AmorisDoll.GenerateCardHoverTip()
     ];
     
     protected override async Task OnPlay(

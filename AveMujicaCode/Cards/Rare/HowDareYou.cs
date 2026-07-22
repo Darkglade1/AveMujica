@@ -1,4 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Cards.Token;
+﻿using AveMujica.AveMujicaCode.Cards.Dolls;
 using AveMujica.AveMujicaCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -15,7 +15,7 @@ public class HowDareYou() : AveMujicaCard(2,
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<HowDareYouPower>(6)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromCard<Doloris>()
+        DolorisDoll.GenerateCardHoverTip(),
     ];
 
     protected override async Task OnPlay(

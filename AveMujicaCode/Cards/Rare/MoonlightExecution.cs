@@ -1,4 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Cards.Token;
+﻿using AveMujica.AveMujicaCode.Cards.Dolls;
 using AveMujica.AveMujicaCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -14,7 +14,7 @@ public class MoonlightExecution() : AveMujicaCard(2,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<MoonlightExecutionPower>(100)];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromCard<Timoris>()
+        TimorisDoll.GenerateCardHoverTip()
     ];
     
     protected override async Task OnPlay(
