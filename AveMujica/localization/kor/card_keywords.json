@@ -1,0 +1,12 @@
+{
+  "AVEMUJICA-AWAKEN.description": "[gold]인형[/gold]을 소환합니다. [gold]인형[/gold]은 내 턴이 끝날 때 [gold]패시브[/gold] 능력을 사용하고 체력을 [blue]1[/blue] 잃습니다.",
+  "AVEMUJICA-AWAKEN.title": "각성",
+  "AVEMUJICA-COMPOSE.description": "현재 [gold]곡[/gold]에 지정된 효과를 추가합니다. 지정된 효과가 없다면 무작위 효과 1개를 선택하여 추가합니다. [gold]작곡[/gold]을 [blue]3[/blue]회 진행한 후, 해당 [gold]곡[/gold]을 [gold]손[/gold]으로 가져옵니다.",
+  "AVEMUJICA-COMPOSE.title": "작곡",
+  "AVEMUJICA-DOLL.description": "[gold]돌로리스[/gold], [gold]모르티스[/gold], [gold]티모리스[/gold], [gold]아모리스[/gold].",
+  "AVEMUJICA-DOLL.title": "인형",
+  "AVEMUJICA-DREAMSPIN.description": "[gold]꿈 자아내기[/gold]는 자신 또는 [gold]인형[/gold]을 대상으로 지정합니다.\n자신을 대상으로 지정 시 [gold]인형[/gold]을 [gold]각성[/gold]시킵니다. 모든 [gold]인형[/gold]이 이미 있다면, 대신 모든 인형이 체력을 [blue]1[/blue] 얻습니다.\n[gold]인형[/gold]을 대상으로 지정 시 해당 인형의 [gold]스킬[/gold]을 발동하고 체력을 [blue]1[/blue] 회복시킵니다.",
+  "AVEMUJICA-DREAMSPIN.title": "꿈 자아내기",
+  "AVEMUJICA-PERFORM.description": "이번 턴 동안 지정된 카드 유형들을 사용한 적이 있다면 [gold]연주[/gold] 효과가 발동합니다.",
+  "AVEMUJICA-PERFORM.title": "연주"
+}

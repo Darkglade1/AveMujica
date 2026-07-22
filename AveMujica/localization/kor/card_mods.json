@@ -1,0 +1,22 @@
+{
+  "AVEMUJICA-BLOCK-MOD.description": "[gold]방어도[/gold]를 {0} 얻습니다.",
+  "AVEMUJICA-DAMAGE-MOD.description": "피해를 {0} 줍니다.",
+  "AVEMUJICA-DRAW-CARD-MOD.description": "카드를 {0} 장 뽑습니다.",
+  "AVEMUJICA-DRAW-CARD-MOD.plural_description": "카드를 {0} 뽑습니다.",
+  "AVEMUJICA-DREAM-THREAD-MOD.description": "[gold]꿈의 실[/gold]을 {0} 얻습니다.",
+  "AVEMUJICA-ENEMY-LOSE-HP-MOD.description": "적은 체력을 {0} 잃습니다.",
+  "AVEMUJICA-ENERGY-MOD.description": "{0}를 얻습니다.",
+  "AVEMUJICA-FLEX-MOD.description": "이번 턴 동안 [gold]힘[/gold]을 {0} 얻습니다.",
+  "AVEMUJICA-GAIN-VULNERABLE-MOD.description": "[gold]취약[/gold]을 {0} 부여합니다.",
+  "AVEMUJICA-LOSE-HP-MOD.description": "체력을 {0} 잃습니다.",
+  "AVEMUJICA-LOSE-STRENGTH-MOD.description": "[gold]힘[/gold]을 {0} 잃습니다.",
+  "AVEMUJICA-MASTERFUL-MOD.description": "\n[purple]숙련[/purple]을 {0} 얻습니다.",
+  "AVEMUJICA-OBLIVION-MOD.description": "[gold]망각[/gold]을 {0} 얻습니다.",
+  "AVEMUJICA-SEEK-MOD.description": "[gold]뽑을 카드 더미[/gold]에서 카드를 {0}장 [gold]손[/gold]으로 가져옵니다.",
+  "AVEMUJICA-SEEK-MOD.plural_description": "[gold]뽑을 카드 더미[/gold]에서 카드를 {0}장 [gold]손[/gold]으로 가져옵니다.",
+  "AVEMUJICA-SEEK-MOD.selectionScreenPrompt": "손으로 가져올 카드 한 장을 선택합니다.",
+  "AVEMUJICA-SHACKLE-MOD.description": "이번 턴 동안 적은 [gold]힘[/gold]을 {0} 잃습니다.",
+  "AVEMUJICA-STRENGTH-MOD.description": "[gold]힘[/gold]을 {0} 얻습니다.",
+  "AVEMUJICA-VULNERABLE-MOD.description": "[gold]취약[/gold]을 {0} 부여합니다.",
+  "AVEMUJICA-WEAK-MOD.description": "[gold]약화[/gold]를 {0} 부여합니다."
+}
