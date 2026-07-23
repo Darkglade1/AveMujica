@@ -27,6 +27,6 @@ public class OblivionMod : CardModifier
     
     public override void ModifyDescription(Creature? target, ref string description)
     {
-        description += String.Format(locString, Amount) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+        description += ComposeHelper.FormatedComposeString(this, String.Format(locString, Amount));
     }
 }

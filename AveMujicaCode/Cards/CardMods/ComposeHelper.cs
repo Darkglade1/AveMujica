@@ -197,6 +197,28 @@ public class ComposeHelper
         }
     }
     
+    public static string GetNewLineIfUpgraded(CardModifier cardMod)
+    {
+        if (cardMod.Owner == null)
+        {
+            return "";
+        }
+        var allMods = CardModifier.Modifiers(cardMod.Owner);
+        if (allMods.First() == cardMod && cardMod.Owner.IsUpgraded)
+        {
+            return "\n";
+        }
+        else
+        {
+            return "";
+        }
+    }
+
+    public static string FormatedComposeString(CardModifier cardMod, string description)
+    {
+        return GetNewLineIfUpgraded(cardMod) + description + GetNewLineIfNotLastCardMod(cardMod);
+    }
+    
     [HarmonyPatch(typeof(CardModel), nameof(CardModel.UpdateDynamicVarPreview))]
     public static class UpdateCardModPreview
     {

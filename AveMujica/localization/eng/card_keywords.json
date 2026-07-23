@@ -1,13 +1,12 @@
 {
-  "AVEMUJICA-PERFORM.description": "Perform effects trigger if you have played the specified card types this turn.",
+  "AVEMUJICA-PERFORM.description": "Perform effects trigger if you have played all the specified card types this turn.",
   "AVEMUJICA-PERFORM.title": "Perform",
-  "AVEMUJICA-COMPOSE.description": "Adds the specified effect to the current [gold]Song[/gold]. If no effect is specified, choose a random effect to add. After [gold]Composing[/gold] [blue]3[/blue] times, add the [gold]Song[/gold] to your hand.",
+  "AVEMUJICA-COMPOSE.description": "Adds the specified effect to the current [gold]Song[/gold]. If no effect is specified, choose a random effect to add. After [gold]Composing[/gold] [blue]3[/blue] times, add the [gold]Song[/gold] to your [gold]Hand[/gold].",
   "AVEMUJICA-COMPOSE.title": "Compose",
   "AVEMUJICA-AWAKEN.description": "Summons a [gold]Doll[/gold]. [gold]Dolls[/gold] use their passive ability and lose [blue]1[/blue] HP at the end of your turn.",
   "AVEMUJICA-AWAKEN.title": "Awaken",
   "AVEMUJICA-DOLL.description": "[gold]Doloris[/gold], [gold]Mortis[/gold], [gold]Timoris[/gold], and [gold]Amoris[/gold].",
   "AVEMUJICA-DOLL.title": "Doll",
-  
   "AVEMUJICA-DREAMSPIN.description": "[gold]Dreamspin[/gold] targets yourself or a [gold]Doll[/gold].\nTarget yourself to [gold]Awaken[/gold] a [gold]Doll[/gold]. If all [gold]Dolls[/gold] are present, they gain [blue]1[/blue] HP instead.\nTarget a [gold]Doll[/gold] to activate their [gold]Skill[/gold] and give them [blue]1[/blue] HP.",
   "AVEMUJICA-DREAMSPIN.title": "Dreamspin"
 }

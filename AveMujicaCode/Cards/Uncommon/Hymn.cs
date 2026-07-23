@@ -1,5 +1,4 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Dolls;
-using AveMujica.AveMujicaCode.Cards.Token;
 using AveMujica.AveMujicaCode.Powers;
 using BaseLib.Patches.Features;
 using MegaCrit.Sts2.Core.Commands;
@@ -35,7 +34,7 @@ public class Hymn() : AveMujicaCard(1,
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin),
-        HoverTipFactory.FromCard<Doloris>(),
+        DolorisDoll.GenerateCardHoverTip(),
         HoverTipFactory.Static(StaticHoverTip.Block)
     ];
 }

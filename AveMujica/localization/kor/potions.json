@@ -1,0 +1,8 @@
+{
+  "AVEMUJICA-BOTTLED_DREAMS.description": "[gold]꿈 자아내기[/gold]를 2회 진행합니다.",
+  "AVEMUJICA-BOTTLED_DREAMS.title": "병에 담긴 꿈",
+  "AVEMUJICA-DROUGHT_OF_OBLIVION.description": "[gold]망각[/gold]을 {Oblivion:diff()} 얻습니다.",
+  "AVEMUJICA-DROUGHT_OF_OBLIVION.title": "망각의 물",
+  "AVEMUJICA-JAR_OF_MELODIES.description": "[gold]강화된[/gold] [gold]작곡[/gold]을 {Repeat:diff()}회 진행합니다.",
+  "AVEMUJICA-JAR_OF_MELODIES.title": "병속의 선율"
+}

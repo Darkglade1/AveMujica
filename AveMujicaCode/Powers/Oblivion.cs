@@ -2,7 +2,9 @@
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Hooks;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Powers;
@@ -29,7 +31,17 @@ public class Oblivion : AveMujicaPower
                 if (weakestEnemy != null)
                 {
                     Flash();
-                    await CreatureCmd.Damage(new BlockingPlayerChoiceContext(), weakestEnemy, Amount, ValueProp.Unpowered, Owner);
+                    var amountOfHpToLose = Hook.ModifyHpLost(Owner.Player.RunState, Owner.CombatState, weakestEnemy,
+                        Amount, ValueProp.Unpowered, Owner, null, HpLossHookPhase.AfterOsty, out var _);
+                    if (weakestEnemy.CurrentHp + weakestEnemy.Block > amountOfHpToLose)
+                    {
+                        await CreatureCmd.Damage(new BlockingPlayerChoiceContext(), weakestEnemy, Amount, ValueProp.Unpowered, Owner);
+                    }
+                    else
+                    {
+                        await DoomPower.PlayVfx(weakestEnemy);
+                        await CreatureCmd.Kill(weakestEnemy);
+                    }
                 }
             }
         }

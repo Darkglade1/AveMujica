@@ -36,7 +36,7 @@ public class GainEnergyMod : CardModifier
     public override void ModifyDescription(Creature? target, ref string description)
     {
         var energyIcons = string.Concat(Enumerable.Repeat(energyIcon, Amount));
-        description += String.Format(locString, energyIcons) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+        description += ComposeHelper.FormatedComposeString(this, String.Format(locString, energyIcons));
     }
     
     public override void AddTips(List<IHoverTip> tips)

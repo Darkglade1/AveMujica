@@ -47,17 +47,17 @@ public class BlockMod : CardModifier
                 if (roundedBlock > BlockVar.BaseValue)
                 {
                     var greenBlock = $"[green]{roundedBlock}[/green]";
-                    description += String.Format(locString, greenBlock) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+                    description += ComposeHelper.FormatedComposeString(this, String.Format(locString, greenBlock));
                 }
                 else
                 {
                     var redBlock = $"[red]{roundedBlock}[/red]";
-                    description += String.Format(locString, redBlock) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+                    description += ComposeHelper.FormatedComposeString(this, String.Format(locString, redBlock));
                 }
             }
             else
             {
-                description += String.Format(locString, BlockVar.BaseValue) + ComposeHelper.GetNewLineIfNotLastCardMod(this);
+                description += ComposeHelper.FormatedComposeString(this, String.Format(locString, BlockVar.BaseValue));
             }
         }
     }
