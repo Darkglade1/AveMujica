@@ -1,5 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Cards.Common;
-using AveMujica.AveMujicaCode.Cards.Token;
+﻿using AveMujica.AveMujicaCode.Cards.Token;
 using AveMujica.AveMujicaCode.Extensions;
 using BaseLib.Abstracts;
 using MegaCrit.Sts2.Core.Combat;
