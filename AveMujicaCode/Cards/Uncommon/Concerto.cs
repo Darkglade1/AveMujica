@@ -17,7 +17,7 @@ public class Concerto() : AveMujicaCard(1,
     TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move)];
-    
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromEnchantment<Masterful>();
 
     protected override async Task OnPlay(
@@ -36,6 +36,6 @@ public class Concerto() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(3);
+        RemoveKeyword(CardKeyword.Exhaust);
     }
 }

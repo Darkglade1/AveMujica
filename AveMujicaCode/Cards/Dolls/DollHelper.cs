@@ -1,12 +1,15 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Token;
 using AveMujica.AveMujicaCode.Hooks;
 using Godot;
+using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Extensions;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Nodes.Rooms;
 
@@ -84,7 +87,6 @@ public class DollHelper
         if (target != null && target.IsPet && target.Monster is AbstractDoll ally)
         {
             await ally.Skill();
-            await CreatureCmd.GainMaxHp(ally.Creature, 1);
         }
         else
         {
@@ -113,70 +115,25 @@ public class DollHelper
 
             if (player.Creature.CombatState != null)
             {
-                foreach (var creature in player.Creature.CombatState.Allies)
+                var prompt = new LocString("static_hover_tips", "AVEMUJICA-AWAKEN_PROMPT.description");
+                var pickedCards = await CardSelectCmd.FromSimpleGrid(choiceContext, dolls, player,
+                    new CardSelectorPrefs(prompt, 1));
+                var pickedCard = pickedCards.First();
+                if (pickedCard is Doloris)
                 {
-                    if (creature.IsPet && creature.PetOwner == player && creature.IsAlive)
-                    {
-                        if (creature.Monster is DolorisDoll)
-                        {
-                            dolls.Remove(doloris);
-                        }
-
-                        if (creature.Monster is MortisDoll)
-                        {
-                            dolls.Remove(mortis);
-                        }
-
-                        if (creature.Monster is TimorisDoll)
-                        {
-                            dolls.Remove(timoris);
-                        }
-
-                        if (creature.Monster is AmorisDoll)
-                        {
-                            dolls.Remove(amoris);
-                        }
-                    }
+                    await Awaken<DolorisDoll>(choiceContext, player, StartingHp);
                 }
-
-                if (dolls.Count > 0)
+                if (pickedCard is Mortis)
                 {
-                    dolls.StableShuffle(player.RunState.Rng.CombatCardGeneration);
-                    while (dolls.Count > 3)
-                    {
-                        dolls.RemoveAt(dolls.Count - 1);
-                    }
-
-                    var pickedCard = await CardSelectCmd.FromChooseACardScreen(choiceContext, dolls, player);
-                    if (pickedCard != null)
-                    {
-                        if (pickedCard is Doloris)
-                        {
-                            await Awaken<DolorisDoll>(choiceContext, player, StartingHp);
-                        }
-                        if (pickedCard is Mortis)
-                        {
-                            await Awaken<MortisDoll>(choiceContext, player, StartingHp);
-                        }
-                        if (pickedCard is Timoris)
-                        {
-                            await Awaken<TimorisDoll>(choiceContext, player, StartingHp);
-                        }
-                        if (pickedCard is Amoris)
-                        {
-                            await Awaken<AmorisDoll>(choiceContext, player, StartingHp);
-                        }
-                    }
+                    await Awaken<MortisDoll>(choiceContext, player, StartingHp);
                 }
-                else
+                if (pickedCard is Timoris)
                 {
-                    foreach (var doll in player.Creature.CombatState.Allies)
-                    {
-                        if (doll.Monster is AbstractDoll && doll.PetOwner == player && doll.IsAlive)
-                        {
-                            await CreatureCmd.GainMaxHp(doll, 1);
-                        }
-                    }
+                    await Awaken<TimorisDoll>(choiceContext, player, StartingHp);
+                }
+                if (pickedCard is Amoris)
+                {
+                    await Awaken<AmorisDoll>(choiceContext, player, StartingHp);
                 }
             }
         }

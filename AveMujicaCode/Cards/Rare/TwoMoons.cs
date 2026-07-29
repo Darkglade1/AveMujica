@@ -32,6 +32,6 @@ public class TwoMoons() : AveMujicaCard(1,
     
     protected override void OnUpgrade()
     {
-        AddKeyword(CardKeyword.Innate);
+        AddKeyword(CardKeyword.Retain);
     }
 }

@@ -13,7 +13,7 @@ public class BlueMoon() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(6, ValueProp.Move), new HpLossVar(2), new("SkillRepeat", 1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(6, ValueProp.Move), new HpLossVar(1), new("SkillRepeat", 1)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         DolorisDoll.GenerateCardHoverTip()
