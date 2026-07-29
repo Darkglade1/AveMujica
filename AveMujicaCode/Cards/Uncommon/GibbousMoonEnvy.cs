@@ -13,8 +13,6 @@ public class GibbousMoonEnvy() : AveMujicaCard(1,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
     
-    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
-    
     protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.PerformsDreamspin];
     
     protected override async Task OnPlay(
@@ -22,12 +20,15 @@ public class GibbousMoonEnvy() : AveMujicaCard(1,
         CardPlay play)
     {
         await DollHelper.Dreamspin(choiceContext, Owner, play.Target, this);
-        await DollHelper.Dreamspin(choiceContext, Owner, play.Target, this);
+        if (play.Target == Owner.Creature || play.IsAutoPlay)
+        {
+            await DollHelper.Dreamspin(choiceContext, Owner, play.Target, this);
+        }
     }
 
     protected override void OnUpgrade()
     {
-        EnergyCost.UpgradeBy(-1);
+        AddKeyword(CardKeyword.Innate);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [

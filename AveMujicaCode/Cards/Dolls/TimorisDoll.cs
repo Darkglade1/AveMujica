@@ -63,11 +63,9 @@ public sealed class TimorisDoll : AbstractDoll
         IReadOnlyList<Creature>? hittableEnemies = Creature.CombatState?.HittableEnemies;
         if (hittableEnemies != null && hittableEnemies.Count != 0)
         {
-          Creature? strongestEnemy = hittableEnemies.MaxBy((Func<Creature, int>) (c => c.CurrentHp));
-          if (strongestEnemy != null)
+          foreach (var enemy in hittableEnemies)
           {
-            await PowerCmd.Apply<WeakPower>(new ThrowingPlayerChoiceContext(), strongestEnemy, debuff, Creature, null);
-            await PowerCmd.Apply<VulnerablePower>(new ThrowingPlayerChoiceContext(), strongestEnemy, debuff, Creature, null);
+            await PowerCmd.Apply<VulnerablePower>(new ThrowingPlayerChoiceContext(), enemy, debuff, Creature, null);
           }
         }
       }

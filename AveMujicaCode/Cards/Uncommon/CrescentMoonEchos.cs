@@ -13,7 +13,7 @@ public class CrescentMoonEchos() : AveMujicaCard(2,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(10, ValueProp.Move), new HpLossVar(2), new("SkillRepeat", 2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(10, ValueProp.Move), new HpLossVar(1), new("SkillRepeat", 2)];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         AmorisDoll.GenerateCardHoverTip()
     ];

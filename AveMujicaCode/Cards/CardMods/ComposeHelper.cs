@@ -112,15 +112,15 @@ public class ComposeHelper
     private static List<CardModifier> GenerateRandomComposeEffects(Player owner, bool isUpgraded)
     {
         var damageMod = (DamageMod)ModelDb.Get<DamageMod>().MutableClone();
-        damageMod.Amount = isUpgraded ? 8 : 6;
+        damageMod.Amount = isUpgraded ? 7 : 5;
         var blockMod = (BlockMod)ModelDb.Get<BlockMod>().MutableClone();
-        blockMod.Amount = isUpgraded ? 6 : 4;
+        blockMod.Amount = isUpgraded ? 5 : 3;
         var shackleMod = (ShackleMod)ModelDb.Get<ShackleMod>().MutableClone();
-        shackleMod.Amount = isUpgraded ? 4 : 3;
+        shackleMod.Amount = isUpgraded ? 3 : 2;
         var weakMod = (WeakMod)ModelDb.Get<WeakMod>().MutableClone();
-        weakMod.Amount = isUpgraded ? 3 : 2;
+        weakMod.Amount = isUpgraded ? 2 : 1;
         var vulnerableMod = (VulnerableMod)ModelDb.Get<VulnerableMod>().MutableClone();
-        vulnerableMod.Amount = isUpgraded ? 3 : 2;
+        vulnerableMod.Amount = isUpgraded ? 2 : 1;
         var drawCardMod = (DrawCardMod)ModelDb.Get<DrawCardMod>().MutableClone();
         drawCardMod.Amount = isUpgraded ? 2 : 1;
         var gainEnergyMod = (GainEnergyMod)ModelDb.Get<GainEnergyMod>().MutableClone();
