@@ -1,4 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Cards.Token;
+﻿using AveMujica.AveMujicaCode.Cards.Dolls;
 using AveMujica.AveMujicaCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -29,6 +29,6 @@ public class AsStrongAsWheat() : AveMujicaCard(2,
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromCard<Amoris>()
+        AmorisDoll.GenerateCardHoverTip()
     ];
 }

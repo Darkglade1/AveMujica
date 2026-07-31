@@ -93,7 +93,7 @@ public partial class NDreamspinFtue : NFtue
 				ShowPage(_currentPage - 1, -1);
 				GetViewport().SetInputAsHandled();
 			}
-			else if (inputEvent.IsActionPressed(MegaInput.right) || inputEvent.IsActionPressed(MegaInput.accept))
+			else if (inputEvent.IsActionPressed(MegaInput.right) || inputEvent.IsActionPressed(MegaInput.confirm))
 			{
 				AdvanceOrClose();
 				GetViewport().SetInputAsHandled();
