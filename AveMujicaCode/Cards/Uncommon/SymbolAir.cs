@@ -1,24 +1,22 @@
-﻿using BaseLib.Utils;
+﻿using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
 public class SymbolAir() : AveMujicaCard(2,
     CardType.Skill, CardRarity.Uncommon,
-    TargetType.AnyEnemy)
+    TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<WeakPower>(2), new CardsVar(3), new EnergyVar(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(2), new ("UpgradeVar", 1)];
 
-    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Retain, CardKeyword.Exhaust];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromPower(ModelDb.Power<WeakPower>()),
         EnergyHoverTip
     ];
 
@@ -27,16 +25,23 @@ public class SymbolAir() : AveMujicaCard(2,
         CardPlay play)
     {
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
-        ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
-        await PowerCmd.Apply<WeakPower>(choiceContext, play.Target, DynamicVars["WeakPower"].BaseValue, Owner.Creature, this);
-        await CommonActions.Draw(this, choiceContext);
         await PlayerCmd.GainEnergy(DynamicVars.Energy.BaseValue, Owner);
-        
+    }
+    
+    public override Task BeforeSideTurnEnd(
+        PlayerChoiceContext choiceContext,
+        CombatSide side,
+        IEnumerable<Creature> participants)
+    {
+        if (side == CombatSide.Player && PileType.Hand.GetPile(Owner).Cards.Contains(this))
+        {
+            DynamicVars.Energy.BaseValue += DynamicVars["UpgradeVar"].IntValue;
+        }
+        return Task.CompletedTask;
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars["WeakPower"].UpgradeValueBy(1);
-        DynamicVars.Cards.UpgradeValueBy(2);
+        DynamicVars.Energy.UpgradeValueBy(1);
     }
 }

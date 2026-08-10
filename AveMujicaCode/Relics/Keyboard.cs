@@ -4,7 +4,6 @@ using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Relics;
 
@@ -15,7 +14,7 @@ public class Keyboard() : AveMujicaRelic
     
     public override RelicModel GetUpgradeReplacement() => ModelDb.Relic<GrandPiano>();
 
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new ComposeVar(8)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new ComposeVar(6)];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose), HoverTipFactory.Static(StaticHoverTip.Block)];
 

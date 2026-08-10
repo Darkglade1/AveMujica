@@ -56,9 +56,6 @@
   "AVEMUJICA-REPETITION.description": "Deal {Damage:diff()} damage.\n[gold]Perform Attack Skill:[/gold] Deal {Damage:diff()} damage again.",
   "AVEMUJICA-REPETITION.title": "Repetition",
 
-  "AVEMUJICA-ALLEGRO.description": "Draw {Cards:diff()} cards.\n[gold]Compose[/gold] \"Draw {Compose:diff()} cards.\"",
-  "AVEMUJICA-ALLEGRO.title": "Allegro",
-
   "AVEMUJICA-GLISSANDO.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.",
   "AVEMUJICA-GLISSANDO.title": "Glissando",
 
@@ -68,9 +65,6 @@
 
   "AVEMUJICA-DISSATISFACTION.description": "Deal {Damage:diff()} damage.\nAdd a [gold]Blank Song[/gold] to your [gold]Hand[/gold].",
   "AVEMUJICA-DISSATISFACTION.title": "Dissatisfaction",
-
-  "AVEMUJICA-ARPEGGIO.description": "Deal {Damage:diff()} damage to ALL enemies.",
-  "AVEMUJICA-ARPEGGIO.title": "Arpeggio",
 
   "AVEMUJICA-DOLORIS.description": "[gold]Awaken Doloris[/gold].",
   "AVEMUJICA-DOLORIS.title": "Doloris",
@@ -110,9 +104,6 @@
   "AVEMUJICA-AL_FINE.description": "Deal {Damage:diff()} damage to ALL enemies.\nIf you played a [gold]Song[/gold] this turn, [gold]Dreamspin[/gold] twice.",
   "AVEMUJICA-AL_FINE.title": "Al Fine",
 
-  "AVEMUJICA-CANON.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Perform Attack Skill:[/gold] Draw a card next turn.",
-  "AVEMUJICA-CANON.title": "Canon in Green",
-
   "AVEMUJICA-FULL_HOUSE.description": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each time you [gold]Performed[/gold] this combat.",
   "AVEMUJICA-FULL_HOUSE.title": "Full House",
 
@@ -126,9 +117,6 @@
   "AVEMUJICA-SYMBOL_FIRE.description": "Deal {Damage:diff()} damage.\nGain {StrengthPower:diff()} [gold]Strength[/gold].",
   "AVEMUJICA-SYMBOL_FIRE.title": "Symbol I: Fire",
 
-  "AVEMUJICA-SYMBOL_AIR.description": "Apply {WeakPower:diff()} [gold]Weak[/gold].\nDraw {Cards:diff()} cards.\nGain {Energy:energyIcons()}.",
-  "AVEMUJICA-SYMBOL_AIR.title": "Symbol II: Air",
-
   "AVEMUJICA-SYMBOL_WATER.description": "Gain {Block:diff()} [gold]Block[/gold].",
   "AVEMUJICA-SYMBOL_WATER.title": "Symbol III: Water",
 
@@ -141,9 +129,6 @@
 
   "AVEMUJICA-WRITERS_BLOCK.description": "Gain {Block:diff()} [gold]Block[/gold].\nAdd {Cards:diff()} [gold]Blank Songs[/gold] to your [gold]Hand[/gold].",
   "AVEMUJICA-WRITERS_BLOCK.title": "Writer's Block",
-
-  "AVEMUJICA-INSPIRING_SONGS.description": "Whenever you play {Cards:diff()} [gold]Songs[/gold], gain {Energy:energyIcons()}.",
-  "AVEMUJICA-INSPIRING_SONGS.title": "Inspiring Songs",
 
   "AVEMUJICA-CANTABILE.description": "Whenever you [gold]Perform[/gold], gain {CantabilePower:diff()} [gold]Block[/gold].",
   "AVEMUJICA-CANTABILE.title": "Cantabile in Violet",
@@ -181,9 +166,6 @@
 
   "AVEMUJICA-BLACK_BIRTHDAY.description": "Deal {Damage:diff()} damage to ALL enemies.\n[gold]Perform Attack Attack:[/gold] Hits {Repeat:diff()} more times.",
   "AVEMUJICA-BLACK_BIRTHDAY.title": "Black Birthday",
-
-  "AVEMUJICA-PERFECT_COMBO.description": "Your [gold]Perform[/gold] effects trigger an additional time for each time a [gold]Perform[/gold] effect has triggered this turn.",
-  "AVEMUJICA-PERFECT_COMBO.title": "Perfect Combo Storm",
 
   "AVEMUJICA-GEORGETTE_ME.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Perform Skill Skill:[/gold] Double your [gold]Block[/gold].",
   "AVEMUJICA-GEORGETTE_ME.title": "Georgette Me, Georgette You",
@@ -284,9 +266,6 @@
   "AVEMUJICA-CASTLE_OF_DREAMS.description": "At the end of your turn, shuffle {CastleOfDreamsPower:diff()} [gold]{CastleOfDreamsPower:plural:Weave|Weaves}[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
   "AVEMUJICA-CASTLE_OF_DREAMS.title": "Castle of Dreams",
 
-  "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold].\nAdd a [gold]Weave[/gold] into your [gold]Hand[/gold].",
-  "AVEMUJICA-TWO_MOONS.title": "Two Moons",
-
   "AVEMUJICA-VIRTUOSO_BALLAD.description": "[gold]Enchant[/gold] ALL cards in another player's [gold]Hand[/gold] with [gold]Masterful[/gold] {Masterful:diff()}.",
   "AVEMUJICA-VIRTUOSO_BALLAD.title": "Virtuoso's Ballad",
 
@@ -301,9 +280,30 @@
   "AVEMUJICA-DA_CAPO.selectionScreenPrompt": "Choose a card to add [gold]Replay[/gold] and [gold]Exhaust[/gold] to.",
   "AVEMUJICA-DA_CAPO.title": "Da Capo",
 
-  "AVEMUJICA-REQUIEM.description": "Deal {Damage:diff()} damage to ALL enemies.\nWhenever you [gold]Perform[/gold], reduce this card's cost to 0 until played.",
+  "AVEMUJICA-REQUIEM.description": "Deal {Damage:diff()} damage to ALL enemies.\nShuffle this card into your [gold]Draw Pile[/gold].\nWhenever you [gold]Perform[/gold], reduce this card's cost to 0 until played.",
   "AVEMUJICA-REQUIEM.title": "Requiem in Black",
 
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "Trigger the [gold]Skills[/gold] of every [gold]Doll[/gold] present.{IfUpgraded:show:\nIf all [gold]Dolls[/gold] are present, trigger their [gold]Skills[/gold] again.}",
-  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "Knights of Oblivionis"
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "Knights of Oblivionis",
+
+  "AVEMUJICA-ALLEGRO.description": "Draw {Cards:diff()} cards.\n[gold]Compose[/gold] \"Draw {Compose:diff()} {Compose:plural:card|cards}.\"",
+  "AVEMUJICA-ALLEGRO.title": "Allegro",
+
+  "AVEMUJICA-ARPEGGIO.description": "Deal {Damage:diff()} damage to ALL enemies {Repeat:diff()} times.",
+  "AVEMUJICA-ARPEGGIO.title": "Arpeggio",
+
+  "AVEMUJICA-SYMBOL_AIR.description": "Gain {Energy:energyIcons()}.\nWhen [gold]Retained[/gold], increase this card's {energyPrefix:energyIcons(1)} gain by {UpgradeVar:diff()} this combat.",
+  "AVEMUJICA-SYMBOL_AIR.title": "Symbol II: Air",
+
+  "AVEMUJICA-INSPIRING_SONGS.description": "Whenever you play a [gold]Song[/gold], gain {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold] this turn.",
+  "AVEMUJICA-INSPIRING_SONGS.title": "Inspiring Songs",
+
+  "AVEMUJICA-PERFECT_COMBO.description": "Whenever you [gold]Perform[/gold], [gold]Enchant[/gold] a random card in your [gold]Hand[/gold] with [gold]Masterful[/gold] {Masterful:diff()}.",
+  "AVEMUJICA-PERFECT_COMBO.title": "Perfect Combo Storm",
+
+  "AVEMUJICA-CANON.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Perform Attack Skill: Compose.[/gold]",
+  "AVEMUJICA-CANON.title": "Canon in Green",
+
+  "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold].\nAdd a [gold]Weave{IfUpgraded:show:+}[/gold] into your [gold]Hand[/gold].",
+  "AVEMUJICA-TWO_MOONS.title": "Two Moons"
 }

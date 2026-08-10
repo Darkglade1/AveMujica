@@ -1,21 +1,25 @@
-﻿using BaseLib.Utils;
+﻿using AveMujica.AveMujicaCode.Cards.CardMods;
+using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace AveMujica.AveMujicaCode.Cards.Uncommon;
+namespace AveMujica.AveMujicaCode.Cards.Common;
 
 public class Canon() : AbstractPerformCard(0,
-    CardType.Skill, CardRarity.Uncommon,
+    CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(4, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(3, ValueProp.Move)];
     
     public override bool GainsBlock => true;
 
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Perform),
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose)
+    ];
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         await CommonActions.CardBlock(this, DynamicVars.Block, play);
@@ -30,7 +34,7 @@ public class Canon() : AbstractPerformCard(0,
 
     protected override async Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes, int numTriggers)
     {
-        await PowerCmd.Apply<DrawCardsNextTurnPower>(choiceContext, Owner.Creature, numTriggers, Owner.Creature, this);
+        await ComposeHelper.RandomCompose(Owner, choiceContext, false);
     }
 
     protected override void OnUpgrade() => DynamicVars.Block.UpgradeValueBy(3);

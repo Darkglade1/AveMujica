@@ -1,14 +1,9 @@
-﻿using AveMujica.AveMujicaCode.Cards.Rare;
-using AveMujica.AveMujicaCode.Hooks;
+﻿using AveMujica.AveMujicaCode.Hooks;
 using AveMujica.AveMujicaCode.Powers;
-using BaseLib.Extensions;
 using MegaCrit.Sts2.Core.Combat;
-using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
-using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards;
 
@@ -49,18 +44,7 @@ public abstract class AbstractPerformCard(int cost, CardType type, CardRarity ra
     {
         if (IsPerformActiveForSequence(cardTypes))
         {
-            var perfectCombo = Owner.Creature.GetPower<PerfectComboPower>();
             var numTriggers = 1;
-            if (perfectCombo != null)
-            {
-                numTriggers += CombatManager.Instance.History.Entries.OfType<PerformCardEntry>()
-                    .Count(e => e.Card.Owner == Owner && e.HappenedThisTurn(CombatState));
-                numTriggers = PerfectComboStormCap(numTriggers);
-                if (numTriggers > 1)
-                {
-                    perfectCombo.Flash();
-                }
-            }
             await DoPerformEffect(choiceContext, play, cardTypes, numTriggers);
             for (int i = 0; i < numTriggers; i++)
             {
@@ -71,13 +55,7 @@ public abstract class AbstractPerformCard(int cost, CardType type, CardRarity ra
                     CombatManager.Instance.History.Add(combatState, new PerformCardEntry(this, combatState.RoundNumber, combatState.CurrentSide, CombatManager.Instance.History, combatState.Players));
                 }
             }
-            perfectCombo?.UpdateCounter();
         }
-    }
-
-    public static int PerfectComboStormCap(int numTriggers)
-    {
-        return Math.Min(99, numTriggers);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [

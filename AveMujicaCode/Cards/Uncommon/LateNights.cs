@@ -6,10 +6,10 @@ using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace AveMujica.AveMujicaCode.Cards.Common;
+namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
 public class LateNights() : AveMujicaCard(2,
-    CardType.Skill, CardRarity.Common,
+    CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(9, ValueProp.Move)];

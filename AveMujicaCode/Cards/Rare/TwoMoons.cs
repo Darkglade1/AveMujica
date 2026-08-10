@@ -6,18 +6,21 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models;
 
 namespace AveMujica.AveMujicaCode.Cards.Rare;
 
-public class TwoMoons() : AveMujicaCard(1,
+public class TwoMoons() : AveMujicaCard(0,
     CardType.Skill, CardRarity.Rare,
     CustomTargetType.PetOrSelf)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
     
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
+    
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin),
-        HoverTipFactory.FromCard<Weave>(),
+        HoverTipFactory.FromCard<Weave>(IsUpgraded),
     ];
     
     protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.PerformsDreamspin];
@@ -27,11 +30,18 @@ public class TwoMoons() : AveMujicaCard(1,
         CardPlay play)
     {
         await DollHelper.Dreamspin(choiceContext, Owner, play.Target, this);
-        await CardPileCmd.AddToCombatAndPreview<Weave>(Owner.Creature, PileType.Hand, 1, Owner);
+        if (Owner.Creature.CombatState != null)
+        {
+            CardModel card = Owner.Creature.CombatState.CreateCard<Weave>(Owner);
+            if (IsUpgraded)
+            {
+                CardCmd.Upgrade(card);
+            }
+            await CardPileCmd.AddGeneratedCardToCombat(card, PileType.Hand, Owner);
+        }
     }
     
     protected override void OnUpgrade()
     {
-        AddKeyword(CardKeyword.Retain);
     }
 }

@@ -1,59 +1,43 @@
-﻿using AveMujica.AveMujicaCode.Cards;
-using BaseLib.Abstracts;
-using BaseLib.Extensions;
-using MegaCrit.Sts2.Core.Combat;
-using MegaCrit.Sts2.Core.Entities.Creatures;
-using MegaCrit.Sts2.Core.Entities.Players;
+﻿using AveMujica.AveMujicaCode.Cards.Token;
+using AveMujica.AveMujicaCode.Enchantments;
+using AveMujica.AveMujicaCode.Hooks;
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
-using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 
 namespace AveMujica.AveMujicaCode.Powers;
 
-public class PerfectComboPower : AveMujicaPower, IHasSecondAmount
+public class PerfectComboPower : AveMujicaPower, IAfterPerform
 {
     public override PowerType Type =>
         PowerType.Buff;
 
     public override PowerStackType StackType =>
-        PowerStackType.Single;
+        PowerStackType.Counter;
 
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new("StormCounter",0)];
-    
-    public override Task AfterPowerAmountChanged(
-        PlayerChoiceContext choiceContext,
-        PowerModel power,
-        Decimal amount,
-        Creature? applier,
-        CardModel? cardSource)
+    public async Task AfterPerform(PlayerChoiceContext choiceContext, CardPlay play)
     {
-        if (applier == Owner && power is PerfectComboPower)
+        if (play.Card.Owner.Creature == Owner)
         {
-            UpdateCounter();
-        }
-        return Task.CompletedTask;
-    }
-    
-    public override Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
-    {
-        if (player.Creature == Owner)
-        {
-            UpdateCounter();
-        }
-        return Task.CompletedTask;
-    }
+            Flash();
+            List<CardModel> possibleTargets = new List<CardModel>();
+            foreach (var card in PileType.Hand.GetPile(play.Player).Cards)
+            {
+                if (card.Type == CardType.Attack || card.GainsBlock || card is Song)
+                {
+                    possibleTargets.Add(card);
+                }
+            }
 
-    public void UpdateCounter()
-    {
-        var numTriggers = CombatManager.Instance.History.Entries.OfType<PerformCardEntry>()
-            .Count(e => e.Card.Owner.Creature == Owner && e.HappenedThisTurn(CombatState));
-        DynamicVars["StormCounter"].BaseValue = AbstractPerformCard.PerfectComboStormCap(numTriggers);
-        this.InvokeSecondAmountChanged();
-    }
-
-    public string GetSecondAmount()
-    {
-        return DynamicVars["StormCounter"].IntValue.ToString();
+            if (possibleTargets.Count > 0)
+            {
+                CardModel? card = play.Player.RunState.Rng.CombatCardSelection.NextItem(possibleTargets);
+                if (card != null)
+                {
+                    Masterful.TryEnchantCardWithMasterful(card, Amount);
+                }
+            }
+        }
     }
 }

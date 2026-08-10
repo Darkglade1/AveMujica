@@ -13,7 +13,7 @@ public class Waltz() : AveMujicaCard(1,
     CardType.Attack, CardRarity.Basic,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move), new ComposeVar(6)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move), new ComposeVar(5)];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose)
     ];

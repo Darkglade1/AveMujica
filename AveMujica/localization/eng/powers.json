@@ -15,10 +15,6 @@
   "AVEMUJICA-FUGUE_POWER.smartDescription": "The next [blue]{Amount}[/blue] {Amount:plural:card|cards} you play that [gold]{Amount:plural:Exhausts|Exhaust}[/gold] or [gold]{Amount:plural:Retains|Retain}[/gold] {Amount:plural:costs|cost} [blue]0[/blue].",
   "AVEMUJICA-FUGUE_POWER.title": "Fugue in Grey",
 
-  "AVEMUJICA-INSPIRING_SONGS_POWER.description": "Whenever you play [gold]Songs[/gold], gain Energy.",
-  "AVEMUJICA-INSPIRING_SONGS_POWER.smartDescription": "Whenever you play {Cards:diff()} [gold]Songs[/gold], gain {Amount:energyIcons()}.",
-  "AVEMUJICA-INSPIRING_SONGS_POWER.title": "Inspiring Songs",
-
   "AVEMUJICA-CANTABILE_POWER.description": "Whenever you [gold]Perform[/gold], gain [gold]Block[/gold].",
   "AVEMUJICA-CANTABILE_POWER.smartDescription": "Whenever you [gold]Perform[/gold], gain [blue]{Amount}[/blue] [gold]Block[/gold].",
   "AVEMUJICA-CANTABILE_POWER.title": "Cantabile in Violet",
@@ -50,10 +46,6 @@
   "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.description": "[gold]Perform[/gold] cards [gold]Retain[/gold].\n[gold]Perform[/gold] effects always trigger.",
   "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.smartDescription": "[gold]Perform[/gold] cards [gold]Retain[/gold].\n[gold]Perform[/gold] effects always trigger.",
   "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.title": "Flawless Performance",
-
-  "AVEMUJICA-PERFECT_COMBO_POWER.description": "Your [gold]Perform[/gold] effects trigger an additional time for each time a [gold]Perform[/gold] effect has triggered this turn.",
-  "AVEMUJICA-PERFECT_COMBO_POWER.smartDescription": "Your [gold]Perform[/gold] effects trigger an additional time for each time a [gold]Perform[/gold] effect has triggered this turn.\n(Currently triggers [blue]{StormCounter:diff()}[/blue] extra time(s))",
-  "AVEMUJICA-PERFECT_COMBO_POWER.title": "Perfect Combo Storm",
 
   "AVEMUJICA-ETHER_POWER.description": "Your cards that [gold]Retain[/gold] [gold]Exhaust[/gold] when played.\nYour cards that [gold]Exhaust[/gold] when played cost [blue]0[/blue].",
   "AVEMUJICA-ETHER_POWER.smartDescription": "Your cards that [gold]Retain[/gold] [gold]Exhaust[/gold] when played.\nYour cards that [gold]Exhaust[/gold] when played cost [blue]0[/blue].",
@@ -98,7 +90,6 @@
   "AVEMUJICA-HYMN_POWER.description": "[gold]Doloris[/gold] gives [gold]Block[/gold] to ALL players this turn.",
   "AVEMUJICA-HYMN_POWER.smartDescription": "[gold]Doloris[/gold] gives [gold]Block[/gold] to ALL players {Amount:plural:this turn|for [blue]{Amount}[/blue] turns}.",
   "AVEMUJICA-HYMN_POWER.title": "Hymn of Valor",
-
   
   "AVEMUJICA-OBLIVION.description": "Whenever a card is [gold]Exhausted[/gold], deals damage to the lowest HP enemy.",
   "AVEMUJICA-OBLIVION.smartDescription": "Whenever a card is [gold]Exhausted[/gold], deal [blue]{Amount}[/blue] damage to the lowest HP enemy.",
@@ -118,5 +109,15 @@
 
   "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.description": "Next turn, gain [blue]{Amount}[/blue] [gold]Temporary[/gold] [gold]Dexterity[/gold].",
   "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.smartDescription": "Next turn, gain [blue]{Amount}[/blue] [gold]Temporary[/gold] [gold]Dexterity[/gold].",
-  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.title": "Next Turn Temporary Dexterity"
+  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.title": "Next Turn Temporary Dexterity",
+  
+  
+
+  "AVEMUJICA-PERFECT_COMBO_POWER.description": "Whenever you [gold]Perform[/gold], [gold]Enchant[/gold] a random card in your [gold]Hand[/gold] with [gold]Masterful[/gold].",
+  "AVEMUJICA-PERFECT_COMBO_POWER.smartDescription": "Whenever you [gold]Perform[/gold], [gold]Enchant[/gold] a random card in your [gold]Hand[/gold] with [gold]Masterful[/gold] [blue]{Amount}[/blue].",
+  "AVEMUJICA-PERFECT_COMBO_POWER.title": "Perfect Combo Storm",
+
+  "AVEMUJICA-INSPIRING_SONGS_POWER.description": "Whenever you play a [gold]Song[/gold], gain [gold]Strength[/gold] and [gold]Dexterity[/gold] this turn.",
+  "AVEMUJICA-INSPIRING_SONGS_POWER.smartDescription": "Whenever you play a [gold]Song[/gold], gain [blue]{Amount}[/blue] [gold]Strength[/gold] and [gold]Dexterity[/gold] this turn.",
+  "AVEMUJICA-INSPIRING_SONGS_POWER.title": "Inspiring Songs"
 }
