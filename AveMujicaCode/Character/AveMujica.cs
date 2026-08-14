@@ -7,6 +7,7 @@ using Godot;
 using MegaCrit.Sts2.Core.Animation;
 using MegaCrit.Sts2.Core.Bindings.MegaSpine;
 using MegaCrit.Sts2.Core.Entities.Characters;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Nodes.Vfx;
 
@@ -59,7 +60,7 @@ public class AveMujica : PlaceholderCharacterModel
         }
     }
     
-    public override CreatureAnimator GenerateAnimator(MegaSprite controller)
+    public override CreatureAnimator GenerateAnimator(MegaSprite controller, Creature creature)
     {
         AnimState animState = new AnimState("Idle", isLooping: true);
         AnimState animState2 = new AnimState("Combat");
