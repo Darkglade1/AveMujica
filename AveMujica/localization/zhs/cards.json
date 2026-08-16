@@ -146,7 +146,7 @@
   "AVEMUJICA-PULL_FROM_OBLIVION.selectionScreenPrompt": "选择一张牌加入[gold]手牌[/gold]。",
   "AVEMUJICA-PULL_FROM_OBLIVION.title": "从湮灭中取回",
   "AVEMUJICA-VIRTUOSO_FORM.description": "回合开始时，为[gold]手牌[/gold]中的所有牌[gold]附魔[/gold]{VirtuosoFormPower:diff()}层[gold]精通[/gold]。",
-  "AVEMUJICA-VIRTUOSO_FORM.title": "大师之形",
+  "AVEMUJICA-VIRTUOSO_FORM.title": "大师形态",
   "AVEMUJICA-GARDEN.description": "每当一名[gold]娃娃[/gold]的[gold]技能[/gold]被激活时，抽{GardenPower:diff()}张{GardenPower:plural:牌|牌}。",
   "AVEMUJICA-GARDEN.title": "百合花园",
   "AVEMUJICA-CRUCIFIX.description": "造成{Damage:diff()}点伤害。\n获得{ThornsPower:diff()}点[gold]荆棘[/gold]。",
