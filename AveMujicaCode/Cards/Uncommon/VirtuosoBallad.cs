@@ -13,7 +13,7 @@ public class VirtuosoBallad() : AveMujicaCard(1,
 {
     public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new ("Masterful", 2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new ("Masterful", 3)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromEnchantment<Masterful>();
 

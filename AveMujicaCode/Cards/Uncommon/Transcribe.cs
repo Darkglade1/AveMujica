@@ -33,10 +33,6 @@ public class Transcribe() : AveMujicaCard(2,
                 if (currentSong != null)
                 {
                     var song = currentSong.CreateClone();
-                    if (Owner.Creature.HasPower<EncorePower>())
-                    {
-                        song._baseReplayCount = Owner.Creature.GetPowerAmount<EncorePower>();
-                    }
                     await CardPileCmd.AddGeneratedCardToCombat(song, PileType.Hand, Owner);
                 }
             }

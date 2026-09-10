@@ -27,10 +27,6 @@
   "AVEMUJICA-MELODY_POWER.smartDescription": "At the end of your turn, if you [gold]Performed[/gold] this turn, gain [blue]{Amount}[/blue] [gold]Strength[/gold].",
   "AVEMUJICA-MELODY_POWER.title": "Melody",
 
-  "AVEMUJICA-ENCORE_POWER.description": "[gold]Songs[/gold] gain [gold]Replay[/gold] [blue]1[/blue].",
-  "AVEMUJICA-ENCORE_POWER.smartDescription": "[gold]Songs[/gold] gain [gold]Replay[/gold] [blue]{Amount}[/blue].",
-  "AVEMUJICA-ENCORE_POWER.title": "Encore",
-
   "AVEMUJICA-BLUE_MOON_POWER.description": "At the start of your turn, gain [gold]Dream Thread[/gold].",
   "AVEMUJICA-BLUE_MOON_POWER.smartDescription": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Dream Thread[/gold].",
   "AVEMUJICA-BLUE_MOON_POWER.title": "Blue Moon's Sorrow",
@@ -119,5 +115,9 @@
 
   "AVEMUJICA-CONSIGN_POWER.description": "At the end of combat, you may [gold]Enchant[/gold] a card in your [gold]Deck[/gold] with [purple]Vanishing[/purple].",
   "AVEMUJICA-CONSIGN_POWER.smartDescription": "At the end of combat, you may [gold]Enchant[/gold] a card in your [gold]Deck[/gold] with [purple]Vanishing[/purple].",
-  "AVEMUJICA-CONSIGN_POWER.title": "Consign to Oblivion"
+  "AVEMUJICA-CONSIGN_POWER.title": "Consign to Oblivion",
+
+  "AVEMUJICA-ENCORE_POWER.description": "[gold]Songs[/gold] gain [gold]Replay[/gold] [blue]1[/blue].",
+  "AVEMUJICA-ENCORE_POWER.smartDescription": "The first{Amount:plural:| [blue]{Amount}[/blue]} [gold]{Amount:plural:Song|Songs}[/gold] you play each turn {Amount:plural:is|are} played twice.",
+  "AVEMUJICA-ENCORE_POWER.title": "Encore"
 }

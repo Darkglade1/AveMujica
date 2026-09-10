@@ -27,10 +27,6 @@ public class Dissatisfaction() : AveMujicaCard(1,
         var card = Owner.Creature.CombatState?.CreateCard<Song>(Owner);
         if (card != null && !CombatManager.Instance.IsOverOrEnding)
         {
-            if (Owner.Creature.HasPower<EncorePower>())
-            {
-                card._baseReplayCount = Owner.Creature.GetPowerAmount<EncorePower>();
-            }
             await CardPileCmd.AddGeneratedCardsToCombat([card], PileType.Hand, Owner);
             await Cmd.Wait(0.25f);
         }
