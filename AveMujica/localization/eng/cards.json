@@ -107,10 +107,6 @@
   "AVEMUJICA-FULL_HOUSE.description": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each time you [gold]Performed[/gold] this combat.",
   "AVEMUJICA-FULL_HOUSE.title": "Full House",
 
-  "AVEMUJICA-MAIDENS_CAPRICCIO.description": "Draw {Cards:diff()} cards.\n[gold]Perform Skill: Exhaust[/gold] up to {BaseExhaust:diff()} {BaseExhaust:plural:card|cards}.",
-  "AVEMUJICA-MAIDENS_CAPRICCIO.selectionScreenPrompt": "Choose up to {Exhaust:diff()} {Exhaust:plural:card|cards} to [gold]Exhaust[/gold].",
-  "AVEMUJICA-MAIDENS_CAPRICCIO.title": "Maiden's Capriccio",
-
   "AVEMUJICA-EMOTIONAL_OUTBURST.description": "Deal {Damage:diff()} damage.\nDeal {Damage:diff()} damage again for each card [gold]Exhausted[/gold] this turn.{InCombat:\n(Hits {CalculatedHits:diff()} extra {CalculatedHits:plural:time|times})|}",
   "AVEMUJICA-EMOTIONAL_OUTBURST.title": "Emotional Outburst",
 
@@ -178,9 +174,6 @@
 
   "AVEMUJICA-ALEA_IACTA_EST.description": "Gain {StrengthPower:diff()} [gold]Strength[/gold].\nIf you take unblocked attack damage this combat, die.",
   "AVEMUJICA-ALEA_IACTA_EST.title": "Alea Iacta Est",
-
-  "AVEMUJICA-CONSIGN.description": "Deal {Damage:diff()} damage.\nIf [gold]Fatal[/gold], you may remove a card from your [gold]Deck[/gold] at the end of combat.",
-  "AVEMUJICA-CONSIGN.title": "Consign to Oblivion",
 
   "AVEMUJICA-LOFT_MOON.description": "[gold]Dreamspin[/gold]{IfUpgraded:show: twice}.\nAt the end of your turn, the lowest HP [gold]Doll[/gold] gains {LoftMoonPower:diff()} HP.",
   "AVEMUJICA-LOFT_MOON.title": "Loft Moon",
@@ -305,5 +298,12 @@
   "AVEMUJICA-CANON.title": "Canon in Green",
 
   "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold].\nAdd a [gold]Weave{IfUpgraded:show:+}[/gold] into your [gold]Hand[/gold].",
-  "AVEMUJICA-TWO_MOONS.title": "Two Moons"
+  "AVEMUJICA-TWO_MOONS.title": "Two Moons",
+
+  "AVEMUJICA-CONSIGN.description": "Deal {Damage:diff()} damage.\nIf [gold]Fatal[/gold], you may [gold]Enchant[/gold] a card in your [gold]Deck[/gold] with [purple]Vanishing[/purple] at the end of combat.",
+  "AVEMUJICA-CONSIGN.title": "Consign to Oblivion",
+
+  "AVEMUJICA-MAIDENS_CAPRICCIO.description": "Draw {Cards:diff()} cards.\n[gold]Perform Skill:[/gold] [gold]Enchant[/gold] a card with [gold]Masterful[/gold] {Enchant:diff()}.",
+  "AVEMUJICA-MAIDENS_CAPRICCIO.selectionScreenPrompt": "Choose a card to [gold]Enchant[/gold].",
+  "AVEMUJICA-MAIDENS_CAPRICCIO.title": "Maiden's Capriccio"
 }

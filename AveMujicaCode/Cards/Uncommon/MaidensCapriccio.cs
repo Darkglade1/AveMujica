@@ -1,4 +1,6 @@
-﻿using BaseLib.Utils;
+﻿using AveMujica.AveMujicaCode.Cards.Token;
+using AveMujica.AveMujicaCode.Enchantments;
+using BaseLib.Utils;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -13,12 +15,18 @@ public class MaidensCapriccio() : AbstractPerformCard(1,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(3), new("BaseExhaust", 1), new("Exhaust", 1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2), new("Enchant", 4)];
     
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromKeyword(AveMujicaKeywords.Perform),
-        HoverTipFactory.FromKeyword(CardKeyword.Exhaust)
-    ];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips
+    {
+        get
+        {
+            List<IHoverTip> items = new List<IHoverTip>();
+            items.Add(HoverTipFactory.FromKeyword(AveMujicaKeywords.Perform));
+            items.AddRange(HoverTipFactory.FromEnchantment<Masterful>());
+            return items;
+        }
+    }
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -36,16 +44,17 @@ public class MaidensCapriccio() : AbstractPerformCard(1,
     
     protected override async Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes, int numTriggers)
     {
-        DynamicVars["Exhaust"].BaseValue = DynamicVars["BaseExhaust"].IntValue * numTriggers;
-        CardSelectorPrefs prefs = new CardSelectorPrefs(SelectionScreenPrompt, 0, DynamicVars["Exhaust"].IntValue);
-        foreach (CardModel card in await CardSelectCmd.FromHand(choiceContext, Owner, prefs, null, this))
+        CardSelectorPrefs prefs = new CardSelectorPrefs(SelectionScreenPrompt, 1);
+        CardModel? selection = (await CardSelectCmd.FromHand(choiceContext, Owner, prefs, (Func<CardModel, bool>) (c => c.Type == CardType.Attack || c.GainsBlock || c is Song), this)).FirstOrDefault();
+        if (selection != null)
         {
-            await CardCmd.Exhaust(choiceContext, card);
+            Masterful.TryEnchantCardWithMasterful(selection, DynamicVars["Enchant"].IntValue * numTriggers);
         }
     }
 
     protected override void OnUpgrade()
     {
         DynamicVars.Cards.UpgradeValueBy(1);
+        DynamicVars["Enchant"].UpgradeValueBy(1);
     }
 }

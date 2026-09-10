@@ -1,5 +1,8 @@
 ﻿{
   "AVEMUJICA-MASTERFUL.title": "Masterful",
   "AVEMUJICA-MASTERFUL.description": "Increases damage and [gold]Block[/gold] by [blue]{Amount}[/blue].",
-  "AVEMUJICA-MASTERFUL.extraCardText": "Masterful {Amount}."
+  "AVEMUJICA-MASTERFUL.extraCardText": "Masterful {Amount}.",
+
+  "AVEMUJICA-VANISHING.title": "Vanishing",
+  "AVEMUJICA-VANISHING.description": "This card costs [blue]{Amount}[/blue] less and [gold]Exhausts[/gold]. Can only [gold]Enchant[/gold] [gold]non-Exhausting[/gold], [gold]non-Power[/gold] cards."
 }

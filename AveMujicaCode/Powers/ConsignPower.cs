@@ -8,5 +8,8 @@ public class ConsignPower() : AveMujicaPower
         PowerType.Buff;
 
     public override PowerStackType StackType =>
-        PowerStackType.Counter;
+        PowerStackType.None;
+    
+    public override PowerInstanceType InstanceType => PowerInstanceType.Instanced;
+    
 }

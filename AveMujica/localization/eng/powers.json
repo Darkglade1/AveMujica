@@ -51,10 +51,6 @@
   "AVEMUJICA-ETHER_POWER.smartDescription": "Your cards that [gold]Retain[/gold] [gold]Exhaust[/gold] when played.\nYour cards that [gold]Exhaust[/gold] when played cost [blue]0[/blue].",
   "AVEMUJICA-ETHER_POWER.title": "Ether",
 
-  "AVEMUJICA-CONSIGN_POWER.description": "At the end of combat, remove a card from your [gold]Deck[/gold].",
-  "AVEMUJICA-CONSIGN_POWER.smartDescription": "At the end of combat, remove [blue]{Amount}[/blue] {Amount:plural:card|cards} from your [gold]Deck[/gold].",
-  "AVEMUJICA-CONSIGN_POWER.title": "Consign to Oblivion",
-
   "AVEMUJICA-LOFT_MOON_POWER.description": "At the end of your turn, the lowest HP [gold]Doll[/gold] gains [blue]{Amount}[/blue] HP.",
   "AVEMUJICA-LOFT_MOON_POWER.smartDescription": "At the end of your turn, the lowest HP [gold]Doll[/gold] gains [blue]{Amount}[/blue] HP.",
   "AVEMUJICA-LOFT_MOON_POWER.title": "Loft Moon",
@@ -119,5 +115,9 @@
 
   "AVEMUJICA-INSPIRING_SONGS_POWER.description": "Whenever you play a [gold]Song[/gold], gain [gold]Strength[/gold] and [gold]Dexterity[/gold] this turn.",
   "AVEMUJICA-INSPIRING_SONGS_POWER.smartDescription": "Whenever you play a [gold]Song[/gold], gain [blue]{Amount}[/blue] [gold]Strength[/gold] and [gold]Dexterity[/gold] this turn.",
-  "AVEMUJICA-INSPIRING_SONGS_POWER.title": "Inspiring Songs"
+  "AVEMUJICA-INSPIRING_SONGS_POWER.title": "Inspiring Songs",
+
+  "AVEMUJICA-CONSIGN_POWER.description": "At the end of combat, you may [gold]Enchant[/gold] a card in your [gold]Deck[/gold] with [purple]Vanishing[/purple].",
+  "AVEMUJICA-CONSIGN_POWER.smartDescription": "At the end of combat, you may [gold]Enchant[/gold] a card in your [gold]Deck[/gold] with [purple]Vanishing[/purple].",
+  "AVEMUJICA-CONSIGN_POWER.title": "Consign to Oblivion"
 }
