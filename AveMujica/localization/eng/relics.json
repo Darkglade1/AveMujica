@@ -29,5 +29,9 @@
 
   "AVEMUJICA-MASQUERADE_MASK.description": "The first time you [gold]Perform[/gold] each turn, draw a card next turn.",
   "AVEMUJICA-MASQUERADE_MASK.flavor": "The masquerade begins. The dolls stir to life.",
-  "AVEMUJICA-MASQUERADE_MASK.title": "Masquerade Mask"
+  "AVEMUJICA-MASQUERADE_MASK.title": "Masquerade Mask",
+
+  "AVEMUJICA-OLD_BOTTLE.description": "The first time each combat you [gold]Exhaust[/gold] a card, gain {Energy:energyIcons()}.",
+  "AVEMUJICA-OLD_BOTTLE.flavor": "Sometimes, she wonders what would've happened if she had made a different decision that day.",
+  "AVEMUJICA-OLD_BOTTLE.title": "Old Bottle"
 }
