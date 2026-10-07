@@ -34,6 +34,10 @@ public class Requiem() : AveMujicaCard(2,
 
     public Task AfterPerform(PlayerChoiceContext choiceContext, CardPlay play)
     {
+        if (Pile?.Type == PileType.Deck)
+        {
+            return Task.CompletedTask;
+        }
         if (play.Card.Owner == Owner)
         {
             EnergyCost.AddUntilPlayed(-1);
