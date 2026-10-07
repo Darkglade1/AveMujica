@@ -38,9 +38,6 @@
   "AVEMUJICA-AFTERGLOW.description": "Gain {Block:diff()} [gold]Block[/gold].\nThe next time you [gold]Perform[/gold], gain {Energy:energyIcons()}.",
   "AVEMUJICA-AFTERGLOW.title": "Afterglow",
 
-  "AVEMUJICA-REGRETS.description": "Deal {Damage:diff()} damage.\n[gold]Exhaust[/gold] {Cards:diff()} card.",
-  "AVEMUJICA-REGRETS.title": "Cast Off Regrets",
-
   "AVEMUJICA-DIMINUENDO.description": "Gain {Block:diff()} [gold]Block[/gold].\n ALL enemies lose {StrengthLoss:diff()} [gold]Strength[/gold] this turn.",
   "AVEMUJICA-DIMINUENDO.title": "Diminuendo",
 
@@ -112,12 +109,6 @@
 
   "AVEMUJICA-SYMBOL_FIRE.description": "Deal {Damage:diff()} damage.\nGain {StrengthPower:diff()} [gold]Strength[/gold].",
   "AVEMUJICA-SYMBOL_FIRE.title": "Symbol I: Fire",
-
-  "AVEMUJICA-SYMBOL_WATER.description": "Gain {Block:diff()} [gold]Block[/gold].",
-  "AVEMUJICA-SYMBOL_WATER.title": "Symbol III: Water",
-
-  "AVEMUJICA-SYMBOL_EARTH.description": "Gain {Block:diff()} [gold]Block[/gold].\nDeal {Damage:diff()} damage.\nWhen [gold]Retained[/gold], increase this card's damage and [gold]Block[/gold] by {UpgradeVar:diff()} this combat.",
-  "AVEMUJICA-SYMBOL_EARTH.title": "Symbol IV: Earth",
 
   "AVEMUJICA-CONCERTO.description": "Deal {Damage:diff()} damage.\n[gold]Enchant[/gold] a card with [gold]Masterful[/gold] equal to the number of cards in your [gold]Hand[/gold].",
   "AVEMUJICA-CONCERTO.selectionScreenPrompt": "Choose a card to [gold]Enchant[/gold].",
@@ -282,7 +273,7 @@
   "AVEMUJICA-ARPEGGIO.description": "Deal {Damage:diff()} damage to ALL enemies {Repeat:diff()} times.",
   "AVEMUJICA-ARPEGGIO.title": "Arpeggio",
 
-  "AVEMUJICA-SYMBOL_AIR.description": "Gain {Energy:energyIcons()}.\nWhen [gold]Retained[/gold], increase this card's {energyPrefix:energyIcons(1)} gain by {UpgradeVar:diff()} this combat.",
+  "AVEMUJICA-SYMBOL_AIR.description": "Gain {Energy:energyIcons()}.",
   "AVEMUJICA-SYMBOL_AIR.title": "Symbol II: Air",
 
   "AVEMUJICA-INSPIRING_SONGS.description": "Whenever you play a [gold]Song[/gold], gain {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold] this turn.",
@@ -305,5 +296,14 @@
   "AVEMUJICA-MAIDENS_CAPRICCIO.title": "Maiden's Capriccio",
 
   "AVEMUJICA-ENCORE.description": "The first [gold]Song[/gold] you play each turn is played twice.",
-  "AVEMUJICA-ENCORE.title": "Encore"
+  "AVEMUJICA-ENCORE.title": "Encore",
+
+  "AVEMUJICA-SYMBOL_EARTH.description": "Gain {Block:diff()} [gold]Block[/gold].\nDeal {Damage:diff()} damage.",
+  "AVEMUJICA-SYMBOL_EARTH.title": "Symbol IV: Earth",
+
+  "AVEMUJICA-SYMBOL_WATER.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain {DexterityPower:diff()} [gold]Dexterity[/gold].",
+  "AVEMUJICA-SYMBOL_WATER.title": "Symbol III: Water",
+
+  "AVEMUJICA-REGRETS.description": "Deal {Damage:diff()} damage.{IfUpgraded:show:\nDraw {Cards:diff()} {Cards:plural:card|cards}.}\n[gold]Exhaust[/gold] {Cards:diff()} {Cards:plural:card|cards}.",
+  "AVEMUJICA-REGRETS.title": "Cast Off Regrets"
 }

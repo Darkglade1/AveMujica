@@ -33,7 +33,7 @@ public class SymbolFire() : AveMujicaCard(2,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(6);
+        DynamicVars.Damage.UpgradeValueBy(4);
         DynamicVars["StrengthPower"].UpgradeValueBy(1);
     }
 }

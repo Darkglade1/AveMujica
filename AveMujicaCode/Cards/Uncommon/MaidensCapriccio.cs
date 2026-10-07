@@ -15,7 +15,7 @@ public class MaidensCapriccio() : AbstractPerformCard(1,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2), new("Enchant", 4)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2), new("Enchant", 3)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips
     {

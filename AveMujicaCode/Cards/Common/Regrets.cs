@@ -23,6 +23,10 @@ public class Regrets() : AveMujicaCard(1,
         CardPlay play)
     {
         await CommonActions.CardAttack(this, play).Execute(choiceContext);
+        if (IsUpgraded)
+        {
+            await CommonActions.Draw(this, choiceContext);
+        }
         CardSelectorPrefs prefs = new CardSelectorPrefs(CardSelectorPrefs.ExhaustSelectionPrompt, (int)DynamicVars.Cards.BaseValue);
         CardModel? card = (await CardSelectCmd.FromHand(choiceContext, Owner, prefs, null, this)).FirstOrDefault();
         if (card == null)
@@ -32,6 +36,6 @@ public class Regrets() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(3);
+        DynamicVars.Damage.UpgradeValueBy(1);
     }
 }
