@@ -180,10 +180,6 @@
   "AVEMUJICA-PRELUDE.title": "Prelude in Blue",
   "AVEMUJICA-PRELUDE.selectionScreenPrompt": "Choose cards to put back in your Hand.",
 
-  "AVEMUJICA-PURSUIT_OF_MASTERY.description": "[gold]Enchant[/gold] a card with [gold]Masterful[/gold] {Enchant:diff()}.\nWhen [gold]Retained[/gold], increase the amount by {EnchantGrow:diff()}.",
-  "AVEMUJICA-PURSUIT_OF_MASTERY.title": "Pursuit of Mastery",
-  "AVEMUJICA-PURSUIT_OF_MASTERY.selectionScreenPrompt": "Choose a card to [gold]Enchant[/gold].",
-
   "AVEMUJICA-EXPLOSIVE_FINALE.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], deal {ExplosiveFinalePower:diff()} damage to ALL enemies.",
   "AVEMUJICA-EXPLOSIVE_FINALE.title": "Explosive Finale",
 
@@ -305,5 +301,9 @@
   "AVEMUJICA-SYMBOL_WATER.title": "Symbol III: Water",
 
   "AVEMUJICA-REGRETS.description": "Deal {Damage:diff()} damage.{IfUpgraded:show:\nDraw {Cards:diff()} {Cards:plural:card|cards}.}\n[gold]Exhaust[/gold] {Cards:diff()} {Cards:plural:card|cards}.",
-  "AVEMUJICA-REGRETS.title": "Cast Off Regrets"
+  "AVEMUJICA-REGRETS.title": "Cast Off Regrets",
+
+  "AVEMUJICA-PURSUIT_OF_MASTERY.description": "[gold]Enchant[/gold] a card with [gold]Masterful[/gold] {Enchant:diff()}.",
+  "AVEMUJICA-PURSUIT_OF_MASTERY.title": "Pursuit of Mastery",
+  "AVEMUJICA-PURSUIT_OF_MASTERY.selectionScreenPrompt": "Choose a card to [gold]Enchant[/gold]."
 }
