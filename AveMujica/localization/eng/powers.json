@@ -117,7 +117,15 @@
   "AVEMUJICA-CONSIGN_POWER.smartDescription": "At the end of combat, you may [gold]Enchant[/gold] a card in your [gold]Deck[/gold] with [purple]Vanishing[/purple].",
   "AVEMUJICA-CONSIGN_POWER.title": "Consign to Oblivion",
 
-  "AVEMUJICA-ENCORE_POWER.description": "[gold]Songs[/gold] gain [gold]Replay[/gold] [blue]1[/blue].",
+  "AVEMUJICA-ENCORE_POWER.description": "The first [gold]Song[/gold] you play each turn is played twice.",
   "AVEMUJICA-ENCORE_POWER.smartDescription": "The first{Amount:plural:| [blue]{Amount}[/blue]} [gold]{Amount:plural:Song|Songs}[/gold] you play each turn {Amount:plural:is|are} played twice.",
-  "AVEMUJICA-ENCORE_POWER.title": "Encore"
+  "AVEMUJICA-ENCORE_POWER.title": "Encore",
+
+  "AVEMUJICA-ANTHEM_POWER.description": "ALL players deal more damage with attacks and gain more [gold]Block[/gold] from cards this turn.",
+  "AVEMUJICA-ANTHEM_POWER.smartDescription": "ALL players deal [blue]{Amount}[/blue] more damage with attacks and gain [blue]{Amount}[/blue] more [gold]Block[/gold] from cards this turn.",
+  "AVEMUJICA-ANTHEM_POWER.title": "Anthem of Battle",
+
+  "AVEMUJICA-NEXT_TURN_ANTHEM_POWER.description": "Next turn, ALL players deal more damage with attacks and gain more [gold]Block[/gold] from cards.",
+  "AVEMUJICA-NEXT_TURN_ANTHEM_POWER.smartDescription": "Next turn, ALL players deal [blue]{Amount}[/blue] more damage with attacks and gain [blue]{Amount}[/blue] more [gold]Block[/gold] from cards.",
+  "AVEMUJICA-NEXT_TURN_ANTHEM_POWER.title": "Next Turn Anthem of Battle"
 }

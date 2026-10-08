@@ -246,9 +246,6 @@
   "AVEMUJICA-VIRTUOSO_BALLAD.description": "[gold]Enchant[/gold] ALL cards in another player's [gold]Hand[/gold] with [gold]Masterful[/gold] {Masterful:diff()}.",
   "AVEMUJICA-VIRTUOSO_BALLAD.title": "Virtuoso's Ballad",
 
-  "AVEMUJICA-ANTHEM.description": "[gold]Perform Attack:[/gold] ALL players gain {StrengthPower:diff()} [gold]Temporary[/gold] [gold]Strength[/gold] next turn.\n[gold]Perform Skill:[/gold] ALL players gain {DexterityPower:diff()} [gold]Temporary[/gold] [gold]Dexterity[/gold] next turn.",
-  "AVEMUJICA-ANTHEM.title": "Anthem of Battle",
-
 
   "AVEMUJICA-GIBBOUS_MOON_ENVY.description": "[gold]Dreamspin[/gold].\nIf you targeted yourself, [gold]Dreamspin[/gold] again.",
   "AVEMUJICA-GIBBOUS_MOON_ENVY.title": "Gibbous Moon's Envy",
@@ -305,5 +302,8 @@
 
   "AVEMUJICA-PURSUIT_OF_MASTERY.description": "[gold]Enchant[/gold] a card with [gold]Masterful[/gold] {Enchant:diff()}.",
   "AVEMUJICA-PURSUIT_OF_MASTERY.title": "Pursuit of Mastery",
-  "AVEMUJICA-PURSUIT_OF_MASTERY.selectionScreenPrompt": "Choose a card to [gold]Enchant[/gold]."
+  "AVEMUJICA-PURSUIT_OF_MASTERY.selectionScreenPrompt": "Choose a card to [gold]Enchant[/gold].",
+
+  "AVEMUJICA-ANTHEM.description": "Next turn, ALL players deal {AnthemPower:diff()} more damage with attacks and gain {AnthemPower:diff()} more [gold]Block[/gold] from cards.\n[gold]Perform Attack Skill:[/gold] Double the effect.",
+  "AVEMUJICA-ANTHEM.title": "Anthem of Battle"
 }
