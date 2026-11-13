@@ -12,7 +12,6 @@ public class Timoris() : AbstractDollCard(-1,
     CardType.Power, CardRarity.Token,
     TargetType.Self)
 {
-    public override int StartingHp => 5;
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
 
     protected override async Task OnPlay(
