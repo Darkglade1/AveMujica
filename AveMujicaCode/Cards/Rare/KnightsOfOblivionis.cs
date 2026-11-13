@@ -1,4 +1,5 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Dolls;
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
@@ -10,7 +11,7 @@ public class KnightsOfOblivionis() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Rare,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new HealVar(1)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Doll),
@@ -21,7 +22,7 @@ public class KnightsOfOblivionis() : AveMujicaCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await PerformSkills();
+        await PerformSkills(false);
         if (CombatState != null && IsUpgraded)
         {
             int numDolls = 0;
@@ -34,12 +35,12 @@ public class KnightsOfOblivionis() : AveMujicaCard(1,
             }
             if (numDolls >= 4)
             {
-                await PerformSkills();
+                await PerformSkills(true);
             }
         }
     }
     
-    private async Task PerformSkills()
+    private async Task PerformSkills(bool healFirst)
     {
         if (CombatState != null)
         {
@@ -48,6 +49,10 @@ public class KnightsOfOblivionis() : AveMujicaCard(1,
             {
                 if (ally.Monster is TimorisDoll timoris && ally.PetOwner == Owner && ally.IsAlive)
                 {
+                    if (healFirst)
+                    {
+                        await CreatureCmd.GainMaxHp(ally, DynamicVars.Heal.BaseValue);
+                    }
                     await timoris.Skill();
                     break;
                 }
@@ -56,6 +61,10 @@ public class KnightsOfOblivionis() : AveMujicaCard(1,
             {
                 if (ally.Monster is AbstractDoll doll && !(ally.Monster is TimorisDoll) && ally.PetOwner == Owner && ally.IsAlive)
                 {
+                    if (healFirst)
+                    {
+                        await CreatureCmd.GainMaxHp(ally, DynamicVars.Heal.BaseValue);
+                    }
                     await doll.Skill();
                 }
             }

@@ -234,7 +234,7 @@
   "AVEMUJICA-REQUIEM.description": "Deal {Damage:diff()} damage to ALL enemies.\nDraw {Cards:diff()} {Cards:plural:card|cards}.\nWhenever you [gold]Perform[/gold], reduce this card's cost by 1 until played.",
   "AVEMUJICA-REQUIEM.title": "Requiem in Black",
 
-  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "Trigger the [gold]Skills[/gold] of every [gold]Doll[/gold] present.{IfUpgraded:show:\nIf all [gold]Dolls[/gold] are present, trigger their [gold]Skills[/gold] again.}",
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "Trigger the [gold]Skills[/gold] of every [gold]Doll[/gold] present.{IfUpgraded:show:\nIf all 4 [gold]Dolls[/gold] are present, they gain {Heal:diff()} HP and trigger their [gold]Skills[/gold] again.}",
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "Knights of Oblivionis",
 
   "AVEMUJICA-ALLEGRO.description": "Draw {Cards:diff()} cards.\n[gold]Compose[/gold] \"Draw {Compose:diff()} {Compose:plural:card|cards}.\"",
