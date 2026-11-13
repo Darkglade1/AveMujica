@@ -10,7 +10,7 @@ public class BlackBirthday() : AbstractPerformCard(1,
     CardType.Attack, CardRarity.Rare,
     TargetType.AllEnemies)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(10, ValueProp.Move), new RepeatVar(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(8, ValueProp.Move), new HitCountVar(2)];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
@@ -32,8 +32,8 @@ public class BlackBirthday() : AbstractPerformCard(1,
 
     protected override async Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes, int numTriggers)
     {
-        await CommonActions.CardAttack(this, play, (DynamicVars.Repeat.IntValue * numTriggers) + 1).Execute(choiceContext);
+        await CommonActions.CardAttack(this, play, (DynamicVars.HitCount.IntValue * numTriggers) + 1).Execute(choiceContext);
     }
 
-    protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(3);
+    protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(2);
 }

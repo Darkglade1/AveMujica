@@ -50,12 +50,6 @@
   "AVEMUJICA-REHEARSAL.description": "Gain {Energy:energyIcons()} next turn.\n[gold]Perform Attack:[/gold] Gain {Energy:energyIcons()}.",
   "AVEMUJICA-REHEARSAL.title": "Rehearsal",
 
-  "AVEMUJICA-REPETITION.description": "Deal {Damage:diff()} damage.\n[gold]Perform Attack Skill:[/gold] Deal {Damage:diff()} damage again.",
-  "AVEMUJICA-REPETITION.title": "Repetition",
-
-  "AVEMUJICA-GLISSANDO.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.",
-  "AVEMUJICA-GLISSANDO.title": "Glissando",
-
   "AVEMUJICA-PROPER_TIMING.description": "Gain {Block:diff()} [gold]Block[/gold].\nAdd [gold]Retain[/gold] to a card in your [gold]Hand[/gold].",
   "AVEMUJICA-PROPER_TIMING.selectionScreenPrompt": "Select a card to add [gold]Retain[/gold] to.",
   "AVEMUJICA-PROPER_TIMING.title": "Proper Timing",
@@ -142,14 +136,8 @@
   "AVEMUJICA-SOPHIE.description": "Gain {VulnerablePower:diff()} [gold]Vulnerable[/gold].\n[gold]Compose[/gold] \"Gain {Oblivion:diff()} [gold]Oblivion[/gold].\"",
   "AVEMUJICA-SOPHIE.title": "Sophie",
 
-  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.description": "Gain {Block:diff()} [gold]Block[/gold] X times.\n[gold]Exhaust[/gold] X cards.",
-  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.title": "Do Not Fear Forgetting",
-
   "AVEMUJICA-FLAWLESS_PERFORMANCE.description": "[gold]Perform[/gold] cards [gold]Retain[/gold].\n[gold]Perform[/gold] effects always trigger.",
   "AVEMUJICA-FLAWLESS_PERFORMANCE.title": "Flawless Performance",
-
-  "AVEMUJICA-BLACK_BIRTHDAY.description": "Deal {Damage:diff()} damage to ALL enemies.\n[gold]Perform Attack Attack:[/gold] Hits {Repeat:diff()} more times.",
-  "AVEMUJICA-BLACK_BIRTHDAY.title": "Black Birthday",
 
   "AVEMUJICA-GEORGETTE_ME.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Perform Skill Skill:[/gold] Double your [gold]Block[/gold].",
   "AVEMUJICA-GEORGETTE_ME.title": "Georgette Me, Georgette You",
@@ -182,9 +170,6 @@
 
   "AVEMUJICA-EXPLOSIVE_FINALE.description": "Whenever you finish [gold]Composing[/gold] a [gold]Song[/gold], deal {ExplosiveFinalePower:diff()} damage to ALL enemies.",
   "AVEMUJICA-EXPLOSIVE_FINALE.title": "Explosive Finale",
-
-  "AVEMUJICA-RONDO.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.\n[gold]Perform Attack:[/gold] Gain {Block:diff()} [gold]Block[/gold].",
-  "AVEMUJICA-RONDO.title": "Rondo in Orange",
 
   "AVEMUJICA-INSPIRING_DANCE.description": "Another player gains X{IfUpgraded:show:+1} {Energy:energyIcons()} and draws X{IfUpgraded:show:+1} cards.",
   "AVEMUJICA-INSPIRING_DANCE.title": "Inspiring Dance",
@@ -225,12 +210,6 @@
   "AVEMUJICA-SINK.description": "Gain {Oblivion:diff()} [gold]Oblivion[/gold].",
   "AVEMUJICA-SINK.title": "Sink into Oblivion",
 
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "Deal {Damage:diff()} damage.\nIf [gold]Amoris[/gold] is present, she loses {HpLoss:diff()} HP to trigger her [gold]Skill[/gold] {SkillRepeat:diff()} {SkillRepeat:plural:time|times}.",
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "Crescent Moon Echos",
-
-  "AVEMUJICA-BLUE_MOON.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf [gold]Doloris[/gold] is present, she loses {HpLoss:diff()} HP to trigger her [gold]Skill[/gold] {SkillRepeat:diff()} {SkillRepeat:plural:time|times}.",
-  "AVEMUJICA-BLUE_MOON.title": "Blue Moon's Sorrow",
-
   "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gain {Block:diff()} [gold]Block[/gold].\nShuffle a [gold]Weave{IfUpgraded:show:+}[/gold] into your [gold]Draw[/gold] [gold]Pile[/gold].",
   "AVEMUJICA-FULL_MOON_MASQUERADE.title": "Full Moon Masquerade",
 
@@ -247,6 +226,7 @@
   "AVEMUJICA-VIRTUOSO_BALLAD.title": "Virtuoso's Ballad",
 
 
+  
   "AVEMUJICA-GIBBOUS_MOON_ENVY.description": "[gold]Dreamspin[/gold].\nIf you targeted yourself, [gold]Dreamspin[/gold] again.",
   "AVEMUJICA-GIBBOUS_MOON_ENVY.title": "Gibbous Moon's Envy",
 
@@ -262,9 +242,6 @@
 
   "AVEMUJICA-ALLEGRO.description": "Draw {Cards:diff()} cards.\n[gold]Compose[/gold] \"Draw {Compose:diff()} {Compose:plural:card|cards}.\"",
   "AVEMUJICA-ALLEGRO.title": "Allegro",
-
-  "AVEMUJICA-ARPEGGIO.description": "Deal {Damage:diff()} damage to ALL enemies {Repeat:diff()} times.",
-  "AVEMUJICA-ARPEGGIO.title": "Arpeggio",
 
   "AVEMUJICA-SYMBOL_AIR.description": "Gain {Energy:energyIcons()}.",
   "AVEMUJICA-SYMBOL_AIR.title": "Symbol II: Air",
@@ -305,5 +282,29 @@
   "AVEMUJICA-PURSUIT_OF_MASTERY.selectionScreenPrompt": "Choose a card to [gold]Enchant[/gold].",
 
   "AVEMUJICA-ANTHEM.description": "Next turn, ALL players deal {AnthemPower:diff()} more damage with attacks and gain {AnthemPower:diff()} more [gold]Block[/gold] from cards.\n[gold]Perform Attack Skill:[/gold] Double the effect.",
-  "AVEMUJICA-ANTHEM.title": "Anthem of Battle"
+  "AVEMUJICA-ANTHEM.title": "Anthem of Battle",
+
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "Deal {Damage:diff()} damage.\nIf [gold]Amoris[/gold] is present, trigger her [gold]Skill[/gold] {SkillRepeat:diff()} {SkillRepeat:plural:time|times}.",
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "Crescent Moon Echos",
+
+  "AVEMUJICA-BLUE_MOON.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf [gold]Doloris[/gold] is present, trigger her [gold]Skill[/gold] {SkillRepeat:diff()} {SkillRepeat:plural:time|times}.",
+  "AVEMUJICA-BLUE_MOON.title": "Blue Moon's Sorrow",
+
+  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.description": "Gain {Block:diff()} [gold]Block[/gold] X times.\n[gold]Exhaust[/gold] up to X cards.",
+  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.title": "Do Not Fear Forgetting",
+
+  "AVEMUJICA-REPETITION.description": "Deal {Damage:diff()} damage.\n[gold]Perform Attack Skill:[/gold] Hits {HitCount:choose(2):twice|{HitCount:diff()} times}.",
+  "AVEMUJICA-REPETITION.title": "Repetition",
+
+  "AVEMUJICA-ARPEGGIO.description": "Deal {Damage:diff()} damage to ALL enemies {HitCount:choose(2):twice|{HitCount:diff()} times}.",
+  "AVEMUJICA-ARPEGGIO.title": "Arpeggio",
+
+  "AVEMUJICA-GLISSANDO.description": "Deal {Damage:diff()} damage {HitCount:diff()} times.",
+  "AVEMUJICA-GLISSANDO.title": "Glissando",
+
+  "AVEMUJICA-BLACK_BIRTHDAY.description": "Deal {Damage:diff()} damage to ALL enemies.\n[gold]Perform Attack Attack:[/gold] Hits {HitCount:diff()} more times.",
+  "AVEMUJICA-BLACK_BIRTHDAY.title": "Black Birthday",
+
+  "AVEMUJICA-RONDO.description": "Deal {Damage:diff()} damage {HitCount:choose(2):twice|{HitCount:diff()} times}.\n[gold]Perform Attack:[/gold] Gain {Block:diff()} [gold]Block[/gold].",
+  "AVEMUJICA-RONDO.title": "Rondo in Orange"
 }

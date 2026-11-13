@@ -19,7 +19,7 @@ namespace AveMujica.AveMujicaCode.Cards.Dolls;
 
 public sealed class TimorisDoll : AbstractDoll
 {
-  private static int damage = 5;
+  private static int damage = 4;
   private static int debuff = 1;
   public override string CustomVisualPath => Config.UseTimorisSkin ? "timoris/skin/timoris.tscn".CharacterPath() : "timoris/timoris.tscn".CharacterPath();
   
@@ -69,6 +69,8 @@ public sealed class TimorisDoll : AbstractDoll
           }
         }
       }
+      await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Creature, 1, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, Creature);
+      await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Creature, 1, null);
     }
   }
   

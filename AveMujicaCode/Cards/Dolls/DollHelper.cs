@@ -4,10 +4,8 @@ using Godot;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
-using MegaCrit.Sts2.Core.Extensions;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Models;
@@ -17,7 +15,6 @@ namespace AveMujica.AveMujicaCode.Cards.Dolls;
 
 public class DollHelper
 {
-    public static int StartingHp = 4;
     public static async Task Awaken<T>(
         PlayerChoiceContext choiceContext,
         Player summoner,
@@ -119,21 +116,21 @@ public class DollHelper
                 var pickedCards = await CardSelectCmd.FromSimpleGrid(choiceContext, dolls, player,
                     new CardSelectorPrefs(prompt, 1));
                 var pickedCard = pickedCards.First();
-                if (pickedCard is Doloris)
+                if (pickedCard is Doloris doll1)
                 {
-                    await Awaken<DolorisDoll>(choiceContext, player, StartingHp);
+                    await Awaken<DolorisDoll>(choiceContext, player, doll1.StartingHp);
                 }
-                if (pickedCard is Mortis)
+                if (pickedCard is Mortis doll2)
                 {
-                    await Awaken<MortisDoll>(choiceContext, player, StartingHp);
+                    await Awaken<MortisDoll>(choiceContext, player, doll2.StartingHp);
                 }
-                if (pickedCard is Timoris)
+                if (pickedCard is Timoris doll3)
                 {
-                    await Awaken<TimorisDoll>(choiceContext, player, StartingHp);
+                    await Awaken<TimorisDoll>(choiceContext, player, doll3.StartingHp);
                 }
-                if (pickedCard is Amoris)
+                if (pickedCard is Amoris doll4)
                 {
-                    await Awaken<AmorisDoll>(choiceContext, player, StartingHp);
+                    await Awaken<AmorisDoll>(choiceContext, player, doll4.StartingHp);
                 }
             }
         }

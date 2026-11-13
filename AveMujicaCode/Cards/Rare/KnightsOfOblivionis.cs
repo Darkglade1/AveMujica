@@ -13,7 +13,8 @@ public class KnightsOfOblivionis() : AveMujicaCard(1,
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromKeyword(AveMujicaKeywords.Doll)
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.Doll),
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.DollSkill)
     ];
 
     protected override async Task OnPlay(

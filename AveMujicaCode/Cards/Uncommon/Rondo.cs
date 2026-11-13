@@ -10,11 +10,11 @@ public class Rondo() : AbstractPerformCard(2,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(8, ValueProp.Move), new RepeatVar(2), new BlockVar(8, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(8, ValueProp.Move), new HitCountVar(2), new BlockVar(8, ValueProp.Move)];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
-        await CommonActions.CardAttack(this, play, DynamicVars.Repeat.IntValue).Execute(choiceContext);
+        await CommonActions.CardAttack(this, play, DynamicVars.HitCount.IntValue).Execute(choiceContext);
         await ExecutePerformEffect(choiceContext, play, PerformSequences()[0]);
     }
 

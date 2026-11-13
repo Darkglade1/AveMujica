@@ -11,7 +11,7 @@ public class Repetition() : AbstractPerformCard(0,
     CardType.Attack, CardRarity.Common,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(5, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(5, ValueProp.Move), new HitCountVar(2)];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
@@ -33,7 +33,7 @@ public class Repetition() : AbstractPerformCard(0,
 
     protected override async Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes, int numTriggers)
     {
-        await CommonActions.CardAttack(this, play, numTriggers + 1).Execute(choiceContext);
+        await CommonActions.CardAttack(this, play, DynamicVars.HitCount.IntValue * numTriggers).Execute(choiceContext);
     }
 
     protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(2);

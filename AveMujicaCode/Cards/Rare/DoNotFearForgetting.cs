@@ -33,7 +33,7 @@ public class DoNotFearForgetting() : AveMujicaCard(0,
             {
                 await CommonActions.CardBlock(this, DynamicVars.Block, play);
             }
-            CardSelectorPrefs prefs = new CardSelectorPrefs(CardSelectorPrefs.ExhaustSelectionPrompt, num, num);
+            CardSelectorPrefs prefs = new CardSelectorPrefs(CardSelectorPrefs.ExhaustSelectionPrompt, 0, num);
             foreach (CardModel card in await CardSelectCmd.FromHand(choiceContext, Owner, prefs, null, this))
             {
                 await CardCmd.Exhaust(choiceContext, card);

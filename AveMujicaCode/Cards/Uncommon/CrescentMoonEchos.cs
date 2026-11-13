@@ -15,7 +15,8 @@ public class CrescentMoonEchos() : AveMujicaCard(2,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(10, ValueProp.Move), new HpLossVar(1), new("SkillRepeat", 2)];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        AmorisDoll.GenerateCardHoverTip()
+        AmorisDoll.GenerateCardHoverTip(),
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.DollSkill)
     ];
     
     protected override async Task OnPlay(
@@ -33,8 +34,6 @@ public class CrescentMoonEchos() : AveMujicaCard(2,
                     {
                         await amoris.Skill();
                     }
-                    await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), ally, DynamicVars.HpLoss.BaseValue, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, ally);
-                    await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), ally, DynamicVars.HpLoss.BaseValue, null);
                 }
             }
         }

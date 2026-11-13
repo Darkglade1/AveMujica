@@ -8,15 +8,14 @@ using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine;
-using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Dolls;
 
 public abstract class AbstractDoll : CustomMonsterModel
 {
-  public override int MinInitialHp => DollHelper.StartingHp;
+  public override int MinInitialHp => 4;
 
-  public override int MaxInitialHp => DollHelper.StartingHp;
+  public override int MaxInitialHp => 4;
   
   public bool canUseAbilitiesThisTurn = true;
   private bool hasSetUp;
@@ -74,11 +73,6 @@ public abstract class AbstractDoll : CustomMonsterModel
       canPlaySFX = true;
       await PerformMove();
       await Cmd.Wait(0.25f);
-      if (!CombatManager.Instance.IsEnding)
-      {
-        await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Creature, 1, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, Creature);
-        await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Creature, 1, null);
-      }
     }
   }
   

@@ -19,4 +19,7 @@ public static class AveMujicaKeywords
     
     [CustomEnum] [KeywordProperties(AutoKeywordPosition.After)]
     public static CardKeyword Doll;
+    
+    [CustomEnum] [KeywordProperties(AutoKeywordPosition.After)]
+    public static CardKeyword DollSkill;
 }

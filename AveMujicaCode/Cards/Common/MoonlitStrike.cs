@@ -13,7 +13,7 @@ public class MoonlitStrike() : AveMujicaCard(1,
     CardType.Attack, CardRarity.Common,
     CustomTargetType.PetOrSelf)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(5, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move)];
 
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Strike, AveMujicaCardTags.PerformsDreamspin];
     

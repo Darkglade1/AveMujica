@@ -17,7 +17,7 @@ public class EmotionalOutburst() : AveMujicaCard(0,
         new DamageVar(5, ValueProp.Move),
         new CalculationBaseVar(0M),
         new CalculationExtraVar(1M),
-        new CalculatedVar("CalculatedHits").WithMultiplier((card, _) => CombatManager.Instance.History.Entries.OfType<CardExhaustedEntry>().Count((Func<CardExhaustedEntry, bool>) (e => e.HappenedThisTurn(card.CombatState) && e.Card.Owner == card.Owner)))
+        new CalculatedHitCountVar("CalculatedHits").WithMultiplier((card, _) => CombatManager.Instance.History.Entries.OfType<CardExhaustedEntry>().Count((Func<CardExhaustedEntry, bool>) (e => e.HappenedThisTurn(card.CombatState) && e.Card.Owner == card.Owner)))
         ,];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [

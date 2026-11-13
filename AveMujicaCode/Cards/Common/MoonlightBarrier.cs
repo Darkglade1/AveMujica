@@ -13,7 +13,7 @@ public class MoonlightBarrier() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Common,
     CustomTargetType.PetOrSelf)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(3, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(4, ValueProp.Move)];
     
     protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.PerformsDreamspin];
     

@@ -19,7 +19,7 @@ namespace AveMujica.AveMujicaCode.Cards.Dolls;
 
 public sealed class MortisDoll : AbstractDoll
 {
-  private static int block = 3;
+  private static int block = 2;
   private static int cardDraw = 2;
  
   public override string CustomVisualPath => Config.UseMortisSkin ? "mortis/skin/mortis.tscn".CharacterPath() : "mortis/mortis.tscn".CharacterPath();
@@ -51,6 +51,8 @@ public sealed class MortisDoll : AbstractDoll
       await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
       Sfx.SKILL_GUITAR.Play();
       await CardPileCmd.Draw(new ThrowingPlayerChoiceContext(), cardDraw, owner);
+      await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Creature, 1, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, Creature);
+      await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Creature, 1, null);
     }
   }
   

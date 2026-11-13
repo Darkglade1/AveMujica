@@ -1,6 +1,4 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Dolls;
-using AveMujica.AveMujicaCode.Extensions;
-using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;

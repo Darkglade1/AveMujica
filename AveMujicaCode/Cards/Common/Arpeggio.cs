@@ -10,13 +10,13 @@ public class Arpeggio() : AveMujicaCard(2,
     CardType.Attack, CardRarity.Common,
     TargetType.AllEnemies)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move), new RepeatVar(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move), new HitCountVar(2)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CommonActions.CardAttack(this, play, DynamicVars.Repeat.IntValue).Execute(choiceContext);
+        await CommonActions.CardAttack(this, play, DynamicVars.HitCount.IntValue).Execute(choiceContext);
     }
 
     protected override void OnUpgrade()

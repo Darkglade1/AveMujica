@@ -73,6 +73,8 @@ public sealed class AmorisDoll : AbstractDoll
     {
       await PowerCmd.Apply<AmorisTempStrPower>(new ThrowingPlayerChoiceContext(), Creature, strength, Creature, null);
       await Attack(null);
+      await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Creature, 1, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, Creature);
+      await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Creature, 1, null);
     }
   }
   

@@ -9,6 +9,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
@@ -20,7 +21,7 @@ namespace AveMujica.AveMujicaCode.Cards.Dolls;
 
 public sealed class DolorisDoll : AbstractDoll
 {
-  private static int block = 3;
+  private static int block = 2;
   private static int skillBlock = 6;
   public override string CustomVisualPath => Config.UseDolorisSkin ? "doloris/skin/doloris.tscn".CharacterPath() : "doloris/doloris.tscn".CharacterPath();
   
@@ -49,6 +50,8 @@ public sealed class DolorisDoll : AbstractDoll
       Sfx.SKILL_GUITAR_VOCALS.Play();
       await CreatureCmd.GainBlock(owner.Creature, CalcBlockWithDex(skillBlock), ValueProp.Unpowered, null);
       await CheckGiveBlockToAllPlayers(CalcBlockWithDex(skillBlock));
+      await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Creature, 1, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, Creature);
+      await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Creature, 1, null);
     }
   }
 

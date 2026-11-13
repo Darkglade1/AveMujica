@@ -16,7 +16,8 @@ public class BlueMoon() : AveMujicaCard(1,
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(6, ValueProp.Move), new HpLossVar(1), new("SkillRepeat", 1)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        DolorisDoll.GenerateCardHoverTip()
+        DolorisDoll.GenerateCardHoverTip(),
+        HoverTipFactory.FromKeyword(AveMujicaKeywords.DollSkill)
     ];
 
     protected override async Task OnPlay(
@@ -34,8 +35,6 @@ public class BlueMoon() : AveMujicaCard(1,
                     {
                         await doloris.Skill();
                     }
-                    await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), ally, DynamicVars.HpLoss.BaseValue, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, ally);
-                    await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), ally, DynamicVars.HpLoss.BaseValue, null);
                 }
             }
         }
