@@ -4,6 +4,9 @@ namespace AveMujica.AveMujicaCode;
 
 public class Config: SimpleModConfig
 {
+    [ConfigHideInUI]
+    [ConfigIgnoreRestoreDefaults]
+    public static bool ViewDreamspinFtue { get; set; } = true;
     [ConfigSection("Skins")]
     public static bool UseOblivionisSkin { get; set; } = false;
     public static bool UseDolorisSkin { get; set; } = false;
@@ -13,7 +16,4 @@ public class Config: SimpleModConfig
     
     [ConfigSection("Sound")]
     public static bool DisableAttackSoundEffect { get; set; } = false;
-    
-    [ConfigSection("Tutorial")]
-    public static bool ViewDreamspinFtue { get; set; } = true;
 }
