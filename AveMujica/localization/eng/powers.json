@@ -7,10 +7,6 @@
   "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.smartDescription": "[gold]Mortis[/gold] absorbs all incoming unblocked attack damage and can't use other abilities {Amount:plural:this turn|for [blue]{Amount}[/blue] turns}.",
   "AVEMUJICA-DO_NOT_FEAR_DEATH_POWER.title": "Do Not Fear Death",
 
-  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.description": "Receives more damage from Attacks this turn.",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.smartDescription": "Receives [blue]{Amount}%[/blue] more damage from Attacks this turn.",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.title": "Moonlight Execution",
-
   "AVEMUJICA-FUGUE_POWER.description": "The next card you play that [gold]Exhausts[/gold] or [gold]Retains[/gold] costs [blue]0[/blue].",
   "AVEMUJICA-FUGUE_POWER.smartDescription": "The next [blue]{Amount}[/blue] {Amount:plural:card|cards} you play that [gold]{Amount:plural:Exhausts|Exhaust}[/gold] or [gold]{Amount:plural:Retains|Retain}[/gold] {Amount:plural:costs|cost} [blue]0[/blue].",
   "AVEMUJICA-FUGUE_POWER.title": "Fugue in Grey",
@@ -75,10 +71,6 @@
   "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.smartDescription": "[gold]Amoris[/gold] hits [blue]{Amount}[/blue] more {Amount:plural:time|times} with Attacks.",
   "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.title": "As Strong As Wheat",
 
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take more damage from Attacks this turn.\"",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.smartDescription": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take [blue]{Amount}%[/blue] more damage from Attacks this turn.\"",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.title": "Moonlight Execution",
-
   "AVEMUJICA-HYMN_POWER.description": "[gold]Doloris[/gold] gives [gold]Block[/gold] to ALL players this turn.",
   "AVEMUJICA-HYMN_POWER.smartDescription": "[gold]Doloris[/gold] gives [gold]Block[/gold] to ALL players {Amount:plural:this turn|for [blue]{Amount}[/blue] turns}.",
   "AVEMUJICA-HYMN_POWER.title": "Hymn of Valor",
@@ -127,5 +119,13 @@
 
   "AVEMUJICA-NEXT_TURN_ANTHEM_POWER.description": "Next turn, ALL players deal more damage with attacks and gain more [gold]Block[/gold] from cards.",
   "AVEMUJICA-NEXT_TURN_ANTHEM_POWER.smartDescription": "Next turn, ALL players deal [blue]{Amount}[/blue] more damage with attacks and gain [blue]{Amount}[/blue] more [gold]Block[/gold] from cards.",
-  "AVEMUJICA-NEXT_TURN_ANTHEM_POWER.title": "Next Turn Anthem of Battle"
+  "AVEMUJICA-NEXT_TURN_ANTHEM_POWER.title": "Next Turn Anthem of Battle",
+
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take double damage from Attacks this turn.\"",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.smartDescription": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take double damage from Attacks this turn.\"",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.title": "Moonlight Execution",
+
+  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.description": "Receives double damage from Attacks this turn.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.smartDescription": "Receives double damage from Attacks for [blue]{Amount}[/blue] {Amount:plural:turn|turns}.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.title": "Moonlight Execution"
 }

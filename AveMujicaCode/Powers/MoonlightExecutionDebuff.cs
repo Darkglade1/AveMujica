@@ -26,7 +26,7 @@ public class MoonlightExecutionDebuff() : AveMujicaPower
     {
         if (target != Owner || !props.IsPoweredAttack())
             return 1M;
-        return 1.0M + (Amount / 100.0M);
+        return 2.0M;
     }
 
     public override async Task AfterSideTurnEnd(
@@ -34,9 +34,9 @@ public class MoonlightExecutionDebuff() : AveMujicaPower
         CombatSide side,
         IEnumerable<Creature> participants)
     {
-        if (side == CombatSide.Enemy)
+        if (participants.Contains(Owner))
         {
-            await PowerCmd.Remove<MoonlightExecutionDebuff>(Owner);
+            await PowerCmd.Decrement(this);
         }
     }
 }

@@ -189,9 +189,6 @@
   "AVEMUJICA-HOW_DARE_YOU.description": "Whenever you are attacked, [gold]Doloris[/gold] deals {HowDareYouPower:diff()} damage to the attacker and increases this effect's damage by 1.",
   "AVEMUJICA-HOW_DARE_YOU.title": "Entwined Fates",
 
-  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take {MoonlightExecutionPower:diff()}% more damage from Attacks this turn.\"",
-  "AVEMUJICA-MOONLIGHT_EXECUTION.title": "Moonlight Execution",
-
   "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "[gold]Mortis[/gold] gains 1 [gold]Intangible[/gold], absorbs all incoming unblocked attack damage this turn, and can't use other abilities this turn.",
   "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "Do Not Fear Death",
 
@@ -306,5 +303,8 @@
   "AVEMUJICA-BLACK_BIRTHDAY.title": "Black Birthday",
 
   "AVEMUJICA-RONDO.description": "Deal {Damage:diff()} damage {HitCount:choose(2):twice|{HitCount:diff()} times}.\n[gold]Perform Attack:[/gold] Gain {Block:diff()} [gold]Block[/gold].",
-  "AVEMUJICA-RONDO.title": "Rondo in Orange"
+  "AVEMUJICA-RONDO.title": "Rondo in Orange",
+
+  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take double damage from Attacks this turn.\"",
+  "AVEMUJICA-MOONLIGHT_EXECUTION.title": "Moonlight Execution"
 }

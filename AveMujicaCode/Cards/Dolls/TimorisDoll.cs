@@ -85,7 +85,7 @@ public sealed class TimorisDoll : AbstractDoll
       {
         foreach (Creature enemy in Creature.CombatState.HittableEnemies)
         {
-          await PowerCmd.Apply<MoonlightExecutionDebuff>(new ThrowingPlayerChoiceContext(), enemy, GetMoonlightExecutionAmount(), Creature, null);
+          await PowerCmd.Apply<MoonlightExecutionDebuff>(new ThrowingPlayerChoiceContext(), enemy, 1, Creature, null);
         }
       }
     }
@@ -139,7 +139,7 @@ public sealed class TimorisDoll : AbstractDoll
     var hoverTip = new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title"),
       new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description"));
-    hoverTip.Description = String.Format(hoverTip.Description, GetMoonlightExecutionAmount());
+    hoverTip.Description = String.Format(hoverTip.Description);
     return hoverTip;
   }
 
@@ -162,15 +162,6 @@ public sealed class TimorisDoll : AbstractDoll
       return Creature.PetOwner.Creature.HasPower<MoonlightExecutionPower>();
     }
     return false;
-  }
-  
-  private int GetMoonlightExecutionAmount()
-  {
-    if (Creature.PetOwner != null && Creature.PetOwner.Creature.HasPower<MoonlightExecutionPower>())
-    {
-      return Creature.PetOwner.Creature.GetPowerAmount<MoonlightExecutionPower>();
-    }
-    return 0;
   }
 
   public override CreatureAnimator GenerateAnimator(MegaSprite controller)
