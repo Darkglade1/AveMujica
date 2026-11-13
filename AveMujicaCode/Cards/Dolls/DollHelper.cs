@@ -50,7 +50,7 @@ public class DollHelper
                             .TweenProperty(node, "modulate", Colors.White, 0.35)
                             .SetDelay(0.1);
                     }
-                    node?.ToggleIsInteractable(true);
+                    node?.SetIsInteractable(true, false);
                     index++;
                 }
             }

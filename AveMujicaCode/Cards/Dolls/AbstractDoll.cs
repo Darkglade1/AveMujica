@@ -5,6 +5,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
+using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine;
 using MegaCrit.Sts2.Core.ValueProps;
@@ -16,8 +17,6 @@ public abstract class AbstractDoll : CustomMonsterModel
   public override int MinInitialHp => DollHelper.StartingHp;
 
   public override int MaxInitialHp => DollHelper.StartingHp;
-
-  public override bool IsHealthBarVisible => Creature.IsAlive;
   
   public bool canUseAbilitiesThisTurn = true;
   private bool hasSetUp;
@@ -78,7 +77,7 @@ public abstract class AbstractDoll : CustomMonsterModel
       if (!CombatManager.Instance.IsEnding)
       {
         await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Creature, 1, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, Creature);
-        await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Creature, 1, false);
+        await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Creature, 1, null);
       }
     }
   }
@@ -86,6 +85,7 @@ public abstract class AbstractDoll : CustomMonsterModel
   public override async Task AfterDeath(
     PlayerChoiceContext choiceContext,
     Creature creature,
+    CardModel? source,
     bool wasRemovalPrevented,
     float deathAnimLength)
   {

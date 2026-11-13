@@ -80,7 +80,6 @@ public static class FullArtDollCards
             __instance._portrait.Visible = false;
             __instance._frame.Visible = false;
             __instance._ancientPortrait.Visible = true;
-            __instance._ancientBorderGlassOverlay.Visible = true;
             __instance._ancientBorder.Visible = true;
             __instance._ancientTextBg.Visible = true;
             if (__instance._canvasGroupMaskMaterial == null)

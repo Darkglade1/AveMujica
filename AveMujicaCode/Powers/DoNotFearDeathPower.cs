@@ -38,7 +38,7 @@ public class DoNotFearDeathPower : AveMujicaPower
     {
         if (Owner.Monster is MortisDoll && target == Owner)
         {
-            await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Owner, result.UnblockedDamage, false);
+            await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Owner, result.UnblockedDamage, null);
         }
     }
     
