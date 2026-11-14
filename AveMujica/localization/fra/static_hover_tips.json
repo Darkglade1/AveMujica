@@ -20,12 +20,12 @@
   "AVEMUJICA-AMORIS_ALLY_SKILL_AUTO.title": "Attaque",
   
   "AVEMUJICA-TIMORIS_ALLY.title": "Timoris",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "[gold]Skill:[/gold] Apply [blue]\\{0\\}[/blue] [gold]Vulnerable[/gold] to ALL enemies.",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "[gold]Skill:[/gold] Appliquez [blue]\\{0\\}[/blue] [gold]Vulnérable[/gold] à TOUS les ennemis.",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title": "Cordes Frissonnantes",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "[gold]Skill:[/gold] Apply [blue]\\{0\\}[/blue] [gold]Vulnerable[/gold] and [gold]Debilitate[/gold] to ALL enemies.",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "[gold]Skill:[/gold] Appliquez [blue]\\{0\\}[/blue] [gold]Vulnérable[/gold] et [gold]Amoindri[/gold] à TOUS les ennemis.",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title": "Exécution au Clair de Lune",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description": "Inflige [blue]\\{0\\}[/blue] dégâts à l'ennemi avec le moins de PV.",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.title": "Attaque",
 
-  "AVEMUJICA-AWAKEN_PROMPT.description": "Choose a [gold]Doll[/gold]"
+  "AVEMUJICA-AWAKEN_PROMPT.description": "Choisissez une [gold]Poupée[/gold]"
 }

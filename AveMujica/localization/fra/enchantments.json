@@ -3,6 +3,6 @@
   "AVEMUJICA-MASTERFUL.extraCardText": "Magistral {Amount}.",
   "AVEMUJICA-MASTERFUL.title": "Magistral",
 
-  "AVEMUJICA-VANISHING.title": "Vanishing",
-  "AVEMUJICA-VANISHING.description": "This card costs [blue]{Amount}[/blue] less and [gold]Exhausts[/gold]. Can only [gold]Enchant[/gold] [gold]non-Exhausting[/gold], [gold]non-Power[/gold] cards."
+  "AVEMUJICA-VANISHING.title": "Disparition",
+  "AVEMUJICA-VANISHING.description": "Réduit le coût de la carte de [blue]{Amount}[/blue] et lui donne [gold]Épuisement[/gold]. Seules les cartes qui n'ont pas [gold]Épuisement[/gold] et qui ne sont pas des [gold]Pouvoirs[/gold] peuvent être [gold]Enchantées[/gold]."
 }
