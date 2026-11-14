@@ -33,9 +33,9 @@
   
   
 
-  "AVEMUJICA-OLD_BOTTLE.description": "The first time each combat you [gold]Exhaust[/gold] a card, gain {Energy:energyIcons()}.",
-  "AVEMUJICA-OLD_BOTTLE.flavor": "Sometimes, she wonders what would've happened if she had made a different decision that day.",
-  "AVEMUJICA-OLD_BOTTLE.title": "Old Bottle",
+  "AVEMUJICA-OLD_BOTTLE.description": "A chaque combat, la première fois qu'une carte est [gold]Épuisée[/gold], gagnez {Energy:energyIcons()}.",
+  "AVEMUJICA-OLD_BOTTLE.flavor": "Par moment, elle se demande ce qu'il ce serait passé si elle avait fait un choix différent ce jour.",
+  "AVEMUJICA-OLD_BOTTLE.title": "Vieille Bouteille",
 
-  "SEA_GLASS.AVEMUJICA-AVE_MUJICA.title": "Pale Blue Glass"
+  "SEA_GLASS.AVEMUJICA-AVE_MUJICA.title": "Verre Bleu Pâle"
 }
