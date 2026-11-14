@@ -19,7 +19,7 @@ public class DoNotFearDeath() : AveMujicaCard(2,
         {
             foreach (var ally in Owner.Creature.CombatState.Allies)
             {
-                if (ally.Monster is MortisDoll mortis && ally.IsAlive)
+                if (ally.Monster is MortisDoll mortis && ally.IsAlive && ally.PetOwner == Owner)
                 {
                     await mortis.DoNotFearDeath();
                 }
