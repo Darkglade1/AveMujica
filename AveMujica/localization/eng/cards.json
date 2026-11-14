@@ -289,6 +289,7 @@
 
   "AVEMUJICA-DO_NOT_FEAR_FORGETTING.description": "Gain {Block:diff()} [gold]Block[/gold] X times.\n[gold]Exhaust[/gold] up to X cards.",
   "AVEMUJICA-DO_NOT_FEAR_FORGETTING.title": "Do Not Fear Forgetting",
+  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.selectionScreenPrompt": "Choose up to {Amount:plural:a card|[blue]{}[/blue] cards} to [gold]Exhaust[/gold].",
 
   "AVEMUJICA-REPETITION.description": "Deal {Damage:diff()} damage.\n[gold]Perform Attack Skill:[/gold] Hits {HitCount:choose(2):twice|{HitCount:diff()} times}.",
   "AVEMUJICA-REPETITION.title": "Repetition",
