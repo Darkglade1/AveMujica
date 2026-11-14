@@ -305,7 +305,7 @@
   "AVEMUJICA-RONDO.description": "Deal {Damage:diff()} damage {HitCount:choose(2):twice|{HitCount:diff()} times}.\n[gold]Perform Attack:[/gold] Gain {Block:diff()} [gold]Block[/gold].",
   "AVEMUJICA-RONDO.title": "Rondo in Orange",
 
-  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take double damage from Attacks this turn.\"",
+  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] also applies 1 [gold]Debilitate[/gold] to ALL enemies.",
   "AVEMUJICA-MOONLIGHT_EXECUTION.title": "Moonlight Execution",
 
   "AVEMUJICA-COLLECTIVE_DREAM.description": "Add {Cards:diff()} [gold]Weaves[/gold] to ALL allies' [gold]Hands[/gold].",

@@ -26,7 +26,7 @@
   "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title": "Shuddering Strings",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "[gold]Skill:[/gold] Apply [blue]\\{0\\}[/blue] [gold]Vulnerable[/gold] to ALL enemies.",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title": "Moonlight Execution",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "[gold]Skill:[/gold] ALL enemies take double damage from Attacks this turn.",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "[gold]Skill:[/gold] Apply [blue]\\{0\\}[/blue] [gold]Vulnerable[/gold] and [gold]Debilitate[/gold] to ALL enemies.",
   
   "AVEMUJICA-AWAKEN_PROMPT.description": "Choose a [gold]Doll[/gold]"
 }

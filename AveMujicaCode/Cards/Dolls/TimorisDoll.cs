@@ -52,42 +52,22 @@ public sealed class TimorisDoll : AbstractDoll
     var owner = Creature.PetOwner;
     if (owner != null)
     {
-      if (UseMoonlightExecution())
+      await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
+      Sfx.SKILL_BASS.Play();
+      IReadOnlyList<Creature>? hittableEnemies = Creature.CombatState?.HittableEnemies;
+      if (hittableEnemies != null && hittableEnemies.Count != 0)
       {
-        await MoonlightExecution();
-      }
-      else
-      {
-        await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
-        Sfx.SKILL_BASS.Play();
-        IReadOnlyList<Creature>? hittableEnemies = Creature.CombatState?.HittableEnemies;
-        if (hittableEnemies != null && hittableEnemies.Count != 0)
+        foreach (var enemy in hittableEnemies)
         {
-          foreach (var enemy in hittableEnemies)
+          await PowerCmd.Apply<VulnerablePower>(new ThrowingPlayerChoiceContext(), enemy, debuff, Creature, null);
+          if (UseMoonlightExecution())
           {
-            await PowerCmd.Apply<VulnerablePower>(new ThrowingPlayerChoiceContext(), enemy, debuff, Creature, null);
+            await PowerCmd.Apply<DebilitatePower>(new ThrowingPlayerChoiceContext(), enemy, debuff, Creature, null);
           }
         }
       }
       await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Creature, 1, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, Creature);
       await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Creature, 1, null);
-    }
-  }
-  
-  public async Task MoonlightExecution()
-  {
-    var owner = Creature.PetOwner;
-    if (owner != null)
-    {
-      await CreatureCmd.TriggerAnim(Creature, "Cast", 0);
-      Sfx.SKILL_BASS.Play();
-      if (Creature.CombatState != null)
-      {
-        foreach (Creature enemy in Creature.CombatState.HittableEnemies)
-        {
-          await PowerCmd.Apply<MoonlightExecutionDebuff>(new ThrowingPlayerChoiceContext(), enemy, 1, Creature, null);
-        }
-      }
     }
   }
   
@@ -139,7 +119,7 @@ public sealed class TimorisDoll : AbstractDoll
     var hoverTip = new HoverTip(
       new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title"),
       new LocString("static_hover_tips", "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description"));
-    hoverTip.Description = String.Format(hoverTip.Description);
+    hoverTip.Description = String.Format(hoverTip.Description, debuff);
     return hoverTip;
   }
 

@@ -121,8 +121,8 @@
   "AVEMUJICA-NEXT_TURN_ANTHEM_POWER.smartDescription": "Next turn, ALL players deal [blue]{Amount}[/blue] more damage with attacks and gain [blue]{Amount}[/blue] more [gold]Block[/gold] from cards.",
   "AVEMUJICA-NEXT_TURN_ANTHEM_POWER.title": "Next Turn Anthem of Battle",
 
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take double damage from Attacks this turn.\"",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.smartDescription": "[gold]Timoris's[/gold] [gold]Skill[/gold] becomes \"ALL enemies take double damage from Attacks this turn.\"",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] also applies 1 [gold]Debilitate[/gold] to ALL enemies.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.smartDescription": "[gold]Timoris's[/gold] [gold]Skill[/gold] also applies 1 [gold]Debilitate[/gold] to ALL enemies.",
   "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.title": "Moonlight Execution",
 
   "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.description": "Receives double damage from Attacks this turn.",
