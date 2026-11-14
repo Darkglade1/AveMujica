@@ -22,5 +22,12 @@
   "AVEMUJICA-PUPPET_STRINGS.title": "꼭두각시의 실",
   "AVEMUJICA-VIOLIN.description": "획득 시, 최대 [blue]{Cards}[/blue]장의 카드에 [gold]숙련[/gold] [blue]{Masterful}[/blue]을 [gold]부여[/gold]합니다.",
   "AVEMUJICA-VIOLIN.flavor": "그녀는 자신의 신비로운 벗 역시 마치 자신처럼 수많은 삶의 무게를 짊어지고 있음을 알아챌 수 있었습니다.",
-  "AVEMUJICA-VIOLIN.title": "바이올린"
+  "AVEMUJICA-VIOLIN.title": "바이올린",
+
+
+  "AVEMUJICA-OLD_BOTTLE.description": "The first time each combat you [gold]Exhaust[/gold] a card, gain {Energy:energyIcons()}.",
+  "AVEMUJICA-OLD_BOTTLE.flavor": "Sometimes, she wonders what would've happened if she had made a different decision that day.",
+  "AVEMUJICA-OLD_BOTTLE.title": "Old Bottle",
+
+  "SEA_GLASS.AVEMUJICA-AVE_MUJICA.title": "Pale Blue Glass"
 }

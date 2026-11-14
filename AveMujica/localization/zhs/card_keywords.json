@@ -5,8 +5,10 @@
   "AVEMUJICA-COMPOSE.title": "谱曲",
   "AVEMUJICA-DOLL.description": "[gold]Doloris[/gold]、[gold]Mortis[/gold]、[gold]Timoris[/gold]和[gold]Amoris[/gold]。",
   "AVEMUJICA-DOLL.title": "娃娃",
-  "AVEMUJICA-AWAKEN.description": "召唤一名[gold]娃娃[/gold]。[gold]娃娃[/gold]会使用其被动能力，并在你的回合结束时失去[blue]1[/blue]点生命值。",
-  "AVEMUJICA-AWAKEN.title": "唤醒",
-  "AVEMUJICA-DREAMSPIN.description": "[gold]梦旋[/gold]的目标为你自己或一名[gold]娃娃[/gold]。\n以自己为目标可[gold]唤醒[/gold]一名[gold]娃娃[/gold]。若所有[gold]娃娃[/gold]均已在场，则改为使她们各恢复[blue]1[/blue]点生命值。\n以一名[gold]娃娃[/gold]为目标可激活其[gold]技能[/gold]并使其恢复[blue]1[/blue]点生命值。",
-  "AVEMUJICA-DREAMSPIN.title": "梦旋"
+  "AVEMUJICA-DREAMSPIN.description": "[gold]梦旋[/gold]可以以你自己或一名[gold]娃娃[/gold]为目标。\n以你自己为目标可[gold]唤醒[/gold]一名[gold]娃娃[/gold]。若该[gold]娃娃[/gold]已在场，则改为使其恢复生命值。\n以一名[gold]娃娃[/gold]为目标可激活其[gold]技能[/gold]。激活[gold]技能[/gold]需消耗[blue]1[/blue]点[gold]娃娃[/gold]生命值。",
+  "AVEMUJICA-DREAMSPIN.title": "梦旋",
+  "AVEMUJICA-DOLLSKILL.description": "激活[gold]技能[/gold]需消耗[blue]1[/blue]点[gold]娃娃[/gold]生命值。",
+  "AVEMUJICA-DOLLSKILL.title": "娃娃技能",
+  "AVEMUJICA-AWAKEN.description": "召唤一名[gold]娃娃[/gold]。[gold]娃娃[/gold]会在你的回合结束时使用其被动能力。",
+  "AVEMUJICA-AWAKEN.title": "唤醒"
 }

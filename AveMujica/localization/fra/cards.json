@@ -5,9 +5,6 @@
   "AVEMUJICA-ALEA_IACTA_EST.description": "Gagnez {StrengthPower:diff()} [gold]Force[/gold].\nSi vous subissez des dégâts non bloqués par l'[gold]Armure[/gold], mourrez.",
   "AVEMUJICA-ALEA_IACTA_EST.title": "Alea Jacta Est",
 
-  "AVEMUJICA-ALLEGRO.description": "Piochez {Cards:diff()} cartes.\n[gold]Composez \"[/gold]Piochez {Compose:diff()} cartes.\"",
-  "AVEMUJICA-ALLEGRO.title": "Allegro",
-
   "AVEMUJICA-AL_CODA.description": "Infligez {Damage:diff()} dégâts.\nSi vous avez joué une [gold]Musique[/gold] ce tour, [gold]Composez[/gold]{IfUpgraded:show:[gold]+ [/gold]} deux fois.",
   "AVEMUJICA-AL_CODA.title": "Al Coda",
 
@@ -20,17 +17,8 @@
   "AVEMUJICA-ARIA.description": "Infligez {Damage:diff()} dégâts.\n[gold]Composez[/gold] \"Infligez {Compose:diff()} dégâts.\"",
   "AVEMUJICA-ARIA.title": "Aria Rubis",
 
-  "AVEMUJICA-ARPEGGIO.description": "Infligez {Damage:diff()} dégâts à TOUS les ennemis.",
-  "AVEMUJICA-ARPEGGIO.title": "Arpège",
-
   "AVEMUJICA-A_CAPPELLA.description": "Infligez {Damage:diff()} dégâts.\n[gold]Composez[/gold] \"Gagnez {Energy:energyIcons()}.\"",
   "AVEMUJICA-A_CAPPELLA.title": "A Cappella Topaze",
-
-  "AVEMUJICA-BLACK_BIRTHDAY.description": "Infligez {Damage:diff()} dégâts à TOUS les ennemis.\n[gold]Interprétation Attaque Attaque :[/gold] Infligez ces dégâts {Repeat:diff()} fois de plus.",
-  "AVEMUJICA-BLACK_BIRTHDAY.title": "Anniversaire Obsidienne",
-
-  "AVEMUJICA-CANON.description": "Gagnez {Block:diff()} [gold]Armure[/gold].\n[gold]Interprétation Attaque Compétence :[/gold] Piochez une carte au prochain tour.",
-  "AVEMUJICA-CANON.title": "Canon Émeraude",
 
   "AVEMUJICA-CANTABILE.description": "Chaque fois que vous [gold]Interprétez[/gold], gagnez {CantabilePower:diff()} d'[gold]Armure[/gold].",
   "AVEMUJICA-CANTABILE.title": "Cantabile Améthyste",
@@ -39,18 +27,11 @@
   "AVEMUJICA-CONCERTO.selectionScreenPrompt": "Choisissez une carte à [gold]Enchanter[/gold].",
   "AVEMUJICA-CONCERTO.title": "Concerto Diamant",
 
-  "AVEMUJICA-CONSIGN.description": "Infligez {Damage:diff()} dégâts.\n[gold]Coup de Grâce[/gold] : vous pouvez retirer une carte de votre [gold]Deck[/gold] à la fin du combat.",
-  "AVEMUJICA-CONSIGN.title": "Consignez vers l'Oblivion.",
-
   "AVEMUJICA-CRESCENDO.description": "Infligez {Damage:diff()} dégâts à TOUS les ennemis {Repeat:diff()} fois.",
   "AVEMUJICA-CRESCENDO.title": "Crescendo",
 
   "AVEMUJICA-CRUCIFIX.description": "Infligez {Damage:diff()} dégâts.\nGagnez {ThornsPower:diff()} [gold]Épines[/gold].",
   "AVEMUJICA-CRUCIFIX.title": "Crucifix X",
-
-  "AVEMUJICA-DA_CAPO.description": "Gagnez {Block:diff()} d'[gold]Armure[/gold].\nSi vous avez joué une [gold]Musique[/gold] ce tour, ajoutez [gold]Écho[/gold] et [gold]Épuisement[/gold] à une carte de votre [gold]Main[/gold].",
-  "AVEMUJICA-DA_CAPO.selectionScreenPrompt": "Choisissez une carte, ajoutez [gold]Écho[/gold] et [gold]Épuisement[/gold]",
-  "AVEMUJICA-DA_CAPO.title": "Da Capo",
 
   "AVEMUJICA-DEFEND.description": "Gagnez {Block:diff()} d'[gold]Armure[/gold].",
   "AVEMUJICA-DEFEND.title": "Défense",
@@ -68,14 +49,8 @@
   "AVEMUJICA-DOLORIS.description": "[gold]Éveillez Doloris[/gold].",
   "AVEMUJICA-DOLORIS.title": "Doloris",
 
-  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.description": "Gagnez {Block:diff()} d'[gold]Armure[/gold] X fois.\n[gold]Épuisez[/gold] X cartes.",
-  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.title": "N'aie pas peur d'Oublier",
-
   "AVEMUJICA-EMOTIONAL_OUTBURST.description": "Infligez {Damage:diff()} dégâts.\nInfligez {Damage:diff()} dégâts à nouveau pour chaque carte [gold]Épuisée[/gold] ce tour.{InCombat:\n(Hits {CalculatedHits:diff()} fois de plus)|}",
   "AVEMUJICA-EMOTIONAL_OUTBURST.title": "Déchaînement émotionnel",
-
-  "AVEMUJICA-ENCORE.description": "Les [gold]Musiques[/gold] gagnent [gold]Écho[/gold] {EncorePower:diff()}.",
-  "AVEMUJICA-ENCORE.title": "Encore",
 
   "AVEMUJICA-ENDLESS_PERFORMANCE.description": "Infligez {Damage:diff()} dégâts.\nChaque fois qu'une [gold]Interprétation[/gold] est activée, place cette carte dans votre [gold]Main[/gold].",
   "AVEMUJICA-ENDLESS_PERFORMANCE.title": "Spectacle Sans Fin",
@@ -113,12 +88,6 @@
   "AVEMUJICA-GEORGETTE_ME.description": "Gagnez {Block:diff()} d'[gold]Armure[/gold].\n[gold]Interprétation Compétence Compétence:[/gold] Doublez votre [gold]Armure[/gold]",
   "AVEMUJICA-GEORGETTE_ME.title": "Georgette Me, Georgette You",
 
-  "AVEMUJICA-GIBBOUS_MOON_ENVY.description": "[gold]Tisse-Rêve[/gold] deux fois.",
-  "AVEMUJICA-GIBBOUS_MOON_ENVY.title": "Jalousie de la Lune Gibbeuse",
-
-  "AVEMUJICA-GLISSANDO.description": "Infligez {Damage:diff()} dégâts {Repeat:diff()} fois.",
-  "AVEMUJICA-GLISSANDO.title": "Glissando",
-
   "AVEMUJICA-GODDESS_OF_OBLIVION.description": "Gagnez {Oblivion:diff()} d'[gold]Oblivion[/gold].\nChaque fois qu'une carte est [gold]Épuisée[/gold], gagnez {GoddessOfOblivionPower:diff()} d'[gold]Oblivion[/gold].",
   "AVEMUJICA-GODDESS_OF_OBLIVION.title": "Déesse de l'Oblivion",
 
@@ -131,18 +100,11 @@
   "AVEMUJICA-INSPIRING_DANCE.description": "Un autre joueur gagne X{IfUpgraded:show:+1} {Energy:energyIcons()} et pioche X{IfUpgraded:show:+1} cartes.",
   "AVEMUJICA-INSPIRING_DANCE.title": "Dance Inspirante",
 
-  "AVEMUJICA-INSPIRING_SONGS.description": "Chaque fois que vous jouez {Cards:diff()} [gold]Musiques[/gold], gagnez {Energy:energyIcons()}.",
-  "AVEMUJICA-INSPIRING_SONGS.title": "Musiques Inspirantes",
-
   "AVEMUJICA-LARGE_REPERTOIRE.description": "À la fin de votre tour, gagnez un montant d'[gold]Armure[/gold] égal au nombre de cartes dans votre [gold]Main[/gold].",
   "AVEMUJICA-LARGE_REPERTOIRE.title": "Large Répertoire",
 
   "AVEMUJICA-LATE_NIGHTS.description": "Gagnez {Block:diff()} d'[gold]Armure[/gold].\n[gold]Composez[/gold] deux fois.",
   "AVEMUJICA-LATE_NIGHTS.title": "Nuits tardives",
-
-  "AVEMUJICA-MAIDENS_CAPRICCIO.description": "Piochez {Cards:diff()} cartes.\n[gold]Interprétation Compétence: Épuisez[/gold] jusqu'à {BaseExhaust:diff()} {BaseExhaust:plural:carte|cartes}.",
-  "AVEMUJICA-MAIDENS_CAPRICCIO.selectionScreenPrompt": "Choisissez jusqu'à {Exhaust:diff()} {Exhaust:plural:carte|cartes} à [gold]Épuiser[/gold].",
-  "AVEMUJICA-MAIDENS_CAPRICCIO.title": "Maiden's Capriccio",
 
   "AVEMUJICA-MELODY.description": "À la fin de votre tour, si vous avez réalisée une [gold]Interprétation[/gold], gagnez {MelodyPower:diff()} [gold]Force[/gold].",
   "AVEMUJICA-MELODY.title": "Mélodie",
@@ -169,9 +131,6 @@
   "AVEMUJICA-ODE_TO_WAR.description": "Infligez {Damage:diff()} dégâts.\n[gold]Composez[/gold] \"Infligez {Compose:diff()} dégâts.\"\nJusqu'à ce que la [gold]Musique[/gold] soit complète.",
   "AVEMUJICA-ODE_TO_WAR.title": "Ode à la Guerre",
 
-  "AVEMUJICA-PERFECT_COMBO.description": "Vos effets d'[gold]Interprétations[/gold] s'activent une fois supplémentaire pour chaque [gold]Interprétation[/gold] activée ce tour.",
-  "AVEMUJICA-PERFECT_COMBO.title": "Interprétation Frénétique",
-
   "AVEMUJICA-PIANO.description": "Gagnez {Block:diff()} d'[gold]Armure[/gold].\n[gold]Composez[/gold] \"Gagnez {Compose:diff()} d'[gold]Armure[/gold].\"",
   "AVEMUJICA-PIANO.title": "Piano",
 
@@ -187,28 +146,12 @@
   "AVEMUJICA-PULL_FROM_OBLIVION.selectionScreenPrompt": "Choisissez une carte à ajouter à votre [gold]Main[/gold]",
   "AVEMUJICA-PULL_FROM_OBLIVION.title": "Tiré de l'Oblivion",
 
-  "AVEMUJICA-PURSUIT_OF_MASTERY.description": "[gold]Enchantez[/gold] une carte avec [gold]Magistral[/gold] {Enchant:diff()}.\nQuand cette carte est [gold]Retenue[/gold], augmente la valeur de {EnchantGrow:diff()}.",
-  "AVEMUJICA-PURSUIT_OF_MASTERY.selectionScreenPrompt": "Choisissez une carte à [gold]Enchanter[/gold]",
-  "AVEMUJICA-PURSUIT_OF_MASTERY.title": "Poursuite de l'excellence",
-
   "AVEMUJICA-RECITAL.description": "Placez une [gold]Musique[/gold] de votre [gold]Pile Épuisée[/gold] dans votre [gold]Main[/gold].",
   "AVEMUJICA-RECITAL.selectionScreenPrompt": "Choisissez une [gold]Musique[/gold] à ajouter à votre [gold]Main[/gold].",
   "AVEMUJICA-RECITAL.title": "Récital",
 
-  "AVEMUJICA-REGRETS.description": "Infligez {Damage:diff()} dégâts.\n[gold]Épuisez[/gold] {Cards:diff()} cartes.",
-  "AVEMUJICA-REGRETS.title": "Abandonner ses regrets",
-
   "AVEMUJICA-REHEARSAL.description": "Au prochain tour, gagnez {Energy:energyIcons()}.\n[gold]Interprétation Attaque:[/gold] Gagnez {Energy:energyIcons()}",
   "AVEMUJICA-REHEARSAL.title": "Répétition",
-
-  "AVEMUJICA-REPETITION.description": "Infligez {Damage:diff()} dégâts.\n[gold]Interprétation Attaque Compétence : [/gold] Infligez {Damage:diff()} dégâts.",
-  "AVEMUJICA-REPETITION.title": "Reprise",
-
-  "AVEMUJICA-REQUIEM.description": "Infligez {Damage:diff()} dégâts à TOUS les ennemis.\n[gold]Composez[/gold] \"Perdez {HpLoss:diff()} PV.\"",
-  "AVEMUJICA-REQUIEM.title": "Requiem Onyx",
-
-  "AVEMUJICA-RONDO.description": "Infligez {Damage:diff()} dégâts {Repeat:diff()} fois.\n[gold]Interprétation Attaque : [/gold] Gagnez {Block:diff()} d'[gold]Armure[/gold].",
-  "AVEMUJICA-RONDO.title": "Rondo Ambre",
 
   "AVEMUJICA-SONG.description": "{IfUpgraded:show:Piochez une carte}",
   "AVEMUJICA-SONG.title": "Musique",
@@ -222,14 +165,8 @@
   "AVEMUJICA-STRIKE.description": "Infligez {Damage:diff()} dégâts.",
   "AVEMUJICA-STRIKE.title": "Frappe",
 
-  "AVEMUJICA-SYMBOL_AIR.description": "Appliquez {WeakPower:diff()} d'[gold]Affaibli[/gold].\nPiochez {Cards:diff()} cartes.\nGagnez {Energy:energyIcons()}.",
-  "AVEMUJICA-SYMBOL_AIR.title": "Symbole II : Air",
-
   "AVEMUJICA-SYMBOL_FIRE.description": "Infligez {Damage:diff()} dégâts.\nGagnez {StrengthPower:diff()} de [gold]Force[/gold].",
   "AVEMUJICA-SYMBOL_FIRE.title": "Symbole I : Feu",
-
-  "AVEMUJICA-SYMBOL_WATER.description": "Gagnez {Block:diff()} d'[gold]Armure[/gold].",
-  "AVEMUJICA-SYMBOL_WATER.title": "Symbole III : Eau",
 
   "AVEMUJICA-TIMORIS.description": "[gold]Éveillez Timoris[/gold].",
   "AVEMUJICA-TIMORIS.title": "Timoris",
@@ -252,9 +189,6 @@
   "AVEMUJICA-BLOOD_MOON.description": "Infligez {Damage:diff()} dégâts.\nLa [gold]Poupée[/gold] avec les PV les plus bas gagne {Heal:diff()} PV.",
   "AVEMUJICA-BLOOD_MOON.title": "Fureur de la Lune de Sang",
 
-  "AVEMUJICA-SYMBOL_EARTH.description": "Gagnez {Block:diff()} d'[gold]Armure[/gold].\nInfligez {Damage:diff()} dégâts.\nLorque cette carte est [gold]Retenue[/gold], augmente les dégâts et l'[gold]Armure[/gold] de cette carte de {UpgradeVar:diff()} pour le combat.",
-  "AVEMUJICA-SYMBOL_EARTH.title": "Symbole IV : Terre",
-
   "AVEMUJICA-LOFT_MOON.description": "[gold]Tisse-rêve[/gold]{IfUpgraded:show: deux fois}.\nA la fin de votre tour, la [gold]Poupée[/gold] avec les PV les plus bas gagne {LoftMoonPower:diff()} PV.",
   "AVEMUJICA-LOFT_MOON.title": "Vers la Lune",
 
@@ -263,9 +197,6 @@
 
   "AVEMUJICA-HOW_DARE_YOU.description": "Chaque fois que vous êtes attaqués, [gold]Doloris[/gold] inflige {HowDareYouPower:diff()} dégâts à l'agresseur et augmente les dégâts de cet effet de 1.",
   "AVEMUJICA-HOW_DARE_YOU.title": "Destins Liés",
-
-  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "La [gold]Compétence[/gold] de [gold]Timoris[/gold] devient \"TOUS les ennemis subissent {MoonlightExecutionPower:diff()}% de dégâts supplémentaires des Attaques ce tour.\"",
-  "AVEMUJICA-MOONLIGHT_EXECUTION.title": "Exécution au Clair de Lune",
 
   "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "[gold]Mortis[/gold] gagne 1 [gold]Intangible[/gold] et absorbe tous les dégâts d'Attaque non bloqué pendant ce tour. [gold]Mortis[/gold] ne peut plus utiliser de capacités ce tour.",
   "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "Ne Craint pas la Mort",
@@ -285,12 +216,6 @@
   "AVEMUJICA-SINK.description": "Gagnez {Oblivion:diff()} d'[gold]Oblivion[/gold].",
   "AVEMUJICA-SINK.title": "Noyée dans Oblivion",
 
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "Infligez {Damage:diff()} dégâts.\nSi [gold]Amoris[/gold] est présente, elle perd {HpLoss:diff()} PV pour activer sa [gold]Compétence[/gold] {SkillRepeat:diff()} fois.",
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "Échos du Croissant de Lune",
-
-  "AVEMUJICA-BLUE_MOON.description": "Gagnez {Block:diff()} d'[gold]Armure[/gold].\nSi [gold]Doloris[/gold] est présente, elle perd {HpLoss:diff()} PV pour activer sa [gold]Compétence[/gold] {SkillRepeat:diff()} fois.",
-  "AVEMUJICA-BLUE_MOON.title": "Mélancholie de la Lune Bleue",
-
   "AVEMUJICA-FULL_MOON_MASQUERADE.description": "Gagnez {Block:diff()} d'[gold]Armure[/gold].\nAjoutez un [gold]Fil Onirique{IfUpgraded:show:+}[/gold] à votre [gold]Pioche[/gold].",
   "AVEMUJICA-FULL_MOON_MASQUERADE.title": "Mascarade de la Pleine Lune",
 
@@ -303,15 +228,96 @@
   "AVEMUJICA-CASTLE_OF_DREAMS.description": "À la fin de votre tour, ajoutez {CastleOfDreamsPower:diff()} [gold]{CastleOfDreamsPower:plural:Fil Onirique|Fils Oniriques}[/gold] à votre [gold]Pioche[/gold].",
   "AVEMUJICA-CASTLE_OF_DREAMS.title": "Château Onirique",
 
-  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "Toutes les [gold]Poupées[/gold] présentes perdent {HpLoss:diff()} PV pour activer leurs [gold]Compétence[/gold].",
-  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "Chevaliers d'Oblivionis",
-
-  "AVEMUJICA-TWO_MOONS.description": "[gold]Tisse-Rêve[/gold].\nAjoutez un [gold]Fil Onirique[/gold] à votre [gold]Main[/gold].",
-  "AVEMUJICA-TWO_MOONS.title": "Lunes Doubles",
-
   "AVEMUJICA-VIRTUOSO_BALLAD.description": "[gold]Enchantez[/gold] TOUTES les cartes de la [gold]Main[/gold] d'un autre joueur avec [gold]Magistral[/gold] {Masterful:diff()}.",
   "AVEMUJICA-VIRTUOSO_BALLAD.title": "Ballade de la Virtuose",
 
-  "AVEMUJICA-ANTHEM.description": "[gold]Interprétation Attaque : [/gold] TOUS les joueurs gagnent {StrengthPower:diff()}  de [gold]Force[/gold] [gold]Temporaire[/gold] pendant le prochain tour.\n[gold]Interprétation Compétence : [/gold] TOUS les joueurs gagnent {DexterityPower:diff()} de [gold]Dexterité[/gold] [gold]Temporaire[/gold] pendant le prochain tour.",
-  "AVEMUJICA-ANTHEM.title": "Hymne de Bataille"
+
+
+  "AVEMUJICA-GIBBOUS_MOON_ENVY.description": "[gold]Dreamspin[/gold].\nIf you targeted yourself, [gold]Dreamspin[/gold] again.",
+  "AVEMUJICA-GIBBOUS_MOON_ENVY.title": "Jalousie de la Lune Gibbeuse",
+
+  "AVEMUJICA-DA_CAPO.description": "[gold]Compose[/gold] \"Lose {HpLoss:diff()} HP.\"\nAdd [gold]Replay[/gold] and [gold]Exhaust[/gold] to a card in your [gold]Hand[/gold].",
+  "AVEMUJICA-DA_CAPO.selectionScreenPrompt": "Choose a card to add [gold]Replay[/gold] and [gold]Exhaust[/gold] to.",
+  "AVEMUJICA-DA_CAPO.title": "Da Capo",
+
+  "AVEMUJICA-REQUIEM.description": "Deal {Damage:diff()} damage to ALL enemies.\nDraw {Cards:diff()} {Cards:plural:card|cards}.\nWhenever you [gold]Perform[/gold], reduce this card's cost by 1 until played.",
+  "AVEMUJICA-REQUIEM.title": "Requiem in Black",
+
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "Trigger the [gold]Skills[/gold] of every [gold]Doll[/gold] present.{IfUpgraded:show:\nIf all 4 [gold]Dolls[/gold] are present, they gain {Heal:diff()} HP and trigger their [gold]Skills[/gold] again.}",
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "Knights of Oblivionis",
+
+  "AVEMUJICA-ALLEGRO.description": "Draw {Cards:diff()} cards.\n[gold]Compose[/gold] \"Draw {Compose:diff()} {Compose:plural:card|cards}.\"",
+  "AVEMUJICA-ALLEGRO.title": "Allegro",
+
+  "AVEMUJICA-SYMBOL_AIR.description": "Gain {Energy:energyIcons()}.",
+  "AVEMUJICA-SYMBOL_AIR.title": "Symbol II: Air",
+
+  "AVEMUJICA-INSPIRING_SONGS.description": "Whenever you play a [gold]Song[/gold], gain {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold] this turn.",
+  "AVEMUJICA-INSPIRING_SONGS.title": "Inspiring Songs",
+
+  "AVEMUJICA-PERFECT_COMBO.description": "Whenever you [gold]Perform[/gold], [gold]Enchant[/gold] a random card in your [gold]Hand[/gold] with [gold]Masterful[/gold] {Masterful:diff()}.",
+  "AVEMUJICA-PERFECT_COMBO.title": "Perfect Combo Storm",
+
+  "AVEMUJICA-CANON.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Perform Attack Skill: Compose.[/gold]",
+  "AVEMUJICA-CANON.title": "Canon in Green",
+
+  "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold].\nAdd a [gold]Weave{IfUpgraded:show:+}[/gold] into your [gold]Hand[/gold].",
+  "AVEMUJICA-TWO_MOONS.title": "Two Moons",
+
+  "AVEMUJICA-CONSIGN.description": "Deal {Damage:diff()} damage.\nIf [gold]Fatal[/gold], you may [gold]Enchant[/gold] a card in your [gold]Deck[/gold] with [purple]Vanishing[/purple] at the end of combat.",
+  "AVEMUJICA-CONSIGN.title": "Consign to Oblivion",
+
+  "AVEMUJICA-MAIDENS_CAPRICCIO.description": "Draw {Cards:diff()} cards.\n[gold]Perform Skill:[/gold] [gold]Enchant[/gold] a card with [gold]Masterful[/gold] {Enchant:diff()}.",
+  "AVEMUJICA-MAIDENS_CAPRICCIO.selectionScreenPrompt": "Choose a card to [gold]Enchant[/gold].",
+  "AVEMUJICA-MAIDENS_CAPRICCIO.title": "Maiden's Capriccio",
+
+  "AVEMUJICA-ENCORE.description": "The first [gold]Song[/gold] you play each turn is played twice.",
+  "AVEMUJICA-ENCORE.title": "Encore",
+
+  "AVEMUJICA-SYMBOL_EARTH.description": "Gain {Block:diff()} [gold]Block[/gold].\nDeal {Damage:diff()} damage.",
+  "AVEMUJICA-SYMBOL_EARTH.title": "Symbol IV: Earth",
+
+  "AVEMUJICA-SYMBOL_WATER.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain {DexterityPower:diff()} [gold]Dexterity[/gold].",
+  "AVEMUJICA-SYMBOL_WATER.title": "Symbol III: Water",
+
+  "AVEMUJICA-REGRETS.description": "Deal {Damage:diff()} damage.{IfUpgraded:show:\nDraw {Cards:diff()} {Cards:plural:card|cards}.}\n[gold]Exhaust[/gold] {Cards:diff()} {Cards:plural:card|cards}.",
+  "AVEMUJICA-REGRETS.title": "Cast Off Regrets",
+
+  "AVEMUJICA-PURSUIT_OF_MASTERY.description": "[gold]Enchant[/gold] a card with [gold]Masterful[/gold] {Enchant:diff()}.",
+  "AVEMUJICA-PURSUIT_OF_MASTERY.title": "Pursuit of Mastery",
+  "AVEMUJICA-PURSUIT_OF_MASTERY.selectionScreenPrompt": "Choose a card to [gold]Enchant[/gold].",
+
+  "AVEMUJICA-ANTHEM.description": "Next turn, ALL players deal {AnthemPower:diff()} more damage with attacks and gain {AnthemPower:diff()} more [gold]Block[/gold] from cards.\n[gold]Perform Attack Skill:[/gold] Double the effect.",
+  "AVEMUJICA-ANTHEM.title": "Anthem of Battle",
+
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "Deal {Damage:diff()} damage.\nIf [gold]Amoris[/gold] is present, trigger her [gold]Skill[/gold] {SkillRepeat:diff()} {SkillRepeat:plural:time|times}.",
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "Crescent Moon Echos",
+
+  "AVEMUJICA-BLUE_MOON.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf [gold]Doloris[/gold] is present, trigger her [gold]Skill[/gold] {SkillRepeat:diff()} {SkillRepeat:plural:time|times}.",
+  "AVEMUJICA-BLUE_MOON.title": "Blue Moon's Sorrow",
+
+  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.description": "Gain {Block:diff()} [gold]Block[/gold] X times.\n[gold]Exhaust[/gold] up to X cards.",
+  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.title": "Do Not Fear Forgetting",
+  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.selectionScreenPrompt": "Choose up to {Amount:plural:a card|[blue]{}[/blue] cards} to [gold]Exhaust[/gold].",
+
+  "AVEMUJICA-REPETITION.description": "Deal {Damage:diff()} damage.\n[gold]Perform Attack Skill:[/gold] Hits {HitCount:choose(2):twice|{HitCount:diff()} times}.",
+  "AVEMUJICA-REPETITION.title": "Repetition",
+
+  "AVEMUJICA-ARPEGGIO.description": "Deal {Damage:diff()} damage to ALL enemies {HitCount:choose(2):twice|{HitCount:diff()} times}.",
+  "AVEMUJICA-ARPEGGIO.title": "Arpeggio",
+
+  "AVEMUJICA-GLISSANDO.description": "Deal {Damage:diff()} damage {HitCount:diff()} times.",
+  "AVEMUJICA-GLISSANDO.title": "Glissando",
+
+  "AVEMUJICA-BLACK_BIRTHDAY.description": "Deal {Damage:diff()} damage to ALL enemies.\n[gold]Perform Attack Attack:[/gold] Hits {HitCount:diff()} more times.",
+  "AVEMUJICA-BLACK_BIRTHDAY.title": "Black Birthday",
+
+  "AVEMUJICA-RONDO.description": "Deal {Damage:diff()} damage {HitCount:choose(2):twice|{HitCount:diff()} times}.\n[gold]Perform Attack:[/gold] Gain {Block:diff()} [gold]Block[/gold].",
+  "AVEMUJICA-RONDO.title": "Rondo in Orange",
+
+  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] also applies 1 [gold]Debilitate[/gold] to ALL enemies.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION.title": "Moonlight Execution",
+
+  "AVEMUJICA-COLLECTIVE_DREAM.description": "Add {Cards:diff()} [gold]Weaves[/gold] to ALL allies' [gold]Hands[/gold].",
+  "AVEMUJICA-COLLECTIVE_DREAM.title": "Collective Dream"
 }

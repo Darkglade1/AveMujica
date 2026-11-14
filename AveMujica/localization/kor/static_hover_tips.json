@@ -16,11 +16,16 @@
   "AVEMUJICA-MORTIS_ALLY_SKILL_1.title": "온전한 하나의 반쪽들",
   "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.description": "[gold]방어도[/gold]를 [blue]\\{0\\}[/blue] 얻습니다.",
   "AVEMUJICA-MORTIS_ALLY_SKILL_AUTO.title": "방어",
+  
+  
+  
   "AVEMUJICA-TIMORIS_ALLY.title": "티모리스",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "[gold]스킬:[/gold] 체력이 가장 높은 적에게 [gold]약화[/gold]와 [gold]취약[/gold]을 [blue]\\{0\\}[/blue] 부여합니다.",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "[gold]Skill:[/gold] Apply [blue]\\{0\\}[/blue] [gold]Vulnerable[/gold] to ALL enemies.",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title": "전율하는 현",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "[gold]스킬:[/gold] 이번 턴 동안 모든 적이 공격으로 받는 피해가 [blue]\\{0\\}%[/blue] 증가합니다.",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "[gold]Skill:[/gold] Apply [blue]\\{0\\}[/blue] [gold]Vulnerable[/gold] and [gold]Debilitate[/gold] to ALL enemies.",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title": "달빛 아래의 처형",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description": "체력이 가장 낮은 적에게 [blue]\\{0\\}[/blue] 피해를 줍니다.",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.title": "공격"
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.title": "공격",
+
+  "AVEMUJICA-AWAKEN_PROMPT.description": "Choose a [gold]Doll[/gold]"
 }

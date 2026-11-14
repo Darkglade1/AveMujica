@@ -11,17 +11,9 @@
   "AVEMUJICA-CANTABILE_POWER.smartDescription": "Chaque fois que vous réalisez une [gold]Interprétation[/gold], gagnez [blue]{Amount}[/blue] [gold]Armure[/gold].",
   "AVEMUJICA-CANTABILE_POWER.title": "Cantabile Améthyste",
 
-  "AVEMUJICA-CONSIGN_POWER.description": "À la fin du combat, retirez une carte de votre [gold]Deck[/gold].",
-  "AVEMUJICA-CONSIGN_POWER.smartDescription": "À la fin du combat, retirez [blue]{Amount}[/blue] {Amount:plural:carte|cartes} de votre [gold]Deck[/gold].",
-  "AVEMUJICA-CONSIGN_POWER.title": "Consigner vers l'Oblivion.",
-
   "AVEMUJICA-DREAM_THREAD_POWER.description": "Quand vous possédez [blue]3[/blue] [gold]Soie Onirique[/gold], les consomment pour [gold]Éveiller[/gold] une [gold]Poupée[/gold].",
   "AVEMUJICA-DREAM_THREAD_POWER.smartDescription": "Quand vous possédez [blue]3[/blue] [gold]Soie Onirique[/gold], les consomment pour [gold]Éveiller[/gold] une [gold]Poupée[/gold].",
   "AVEMUJICA-DREAM_THREAD_POWER.title": "Soie Onirique",
-
-  "AVEMUJICA-ENCORE_POWER.description": "Les [gold]Musiques[/gold] gagnent [gold]Écho[/gold] [blue]1[/blue].",
-  "AVEMUJICA-ENCORE_POWER.smartDescription": "Les [gold]Musiques[/gold] ont [gold]Écho[/gold] [blue]{Amount}[/blue].",
-  "AVEMUJICA-ENCORE_POWER.title": "Encore",
 
   "AVEMUJICA-ETHER_POWER.description": "Vos cartes qui ont [gold]Retenue[/gold] s'[gold]Épuisent[/gold] lorsqu'elle sont jouées.\nVos cartes qui s'[gold]Épuisent[/gold] coûtent [blue]0[/blue].",
   "AVEMUJICA-ETHER_POWER.smartDescription": "Vos cartes qui ont [gold]Retenue[/gold] s'[gold]Épuisent[/gold] lorsqu'elle sont jouées.\nVos cartes qui s'[gold]Épuisent[/gold] coûtent [blue]0[/blue].",
@@ -55,10 +47,6 @@
   "AVEMUJICA-HOW_DARE_YOU_POWER.smartDescription": "Chaque fois que vous êtes attaqué, [gold]Doloris[/gold] inflige [blue]{Amount}[/blue] dégâts à l'aggresseur et augmente les dégâts de cet effet de [blue]1[/blue]",
   "AVEMUJICA-HOW_DARE_YOU_POWER.title": "Destins Liés",
 
-  "AVEMUJICA-INSPIRING_SONGS_POWER.description": "Chaque fois qu'une [gold]Musique[/gold] est jouée, gagnez de l'Énergie.",
-  "AVEMUJICA-INSPIRING_SONGS_POWER.smartDescription": "Chaque fois que vous jouez {Cards:diff()} [gold]Musique[/gold], gagnez {Amount:energyIcons()}",
-  "AVEMUJICA-INSPIRING_SONGS_POWER.title": "Musiques Inspirantes",
-
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS_POWER.description": "Au début de votre tour, TOUTES les [gold]Poupées[/gold] gagnent de la [gold]Force[/gold] et de la [gold]Dextérité[/gold].",
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS_POWER.smartDescription": "Au début de votre tour, TOUTES les [gold]Poupées[/gold] gagnent [blue]{Amount}[/blue] [gold]Force[/gold] et [gold]Dextérité[/gold].",
   "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS_POWER.title": "Chevaliers d'Oblivionis",
@@ -70,14 +58,6 @@
   "AVEMUJICA-MELODY_POWER.description": "À la fin de votre tour, si vous avez activé une [gold]Interprétation[/gold] pendant ce tour, gagnez de la [gold]Force[/gold]",
   "AVEMUJICA-MELODY_POWER.smartDescription": "À la fin de votre tour, si vous avez activé une [gold]Interprétation[/gold] pendant ce tour, gagnez [blue]{Amount}[/blue] [gold]Force[/gold]",
   "AVEMUJICA-MELODY_POWER.title": "Mélodie",
-
-  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.description": "Reçoit plus de dégâts des Attaques ce tour.",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.smartDescription": "Reçoit [blue]{Amount}%[/blue] dégâts supplémentaires des Attaques ce tour. ",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.title": "Exécution au Clair de Lune",
-
-  "AVEMUJICA-PERFECT_COMBO_POWER.description": "Vos effets d'[gold]Interprétations[/gold] s'activent une fois supplémentaire pour chaque [gold]Interprétation[/gold] activée ce tour.",
-  "AVEMUJICA-PERFECT_COMBO_POWER.smartDescription": "Vos effets d'[gold]Interprétations[/gold] s'activent une fois supplémentaire pour chaque [gold]Interprétation[/gold] activée ce tour.\n(S'active [blue]{StormCounter:diff()}[/blue] fois de plus actuellement.",
-  "AVEMUJICA-PERFECT_COMBO_POWER.title": "Interprétation Frénétique",
 
   "AVEMUJICA-VIRTUOSO_FORM_POWER.description": "Au début de votre tour, [gold]Enchantez[/gold] TOUTES les cartes de votre [gold]Main[/gold] avec [gold]Magistral[/gold].",
   "AVEMUJICA-VIRTUOSO_FORM_POWER.smartDescription": "Au début de votre tour, [gold]Enchantez[/gold] TOUTES les cartes de votre [gold]Main[/gold] avec [gold]Magistral[/gold] [blue]{Amount}[/blue].",
@@ -94,10 +74,6 @@
   "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.description": "Augmente le nombre d'instances de dégâts des Attaques d'[gold]Amoris[/gold].",
   "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.smartDescription": "Augmente le nombre d'instances de dégâts des Attaques d'[gold]Amoris[/gold] de [blue]{Amount}[/blue].",
   "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.title": "Aussi Fort que le Blé",
-
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.description": "La [gold]Compétence[/gold] de [gold]Timoris[/gold] devient \"TOUS les ennemis subissent plus de dégâts des Attaques ce tour.\"",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.smartDescription": "La [gold]Compétence[/gold] de [gold]Timoris[/gold] devient \"TOUS les ennemis subissent [blue]{Amount}%[/blue] de dégâts supplémentaires des Attaques ce tour.\"",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.title": "Exécution au Clair de Lune",
 
   "AVEMUJICA-HYMN_POWER.description": "[gold]Doloris[/gold] donne de l'[gold]Armure[/gold] à TOUS les joueurs ce tour.",
   "AVEMUJICA-HYMN_POWER.smartDescription": "[gold]Doloris[/gold] donne de l'[gold]Armure[/gold] à TOUS les joueurs {Amount:plural:ce tour|pendant [blue]{Amount}[/blue] tours}.",
@@ -121,5 +97,40 @@
 
   "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.description": "Au prochain tour, gagnez de la [gold]Dexterité[/gold] [gold]Temporaire[/gold] .",
   "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.smartDescription": "Au prochain tour, gagnez [blue]{Amount}[/blue] de [gold]Dexterité[/gold] [gold]Temporaire[/gold] .",
-  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.title": "Dextérité Temporaire au prochain tour"
+  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.title": "Dextérité Temporaire au prochain tour",
+
+
+
+
+  "AVEMUJICA-PERFECT_COMBO_POWER.description": "Whenever you [gold]Perform[/gold], [gold]Enchant[/gold] a random card in your [gold]Hand[/gold] with [gold]Masterful[/gold].",
+  "AVEMUJICA-PERFECT_COMBO_POWER.smartDescription": "Whenever you [gold]Perform[/gold], [gold]Enchant[/gold] a random card in your [gold]Hand[/gold] with [gold]Masterful[/gold] [blue]{Amount}[/blue].",
+  "AVEMUJICA-PERFECT_COMBO_POWER.title": "Perfect Combo Storm",
+
+  "AVEMUJICA-INSPIRING_SONGS_POWER.description": "Whenever you play a [gold]Song[/gold], gain [gold]Strength[/gold] and [gold]Dexterity[/gold] this turn.",
+  "AVEMUJICA-INSPIRING_SONGS_POWER.smartDescription": "Whenever you play a [gold]Song[/gold], gain [blue]{Amount}[/blue] [gold]Strength[/gold] and [gold]Dexterity[/gold] this turn.",
+  "AVEMUJICA-INSPIRING_SONGS_POWER.title": "Inspiring Songs",
+
+  "AVEMUJICA-CONSIGN_POWER.description": "At the end of combat, you may [gold]Enchant[/gold] a card in your [gold]Deck[/gold] with [purple]Vanishing[/purple].",
+  "AVEMUJICA-CONSIGN_POWER.smartDescription": "At the end of combat, you may [gold]Enchant[/gold] a card in your [gold]Deck[/gold] with [purple]Vanishing[/purple].",
+  "AVEMUJICA-CONSIGN_POWER.title": "Consign to Oblivion",
+
+  "AVEMUJICA-ENCORE_POWER.description": "The first [gold]Song[/gold] you play each turn is played twice.",
+  "AVEMUJICA-ENCORE_POWER.smartDescription": "The first{Amount:plural:| [blue]{Amount}[/blue]} [gold]{Amount:plural:Song|Songs}[/gold] you play each turn {Amount:plural:is|are} played twice.",
+  "AVEMUJICA-ENCORE_POWER.title": "Encore",
+
+  "AVEMUJICA-ANTHEM_POWER.description": "ALL players deal more damage with attacks and gain more [gold]Block[/gold] from cards this turn.",
+  "AVEMUJICA-ANTHEM_POWER.smartDescription": "ALL players deal [blue]{Amount}[/blue] more damage with attacks and gain [blue]{Amount}[/blue] more [gold]Block[/gold] from cards this turn.",
+  "AVEMUJICA-ANTHEM_POWER.title": "Anthem of Battle",
+
+  "AVEMUJICA-NEXT_TURN_ANTHEM_POWER.description": "Next turn, ALL players deal more damage with attacks and gain more [gold]Block[/gold] from cards.",
+  "AVEMUJICA-NEXT_TURN_ANTHEM_POWER.smartDescription": "Next turn, ALL players deal [blue]{Amount}[/blue] more damage with attacks and gain [blue]{Amount}[/blue] more [gold]Block[/gold] from cards.",
+  "AVEMUJICA-NEXT_TURN_ANTHEM_POWER.title": "Next Turn Anthem of Battle",
+
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] also applies 1 [gold]Debilitate[/gold] to ALL enemies.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.smartDescription": "[gold]Timoris's[/gold] [gold]Skill[/gold] also applies 1 [gold]Debilitate[/gold] to ALL enemies.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.title": "Moonlight Execution",
+
+  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.description": "Receives double damage from Attacks this turn.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.smartDescription": "Receives double damage from Attacks for [blue]{Amount}[/blue] {Amount:plural:turn|turns}.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.title": "Moonlight Execution"
 }

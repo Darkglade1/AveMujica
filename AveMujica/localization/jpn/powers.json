@@ -7,17 +7,9 @@
   "AVEMUJICA-HOW_DARE_YOU_POWER.smartDescription": "アタックを受けるたび、[gold]ドロリス[/gold]が攻撃した敵に[blue]{Amount}[/blue]ダメージを与え、この効果のダメージが[blue]1[/blue]増加する。",
   "AVEMUJICA-HOW_DARE_YOU_POWER.title": "許さない！",
 
-  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.description": "このターン、アタックから受けるダメージが増加する。",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.smartDescription": "このターン、アタックから受けるダメージが[blue]{Amount}%[/blue]増加する。",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.title": "月光の処刑",
-
   "AVEMUJICA-FUGUE_POWER.description": "次にプレイする[gold]廃棄[/gold]か[gold]保留[/gold]を持つカードのコストは[blue]0[/blue]になる。",
   "AVEMUJICA-FUGUE_POWER.smartDescription": "次にプレイする[gold]廃棄[/gold]か[gold]保留[/gold]を持つカードを[blue]{Amount}[/blue]枚まで、コスト[blue]0[/blue]でプレイできる。",
   "AVEMUJICA-FUGUE_POWER.title": "灰色のフーガ",
-
-  "AVEMUJICA-INSPIRING_SONGS_POWER.description": "[gold]楽曲[/gold]を3枚プレイするたび、エナジーを得る。",
-  "AVEMUJICA-INSPIRING_SONGS_POWER.smartDescription": "[gold]楽曲[/gold]を{Cards:diff()}枚プレイするたび、{Amount:energyIcons()}を得る。",
-  "AVEMUJICA-INSPIRING_SONGS_POWER.title": "触発の旋律",
 
   "AVEMUJICA-CANTABILE_POWER.description": "[gold]パフォーム[/gold]するたび、[gold]ブロック[/gold]を得る。",
   "AVEMUJICA-CANTABILE_POWER.smartDescription": "[gold]パフォーム[/gold]するたび、[blue]{Amount}[/blue][gold]ブロック[/gold]を得る。",
@@ -30,10 +22,6 @@
   "AVEMUJICA-MELODY_POWER.description": "ターン終了時、このターンに[gold]パフォーム[/gold]していた場合、[gold]筋力[/gold]を得る。",
   "AVEMUJICA-MELODY_POWER.smartDescription": "ターン終了時、このターンに[gold]パフォーム[/gold]していた場合、[gold]筋力[/gold][blue]{Amount}[/blue]を得る。",
   "AVEMUJICA-MELODY_POWER.title": "メロディ",
-
-  "AVEMUJICA-ENCORE_POWER.description": "[gold]楽曲[/gold]は[gold]リプレイ[/gold][blue]1[/blue]を持つ。",
-  "AVEMUJICA-ENCORE_POWER.smartDescription": "[gold]楽曲[/gold]は[gold]リプレイ[/gold][blue]{Amount}[/blue]を持つ。",
-  "AVEMUJICA-ENCORE_POWER.title": "アンコール",
 
   "AVEMUJICA-BLUE_MOON_POWER.description": "ターン開始時、[gold]夢の糸[/gold]を得る。",
   "AVEMUJICA-BLUE_MOON_POWER.smartDescription": "ターン開始時、[gold]夢の糸[/gold][blue]{Amount}[/blue]を得る。",
@@ -51,17 +39,9 @@
   "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.smartDescription": "[gold]パフォーム[/gold]カードは[gold]保留[/gold]され、\n[gold]パフォーム[/gold]効果が常に発動する。",
   "AVEMUJICA-FLAWLESS_PERFORMANCE_POWER.title": "完璧な演奏",
 
-  "AVEMUJICA-PERFECT_COMBO_POWER.description": "このターンに[gold]パフォーム[/gold]効果が発動した回数1回につき、[gold]パフォーム[/gold]効果が追加で1回発動する。",
-  "AVEMUJICA-PERFECT_COMBO_POWER.smartDescription": "このターンに[gold]パフォーム[/gold]効果が発動した回数1回につき、[gold]パフォーム[/gold]効果が追加で1回発動する。\n(現在追加で[blue]{StormCounter:diff()}[/blue]回発動)",
-  "AVEMUJICA-PERFECT_COMBO_POWER.title": "パーフェクトコンボストーム",
-
   "AVEMUJICA-ETHER_POWER.description": "[gold]保留[/gold]を持つカードはプレイ時に[gold]廃棄[/gold]される。\nプレイ時に[gold]廃棄[/gold]されるカードのコストは[blue]0[/blue]になる。",
   "AVEMUJICA-ETHER_POWER.smartDescription": "[gold]保留[/gold]を持つカードはプレイ時に[gold]廃棄[/gold]される。\nプレイ時に[gold]廃棄[/gold]されるカードのコストは[blue]0[/blue]になる。",
   "AVEMUJICA-ETHER_POWER.title": "Ether",
-
-  "AVEMUJICA-CONSIGN_POWER.description": "戦闘終了時、[gold]デッキ[/gold]からカードを1枚削除する。",
-  "AVEMUJICA-CONSIGN_POWER.smartDescription": "戦闘終了時、[gold]デッキ[/gold]からカードを[blue]{Amount}[/blue]枚削除する。",
-  "AVEMUJICA-CONSIGN_POWER.title": "忘却に捧ぐ",
 
   "AVEMUJICA-VIRTUOSO_FORM_POWER.description": "ターン開始時、[gold]手札[/gold]のすべてのカードに[gold]熟練[/gold]を[gold]エンチャント[/gold]する。",
   "AVEMUJICA-VIRTUOSO_FORM_POWER.smartDescription": "ターン開始時、[gold]手札[/gold]のすべてのカードに[gold]熟練[/gold][blue]{Amount}[/blue]を[gold]エンチャント[/gold]する。",
@@ -92,13 +72,9 @@
   "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.description": "[gold]アモーリス[/gold]はアタックでより多くヒットする。",
   "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.smartDescription": "[gold]アモーリス[/gold]はアタックで[blue]{Amount}[/blue]回多くヒットする。",
   "AVEMUJICA-AS_STRONG_AS_WHEAT_POWER.title": "麦のように強く",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.description": "[gold]ティモリス[/gold]の[gold]スキル[/gold]は「このターン、すべての敵はアタックによるダメージを多く受ける。」になる。",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.smartDescription": "[gold]ティモリス[/gold]の[gold]スキル[/gold]は「このターン、すべての敵はアタックによるダメージを[blue]{Amount}%[/blue]多く受ける。」になる。",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.title": "月光の処刑",
   "AVEMUJICA-HYMN_POWER.description": "このターン、[gold]ドロリス[/gold]はすべてのプレイヤーに[gold]ブロック[/gold]を与える。",
   "AVEMUJICA-HYMN_POWER.smartDescription": "{Amount:plural:このターン|[blue]{Amount}[/blue]ターンの間}、[gold]ドロリス[/gold]はすべてのプレイヤーに[gold]ブロック[/gold]を与える。",
   "AVEMUJICA-HYMN_POWER.title": "勇気の賛美歌",
-
 
   "AVEMUJICA-OBLIVION.description": "カードが[gold]廃棄[/gold]されるたび、最もHPが低い敵にダメージを与える。",
   "AVEMUJICA-OBLIVION.smartDescription": "カードが[gold]廃棄[/gold]されるたび、最もHPが低い敵に[blue]{Amount}[/blue]ダメージを与える。",
@@ -118,5 +94,39 @@
 
   "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.description": "次のターン、[gold]一時的[/gold]な[gold]敏捷性[/gold]を得る。",
   "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.smartDescription": "次のターン、[gold]一時的[/gold]な[gold]敏捷性[/gold][blue]{Amount}[/blue]を得る。",
-  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.title": "次ターンの一時的敏捷性"
+  "AVEMUJICA-NEXT_TURN_TEMP_DEX_POWER.title": "次ターンの一時的敏捷性",
+
+
+
+  "AVEMUJICA-PERFECT_COMBO_POWER.description": "Whenever you [gold]Perform[/gold], [gold]Enchant[/gold] a random card in your [gold]Hand[/gold] with [gold]Masterful[/gold].",
+  "AVEMUJICA-PERFECT_COMBO_POWER.smartDescription": "Whenever you [gold]Perform[/gold], [gold]Enchant[/gold] a random card in your [gold]Hand[/gold] with [gold]Masterful[/gold] [blue]{Amount}[/blue].",
+  "AVEMUJICA-PERFECT_COMBO_POWER.title": "Perfect Combo Storm",
+
+  "AVEMUJICA-INSPIRING_SONGS_POWER.description": "Whenever you play a [gold]Song[/gold], gain [gold]Strength[/gold] and [gold]Dexterity[/gold] this turn.",
+  "AVEMUJICA-INSPIRING_SONGS_POWER.smartDescription": "Whenever you play a [gold]Song[/gold], gain [blue]{Amount}[/blue] [gold]Strength[/gold] and [gold]Dexterity[/gold] this turn.",
+  "AVEMUJICA-INSPIRING_SONGS_POWER.title": "Inspiring Songs",
+
+  "AVEMUJICA-CONSIGN_POWER.description": "At the end of combat, you may [gold]Enchant[/gold] a card in your [gold]Deck[/gold] with [purple]Vanishing[/purple].",
+  "AVEMUJICA-CONSIGN_POWER.smartDescription": "At the end of combat, you may [gold]Enchant[/gold] a card in your [gold]Deck[/gold] with [purple]Vanishing[/purple].",
+  "AVEMUJICA-CONSIGN_POWER.title": "Consign to Oblivion",
+
+  "AVEMUJICA-ENCORE_POWER.description": "The first [gold]Song[/gold] you play each turn is played twice.",
+  "AVEMUJICA-ENCORE_POWER.smartDescription": "The first{Amount:plural:| [blue]{Amount}[/blue]} [gold]{Amount:plural:Song|Songs}[/gold] you play each turn {Amount:plural:is|are} played twice.",
+  "AVEMUJICA-ENCORE_POWER.title": "Encore",
+
+  "AVEMUJICA-ANTHEM_POWER.description": "ALL players deal more damage with attacks and gain more [gold]Block[/gold] from cards this turn.",
+  "AVEMUJICA-ANTHEM_POWER.smartDescription": "ALL players deal [blue]{Amount}[/blue] more damage with attacks and gain [blue]{Amount}[/blue] more [gold]Block[/gold] from cards this turn.",
+  "AVEMUJICA-ANTHEM_POWER.title": "Anthem of Battle",
+
+  "AVEMUJICA-NEXT_TURN_ANTHEM_POWER.description": "Next turn, ALL players deal more damage with attacks and gain more [gold]Block[/gold] from cards.",
+  "AVEMUJICA-NEXT_TURN_ANTHEM_POWER.smartDescription": "Next turn, ALL players deal [blue]{Amount}[/blue] more damage with attacks and gain [blue]{Amount}[/blue] more [gold]Block[/gold] from cards.",
+  "AVEMUJICA-NEXT_TURN_ANTHEM_POWER.title": "Next Turn Anthem of Battle",
+
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] also applies 1 [gold]Debilitate[/gold] to ALL enemies.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.smartDescription": "[gold]Timoris's[/gold] [gold]Skill[/gold] also applies 1 [gold]Debilitate[/gold] to ALL enemies.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.title": "Moonlight Execution",
+
+  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.description": "Receives double damage from Attacks this turn.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.smartDescription": "Receives double damage from Attacks for [blue]{Amount}[/blue] {Amount:plural:turn|turns}.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.title": "Moonlight Execution"
 }

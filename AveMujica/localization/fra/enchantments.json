@@ -1,5 +1,8 @@
 {
   "AVEMUJICA-MASTERFUL.description": "Augmente les dégâts et l'[gold]Armure[/gold] par [blue]{Amount}[/blue]",
   "AVEMUJICA-MASTERFUL.extraCardText": "Magistral {Amount}.",
-  "AVEMUJICA-MASTERFUL.title": "Magistral"
+  "AVEMUJICA-MASTERFUL.title": "Magistral",
+
+  "AVEMUJICA-VANISHING.title": "Vanishing",
+  "AVEMUJICA-VANISHING.description": "This card costs [blue]{Amount}[/blue] less and [gold]Exhausts[/gold]. Can only [gold]Enchant[/gold] [gold]non-Exhausting[/gold], [gold]non-Power[/gold] cards."
 }

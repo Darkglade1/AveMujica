@@ -20,7 +20,8 @@
   "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.title": "攻击",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description": "对生命值最低的敌人造成[blue]\\{0\\}[/blue]点伤害。",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title": "颤抖的琴弦",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "技能：对生命值最高的敌人施加[blue]\\{0\\}[/blue]层[gold]虚弱[/gold]和[gold]易伤[/gold]。",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "[gold]技能：[/gold]对所有敌人施加[blue]\\{0\\}[/blue]层[gold]易伤[/gold]。",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title": "月光处刑",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "技能：所有敌人本回合受到攻击时承受额外[blue]\\{0\\}%[/blue]的伤害。"
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "[gold]技能：[/gold]对所有敌人施加[blue]\\{0\\}[/blue]层[gold]易伤[/gold]和[gold]摧残[/gold]。",
+  "AVEMUJICA-AWAKEN_PROMPT.description": "选择一名[gold]娃娃[/gold]"
 }

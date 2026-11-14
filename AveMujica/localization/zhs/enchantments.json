@@ -1,5 +1,7 @@
 {
   "AVEMUJICA-MASTERFUL.title": "精通",
   "AVEMUJICA-MASTERFUL.description": "提升[blue]{Amount}[/blue]点伤害和[gold]格挡[/gold]。",
-  "AVEMUJICA-MASTERFUL.extraCardText": "精通 {Amount}."
+  "AVEMUJICA-MASTERFUL.extraCardText": "精通 {Amount}.",
+  "AVEMUJICA-VANISHING.title": "消失",
+  "AVEMUJICA-VANISHING.description": "此牌费用降低[blue]{Amount}[/blue]，并[gold]消耗[/gold]。只能为[gold]非消耗[/gold]、[gold]非能力[/gold]牌[gold]附魔[/gold]。"
 }

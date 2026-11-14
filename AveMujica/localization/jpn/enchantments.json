@@ -1,5 +1,8 @@
 ﻿{
   "AVEMUJICA-MASTERFUL.title": "熟練",
   "AVEMUJICA-MASTERFUL.description": "ダメージと[gold]ブロック[/gold]が[blue]{Amount}[/blue]上昇する。",
-  "AVEMUJICA-MASTERFUL.extraCardText": "熟練 {Amount}。"
+  "AVEMUJICA-MASTERFUL.extraCardText": "熟練 {Amount}。",
+
+  "AVEMUJICA-VANISHING.title": "Vanishing",
+  "AVEMUJICA-VANISHING.description": "This card costs [blue]{Amount}[/blue] less and [gold]Exhausts[/gold]. Can only [gold]Enchant[/gold] [gold]non-Exhausting[/gold], [gold]non-Power[/gold] cards."
 }

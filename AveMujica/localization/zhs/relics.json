@@ -22,5 +22,9 @@
   "AVEMUJICA-PLAYFUL_CORETTON.title": "顽皮科雷顿",
   "AVEMUJICA-MASQUERADE_MASK.description": "每回合首次[gold]演奏[/gold]时，下回合抽一张牌。",
   "AVEMUJICA-MASQUERADE_MASK.flavor": "假面舞会拉开帷幕，娃娃们悄然苏醒。",
-  "AVEMUJICA-MASQUERADE_MASK.title": "假面舞会面具"
+  "AVEMUJICA-MASQUERADE_MASK.title": "假面舞会面具",
+  "AVEMUJICA-OLD_BOTTLE.description": "每场战斗首次[gold]消耗[/gold]一张牌时，获得{Energy:energyIcons()}。",
+  "AVEMUJICA-OLD_BOTTLE.flavor": "有时，她会想，如果那天她做了不同的决定，结果会是怎样。",
+  "AVEMUJICA-OLD_BOTTLE.title": "旧瓶子",
+  "SEA_GLASS.AVEMUJICA-AVE_MUJICA.title": "淡蓝色玻璃"
 }

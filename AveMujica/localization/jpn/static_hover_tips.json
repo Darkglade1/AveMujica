@@ -25,7 +25,9 @@
   "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.title": "攻撃",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_AUTO.description": "最もHPの低い敵に[blue]\\{0\\}[/blue]ダメージを与える。",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_1.title": "震撼の弦",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "スキル: 最もHPの高い敵に[gold]脱力[/gold][blue]\\{0\\}[/blue]と[gold]弱体[/gold][blue]\\{0\\}[/blue]を付与する。",
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_1.description": "[gold]Skill:[/gold] Apply [blue]\\{0\\}[/blue] [gold]Vulnerable[/gold] to ALL enemies.",
   "AVEMUJICA-TIMORIS_ALLY_SKILL_2.title": "月光の処刑",
-  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "スキル: このターン、すべての敵がアタックから受けるダメージが[blue]\\{0\\}%[/blue]増加する。"
+  "AVEMUJICA-TIMORIS_ALLY_SKILL_2.description": "[gold]Skill:[/gold] Apply [blue]\\{0\\}[/blue] [gold]Vulnerable[/gold] and [gold]Debilitate[/gold] to ALL enemies.",
+
+  "AVEMUJICA-AWAKEN_PROMPT.description": "Choose a [gold]Doll[/gold]"
 }
