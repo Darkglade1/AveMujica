@@ -1,5 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Cards.Token;
-using AveMujica.AveMujicaCode.Enchantments;
+﻿using AveMujica.AveMujicaCode.Enchantments;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
@@ -27,7 +26,7 @@ public class Concerto() : AveMujicaCard(1,
         await CommonActions.CardAttack(this, play).Execute(choiceContext);
         var buffAmt = PileType.Hand.GetPile(Owner).Cards.Count;
         CardSelectorPrefs prefs = new CardSelectorPrefs(SelectionScreenPrompt, 1);
-        CardModel? selection = (await CardSelectCmd.FromHand(choiceContext, Owner, prefs, (Func<CardModel, bool>) (c => c.Type == CardType.Attack || c.GainsBlock || c is Song), this)).FirstOrDefault();
+        CardModel? selection = (await CardSelectCmd.FromHand(choiceContext, Owner, prefs, (Func<CardModel, bool>) (c => c.Type == CardType.Attack || c.GainsBlock), this)).FirstOrDefault();
         if (selection != null)
         {
             Masterful.TryEnchantCardWithMasterful(selection, buffAmt);

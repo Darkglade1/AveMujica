@@ -1,5 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Cards.Token;
-using AveMujica.AveMujicaCode.Enchantments;
+﻿using AveMujica.AveMujicaCode.Enchantments;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -25,7 +24,7 @@ public class PursuitOfMastery() : AveMujicaCard(1,
         CardPlay play)
     {
         CardSelectorPrefs prefs = new CardSelectorPrefs(SelectionScreenPrompt, 1);
-        CardModel? selection = (await CardSelectCmd.FromHand(choiceContext, Owner, prefs, (Func<CardModel, bool>) (c => c.Type == CardType.Attack || c.GainsBlock || c is Song), this)).FirstOrDefault();
+        CardModel? selection = (await CardSelectCmd.FromHand(choiceContext, Owner, prefs, (Func<CardModel, bool>) (c => c.Type == CardType.Attack || c.GainsBlock), this)).FirstOrDefault();
         if (selection != null)
         {
             Masterful.TryEnchantCardWithMasterful(selection, DynamicVars["Enchant"].IntValue);

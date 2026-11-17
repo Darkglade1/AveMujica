@@ -1,5 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Cards.Token;
-using AveMujica.AveMujicaCode.Enchantments;
+﻿using AveMujica.AveMujicaCode.Enchantments;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
@@ -45,7 +44,7 @@ public class MaidensCapriccio() : AbstractPerformCard(1,
     protected override async Task DoPerformEffect(PlayerChoiceContext choiceContext, CardPlay play, CardType[] cardTypes, int numTriggers)
     {
         CardSelectorPrefs prefs = new CardSelectorPrefs(SelectionScreenPrompt, 1);
-        CardModel? selection = (await CardSelectCmd.FromHand(choiceContext, Owner, prefs, (Func<CardModel, bool>) (c => c.Type == CardType.Attack || c.GainsBlock || c is Song), this)).FirstOrDefault();
+        CardModel? selection = (await CardSelectCmd.FromHand(choiceContext, Owner, prefs, (Func<CardModel, bool>) (c => c.Type == CardType.Attack || c.GainsBlock), this)).FirstOrDefault();
         if (selection != null)
         {
             Masterful.TryEnchantCardWithMasterful(selection, DynamicVars["Enchant"].IntValue * numTriggers);

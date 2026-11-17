@@ -1,7 +1,10 @@
-﻿using BaseLib.Utils;
+﻿using AveMujica.AveMujicaCode.Cards.CardMods;
+using BaseLib.Abstracts;
+using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
 
 namespace AveMujica.AveMujicaCode.Cards.Token;
@@ -15,6 +18,23 @@ public class Song() : AveMujicaCard(0,
     public bool IsTargeted = false;
     public override CardType Type => IsAttack ? CardType.Attack : CardType.Skill;
     public override TargetType TargetType => IsTargeted ? TargetType.AnyEnemy : TargetType.Self;
+
+    public override bool GainsBlock
+    {
+        get
+        {
+            var modifiers = CardModifier.Modifiers(this);
+            foreach (var modifier in modifiers)
+            {
+                if (modifier is BlockMod)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+    }
+
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Retain, CardKeyword.Exhaust];
 
     protected override async Task OnPlay(

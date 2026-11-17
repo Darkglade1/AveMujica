@@ -1,5 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Cards.Token;
-using AveMujica.AveMujicaCode.Enchantments;
+﻿using AveMujica.AveMujicaCode.Enchantments;
 using AveMujica.AveMujicaCode.Hooks;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Powers;
@@ -24,7 +23,7 @@ public class PerfectComboPower : AveMujicaPower, IAfterPerform
             List<CardModel> possibleTargets = new List<CardModel>();
             foreach (var card in PileType.Hand.GetPile(play.Player).Cards)
             {
-                if (card.Type == CardType.Attack || card.GainsBlock || card is Song)
+                if (card.Type == CardType.Attack || card.GainsBlock)
                 {
                     possibleTargets.Add(card);
                 }

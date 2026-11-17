@@ -1,5 +1,4 @@
 ﻿using AveMujica.AveMujicaCode.Cards.CardMods;
-using AveMujica.AveMujicaCode.Cards.Token;
 using BaseLib.Abstracts;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -16,7 +15,7 @@ public class Masterful : AveMujicaEnchantment
     
     public override bool CanEnchant(CardModel card)
     {
-        return base.CanEnchant(card) && (card.Type == CardType.Attack || card.GainsBlock || card is Song);
+        return base.CanEnchant(card) && (card.Type == CardType.Attack || card.GainsBlock);
     }
 
     public override Decimal EnchantDamageAdditive(Decimal originalDamage, ValueProp props)

@@ -1,5 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Cards.Token;
-using AveMujica.AveMujicaCode.Enchantments;
+﻿using AveMujica.AveMujicaCode.Enchantments;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Powers;
@@ -24,7 +23,7 @@ public class VirtuosoFormPower : AveMujicaPower
         Flash();
         foreach (var card in PileType.Hand.GetPile(player).Cards)
         {
-            if (card.Type == CardType.Attack || card.GainsBlock || card is Song)
+            if (card.Type == CardType.Attack || card.GainsBlock)
             {
                 Masterful.TryEnchantCardWithMasterful(card, Amount);
             }
