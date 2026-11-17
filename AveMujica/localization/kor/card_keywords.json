@@ -5,11 +5,10 @@
   "AVEMUJICA-DOLL.title": "인형",
   "AVEMUJICA-PERFORM.description": "이번 턴 동안 지정된 카드 유형들을 사용한 적이 있다면 [gold]연주[/gold] 효과가 발동합니다.",
   "AVEMUJICA-PERFORM.title": "연주",
-
-  "AVEMUJICA-DREAMSPIN.description": "[gold]Dreamspin[/gold] targets yourself or a [gold]Doll[/gold].\nTarget yourself to [gold]Awaken[/gold] a [gold]Doll[/gold]. If the [gold]Doll[/gold] is already present, they gain HP instead.\nTarget a [gold]Doll[/gold] to activate their [gold]Skill[/gold]. [gold]Skills[/gold] cost [blue]1[/blue] [gold]Doll[/gold] HP to activate.",
+  "AVEMUJICA-DREAMSPIN.description": "[gold]꿈 자아내기[/gold]는 자신 또는 [gold]인형[/gold]을 대상으로 지정합니다.\n자신을 대상으로 지정하여 [gold]인형[/gold]을 [gold]각성[/gold]시킵니다. 이미 [gold]인형[/gold]이 존재한다면, 대신 체력을 얻습니다.\n[gold]인형[/gold]을 대상으로 지정하여 [gold]스킬[/gold]을 발동합니다. [gold]스킬[/gold]을 발동하는 데는 [gold]인형[/gold] 체력이 [blue]1[/blue] 소모됩니다.",
   "AVEMUJICA-DREAMSPIN.title": "꿈 자아내기",
-  "AVEMUJICA-DOLLSKILL.description": "[gold]Skills[/gold] cost [blue]1[/blue] [gold]Doll[/gold] HP to activate.",
-  "AVEMUJICA-DOLLSKILL.title": "Doll Skills",
-  "AVEMUJICA-AWAKEN.description": "Summons a [gold]Doll[/gold]. [gold]Dolls[/gold] use their passive ability at the end of your turn.",
+  "AVEMUJICA-DOLLSKILL.description": "[gold]인형의 스킬[/gold]을 발동하는 데는 체력이 [blue]1[/blue] 소모됩니다.",
+  "AVEMUJICA-DOLLSKILL.title": "인형 스킬",
+  "AVEMUJICA-AWAKEN.description": "[gold]인형[/gold]을 소환합니다. [gold]인형[/gold]은 턴이 끝날 때마다 패시브 능력을 사용합니다.",
   "AVEMUJICA-AWAKEN.title": "각성"
 }

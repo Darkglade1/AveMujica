@@ -72,37 +72,35 @@
   "AVEMUJICA-VIRTUOSO_FORM_POWER.smartDescription": "내 턴이 시작될 때, [gold]손[/gold]에 있는 모든 카드에 [gold]숙련[/gold] [blue]{Amount}[/blue]을 부여합니다.",
   "AVEMUJICA-VIRTUOSO_FORM_POWER.title": "거장의 형상",
 
+  "AVEMUJICA-PERFECT_COMBO_POWER.description": "[gold]연주[/gold]할 때마다, [gold]손[/gold]에 있는 무작위 카드 1장에 [gold]숙련[/gold]을 [blue]1[/blue] [gold]부여[/gold]합니다.",
+  "AVEMUJICA-PERFECT_COMBO_POWER.smartDescription": "[gold]연주[/gold]할 때마다, [gold]손[/gold]에 있는 무작위 카드 1장에 [gold]숙련[/gold]을 [blue]{Amount}[/blue] [gold]부여[/gold]합니다.",
+  "AVEMUJICA-PERFECT_COMBO_POWER.title": "완벽한 연계의 폭풍",
 
+  "AVEMUJICA-INSPIRING_SONGS_POWER.description": "[gold]곡[/gold] 카드를 연주할 때마다, 이번 턴 동안 [gold]힘[/gold]과 [gold]민첩[/gold]을 얻습니다.",
+  "AVEMUJICA-INSPIRING_SONGS_POWER.smartDescription": "[gold]곡[/gold] 카드를 연주할 때마다, 이번 턴 동안 [gold]힘[/gold]과 [gold]민첩[/gold]을 [blue]{Amount}[/blue] 얻습니다.",
+  "AVEMUJICA-INSPIRING_SONGS_POWER.title": "영감을 주는 노래",
 
-  "AVEMUJICA-PERFECT_COMBO_POWER.description": "Whenever you [gold]Perform[/gold], [gold]Enchant[/gold] a random card in your [gold]Hand[/gold] with [gold]Masterful[/gold].",
-  "AVEMUJICA-PERFECT_COMBO_POWER.smartDescription": "Whenever you [gold]Perform[/gold], [gold]Enchant[/gold] a random card in your [gold]Hand[/gold] with [gold]Masterful[/gold] [blue]{Amount}[/blue].",
-  "AVEMUJICA-PERFECT_COMBO_POWER.title": "Perfect Combo Storm",
+  "AVEMUJICA-CONSIGN_POWER.description": "전투 종료 시, 자신의 [gold]덱[/gold]에 있는 카드 1장에 [purple]소멸[/purple]을 [gold]부여[/gold]할 수 있습니다.",
+  "AVEMUJICA-CONSIGN_POWER.smartDescription": "전투 종료 시, 자신의 [gold]덱[/gold]에 있는 카드 1장에 [purple]소멸[/purple]을 [gold]부여[/gold]할 수 있습니다.",
+  "AVEMUJICA-CONSIGN_POWER.title": "망각에 부치다",
 
-  "AVEMUJICA-INSPIRING_SONGS_POWER.description": "Whenever you play a [gold]Song[/gold], gain [gold]Strength[/gold] and [gold]Dexterity[/gold] this turn.",
-  "AVEMUJICA-INSPIRING_SONGS_POWER.smartDescription": "Whenever you play a [gold]Song[/gold], gain [blue]{Amount}[/blue] [gold]Strength[/gold] and [gold]Dexterity[/gold] this turn.",
-  "AVEMUJICA-INSPIRING_SONGS_POWER.title": "Inspiring Songs",
-
-  "AVEMUJICA-CONSIGN_POWER.description": "At the end of combat, you may [gold]Enchant[/gold] a card in your [gold]Deck[/gold] with [purple]Vanishing[/purple].",
-  "AVEMUJICA-CONSIGN_POWER.smartDescription": "At the end of combat, you may [gold]Enchant[/gold] a card in your [gold]Deck[/gold] with [purple]Vanishing[/purple].",
-  "AVEMUJICA-CONSIGN_POWER.title": "Consign to Oblivion",
-
-  "AVEMUJICA-ENCORE_POWER.description": "The first [gold]Song[/gold] you play each turn is played twice.",
-  "AVEMUJICA-ENCORE_POWER.smartDescription": "The first{Amount:plural:| [blue]{Amount}[/blue]} [gold]{Amount:plural:Song|Songs}[/gold] you play each turn {Amount:plural:is|are} played twice.",
+  "AVEMUJICA-ENCORE_POWER.description": "매 턴 처음으로 사용하는 [gold]곡[/gold] 카드를 두 번 연주합니다.",
+  "AVEMUJICA-ENCORE_POWER.smartDescription": "매 턴 처음으로 사용하는 [blue]{Amount}[/blue]장의 [gold]곡[/gold] 카드를 두 번 연주합니다.",
   "AVEMUJICA-ENCORE_POWER.title": "Encore",
 
-  "AVEMUJICA-ANTHEM_POWER.description": "ALL players deal more damage with attacks and gain more [gold]Block[/gold] from cards this turn.",
-  "AVEMUJICA-ANTHEM_POWER.smartDescription": "ALL players deal [blue]{Amount}[/blue] more damage with attacks and gain [blue]{Amount}[/blue] more [gold]Block[/gold] from cards this turn.",
-  "AVEMUJICA-ANTHEM_POWER.title": "Anthem of Battle",
+  "AVEMUJICA-ANTHEM_POWER.description": "이번 턴에 모든 플레이어가 공격으로 더 많은 피해를 주고 카드로부터 더 많은 [gold]방어도[/gold]를 얻습니다.",
+  "AVEMUJICA-ANTHEM_POWER.smartDescription": "이번 턴에 모든 플레이어가 공격으로 [blue]{Amount}[/blue]의 피해를 더 주고 카드로부터 [gold]방어도[/gold]를 [blue]{Amount}[/blue] 더 얻습니다.",
+  "AVEMUJICA-ANTHEM_POWER.title": "전투의 찬가",
 
-  "AVEMUJICA-NEXT_TURN_ANTHEM_POWER.description": "Next turn, ALL players deal more damage with attacks and gain more [gold]Block[/gold] from cards.",
-  "AVEMUJICA-NEXT_TURN_ANTHEM_POWER.smartDescription": "Next turn, ALL players deal [blue]{Amount}[/blue] more damage with attacks and gain [blue]{Amount}[/blue] more [gold]Block[/gold] from cards.",
-  "AVEMUJICA-NEXT_TURN_ANTHEM_POWER.title": "Next Turn Anthem of Battle",
+  "AVEMUJICA-NEXT_TURN_ANTHEM_POWER.description": "다음 턴에 모든 플레이어가 공격으로 더 많은 피해를 주고 카드로부터 더 많은 [gold]방어도[/gold]를 얻습니다.",
+  "AVEMUJICA-NEXT_TURN_ANTHEM_POWER.smartDescription": "다음 턴에 모든 플레이어가 공격으로 [blue]{Amount}[/blue]의 피해를 더 주고 카드로부터 [gold]방어도[/gold]를 [blue]{Amount}[/blue] 더 얻습니다.",
+  "AVEMUJICA-NEXT_TURN_ANTHEM_POWER.title": "다음 턴 전투의 찬가",
 
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] also applies 1 [gold]Debilitate[/gold] to ALL enemies.",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.smartDescription": "[gold]Timoris's[/gold] [gold]Skill[/gold] also applies 1 [gold]Debilitate[/gold] to ALL enemies.",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.title": "Moonlight Execution",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.description": "[gold]티모리스[/gold]의 [gold]스킬[/gold]이 모든 적에게 [gold]쇠약[/gold]을 1 추가로 부여합니다.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.smartDescription": "[gold]티모리스[/gold]의 [gold]스킬[/gold]이 모든 적에게 [gold]쇠약[/gold]을 1 추가로 부여합니다.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_POWER.title": "달빛 아래의 처형",
 
-  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.description": "Receives double damage from Attacks this turn.",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.smartDescription": "Receives double damage from Attacks for [blue]{Amount}[/blue] {Amount:plural:turn|turns}.",
-  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.title": "Moonlight Execution"
+  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.description": "이번 턴에 공격으로 받는 피해가 두 배가 됩니다.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.smartDescription": "{Amount:plural:이번 턴 동안|외 [blue]{Amount}[/blue]턴 동안} 공격으로 받는 피해가 두 배가 됩니다.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION_DEBUFF.title": "달빛 아래의 처형"
 }

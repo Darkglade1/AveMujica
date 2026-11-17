@@ -150,93 +150,64 @@
   "AVEMUJICA-WHITE_SWORD_BLACK_SWORD.title": "백검, 흑검",
   "AVEMUJICA-WRITERS_BLOCK.description": "[gold]방어도[/gold]를 {Block:diff()} 얻습니다.\n내 [gold]손[/gold]에 [gold]비어있는 곡[/gold] {Cards:diff()}장을 추가합니다.",
   "AVEMUJICA-WRITERS_BLOCK.title": "작가의 슬럼프",
-
-
-  "AVEMUJICA-GIBBOUS_MOON_ENVY.description": "[gold]Dreamspin[/gold].\nIf you targeted yourself, [gold]Dreamspin[/gold] again.",
-  "AVEMUJICA-GIBBOUS_MOON_ENVY.title": "Gibbous Moon's Envy",
-
-  "AVEMUJICA-DA_CAPO.description": "[gold]Compose[/gold] \"Lose {HpLoss:diff()} HP.\"\nAdd [gold]Replay[/gold] and [gold]Exhaust[/gold] to a card in your [gold]Hand[/gold].",
-  "AVEMUJICA-DA_CAPO.selectionScreenPrompt": "Choose a card to add [gold]Replay[/gold] and [gold]Exhaust[/gold] to.",
+  "AVEMUJICA-GIBBOUS_MOON_ENVY.description": "[gold]꿈 자아내기[/gold].\n자신을 대상으로 지정했다면, 다시 [gold]꿈 자아내기[/gold]를 합니다.",
+  "AVEMUJICA-GIBBOUS_MOON_ENVY.title": "반달의 선망",
+  "AVEMUJICA-DA_CAPO.description": "[gold]작곡[/gold] '[gold]체력을 {HpLoss:diff()} 잃습니다.[/gold]'\n내 [gold]손[/gold]에 있는 카드 1장에 [gold]재사용[/gold]과 [gold]소멸[/gold]을 부여합니다.",
+  "AVEMUJICA-DA_CAPO.selectionScreenPrompt": "[gold]재사용[/gold]과 [gold]소멸[/gold]을 부여할 카드를 선택합니다.",
   "AVEMUJICA-DA_CAPO.title": "Da Capo",
-
-  "AVEMUJICA-REQUIEM.description": "Deal {Damage:diff()} damage to ALL enemies.\nDraw {Cards:diff()} {Cards:plural:card|cards}.\nWhenever you [gold]Perform[/gold], reduce this card's cost by 1 until played.",
-  "AVEMUJICA-REQUIEM.title": "Requiem in Black",
-
-  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "Trigger the [gold]Skills[/gold] of every [gold]Doll[/gold] present.{IfUpgraded:show:\nIf all 4 [gold]Dolls[/gold] are present, they gain {Heal:diff()} HP and trigger their [gold]Skills[/gold] again.}",
-  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "Knights of Oblivionis",
-
-  "AVEMUJICA-ALLEGRO.description": "Draw {Cards:diff()} cards.\n[gold]Compose[/gold] \"Draw {Compose:diff()} {Compose:plural:card|cards}.\"",
+  "AVEMUJICA-REQUIEM.description": "모든 적에게 피해를 {Damage:diff()} 줍니다.\n카드를 {Cards:diff()}장 뽑습니다.\n[gold]연주[/gold]할 때마다, 사용하기 전까지 이 카드의 비용이 1 감소합니다.",
+  "AVEMUJICA-REQUIEM.title": "검은 레퀴엠",
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.description": "모든 [gold]인형[/gold]의 [gold]스킬[/gold]을 발동시킵니다.{IfUpgraded:show:\n4명의 [gold]인형[/gold]이 모두 존재한다면, 체력을 {Heal:diff()} 얻고 [gold]스킬[/gold]을 한 번 더 발동시킵니다.}",
+  "AVEMUJICA-KNIGHTS_OF_OBLIVIONIS.title": "오블리비오니스의 기사단",
+  "AVEMUJICA-ALLEGRO.description": "카드를 {Cards:diff()}장 뽑습니다.\n'[gold]카드를 {Compose:diff()}장 뽑습니다.[/gold]'를 [gold]작곡[/gold]합니다.",
   "AVEMUJICA-ALLEGRO.title": "Allegro",
-
-  "AVEMUJICA-SYMBOL_AIR.description": "Gain {Energy:energyIcons()}.",
+  "AVEMUJICA-SYMBOL_AIR.description": "{Energy:energyIcons()}를 얻습니다.",
   "AVEMUJICA-SYMBOL_AIR.title": "Symbol II: Air",
-
-  "AVEMUJICA-INSPIRING_SONGS.description": "Whenever you play a [gold]Song[/gold], gain {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold] this turn.",
-  "AVEMUJICA-INSPIRING_SONGS.title": "Inspiring Songs",
-
-  "AVEMUJICA-PERFECT_COMBO.description": "Whenever you [gold]Perform[/gold], [gold]Enchant[/gold] a random card in your [gold]Hand[/gold] with [gold]Masterful[/gold] {Masterful:diff()}.",
-  "AVEMUJICA-PERFECT_COMBO.title": "Perfect Combo Storm",
-
-  "AVEMUJICA-CANON.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Perform Attack Skill: Compose.[/gold]",
-  "AVEMUJICA-CANON.title": "Canon in Green",
-
-  "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold].\nAdd a [gold]Weave{IfUpgraded:show:+}[/gold] into your [gold]Hand[/gold].",
-  "AVEMUJICA-TWO_MOONS.title": "Two Moons",
-
-  "AVEMUJICA-CONSIGN.description": "Deal {Damage:diff()} damage.\nIf [gold]Fatal[/gold], you may [gold]Enchant[/gold] a card in your [gold]Deck[/gold] with [purple]Vanishing[/purple] at the end of combat.",
-  "AVEMUJICA-CONSIGN.title": "Consign to Oblivion",
-
-  "AVEMUJICA-MAIDENS_CAPRICCIO.description": "Draw {Cards:diff()} cards.\n[gold]Perform Skill:[/gold] [gold]Enchant[/gold] a card with [gold]Masterful[/gold] {Enchant:diff()}.",
-  "AVEMUJICA-MAIDENS_CAPRICCIO.selectionScreenPrompt": "Choose a card to [gold]Enchant[/gold].",
-  "AVEMUJICA-MAIDENS_CAPRICCIO.title": "Maiden's Capriccio",
-
-  "AVEMUJICA-ENCORE.description": "The first [gold]Song[/gold] you play each turn is played twice.",
+  "AVEMUJICA-INSPIRING_SONGS.description": "[gold]곡[/gold]을 연주할 때마다, 이번 턴 동안 [gold]힘[/gold]과 [gold]민첩[/gold]을 {StrengthPower:diff()} 얻습니다.",
+  "AVEMUJICA-INSPIRING_SONGS.title": "영감을 주는 노래",
+  "AVEMUJICA-PERFECT_COMBO.description": "[gold]연주[/gold]할 때마다, 내 [gold]손[/gold]에 있는 무작위 카드 1장에 [gold]숙련[/gold]을 {Masterful:diff()} [gold]부여[/gold]합니다.",
+  "AVEMUJICA-PERFECT_COMBO.title": "몰아치는 완벽한 연계",
+  "AVEMUJICA-CANON.description": "[gold]방어도[/gold]를 {Block:diff()} 얻습니다.\n공격 카드 [gold]연주[/gold]: [gold]작곡[/gold]합니다.",
+  "AVEMUJICA-CANON.title": "초록빛 캐논",
+  "AVEMUJICA-TWO_MOONS.description": "[gold]꿈 자아내기[/gold].\n내 [gold]손[/gold]에 [gold]직조{IfUpgraded:show:+}[/gold] 1장을 추가합니다.",
+  "AVEMUJICA-TWO_MOONS.title": "두 개의 달",
+  "AVEMUJICA-CONSIGN.description": "피해를 {Damage:diff()} 줍니다.\n[gold]치명타[/gold]라면, 전투 종료 시 내 [gold]덱[/gold]에 있는 카드 1장에 [purple]소멸[/purple]을 [gold]부여[/gold]할 수 있습니다.",
+  "AVEMUJICA-CONSIGN.title": "망각에 부치다",
+  "AVEMUJICA-MAIDENS_CAPRICCIO.description": "카드를 {Cards:diff()}장 뽑습니다.\n스킬 카드 [gold]연주[/gold]: 카드 1장에 [gold]숙련[/gold]을 {Enchant:diff()} [gold]부여[/gold]합니다.",
+  "AVEMUJICA-MAIDENS_CAPRICCIO.selectionScreenPrompt": "[gold]부여[/gold]할 카드를 선택합니다.",
+  "AVEMUJICA-MAIDENS_CAPRICCIO.title": "소녀의 기상곡",
+  "AVEMUJICA-ENCORE.description": "매 턴 처음으로 사용하는 [gold]곡[/gold] 카드를 두 번 연주합니다.",
   "AVEMUJICA-ENCORE.title": "Encore",
-
-  "AVEMUJICA-SYMBOL_EARTH.description": "Gain {Block:diff()} [gold]Block[/gold].\nDeal {Damage:diff()} damage.",
+  "AVEMUJICA-SYMBOL_EARTH.description": "[gold]방어도[/gold]를 {Block:diff()} 얻습니다.\n피해를 {Damage:diff()} 줍니다.",
   "AVEMUJICA-SYMBOL_EARTH.title": "Symbol IV: Earth",
-
-  "AVEMUJICA-SYMBOL_WATER.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain {DexterityPower:diff()} [gold]Dexterity[/gold].",
+  "AVEMUJICA-SYMBOL_WATER.description": "[gold]방어도[/gold]를 {Block:diff()} 얻습니다.\n[gold]민첩[/gold]을 {DexterityPower:diff()} 얻습니다.",
   "AVEMUJICA-SYMBOL_WATER.title": "Symbol III: Water",
-
-  "AVEMUJICA-REGRETS.description": "Deal {Damage:diff()} damage.{IfUpgraded:show:\nDraw {Cards:diff()} {Cards:plural:card|cards}.}\n[gold]Exhaust[/gold] {Cards:diff()} {Cards:plural:card|cards}.",
-  "AVEMUJICA-REGRETS.title": "Cast Off Regrets",
-
-  "AVEMUJICA-PURSUIT_OF_MASTERY.description": "[gold]Enchant[/gold] a card with [gold]Masterful[/gold] {Enchant:diff()}.",
-  "AVEMUJICA-PURSUIT_OF_MASTERY.title": "Pursuit of Mastery",
-  "AVEMUJICA-PURSUIT_OF_MASTERY.selectionScreenPrompt": "Choose a card to [gold]Enchant[/gold].",
-
-  "AVEMUJICA-ANTHEM.description": "Next turn, ALL players deal {AnthemPower:diff()} more damage with attacks and gain {AnthemPower:diff()} more [gold]Block[/gold] from cards.\n[gold]Perform Attack Skill:[/gold] Double the effect.",
-  "AVEMUJICA-ANTHEM.title": "Anthem of Battle",
-
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "Deal {Damage:diff()} damage.\nIf [gold]Amoris[/gold] is present, trigger her [gold]Skill[/gold] {SkillRepeat:diff()} {SkillRepeat:plural:time|times}.",
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "Crescent Moon Echos",
-
-  "AVEMUJICA-BLUE_MOON.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf [gold]Doloris[/gold] is present, trigger her [gold]Skill[/gold] {SkillRepeat:diff()} {SkillRepeat:plural:time|times}.",
-  "AVEMUJICA-BLUE_MOON.title": "Blue Moon's Sorrow",
-
-  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.description": "Gain {Block:diff()} [gold]Block[/gold] X times.\n[gold]Exhaust[/gold] up to X cards.",
-  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.title": "Do Not Fear Forgetting",
-  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.selectionScreenPrompt": "Choose up to {Amount:plural:a card|[blue]{}[/blue] cards} to [gold]Exhaust[/gold].",
-
-  "AVEMUJICA-REPETITION.description": "Deal {Damage:diff()} damage.\n[gold]Perform Attack Skill:[/gold] Hits {HitCount:choose(2):twice|{HitCount:diff()} times}.",
+  "AVEMUJICA-REGRETS.description": "피해를 {Damage:diff()} 줍니다.{IfUpgraded:show:\n카드를 {Cards:diff()}장 뽑습니다.}\n카드 {Cards:diff()}장을 [gold]소멸[/gold]시킵니다.",
+  "AVEMUJICA-REGRETS.title": "후회를 떨쳐내자",
+  "AVEMUJICA-PURSUIT_OF_MASTERY.description": "카드 1장에 [gold]숙련[/gold]을 {Enchant:diff()} [gold]부여[/gold]합니다.",
+  "AVEMUJICA-PURSUIT_OF_MASTERY.title": "숙련을 향한 추구",
+  "AVEMUJICA-PURSUIT_OF_MASTERY.selectionScreenPrompt": "[gold]부여[/gold]할 카드를 선택합니다.",
+  "AVEMUJICA-ANTHEM.description": "다음 턴에 모든 플레이어가 공격으로 피해를 {AnthemPower:diff()} 더 주고 [gold]방어도[/gold]를 {AnthemPower:diff()} 더 얻습니다.\n공격 카드 [gold]연주[/gold]: 효과를 두 배로 만듭니다.",
+  "AVEMUJICA-ANTHEM.title": "전투의 찬가",
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "피해를 {Damage:diff()} 줍니다.\n[gold]아모리스[/gold]가 존재한다면, [gold]아모리스[/gold]의 [gold]스킬[/gold]을 {SkillRepeat:diff()}번 발동시킵니다.",
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "초승달의 메아리",
+  "AVEMUJICA-BLUE_MOON.description": "[gold]방어도[/gold]를 {Block:diff()} 얻습니다.\n[gold]돌로리스[/gold]가 존재한다면, [gold]돌로리스[/gold]의 [gold]스킬[/gold]을 {SkillRepeat:diff()}번 발동시킵니다.",
+  "AVEMUJICA-BLUE_MOON.title": "푸른 달의 슬픔",
+  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.description": "[gold]방어도[/gold]를 {Block:diff()}씩 X번 얻습니다.\n카드 최대 X장을 [gold]소멸[/gold]시킵니다.",
+  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.title": "망각을 두려워하지 말지어다",
+  "AVEMUJICA-DO_NOT_FEAR_FORGETTING.selectionScreenPrompt": "[gold]소멸[/gold]시킬 카드를 최대 {Amount}장 선택합니다.",
+  "AVEMUJICA-REPETITION.description": "피해를 {Damage:diff()} 줍니다.\n공격 카드 [gold]연주[/gold]: {HitCount:choose(2):두 번|{HitCount:diff()}번} 적중합니다.",
   "AVEMUJICA-REPETITION.title": "Repetition",
-
-  "AVEMUJICA-ARPEGGIO.description": "Deal {Damage:diff()} damage to ALL enemies {HitCount:choose(2):twice|{HitCount:diff()} times}.",
+  "AVEMUJICA-ARPEGGIO.description": "모든 적에게 피해를 {Damage:diff()} 줍니다 ({HitCount:choose(2):두 번|{HitCount:diff()}번}).",
   "AVEMUJICA-ARPEGGIO.title": "Arpeggio",
-
-  "AVEMUJICA-GLISSANDO.description": "Deal {Damage:diff()} damage {HitCount:diff()} times.",
+  "AVEMUJICA-GLISSANDO.description": "피해를 {Damage:diff()} {HitCount:diff()}번 줍니다.",
   "AVEMUJICA-GLISSANDO.title": "Glissando",
-
-  "AVEMUJICA-BLACK_BIRTHDAY.description": "Deal {Damage:diff()} damage to ALL enemies.\n[gold]Perform Attack Attack:[/gold] Hits {HitCount:diff()} more times.",
+  "AVEMUJICA-BLACK_BIRTHDAY.description": "모든 적에게 피해를 {Damage:diff()} 줍니다.\n공격 카드 연속 [gold]연주[/gold]: {HitCount:diff()}번 더 적중합니다.",
   "AVEMUJICA-BLACK_BIRTHDAY.title": "Black Birthday",
-
-  "AVEMUJICA-RONDO.description": "Deal {Damage:diff()} damage {HitCount:choose(2):twice|{HitCount:diff()} times}.\n[gold]Perform Attack:[/gold] Gain {Block:diff()} [gold]Block[/gold].",
-  "AVEMUJICA-RONDO.title": "Rondo in Orange",
-
-  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "[gold]Timoris's[/gold] [gold]Skill[/gold] also applies 1 [gold]Debilitate[/gold] to ALL enemies.",
-  "AVEMUJICA-MOONLIGHT_EXECUTION.title": "Moonlight Execution",
-
-  "AVEMUJICA-COLLECTIVE_DREAM.description": "Add {Cards:diff()} [gold]Weaves[/gold] to ALL allies' [gold]Hands[/gold].",
-  "AVEMUJICA-COLLECTIVE_DREAM.title": "Collective Dream"
+  "AVEMUJICA-RONDO.description": "피해를 {Damage:diff()} {HitCount:choose(2):두 번|{HitCount:diff()}번} 줍니다.\n공격 카드 [gold]연주[/gold]: [gold]방어도[/gold]를 {Block:diff()} 얻습니다.",
+  "AVEMUJICA-RONDO.title": "주황빛 론도",
+  "AVEMUJICA-MOONLIGHT_EXECUTION.description": "[gold]티모리스[/gold]의 [gold]스킬[/gold]이 모든 적에게 [gold]쇠약[/gold]을 1 추가로 부여합니다.",
+  "AVEMUJICA-MOONLIGHT_EXECUTION.title": "달빛 아래의 처형",
+  "AVEMUJICA-COLLECTIVE_DREAM.description": "모든 아군의 [gold]손[/gold]에 [gold]직조[/gold]를 {Cards:diff()}장 추가합니다.",
+  "AVEMUJICA-COLLECTIVE_DREAM.title": "모두의 꿈"
 }
