@@ -1,5 +1,5 @@
 using System.Reflection;
-using BaseLib.Audio;
+using AveMujica.AveMujicaCode.Data;
 using BaseLib.Config;
 using BaseLib.Utils;
 using Godot;
@@ -19,14 +19,25 @@ public partial class MainFile : Node
 
     public static void Initialize()
     {
+        var assembly = Assembly.GetExecutingAssembly();
+        
         //If you want to use scripts defined in your mod for Godot scenes, uncomment the following line.
-        Godot.Bridge.ScriptManagerBridge.LookupScriptsInAssembly(Assembly.GetExecutingAssembly());
+        Godot.Bridge.ScriptManagerBridge.LookupScriptsInAssembly(assembly);
 
         Harmony harmony = new(ModId);
 
-        harmony.PatchAll();
+        harmony.PatchAll(assembly);
         
         CustomLocTableManager.Register("card_mods");
         ModConfigRegistry.Register(ModId, new Config());
+        
+        ModManager.OnMetricsUpload += AveMujicaMetrics.OnMetricsUpload;
+    }
+    
+    public static string GetVersion()
+    {
+        var mod = ModManager.GetLoadedMods().FirstOrDefault(m => m.manifest?.id == ModId);
+
+        return mod?.manifest?.version ?? "unknown";
     }
 }
