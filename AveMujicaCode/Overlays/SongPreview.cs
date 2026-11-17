@@ -5,8 +5,10 @@ using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
+using MegaCrit.Sts2.Core.Entities.UI;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Nodes.Cards;
+using MegaCrit.Sts2.Core.Nodes.Cards.Holders;
 using MegaCrit.Sts2.Core.Nodes.Combat;
 using MegaCrit.Sts2.Core.Nodes.Rooms;
 
@@ -16,7 +18,7 @@ public partial class SongPreview : Control
 {
     public static SongPreview? Instance { get; private set; }
 
-    private Dictionary<Player, NCard?> _cardDisplayDict = new();
+    private Dictionary<Player, NGridCardHolder?> _cardDisplayDict = new();
 
     public override void _Ready()
     {
@@ -34,7 +36,7 @@ public partial class SongPreview : Control
                 SetupDisplay(combatState, owner);
             }
             var cardDisplay = _cardDisplayDict[owner];
-            if (cardDisplay != null)
+            if (cardDisplay != null && IsInstanceValid(cardDisplay))
             {
                 cardDisplay.Show();
                 var songDict = ComposeHelper.ComposeFields.CurrentSong.Get(combatState);
@@ -43,8 +45,8 @@ public partial class SongPreview : Control
                     var currentSong = songDict[owner];
                     if (currentSong != null)
                     {
-                        cardDisplay.Model = currentSong;
-                        cardDisplay.UpdateVisuals(PileType.Deck, CardPreviewMode.Normal);
+                        cardDisplay.ReassignToCard(currentSong, PileType.None, null, ModelVisibility.Visible);
+                        cardDisplay.Show();
                     }
                     else
                     {
@@ -76,14 +78,17 @@ public partial class SongPreview : Control
                         if (specialNode != null)
                         {
                             NCard? nCard = NCard.Create(currentSong);
-                            specialNode.AddChildSafely(nCard);
                             if (nCard != null)
                             {
-                                nCard.Position += new Vector2(0, -100f); // Settings.scale needed??? idk
-                                nCard.Scale = new Vector2(0.5f, 0.5f);
-                                nCard.UpdateVisuals(PileType.Deck, CardPreviewMode.Normal);
-                                _cardDisplayDict[currentSong.Owner] = nCard;
-                                _cardDisplayDict[currentSong.Owner]?.Show();
+                                NGridCardHolder? nCardHolder = NGridCardHolder.Create(nCard);
+                                if (nCardHolder != null)
+                                {
+                                    nCardHolder.Position += new Vector2(0, -100f);
+                                    nCardHolder.ReassignToCard(currentSong, PileType.None, null, ModelVisibility.Visible);
+                                    specialNode.AddChildSafely(nCardHolder);
+                                    _cardDisplayDict[currentSong.Owner] = nCardHolder;
+                                    _cardDisplayDict[currentSong.Owner]?.Show();
+                                }
                             }
                         }
                     }

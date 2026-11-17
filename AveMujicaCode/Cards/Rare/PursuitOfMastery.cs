@@ -15,7 +15,7 @@ public class PursuitOfMastery() : AveMujicaCard(1,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new("Enchant",6)];
 
-    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Retain, CardKeyword.Exhaust];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromEnchantment<Masterful>();
 
