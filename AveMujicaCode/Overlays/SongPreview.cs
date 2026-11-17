@@ -38,7 +38,6 @@ public partial class SongPreview : Control
             var cardDisplay = _cardDisplayDict[owner];
             if (cardDisplay != null && IsInstanceValid(cardDisplay))
             {
-                cardDisplay.Show();
                 var songDict = ComposeHelper.ComposeFields.CurrentSong.Get(combatState);
                 if (songDict != null)
                 {
@@ -83,9 +82,10 @@ public partial class SongPreview : Control
                                 NGridCardHolder? nCardHolder = NGridCardHolder.Create(nCard);
                                 if (nCardHolder != null)
                                 {
-                                    nCardHolder.Position += new Vector2(0, -100f);
+                                    nCardHolder.Position += new Vector2(0, -150f);
                                     nCardHolder.ReassignToCard(currentSong, PileType.None, null, ModelVisibility.Visible);
                                     specialNode.AddChildSafely(nCardHolder);
+                                    specialNode.Scale = Vector2.One * 0.625f;
                                     _cardDisplayDict[currentSong.Owner] = nCardHolder;
                                     _cardDisplayDict[currentSong.Owner]?.Show();
                                 }
