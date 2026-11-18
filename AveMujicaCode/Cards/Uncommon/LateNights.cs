@@ -27,7 +27,7 @@ public class LateNights() : AveMujicaCard(2,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Block.UpgradeValueBy(5);
+        DynamicVars.Block.UpgradeValueBy(4);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [

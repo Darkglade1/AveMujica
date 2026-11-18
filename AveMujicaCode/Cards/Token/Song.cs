@@ -15,6 +15,7 @@ public class Song() : AveMujicaCard(0,
 {
     public bool IsAttack = false;
     public bool IsTargeted = false;
+    public bool IsPreviewSong = false;
     public override CardType Type => IsAttack ? CardType.Attack : CardType.Skill;
     public override TargetType TargetType => IsTargeted ? TargetType.AnyEnemy : TargetType.Self;
 

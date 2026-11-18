@@ -75,6 +75,7 @@ public class ComposeHelper
             if (currentSong == null)
             {
                 Song newSong = combatState.CreateCard<Song>(owner);
+                newSong.IsPreviewSong = true;
                 currentSong = newSong;
             }
 
@@ -93,6 +94,10 @@ public class ComposeHelper
             numComposes++;
             if (numComposes >= NumComposesSongComplete)
             {
+                if (currentSong is Song song)
+                {
+                    song.IsPreviewSong = false;
+                }
                 await CardPileCmd.AddGeneratedCardToCombat(currentSong, PileType.Hand, owner);
                 await AveMujicaHooks.OnFinishComposing(owner.RunState, owner.Creature.CombatState, owner, currentSong);
                 songDict[owner] = null;

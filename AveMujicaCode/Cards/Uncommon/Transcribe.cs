@@ -1,5 +1,5 @@
 ﻿using AveMujica.AveMujicaCode.Cards.CardMods;
-using AveMujica.AveMujicaCode.Powers;
+using AveMujica.AveMujicaCode.Cards.Token;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -33,6 +33,10 @@ public class Transcribe() : AveMujicaCard(2,
                 if (currentSong != null)
                 {
                     var song = currentSong.CreateClone();
+                    if (song is Song songCard)
+                    {
+                        songCard.IsPreviewSong = false;
+                    }
                     await CardPileCmd.AddGeneratedCardToCombat(song, PileType.Hand, Owner);
                 }
             }
@@ -41,7 +45,7 @@ public class Transcribe() : AveMujicaCard(2,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Block.UpgradeValueBy(5);
+        DynamicVars.Block.UpgradeValueBy(4);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [

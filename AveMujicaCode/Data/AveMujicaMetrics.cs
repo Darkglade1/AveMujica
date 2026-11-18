@@ -1,4 +1,3 @@
-using System.Reflection;
 using System.Text.Json;
 using MegaCrit.Sts2.Core.Debug;
 using MegaCrit.Sts2.Core.Map;
@@ -22,11 +21,6 @@ public static class AveMujicaMetrics
             ApiKey = "sb_publishable_FPdLGP8AjyXJ0tmqhUi1UQ__gz4IIDx",
             ModVersionProvider = MainFile.GetVersion,
             IsOwnCharacter = e => e is Character.AveMujica,
-            AllowedAssemblies = new HashSet<Assembly>
-            {
-                typeof(Character.AveMujica).Assembly,
-                typeof(CharacterModel).Assembly
-            },
             Logger = MainFile.Logger,
             WrapPayload = (data, version, modName, hasForeign) =>
                 $"{{\"mod_version\":{JsonSerializer.Serialize(version)},\"has_foreign_content\":{JsonSerializer.Serialize(hasForeign)},\"data\":{data}}}"
