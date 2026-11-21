@@ -21,7 +21,7 @@ public class MelodyPower() : AveMujicaPower
         CombatSide side,
         IEnumerable<Creature> participants)
     {
-        if (side == CombatSide.Player && Owner.Player != null)
+        if (participants.Contains(Owner))
         {
             if (PerformedThisTurn)
             {

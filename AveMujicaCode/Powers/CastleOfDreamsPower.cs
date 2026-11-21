@@ -20,7 +20,7 @@ public class CastleOfDreamsPower() : AveMujicaPower
         CombatSide side,
         IEnumerable<Creature> participants)
     {
-        if (side == CombatSide.Player && Owner.Player != null)
+        if (participants.Contains(Owner) && Owner.Player != null)
         {
             Flash();
             await CardPileCmd.AddToCombatAndPreview<Weave>(Owner, PileType.Draw, Amount, Owner.Player, CardPilePosition.Random);

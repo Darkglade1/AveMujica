@@ -22,7 +22,7 @@ public class LargeRepertoirePower : AveMujicaPower
         CombatSide side,
         IEnumerable<Creature> participants)
     {
-        if (side == CombatSide.Player && Owner.Player != null)
+        if (participants.Contains(Owner) && Owner.Player != null)
         {
             IReadOnlyList<CardModel> cards = PileType.Hand.GetPile(Owner.Player).Cards;
             if (cards.Count == 0)

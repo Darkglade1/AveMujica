@@ -68,7 +68,7 @@ public abstract class AbstractDoll : CustomMonsterModel
     CombatSide side,
     IEnumerable<Creature> participants)
   {
-    if (side == CombatSide.Player && Creature.IsAlive && Creature.PetOwner != null && Creature.PetOwner.Creature.IsAlive && canUseAbilitiesThisTurn)
+    if (Creature.PetOwner != null && participants.Contains(Creature.PetOwner.Creature) && Creature.IsAlive && Creature.PetOwner.Creature.IsAlive && canUseAbilitiesThisTurn)
     {
       canPlaySFX = true;
       await PerformMove();
