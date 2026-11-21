@@ -1,10 +1,15 @@
-﻿using MegaCrit.Sts2.Core.Commands;
+﻿using Godot;
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Hooks;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
+using MegaCrit.Sts2.Core.Nodes;
+using MegaCrit.Sts2.Core.Nodes.Vfx;
+using MegaCrit.Sts2.Core.Nodes.Vfx.Utilities;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Powers;
@@ -39,6 +44,20 @@ public class Oblivion : AveMujicaPower
                     }
                     else
                     {
+                        Node? vfxContainer = weakestEnemy.GetVfxContainer();
+                        NDamageNumVfx? child = NDamageNumVfx.Create(weakestEnemy, (int)amountOfHpToLose);
+                        if (child != null)
+                        {
+                            if (vfxContainer != null)
+                            {
+                                vfxContainer.AddChildSafely(child);
+                            }
+                            else
+                            {
+                                NRun.Instance?.GlobalUi.AddChildSafely(child);
+                            }
+                        }
+                        NGame.Instance?.ScreenShake(ShakeStrength.Medium, ShakeDuration.Short);
                         await DoomPower.PlayVfx(weakestEnemy);
                         await CreatureCmd.Kill(weakestEnemy);
                     }

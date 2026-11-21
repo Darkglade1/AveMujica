@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace AveMujica.AveMujicaCode.Cards.Rare;
-public class Anthem() : AbstractPerformCard(1,
+public class Anthem() : AbstractPerformCard(0,
     CardType.Skill, CardRarity.Rare,
     TargetType.AllAllies)
 {
