@@ -3,7 +3,7 @@ using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
-using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
 
 namespace AveMujica.AveMujicaCode.Cards.Token;
@@ -13,15 +13,9 @@ public class Doloris() : AbstractDollCard(-1,
     CardType.Power, CardRarity.Token,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [];
-
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
-    {
-    }
-
-    protected override void OnUpgrade()
     {
     }
     
@@ -33,5 +27,10 @@ public class Doloris() : AbstractDollCard(-1,
     protected override bool IsSkinEnabled()
     {
         return Config.UseDolorisSkin;
+    }
+    
+    public override MonsterModel GetAssociatedDoll()
+    {
+        return ModelDb.Monster<DolorisDoll>();
     }
 }

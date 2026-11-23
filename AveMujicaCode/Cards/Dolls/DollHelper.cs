@@ -62,10 +62,10 @@ public class DollHelper
 
     public static Vector2 CalculatePosition(int index)
     {
-        var firstPosition = new Vector2(250f, -75f);
-        var secondPosition = new Vector2(-150f, -75f);
-        var thirdPosition = new Vector2(-320f, -75f);
-        var fourthPosition = new Vector2(420f, -75f);
+        var firstPosition = new Vector2(150f, -75f);
+        var secondPosition = new Vector2(-175f, -75f);
+        var thirdPosition = new Vector2(-345f, -75f);
+        var fourthPosition = new Vector2(320f, -75f);
         switch (index)
         {
             case 0:
@@ -106,6 +106,17 @@ public class DollHelper
             {
                 if (player.Creature.CombatState != null)
                 {
+                    if (card is AbstractDollCard dollCard)
+                    {
+                        var dollMonster = dollCard.GetAssociatedDoll();
+                        foreach (var doll in player.Creature.CombatState.Allies)
+                        {
+                            if (doll.Monster != null && doll.Monster.Id == dollMonster.Id && doll.PetOwner == player && doll.IsAlive)
+                            {
+                                dollCard.IsDollPresent = true;
+                            }
+                        }
+                    }
                     player.Creature.CombatState.AddCard(card, player);
                 }
             }

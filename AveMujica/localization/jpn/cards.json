@@ -57,18 +57,6 @@
   "AVEMUJICA-DISSATISFACTION.description": "{Damage:diff()}ダメージを与える。\n[gold]空白の楽曲[/gold]を1枚[gold]手札[/gold]に加える。",
   "AVEMUJICA-DISSATISFACTION.title": "不満",
 
-  "AVEMUJICA-DOLORIS.description": "[gold]ドロリス[/gold]を[gold]目覚め[/gold]させる。",
-  "AVEMUJICA-DOLORIS.title": "ドロリス",
-
-  "AVEMUJICA-MORTIS.description": "[gold]モーティス[/gold]を[gold]目覚め[/gold]させる。",
-  "AVEMUJICA-MORTIS.title": "モーティス",
-
-  "AVEMUJICA-TIMORIS.description": "[gold]ティモリス[/gold]を[gold]目覚め[/gold]させる。",
-  "AVEMUJICA-TIMORIS.title": "ティモリス",
-
-  "AVEMUJICA-AMORIS.description": "[gold]アモーリス[/gold]を[gold]目覚め[/gold]させる。",
-  "AVEMUJICA-AMORIS.title": "アモーリス",
-
   "AVEMUJICA-RECITAL.description": "[gold]廃棄札[/gold]から[gold]楽曲[/gold]を1枚[gold]手札[/gold]に加える。",
   "AVEMUJICA-RECITAL.selectionScreenPrompt": "[gold]手札[/gold]に加える[gold]楽曲[/gold]を1枚選ぶ。",
   "AVEMUJICA-RECITAL.title": "リサイタル",
@@ -317,5 +305,17 @@
   "AVEMUJICA-COLLECTIVE_DREAM.title": "Collective Dream",
 
   "AVEMUJICA-ENTWINED_FATES.description": "Give ALL [gold]Dolls[/gold] {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold].",
-  "AVEMUJICA-ENTWINED_FATES.title": "Entwined Fates"
+  "AVEMUJICA-ENTWINED_FATES.title": "Entwined Fates",
+
+  "AVEMUJICA-DOLORIS.description": "{IsDollPresent:[gold]Doloris[/gold] gains {Heal:diff()} HP.|[gold]ドロリス[/gold]を[gold]目覚め[/gold]させる。}",
+  "AVEMUJICA-DOLORIS.title": "ドロリス",
+
+  "AVEMUJICA-MORTIS.description": "{IsDollPresent:[gold]Mortis[/gold] gains {Heal:diff()} HP.|[gold]モーティス[/gold]を[gold]目覚め[/gold]させる。}",
+  "AVEMUJICA-MORTIS.title": "モーティス",
+
+  "AVEMUJICA-TIMORIS.description": "{IsDollPresent:[gold]Timoris[/gold] gains {Heal:diff()} HP.|[gold]ティモリス[/gold]を[gold]目覚め[/gold]させる。}",
+  "AVEMUJICA-TIMORIS.title": "ティモリス",
+
+  "AVEMUJICA-AMORIS.description": "{IsDollPresent:[gold]Amoris[/gold] gains {Heal:diff()} HP.|[gold]アモーリス[/gold]を[gold]目覚め[/gold]させる。}",
+  "AVEMUJICA-AMORIS.title": "アモーリス"
 }

@@ -11,9 +11,6 @@
   "AVEMUJICA-AL_FINE.description": "Infligez {Damage:diff()} dégâts à TOUS les ennemis.\nSi vous avez joué une [gold]Musique[/gold] ce tour, [gold]Tisse-rêve[/gold] deux fois.",
   "AVEMUJICA-AL_FINE.title": "Al Fine",
 
-  "AVEMUJICA-AMORIS.description": "[gold]Éveillez Amoris[/gold].",
-  "AVEMUJICA-AMORIS.title": "Amoris",
-
   "AVEMUJICA-ARIA.description": "Infligez {Damage:diff()} dégâts.\n[gold]Composez[/gold] \"Infligez {Compose:diff()} dégâts.\"",
   "AVEMUJICA-ARIA.title": "Aria Rubis",
 
@@ -45,9 +42,6 @@
   "AVEMUJICA-DISTRIBUTE.description": "Choisissez une [gold]Musique[/gold]. Ajoutez une copie de cette carte dans votre [gold]Main[/gold].",
   "AVEMUJICA-DISTRIBUTE.selectionScreenPrompt": "Choisissez une [gold]Musique[/gold] à Copier.",
   "AVEMUJICA-DISTRIBUTE.title": "Distribution de Copies",
-
-  "AVEMUJICA-DOLORIS.description": "[gold]Éveillez Doloris[/gold].",
-  "AVEMUJICA-DOLORIS.title": "Doloris",
 
   "AVEMUJICA-EMOTIONAL_OUTBURST.description": "Infligez {Damage:diff()} dégâts.\nInfligez {Damage:diff()} dégâts à nouveau pour chaque carte [gold]Épuisée[/gold] ce tour.{InCombat:\n(Hits {CalculatedHits:diff()} fois de plus)|}",
   "AVEMUJICA-EMOTIONAL_OUTBURST.title": "Déchaînement émotionnel",
@@ -118,9 +112,6 @@
   "AVEMUJICA-MOONLIT_STRIKE.description": "Infligez {Damage:diff()} dégâts à un ennemi aléatoire.\n[gold]Tisse-rêve[/gold].",
   "AVEMUJICA-MOONLIT_STRIKE.title": "Frappe au Clair de Lune",
 
-  "AVEMUJICA-MORTIS.description": "[gold]Éveillez Mortis[/gold]",
-  "AVEMUJICA-MORTIS.title": "Mortis",
-
   "AVEMUJICA-MUSE.description": "[gold]Composez[/gold]{IfUpgraded:show:[gold]+[/gold]}.",
   "AVEMUJICA-MUSE.title": "Muse",
 
@@ -167,9 +158,6 @@
 
   "AVEMUJICA-SYMBOL_FIRE.description": "Infligez {Damage:diff()} dégâts.\nGagnez {StrengthPower:diff()} de [gold]Force[/gold].",
   "AVEMUJICA-SYMBOL_FIRE.title": "Symbole I : Feu",
-
-  "AVEMUJICA-TIMORIS.description": "[gold]Éveillez Timoris[/gold].",
-  "AVEMUJICA-TIMORIS.title": "Timoris",
   
   "AVEMUJICA-TRANSCRIBE.description": "Gagnez {Block:diff()} d'[gold]Armure[/gold].\nAjoute une copie de la [gold]Musique[/gold] en cours de composition dans votre [gold]Main[/gold].",
   "AVEMUJICA-TRANSCRIBE.title": "Transcription",
@@ -321,6 +309,18 @@
   "AVEMUJICA-COLLECTIVE_DREAM.description": "Ajoutez {Cards:diff()} [gold]Fils Oniriques[/gold] à la [gold]Main[/gold] de TOUS les alliés.",
   "AVEMUJICA-COLLECTIVE_DREAM.title": "Rêve Collectif",
 
-  "AVEMUJICA-ENTWINED_FATES.description": "Give ALL [gold]Dolls[/gold] {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold].",
-  "AVEMUJICA-ENTWINED_FATES.title": "Entwined Fates"
+  "AVEMUJICA-ENTWINED_FATES.description": "Donne à toute[gold]Poupées[/gold] {StrengthPower:diff()} de [gold]Force[/gold] et [gold]Dexterité[/gold].",
+  "AVEMUJICA-ENTWINED_FATES.title": "Destins Liés",
+
+  "AVEMUJICA-DOLORIS.description": "{IsDollPresent:[gold]Doloris[/gold] gagne {Heal:diff()} PV.|[gold]Éveillez Doloris[/gold].}",
+  "AVEMUJICA-DOLORIS.title": "Doloris",
+
+  "AVEMUJICA-MORTIS.description": "{IsDollPresent:[gold]Mortis[/gold] gagne {Heal:diff()} PV.|[gold]Éveillez Mortis[/gold].}",
+  "AVEMUJICA-MORTIS.title": "Mortis",
+
+  "AVEMUJICA-TIMORIS.description": "{IsDollPresent:[gold]Timoris[/gold] gagne {Heal:diff()} PV.|[gold]Éveillez Timoris[/gold].}",
+  "AVEMUJICA-TIMORIS.title": "Timoris",
+
+  "AVEMUJICA-AMORIS.description": "{IsDollPresent:[gold]Amoris[/gold] gagne {Heal:diff()} PV.|[gold]Éveillez Amoris[/gold].}",
+  "AVEMUJICA-AMORIS.title": "Amoris"
 }

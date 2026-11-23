@@ -57,16 +57,16 @@
   "AVEMUJICA-DISSATISFACTION.description": "Deal {Damage:diff()} damage.\nAdd a [gold]Blank Song[/gold] to your [gold]Hand[/gold].",
   "AVEMUJICA-DISSATISFACTION.title": "Dissatisfaction",
 
-  "AVEMUJICA-DOLORIS.description": "[gold]Awaken Doloris[/gold].",
+  "AVEMUJICA-DOLORIS.description": "{IsDollPresent:[gold]Doloris[/gold] gains {Heal:diff()} HP.|[gold]Awaken Doloris[/gold].}",
   "AVEMUJICA-DOLORIS.title": "Doloris",
 
-  "AVEMUJICA-MORTIS.description": "[gold]Awaken Mortis[/gold].",
+  "AVEMUJICA-MORTIS.description": "{IsDollPresent:[gold]Mortis[/gold] gains {Heal:diff()} HP.|[gold]Awaken Mortis[/gold].}",
   "AVEMUJICA-MORTIS.title": "Mortis",
 
-  "AVEMUJICA-TIMORIS.description": "[gold]Awaken Timoris[/gold].",
+  "AVEMUJICA-TIMORIS.description": "{IsDollPresent:[gold]Timoris[/gold] gains {Heal:diff()} HP.|[gold]Awaken Timoris[/gold].}",
   "AVEMUJICA-TIMORIS.title": "Timoris",
 
-  "AVEMUJICA-AMORIS.description": "[gold]Awaken Amoris[/gold].",
+  "AVEMUJICA-AMORIS.description": "{IsDollPresent:[gold]Amoris[/gold] gains {Heal:diff()} HP.|[gold]Awaken Amoris[/gold].}",
   "AVEMUJICA-AMORIS.title": "Amoris",
 
   "AVEMUJICA-RECITAL.description": "Put a [gold]Song[/gold] from your [gold]Exhaust Pile[/gold] into your [gold]Hand[/gold].",
