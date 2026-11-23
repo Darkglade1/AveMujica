@@ -1,22 +1,20 @@
-﻿using AveMujica.AveMujicaCode.Cards.Dolls;
-using AveMujica.AveMujicaCode.Cards.Token;
-using BaseLib.Patches.Features;
+﻿using AveMujica.AveMujicaCode.Cards.Token;
+using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Rare;
 
-public class TwoMoons() : AveMujicaCard(0,
-    CardType.Skill, CardRarity.Rare,
-    CustomTargetType.PetOrSelf)
+public class TwoMoons() : AveMujicaCard(2,
+    CardType.Attack, CardRarity.Rare,
+    TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [];
-    
-    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(14, ValueProp.Move)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin),
@@ -29,7 +27,7 @@ public class TwoMoons() : AveMujicaCard(0,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await DollHelper.Dreamspin(choiceContext, Owner, play.Target, this);
+        await CommonActions.CardAttack(this, play).Execute(choiceContext);
         if (Owner.Creature.CombatState != null)
         {
             CardModel card = Owner.Creature.CombatState.CreateCard<Weave>(Owner);
@@ -43,5 +41,6 @@ public class TwoMoons() : AveMujicaCard(0,
     
     protected override void OnUpgrade()
     {
+        DynamicVars.Damage.UpgradeValueBy(1);
     }
 }

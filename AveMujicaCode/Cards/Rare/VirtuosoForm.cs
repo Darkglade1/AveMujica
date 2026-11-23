@@ -2,6 +2,7 @@
 using AveMujica.AveMujicaCode.Enchantments;
 using AveMujica.AveMujicaCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
@@ -21,7 +22,10 @@ public class VirtuosoForm() : AveMujicaCard(3,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        Sfx.SKILL_KEYBOARD3.Play();
+        if (LocalContext.IsMe(Owner) && play.IsFirstInSeries)
+        {
+            Sfx.SKILL_KEYBOARD3.Play();   
+        }
         await PowerCmd.Apply<VirtuosoFormPower>(choiceContext, Owner.Creature, DynamicVars["VirtuosoFormPower"].BaseValue, Owner.Creature, this);
     }
 

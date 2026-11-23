@@ -175,7 +175,7 @@
   "AVEMUJICA-PERFECT_COMBO.title": "完美连击风暴",
   "AVEMUJICA-CANON.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n[gold]演奏攻击技能：谱曲。[/gold]",
   "AVEMUJICA-CANON.title": "绿色卡农",
-  "AVEMUJICA-TWO_MOONS.description": "[gold]梦旋[/gold]。\n将一张[gold]编织{IfUpgraded:show:+}[/gold]加入你的[gold]手牌[/gold]。",
+  "AVEMUJICA-TWO_MOONS.description": "造成{Damage:diff()}点伤害。\n将一张[gold]编织{IfUpgraded:show:+}[/gold]加入你的[gold]手牌[/gold]。",
   "AVEMUJICA-TWO_MOONS.title": "双月",
   "AVEMUJICA-CONSIGN.description": "造成{Damage:diff()}点伤害。\n若[gold]斩杀[/gold]，可在战斗结束时为[gold]牌组[/gold]中的一张牌[gold]附魔[/gold][purple]消失[/purple]。",
   "AVEMUJICA-CONSIGN.title": "投入湮灭",

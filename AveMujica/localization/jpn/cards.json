@@ -256,7 +256,7 @@
   "AVEMUJICA-CANON.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Perform Attack Skill: Compose.[/gold]",
   "AVEMUJICA-CANON.title": "Canon in Green",
 
-  "AVEMUJICA-TWO_MOONS.description": "[gold]Dreamspin[/gold].\nAdd a [gold]Weave{IfUpgraded:show:+}[/gold] into your [gold]Hand[/gold].",
+  "AVEMUJICA-TWO_MOONS.description": "Deal {Damage:diff()} damage.\nAdd a [gold]Weave{IfUpgraded:show:+}[/gold] into your [gold]Hand[/gold].",
   "AVEMUJICA-TWO_MOONS.title": "Two Moons",
 
   "AVEMUJICA-CONSIGN.description": "Deal {Damage:diff()} damage.\nIf [gold]Fatal[/gold], you may [gold]Enchant[/gold] a card in your [gold]Deck[/gold] with [purple]Vanishing[/purple] at the end of combat.",

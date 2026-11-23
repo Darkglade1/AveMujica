@@ -261,7 +261,7 @@
   "AVEMUJICA-CANON.description": "Gagnez {Block:diff()} d'[gold]Armure[/gold].\n[gold]Interprétation Attaque Compétence : Composez.[/gold]",
   "AVEMUJICA-CANON.title": "Canon Émeraude",
 
-  "AVEMUJICA-TWO_MOONS.description": "[gold]Tisse-rêve[/gold].\nAjoutez un [gold]Fil Onirique{IfUpgraded:show:+}[/gold] à votre [gold]Main[/gold].",
+  "AVEMUJICA-TWO_MOONS.description": "Infligez {Damage:diff()} dégâts.\nAjoutez un [gold]Fil Onirique{IfUpgraded:show:+}[/gold] à votre [gold]Main[/gold].",
   "AVEMUJICA-TWO_MOONS.title": "Deux Lunes",
 
   "AVEMUJICA-CONSIGN.description": "Infligez {Damage:diff()} dégâts.\n[gold]Coup de grâce[/gold] : vous pouvez [gold]Enchanter[/gold] une carte de votre [gold]Deck[/gold] avec [purple]Disparition[/purple] à la fin du combat.",
