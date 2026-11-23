@@ -314,5 +314,8 @@
   "AVEMUJICA-MOONLIGHT_EXECUTION.title": "Moonlight Execution",
 
   "AVEMUJICA-COLLECTIVE_DREAM.description": "Add {Cards:diff()} [gold]Weaves[/gold] to ALL allies' [gold]Hands[/gold].",
-  "AVEMUJICA-COLLECTIVE_DREAM.title": "Collective Dream"
+  "AVEMUJICA-COLLECTIVE_DREAM.title": "Collective Dream",
+
+  "AVEMUJICA-ENTWINED_FATES.description": "Give ALL [gold]Dolls[/gold] {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold].",
+  "AVEMUJICA-ENTWINED_FATES.title": "Entwined Fates"
 }

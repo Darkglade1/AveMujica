@@ -10,12 +10,10 @@ using MegaCrit.Sts2.Core.Models.Powers;
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
 public class FirstQuarterYearning() : AveMujicaCard(1,
-    CardType.Skill, CardRarity.Uncommon,
+    CardType.Power, CardRarity.Uncommon,
     CustomTargetType.Pet)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<StrengthPower>(2)];
-    
-    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromPower(ModelDb.Power<StrengthPower>()),

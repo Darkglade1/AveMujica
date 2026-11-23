@@ -209,5 +209,7 @@
   "AVEMUJICA-MOONLIGHT_EXECUTION.description": "[gold]티모리스[/gold]의 [gold]스킬[/gold]이 모든 적에게 [gold]쇠약[/gold]을 1 추가로 부여합니다.",
   "AVEMUJICA-MOONLIGHT_EXECUTION.title": "달빛 아래의 처형",
   "AVEMUJICA-COLLECTIVE_DREAM.description": "모든 아군의 [gold]손[/gold]에 [gold]직조[/gold]를 {Cards:diff()}장 추가합니다.",
-  "AVEMUJICA-COLLECTIVE_DREAM.title": "모두의 꿈"
+  "AVEMUJICA-COLLECTIVE_DREAM.title": "모두의 꿈",
+  "AVEMUJICA-ENTWINED_FATES.description": "Give ALL [gold]Dolls[/gold] {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold].",
+  "AVEMUJICA-ENTWINED_FATES.title": "Entwined Fates"
 }

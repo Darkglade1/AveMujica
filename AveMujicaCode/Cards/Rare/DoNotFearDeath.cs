@@ -5,7 +5,7 @@ using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace AveMujica.AveMujicaCode.Cards.Rare;
-public class DoNotFearDeath() : AveMujicaCard(2,
+public class DoNotFearDeath() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Rare,
     TargetType.None)
 {

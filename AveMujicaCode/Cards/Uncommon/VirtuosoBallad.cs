@@ -13,7 +13,9 @@ public class VirtuosoBallad() : AveMujicaCard(1,
 {
     public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new ("Masterful", 3)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new ("Masterful", 4)];
+    
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromEnchantment<Masterful>();
 
@@ -35,6 +37,6 @@ public class VirtuosoBallad() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars["Masterful"].UpgradeValueBy(1);
+        DynamicVars["Masterful"].UpgradeValueBy(2);
     }
 }

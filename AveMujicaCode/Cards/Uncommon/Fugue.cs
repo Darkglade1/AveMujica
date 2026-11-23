@@ -9,11 +9,11 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
-public class Fugue() : AveMujicaCard(1,
+public class Fugue() : AveMujicaCard(2,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(7, ValueProp.Move), new PowerVar<Oblivion>(3)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(10, ValueProp.Move), new PowerVar<Oblivion>(5)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromPower<Oblivion>()
@@ -29,7 +29,7 @@ public class Fugue() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(1);
-        DynamicVars["Oblivion"].UpgradeValueBy(1);
+        DynamicVars.Damage.UpgradeValueBy(2);
+        DynamicVars["Oblivion"].UpgradeValueBy(2);
     }
 }

@@ -319,5 +319,8 @@
   "AVEMUJICA-MOONLIGHT_EXECUTION.title": "Exécution au Clair de Lune",
 
   "AVEMUJICA-COLLECTIVE_DREAM.description": "Ajoutez {Cards:diff()} [gold]Fils Oniriques[/gold] à la [gold]Main[/gold] de TOUS les alliés.",
-  "AVEMUJICA-COLLECTIVE_DREAM.title": "Rêve Collectif"
+  "AVEMUJICA-COLLECTIVE_DREAM.title": "Rêve Collectif",
+
+  "AVEMUJICA-ENTWINED_FATES.description": "Give ALL [gold]Dolls[/gold] {StrengthPower:diff()} [gold]Strength[/gold] and [gold]Dexterity[/gold].",
+  "AVEMUJICA-ENTWINED_FATES.title": "Entwined Fates"
 }

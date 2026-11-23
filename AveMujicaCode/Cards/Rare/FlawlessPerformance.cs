@@ -27,6 +27,6 @@ public class FlawlessPerformance() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
-        EnergyCost.UpgradeBy(-1);
+        AddKeyword(CardKeyword.Innate);
     }
 }

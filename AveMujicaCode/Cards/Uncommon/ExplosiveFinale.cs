@@ -11,7 +11,7 @@ public class ExplosiveFinale() : AveMujicaCard(1,
     CardType.Power, CardRarity.Uncommon,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<ExplosiveFinalePower>(9)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<ExplosiveFinalePower>(11)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose)
