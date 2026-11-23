@@ -35,7 +35,7 @@
   "AVEMUJICA-DISTRIBUTE.title": "복사본 분배",
   "AVEMUJICA-DO_NOT_FEAR_DEATH.description": "[gold]모르티스[/gold]가 [gold]불가침[/gold]을 1 얻고, 이번 턴 동안 받는 모든 방어되지 않은 공격 피해를 대신 받으며, 다른 능력을 사용할 수 없습니다.",
   "AVEMUJICA-DO_NOT_FEAR_DEATH.title": "죽음을 두려워하지 말지어다",
-  "AVEMUJICA-EMOTIONAL_OUTBURST.description": "피해를 {Damage:diff()} 줍니다.\n이번 턴에 [gold]소멸[/gold]된 카드 1장당 피해를 {Damage:diff()} 추가로 줍니다.{InCombat:\n(추가 {CalculatedHits:diff()}회 적중)|}",
+  "AVEMUJICA-EMOTIONAL_OUTBURST.description": "피해를 {Damage:diff()} 줍니다.\n이번 턴에 [gold]소멸[/gold]된 카드 1장당 피해를 {Damage:diff()} 추가로 줍니다.{InCombat:\n({CalculatedHits:diff()}번 적중합니다)|}",
   "AVEMUJICA-EMOTIONAL_OUTBURST.title": "감정 분출",
   "AVEMUJICA-ENDLESS_PERFORMANCE.description": "피해를 {Damage:diff()} 줍니다.\n내가 [gold]연주[/gold]할 때마다, 이 카드를 내 [gold]손[/gold]으로 가져옵니다.",
   "AVEMUJICA-ENDLESS_PERFORMANCE.title": "끝없는 연주",

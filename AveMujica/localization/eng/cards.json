@@ -98,7 +98,7 @@
   "AVEMUJICA-FULL_HOUSE.description": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each time you [gold]Performed[/gold] this combat.",
   "AVEMUJICA-FULL_HOUSE.title": "Full House",
 
-  "AVEMUJICA-EMOTIONAL_OUTBURST.description": "Deal {Damage:diff()} damage.\nDeal {Damage:diff()} damage again for each card [gold]Exhausted[/gold] this turn.{InCombat:\n(Hits {CalculatedHits:diff()} extra {CalculatedHits:plural:time|times})|}",
+  "AVEMUJICA-EMOTIONAL_OUTBURST.description": "Deal {Damage:diff()} damage.\nDeal {Damage:diff()} damage again for each card [gold]Exhausted[/gold] this turn.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
   "AVEMUJICA-EMOTIONAL_OUTBURST.title": "Emotional Outburst",
 
   "AVEMUJICA-SYMBOL_FIRE.description": "Deal {Damage:diff()} damage.\nGain {StrengthPower:diff()} [gold]Strength[/gold].",

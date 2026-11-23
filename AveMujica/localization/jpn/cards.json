@@ -89,7 +89,7 @@
   "AVEMUJICA-FULL_HOUSE.description": "{CalculatedDamage:diff()}ダメージを与える。\nこの戦闘中に[gold]パフォーム[/gold]した回数1回につき、追加で{ExtraDamage:diff()}ダメージを与える。",
   "AVEMUJICA-FULL_HOUSE.title": "フルハウス",
 
-  "AVEMUJICA-EMOTIONAL_OUTBURST.description": "{Damage:diff()}ダメージを与える。\nこのターンに[gold]廃棄[/gold]したカード1枚につき、{Damage:diff()}ダメージを再び与える。{InCombat:\n(追加で{CalculatedHits:diff()}回攻撃)|}",
+  "AVEMUJICA-EMOTIONAL_OUTBURST.description": "{Damage:diff()}ダメージを与える。\nこのターンに[gold]廃棄[/gold]したカード1枚につき、{Damage:diff()}ダメージを再び与える。{InCombat:\n(攻撃回数は{CalculatedHits:diff()}回)|}",
   "AVEMUJICA-EMOTIONAL_OUTBURST.title": "感情の爆発",
 
   "AVEMUJICA-SYMBOL_FIRE.description": "{Damage:diff()}ダメージを与える。\n[gold]筋力[/gold]{StrengthPower:diff()}を得る。",

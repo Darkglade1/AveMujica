@@ -15,7 +15,7 @@ public class EmotionalOutburst() : AveMujicaCard(0,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(7, ValueProp.Move),
-        new CalculationBaseVar(0M),
+        new CalculationBaseVar(1M),
         new CalculationExtraVar(1M),
         new CalculatedHitCountVar("CalculatedHits").WithMultiplier((card, _) => CombatManager.Instance.History.Entries.OfType<CardExhaustedEntry>().Count((Func<CardExhaustedEntry, bool>) (e => e.HappenedThisTurn(card.CombatState) && e.Card.Owner == card.Owner)))
         ,];
@@ -30,7 +30,7 @@ public class EmotionalOutburst() : AveMujicaCard(0,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CommonActions.CardAttack(this, play, (int) ((CalculatedVar) DynamicVars["CalculatedHits"]).Calculate(play.Target) + 1).Execute(choiceContext);
+        await CommonActions.CardAttack(this, play, (int) ((CalculatedVar) DynamicVars["CalculatedHits"]).Calculate(play.Target)).Execute(choiceContext);
     }
 
     protected override void OnUpgrade()

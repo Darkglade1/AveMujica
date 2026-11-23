@@ -68,7 +68,7 @@
   "AVEMUJICA-WAXING_MOON_LONGING.title": "渐圆月的思念",
   "AVEMUJICA-FULL_HOUSE.description": "造成{CalculatedDamage:diff()}点伤害。\n本次战斗每[gold]演奏[/gold]一次，额外造成{ExtraDamage:diff()}点伤害。",
   "AVEMUJICA-FULL_HOUSE.title": "满堂彩",
-  "AVEMUJICA-EMOTIONAL_OUTBURST.description": "造成{Damage:diff()}点伤害。\n本回合每[gold]消耗[/gold]一张牌，再次造成{Damage:diff()}点伤害。{InCombat:\n（额外命中{CalculatedHits:diff()}次）|}",
+  "AVEMUJICA-EMOTIONAL_OUTBURST.description": "造成{Damage:diff()}点伤害。\n本回合每[gold]消耗[/gold]一张牌，再次造成{Damage:diff()}点伤害。{InCombat:\n（攻击{CalculatedHits:diff()}次）|}",
   "AVEMUJICA-EMOTIONAL_OUTBURST.title": "情绪爆发",
   "AVEMUJICA-SYMBOL_FIRE.description": "造成{Damage:diff()}点伤害。\n获得{StrengthPower:diff()}点[gold]力量[/gold]。",
   "AVEMUJICA-SYMBOL_FIRE.title": "符文一：火",

@@ -43,7 +43,7 @@
   "AVEMUJICA-DISTRIBUTE.selectionScreenPrompt": "Choisissez une [gold]Musique[/gold] à Copier.",
   "AVEMUJICA-DISTRIBUTE.title": "Distribution de Copies",
 
-  "AVEMUJICA-EMOTIONAL_OUTBURST.description": "Infligez {Damage:diff()} dégâts.\nInfligez {Damage:diff()} dégâts à nouveau pour chaque carte [gold]Épuisée[/gold] ce tour.{InCombat:\n(Hits {CalculatedHits:diff()} fois de plus)|}",
+  "AVEMUJICA-EMOTIONAL_OUTBURST.description": "Infligez {Damage:diff()} dégâts.\nInfligez {Damage:diff()} dégâts à nouveau pour chaque carte [gold]Épuisée[/gold] ce tour.{InCombat:\n(Hits {CalculatedHits:diff()} fois)|}",
   "AVEMUJICA-EMOTIONAL_OUTBURST.title": "Déchaînement émotionnel",
 
   "AVEMUJICA-ENDLESS_PERFORMANCE.description": "Infligez {Damage:diff()} dégâts.\nChaque fois qu'une [gold]Interprétation[/gold] est activée, place cette carte dans votre [gold]Main[/gold].",
