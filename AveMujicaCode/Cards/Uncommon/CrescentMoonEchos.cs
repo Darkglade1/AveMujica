@@ -1,6 +1,5 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Dolls;
 using BaseLib.Utils;
-using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
@@ -41,6 +40,7 @@ public class CrescentMoonEchos() : AveMujicaCard(2,
 
     protected override void OnUpgrade()
     {
+        DynamicVars.Damage.UpgradeValueBy(2);
         DynamicVars["SkillRepeat"].UpgradeValueBy(1);
     }
 }

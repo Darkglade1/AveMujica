@@ -151,7 +151,7 @@
   "AVEMUJICA-ALEA_IACTA_EST.description": "Gain {StrengthPower:diff()} [gold]Strength[/gold].\nIf you take unblocked attack damage this combat, die.",
   "AVEMUJICA-ALEA_IACTA_EST.title": "Alea Iacta Est",
 
-  "AVEMUJICA-LOFT_MOON.description": "[gold]Dreamspin[/gold]{IfUpgraded:show: twice}.\nAt the end of your turn, the lowest HP [gold]Doll[/gold] gains {LoftMoonPower:diff()} HP.",
+  "AVEMUJICA-LOFT_MOON.description": "[gold]Dreamspin[/gold].\nAt the end of your turn, the lowest HP [gold]Doll[/gold] gains {LoftMoonPower:diff()} HP.",
   "AVEMUJICA-LOFT_MOON.title": "Loft Moon",
 
   "AVEMUJICA-PULL_FROM_OBLIVION.description": "Put a card from your [gold]Exhaust Pile[/gold] into your [gold]Hand[/gold].{IfUpgraded:show:\nIt costs 0 this combat.}",

@@ -15,7 +15,7 @@ public class MusicaCaelestis() : AveMujicaCard(1,
     CardType.Attack, CardRarity.Rare,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [ new DamageVar(8, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [ new DamageVar(10, ValueProp.Move)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Compose)

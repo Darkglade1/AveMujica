@@ -189,7 +189,7 @@
   "AVEMUJICA-BLOOD_MOON.description": "Infligez {Damage:diff()} dégâts.\nLa [gold]Poupée[/gold] avec les PV les plus bas gagne {Heal:diff()} PV.",
   "AVEMUJICA-BLOOD_MOON.title": "Fureur de la Lune de Sang",
 
-  "AVEMUJICA-LOFT_MOON.description": "[gold]Tisse-rêve[/gold]{IfUpgraded:show: deux fois}.\nA la fin de votre tour, la [gold]Poupée[/gold] avec les PV les plus bas gagne {LoftMoonPower:diff()} PV.",
+  "AVEMUJICA-LOFT_MOON.description": "[gold]Tisse-rêve[/gold].\nA la fin de votre tour, la [gold]Poupée[/gold] avec les PV les plus bas gagne {LoftMoonPower:diff()} PV.",
   "AVEMUJICA-LOFT_MOON.title": "Vers la Lune",
 
   "AVEMUJICA-AS_STRONG_AS_WHEAT.description": "Augmente le nombre d'instances de dégâts des Attaques d'[gold]Amoris[/gold] de {AsStrongAsWheatPower:diff()}.",

@@ -13,7 +13,7 @@ public class DaCapo() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Rare,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new HpLossVar(3)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new HpLossVar(2)];
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [

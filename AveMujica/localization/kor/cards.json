@@ -85,7 +85,7 @@
   "AVEMUJICA-LARGE_REPERTOIRE.title": "방대한 레퍼토리",
   "AVEMUJICA-LATE_NIGHTS.description": "[gold]방어도[/gold]를 {Block:diff()} 얻습니다.\n[gold]작곡[/gold]을 2번 합니다.",
   "AVEMUJICA-LATE_NIGHTS.title": "늦은 밤",
-  "AVEMUJICA-LOFT_MOON.description": "[gold]꿈 자아내기[/gold]{IfUpgraded:show:를 2번 합니다}.\n내 턴이 끝날 때, 체력이 가장 낮은 [gold]인형[/gold]이 체력을 {LoftMoonPower:diff()} 얻습니다.",
+  "AVEMUJICA-LOFT_MOON.description": "[gold]꿈 자아내기[/gold].\n내 턴이 끝날 때, 체력이 가장 낮은 [gold]인형[/gold]이 체력을 {LoftMoonPower:diff()} 얻습니다.",
   "AVEMUJICA-LOFT_MOON.title": "높이 뜬 달",
   "AVEMUJICA-MELODY.description": "내 턴이 끝날 때, 이번 턴에 [gold]연주[/gold]했다면 [gold]힘[/gold]을 {MelodyPower:diff()} 얻습니다.",
   "AVEMUJICA-MELODY.title": "Melody",

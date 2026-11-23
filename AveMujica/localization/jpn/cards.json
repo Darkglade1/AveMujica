@@ -188,7 +188,7 @@
 
   "AVEMUJICA-BLOOD_MOON.description": "{Damage:diff()}ダメージを与える。\n最もHPが低い[gold]人形[/gold]はHP{Heal:diff()}を得る。",
   "AVEMUJICA-BLOOD_MOON.title": "下弦の欲望",
-  "AVEMUJICA-LOFT_MOON.description": "[gold]夢紡ぎ[/gold]を{IfUpgraded:show:2回}行う。\nターン終了時、最もHPが低い[gold]人形[/gold]はHP{LoftMoonPower:diff()}を得る。",
+  "AVEMUJICA-LOFT_MOON.description": "[gold]夢紡ぎ[/gold]を行う。\nターン終了時、最もHPが低い[gold]人形[/gold]はHP{LoftMoonPower:diff()}を得る。",
   "AVEMUJICA-LOFT_MOON.title": "ロフト・ムーン",
   "AVEMUJICA-AS_STRONG_AS_WHEAT.description": "[gold]アモーリス[/gold]はアタックで{AsStrongAsWheatPower:diff()}回多くヒットする。",
   "AVEMUJICA-AS_STRONG_AS_WHEAT.title": "麦のように強く",

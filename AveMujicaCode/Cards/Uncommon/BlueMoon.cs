@@ -42,6 +42,7 @@ public class BlueMoon() : AveMujicaCard(1,
 
     protected override void OnUpgrade()
     {
+        DynamicVars.Block.UpgradeValueBy(1);
         DynamicVars["SkillRepeat"].UpgradeValueBy(1);
     }
 }

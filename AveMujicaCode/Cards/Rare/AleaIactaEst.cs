@@ -1,5 +1,4 @@
-﻿using AveMujica.AveMujicaCode.Powers;
-using MegaCrit.Sts2.Core.Commands;
+﻿using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
@@ -10,10 +9,10 @@ using MegaCrit.Sts2.Core.Models.Powers;
 namespace AveMujica.AveMujicaCode.Cards.Rare;
 
 public class AleaIactaEst() : AveMujicaCard(0,
-    CardType.Skill, CardRarity.Rare,
+    CardType.Power, CardRarity.Rare,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<StrengthPower>(5)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<StrengthPower>(7)];
     
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

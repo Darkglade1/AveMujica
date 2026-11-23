@@ -11,7 +11,7 @@ public class GeorgetteMe() : AbstractPerformCard(1,
     CardType.Skill, CardRarity.Rare,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(8, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(9, ValueProp.Move)];
     
     public override bool GainsBlock => true;
 

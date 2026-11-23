@@ -5,10 +5,10 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
-namespace AveMujica.AveMujicaCode.Cards.Rare;
+namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
 public class Prelude() : AveMujicaCard(1,
-    CardType.Skill, CardRarity.Rare,
+    CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2)];

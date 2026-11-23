@@ -128,7 +128,7 @@
   "AVEMUJICA-GODDESS_OF_OBLIVION.title": "湮灭女神",
   "AVEMUJICA-BLOOD_MOON.description": "造成{Damage:diff()}点伤害。\n生命值最低的[gold]娃娃[/gold]恢复{Heal:diff()}点生命值。",
   "AVEMUJICA-BLOOD_MOON.title": "残月的欲望",
-  "AVEMUJICA-LOFT_MOON.description": "[gold]梦旋[/gold]{IfUpgraded:show:两次}。\n回合结束时，生命值最低的[gold]娃娃[/gold]恢复{LoftMoonPower:diff()}点生命值。",
+  "AVEMUJICA-LOFT_MOON.description": "[gold]梦旋[/gold]。\n回合结束时，生命值最低的[gold]娃娃[/gold]恢复{LoftMoonPower:diff()}点生命值。",
   "AVEMUJICA-LOFT_MOON.title": "高悬之月",
   "AVEMUJICA-AS_STRONG_AS_WHEAT.description": "[gold]Amoris[/gold]的攻击额外命中{AsStrongAsWheatPower:diff()}{AsStrongAsWheatPower:plural:次|次}。",
   "AVEMUJICA-AS_STRONG_AS_WHEAT.title": "坚强如麦",
