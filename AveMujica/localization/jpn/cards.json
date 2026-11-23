@@ -285,7 +285,7 @@
   "AVEMUJICA-ANTHEM.description": "Next turn, ALL players deal {AnthemPower:diff()} more damage with attacks and gain {AnthemPower:diff()} more [gold]Block[/gold] from cards.\n[gold]Perform Attack Skill:[/gold] Double the effect.",
   "AVEMUJICA-ANTHEM.title": "Anthem of Battle",
 
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "Deal {Damage:diff()} damage.\nIf [gold]Amoris[/gold] is present, trigger her [gold]Skill[/gold] {SkillRepeat:diff()} {SkillRepeat:plural:time|times}.",
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "Deal {Damage:diff()} X damage.\nIf [gold]Amoris[/gold] is present, trigger her [gold]Skill[/gold] X{IfUpgraded:show:+1} times.",
   "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "Crescent Moon Echos",
 
   "AVEMUJICA-BLUE_MOON.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf [gold]Doloris[/gold] is present, trigger her [gold]Skill[/gold] {SkillRepeat:diff()} {SkillRepeat:plural:time|times}.",

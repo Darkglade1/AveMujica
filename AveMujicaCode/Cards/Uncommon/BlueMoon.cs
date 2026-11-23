@@ -1,6 +1,5 @@
 ﻿using AveMujica.AveMujicaCode.Cards.Dolls;
 using BaseLib.Utils;
-using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
@@ -13,7 +12,7 @@ public class BlueMoon() : AveMujicaCard(1,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(6, ValueProp.Move), new HpLossVar(1), new("SkillRepeat", 1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(6, ValueProp.Move), new("SkillRepeat", 1)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         DolorisDoll.GenerateCardHoverTip(),
@@ -29,7 +28,7 @@ public class BlueMoon() : AveMujicaCard(1,
         {
             foreach (var ally in CombatState.Allies)
             {
-                if (ally.Monster is DolorisDoll doloris && ally.PetOwner == Owner && ally.IsAlive && ally.CurrentHp >= DynamicVars.HpLoss.BaseValue)
+                if (ally.Monster is DolorisDoll doloris && ally.PetOwner == Owner && ally.IsAlive)
                 {
                     for (int i = 0; i < DynamicVars["SkillRepeat"].IntValue; i++)
                     {

@@ -8,28 +8,36 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 
-public class CrescentMoonEchos() : AveMujicaCard(2,
+public class CrescentMoonEchos() : AveMujicaCard(0,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(10, ValueProp.Move), new HpLossVar(1), new("SkillRepeat", 2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(4, ValueProp.Move)];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         AmorisDoll.GenerateCardHoverTip(),
         HoverTipFactory.FromKeyword(AveMujicaKeywords.DollSkill)
     ];
     
+    protected override bool HasEnergyCostX => true;
+    
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CommonActions.CardAttack(this, play).Execute(choiceContext);
+        int num = ResolveEnergyXValue();
+        int skillNum = num;
+        if (IsUpgraded)
+        {
+            skillNum++;
+        }
+        await CommonActions.CardAttack(this, play, num).Execute(choiceContext);
         if (CombatState != null)
         {
             foreach (var ally in CombatState.Allies)
             {
-                if (ally.Monster is AmorisDoll amoris && ally.PetOwner == Owner && ally.IsAlive && ally.CurrentHp >= DynamicVars.HpLoss.BaseValue)
+                if (ally.Monster is AmorisDoll amoris && ally.PetOwner == Owner && ally.IsAlive)
                 {
-                    for (int i = 0; i < DynamicVars["SkillRepeat"].IntValue; i++)
+                    for (int i = 0; i < skillNum; i++)
                     {
                         await amoris.Skill();
                     }
@@ -40,7 +48,6 @@ public class CrescentMoonEchos() : AveMujicaCard(2,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(2);
-        DynamicVars["SkillRepeat"].UpgradeValueBy(1);
+        DynamicVars.Damage.UpgradeValueBy(1);
     }
 }

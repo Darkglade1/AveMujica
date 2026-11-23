@@ -20,8 +20,6 @@ public class TwoMoons() : AveMujicaCard(2,
         HoverTipFactory.FromKeyword(AveMujicaKeywords.Dreamspin),
         HoverTipFactory.FromCard<Weave>(IsUpgraded),
     ];
-    
-    protected override HashSet<CardTag> CanonicalTags => [AveMujicaCardTags.PerformsDreamspin];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

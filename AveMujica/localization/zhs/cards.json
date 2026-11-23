@@ -195,7 +195,7 @@
   "AVEMUJICA-PURSUIT_OF_MASTERY.selectionScreenPrompt": "选择一张牌以[gold]附魔[/gold]。",
   "AVEMUJICA-ANTHEM.description": "下回合，所有玩家的攻击造成的伤害和由牌获得的[gold]格挡[/gold]提高{AnthemPower:diff()}点。\n[gold]演奏攻击技能：[/gold]使该效果翻倍。",
   "AVEMUJICA-ANTHEM.title": "战斗赞歌",
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "造成{Damage:diff()}点伤害。\n若[gold]Amoris[/gold]在场，触发她的[gold]技能[/gold]{SkillRepeat:diff()}{SkillRepeat:plural:次|次}。",
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "造成{Damage:diff()}点伤害，共X次。\n若[gold]Amoris[/gold]在场，触发她的[gold]技能[/gold]X{IfUpgraded:show:+1}次。",
   "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "残月的回响",
   "AVEMUJICA-BLUE_MOON.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n若[gold]Doloris[/gold]在场，触发她的[gold]技能[/gold]{SkillRepeat:diff()}{SkillRepeat:plural:次|次}。",
   "AVEMUJICA-BLUE_MOON.title": "蓝月之哀",

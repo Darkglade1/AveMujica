@@ -290,7 +290,7 @@
   "AVEMUJICA-ANTHEM.description": "Au prochain tour, TOUS les joueurs infligent {AnthemPower:diff()} de dégâts supplémentaire et gagnent {AnthemPower:diff()} d'[gold]Armure[/gold] supplémentaire des cartes.\n[gold]Interprétation Attaque Compétence : [/gold] Double les effets.",
   "AVEMUJICA-ANTHEM.title": "Hymne de Bataille",
 
-  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "Infligez {Damage:diff()} dégâts.\nSi [gold]Amoris[/gold] est présente, active sa [gold]Compétence[/gold] {SkillRepeat:diff()} fois.",
+  "AVEMUJICA-CRESCENT_MOON_ECHOS.description": "Infligez {Damage:diff()} dégâts X fois.\nSi [gold]Amoris[/gold] est présente, active sa [gold]Compétence[/gold] X{IfUpgraded:show:+1} fois.",
   "AVEMUJICA-CRESCENT_MOON_ECHOS.title": "Échos du Croissant de Lune",
 
   "AVEMUJICA-BLUE_MOON.description": "Gagnez {Block:diff()} d'[gold]Armure[/gold].\nSi [gold]Doloris[/gold] est présente, active sa [gold]Compétence[/gold] {SkillRepeat:diff()} fois.",
