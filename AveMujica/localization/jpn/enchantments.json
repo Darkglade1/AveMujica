@@ -1,8 +1,7 @@
-﻿{
+{
   "AVEMUJICA-MASTERFUL.title": "熟練",
   "AVEMUJICA-MASTERFUL.description": "ダメージと[gold]ブロック[/gold]が[blue]{Amount}[/blue]上昇する。",
   "AVEMUJICA-MASTERFUL.extraCardText": "熟練 {Amount}。",
-
-  "AVEMUJICA-VANISHING.title": "Vanishing",
-  "AVEMUJICA-VANISHING.description": "This card costs [blue]{Amount}[/blue] less and [gold]Exhausts[/gold]. Can only [gold]Enchant[/gold] [gold]non-Exhausting[/gold], [gold]non-Power[/gold] cards."
+  "AVEMUJICA-VANISHING.title": "消失",
+  "AVEMUJICA-VANISHING.description": "このカードのコストが[blue]{Amount}[/blue]下がり、[gold]廃棄[/gold]される。[gold]廃棄[/gold]を持たない、[gold]パワー[/gold]以外のカードにのみ[gold]エンチャント[/gold]できる。"
 }
