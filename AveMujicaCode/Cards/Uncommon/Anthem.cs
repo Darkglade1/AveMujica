@@ -5,9 +5,9 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
-namespace AveMujica.AveMujicaCode.Cards.Rare;
+namespace AveMujica.AveMujicaCode.Cards.Uncommon;
 public class Anthem() : AbstractPerformCard(0,
-    CardType.Skill, CardRarity.Rare,
+    CardType.Skill, CardRarity.Uncommon,
     TargetType.AllAllies)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<AnthemPower>(2)];

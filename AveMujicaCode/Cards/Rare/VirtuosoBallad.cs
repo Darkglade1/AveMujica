@@ -5,15 +5,15 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
-namespace AveMujica.AveMujicaCode.Cards.Uncommon;
+namespace AveMujica.AveMujicaCode.Cards.Rare;
 
 public class VirtuosoBallad() : AveMujicaCard(1,
-    CardType.Skill, CardRarity.Uncommon,
+    CardType.Skill, CardRarity.Rare,
     TargetType.AnyAlly)
 {
     public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new ("Masterful", 4)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new ("Masterful",5)];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     
