@@ -14,7 +14,7 @@ public class FullMoonMasquerade() : AveMujicaCard(2,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(12, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(13, ValueProp.Move)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -34,6 +34,7 @@ public class FullMoonMasquerade() : AveMujicaCard(2,
 
     protected override void OnUpgrade()
     {
+        DynamicVars.Block.UpgradeValueBy(1);
     }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
